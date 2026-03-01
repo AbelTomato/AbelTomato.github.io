@@ -10,7 +10,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://AbelTomato-Blog.github.io",
+  site: "https://AbelTomato.github.io",
   base: "/",
   integrations: [mdx(), sitemap()],
 
