@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+---
+
+<BaseLayout title="所有标签">
+  <main class="container mx-auto px-4 py-16 max-w-4xl text-center">
+    <h1 class="text-4xl font-bold mb-12">所有标签</h1>
+    <div class="flex flex-wrap justify-center gap-4">
+      {tags.map((tag) => (
+        <a 
+          href={`/tags/${tag}`}
+          class="px-6 py-3 bg-white dark:bg-gray-800 border-2 border-gray-100 dark:border-gray-700 rounded-full hover:border-blue-500 hover:text-blue-600 transition-all shadow-sm"
+        >
+          #{tag} 
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

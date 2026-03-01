@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. 定义核心变量：让背景和文字随 HTML 类名自动切换 */
+:root {
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --accent: #2337ff;
+}
+
+/* 当 html 拥有 .dark 类时，覆盖变量 */
+.dark {
+  --background-color: #111827; /* gray-900 */
+  --text-color: #f3f4f6; /* gray-100 */
+  color-scheme: dark;
+}
+
+/* 2. 基础重置：确保全身统一 */
+body {
+  font-family: "Atkinson", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* 3. 强制 Header 和 Main 继承变量，不要写死颜色 */
+header,
+nav,
+main {
+  background-color: transparent !important; /* 允许透出 body 的背景 */
+  color: inherit;
+}
+
+/* 4. 处理链接和文章颜色 */
+.prose {
+  color: var(--text-color);
+}
+
+.dark .prose h1,
+.dark .prose h2 {
+  color: #ffffff;
+}
+
+/* 5. 保持你的字体定义 */
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+header a,
+nav a {
+  color: inherit !important;
+  text-decoration: none;
+}

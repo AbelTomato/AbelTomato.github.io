@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+
+const quotes = [
+	/*
+	{
+		text: "想要得到的就在眼前，不伸手的话，一辈子都得不到。",
+		author: "冈崎朋也",
+		source: "CLANNAD",
+		image: "/images/clannad.jpg", // 放在 public/images/ 目录下
+		color: "from-blue-500" // 悬停时的边框色
+	},
+	*/
+	{
+		text: "三十年河西，三十年河东，莫欺少年穷！",
+		author: "萧炎",
+		source: "斗破苍穹",
+		image: "/About-Moments-萧炎.jpg",
+		color: "from-red-500"
+	},
+	{
+		text: "不管多少次，都会让你喜欢上我的",
+		author: "碓冰拓海",
+		source: "会长是女仆大人！",
+		image: "/About-Moment-会长是女仆大人.jpg",
+		color: "from-blue-500"
+	},
+	{
+		text: "数人世相逢，百年欢笑，能得几回又",
+		author: "花还没开",
+		source: "我家老婆来自一千年前",
+		image: "/About-Moment-我家老婆来自一千年前.jpg",
+		color: "from-green-500"
+	},
+	{
+		text: "每一个不甘的离开，都是为了最后的归来",
+		author: "蝴蝶蓝",
+		source: "全职高手",
+		image: "/About-Moment-全职高手.jpg",
+		color: "from-yellow-500"
+	},
+	{
+		text: "存在可能，就值得去做",
+		author: "莫凡",
+		source: "全职法师",
+		image: "/About-Moment-全职法师.jpg",
+		color: "from-black-500"
+	},
+]
+---
+
+<Layout
+    title="关于我"
+    description="认识一下 AbelTomato —— 一个想让自己变得有趣的人"
+    pubDate={new Date('2026-03-01')}
+>
+    <p>你好，我是AbelTomato</p>
+	<p>目前是XMU计算机类的一名大一学生，梦想是赚<strong>很多</strong>钱，也许有点庸俗，但我确实没什么理想</p>
+	<p>至于创建这个博客的目的，大概是为了让自己的那些想法和念头有一个着落点，不至于飘渺无依</p>
+	<p>以后会更新一些学习上的心得，以及生活中琐碎的日常感想，如果对你有所帮助，我很荣幸</p>
+	<p class="font-bold text-xl mb-4 text-gray-900 dark:text-gray-100">爱好</p>
+<ul class="space-y-4 list-none p-0">
+    <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform">📚</span>
+        <div class="flex flex-col">
+            <span class="font-bold">看小说</span>
+            <span class="text-sm text-gray-500">（我是超级小说p）</span>
+        </div>
+    </li>
+    <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform">🎮</span>
+        <div class="flex flex-col">
+            <span class="font-bold">打游戏</span>
+            <span class="text-sm text-gray-500">（Minecraft等等）</span>
+        </div>
+    </li>
+    <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform">🍳</span>
+        <div class="flex flex-col">
+            <span class="font-bold">做饭</span>
+            <span class="text-sm text-gray-500">（是的我觉得吃到自己做的饭真的很爽）</span>
+        </div>
+    </li>
+    <li class="flex items-center gap-3 group">
+        <span class="text-2xl animate-pulse">🧭</span>
+        <div class="flex flex-col">
+            <span class="font-bold">探索中...</span>
+            <span class="text-sm text-gray-400 italic">未来的无限可能</span>
+        </div>
+    </li>
+</ul>
+
+<div class="mt-12 space-y-8"> <h3 class="text-2xl font-bold mb-8 flex items-center gap-2">
+        <span class="text-blue-500">#</span> Moments
+    </h3>
+    
+    <div class="flex flex-col gap-8"> {quotes.map((q) => (
+            <div class="group relative w-full overflow-hidden rounded-2xl min-h-[250px] shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <img 
+                    src={q.image} 
+                    alt={q.source} 
+                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+                
+                <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+                
+                <div class="relative h-full p-8 md:p-12 flex flex-col justify-center max-w-2xl">
+                    <div class="mb-4 opacity-50 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C9.12154 16 10.017 16.8954 10.017 18V21C10.017 22.1046 9.12154 23 8.01697 23H5.01697C3.9124 23 3.01697 22.1046 3.01697 21ZM16.017 16C13.8079 16 12.017 14.2091 12.017 12V10C12.017 7.79086 13.8079 6 16.017 6H19.017C21.2261 6 23.017 7.79086 23.017 10V12C23.017 14.2091 21.2261 16 19.017 16H16.017ZM5.01697 16C2.80783 16 1.01697 14.2091 1.01697 12V10C1.01697 7.79086 2.80783 6 5.01697 6H8.01697C10.2261 6 12.017 7.79086 12.017 10V12C12.017 14.2091 10.2261 16 8.01697 16H5.01697Z" />
+                        </svg>
+                    </div>
+                    
+                    <p class="text-white text-xl md:text-2xl font-medium leading-relaxed italic mb-6">
+                        {q.text}
+                    </p>
+                    
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <span class="font-bold text-blue-400"># {q.author}</span>
+                        <span class="opacity-60">《{q.source}》</span>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</div>
+</Layout>

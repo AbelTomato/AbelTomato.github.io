@@ -1,0 +1,148 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0,3);
+
+const friends = [
+  {
+    name: "Misuzu0010的Github",
+    description: "一个还没搞博客的屑，galgame集大成者，致力于游戏开发",
+    url: "https://github.com/Misuzu0010",
+    avatar: "/友链-lpl-avatar.jpg",
+    cover: "/友链-lpl-cover.png"
+  }
+];
+---
+
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <main class="container mx-auto px-4 py-16">
+    <section class="flex flex-col items-center justify-center text-center mb-24">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+        Welcome to {SITE_TITLE}
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-2xl">
+        {SITE_DESCRIPTION}
+      </p>
+    </section>
+
+    <section class="w-full max-w-6xl mx-auto">
+      <div class="flex items-end justify-between mb-12 border-b border-gray-200 dark:border-gray-700 pb-4">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100">
+          最近我在做什么
+        </h2>
+        <a href="/blog" class="group flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-blue-600/30 text-blue-600 dark:text-blue-400 font-bold hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+  <span>看看我生产的学术垃圾</span>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 20 20" 
+    fill="currentColor" 
+    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+  >
+    <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+  </svg>
+</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  {posts.map((post) => (
+    <article class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+      {}
+      <a href={`/blog/${post.id}/`} class="block">
+        <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700">
+          {}
+          {post.data.heroImage ? (
+            typeof post.data.heroImage === 'string' ? (
+              <img 
+                src={post.data.heroImage} 
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            ) : (
+              <Image 
+                src={post.data.heroImage} 
+                alt={post.data.title}
+                width={720}
+                height={360}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            )
+          ) : (
+            <img 
+              src="/blog-placeholder-about.jpg" 
+              alt="placeholder"
+              class="w-full h-full object-cover"
+            />
+          )}
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-3">
+            <FormattedDate date={post.data.pubDate} />
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 mb-2">
+            {post.data.title}
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm line-clamp-3">
+            {post.data.description}
+          </p>
+        </div>
+      </a>
+    </article>
+  ))}
+</div>
+    </section>
+
+    <section class="w-full max-w-6xl mx-auto mt-24">
+      <div class="mt-12 space-y-8">
+        <h2 class="text-3xl font-bold mb-10 flex items-center gap-3 text-gray-900 dark:text-gray-100">
+          <span class="text-blue-500">🤝</span> 一些有趣的朋友
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {friends.map((f) => (
+            <a 
+              href={f.url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="group relative block overflow-hidden rounded-2xl aspect-[21/9] shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl bg-gray-200 dark:bg-gray-700"
+            >
+              <img 
+                src={f.cover} 
+                alt={f.name}
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                onerror="this.src='/blog-placeholder-about.jpg'; this.onerror=null;" 
+              />
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+              
+              <div class="absolute inset-0 p-6 flex items-end">
+                <div class="flex items-center gap-4 w-full">
+                  <img 
+                    src={f.avatar} 
+                    alt={f.name} 
+                    class="w-12 h-12 rounded-full border-2 border-white/50 shadow-md object-cover flex-shrink-0 bg-white"
+                  />
+                  <div class="flex-1 text-white min-w-0">
+                    <h3 class="text-xl font-bold group-hover:text-blue-300 transition-colors truncate">
+                      {f.name}
+                    </h3>
+                    <p class="text-sm text-gray-200 mt-1 line-clamp-1 opacity-90 group-hover:opacity-100 transition-opacity">
+                      {f.description}
+                    </p>
+                  </div>
+                  <span class="text-2xl text-white/50 group-hover:text-white transition-all transform group-hover:translate-x-1">→</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
