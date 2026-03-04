@@ -1,0 +1,107 @@
+---
+// src/components/WakaDashboard.astro
+import wakaData from '../data/wakatime.json';
+
+const data = wakaData ?? {};
+const { weekly = [], languages = [], heatmap = [], total } = data;
+
+const hasData = Array.isArray(weekly) && weekly.length > 0 &&
+                Array.isArray(languages) && languages.length > 0 &&
+                Array.isArray(heatmap) && heatmap.length > 0;
+
+const maxSeconds = hasData ? Math.max(...weekly.map(d => d.seconds ?? 0), 3600) : 3600;
+const totalLangSeconds = hasData ? languages.reduce((acc, l) => acc + (l.total_seconds ?? 0), 0) : 1;
+
+const weeklyTotalHours = hasData 
+  ? (weekly.reduce((sum, d) => sum + (d.seconds ?? 0), 0) / 3600).toFixed(1)
+  : '0.0';
+
+const getHeatColor = (sec: number): string => {
+  if (sec === 0) return 'bg-slate-100 dark:bg-slate-800/50';
+  if (sec < 3600) return 'bg-blue-200 dark:bg-blue-900/40';
+  if (sec < 10800) return 'bg-blue-400 dark:bg-blue-700/60';
+  if (sec < 21600) return 'bg-blue-600 dark:bg-blue-500';
+  return 'bg-blue-800 dark:bg-blue-400';
+};
+---
+
+{hasData ? (
+  <div class="max-w-6xl mx-auto p-4 space-y-6 font-sans">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <h3 class="text-sm font-bold text-slate-400 mb-6 flex items-center gap-2 italic"># Languages</h3>
+        <div class="space-y-4">
+          {languages.map((lang, index) => (
+            <div class="group relative">
+              <div class="flex justify-between text-xs mb-1.5">
+                <span class="font-bold text-slate-700 dark:text-slate-300">{lang.name}</span>
+                <span class="text-slate-400 font-mono">{(lang.total_seconds / 3600).toFixed(1)}h</span>
+              </div>
+              <div class="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                <div 
+                  class="h-full bg-blue-500 group-hover:bg-cyan-400 transition-all duration-500" 
+                  style={`width: ${(lang.total_seconds / totalLangSeconds * 100)}%`}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="md:col-span-2 bg-slate-950 p-6 rounded-3xl text-white shadow-xl relative group">
+        <div class="flex justify-between items-start mb-10 relative z-10">
+          <div>
+            <h3 class="text-lg font-bold tracking-tight text-blue-400">活跃趋势</h3>
+            <p class="text-xs text-slate-500">最近一周编码时长</p>
+          </div>
+          <div class="text-right">
+            <p class="text-3xl font-black text-white">{weeklyTotalHours}h</p>
+            <p class="text-xs text-slate-400">本周总计</p>
+          </div>
+        </div>
+
+        <div class="flex items-end justify-between h-40 gap-3 relative z-10">
+          {weekly.map((day, index) => (
+            <div class="flex-1 flex flex-col items-center group/bar relative h-full">
+              <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-[10px] py-1 px-2 rounded shadow-xl opacity-0 group-hover/bar:opacity-100 group-hover/bar:-translate-y-2 transition-all pointer-events-none z-20 whitespace-nowrap border border-slate-200 dark:border-slate-700">
+                {day.text}
+              </div>
+              
+              <div class="w-full bg-slate-900/50 rounded-t-xl relative flex-1 flex flex-col justify-end overflow-hidden border border-white/5">
+                <div 
+                  class="w-full bg-gradient-to-t from-blue-700 to-cyan-300 transition-all duration-1000 ease-out min-h-[4px]" 
+                  style={`height: ${(day.seconds / maxSeconds * 100)}%`}
+                ></div>
+              </div>
+              <span class="text-[10px] mt-3 font-medium text-slate-500">
+                {day.date.split('-').slice(1).join('/')}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+      <h3 class="text-xs font-bold text-slate-400 mb-6 uppercase tracking-widest italic">Coding Heatmap / 90 Days</h3>
+      
+      <div class="flex flex-wrap gap-1.5 sm:gap-2">
+        {heatmap.map((day, index) => (
+          <div class="group relative">
+            <div class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-[10px] py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-all pointer-events-none z-20 whitespace-nowrap shadow-lg">
+              {day.date}: {(day.seconds / 3600).toFixed(1)}h
+            </div>
+            <div 
+              class={`w-4 h-4 sm:w-5 sm:h-5 rounded-sm transition-all group-hover:ring-2 group-hover:ring-blue-400 ${getHeatColor(day.seconds)}`}
+            ></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+) : (
+  <div class="p-10 text-center text-red-500 bg-red-50 rounded-3xl border border-red-200 max-w-4xl mx-auto">
+    <p class="font-bold text-2xl mb-4">数据加载异常</p>
+  </div>
+)}
