@@ -6,10 +6,26 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import WakaDashboard from '../components/WakaDashboard.astro';
+import { getReadingStats } from '../utils/readingTime';
 
-const posts = (await getCollection('blog'))
+const recentPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0,3);
+
+const allPosts = await getCollection('blog');
+const publishedPosts = allPosts.filter(post => post.data.draft !== true);
+const totalPosts = publishedPosts.length;
+const totalWords = publishedPosts.reduce((acc, post) => {
+  const {count} = getReadingStats(post.body || '');
+  return acc + count;
+}, 0);
+const avgWords = totalPosts > 0 ? Math.round(totalWords / totalPosts) : 0;
+
+const rawPosts = await getCollection('blog');
+console.log("原始抓取总数：",rawPosts.length);
+console.log("抓取到的ID清单：",rawPosts.map(p => p.id));
+console.log("过滤后的总数：",publishedPosts.length);
+console.log("过滤后的ID清单：",publishedPosts.map(p => p.id));
 
 const friends = [
   {
@@ -55,6 +71,8 @@ const friends = [
     cover: "/友链-江彦韬-cover.png"
   },
 ];
+
+
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -68,6 +86,33 @@ const friends = [
       </p>
 
       <WakaDashboard />
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="group relative overflow-hidden bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
+          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+          </div>
+          <p class="text-sm font-bold text-slate-400 uppercase tracking-widest">文章总数</p>
+          <p class="text-5xl font-black text-slate-900 dark:text-white mt-2 leading-none">
+            {totalPosts} <span class="text-lg font-medium text-slate-400 italic">篇</span>
+          </p>
+          <p class="text-xs text-slate-500 mt-4 flex items-center gap-1">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> 持续更新中
+          </p>
+        </div>
+
+        <div class="group relative overflow-hidden bg-slate-950 p-6 rounded-3xl shadow-xl border border-white/5">
+          <div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-15">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          </div>
+          <p class="text-sm font-bold text-blue-400/80 uppercase tracking-widest">全站字数</p>
+          <p class="text-5xl font-black text-white mt-2 leading-none">
+            {(totalWords / 1000).toFixed(1)} <span class="text-lg font-medium text-slate-500 italic">k</span>
+          </p>
+        </div>
+      </div>
     </section>
 
 
@@ -91,7 +136,7 @@ const friends = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  {posts.map((post) => (
+  {recentPosts.map((post) => (
     <article class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
       {}
       <a href={`/blog/${post.id}/`} class="block">

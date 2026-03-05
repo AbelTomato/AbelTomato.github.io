@@ -12,10 +12,9 @@ async function sync() {
   }
   const token = Buffer.from(API_KEY).toString("base64");
 
-  // 计算日期：WakaTime summaries 接口需要明确的 start 和 end
   const endDate = new Date();
   const startDate = new Date();
-  startDate.setDate(endDate.getDate() - 89); // 包含今天在内的 90 天
+  startDate.setDate(endDate.getDate() - 89);
 
   const startStr = startDate.toISOString().split("T")[0];
   const endStr = endDate.toISOString().split("T")[0];
@@ -30,20 +29,17 @@ async function sync() {
 
     const allDays = response.data.data;
 
-    // 1. 提取最近 7 天（用于柱状图）
     const weekly = allDays.slice(-7).map((day) => ({
       date: day.range.date,
       seconds: day.grand_total.total_seconds,
       text: day.grand_total.text,
     }));
 
-    // 2. 提取热力图数据
     const heatmap = allDays.map((day) => ({
       date: day.range.date,
       seconds: day.grand_total.total_seconds,
     }));
 
-    // 3. 统计语言分布（最近 90 天累加）
     const langMap = {};
     allDays.forEach((day) => {
       day.languages.forEach((l) => {
@@ -69,7 +65,6 @@ async function sync() {
     );
     console.log("✅ 90天数据全量同步成功！");
   } catch (error) {
-    // 如果还报错，看看是不是权限没开
     if (error.response?.status === 403) {
       console.error(
         "❌ 403 权限拒绝！请在 WakaTime Settings 检查 API Key 是否允许读取 Summaries。",
