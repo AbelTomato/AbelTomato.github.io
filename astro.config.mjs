@@ -25,6 +25,9 @@ export default defineConfig({
         },
       ],
     ],
+    shikiConfig: {
+      theme: "github-dark",
+    },
   },
 
   vite: {
