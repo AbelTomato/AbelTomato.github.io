@@ -4,103 +4,133 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
+import type { MarkdownHeading } from "astro";
+import TableOfContents from "../components/TableOfContents.astro";
 
 type Props = CollectionEntry<"blog">["data"] & {
   count?: number;
   minutes?: number;
+  headings?: MarkdownHeading[];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, count, minutes } =
-  Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  count,
+  minutes,
+  headings = [],
+} = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
-  <article class="min-h-[60vh] mx-auto max-w-4xl px-4 py-8">
-    {
-      heroImage && (
-        <div class="hero-image mb-8">
-          <Image
-            width={1020}
-            height={510}
-            src={heroImage}
-            alt={title}
-            class="w-full rounded-xl shadow-2xl object-cover"
-          />
-        </div>
-      )
-    }
-
+  <main class="max-w-[1400px] mx-auto px-4 py-8">
     <div
-      class="prose prose-slate prose-lg md:prose-xl dark:prose-invert mx-auto max-w-3xl prose-headings:scroll-mt-20"
+      class="grid grid-cols-1 lg:grid-cols-[1fr_768px_1fr] gap-12 items-start"
     >
-      <header class="text-center mb-12">
-        <h1
-          class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100"
+      <div class="hidden lg:block"></div>
+
+      <article class="min-h-[60vh] w-full">
+        {
+          heroImage && (
+            <div class="hero-image mb-8">
+              <Image
+                width={1020}
+                height={510}
+                src={heroImage}
+                alt={title}
+                class="w-full rounded-xl shadow-2xl object-cover"
+              />
+            </div>
+          )
+        }
+
+        <div
+          class="prose prose-slate prose-lg md:prose-xl dark:prose-invert mx-auto max-w-none prose-headings:scroll-mt-24"
         >
-          {title}
-        </h1>
-        <div class="text-gray-600 dark:text-gray-400 space-y-2">
-          <time><FormattedDate date={pubDate} /></time>
+          <header class="text-center mb-12">
+            <h1
+              class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100"
+            >
+              {title}
+            </h1>
+            <div class="text-gray-600 dark:text-gray-400 space-y-2">
+              <time><FormattedDate date={pubDate} /></time>
+              {
+                updatedDate && (
+                  <p class="italic">
+                    Last updated on <FormattedDate date={updatedDate} />
+                  </p>
+                )
+              }
+            </div>
+          </header>
+
+          <hr class="my-10 border-gray-300 dark:border-gray-700" />
+
           {
-            updatedDate && (
-              <p class="italic">
-                Last updated on <FormattedDate date={updatedDate} />
-              </p>
+            count && minutes && (
+              <div class="flex items-center justify-center gap-6 text-sm text-gray-500 mt-4 mb-8">
+                <span class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-files"
+                  >
+                    <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
+                    <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
+                    <path d="M3 7v10a2 2 0 0 0 2 2h10" />
+                  </svg>
+                  {count} 字
+                </span>
+                <span class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clock"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  约 {minutes} 分钟
+                </span>
+              </div>
             )
           }
+
+          <slot />
         </div>
-      </header>
+      </article>
 
-      <hr class="my-10 border-gray-300 dark:border-gray-700" />
-      {
-        count && minutes && (
-          <div class="flex items-center gap-4 text-sm text-gray-500 mt-4 mb-8">
-            <span class="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-files"
-              >
-                <>
-                  <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
-                  <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
-                  <path d="M3 76v10a2 2 0 0 0 2 2h10" />
-                </>
-              </svg>
-              {count} 字
-            </span>
-            <span class="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-clock"
-              >
-                <>
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </>
-              </svg>
-              约 {minutes} 分钟
-            </span>
-          </div>
-        )
-      }
-
-      <slot />
+      <div class="hidden lg:block sticky top-24">
+        <TableOfContents headings={headings} />
+      </div>
     </div>
-  </article>
+  </main>
 </BaseLayout>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .prose :is(h2, h3, h4) {
+    scroll-margin-top: 5rem;
+  }
+</style>

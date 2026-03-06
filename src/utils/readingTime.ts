@@ -6,8 +6,6 @@
  */
 
 export function getReadingStats(content: string) {
-  // 匹配中文、英文单词（忽略标点符号）
-
   if (!content)
     return {
       count: 0,
