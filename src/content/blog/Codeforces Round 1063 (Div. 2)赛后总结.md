@@ -2,7 +2,7 @@
 title: 'Codeforces Round 1063 (Div. 2)赛后总结'
 description: 'Codeforces Round 1063 (Div. 2)赛后总结'
 pubDate: '2025-11-11'
-heroImage: "./Codeforces Round 1063 (Div. 2)赛后总结heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/Codeforces Round 1063 (Div. 2)赛后总结heroImage.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---
 

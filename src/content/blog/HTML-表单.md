@@ -1,6 +1,6 @@
 ---
 title: 'HTML-表单'
-heroImage: "./HTML-表单heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/HTML-表单heroImage.jpg"
 pubDate: '2026-03-03'
 description: '在HTML的学习中对于表单内容的一点整理'
 tags: ["前端","HTML","笔记"]

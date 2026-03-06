@@ -2,7 +2,7 @@
 title: 'The 2025 ICPC North America Qualifier (NAQ 2025)赛后总结'
 description: 'The 2025 ICPC North America Qualifier (NAQ 2025)赛后总结'
 pubDate: '2025-12-18'
-heroImage: "./The 2025 ICPC North America Qualifier (NAQ 2025)赛后总结heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/The 2025 ICPC North America Qualifier (NAQ 2025)赛后总结heroImage.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---
 

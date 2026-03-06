@@ -2,7 +2,7 @@
 title: '【LGR-258-Div.2】洛谷 1 月月赛 II & KWOI Round 1'
 description: '【LGR-258-Div.2】洛谷 1 月月赛 II & KWOI Round 1'
 pubDate: '2026-01-11'
-heroImage: "./【LGR-258-Div.2】洛谷 1 月月赛 II & KWOI Round 1heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/【LGR-258-Div.2】洛谷 1 月月赛 II & KWOI Round 1heroImage.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---
 

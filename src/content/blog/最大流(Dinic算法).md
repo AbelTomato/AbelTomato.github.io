@@ -2,7 +2,7 @@
 title: '最大流(Dinic算法)'
 description: '最大流(Dinic算法)'
 pubDate: '2025-11-19'
-heroImage: "./最大流(Dinic算法)heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/最大流(Dinic算法)heroImage.jpg"
 tags: ["算法竞赛","算法学习笔记"]
 ---
 

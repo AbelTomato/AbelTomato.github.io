@@ -2,7 +2,7 @@
 title: 'X与Y'
 description: '有关性别问题的想法'
 pubDate: '2025-11-08'
-heroImage: "./X与YheroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/X与YheroImage.jpg"
 tags: ["随笔"]
 ---
 

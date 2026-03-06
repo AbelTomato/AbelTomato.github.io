@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import WakaDashboard from '../components/WakaDashboard.astro';
 import { getReadingStats } from '../utils/readingTime';
+import placeholderImg from '../../public/android-chrome-512x512.png'
 
 const recentPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -27,48 +28,61 @@ console.log("抓取到的ID清单：",rawPosts.map(p => p.id));
 console.log("过滤后的总数：",publishedPosts.length);
 console.log("过滤后的ID清单：",publishedPosts.map(p => p.id));
 
+import lplAvatar from '../assets/Friends/avatars/lpl-avatar.jpg';
+import lplCover from '../assets/Friends/covers/lpl-cover.png';
+import coastAvatar from '../assets/Friends/avatars/coast-avatar.jpg';
+import coastCover from '../assets/Friends/covers/coast-cover.png';
+import wzjAvatar from '../assets/Friends/avatars/wzj-avatar.jpg';
+import wzjCover from '../assets/Friends/covers/wzj-cover.png';
+import linjerAvatar from '../assets/Friends/avatars/linjer-avatar.jpg';
+import linjerCover from '../assets/Friends/covers/linjer-cover.png';
+import hatoyaAvatar from '../assets/Friends/avatars/hatoya-avatar.jpg';
+import hatoyaCover from '../assets/Friends/covers/hatoya-cover.png';
+import jytAvatar from '../assets/Friends/avatars/jyt-avatar.jpg';
+import jytCover from '../assets/Friends/covers/jyt-cover.png';
+
 const friends = [
   {
     name: "Misuzu0010的Github",
     description: "一个还没搞博客的屑，galgame集大成者，致力于游戏开发",
     url: "https://github.com/Misuzu0010",
-    avatar: "/友链-lpl-avatar.jpg",
-    cover: "/友链-lpl-cover.png"
+    avatar: lplAvatar,
+    cover: lplCover
   },
   {
     name: "Coast",
     description: "软件学社学长，算法竞赛大佬",
     url: "https://coast23.github.io",
-    avatar: "/友链-coast-avatar.jpg",
-    cover: "/友链-coast-cover.png"
+    avatar: coastAvatar,
+    cover: coastCover
   },
   {
     name: "无止境",
     description: "软件学社学长，走客户端和Android开发",
     url: "https://baakarshan.github.io/",
-    avatar: "/友链-温子健-avatar.jpg",
-    cover: "/友链-温子健-cover.png"
+    avatar: wzjAvatar,
+    cover: wzjCover
   },
   {
     name: "Linjer",
     description: "软工学长，因对算法的热情而相聚",
     url: "https://xmu-linjer.vercel.app/",
-    avatar: "/友链-林俊豪-avatar.jpg",
-    cover: "/友链-林俊豪-cover.png"
+    avatar: linjerAvatar,
+    cover: linjerCover
   },
   {
     name: "两只鸽子",
     description: "学社同级同学，聚焦于深度学习和开发",
     url: "https://hatoya-doublepigeonblog.pages.dev/",
-    avatar: "/友链-两只鸽子-avatar.jpg",
-    cover: "/友链-两只鸽子-cover.png"
+    avatar: hatoyaAvatar,
+    cover: hatoyaCover
   },
   {
     name: "Slient-Sure",
     description: "学社转到计科的学长，同样算法竞赛大佬",
     url: "https://silent-sure.github.io/",
-    avatar: "/友链-江彦韬-avatar.jpg",
-    cover: "/友链-江彦韬-cover.png"
+    avatar: jytAvatar,
+    cover: jytCover
   },
 ];
 
@@ -143,25 +157,27 @@ const friends = [
         <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-700">
           {}
           {post.data.heroImage ? (
-            typeof post.data.heroImage === 'string' ? (
-              <img 
-                src={post.data.heroImage} 
-                alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            ) : (
-              <Image 
-                src={post.data.heroImage} 
-                alt={post.data.title}
-                width={720}
-                height={360}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            )
+            <Image
+              src={post.data.heroImage}
+              alt={post.data.title}
+              width={720}
+              height={360}
+              format="avif"
+              quality={80}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
           ) : (
-            <img 
-              src="/blog-placeholder-about.jpg" 
+            <Image
+              src={placeholderImg}
               alt="placeholder"
+              width={720}
+              height={360}
+              format="avif"
+              quality={80}
+              loading="lazy"
+              decoding="async"
               class="w-full h-full object-cover"
             />
           )}
@@ -197,20 +213,29 @@ const friends = [
               rel="noopener noreferrer" 
               class="group relative block overflow-hidden rounded-2xl aspect-[21/9] shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl bg-gray-200 dark:bg-gray-700"
             >
-              <img 
-                src={f.cover} 
-                alt={f.name}
+              <Image
+                src={f.cover}
+                alt={`${f.name} 的封面`}
+                width={800}
+                height={380}
+                format="avif"
+                quality={75}
+                loading="lazy"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                onerror="this.src='/blog-placeholder-about.jpg'; this.onerror=null;" 
               />
               
               <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
               <div class="absolute inset-0 p-6 flex items-end">
                 <div class="flex items-center gap-4 w-full">
-                  <img 
-                    src={f.avatar} 
-                    alt={f.name} 
+                  <Image
+                    src={f.avatar}
+                    alt={`${f.name} 的头像`}
+                    width={48}
+                    height={48}
+                    format="avif"
+                    quality={80}
+                    loading="lazy"
                     class="w-12 h-12 rounded-full border-2 border-white/50 shadow-md object-cover flex-shrink-0 bg-white"
                   />
                   <div class="flex-1 text-white min-w-0">

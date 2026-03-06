@@ -2,7 +2,7 @@
 title: '第十一届中国大学生程序设计竞赛 哈尔滨站（CCPC 2025 Harbin Site）赛后总结（VP）'
 description: '第十一届中国大学生程序设计竞赛 哈尔滨站（CCPC 2025 Harbin Site）赛后总结（VP）'
 pubDate: '2025-11-22'
-heroImage: "./第十一届中国大学生程序设计竞赛 哈尔滨站（CCPC 2025 Harbin Site）赛后总结（VP）heroImage.jpg"
+heroImage: "../../assets/Contents/Blogs/HeroImages/第十一届中国大学生程序设计竞赛 哈尔滨站（CCPC 2025 Harbin Site）赛后总结（VP）heroImage.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---
 
