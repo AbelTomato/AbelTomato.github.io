@@ -1,0 +1,31 @@
+---
+// src/components/AudioPlayer.astro
+interface Props {
+  src: string;
+  title?: string;
+}
+const { src, title = "未命名音频" } = Astro.props;
+---
+
+<div
+  class="my-8 p-6 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md rounded-2xl border border-pink-500/20 shadow-sm flex flex-col gap-3"
+>
+  <div class="flex items-center gap-2">
+    <span class="text-pink-500 animate-pulse">🎵</span>
+    <span
+      class="text-xs font-medium text-gray-600 dark:text-gray-400 tracking-wider uppercase"
+    >
+      {title}
+    </span>
+  </div>
+
+  <audio controls src={src} class="w-full h-10 accent-pink-500">
+    浏览器不支持音频播放。
+  </audio>
+</div>
+
+<style>
+  audio::-webkit-media-controls-enclosure {
+    background-color: transparent;
+  }
+</style>
