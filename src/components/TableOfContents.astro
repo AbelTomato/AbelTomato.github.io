@@ -1,0 +1,91 @@
+---
+// src/components/TableOfContents.astro
+import type { MarkdownHeading } from "astro";
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+const { headings } = Astro.props;
+const filteredHeadings = headings.filter((h) => h.depth > 1 && h.depth <= 4);
+---
+
+{
+  filteredHeadings.length > 0 && (
+    <nav class="toc-container group">
+      <div class="toc-wrapper">
+        <p class="toc-title">
+          <span class="toc-icon">#</span> 目录索引
+        </p>
+
+        <ul class="toc-list">
+          {filteredHeadings.map((h) => (
+            <li
+              class={`toc-item depth-${h.depth}`}
+              style={`--indent: ${h.depth - 2}`}
+            >
+              <a href={`#${h.slug}`} class="toc-link">
+                <span class="toc-bullet" />
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  )
+}
+
+<style>
+  @reference "../styles/global.css";
+
+  .toc-container {
+    @apply sticky top-24 w-full max-h-[calc(100vh-8rem)] overflow-y-auto pr-2;
+  }
+
+  .toc-wrapper {
+    @apply bg-gray-50/50 dark:bg-slate-900/40 backdrop-blur-md 
+           p-5 rounded-2xl border border-gray-200/50 dark:border-slate-800
+           transition-all duration-300 group-hover:border-pink-500/30;
+  }
+
+  .toc-title {
+    @apply text-[10px] font-black text-gray-400 dark:text-gray-500 
+           mb-6 uppercase tracking-[0.2em] flex items-center gap-2;
+  }
+
+  .toc-icon {
+    @apply text-blue-500 font-bold;
+  }
+
+  .toc-list {
+    @apply space-y-1 relative;
+  }
+
+  .toc-item {
+    @apply relative transition-all duration-200;
+    padding-left: calc(var(--indent) * 1rem);
+  }
+
+  .toc-link {
+    @apply flex items-center gap-2 py-1.5 text-sm
+           text-gray-500 dark:text-gray-400 
+           hover:text-blue-600 dark:hover:text-blue-400
+           transition-colors leading-snug;
+  }
+
+  .toc-bullet {
+    @apply w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-700 
+           transition-all duration-300;
+  }
+
+  .toc-link:hover .toc-bullet {
+    @apply bg-blue-500 scale-150 shadow-[0_0_8px_rgba(236,72,153,0.6)];
+  }
+  .toc-container::-webkit-scrollbar {
+    width: 4px;
+  }
+  .toc-container::-webkit-scrollbar-thumb {
+    @apply bg-gray-200 dark:bg-slate-800 rounded-full;
+  }
+</style>

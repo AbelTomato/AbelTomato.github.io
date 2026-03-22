@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+  .prose h2 {
+    @apply text-3xl font-bold mt-10 mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 block;
+    color: var(--tw-prose-headings);
+  }
+  .prose h3 {
+    @apply text-xl font-semibold mt-8 mb-4;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #1f2937;
+  --accent: #2337ff;
+}
+
+.dark {
+  --background-color: #111827; /* gray-900 */
+  --text-color: #f3f4f6; /* gray-100 */
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Atkinson", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+header,
+nav,
+main {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.prose {
+  color: var(--text-color);
+}
+
+.dark .prose h1,
+.dark .prose h2 {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+header a,
+nav a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.prose code::before,
+.prose code::after {
+  content: "" !important;
+}
+
+:not(pre) > code {
+  @apply bg-slate-100 dark:bg-slate-800/80 text-pink-500 dark:text-pink-300 px-1.5 py-0.5 rounded font-mono text-[0.85em] border border-slate-200 dark:border-slate-700/50 transition-colors;
+}
+
+pre {
+  @apply overflow-x-auto p-4 rounded-xl;
+}
+
+pre code {
+  background-color: transparent !important;
+  @apply p-0 border-none !text-inherit;
+}

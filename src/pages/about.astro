@@ -1,0 +1,217 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+
+import xiaoyanImg from "../assets/about-moments/About-Moments-萧炎.jpg";
+import maidImg from "../assets/about-moments/About-Moment-会长是女仆大人.jpg";
+import wifeImg from "../assets/about-moments/About-Moment-我家老婆来自一千年前.jpg";
+import quanImg from "../assets/about-moments/About-Moment-全职高手.jpg";
+import moImg from "../assets/about-moments/About-Moment-全职法师.jpg";
+import ditanImg from "../assets/about-moments/About-Moment-我与地坛.jpg";
+import ditan2Img from "../assets/about-moments/About-Moment-我与地坛2.jpg";
+import ditan3Img from "../assets/about-moments/About-Moment-我与地坛3.jpg";
+import xuezhongImg from "../assets/about-moments/About-Moment-雪中悍刀行.jpg";
+
+const quotes = [
+  {
+    text: "三十年河西，三十年河东，莫欺少年穷！",
+    author: "萧炎",
+    source: "斗破苍穹",
+    image: xiaoyanImg,
+    color: "from-red-500",
+  },
+  {
+    text: "不管多少次，都会让你喜欢上我的",
+    author: "碓冰拓海",
+    source: "会长是女仆大人！",
+    image: maidImg,
+    color: "from-blue-500",
+  },
+  {
+    text: "数人世相逢，百年欢笑，能得几回又",
+    author: "花还没开",
+    source: "我家老婆来自一千年前",
+    image: wifeImg,
+    color: "from-green-500",
+  },
+  {
+    text: "每一个不甘的离开，都是为了最后的归来",
+    author: "蝴蝶蓝",
+    source: "全职高手",
+    image: quanImg,
+    color: "from-yellow-500",
+  },
+  {
+    text: "存在可能，就值得去做",
+    author: "莫凡",
+    source: "全职法师",
+    image: moImg,
+    color: "from-black-500",
+  },
+  {
+    text: "但是太阳，他每时每刻都是夕阳也都是旭日。当他熄灭着走下山去收尽苍凉残照之际，正是他在另一面燃烧着爬上山巅散烈烈朝晖之时",
+    author: "史铁生",
+    source: "我与地坛",
+    image: ditanImg,
+    color: "from-orange-500",
+  },
+  {
+    text: "有些事只适合收藏。不能说，也不能想，却又不能忘。它们不能变成语言，它们无法变成语言，一旦变成语言就不再是它们了。它们是一片朦胧的温馨与寂寥，是一片成熟的希望与绝望，它们的领地只有两处：心与坟墓。比如说邮票，有些是用于寄信的，有些仅仅是为了收藏",
+    author: "史铁生",
+    source: "我与地坛",
+    image: ditan2Img,
+    color: "from-orange-500",
+  },
+  {
+    text: "我常以为是丑女造就了美人。我常以为是愚氓举出了智者。我常以为是懦夫衬照了英雄。我常以为是众生度化了佛祖",
+    author: "史铁生",
+    source: "我与地坛",
+    image: ditan3Img,
+    color: "from-orange-500",
+  },
+  {
+    text: "此剑抚平天下不平事，此剑无愧世间有愧人",
+    author: "吴素",
+    source: "雪中悍刀行",
+    image: xuezhongImg,
+    color: "from-orange-500",
+  },
+];
+---
+
+<Layout
+  title="关于我"
+  description="认识一下 AbelTomato —— 一个想让自己变得有趣的人"
+>
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
+      关于我
+    </h1>
+
+    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+      AbelTomato —— 一个想让自己变得有趣的人
+    </p>
+
+    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">March 1, 2026</p>
+
+    <hr
+      class="mt-6 mx-auto w-24 border-t-2 border-blue-500 dark:border-blue-400"
+    />
+  </div>
+  <div class="max-w-3xl mx-auto prose prose-lg dark:prose-invert">
+    <p>你好，我是AbelTomato</p>
+    <h2>关于名字的来由</h2>
+    <p>
+      Abel:
+      是我初中时外教要求大家起的英文名，然后我在网上随便找了个字典序靠前的（bushi。后面第一节外教课把名字报上去，刚下课我就发现忘了自己名字叫什么了，冲出教室冲着外教背影大喊：“What's
+      my name?!”传为众人笑谈，沿用至今。
+    </p>
+    <p>
+      Tomato:
+      没什么特别的原因，只是因为我喜欢吃番茄。其实改成AbelPotato也是可以的。
+    </p>
+    <h2>个人简介</h2>
+    <p>
+      目前是XMU计算机类的一名大一学生，梦想是赚<strong>很多</strong
+      >钱，也许有点庸俗，但我确实没什么理想
+    </p>
+    <p>
+      至于创建这个博客的目的，大概是为了让自己的那些想法和念头有一个着落点，不至于飘渺无依
+    </p>
+    <p>
+      以后会更新一些学习上的心得，以及生活中琐碎的日常感想，如果对你有所帮助，我很荣幸
+    </p>
+    <h2 class="font-bold mb-4 text-gray-900 dark:text-gray-100">爱好</h2>
+    <ul class="space-y-4 list-none p-0">
+      <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform"
+          >📚</span
+        >
+        <div class="flex flex-col">
+          <span class="font-bold">看小说</span>
+          <span class="text-sm text-gray-500">（我是超级小说p）</span>
+        </div>
+      </li>
+      <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform"
+          >🎮</span
+        >
+        <div class="flex flex-col">
+          <span class="font-bold">打游戏</span>
+          <span class="text-sm text-gray-500">（Minecraft等等）</span>
+        </div>
+      </li>
+      <li class="flex items-center gap-3 group">
+        <span class="text-2xl group-hover:scale-125 transition-transform"
+          >🍳</span
+        >
+        <div class="flex flex-col">
+          <span class="font-bold">做饭</span>
+          <span class="text-sm text-gray-500"
+            >（是的我觉得吃到自己做的饭真的很爽）</span
+          >
+        </div>
+      </li>
+      <li class="flex items-center gap-3 group">
+        <span class="text-2xl animate-pulse">🧭</span>
+        <div class="flex flex-col">
+          <span class="font-bold">探索中...</span>
+          <span class="text-sm text-gray-400 italic">未来的无限可能</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mt-16 space-y-10 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+      <span class="text-blue-500">#</span> Moments
+    </h2>
+
+    <hr
+      class="mt-6 mx-auto w-24 border-t-2 border-blue-500 dark:border-blue-400"
+    />
+
+    <div class="flex flex-col gap-8">
+      {
+        quotes.map((q) => (
+          <div class="group relative w-full max-w-3xl mx-auto overflow-hidden rounded-3xl h-64 md:h-80 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl">
+            <Image
+              src={q.image}
+              alt={q.source}
+              width={1200}
+              height={400}
+              format="avif"
+              quality={75}
+              loading="lazy"
+              decoding="async"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+
+            <div class="relative h-full p-6 md:p-8 flex flex-col justify-center max-w-2xl mx-auto">
+              <div class="mb-4 opacity-50 group-hover:opacity-100 transition-opacity">
+                <svg
+                  class="w-8 h-8 text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C9.12154 16 10.017 16.8954 10.017 18V21C10.017 22.1046 9.12154 23 8.01697 23H5.01697C3.9124 23 3.01697 22.1046 3.01697 21ZM16.017 16C13.8079 16 12.017 14.2091 12.017 12V10C12.017 7.79086 13.8079 6 16.017 6H19.017C21.2261 6 23.017 7.79086 23.017 10V12C23.017 14.2091 21.2261 16 19.017 16H16.017ZM5.01697 16C2.80783 16 1.01697 14.2091 1.01697 12V10C1.01697 7.79086 2.80783 6 5.01697 6H8.01697C10.2261 6 12.017 7.79086 12.017 10V12C12.017 14.2091 10.2261 16 8.01697 16H5.01697Z" />
+                </svg>
+              </div>
+
+              <p class="text-white text-xl md:text-2xl font-medium leading-relaxed italic mb-6">
+                {q.text}
+              </p>
+
+              <div class="flex items-center gap-3 text-gray-300">
+                <span class="font-bold text-blue-400"># {q.author}</span>
+                <span class="opacity-60">《{q.source}》</span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
