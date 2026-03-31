@@ -95,6 +95,7 @@ async function sync() {
       last_7_days: getStatsForDays(7),
       last_30_days: getStatsForDays(30),
       last_365_days: getStatsForDays(365),
+      all_time: getStatsForDays(99999),
     };
 
     const processedData = {

@@ -47,26 +47,73 @@ const getHeatColor = (sec: number): string => {
         )}
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { title: "最近一周", ...stats?.last_7_days },
-          { title: "最近一月", ...stats?.last_30_days },
-          { title: "年度累计", ...stats?.last_365_days },
-        ].map((item) => (
-          <div class="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">
-              {item.title}
-            </p>
-            <div class="mt-2 flex items-baseline gap-2">
-              <span class="text-2xl font-black text-indigo-500">
-                {item.total_text || "0h"}
-              </span>
-              <span class="text-[10px] text-slate-400">
-                / {item.days_active || 0} days
-              </span>
+          {
+            title: "总编码时长",
+            data: stats?.all_time,
+            containerClass:
+              "col-span-2 sm:col-span-1 bg-emerald-50 dark:bg-black border-l-4 border-emerald-500 p-5 rounded-2xl shadow-inner shadow-emerald-100 dark:shadow-none text-slate-900 dark:text-white transition-colors duration-300",
+            hourClass:
+              "text-3xl font-black text-emerald-600 dark:text-emerald-400 font-mono", // 小时：浅绿深绿切换
+            minClass:
+              "text-xs text-emerald-700/80 dark:text-slate-400 ml-1 font-mono", // 分钟：微调
+            daysClass: "text-emerald-800/60 dark:text-slate-500",
+            isMain: true,
+          },
+          {
+            title: "最近一周",
+            data: stats?.last_7_days,
+            containerClass:
+              "bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm",
+            hourClass:
+              "text-2xl font-black text-indigo-600 dark:text-indigo-400",
+            minClass: "text-xs text-slate-400 dark:text-slate-500 ml-1",
+            daysClass: "text-slate-400",
+          },
+          {
+            title: "最近一月",
+            data: stats?.last_30_days,
+            containerClass:
+              "bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm",
+            hourClass:
+              "text-2xl font-black text-indigo-600 dark:text-indigo-400",
+            minClass: "text-xs text-slate-400 dark:text-slate-500 ml-1",
+            daysClass: "text-slate-400",
+          },
+          {
+            title: "年度累计",
+            data: stats?.last_365_days,
+            containerClass:
+              "bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm",
+            hourClass:
+              "text-2xl font-black text-indigo-600 dark:text-indigo-400",
+            minClass: "text-xs text-slate-400 dark:text-slate-500 ml-1",
+            daysClass: "text-slate-400",
+          },
+        ].map((item) => {
+          const timeText = item.data?.total_text || "0h 0m";
+          const [h, m] = timeText.includes(" ")
+            ? timeText.split(" ")
+            : [timeText, "0m"];
+
+          return (
+            <div class={item.containerClass}>
+              <p
+                class={`text-[10px] font-bold uppercase tracking-wider ${item.isMain ? "text-slate-400" : "text-slate-500"}`}
+              >
+                {item.title}
+              </p>
+              <div class="mt-2 flex items-baseline gap-1">
+                <span class={item.hourClass}>{h}</span>
+                <span class={item.minClass}>{m}</span>
+                <span class={`text-[10px] ml-1.5 ${item.daysClass}`}>
+                  / {item.data?.days_active || 0}d
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
