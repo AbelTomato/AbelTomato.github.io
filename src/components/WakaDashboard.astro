@@ -3,7 +3,7 @@
 import wakaData from "../data/wakatime.json";
 
 const data = wakaData ?? {};
-const { weekly = [], languages = [], heatmap = [], total } = data;
+const { lastUpdate, stats, weekly = [], languages = [], heatmap = [] } = data;
 
 const hasData =
   Array.isArray(weekly) &&
@@ -36,6 +36,39 @@ const getHeatColor = (sec: number): string => {
 {
   hasData ? (
     <div class="max-w-6xl mx-auto p-4 space-y-6 font-sans">
+      <div class="flex justify-between items-end px-2">
+        <h2 class="text-2xl font-black text-slate-800 dark:text-white">
+          编码报告
+        </h2>
+        {lastUpdate && (
+          <p class="text-[10px] text-slate-400 font-mono italic">
+            Last synced: {new Date(lastUpdate).toLocaleString("zh-CN")}
+          </p>
+        )}
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[
+          { title: "最近一周", ...stats?.last_7_days },
+          { title: "最近一月", ...stats?.last_30_days },
+          { title: "年度累计", ...stats?.last_365_days },
+        ].map((item) => (
+          <div class="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">
+              {item.title}
+            </p>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-2xl font-black text-indigo-500">
+                {item.total_text || "0h"}
+              </span>
+              <span class="text-[10px] text-slate-400">
+                / {item.days_active || 0} days
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white dark:bg-slate-900 shadow-sm dark:shasdow-slate-950/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
           <h3 class="text-sm font-bold text-slate-500 dark:text-slate-400 mb-6 flex items-center gap-2 italic">
@@ -105,7 +138,7 @@ const getHeatColor = (sec: number): string => {
 
       <div class="bg-white dark:bg-slate-900 shadow-sm dark:shasdow-slate-950/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
         <h3 class="text-xs font-bold text-slate-400 mb-6 uppercase tracking-widest italic">
-          Coding Heatmap / 90 Days
+          Coding Heatmap / {heatmap.length} Days Recorded
         </h3>
 
         <div class="flex flex-wrap gap-1.5 sm:gap-2">

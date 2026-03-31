@@ -1,380 +1,62 @@
 {
-  "total": "20 hrs 26 mins",
-  "daily_average": "4 hrs 5 mins",
+  "lastUpdate": "2026-03-31T06:33:02.754Z",
+  "stats": {
+    "last_7_days": {
+      "total_seconds": 111662.74100000001,
+      "total_text": "31h 1m",
+      "days_active": 7
+    },
+    "last_30_days": {
+      "total_seconds": 605526.5539999999,
+      "total_text": "168h 12m",
+      "days_active": 30
+    },
+    "last_365_days": {
+      "total_seconds": 644588.8670000001,
+      "total_text": "179h 3m",
+      "days_active": 32
+    }
+  },
+  "total": "179 hrs 3 mins",
+  "daily_average": "4 hrs 31 mins",
   "weekly": [
     {
-      "date": "2026-02-26",
-      "seconds": 0,
-      "text": "0 secs"
+      "date": "2026-03-25",
+      "seconds": 21931.414,
+      "text": "6 hrs 5 mins"
     },
     {
-      "date": "2026-02-27",
-      "seconds": 0,
-      "text": "0 secs"
+      "date": "2026-03-26",
+      "seconds": 20649.239,
+      "text": "5 hrs 44 mins"
     },
     {
-      "date": "2026-02-28",
-      "seconds": 6601.301,
-      "text": "1 hr 50 mins"
+      "date": "2026-03-27",
+      "seconds": 5965.806,
+      "text": "1 hr 39 mins"
     },
     {
-      "date": "2026-03-01",
-      "seconds": 32461.012,
-      "text": "9 hrs 1 min"
+      "date": "2026-03-28",
+      "seconds": 6910.784,
+      "text": "1 hr 55 mins"
     },
     {
-      "date": "2026-03-02",
-      "seconds": 10187.116,
-      "text": "2 hrs 49 mins"
+      "date": "2026-03-29",
+      "seconds": 23334.795,
+      "text": "6 hrs 28 mins"
     },
     {
-      "date": "2026-03-03",
-      "seconds": 17657.6,
-      "text": "4 hrs 54 mins"
+      "date": "2026-03-30",
+      "seconds": 16802.369,
+      "text": "4 hrs 40 mins"
     },
     {
-      "date": "2026-03-04",
-      "seconds": 6662.698,
-      "text": "1 hr 51 mins"
+      "date": "2026-03-31",
+      "seconds": 16068.334,
+      "text": "4 hrs 27 mins"
     }
   ],
   "heatmap": [
-    {
-      "date": "2025-12-05",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-06",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-07",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-08",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-09",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-10",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-11",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-12",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-13",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-14",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-15",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-16",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-17",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-18",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-19",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-20",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-21",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-22",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-23",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-24",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-25",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-26",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-27",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-28",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-29",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-30",
-      "seconds": 0
-    },
-    {
-      "date": "2025-12-31",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-01",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-02",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-03",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-04",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-05",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-06",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-07",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-08",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-09",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-10",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-11",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-12",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-13",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-14",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-15",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-16",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-17",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-18",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-19",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-20",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-21",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-22",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-23",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-24",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-25",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-26",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-27",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-28",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-29",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-30",
-      "seconds": 0
-    },
-    {
-      "date": "2026-01-31",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-01",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-02",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-03",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-04",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-05",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-06",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-07",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-08",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-09",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-10",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-11",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-12",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-13",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-14",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-15",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-16",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-17",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-18",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-19",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-20",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-21",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-22",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-23",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-24",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-25",
-      "seconds": 0
-    },
-    {
-      "date": "2026-02-26",
-      "seconds": 0
-    },
     {
       "date": "2026-02-27",
       "seconds": 0
@@ -397,37 +79,177 @@
     },
     {
       "date": "2026-03-04",
-      "seconds": 6662.698
+      "seconds": 14181.791
+    },
+    {
+      "date": "2026-03-05",
+      "seconds": 18589.926
+    },
+    {
+      "date": "2026-03-06",
+      "seconds": 24637.793
+    },
+    {
+      "date": "2026-03-07",
+      "seconds": 31454.208
+    },
+    {
+      "date": "2026-03-08",
+      "seconds": 32585.366
+    },
+    {
+      "date": "2026-03-09",
+      "seconds": 25108.245
+    },
+    {
+      "date": "2026-03-10",
+      "seconds": 25341.27
+    },
+    {
+      "date": "2026-03-11",
+      "seconds": 20785.046
+    },
+    {
+      "date": "2026-03-12",
+      "seconds": 29918.496
+    },
+    {
+      "date": "2026-03-13",
+      "seconds": 14078.321
+    },
+    {
+      "date": "2026-03-14",
+      "seconds": 11386.102
+    },
+    {
+      "date": "2026-03-15",
+      "seconds": 19612.807
+    },
+    {
+      "date": "2026-03-16",
+      "seconds": 13136.333
+    },
+    {
+      "date": "2026-03-17",
+      "seconds": 14409.676
+    },
+    {
+      "date": "2026-03-18",
+      "seconds": 20128.378
+    },
+    {
+      "date": "2026-03-19",
+      "seconds": 31001.568
+    },
+    {
+      "date": "2026-03-20",
+      "seconds": 25103.81
+    },
+    {
+      "date": "2026-03-21",
+      "seconds": 18842.223
+    },
+    {
+      "date": "2026-03-22",
+      "seconds": 31008.776
+    },
+    {
+      "date": "2026-03-23",
+      "seconds": 25274.716
+    },
+    {
+      "date": "2026-03-24",
+      "seconds": 19434.246
+    },
+    {
+      "date": "2026-03-25",
+      "seconds": 21931.414
+    },
+    {
+      "date": "2026-03-26",
+      "seconds": 20649.239
+    },
+    {
+      "date": "2026-03-27",
+      "seconds": 5965.806
+    },
+    {
+      "date": "2026-03-28",
+      "seconds": 6910.784
+    },
+    {
+      "date": "2026-03-29",
+      "seconds": 23334.795
+    },
+    {
+      "date": "2026-03-30",
+      "seconds": 16802.369
+    },
+    {
+      "date": "2026-03-31",
+      "seconds": 16068.334
     }
   ],
   "languages": [
     {
-      "name": "Astro",
-      "total_seconds": 32279.532
+      "name": "C++",
+      "total_seconds": 212174.38999999996
     },
     {
       "name": "Markdown",
-      "total_seconds": 15410.119999999999
-    },
-    {
-      "name": "C++",
-      "total_seconds": 9133.73
-    },
-    {
-      "name": "HTML",
-      "total_seconds": 8248.385
-    },
-    {
-      "name": "CSS",
-      "total_seconds": 5432.950000000001
+      "total_seconds": 138289.37600000002
     },
     {
       "name": "JavaScript",
-      "total_seconds": 1942.042
+      "total_seconds": 55645.867
     },
     {
-      "name": "Other",
-      "total_seconds": 3924234
+      "name": "Astro",
+      "total_seconds": 53053.477
+    },
+    {
+      "name": "HTML",
+      "total_seconds": 22805.731000000003
+    },
+    {
+      "name": "JSON",
+      "total_seconds": 13000.859
+    },
+    {
+      "name": "Python",
+      "total_seconds": 11761.109000000002
+    },
+    {
+      "name": "CSS",
+      "total_seconds": 9223.072
+    },
+    {
+      "name": "TypeScript",
+      "total_seconds": 2054.062
+    },
+    {
+      "name": "Git Config",
+      "total_seconds": 1084.4759999999999
+    },
+    {
+      "name": "MDX",
+      "total_seconds": 1026.769
+    },
+    {
+      "name": "YAML",
+      "total_seconds": 940.2020000000001
+    },
+    {
+      "name": "CMake",
+      "total_seconds": 424.41700000000003
+    },
+    {
+      "name": "Git",
+      "total_seconds": 41.84
+    },
+    {
+      "name": "Bash",
+      "total_seconds": 11.086
     }
   ]
 }
