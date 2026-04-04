@@ -1,15 +1,15 @@
 {
-  "lastUpdate": "2026-04-03T18:46:36.240Z",
+  "lastUpdate": "2026-04-04T02:05:48.717Z",
   "stats": {
     "last_7_days": {
-      "total_seconds": 135426.11299999998,
-      "total_text": "37h 37m",
-      "days_active": 7
+      "total_seconds": 128515.329,
+      "total_text": "35h 41m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 635809.878,
-      "total_text": "176h 36m",
-      "days_active": 30
+      "total_seconds": 617219.952,
+      "total_text": "171h 26m",
+      "days_active": 29
     },
     "last_365_days": {
       "total_seconds": 716898.6980000001,
@@ -22,14 +22,9 @@
       "days_active": 35
     }
   },
-  "total": "188 hrs 17 mins",
-  "daily_average": "4 hrs 40 mins",
+  "total": "185 hrs 27 mins",
+  "daily_average": "4 hrs 43 mins",
   "weekly": [
-    {
-      "date": "2026-03-28",
-      "seconds": 6910.784,
-      "text": "1 hr 55 mins"
-    },
     {
       "date": "2026-03-29",
       "seconds": 23334.795,
@@ -59,6 +54,11 @@
       "date": "2026-04-03",
       "seconds": 6580.783,
       "text": "1 hr 49 mins"
+    },
+    {
+      "date": "2026-04-04",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -205,16 +205,20 @@
     {
       "date": "2026-04-03",
       "seconds": 6580.783
+    },
+    {
+      "date": "2026-04-04",
+      "seconds": 0
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 232796.50399999996
+      "total_seconds": 229491.23699999996
     },
     {
       "name": "Markdown",
-      "total_seconds": 164454.31700000004
+      "total_seconds": 163366.11300000007
     },
     {
       "name": "JavaScript",
@@ -222,15 +226,15 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 27943.366
+      "total_seconds": 27077.926
     },
     {
       "name": "HTML",
-      "total_seconds": 22805.731000000003
+      "total_seconds": 18320.858000000004
     },
     {
       "name": "JSON",
-      "total_seconds": 16244.362999999998
+      "total_seconds": 16241.98
     },
     {
       "name": "Python",
@@ -238,7 +242,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 5026.45
+      "total_seconds": 4781.156
     },
     {
       "name": "TypeScript",
@@ -259,10 +263,6 @@
     {
       "name": "YAML",
       "total_seconds": 355.341
-    },
-    {
-      "name": "Git",
-      "total_seconds": 41.84
     },
     {
       "name": "Bash",
