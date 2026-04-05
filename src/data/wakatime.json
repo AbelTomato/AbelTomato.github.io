@@ -1,28 +1,28 @@
 {
-  "lastUpdate": "2026-04-05T12:56:27.317Z",
+  "lastUpdate": "2026-04-05T18:42:48.086Z",
   "stats": {
     "last_7_days": {
-      "total_seconds": 113222.313,
-      "total_text": "31h 27m",
+      "total_seconds": 114616.921,
+      "total_text": "31h 50m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 600623.938,
-      "total_text": "166h 50m",
+      "total_seconds": 602018.546,
+      "total_text": "167h 13m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 724940.4770000001,
-      "total_text": "201h 22m",
+      "total_seconds": 726335.0850000001,
+      "total_text": "201h 45m",
       "days_active": 37
     },
     "all_time": {
-      "total_seconds": 724940.4770000001,
-      "total_text": "201h 22m",
+      "total_seconds": 726335.0850000001,
+      "total_text": "201h 45m",
       "days_active": 37
     }
   },
-  "total": "182 hrs 47 mins",
+  "total": "183 hrs 10 mins",
   "daily_average": "4 hrs 30 mins",
   "weekly": [
     {
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-05",
-      "seconds": 4441.779,
-      "text": "1 hr 14 mins"
+      "seconds": 5836.387,
+      "text": "1 hr 37 mins"
     }
   ],
   "heatmap": [
@@ -212,7 +212,7 @@
     },
     {
       "date": "2026-04-05",
-      "seconds": 4441.779
+      "seconds": 5836.387
     }
   ],
   "languages": [
@@ -222,7 +222,7 @@
     },
     {
       "name": "Markdown",
-      "total_seconds": 157790.45800000007
+      "total_seconds": 159185.06600000005
     },
     {
       "name": "JavaScript",
