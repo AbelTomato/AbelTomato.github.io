@@ -1,15 +1,15 @@
 {
-  "lastUpdate": "2026-04-05T18:42:48.086Z",
+  "lastUpdate": "2026-04-06T02:28:32.671Z",
   "stats": {
     "last_7_days": {
-      "total_seconds": 114616.921,
-      "total_text": "31h 50m",
-      "days_active": 7
+      "total_seconds": 97814.552,
+      "total_text": "27h 10m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 602018.546,
-      "total_text": "167h 13m",
-      "days_active": 30
+      "total_seconds": 570564.338,
+      "total_text": "158h 29m",
+      "days_active": 29
     },
     "last_365_days": {
       "total_seconds": 726335.0850000001,
@@ -22,14 +22,9 @@
       "days_active": 37
     }
   },
-  "total": "183 hrs 10 mins",
-  "daily_average": "4 hrs 30 mins",
+  "total": "179 hrs 14 mins",
+  "daily_average": "4 hrs 31 mins",
   "weekly": [
-    {
-      "date": "2026-03-30",
-      "seconds": 16802.369,
-      "text": "4 hrs 40 mins"
-    },
     {
       "date": "2026-03-31",
       "seconds": 27824.708,
@@ -59,6 +54,11 @@
       "date": "2026-04-05",
       "seconds": 5836.387,
       "text": "1 hr 37 mins"
+    },
+    {
+      "date": "2026-04-06",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -213,44 +213,48 @@
     {
       "date": "2026-04-05",
       "seconds": 5836.387
+    },
+    {
+      "date": "2026-04-06",
+      "seconds": 0
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 223662.77399999998
+      "total_seconds": 223082.56299999997
     },
     {
       "name": "Markdown",
-      "total_seconds": 159185.06600000005
+      "total_seconds": 156298.32000000004
     },
     {
       "name": "JavaScript",
-      "total_seconds": 71262.008
+      "total_seconds": 70424.379
     },
     {
       "name": "Astro",
-      "total_seconds": 24887.731
-    },
-    {
-      "name": "HTML",
-      "total_seconds": 18320.858000000004
+      "total_seconds": 21872.074999999997
     },
     {
       "name": "JSON",
-      "total_seconds": 16241.98
+      "total_seconds": 16018.062999999998
+    },
+    {
+      "name": "HTML",
+      "total_seconds": 14557.345999999998
     },
     {
       "name": "Python",
-      "total_seconds": 12666.644000000002
+      "total_seconds": 10405.336000000001
     },
     {
       "name": "CSS",
-      "total_seconds": 3983.128
+      "total_seconds": 3718.6470000000004
     },
     {
       "name": "TypeScript",
-      "total_seconds": 1853.647
+      "total_seconds": 1658.944
     },
     {
       "name": "CMake",
@@ -266,7 +270,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 355.341
+      "total_seconds": 201.71300000000002
     },
     {
       "name": "Bash",
