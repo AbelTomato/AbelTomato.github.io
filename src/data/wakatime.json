@@ -1,28 +1,28 @@
 {
-  "lastUpdate": "2026-04-06T02:28:32.671Z",
+  "lastUpdate": "2026-04-06T07:42:17.275Z",
   "stats": {
     "last_7_days": {
-      "total_seconds": 97814.552,
-      "total_text": "27h 10m",
-      "days_active": 6
+      "total_seconds": 112547.035,
+      "total_text": "31h 15m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 570564.338,
-      "total_text": "158h 29m",
-      "days_active": 29
+      "total_seconds": 585296.821,
+      "total_text": "162h 34m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 726335.0850000001,
-      "total_text": "201h 45m",
-      "days_active": 37
+      "total_seconds": 741067.5680000001,
+      "total_text": "205h 51m",
+      "days_active": 38
     },
     "all_time": {
-      "total_seconds": 726335.0850000001,
-      "total_text": "201h 45m",
-      "days_active": 37
+      "total_seconds": 741067.5680000001,
+      "total_text": "205h 51m",
+      "days_active": 38
     }
   },
-  "total": "179 hrs 14 mins",
+  "total": "183 hrs 19 mins",
   "daily_average": "4 hrs 31 mins",
   "weekly": [
     {
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-06",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 14732.483,
+      "text": "4 hrs 5 mins"
     }
   ],
   "heatmap": [
@@ -216,21 +216,21 @@
     },
     {
       "date": "2026-04-06",
-      "seconds": 0
+      "seconds": 14732.483
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 223082.56299999997
+      "total_seconds": 229983.22499999998
     },
     {
       "name": "Markdown",
-      "total_seconds": 156298.32000000004
+      "total_seconds": 158946.63800000004
     },
     {
       "name": "JavaScript",
-      "total_seconds": 70424.379
+      "total_seconds": 75435.185
     },
     {
       "name": "Astro",
@@ -246,7 +246,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 10405.336000000001
+      "total_seconds": 10578.033000000001
     },
     {
       "name": "CSS",
