@@ -1,29 +1,29 @@
 {
-  "lastUpdate": "2026-04-07T02:23:35.993Z",
+  "lastUpdate": "2026-04-07T07:16:01.704Z",
   "stats": {
     "last_7_days": {
-      "total_seconds": 84722.32699999999,
-      "total_text": "23h 32m",
-      "days_active": 6
+      "total_seconds": 93705.16399999999,
+      "total_text": "26h 1m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 552711.455,
-      "total_text": "153h 31m",
-      "days_active": 29
+      "total_seconds": 561694.2919999999,
+      "total_text": "156h 1m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 741067.5680000001,
-      "total_text": "205h 51m",
-      "days_active": 38
+      "total_seconds": 750050.405,
+      "total_text": "208h 20m",
+      "days_active": 39
     },
     "all_time": {
-      "total_seconds": 741067.5680000001,
-      "total_text": "205h 51m",
-      "days_active": 38
+      "total_seconds": 750050.405,
+      "total_text": "208h 20m",
+      "days_active": 39
     }
   },
-  "total": "178 hrs 9 mins",
-  "daily_average": "4 hrs 29 mins",
+  "total": "180 hrs 39 mins",
+  "daily_average": "4 hrs 26 mins",
   "weekly": [
     {
       "date": "2026-04-01",
@@ -52,13 +52,13 @@
     },
     {
       "date": "2026-04-06",
-      "seconds": 14732.483,
-      "text": "4 hrs 5 mins"
+      "seconds": 16057.745,
+      "text": "4 hrs 27 mins"
     },
     {
       "date": "2026-04-07",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 7657.575,
+      "text": "2 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -216,29 +216,29 @@
     },
     {
       "date": "2026-04-06",
-      "seconds": 14732.483
+      "seconds": 16057.745
     },
     {
       "date": "2026-04-07",
-      "seconds": 0
+      "seconds": 7657.575
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 225343.62099999998
+      "total_seconds": 226203.39699999997
     },
     {
       "name": "Markdown",
-      "total_seconds": 154338.81100000002
+      "total_seconds": 156847.997
     },
     {
       "name": "JavaScript",
-      "total_seconds": 75315.68100000001
+      "total_seconds": 76635.68100000001
     },
     {
       "name": "JSON",
-      "total_seconds": 15978.919999999998
+      "total_seconds": 19986.313
     },
     {
       "name": "HTML",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 10578.033000000001
+      "total_seconds": 10864.515000000001
     },
     {
       "name": "CSS",
