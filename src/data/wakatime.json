@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-10T18:51:47.818Z",
-  "total": "216 hrs 44 mins",
-  "daily_average": "4 hrs 33 mins",
+  "lastUpdate": "2026-04-11T02:09:34.118Z",
+  "total": "214 hrs 3 mins",
+  "daily_average": "4 hrs 29 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 102405.696,
-      "total_text": "28h 26m",
+      "total_seconds": 99350.18000000001,
+      "total_text": "27h 35m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 559713.72,
-      "total_text": "155h 28m",
+      "total_seconds": 530339.708,
+      "total_text": "147h 18m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 819304.3940000001,
-      "total_text": "227h 35m",
-      "days_active": 42
+      "total_seconds": 819848.878,
+      "total_text": "227h 44m",
+      "days_active": 43
     },
     "all_time": {
-      "total_seconds": 819304.3940000001,
-      "total_text": "227h 35m",
-      "days_active": 42
+      "total_seconds": 819848.878,
+      "total_text": "227h 44m",
+      "days_active": 43
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-04",
-      "seconds": 3600,
-      "text": "1 hr"
-    },
     {
       "date": "2026-04-05",
       "seconds": 5836.387,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-04-10",
-      "seconds": 20586.317,
-      "text": "5 hrs 43 mins"
+      "seconds": 20695.58,
+      "text": "5 hrs 44 mins"
+    },
+    {
+      "date": "2026-04-11",
+      "seconds": 435.221,
+      "text": "7 mins"
     }
   ],
   "heatmap": [
@@ -228,13 +228,17 @@
     },
     {
       "date": "2026-04-10",
-      "seconds": 20586.317
+      "seconds": 20695.58
+    },
+    {
+      "date": "2026-04-11",
+      "seconds": 435.221
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 252436.60199999996
+      "total_seconds": 252981.08599999995
     },
     {
       "name": "Markdown",
@@ -611,11 +615,14 @@
       "Git": 0
     },
     "2026-04-10": {
-      "C++": 11879.66,
+      "C++": 11988.923,
       "Java": 7200,
       "JavaScript": 1506.657,
       "Python": 0,
       "Markdown": 0
+    },
+    "2026-04-11": {
+      "C++": 435.221
     }
   }
 }
