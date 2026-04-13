@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-12T18:49:40.211Z",
-  "total": "218 hrs 28 mins",
-  "daily_average": "4 hrs 36 mins",
+  "lastUpdate": "2026-04-13T02:37:00.202Z",
+  "total": "216 hrs 41 mins",
+  "daily_average": "4 hrs 33 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 127100.837,
-      "total_text": "35h 18m",
+      "total_seconds": 118775.182,
+      "total_text": "32h 59m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 549848.431,
-      "total_text": "152h 44m",
+      "total_seconds": 546194.4189999999,
+      "total_text": "151h 43m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 853435.922,
-      "total_text": "237h 3m",
-      "days_active": 44
+      "total_seconds": 861168.012,
+      "total_text": "239h 12m",
+      "days_active": 45
     },
     "all_time": {
-      "total_seconds": 853435.922,
-      "total_text": "237h 3m",
-      "days_active": 44
+      "total_seconds": 861168.012,
+      "total_text": "239h 12m",
+      "days_active": 45
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-06",
-      "seconds": 16057.745,
-      "text": "4 hrs 27 mins"
-    },
     {
       "date": "2026-04-07",
       "seconds": 12149.559,
@@ -59,6 +54,11 @@
       "date": "2026-04-12",
       "seconds": 17329.774,
       "text": "4 hrs 48 mins"
+    },
+    {
+      "date": "2026-04-13",
+      "seconds": 7732.09,
+      "text": "2 hrs 8 mins"
     }
   ],
   "heatmap": [
@@ -237,12 +237,16 @@
     {
       "date": "2026-04-12",
       "seconds": 17329.774
+    },
+    {
+      "date": "2026-04-13",
+      "seconds": 7732.09
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 267510.04699999996
+      "total_seconds": 271014.89499999996
     },
     {
       "name": "Markdown",
@@ -258,7 +262,7 @@
     },
     {
       "name": "Java",
-      "total_seconds": 24000
+      "total_seconds": 27467.301
     },
     {
       "name": "JSON",
@@ -270,7 +274,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 17523.941
+      "total_seconds": 18283.881999999998
     },
     {
       "name": "CSS",
@@ -634,6 +638,11 @@
       "Java": 7200,
       "Python": 702.029,
       "C++": 71.691
+    },
+    "2026-04-13": {
+      "C++": 3504.848,
+      "Java": 3467.301,
+      "Python": 759.941
     }
   }
 }
