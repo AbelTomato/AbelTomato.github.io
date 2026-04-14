@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-13T19:13:35.653Z",
-  "total": "221 hrs 52 mins",
-  "daily_average": "4 hrs 41 mins",
+  "lastUpdate": "2026-04-14T02:30:49.249Z",
+  "total": "218 hrs 24 mins",
+  "daily_average": "4 hrs 36 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 137471.5,
-      "total_text": "38h 11m",
+      "total_seconds": 131407.151,
+      "total_text": "36h 30m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 564890.737,
-      "total_text": "156h 54m",
+      "total_seconds": 551363.1399999999,
+      "total_text": "153h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 879864.3300000001,
-      "total_text": "244h 24m",
-      "days_active": 45
+      "total_seconds": 885949.54,
+      "total_text": "246h 5m",
+      "days_active": 46
     },
     "all_time": {
-      "total_seconds": 879864.3300000001,
-      "total_text": "244h 24m",
-      "days_active": 45
+      "total_seconds": 885949.54,
+      "total_text": "246h 5m",
+      "days_active": 46
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-07",
-      "seconds": 12149.559,
-      "text": "3 hrs 22 mins"
-    },
     {
       "date": "2026-04-08",
       "seconds": 20658.113,
@@ -59,6 +54,11 @@
       "date": "2026-04-13",
       "seconds": 26428.408,
       "text": "7 hrs 20 mins"
+    },
+    {
+      "date": "2026-04-14",
+      "seconds": 6085.21,
+      "text": "1 hr 41 mins"
     }
   ],
   "heatmap": [
@@ -241,6 +241,10 @@
     {
       "date": "2026-04-13",
       "seconds": 26428.408
+    },
+    {
+      "date": "2026-04-14",
+      "seconds": 6085.21
     }
   ],
   "languages": [
@@ -262,7 +266,7 @@
     },
     {
       "name": "Java",
-      "total_seconds": 27467.301
+      "total_seconds": 33547.725
     },
     {
       "name": "JSON",
@@ -274,7 +278,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 18283.881999999998
+      "total_seconds": 18288.667999999998
     },
     {
       "name": "CSS",
@@ -644,6 +648,10 @@
       "Java": 3467.301,
       "Markdown": 2982.509,
       "Python": 759.941
+    },
+    "2026-04-14": {
+      "Java": 6080.424,
+      "Python": 4.786
     }
   }
 }
