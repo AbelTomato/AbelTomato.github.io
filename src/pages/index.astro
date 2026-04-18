@@ -5,7 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import WakaDashboard from '../components/WakaDashboard.astro';
+import WakaDashboard from '../components/WakaDashboard.jsx';
 import { getReadingStats } from '../utils/readingTime';
 import placeholderImg from '../../public/android-chrome-512x512.png'
 
@@ -99,7 +99,7 @@ const friends = [
         {SITE_DESCRIPTION}
       </p>
 
-      <WakaDashboard />
+      <WakaDashboard client:load />
     </section>
 
     <section class="max-w-6xl mx-auto px-4 py-8">
