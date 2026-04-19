@@ -1,6 +1,6 @@
 ---
 // src/components/WakaDashboard.astro
-import wakaData from "../data/wakatime.json";
+import wakaData from "@features/waka/data/wakatime.json";
 
 const data = wakaData ?? {};
 const { lastUpdate, stats, weekly = [], languages = [], heatmap = [] } = data;

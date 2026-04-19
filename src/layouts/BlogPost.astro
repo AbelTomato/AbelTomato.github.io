@@ -2,10 +2,10 @@
 // src/layouts/BlogPost.astro
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
-import FormattedDate from "../components/ui/FormattedDate.astro";
-import BaseLayout from "./BaseLayout.astro";
+import FormattedDate from "@components/ui/FormattedDate.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import type { MarkdownHeading } from "astro";
-import TableOfContents from "../components/TableOfContents.astro";
+import TableOfContents from "@components/TableOfContents.astro";
 
 type Props = CollectionEntry<"blog">["data"] & {
   count?: number;

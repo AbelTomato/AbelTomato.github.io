@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
+import FormattedDate from "@components/ui/FormattedDate.astro";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("blog", ({ data }) => !data.draft);
@@ -25,7 +25,10 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout title={`标签: ${tag}`}>
+<BaseLayout
+  title={`标签: ${tag}`}
+  description=`关于${tag}标签下的所有博客文章列表`
+>
   <main class="py-12 max-w-7xl mx-auto px-4">
     <header
       class="mb-12 border-b border-gray-200 dark:border-gray-700 pb-8 relative"

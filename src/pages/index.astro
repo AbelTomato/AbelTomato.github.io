@@ -1,12 +1,12 @@
 ---
 // src/pages/index.astro
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/ui/FormattedDate.astro';
+import FormattedDate from '@components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import WakaDashboard from '../features/waka/components/WakaDashboard.tsx';
-import { getReadingStats } from '../utils/readingTime';
+import WakaDashboard from '@features/waka/components/WakaDashboard.tsx';
+import { getReadingStats } from '@utils/readingTime';
 import placeholderImg from '../../public/android-chrome-512x512.png'
 
 const recentPosts = (await getCollection('blog'))
@@ -28,18 +28,18 @@ console.log("抓取到的ID清单：",rawPosts.map(p => p.id));
 console.log("过滤后的总数：",publishedPosts.length);
 console.log("过滤后的ID清单：",publishedPosts.map(p => p.id));
 
-import lplAvatar from '../assets/Friends/avatars/lpl-avatar.jpg';
-import lplCover from '../assets/Friends/covers/lpl-cover.png';
-import coastAvatar from '../assets/Friends/avatars/coast-avatar.jpg';
-import coastCover from '../assets/Friends/covers/coast-cover.png';
-import wzjAvatar from '../assets/Friends/avatars/wzj-avatar.jpg';
-import wzjCover from '../assets/Friends/covers/wzj-cover.png';
-import linjerAvatar from '../assets/Friends/avatars/linjer-avatar.jpg';
-import linjerCover from '../assets/Friends/covers/linjer-cover.png';
-import hatoyaAvatar from '../assets/Friends/avatars/hatoya-avatar.jpg';
-import hatoyaCover from '../assets/Friends/covers/hatoya-cover.png';
-import jytAvatar from '../assets/Friends/avatars/jyt-avatar.jpg';
-import jytCover from '../assets/Friends/covers/jyt-cover.png';
+import lplAvatar from '@assets/Friends/avatars/lpl-avatar.jpg';
+import lplCover from '@assets/Friends/covers/lpl-cover.png';
+import coastAvatar from '@assets/Friends/avatars/coast-avatar.jpg';
+import coastCover from '@assets/Friends/covers/coast-cover.png';
+import wzjAvatar from '@assets/Friends/avatars/wzj-avatar.jpg';
+import wzjCover from '@assets/Friends/covers/wzj-cover.png';
+import linjerAvatar from '@assets/Friends/avatars/linjer-avatar.jpg';
+import linjerCover from '@assets/Friends/covers/linjer-cover.png';
+import hatoyaAvatar from '@assets/Friends/avatars/hatoya-avatar.jpg';
+import hatoyaCover from '@assets/Friends/covers/hatoya-cover.png';
+import jytAvatar from '@assets/Friends/avatars/jyt-avatar.jpg';
+import jytCover from '@assets/Friends/covers/jyt-cover.png';
 
 const friends = [
   {

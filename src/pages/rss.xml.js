@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@src/consts";
 
 export async function GET(context) {
   // 1. 获取所有非草稿文章
