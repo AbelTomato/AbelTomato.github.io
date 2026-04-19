@@ -1,7 +1,7 @@
 import fs from "fs";
 import axios from "axios";
 
-const dataDir = "./src/data";
+const dataDir = "./src/features/waka/data";
 const filePath = `${dataDir}/wakatime.json`;
 const BLACKLIST = ["Other", "Text"];
 

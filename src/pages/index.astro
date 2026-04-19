@@ -3,9 +3,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
+import FormattedDate from '../components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import WakaDashboard from '../components/WakaDashboard.jsx';
+import WakaDashboard from '../features/waka/components/WakaDashboard.tsx';
 import { getReadingStats } from '../utils/readingTime';
 import placeholderImg from '../../public/android-chrome-512x512.png'
 
