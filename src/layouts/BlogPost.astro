@@ -2,7 +2,7 @@
 // src/layouts/BlogPost.astro
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
-import FormattedDate from "../components/FormattedDate.astro";
+import FormattedDate from "../components/ui/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "../components/TableOfContents.astro";
@@ -26,7 +26,7 @@ const {
 ---
 
 <BaseLayout title={title} description={description}>
-  <main class="max-w-[1400px] mx-auto px-4 py-8">
+  <main class="max-w-350 mx-auto px-4 py-8">
     <div
       class="grid grid-cols-1 lg:grid-cols-[1fr_768px_1fr] gap-12 items-start"
     >
