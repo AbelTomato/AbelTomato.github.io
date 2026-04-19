@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-04-19T11:30:40.037Z",
-  "total": "207 hrs 22 mins",
+  "lastUpdate": "2026-04-19T11:46:18.651Z",
+  "total": "207 hrs 41 mins",
   "daily_average": "4 hrs 50 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 131913.81699999998,
-      "total_text": "36h 38m",
+      "total_seconds": 133044.853,
+      "total_text": "36h 57m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 546983.5739999999,
-      "total_text": "151h 56m",
+      "total_seconds": 548114.61,
+      "total_text": "152h 15m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 985349.7390000001,
-      "total_text": "273h 42m",
+      "total_seconds": 986480.7750000001,
+      "total_text": "274h 1m",
       "days_active": 51
     },
     "all_time": {
-      "total_seconds": 985349.7390000001,
-      "total_text": "273h 42m",
+      "total_seconds": 986480.7750000001,
+      "total_text": "274h 1m",
       "days_active": 51
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-19",
-      "seconds": 11759.568,
-      "text": "3 hrs 15 mins"
+      "seconds": 12890.604,
+      "text": "3 hrs 34 mins"
     }
   ],
   "heatmap": [
@@ -264,7 +264,7 @@
     },
     {
       "date": "2026-04-19",
-      "seconds": 11759.568
+      "seconds": 12890.604
     }
   ],
   "languages": [
@@ -278,11 +278,11 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 86691.41600000001
+      "total_seconds": 87451.21200000001
     },
     {
       "name": "Astro",
-      "total_seconds": 59942.514
+      "total_seconds": 59985.983
     },
     {
       "name": "Java",
@@ -290,7 +290,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 23157.056999999997
+      "total_seconds": 23403.364999999998
     },
     {
       "name": "HTML",
@@ -317,12 +317,12 @@
       "total_seconds": 1236.5639999999999
     },
     {
-      "name": "MDX",
-      "total_seconds": 1026.769
+      "name": "YAML",
+      "total_seconds": 1027.9910000000002
     },
     {
-      "name": "YAML",
-      "total_seconds": 946.5280000000001
+      "name": "MDX",
+      "total_seconds": 1026.769
     },
     {
       "name": "Git",
@@ -709,13 +709,13 @@
     },
     "2026-04-19": {
       "TypeScript": 6897.279,
-      "Astro": 2523.218,
-      "JavaScript": 1213.783,
+      "Astro": 2566.687,
+      "JavaScript": 1973.579,
       "Markdown": 1063.847,
+      "JSON": 247.022,
+      "YAML": 87.789,
       "Other": 42.021,
-      "Python": 12.38,
-      "YAML": 6.326,
-      "JSON": 0.714
+      "Python": 12.38
     }
   }
 }
