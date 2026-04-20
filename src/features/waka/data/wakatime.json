@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-04-20T02:37:45.970Z",
-  "total": "203 hrs 16 mins",
-  "daily_average": "4 hrs 48 mins",
+  "lastUpdate": "2026-04-20T08:06:02.315Z",
+  "total": "204 hrs 52 mins",
+  "daily_average": "4 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 111536.89099999999,
-      "total_text": "30h 58m",
+      "total_seconds": 117257.12199999999,
+      "total_text": "32h 34m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 534192.833,
-      "total_text": "148h 23m",
+      "total_seconds": 539913.064,
+      "total_text": "149h 58m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 991401.2210000001,
-      "total_text": "275h 23m",
+      "total_seconds": 997121.4520000002,
+      "total_text": "276h 58m",
       "days_active": 52
     },
     "all_time": {
-      "total_seconds": 991401.2210000001,
-      "total_text": "275h 23m",
+      "total_seconds": 997121.4520000002,
+      "total_text": "276h 58m",
       "days_active": 52
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-20",
-      "seconds": 3312.336,
-      "text": "55 mins"
+      "seconds": 9032.567,
+      "text": "2 hrs 30 mins"
     }
   ],
   "heatmap": [
@@ -268,7 +268,7 @@
     },
     {
       "date": "2026-04-20",
-      "seconds": 3312.336
+      "seconds": 9032.567
     }
   ],
   "languages": [
@@ -286,23 +286,23 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 61221.33500000001
+      "total_seconds": 61319.530000000006
     },
     {
       "name": "Java",
       "total_seconds": 47325.068
     },
     {
+      "name": "TypeScript",
+      "total_seconds": 27047.194
+    },
+    {
       "name": "JSON",
-      "total_seconds": 23403.364999999998
+      "total_seconds": 23470.805999999997
     },
     {
       "name": "HTML",
       "total_seconds": 22805.731000000003
-    },
-    {
-      "name": "TypeScript",
-      "total_seconds": 21492.599
     },
     {
       "name": "Python",
@@ -728,9 +728,10 @@
       "CSS": 4.35
     },
     "2026-04-20": {
-      "TypeScript": 2367.554,
-      "Astro": 548.946,
+      "TypeScript": 7922.149,
+      "Astro": 647.141,
       "Python": 371.292,
+      "JSON": 67.441,
       "JavaScript": 24.544
     }
   }
