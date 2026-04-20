@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-19T18:51:18.823Z",
-  "total": "208 hrs 8 mins",
-  "daily_average": "4 hrs 51 mins",
+  "lastUpdate": "2026-04-20T00:47:14.591Z",
+  "total": "203 hrs 16 mins",
+  "daily_average": "4 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 134652.963,
-      "total_text": "37h 24m",
+      "total_seconds": 111536.89099999999,
+      "total_text": "30h 58m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 549722.72,
-      "total_text": "152h 42m",
+      "total_seconds": 534192.833,
+      "total_text": "148h 23m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 988088.8850000001,
-      "total_text": "274h 28m",
-      "days_active": 51
+      "total_seconds": 991401.2210000001,
+      "total_text": "275h 23m",
+      "days_active": 52
     },
     "all_time": {
-      "total_seconds": 988088.8850000001,
-      "total_text": "274h 28m",
-      "days_active": 51
+      "total_seconds": 991401.2210000001,
+      "total_text": "275h 23m",
+      "days_active": 52
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-13",
-      "seconds": 26428.408,
-      "text": "7 hrs 20 mins"
-    },
     {
       "date": "2026-04-14",
       "seconds": 17677.293,
@@ -59,6 +54,11 @@
       "date": "2026-04-19",
       "seconds": 14498.714,
       "text": "4 hrs 1 min"
+    },
+    {
+      "date": "2026-04-20",
+      "seconds": 3312.336,
+      "text": "55 mins"
     }
   ],
   "heatmap": [
@@ -265,6 +265,10 @@
     {
       "date": "2026-04-19",
       "seconds": 14498.714
+    },
+    {
+      "date": "2026-04-20",
+      "seconds": 3312.336
     }
   ],
   "languages": [
@@ -278,11 +282,11 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 87477.23300000002
+      "total_seconds": 87501.77700000002
     },
     {
       "name": "Astro",
-      "total_seconds": 60672.389
+      "total_seconds": 61221.33500000001
     },
     {
       "name": "Java",
@@ -298,11 +302,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 19125.045
+      "total_seconds": 21492.599
     },
     {
       "name": "Python",
-      "total_seconds": 18788.37
+      "total_seconds": 19159.662
     },
     {
       "name": "CSS",
@@ -722,6 +726,12 @@
       "Other": 42.021,
       "Python": 12.38,
       "CSS": 4.35
+    },
+    "2026-04-20": {
+      "TypeScript": 2367.554,
+      "Astro": 548.946,
+      "Python": 371.292,
+      "JavaScript": 24.544
     }
   }
 }
