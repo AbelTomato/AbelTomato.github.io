@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-04-19T11:46:18.651Z",
-  "total": "207 hrs 41 mins",
-  "daily_average": "4 hrs 50 mins",
+  "lastUpdate": "2026-04-19T18:51:18.823Z",
+  "total": "208 hrs 8 mins",
+  "daily_average": "4 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 133044.853,
-      "total_text": "36h 57m",
+      "total_seconds": 134652.963,
+      "total_text": "37h 24m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 548114.61,
-      "total_text": "152h 15m",
+      "total_seconds": 549722.72,
+      "total_text": "152h 42m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 986480.7750000001,
-      "total_text": "274h 1m",
+      "total_seconds": 988088.8850000001,
+      "total_text": "274h 28m",
       "days_active": 51
     },
     "all_time": {
-      "total_seconds": 986480.7750000001,
-      "total_text": "274h 1m",
+      "total_seconds": 988088.8850000001,
+      "total_text": "274h 28m",
       "days_active": 51
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-19",
-      "seconds": 12890.604,
-      "text": "3 hrs 34 mins"
+      "seconds": 14498.714,
+      "text": "4 hrs 1 min"
     }
   ],
   "heatmap": [
@@ -264,7 +264,7 @@
     },
     {
       "date": "2026-04-19",
-      "seconds": 12890.604
+      "seconds": 14498.714
     }
   ],
   "languages": [
@@ -278,11 +278,11 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 87451.21200000001
+      "total_seconds": 87477.23300000002
     },
     {
       "name": "Astro",
-      "total_seconds": 59985.983
+      "total_seconds": 60672.389
     },
     {
       "name": "Java",
@@ -298,7 +298,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 19011.647
+      "total_seconds": 19125.045
     },
     {
       "name": "Python",
@@ -306,7 +306,11 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 9223.072
+      "total_seconds": 9227.422
+    },
+    {
+      "name": "YAML",
+      "total_seconds": 1340.265
     },
     {
       "name": "CMake",
@@ -317,12 +321,12 @@
       "total_seconds": 1236.5639999999999
     },
     {
-      "name": "YAML",
-      "total_seconds": 1027.9910000000002
-    },
-    {
       "name": "MDX",
       "total_seconds": 1026.769
+    },
+    {
+      "name": "TSConfig",
+      "total_seconds": 465.661
     },
     {
       "name": "Git",
@@ -708,14 +712,16 @@
       "INI": 9.505
     },
     "2026-04-19": {
-      "TypeScript": 6897.279,
-      "Astro": 2566.687,
-      "JavaScript": 1973.579,
+      "TypeScript": 7010.677,
+      "Astro": 3253.093,
+      "JavaScript": 1999.6,
       "Markdown": 1063.847,
+      "TSConfig": 465.661,
+      "YAML": 400.063,
       "JSON": 247.022,
-      "YAML": 87.789,
       "Other": 42.021,
-      "Python": 12.38
+      "Python": 12.38,
+      "CSS": 4.35
     }
   }
 }
