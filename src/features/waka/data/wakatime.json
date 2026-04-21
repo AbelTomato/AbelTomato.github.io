@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-04-21T07:49:03.960Z",
-  "total": "200 hrs 41 mins",
-  "daily_average": "4 hrs 49 mins",
+  "lastUpdate": "2026-04-21T13:25:13.822Z",
+  "total": "202 hrs 26 mins",
+  "daily_average": "4 hrs 52 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 114452.92700000001,
-      "total_text": "31h 47m",
+      "total_seconds": 120775.98100000001,
+      "total_text": "33h 32m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 523777.38599999994,
-      "total_text": "145h 29m",
+      "total_seconds": 530100.44,
+      "total_text": "147h 15m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1011994.5500000002,
-      "total_text": "281h 6m",
+      "total_seconds": 1018317.6040000002,
+      "total_text": "282h 51m",
       "days_active": 53
     },
     "all_time": {
-      "total_seconds": 1011994.5500000002,
-      "total_text": "281h 6m",
+      "total_seconds": 1018317.6040000002,
+      "total_text": "282h 51m",
       "days_active": 53
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-21",
-      "seconds": 5391.677,
-      "text": "1 hr 29 mins"
+      "seconds": 11714.731,
+      "text": "3 hrs 15 mins"
     }
   ],
   "heatmap": [
@@ -272,7 +272,7 @@
     },
     {
       "date": "2026-04-21",
-      "seconds": 5391.677
+      "seconds": 11714.731
     }
   ],
   "languages": [
@@ -290,7 +290,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 62241.386000000006
+      "total_seconds": 63933.717000000004
     },
     {
       "name": "Java",
@@ -298,7 +298,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 39894.676
+      "total_seconds": 44387.393
     },
     {
       "name": "JSON",
@@ -334,7 +334,7 @@
     },
     {
       "name": "TSConfig",
-      "total_seconds": 471.976
+      "total_seconds": 609.982
     },
     {
       "name": "Git",
@@ -743,7 +743,9 @@
       "HTML": 0
     },
     "2026-04-21": {
-      "TypeScript": 5285.368,
+      "TypeScript": 9778.085,
+      "Astro": 1692.331,
+      "TSConfig": 138.006,
       "Python": 106.309
     }
   }
