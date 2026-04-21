@@ -6,6 +6,7 @@ interface DailyLanguageStats {
   [name: string]: number;
 }
 
+// WakaData接口
 export interface WakaData {
   lastUpdate: string;
   total: string;
