@@ -2,7 +2,7 @@
 title: '常见随机变量分布'
 description: '列出了一些常见的随机变量分布的性质'
 pubDate: '2026-04-22'
-updatedDate: '2026-04-22'
+updatedDate: '2026-04-23'
 heroImage: "./hero.jpg"
 tags: ["概率统计", "笔记"]
 ---
@@ -187,3 +187,58 @@ $$
 
 - **期望**：$E(X) = \frac{1}{\lambda}$
 - **方差**：$D(X) = \frac{1}{\lambda^{2}}$
+
+### 瑞利分布
+
+设有两个独立同分布的正态分布变量($\mu = 0$，方差均为 $\sigma^{2}$)，设其为 $X, Y$，则对应二维平面上的坐标 $(X, Y)$ 到原点的距离 $R = \sqrt{X^{2} + Y^{2}}$ 服从瑞利分布，记作 $X \sim \text{Rayleigh}(\sigma)$
+
+它的PDF为：
+
+$$
+f(x; \sigma) =
+\begin{cases}
+    \frac{x}{\sigma^{2}} e^{- \frac{x^{2}}{2\sigma^{2}}}, &x \ge 0 \\
+    0, &x < 0
+\end{cases}
+$$
+
+#### 瑞利分布期望推导
+
+有
+
+$$
+\begin{aligned}
+    E(X) &= \int^{\infty}_{0} x f(x) dx \\
+    &= \frac{1}{\sigma^{2}} \int^{\infty}_{0} x^{2} e^{- \frac{x^{2}}{2 \sigma^{2}}} dx
+\end{aligned}
+$$
+
+这里利用高斯积分
+
+$$
+\int^{\infty}_{0} x^{2} e^{- ax^{2}} dx = \frac{1}{4 \pi} \sqrt{\frac{\pi}{a}}
+$$
+
+令 $a = \frac{1}{2 \sigma^{2}}$，代入得
+
+$$
+E(X) = \sigma \sqrt{\frac{\pi}{2}}
+$$
+
+#### 瑞利分布方差推导
+
+$$
+E(X^{2}) = \int^{\infty}_{0} x^{2} \frac{x}{\sigma^{2}} e^{- \frac{x^{2}}{2\sigma^{2}}} dx
+$$
+
+令 $u = \frac{x^{2}}{2\sigma^{2}}$, $du = \frac{x}{\sigma^{2}} dx$
+
+$$
+E(X) = \int^{\infty}_{0} (2\sigma^{2} u) e^{-u} du = 2\sigma^{2} \int^{\infty}_{0} ue^{-u} du = 2\sigma^{2}
+$$
+
+则方差为：
+
+$$
+D(X) = 2\sigma^{2} - (\sigma \sqrt{\frac{\pi}{2}})^{2} = \frac{4 - \pi}{2} \sigma^{2}
+$$
