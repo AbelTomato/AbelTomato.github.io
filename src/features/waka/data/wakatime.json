@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-26T18:53:57.769Z",
-  "total": "194 hrs 30 mins",
-  "daily_average": "4 hrs 51 mins",
+  "lastUpdate": "2026-04-27T02:42:29.431Z",
+  "total": "190 hrs 6 mins",
+  "daily_average": "4 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 74251.532,
-      "total_text": "20h 37m",
+      "total_seconds": 60060.37,
+      "total_text": "16h 41m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 480867.832,
-      "total_text": "133h 34m",
+      "total_seconds": 478279.874,
+      "total_text": "132h 51m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1062340.4170000001,
-      "total_text": "295h 5m",
-      "days_active": 58
+      "total_seconds": 1066663.243,
+      "total_text": "296h 17m",
+      "days_active": 59
     },
     "all_time": {
-      "total_seconds": 1062340.4170000001,
-      "total_text": "295h 5m",
-      "days_active": 58
+      "total_seconds": 1066663.243,
+      "total_text": "296h 17m",
+      "days_active": 59
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-20",
-      "seconds": 18513.988,
-      "text": "5 hrs 8 mins"
-    },
     {
       "date": "2026-04-21",
       "seconds": 11805.09,
@@ -59,6 +54,11 @@
       "date": "2026-04-26",
       "seconds": 11349.081,
       "text": "3 hrs 9 mins"
+    },
+    {
+      "date": "2026-04-27",
+      "seconds": 4322.826,
+      "text": "1 hr 12 mins"
     }
   ],
   "heatmap": [
@@ -293,6 +293,10 @@
     {
       "date": "2026-04-26",
       "seconds": 11349.081
+    },
+    {
+      "date": "2026-04-27",
+      "seconds": 4322.826
     }
   ],
   "languages": [
@@ -310,7 +314,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 67479.726
+      "total_seconds": 71802.552
     },
     {
       "name": "Astro",
@@ -794,6 +798,10 @@
       "Markdown": 5898.229,
       "TypeScript": 5400,
       "Python": 50.852
+    },
+    "2026-04-27": {
+      "TypeScript": 4322.826,
+      "Python": 0
     }
   }
 }
