@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-04-28T02:49:37.181Z",
-  "total": "184 hrs 26 mins",
-  "daily_average": "4 hrs 43 mins",
+  "lastUpdate": "2026-04-28T08:24:07.661Z",
+  "total": "187 hrs 12 mins",
+  "daily_average": "4 hrs 40 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 58852.412,
-      "total_text": "16h 20m",
-      "days_active": 6
+      "total_seconds": 68819.361,
+      "total_text": "19h 6m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 465542.211,
-      "total_text": "129h 19m",
-      "days_active": 29
+      "total_seconds": 475509.16000000003,
+      "total_text": "132h 5m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1077260.3750000002,
-      "total_text": "299h 14m",
-      "days_active": 59
+      "total_seconds": 1087227.3240000003,
+      "total_text": "302h 0m",
+      "days_active": 60
     },
     "all_time": {
-      "total_seconds": 1077260.3750000002,
-      "total_text": "299h 14m",
-      "days_active": 59
+      "total_seconds": 1087227.3240000003,
+      "total_text": "302h 0m",
+      "days_active": 60
     }
   },
   "weekly": [
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-04-28",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 9966.949,
+      "text": "2 hrs 46 mins"
     }
   ],
   "heatmap": [
@@ -300,13 +300,13 @@
     },
     {
       "date": "2026-04-28",
-      "seconds": 0
+      "seconds": 9966.949
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 303139.594
+      "total_seconds": 307608.146
     },
     {
       "name": "Markdown",
@@ -318,7 +318,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 71802.552
+      "total_seconds": 77267.489
     },
     {
       "name": "Astro",
@@ -338,7 +338,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 19227.028
+      "total_seconds": 19260.487999999998
     },
     {
       "name": "CSS",
@@ -811,6 +811,10 @@
       "JSON": 183.78,
       "Python": 12.371
     },
-    "2026-04-28": {}
+    "2026-04-28": {
+      "TypeScript": 5464.937,
+      "C++": 4468.552,
+      "Python": 33.46
+    }
   }
 }
