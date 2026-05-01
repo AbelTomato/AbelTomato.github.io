@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-04-30T19:20:04.200Z",
-  "total": "182 hrs 19 mins",
-  "daily_average": "4 hrs 33 mins",
+  "lastUpdate": "2026-05-01T02:57:19.782Z",
+  "total": "175 hrs 12 mins",
+  "daily_average": "4 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 74000.635,
-      "total_text": "20h 33m",
+      "total_seconds": 73559.74299999999,
+      "total_text": "20h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 457248.71499999997,
-      "total_text": "127h 0m",
+      "total_seconds": 434945.58400000003,
+      "total_text": "120h 49m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1113593.9560000002,
-      "total_text": "309h 19m",
-      "days_active": 62
+      "total_seconds": 1118993.9560000002,
+      "total_text": "310h 49m",
+      "days_active": 63
     },
     "all_time": {
-      "total_seconds": 1113593.9560000002,
-      "total_text": "309h 19m",
-      "days_active": 62
+      "total_seconds": 1118993.9560000002,
+      "total_text": "310h 49m",
+      "days_active": 63
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-24",
-      "seconds": 5840.892,
-      "text": "1 hr 37 mins"
-    },
     {
       "date": "2026-04-25",
       "seconds": 5557.123,
@@ -57,6 +52,11 @@
     },
     {
       "date": "2026-04-30",
+      "seconds": 5400,
+      "text": "1 hr 30 mins"
+    },
+    {
+      "date": "2026-05-01",
       "seconds": 5400,
       "text": "1 hr 30 mins"
     }
@@ -309,6 +309,10 @@
     {
       "date": "2026-04-30",
       "seconds": 5400
+    },
+    {
+      "date": "2026-05-01",
+      "seconds": 5400
     }
   ],
   "languages": [
@@ -337,16 +341,16 @@
       "total_seconds": 47325.068
     },
     {
+      "name": "Python",
+      "total_seconds": 24660.487999999998
+    },
+    {
       "name": "JSON",
       "total_seconds": 23654.585999999996
     },
     {
       "name": "HTML",
       "total_seconds": 22805.731000000003
-    },
-    {
-      "name": "Python",
-      "total_seconds": 19260.487999999998
     },
     {
       "name": "CSS",
@@ -833,6 +837,10 @@
     "2026-04-30": {
       "TypeScript": 5400,
       "Python": 0
+    },
+    "2026-05-01": {
+      "Python": 5400,
+      "Markdown": 0
     }
   }
 }
