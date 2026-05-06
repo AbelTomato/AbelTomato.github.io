@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-05-06T02:45:28.554Z",
-  "total": "156 hrs 16 mins",
-  "daily_average": "4 hrs",
+  "lastUpdate": "2026-05-06T08:25:49.964Z",
+  "total": "157 hrs 31 mins",
+  "daily_average": "3 hrs 56 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 35896.246,
-      "total_text": "9h 58m",
-      "days_active": 6
+      "total_seconds": 40380.487,
+      "total_text": "11h 13m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 401697.37200000003,
-      "total_text": "111h 34m",
-      "days_active": 29
+      "total_seconds": 406181.613,
+      "total_text": "112h 49m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1144090.202,
-      "total_text": "317h 48m",
-      "days_active": 67
+      "total_seconds": 1148574.443,
+      "total_text": "319h 2m",
+      "days_active": 68
     },
     "all_time": {
-      "total_seconds": 1144090.202,
-      "total_text": "317h 48m",
-      "days_active": 67
+      "total_seconds": 1148574.443,
+      "total_text": "319h 2m",
+      "days_active": 68
     }
   },
   "weekly": [
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-06",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 4484.241,
+      "text": "1 hr 14 mins"
     }
   ],
   "heatmap": [
@@ -332,13 +332,13 @@
     },
     {
       "date": "2026-05-06",
-      "seconds": 0
+      "seconds": 4484.241
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 322582.836
+      "total_seconds": 323455.851
     },
     {
       "name": "Markdown",
@@ -357,12 +357,12 @@
       "total_seconds": 64024.07600000001
     },
     {
-      "name": "Java",
-      "total_seconds": 47325.068
+      "name": "Python",
+      "total_seconds": 50274.723
     },
     {
-      "name": "Python",
-      "total_seconds": 46663.496999999996
+      "name": "Java",
+      "total_seconds": 47325.068
     },
     {
       "name": "JSON",
@@ -885,6 +885,9 @@
       "Markdown": 16.101,
       "C++": 0
     },
-    "2026-05-06": {}
+    "2026-05-06": {
+      "Python": 3611.226,
+      "C++": 873.015
+    }
   }
 }
