@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-06T19:45:15.078Z",
-  "total": "161 hrs 11 mins",
+  "lastUpdate": "2026-05-07T02:46:59.664Z",
+  "total": "161 hrs 12 mins",
   "daily_average": "4 hrs 1 min",
   "stats": {
     "last_7_days": {
-      "total_seconds": 53546.444,
-      "total_text": "14h 52m",
+      "total_seconds": 55147.28,
+      "total_text": "15h 19m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 419347.57,
-      "total_text": "116h 29m",
+      "total_seconds": 414198.847,
+      "total_text": "115h 3m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1161740.4000000001,
-      "total_text": "322h 42m",
-      "days_active": 68
+      "total_seconds": 1168741.236,
+      "total_text": "324h 39m",
+      "days_active": 69
     },
     "all_time": {
-      "total_seconds": 1161740.4000000001,
-      "total_text": "322h 42m",
-      "days_active": 68
+      "total_seconds": 1168741.236,
+      "total_text": "324h 39m",
+      "days_active": 69
     }
   },
   "weekly": [
-    {
-      "date": "2026-04-30",
-      "seconds": 5400,
-      "text": "1 hr 30 mins"
-    },
     {
       "date": "2026-05-01",
       "seconds": 5414.32,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-05-06",
-      "seconds": 17650.198,
-      "text": "4 hrs 54 mins"
+      "seconds": 17741.458,
+      "text": "4 hrs 55 mins"
+    },
+    {
+      "date": "2026-05-07",
+      "seconds": 6909.576,
+      "text": "1 hr 55 mins"
     }
   ],
   "heatmap": [
@@ -332,17 +332,21 @@
     },
     {
       "date": "2026-05-06",
-      "seconds": 17650.198
+      "seconds": 17741.458
+    },
+    {
+      "date": "2026-05-07",
+      "seconds": 6909.576
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 331369.205
+      "total_seconds": 331889.61600000004
     },
     {
       "name": "Markdown",
-      "total_seconds": 308408.65100000007
+      "total_seconds": 308499.9110000001
     },
     {
       "name": "TypeScript",
@@ -358,7 +362,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 50274.723
+      "total_seconds": 56654.716
     },
     {
       "name": "Java",
@@ -887,8 +891,13 @@
     },
     "2026-05-06": {
       "C++": 8786.369,
-      "Markdown": 5252.603,
+      "Markdown": 5343.863,
       "Python": 3611.226
+    },
+    "2026-05-07": {
+      "Python": 6379.993,
+      "C++": 520.411,
+      "Other": 9.172
     }
   }
 }
