@@ -1,64 +1,64 @@
 {
-  "lastUpdate": "2026-04-25T07:15:20.105Z",
-  "total": "193 hrs 48 mins",
-  "daily_average": "4 hrs 57 mins",
+  "lastUpdate": "2026-05-08T07:41:07.661Z",
+  "total": "165 hrs 25 mins",
+  "daily_average": "4 hrs 7 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 71824.25,
-      "total_text": "19h 57m",
-      "days_active": 6
+      "total_seconds": 88223.15,
+      "total_text": "24h 30m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 469907.642,
-      "total_text": "130h 31m",
-      "days_active": 29
+      "total_seconds": 432030.924,
+      "total_text": "120h 0m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1045414.4210000001,
-      "total_text": "290h 23m",
-      "days_active": 56
+      "total_seconds": 1207231.4260000002,
+      "total_text": "335h 20m",
+      "days_active": 70
     },
     "all_time": {
-      "total_seconds": 1045414.4210000001,
-      "total_text": "290h 23m",
-      "days_active": 56
+      "total_seconds": 1207231.4260000002,
+      "total_text": "335h 20m",
+      "days_active": 70
     }
   },
   "weekly": [
     {
-      "date": "2026-04-19",
-      "seconds": 14498.714,
-      "text": "4 hrs 1 min"
+      "date": "2026-05-02",
+      "seconds": 2940.203,
+      "text": "49 mins"
     },
     {
-      "date": "2026-04-20",
-      "seconds": 18513.988,
-      "text": "5 hrs 8 mins"
+      "date": "2026-05-03",
+      "seconds": 7822.373,
+      "text": "2 hrs 10 mins"
     },
     {
-      "date": "2026-04-21",
-      "seconds": 11805.09,
-      "text": "3 hrs 16 mins"
+      "date": "2026-05-04",
+      "seconds": 8436.788,
+      "text": "2 hrs 20 mins"
     },
     {
-      "date": "2026-04-22",
-      "seconds": 9317.09,
-      "text": "2 hrs 35 mins"
+      "date": "2026-05-05",
+      "seconds": 5882.562,
+      "text": "1 hr 38 mins"
     },
     {
-      "date": "2026-04-23",
-      "seconds": 11868.268,
-      "text": "3 hrs 17 mins"
+      "date": "2026-05-06",
+      "seconds": 17741.458,
+      "text": "4 hrs 55 mins"
     },
     {
-      "date": "2026-04-24",
-      "seconds": 5821.1,
-      "text": "1 hr 37 mins"
+      "date": "2026-05-07",
+      "seconds": 35658.595,
+      "text": "9 hrs 54 mins"
     },
     {
-      "date": "2026-04-25",
-      "seconds": 0,
-      "text": "0 secs"
+      "date": "2026-05-08",
+      "seconds": 9741.171,
+      "text": "2 hrs 42 mins"
     }
   ],
   "heatmap": [
@@ -284,21 +284,77 @@
     },
     {
       "date": "2026-04-24",
-      "seconds": 5821.1
+      "seconds": 5840.892
     },
     {
       "date": "2026-04-25",
-      "seconds": 0
+      "seconds": 5557.123
+    },
+    {
+      "date": "2026-04-26",
+      "seconds": 11349.081
+    },
+    {
+      "date": "2026-04-27",
+      "seconds": 14919.958
+    },
+    {
+      "date": "2026-04-28",
+      "seconds": 17241.748
+    },
+    {
+      "date": "2026-04-29",
+      "seconds": 13691.833
+    },
+    {
+      "date": "2026-04-30",
+      "seconds": 5400
+    },
+    {
+      "date": "2026-05-01",
+      "seconds": 5414.32
+    },
+    {
+      "date": "2026-05-02",
+      "seconds": 2940.203
+    },
+    {
+      "date": "2026-05-03",
+      "seconds": 7822.373
+    },
+    {
+      "date": "2026-05-04",
+      "seconds": 8436.788
+    },
+    {
+      "date": "2026-05-05",
+      "seconds": 5882.562
+    },
+    {
+      "date": "2026-05-06",
+      "seconds": 17741.458
+    },
+    {
+      "date": "2026-05-07",
+      "seconds": 35658.595
+    },
+    {
+      "date": "2026-05-08",
+      "seconds": 9741.171
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 293232.474
+      "total_seconds": 350533.749
     },
     {
       "name": "Markdown",
-      "total_seconds": 292684.547
+      "total_seconds": 324122.9270000001
+    },
+    {
+      "name": "TypeScript",
+      "total_seconds": 87567.85
     },
     {
       "name": "JavaScript",
@@ -309,8 +365,8 @@
       "total_seconds": 64024.07600000001
     },
     {
-      "name": "TypeScript",
-      "total_seconds": 56710.36699999999
+      "name": "Python",
+      "total_seconds": 60862.671
     },
     {
       "name": "Java",
@@ -318,15 +374,11 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 23470.805999999997
+      "total_seconds": 23722.935999999994
     },
     {
       "name": "HTML",
       "total_seconds": 22805.731000000003
-    },
-    {
-      "name": "Python",
-      "total_seconds": 19144.803
     },
     {
       "name": "CSS",
@@ -357,12 +409,16 @@
       "total_seconds": 67.305
     },
     {
+      "name": "INI",
+      "total_seconds": 24.591
+    },
+    {
       "name": "Bash",
       "total_seconds": 11.086
     },
     {
-      "name": "INI",
-      "total_seconds": 9.505
+      "name": "TeX",
+      "total_seconds": 9.417
     }
   ],
   "daily_languages": {
@@ -778,8 +834,80 @@
     },
     "2026-04-24": {
       "TypeScript": 5821.1,
+      "Markdown": 19.792,
+      "Python": 0
+    },
+    "2026-04-25": {
+      "TypeScript": 5369.359,
+      "Markdown": 168.762,
+      "Python": 19.002
+    },
+    "2026-04-26": {
+      "Markdown": 5898.229,
+      "TypeScript": 5400,
+      "Python": 50.852
+    },
+    "2026-04-27": {
+      "C++": 9907.12,
+      "TypeScript": 4322.826,
+      "Markdown": 277.667,
+      "Text": 216.194,
+      "JSON": 183.78,
+      "Python": 12.371
+    },
+    "2026-04-28": {
+      "C++": 11743.351,
+      "TypeScript": 5464.937,
+      "Python": 33.46
+    },
+    "2026-04-29": {
+      "C++": 7699.891,
+      "TypeScript": 4900.361,
+      "Markdown": 1091.581,
+      "Python": 0
+    },
+    "2026-04-30": {
+      "TypeScript": 5400,
+      "Python": 0
+    },
+    "2026-05-01": {
+      "Python": 5400,
+      "Markdown": 14.32
+    },
+    "2026-05-02": {
+      "Python": 2539.748,
+      "Markdown": 391.038,
+      "TeX": 9.417
+    },
+    "2026-05-03": {
+      "Python": 7822.373,
       "Markdown": 0
     },
-    "2026-04-25": {}
+    "2026-05-04": {
+      "Python": 5842.777,
+      "Markdown": 2594.011
+    },
+    "2026-05-05": {
+      "Python": 5798.111,
+      "JSON": 68.35,
+      "Markdown": 16.101,
+      "C++": 0
+    },
+    "2026-05-06": {
+      "C++": 8786.369,
+      "Markdown": 5343.863,
+      "Python": 3611.226
+    },
+    "2026-05-07": {
+      "C++": 19164.544,
+      "Markdown": 10089.8,
+      "Python": 6379.993,
+      "INI": 15.086,
+      "Other": 9.172
+    },
+    "2026-05-08": {
+      "Markdown": 5533.216,
+      "Python": 4207.955
+    }
   }
 }
