@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-10T19:02:24.853Z",
-  "total": "158 hrs 5 mins",
-  "daily_average": "3 hrs 57 mins",
+  "lastUpdate": "2026-05-11T03:27:34.300Z",
+  "total": "151 hrs 23 mins",
+  "daily_average": "3 hrs 47 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 95707.55799999999,
-      "total_text": "26h 35m",
+      "total_seconds": 90854.261,
+      "total_text": "25h 14m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 406064.753,
-      "total_text": "112h 47m",
+      "total_seconds": 392955.753,
+      "total_text": "109h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1225478.4100000001,
-      "total_text": "340h 24m",
-      "days_active": 72
+      "total_seconds": 1229061.9010000003,
+      "total_text": "341h 24m",
+      "days_active": 73
     },
     "all_time": {
-      "total_seconds": 1225478.4100000001,
-      "total_text": "340h 24m",
-      "days_active": 72
+      "total_seconds": 1229061.9010000003,
+      "total_text": "341h 24m",
+      "days_active": 73
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-04",
-      "seconds": 8436.788,
-      "text": "2 hrs 20 mins"
-    },
     {
       "date": "2026-05-05",
       "seconds": 5882.562,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-05-10",
-      "seconds": 2650.581,
+      "seconds": 2656.242,
       "text": "44 mins"
+    },
+    {
+      "date": "2026-05-11",
+      "seconds": 3577.83,
+      "text": "59 mins"
     }
   ],
   "heatmap": [
@@ -348,7 +348,11 @@
     },
     {
       "date": "2026-05-10",
-      "seconds": 2650.581
+      "seconds": 2656.242
+    },
+    {
+      "date": "2026-05-11",
+      "seconds": 3577.83
     }
   ],
   "languages": [
@@ -370,7 +374,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 68169.11600000001
+      "total_seconds": 71752.607
     },
     {
       "name": "Astro",
@@ -923,7 +927,10 @@
       "Python": 4655.864
     },
     "2026-05-10": {
-      "Python": 2650.581
+      "Python": 2656.242
+    },
+    "2026-05-11": {
+      "Python": 3577.83
     }
   }
 }
