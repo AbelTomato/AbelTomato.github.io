@@ -1,55 +1,30 @@
 {
-  "lastUpdate": "2026-05-09T02:45:43.528Z",
-  "total": "163 hrs 12 mins",
-  "daily_average": "4 hrs 4 mins",
+  "lastUpdate": "2026-05-14T08:36:15.783Z",
+  "total": "150 hrs 27 mins",
+  "daily_average": "3 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 94123.71299999999,
-      "total_text": "26h 8m",
+      "total_seconds": 64670.78600000001,
+      "total_text": "17h 57m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 417354.115,
-      "total_text": "115h 55m",
+      "total_seconds": 364619.41800000006,
+      "total_text": "101h 16m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1216072.192,
-      "total_text": "337h 47m",
-      "days_active": 71
+      "total_seconds": 1262161.041,
+      "total_text": "350h 36m",
+      "days_active": 76
     },
     "all_time": {
-      "total_seconds": 1216072.192,
-      "total_text": "337h 47m",
-      "days_active": 71
+      "total_seconds": 1262161.041,
+      "total_text": "350h 36m",
+      "days_active": 76
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-03",
-      "seconds": 7822.373,
-      "text": "2 hrs 10 mins"
-    },
-    {
-      "date": "2026-05-04",
-      "seconds": 8436.788,
-      "text": "2 hrs 20 mins"
-    },
-    {
-      "date": "2026-05-05",
-      "seconds": 5882.562,
-      "text": "1 hr 38 mins"
-    },
-    {
-      "date": "2026-05-06",
-      "seconds": 17741.458,
-      "text": "4 hrs 55 mins"
-    },
-    {
-      "date": "2026-05-07",
-      "seconds": 35658.595,
-      "text": "9 hrs 54 mins"
-    },
     {
       "date": "2026-05-08",
       "seconds": 10373.677,
@@ -57,8 +32,33 @@
     },
     {
       "date": "2026-05-09",
-      "seconds": 8208.26,
-      "text": "2 hrs 16 mins"
+      "seconds": 14963.897,
+      "text": "4 hrs 9 mins"
+    },
+    {
+      "date": "2026-05-10",
+      "seconds": 2656.242,
+      "text": "44 mins"
+    },
+    {
+      "date": "2026-05-11",
+      "seconds": 9870.586,
+      "text": "2 hrs 44 mins"
+    },
+    {
+      "date": "2026-05-12",
+      "seconds": 9768.826,
+      "text": "2 hrs 42 mins"
+    },
+    {
+      "date": "2026-05-13",
+      "seconds": 10058.957,
+      "text": "2 hrs 47 mins"
+    },
+    {
+      "date": "2026-05-14",
+      "seconds": 6978.601,
+      "text": "1 hr 56 mins"
     }
   ],
   "heatmap": [
@@ -344,29 +344,49 @@
     },
     {
       "date": "2026-05-09",
-      "seconds": 8208.26
+      "seconds": 14963.897
+    },
+    {
+      "date": "2026-05-10",
+      "seconds": 2656.242
+    },
+    {
+      "date": "2026-05-11",
+      "seconds": 9870.586
+    },
+    {
+      "date": "2026-05-12",
+      "seconds": 9768.826
+    },
+    {
+      "date": "2026-05-13",
+      "seconds": 10058.957
+    },
+    {
+      "date": "2026-05-14",
+      "seconds": 6978.601
     }
   ],
   "languages": [
     {
       "name": "C++",
-      "total_seconds": 350533.749
+      "total_seconds": 355495.13800000004
     },
     {
       "name": "Markdown",
-      "total_seconds": 328307.8290000001
+      "total_seconds": 336365.586
+    },
+    {
+      "name": "JavaScript",
+      "total_seconds": 101014.52200000001
     },
     {
       "name": "TypeScript",
       "total_seconds": 87567.85
     },
     {
-      "name": "JavaScript",
-      "total_seconds": 87498.38700000002
-    },
-    {
       "name": "Python",
-      "total_seconds": 65518.535
+      "total_seconds": 84798.689
     },
     {
       "name": "Astro",
@@ -378,7 +398,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 23722.935999999994
+      "total_seconds": 23986.832999999995
     },
     {
       "name": "HTML",
@@ -414,7 +434,7 @@
     },
     {
       "name": "INI",
-      "total_seconds": 24.591
+      "total_seconds": 34.108000000000004
     },
     {
       "name": "Bash",
@@ -914,8 +934,32 @@
       "Python": 4207.955
     },
     "2026-05-09": {
-      "Python": 4655.864,
-      "Markdown": 3552.396
+      "Markdown": 5346.644,
+      "C++": 4961.389,
+      "Python": 4655.864
+    },
+    "2026-05-10": {
+      "Python": 2656.242
+    },
+    "2026-05-11": {
+      "JavaScript": 6283.239,
+      "Python": 3577.83,
+      "INI": 9.517
+    },
+    "2026-05-12": {
+      "JavaScript": 6168.826,
+      "Python": 3600
+    },
+    "2026-05-13": {
+      "Python": 4599.442,
+      "Markdown": 4156.952,
+      "JavaScript": 1038.666,
+      "JSON": 263.897
+    },
+    "2026-05-14": {
+      "Python": 4846.64,
+      "Markdown": 2106.557,
+      "JavaScript": 25.404
     }
   }
 }
