@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-14T03:22:01.736Z",
-  "total": "149 hrs 51 mins",
-  "daily_average": "3 hrs 44 mins",
+  "lastUpdate": "2026-05-14T08:36:15.783Z",
+  "total": "150 hrs 27 mins",
+  "daily_average": "3 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 62492.185000000005,
-      "total_text": "17h 21m",
+      "total_seconds": 64670.78600000001,
+      "total_text": "17h 57m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 362440.81700000004,
-      "total_text": "100h 40m",
+      "total_seconds": 364619.41800000006,
+      "total_text": "101h 16m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1259982.44,
-      "total_text": "349h 59m",
+      "total_seconds": 1262161.041,
+      "total_text": "350h 36m",
       "days_active": 76
     },
     "all_time": {
-      "total_seconds": 1259982.44,
-      "total_text": "349h 59m",
+      "total_seconds": 1262161.041,
+      "total_text": "350h 36m",
       "days_active": 76
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-14",
-      "seconds": 4800,
-      "text": "1 hr 20 mins"
+      "seconds": 6978.601,
+      "text": "1 hr 56 mins"
     }
   ],
   "heatmap": [
@@ -364,7 +364,7 @@
     },
     {
       "date": "2026-05-14",
-      "seconds": 4800
+      "seconds": 6978.601
     }
   ],
   "languages": [
@@ -374,11 +374,11 @@
     },
     {
       "name": "Markdown",
-      "total_seconds": 334259.02900000004
+      "total_seconds": 336365.586
     },
     {
       "name": "JavaScript",
-      "total_seconds": 100989.11800000002
+      "total_seconds": 101014.52200000001
     },
     {
       "name": "TypeScript",
@@ -386,7 +386,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 84752.049
+      "total_seconds": 84798.689
     },
     {
       "name": "Astro",
@@ -957,8 +957,9 @@
       "JSON": 263.897
     },
     "2026-05-14": {
-      "Python": 4800,
-      "JavaScript": 0
+      "Python": 4846.64,
+      "Markdown": 2106.557,
+      "JavaScript": 25.404
     }
   }
 }
