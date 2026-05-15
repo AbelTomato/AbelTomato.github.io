@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-15T05:11:41.497Z",
-  "total": "153 hrs 51 mins",
-  "daily_average": "3 hrs 50 mins",
+  "lastUpdate": "2026-05-15T08:47:49.962Z",
+  "total": "154 hrs 26 mins",
+  "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 72369.581,
-      "total_text": "20h 6m",
+      "total_seconds": 74472.182,
+      "total_text": "20h 41m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 356260.13500000007,
-      "total_text": "98h 57m",
+      "total_seconds": 358362.73600000003,
+      "total_text": "99h 32m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1280233.5129999998,
-      "total_text": "355h 37m",
+      "total_seconds": 1282336.1139999998,
+      "total_text": "356h 12m",
       "days_active": 77
     },
     "all_time": {
-      "total_seconds": 1280233.5129999998,
-      "total_text": "355h 37m",
+      "total_seconds": 1282336.1139999998,
+      "total_text": "356h 12m",
       "days_active": 77
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-15",
-      "seconds": 10917.183,
-      "text": "3 hrs 1 min"
+      "seconds": 13019.784,
+      "text": "3 hrs 36 mins"
     }
   ],
   "heatmap": [
@@ -368,7 +368,7 @@
     },
     {
       "date": "2026-05-15",
-      "seconds": 10917.183
+      "seconds": 13019.784
     }
   ],
   "languages": [
@@ -382,7 +382,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 104414.60700000002
+      "total_seconds": 106357.54200000002
     },
     {
       "name": "Python",
@@ -434,7 +434,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 151.888
+      "total_seconds": 311.554
     },
     {
       "name": "INI",
@@ -968,10 +968,10 @@
     },
     "2026-05-15": {
       "Python": 6352.375,
-      "JavaScript": 3400.085,
+      "JavaScript": 5343.02,
       "Markdown": 907.162,
+      "Git": 224.784,
       "TypeScript": 179.388,
-      "Git": 65.118,
       "Astro": 13.055
     }
   }
