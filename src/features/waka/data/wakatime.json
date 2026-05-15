@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-14T19:44:19.518Z",
-  "total": "152 hrs 26 mins",
-  "daily_average": "3 hrs 48 mins",
+  "lastUpdate": "2026-05-15T01:31:56.528Z",
+  "total": "150 hrs 59 mins",
+  "daily_average": "3 hrs 46 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 71826.07500000001,
-      "total_text": "19h 57m",
+      "total_seconds": 62064.018000000004,
+      "total_text": "17h 14m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 371774.70700000005,
-      "total_text": "103h 16m",
+      "total_seconds": 345954.57200000004,
+      "total_text": "96h 5m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1269316.3299999998,
-      "total_text": "352h 35m",
-      "days_active": 76
+      "total_seconds": 1269927.95,
+      "total_text": "352h 45m",
+      "days_active": 77
     },
     "all_time": {
-      "total_seconds": 1269316.3299999998,
-      "total_text": "352h 35m",
-      "days_active": 76
+      "total_seconds": 1269927.95,
+      "total_text": "352h 45m",
+      "days_active": 77
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-08",
-      "seconds": 10373.677,
-      "text": "2 hrs 52 mins"
-    },
     {
       "date": "2026-05-09",
       "seconds": 14963.897,
@@ -59,6 +54,11 @@
       "date": "2026-05-14",
       "seconds": 14133.89,
       "text": "3 hrs 55 mins"
+    },
+    {
+      "date": "2026-05-15",
+      "seconds": 611.62,
+      "text": "10 mins"
     }
   ],
   "heatmap": [
@@ -365,6 +365,10 @@
     {
       "date": "2026-05-14",
       "seconds": 14133.89
+    },
+    {
+      "date": "2026-05-15",
+      "seconds": 611.62
     }
   ],
   "languages": [
@@ -374,7 +378,7 @@
     },
     {
       "name": "Markdown",
-      "total_seconds": 343501.41000000003
+      "total_seconds": 344113.03
     },
     {
       "name": "JavaScript",
@@ -961,6 +965,10 @@
       "Python": 4846.64,
       "JavaScript": 25.404,
       "Git": 19.465
+    },
+    "2026-05-15": {
+      "Markdown": 611.62,
+      "Git": 0
     }
   }
 }
