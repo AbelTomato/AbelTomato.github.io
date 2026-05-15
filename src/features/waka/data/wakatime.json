@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-15T01:31:56.528Z",
-  "total": "150 hrs 59 mins",
-  "daily_average": "3 hrs 46 mins",
+  "lastUpdate": "2026-05-15T03:25:48.830Z",
+  "total": "153 hrs 34 mins",
+  "daily_average": "3 hrs 50 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 62064.018000000004,
-      "total_text": "17h 14m",
+      "total_seconds": 71313.743,
+      "total_text": "19h 48m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 345954.57200000004,
-      "total_text": "96h 5m",
+      "total_seconds": 355204.297,
+      "total_text": "98h 40m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1269927.95,
-      "total_text": "352h 45m",
+      "total_seconds": 1279177.6749999998,
+      "total_text": "355h 19m",
       "days_active": 77
     },
     "all_time": {
-      "total_seconds": 1269927.95,
-      "total_text": "352h 45m",
+      "total_seconds": 1279177.6749999998,
+      "total_text": "355h 19m",
       "days_active": 77
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-15",
-      "seconds": 611.62,
-      "text": "10 mins"
+      "seconds": 9861.345,
+      "text": "2 hrs 44 mins"
     }
   ],
   "heatmap": [
@@ -368,7 +368,7 @@
     },
     {
       "date": "2026-05-15",
-      "seconds": 611.62
+      "seconds": 9861.345
     }
   ],
   "languages": [
@@ -378,19 +378,19 @@
     },
     {
       "name": "Markdown",
-      "total_seconds": 344113.03
+      "total_seconds": 344408.57200000004
     },
     {
       "name": "JavaScript",
-      "total_seconds": 101014.52200000001
+      "total_seconds": 103551.21200000001
+    },
+    {
+      "name": "Python",
+      "total_seconds": 91151.064
     },
     {
       "name": "TypeScript",
       "total_seconds": 87567.85
-    },
-    {
-      "name": "Python",
-      "total_seconds": 84798.689
     },
     {
       "name": "Astro",
@@ -434,7 +434,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 86.77000000000001
+      "total_seconds": 151.888
     },
     {
       "name": "INI",
@@ -967,8 +967,10 @@
       "Git": 19.465
     },
     "2026-05-15": {
-      "Markdown": 611.62,
-      "Git": 0
+      "Python": 6352.375,
+      "JavaScript": 2536.69,
+      "Markdown": 907.162,
+      "Git": 65.118
     }
   }
 }
