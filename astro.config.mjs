@@ -18,7 +18,8 @@ export default defineConfig({
   base: "/",
   integrations: [
     mdx({
-      remarkPlugins: [[mermaid, { output: "svg", theme: "dark" }]],
+      remarkPlugins: [[mermaid, { output: "svg", theme: "dark" }], remarkMath],
+      rehypePlugins: [rehypeKatex],
     }),
     sitemap(),
     react(),
