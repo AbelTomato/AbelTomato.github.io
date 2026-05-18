@@ -18,7 +18,22 @@ export default defineConfig({
   base: "/",
   integrations: [
     mdx({
-      remarkPlugins: [[mermaid, { output: "svg", theme: "dark" }], remarkMath],
+      remarkPlugins: [
+        remarkMath,
+        [
+          mermaid,
+          {
+            output: "svg",
+            theme: "dark",
+            mermaid: {
+              themeVariables: {
+                fontFamily:
+                  '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", -apple-system, sans-serif',
+              },
+            },
+          },
+        ],
+      ],
       rehypePlugins: [rehypeKatex],
     }),
     sitemap(),
