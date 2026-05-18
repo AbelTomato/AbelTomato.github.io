@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-18T10:01:45.542Z",
-  "total": "152 hrs 25 mins",
-  "daily_average": "3 hrs 48 mins",
+  "lastUpdate": "2026-05-18T12:26:32.403Z",
+  "total": "153 hrs 56 mins",
+  "daily_average": "3 hrs 50 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 88569.745,
-      "total_text": "24h 36m",
+      "total_seconds": 94037.56599999999,
+      "total_text": "26h 7m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 350334.23099999997,
-      "total_text": "97h 18m",
+      "total_seconds": 355802.05199999997,
+      "total_text": "98h 50m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1323924.402,
-      "total_text": "367h 45m",
+      "total_seconds": 1329392.223,
+      "total_text": "369h 16m",
       "days_active": 80
     },
     "all_time": {
-      "total_seconds": 1323924.402,
-      "total_text": "367h 45m",
+      "total_seconds": 1329392.223,
+      "total_text": "369h 16m",
       "days_active": 80
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-18",
-      "seconds": 16266.273,
-      "text": "4 hrs 31 mins"
+      "seconds": 21734.094,
+      "text": "6 hrs 2 mins"
     }
   ],
   "heatmap": [
@@ -380,13 +380,13 @@
     },
     {
       "date": "2026-05-18",
-      "seconds": 16266.273
+      "seconds": 21734.094
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 360565.39600000007
+      "total_seconds": 365061.928
     },
     {
       "name": "C++",
@@ -394,7 +394,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 116998.97800000002
+      "total_seconds": 117136.15700000002
     },
     {
       "name": "Python",
@@ -426,7 +426,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 2379.995
+      "total_seconds": 3214.105
     },
     {
       "name": "YAML",
@@ -1008,9 +1008,10 @@
       "JavaScript": 125.853
     },
     "2026-05-18": {
-      "JavaScript": 8243.485,
+      "JavaScript": 8380.664,
+      "Markdown": 8248.584,
       "Python": 4270.736,
-      "Markdown": 3752.052
+      "MDX": 834.11
     }
   }
 }
