@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-19T03:29:38.844Z",
-  "total": "149 hrs",
-  "daily_average": "3 hrs 43 mins",
+  "lastUpdate": "2026-05-19T09:40:51.464Z",
+  "total": "151 hrs 43 mins",
+  "daily_average": "3 hrs 47 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 90033.456,
-      "total_text": "25h 0m",
+      "total_seconds": 99780.448,
+      "total_text": "27h 43m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 347068.05400000006,
-      "total_text": "96h 24m",
+      "total_seconds": 356815.0460000001,
+      "total_text": "99h 6m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1335156.939,
-      "total_text": "370h 52m",
+      "total_seconds": 1344903.931,
+      "total_text": "373h 35m",
       "days_active": 81
     },
     "all_time": {
-      "total_seconds": 1335156.939,
-      "total_text": "370h 52m",
+      "total_seconds": 1344903.931,
+      "total_text": "373h 35m",
       "days_active": 81
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-19",
-      "seconds": 5575.777,
-      "text": "1 hr 32 mins"
+      "seconds": 15322.769,
+      "text": "4 hrs 15 mins"
     }
   ],
   "heatmap": [
@@ -384,13 +384,13 @@
     },
     {
       "date": "2026-05-19",
-      "seconds": 5575.777
+      "seconds": 15322.769
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 365082.033
+      "total_seconds": 372596.32800000004
     },
     {
       "name": "C++",
@@ -398,7 +398,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 119132.87100000001
+      "total_seconds": 121140.15300000002
     },
     {
       "name": "Python",
@@ -430,7 +430,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 3403.044
+      "total_seconds": 3628.459
     },
     {
       "name": "YAML",
@@ -1018,9 +1018,10 @@
       "MDX": 1023.049
     },
     "2026-05-19": {
+      "Markdown": 7534.4,
+      "JavaScript": 4003.996,
       "Python": 3558.958,
-      "JavaScript": 1996.714,
-      "Markdown": 20.105
+      "MDX": 225.415
     }
   }
 }
