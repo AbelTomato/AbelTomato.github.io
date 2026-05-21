@@ -1,43 +1,76 @@
 import React from "react";
 import { type WakaData } from "../hooks/useWakaData";
+import { Progress } from "@components/ui/progress";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
 
 interface LanguageStatsProps {
-  languages: WakaData["languages"];
+  languages?: WakaData["languages"];
   totalLangSeconds: number;
+}
+
+interface SingleLanguageProps {
+  name: string;
+  totalLangSeconds: number;
+  second: number;
+}
+
+function SingleLanguage({
+  name,
+  totalLangSeconds,
+  second,
+}: SingleLanguageProps) {
+  const percent =
+    totalLangSeconds === 0 ? 0 : (second / totalLangSeconds) * 100;
+
+  return (
+    <div className="space-y-1.5 group">
+      <div className="flex justify-between items-center text-xs">
+        <span className="font-semibold text-foreground group-hover:text-indigo-500 transition-colors">
+          {name}
+        </span>
+        <span className="text-muted-foreground font-mono">
+          {(second / 3600).toFixed(1)}h
+        </span>
+      </div>
+
+      <Progress
+        value={percent}
+        className="h-1.5 bg-secondary transition-colors group-hover:bg-muted"
+      />
+    </div>
+  );
 }
 
 export const LanguageStats = ({
   languages,
   totalLangSeconds,
 }: LanguageStatsProps) => {
-  return (
-    <div className="bg-white dark:bg-slate-900 shadow-sm dark:shadow-slate-950/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
-      <h3 className="text-sm font-bold text-slate-500 dark:text-slate-400 mb-6 flex items-center gap-2 italic">
-        # Languages
-      </h3>
+  const hasData = Array.isArray(languages) && languages.length > 0;
 
-      <div className="space-y-4 max-h-55 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-slate-300">
-        {languages.map((lang, index) => (
-          <div className="group relative">
-            <div className="flex justify-between text-xs mb-1.5">
-              <span className="font-bold text-slate-700 dark:text-slate-300">
-                {lang.name}
-              </span>
-              <span className="text-slate-500 dark:text-slate-400 font-mono">
-                {(lang.total_seconds / 3600).toFixed(1)}h
-              </span>
-            </div>
-            <div className="h-2 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-indigo-500/80 group-hover:bg-indigo-600 transition-all duration-300"
-                style={{
-                  width: `${(lang.total_seconds / totalLangSeconds) * 100}%`,
-                }}
-              />
-            </div>
+  return (
+    <Card className="flex flex-col h-full self-start">
+      <CardHeader className="pb-3">
+        <CardTitle className="text-sm font-medium italic text-muted-foreground tracking-wide">
+          # Languages
+        </CardTitle>
+      </CardHeader>
+
+      <CardContent className="space-y-4 flex-1 overflow-y-auto max-h-60 pr-2 scrollbar-thin">
+        {hasData ? (
+          languages.map((lang) => (
+            <SingleLanguage
+              key={lang.name}
+              name={lang.name}
+              totalLangSeconds={totalLangSeconds}
+              second={lang.total_seconds}
+            />
+          ))
+        ) : (
+          <div className="flex items-center justify-center h-32 text-sm text-muted-foreground">
+            暂无语言数据
           </div>
-        ))}
-      </div>
-    </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };

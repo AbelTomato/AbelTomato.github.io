@@ -1,80 +1,95 @@
 import React from "react";
 import { type WakaData } from "../hooks/useWakaData";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import { BarChart3, CalendarDays, Clock, History } from "lucide-react";
 
 interface CodeStatsProps {
-  stats: WakaData["stats"];
+  stats?: WakaData["stats"];
+}
+
+interface StatItemProps {
+  title: string;
+  data?: {
+    total_text?: string;
+    days_active?: number;
+  };
+  icon: React.ReactNode;
+  highlight?: boolean;
+}
+
+function StatCard({ title, data, icon, highlight = false }: StatItemProps) {
+  const timeText = data?.total_text || "0h 0m";
+  const [hours, minutes] = timeText.includes(" ")
+    ? timeText.split(" ")
+    : [timeText, "0m"];
+  const activeDays = data?.days_active || 0;
+
+  return (
+    <Card
+      className={`overflow-hidden transition-all duration-200 hover:shadow-md ${
+        highlight
+          ? "border-emerald-500/50 bg-emerald-50/10 dark:bg-emerald-950/5"
+          : "border-border"
+      }`}
+    >
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+        <CardTitle className="text-xs font-semibold tracking-wider uppercase text-muted-foreground">
+          {title}
+        </CardTitle>
+        <div
+          className={highlight ? "text-emerald-500" : "text-muted-foreground"}
+        >
+          {icon}
+        </div>
+      </CardHeader>
+
+      <CardContent>
+        <div className="flex items-baseline gap-1">
+          <span
+            className={`text-3xl font-bold tracking-tight font-mono ${
+              highlight
+                ? "text-emerald-600 dark:text-emerald-400"
+                : "text-indigo-600 dark:text-indigo-400"
+            }`}
+          >
+            {hours}
+          </span>
+          <span className="text-xs font-medium text-muted-foreground font-mono ml-0.5">
+            {minutes}
+          </span>
+          <span className="text-xs text-muted-foreground/70 font-mono ml-2">
+            / {activeDays}d
+          </span>
+        </div>
+      </CardContent>
+    </Card>
+  );
 }
 
 export const CodeStats = ({ stats }: CodeStatsProps) => {
-  const defaultContainer =
-    "bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm";
-  const defaultHour =
-    "text-2xl font-black text-indigo-600 dark:text-indigo-400";
-  const defaultMin = "text-xs text-slate-400 dark:text-slate-500 ml-1";
-  const defaultDays = "text-slate-400";
-
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {[
-        {
-          title: "总编码时长",
-          data: stats?.all_time,
-          containerClass:
-            "col-span-2 sm:col-span-1 bg-emerald-50 dark:bg-black border-l-4 border-emerald-500 p-5 rounded-2xl shadow-inner shadow-emerald-100 dark:shadow-none text-slate-900 dark:text-white transition-colors duration-300",
-          hourClass:
-            "text-3xl font-black text-emerald-600 dark:text-emerald-400 font-mono", // 小时：浅绿深绿切换
-          minClass:
-            "text-xs text-emerald-700/80 dark:text-slate-400 ml-1 font-mono", // 分钟：微调
-          daysClass: "text-emerald-800/60 dark:text-slate-500",
-          isMain: true,
-        },
-        {
-          title: "最近一周",
-          data: stats?.last_7_days,
-          containerClass: defaultContainer,
-          hourClass: defaultHour,
-          minClass: defaultMin,
-          daysClass: defaultDays,
-        },
-        {
-          title: "最近一月",
-          data: stats?.last_30_days,
-          containerClass: defaultContainer,
-          hourClass: defaultHour,
-          minClass: defaultMin,
-          daysClass: defaultDays,
-        },
-        {
-          title: "年度累计",
-          data: stats?.last_365_days,
-          containerClass: defaultContainer,
-          hourClass: defaultHour,
-          minClass: defaultMin,
-          daysClass: defaultDays,
-        },
-      ].map((item) => {
-        const timeText = item.data?.total_text || "0h 0m";
-        const [h, m] = timeText.includes(" ")
-          ? timeText.split(" ")
-          : [timeText, "0m"];
-
-        return (
-          <div className={item.containerClass}>
-            <p
-              className={`text-[10px] font-bold uppercase tracking-wider ${item.isMain ? "text-slate-400" : "text-slate-500"}`}
-            >
-              {item.title}
-            </p>
-            <div className="mt-2 flex items-baseline gap-1">
-              <span className={item.hourClass}>{h}</span>
-              <span className={item.minClass}>{m}</span>
-              <span className={`text-[10px] ml-1.5 ${item.daysClass}`}>
-                / {item.data?.days_active || 0}d
-              </span>
-            </div>
-          </div>
-        );
-      })}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <StatCard
+        title="总编码时长"
+        data={stats?.all_time}
+        icon={<Clock className="h-4 w-full" />}
+        highlight
+      />
+      <StatCard
+        title="最近一周"
+        data={stats?.last_7_days}
+        icon={<History className="h-4 w-full" />}
+      />
+      <StatCard
+        title="最近一月"
+        data={stats?.last_30_days}
+        icon={<CalendarDays className="h-4 w-full" />}
+      />
+      <StatCard
+        title="最近一年"
+        data={stats?.last_365_days}
+        icon={<BarChart3 className="h-4 w-full" />}
+      />
     </div>
   );
 };

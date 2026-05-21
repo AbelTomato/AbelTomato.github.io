@@ -1,55 +1,100 @@
 import React from "react";
 import { type WakaData } from "../hooks/useWakaData";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardTitle,
+  CardDescription,
+} from "@components/ui/card";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@components/ui/chart";
+import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
 
 interface ActiveTrendProps {
   weeklyTotalHours: string;
-  weekly: WakaData["weekly"];
-  maxSeconds: number;
+  weekly?: WakaData["weekly"];
 }
 
-export const ActiveTrend = ({
-  weeklyTotalHours,
-  weekly,
-  maxSeconds,
-}: ActiveTrendProps) => {
+export const ActiveTrend = ({ weeklyTotalHours, weekly }: ActiveTrendProps) => {
+  const chartData = (weekly || []).map((day) => ({
+    dateLabel: day.date.split("-").slice(1).join("/"),
+    hours: parseFloat((day.seconds / 3600).toFixed(1)),
+    formattedText: day.text,
+  }));
+
+  const chartConfig = {
+    hours: {
+      label: "编码时长",
+      theme: {
+        light: "#4f46e5",
+        dark: "#818cf8",
+      },
+    },
+  };
+
   return (
-    <div className="bg-white dark:bg-slate-900 shadow-sm dark:-slate-950/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
-      <div className="flex justify-between items-start mb-10 relative z-10">
-        <div>
-          <h3 className="text-lg font-bold tracking-tight text-blue-400">
-            活跃趋势
-          </h3>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            最近一周编码时长
-          </p>
+    <Card className="w-full self-start">
+      <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-6">
+        <div className="space-y-1">
+          <CardTitle className="text-sm font-medium italic text-muted-foreground tracking-wide">
+            #Active Trend
+          </CardTitle>
+          <CardDescription>最近一周编码时长趋势</CardDescription>
         </div>
         <div className="text-right">
-          <p className="text-3xl font-black text-black dark:text-white">
+          <p className="text-3xl font-bold tracking-tight font-mono text-foreground">
             {weeklyTotalHours}h
           </p>
-          <p className="text-xs text-slate-500 dark:text-slate-400">本周总计</p>
+          <p className="text-xs text-muted-foreground">本周总计</p>
         </div>
-      </div>
+      </CardHeader>
 
-      <div className="flex items-end justify-between h-40 gap-3 relative z-10">
-        {weekly.map((day, index) => (
-          <div className="flex-1 flex flex-col items-center group/bar relative h-full">
-            <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-[10px] py-1 px-2 rounded shadow-xl opacity-0 group-hover/bar:opacity-100 group-hover/bar:-translate-y-2 transition-all pointer-events-none z-20 whitespace-nowrap border border-slate-200 dark:border-slate-700">
-              {day.text}
-            </div>
-
-            <div className="w-full bg-slate-900/50 rounded-t-xl relative flex-1 flex flex-col justify-end overflow-hidden border border-white/5">
-              <div
-                className="w-full bg-linear-to-t from-indigo-600 to-indigo-400 dark:from-indigo-500 dark:to-indigo-300 transition-all duration-1000 ease-out min-h-1"
-                style={{ height: `${(day.seconds / maxSeconds) * 100}%` }}
+      <CardContent>
+        <ChartContainer config={chartConfig} className="h-40 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={chartData}
+              margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
+            >
+              <XAxis
+                dataKey="dateLabel"
+                stroke="hsl(var(--muted-foreground))"
+                fontSize={10}
+                tickLine={false}
+                axisLine={false}
+                dy={10}
               />
-            </div>
-            <span className="text-[10px] mt-3 font-medium text-slate-500">
-              {day.date.split("-").slice(1).join("/")}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
+              <YAxis hide domain={[0, "auto"]} />
+
+              <ChartTooltip
+                cursor={{ fill: "hsl(var(--muted)/0.2)", radius: 4 }}
+                content={
+                  <ChartTooltipContent
+                    hideLabel
+                    formatter={(value, name, props) => (
+                      <div className="flex items-center gap-1 text-xs font-mono">
+                        <span className="font-medium">
+                          {props.payload.formattedText}
+                        </span>
+                      </div>
+                    )}
+                  />
+                }
+              />
+              <Bar
+                dataKey="hours"
+                fill="var(--color-hours)"
+                radius={[4, 4, 0, 0]}
+                maxBarSize={40}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartContainer>
+      </CardContent>
+    </Card>
   );
 };

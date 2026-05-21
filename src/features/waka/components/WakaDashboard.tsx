@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { useWakaData, type WakaData } from "../hooks/useWakaData";
+import React, { useMemo, useState } from "react";
+import { useWakaData } from "../hooks/useWakaData";
 import { CodeReport } from "./CodeReport";
 import { CodeStats } from "./CodeStats";
 import { LanguageStats } from "./LanguageStats";
 import { ActiveTrend } from "./ActiveTrend";
 import { HeatMap } from "./HeatMap";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Code } from "astro:components";
 
-export default function WakaDashBoard() {
+export default function WakaDashboard() {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
@@ -18,71 +19,107 @@ export default function WakaDashBoard() {
 }
 
 function DashboardContent() {
-  const { data, isLoading, error } = useWakaData(); // 爬取数据
+  const { data, isLoading, error } = useWakaData();
 
-  // 处理加载中和异常
-  if (isLoading) return <div className="p-10 text-center">Loading...</div>;
-  if (error || !data)
-    return <div className="p-10 text-center text-red-500">数据加载异常</div>;
+  const dashboardState = useMemo(() => {
+    if (!data) {
+      return {
+        hasData: false,
+        totalLangSeconds: 1,
+        weeklyTotalHours: "0.0",
+      };
+    }
 
-  const { lastUpdate, stats, weekly = [], languages = [], heatmap = [] } = data; // 解构赋值拿到数据
+    const {
+      lastUpdate,
+      stats,
+      weekly = [],
+      languages = [],
+      heatmap = [],
+    } = data;
 
-  // 判断数据是否缺失
-  const hadData =
-    Array.isArray(weekly) &&
-    weekly.length > 0 &&
-    Array.isArray(languages) &&
-    languages.length > 0 &&
-    Array.isArray(heatmap) &&
-    heatmap.length > 0;
+    const hasData =
+      Array.isArray(weekly) &&
+      weekly.length > 0 &&
+      Array.isArray(languages) &&
+      languages.length > 0 &&
+      Array.isArray(heatmap) &&
+      heatmap.length > 0;
 
-  const maxSeconds = hadData
-    ? Math.max(...weekly.map((d) => d.seconds ?? 0), 3600)
-    : 3600;
+    if (!hasData) {
+      return {
+        hasData: false,
+        totalLangSeconds: 1,
+        weeklyTotalHours: "0.0",
+      };
+    }
 
-  const totalLangSeconds = hadData
-    ? languages.reduce((acc, l) => acc + (l.total_seconds ?? 0), 0)
-    : 1;
+    const totalLangSeconds = languages.reduce(
+      (acc, l) => acc + (l.total_seconds ?? 0),
+      0,
+    );
 
-  const weeklyTotalHours = hadData
-    ? (weekly.reduce((sum, d) => sum + (d.seconds ?? 0), 0) / 3600).toFixed(1)
-    : "0.0";
+    const weeklyTotalHours = (
+      weekly.reduce((sum, d) => sum + (d.seconds ?? 0), 0) / 3600
+    ).toFixed(1);
 
-  const getHeatColor = (sec: number, maxSec: number = 60): string | null => {
-    if (sec === 0) return null;
-    const intensity = Math.min(sec / maxSec, 1);
-    const lightness = 30 + intensity * 40;
-    return `hsl(220, 80%, ${lightness}%)`;
-  };
+    return {
+      hasData,
+      lastUpdate,
+      stats,
+      weekly,
+      languages,
+      heatmap,
+      totalLangSeconds: totalLangSeconds > 0 ? totalLangSeconds : 1,
+      weeklyTotalHours,
+    };
+  }, [data]);
 
-  return hadData ? (
-    <div className="max-w-6xl mx-auto p-4 space-y-6 font-sans">
+  if (isLoading) {
+    return (
+      <div className="flex h-100 items-center justify-center text-sm text-muted-foreground font-mono animate-pulse">
+        Fetching WakaTime pulses...
+      </div>
+    );
+  }
+
+  if (error || !dashboardState.hasData) {
+    return (
+      <div className="mx-auto max-w-md my-12 p-6 text-center border rounded-xl bg-destructive/5 border-destructive/20">
+        <p className="font-semibold text-destructive mb-1">数据链路中断</p>
+        <p className="text-xs text-muted-foreground">请检查API密钥配置</p>
+      </div>
+    );
+  }
+
+  const {
+    lastUpdate,
+    stats,
+    weekly,
+    languages,
+    heatmap,
+    totalLangSeconds,
+    weeklyTotalHours,
+  } = dashboardState;
+
+  return (
+    <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-6 antialiased selection:bg-primary/10">
       <CodeReport lastUpdate={lastUpdate} />
 
       <CodeStats stats={stats} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         <LanguageStats
           languages={languages}
           totalLangSeconds={totalLangSeconds}
         />
 
-        <ActiveTrend
-          weeklyTotalHours={weeklyTotalHours}
-          weekly={weekly}
-          maxSeconds={maxSeconds}
-        />
+        <ActiveTrend weeklyTotalHours={weeklyTotalHours} weekly={weekly} />
       </div>
 
-      <HeatMap
-        heatmap={heatmap}
-        getHeatColor={getHeatColor}
-        maxSeconds={maxSeconds}
-      />
-    </div>
-  ) : (
-    <div className="p-10 text-center text-red-500 bg-red-50 rounded-3xl border border-red-200 max-w-4xl mx-auto">
-      <p className="font-bold text-2xl mb-4">数据加载异常</p>
+      <div className="w-full">
+        <HeatMap heatmap={heatmap} />
+      </div>
     </div>
   );
 }
