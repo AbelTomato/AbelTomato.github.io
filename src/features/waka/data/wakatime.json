@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-21T09:39:57.121Z",
-  "total": "155 hrs 43 mins",
-  "daily_average": "3 hrs 53 mins",
+  "lastUpdate": "2026-05-21T12:21:58.253Z",
+  "total": "156 hrs 58 mins",
+  "daily_average": "3 hrs 55 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 127398.377,
-      "total_text": "35h 23m",
+      "total_seconds": 131889.955,
+      "total_text": "36h 38m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 378306.74399999995,
-      "total_text": "105h 5m",
+      "total_seconds": 382798.3219999999,
+      "total_text": "106h 19m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1396714.707,
-      "total_text": "387h 58m",
+      "total_seconds": 1401206.285,
+      "total_text": "389h 13m",
       "days_active": 83
     },
     "all_time": {
-      "total_seconds": 1396714.707,
-      "total_text": "387h 58m",
+      "total_seconds": 1401206.285,
+      "total_text": "389h 13m",
       "days_active": 83
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-21",
-      "seconds": 26412.357,
-      "text": "7 hrs 20 mins"
+      "seconds": 30903.935,
+      "text": "8 hrs 35 mins"
     }
   ],
   "heatmap": [
@@ -392,13 +392,13 @@
     },
     {
       "date": "2026-05-21",
-      "seconds": 26412.357
+      "seconds": 30903.935
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 380740.134
+      "total_seconds": 384946.531
     },
     {
       "name": "C++",
@@ -438,7 +438,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 6931.261
+      "total_seconds": 7199.967000000001
     },
     {
       "name": "TSConfig",
@@ -446,7 +446,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 1463.5490000000002
+      "total_seconds": 1480.0240000000001
     },
     {
       "name": "CMake",
@@ -1048,14 +1048,15 @@
     "2026-05-21": {
       "TypeScript": 17233.779,
       "Python": 5012.732,
+      "Markdown": 4215.557,
       "C++": 2599.466,
       "TSConfig": 942.698,
       "Other": 361.379,
-      "YAML": 123.284,
+      "MDX": 268.706,
+      "YAML": 139.759,
       "JSON": 81.059,
       "Astro": 25.55,
       "JavaScript": 15.718,
-      "Markdown": 9.16,
       "Git Config": 4.967,
       "INI": 2.565
     }
