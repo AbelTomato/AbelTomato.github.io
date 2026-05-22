@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-22T03:36:14.465Z",
-  "total": "155 hrs 19 mins",
-  "daily_average": "3 hrs 52 mins",
+  "lastUpdate": "2026-05-22T05:13:45.478Z",
+  "total": "155 hrs 54 mins",
+  "daily_average": "3 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 127863.007,
-      "total_text": "35h 31m",
+      "total_seconds": 129960.515,
+      "total_text": "36h 6m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 384890.8059999999,
-      "total_text": "106h 54m",
+      "total_seconds": 386988.31399999995,
+      "total_text": "107h 29m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1412615.859,
-      "total_text": "392h 23m",
+      "total_seconds": 1414713.3669999999,
+      "total_text": "392h 58m",
       "days_active": 84
     },
     "all_time": {
-      "total_seconds": 1412615.859,
-      "total_text": "392h 23m",
+      "total_seconds": 1414713.3669999999,
+      "total_text": "392h 58m",
       "days_active": 84
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-22",
-      "seconds": 11359.622,
-      "text": "3 hrs 9 mins"
+      "seconds": 13457.13,
+      "text": "3 hrs 44 mins"
     }
   ],
   "heatmap": [
@@ -396,7 +396,7 @@
     },
     {
       "date": "2026-05-22",
-      "seconds": 11359.622
+      "seconds": 13457.13
     }
   ],
   "languages": [
@@ -418,11 +418,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 114124.79
+      "total_seconds": 115426.511
     },
     {
       "name": "Astro",
-      "total_seconds": 65417.96700000001
+      "total_seconds": 65978.92500000002
     },
     {
       "name": "Java",
@@ -430,7 +430,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 25443.164999999994
+      "total_seconds": 25677.993999999995
     },
     {
       "name": "HTML",
@@ -1065,10 +1065,11 @@
       "INI": 2.565
     },
     "2026-05-22": {
-      "TypeScript": 6119.613,
+      "TypeScript": 7421.334,
       "Python": 3734.421,
-      "JSON": 1023.154,
-      "Astro": 482.434
+      "JSON": 1257.983,
+      "Astro": 1043.392,
+      "Git": 0
     }
   }
 }
