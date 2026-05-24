@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-24T03:32:55.058Z",
-  "total": "149 hrs 52 mins",
-  "daily_average": "3 hrs 44 mins",
+  "lastUpdate": "2026-05-24T08:28:49.237Z",
+  "total": "150 hrs 55 mins",
+  "daily_average": "3 hrs 46 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 129455.88799999999,
-      "total_text": "35h 57m",
+      "total_seconds": 133207.574,
+      "total_text": "37h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 391679.80400000006,
-      "total_text": "108h 47m",
+      "total_seconds": 395431.49000000005,
+      "total_text": "109h 50m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1437114.017,
-      "total_text": "399h 11m",
+      "total_seconds": 1440865.703,
+      "total_text": "400h 14m",
       "days_active": 86
     },
     "all_time": {
-      "total_seconds": 1437114.017,
-      "total_text": "399h 11m",
+      "total_seconds": 1440865.703,
+      "total_text": "400h 14m",
       "days_active": 86
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-24",
-      "seconds": 2406.527,
-      "text": "40 mins"
+      "seconds": 6158.213,
+      "text": "1 hr 42 mins"
     }
   ],
   "heatmap": [
@@ -404,13 +404,13 @@
     },
     {
       "date": "2026-05-24",
-      "seconds": 2406.527
+      "seconds": 6158.213
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 384946.531
+      "total_seconds": 386647.254
     },
     {
       "name": "C++",
@@ -418,7 +418,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 130540.69099999999
+      "total_seconds": 132439.49599999998
     },
     {
       "name": "JavaScript",
@@ -430,7 +430,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 67738.73800000001
+      "total_seconds": 67890.89600000001
     },
     {
       "name": "Java",
@@ -1086,7 +1086,10 @@
       "Astro": 426.556
     },
     "2026-05-24": {
-      "Python": 2406.527
+      "Python": 2406.527,
+      "TypeScript": 1898.805,
+      "Markdown": 1700.723,
+      "Astro": 152.158
     }
   }
 }
