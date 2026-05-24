@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-23T19:09:08.287Z",
-  "total": "154 hrs 7 mins",
-  "daily_average": "3 hrs 51 mins",
+  "lastUpdate": "2026-05-24T03:32:55.058Z",
+  "total": "149 hrs 52 mins",
+  "daily_average": "3 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 138435.347,
-      "total_text": "38h 27m",
+      "total_seconds": 129455.88799999999,
+      "total_text": "35h 57m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 395114.16900000005,
-      "total_text": "109h 45m",
+      "total_seconds": 391679.80400000006,
+      "total_text": "108h 47m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1434707.49,
-      "total_text": "398h 31m",
-      "days_active": 85
+      "total_seconds": 1437114.017,
+      "total_text": "399h 11m",
+      "days_active": 86
     },
     "all_time": {
-      "total_seconds": 1434707.49,
-      "total_text": "398h 31m",
-      "days_active": 85
+      "total_seconds": 1437114.017,
+      "total_text": "399h 11m",
+      "days_active": 86
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-17",
-      "seconds": 11385.986,
-      "text": "3 hrs 9 mins"
-    },
     {
       "date": "2026-05-18",
       "seconds": 21923.033,
@@ -59,6 +54,11 @@
       "date": "2026-05-23",
       "seconds": 11612.06,
       "text": "3 hrs 13 mins"
+    },
+    {
+      "date": "2026-05-24",
+      "seconds": 2406.527,
+      "text": "40 mins"
     }
   ],
   "heatmap": [
@@ -401,6 +401,10 @@
     {
       "date": "2026-05-23",
       "seconds": 11612.06
+    },
+    {
+      "date": "2026-05-24",
+      "seconds": 2406.527
     }
   ],
   "languages": [
@@ -422,7 +426,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 122538.36200000001
+      "total_seconds": 124944.88900000001
     },
     {
       "name": "Astro",
@@ -1080,6 +1084,9 @@
       "TypeScript": 8182.943,
       "Python": 3002.561,
       "Astro": 426.556
+    },
+    "2026-05-24": {
+      "Python": 2406.527
     }
   }
 }
