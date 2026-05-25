@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-25T10:04:45.916Z",
-  "total": "148 hrs 23 mins",
-  "daily_average": "3 hrs 42 mins",
+  "lastUpdate": "2026-05-25T11:46:44.692Z",
+  "total": "149 hrs 26 mins",
+  "daily_average": "3 hrs 43 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 128602.40299999999,
-      "total_text": "35h 43m",
+      "total_seconds": 132400.298,
+      "total_text": "36h 46m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 407192.22900000005,
-      "total_text": "113h 6m",
+      "total_seconds": 410990.124,
+      "total_text": "114h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1458183.565,
-      "total_text": "405h 3m",
+      "total_seconds": 1461981.46,
+      "total_text": "406h 6m",
       "days_active": 87
     },
     "all_time": {
-      "total_seconds": 1458183.565,
-      "total_text": "405h 3m",
+      "total_seconds": 1461981.46,
+      "total_text": "406h 6m",
       "days_active": 87
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-25",
-      "seconds": 17317.862,
-      "text": "4 hrs 48 mins"
+      "seconds": 21115.757,
+      "text": "5 hrs 51 mins"
     }
   ],
   "heatmap": [
@@ -408,13 +408,13 @@
     },
     {
       "date": "2026-05-25",
-      "seconds": 17317.862
+      "seconds": 21115.757
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 391831.061
+      "total_seconds": 395062.57800000004
     },
     {
       "name": "C++",
@@ -434,7 +434,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 67950.89000000001
+      "total_seconds": 68048.65400000001
     },
     {
       "name": "Java",
@@ -454,7 +454,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 7249.919000000001
+      "total_seconds": 7716.952000000001
     },
     {
       "name": "TSConfig",
@@ -474,7 +474,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 315.33199999999994
+      "total_seconds": 316.91299999999995
     },
     {
       "name": "INI",
@@ -1096,12 +1096,13 @@
       "Astro": 152.158
     },
     "2026-05-25": {
+      "Markdown": 8415.324,
       "TypeScript": 7082.336,
-      "Markdown": 5183.807,
       "C++": 2498.492,
       "Python": 2490.915,
-      "Astro": 59.994,
-      "Git": 2.318
+      "MDX": 467.033,
+      "Astro": 157.758,
+      "Git": 3.899
     }
   }
 }
