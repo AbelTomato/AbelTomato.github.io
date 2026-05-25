@@ -3,7 +3,7 @@
 import BaseHead from "@components/layout/BaseHead.astro";
 import Header from "@components/layout/Header.astro";
 import Footer from "@components/layout/Footer.astro";
-import FloatingTools from "@components/FloatingTools.astro";
+import FloatingTools from "@features/floating-tools/components/FloatingTools";
 
 interface Props {
   title: string;
@@ -40,6 +40,9 @@ const { title, description } = Astro.props;
       } else {
         document.documentElement.classList.remove("dark");
       }
+
+      const savedSize = localStorage.getItem("fontSize") || "100";
+      document.documentElement.style.fontSize = `${savedSize}%`;
     </script>
   </head>
 
@@ -51,6 +54,6 @@ const { title, description } = Astro.props;
       <slot />
     </main>
     <Footer />
-    <FloatingTools />
+    <FloatingTools client:idle />
   </body>
 </html>
