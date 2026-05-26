@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-25T19:29:41.368Z",
-  "total": "149 hrs 40 mins",
-  "daily_average": "3 hrs 44 mins",
+  "lastUpdate": "2026-05-26T03:29:00.049Z",
+  "total": "144 hrs 3 mins",
+  "daily_average": "3 hrs 35 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 133237.899,
-      "total_text": "37h 0m",
+      "total_seconds": 118063.397,
+      "total_text": "32h 47m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 411827.72500000003,
-      "total_text": "114h 23m",
+      "total_seconds": 404443.65,
+      "total_text": "112h 20m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1462819.061,
-      "total_text": "406h 20m",
-      "days_active": 87
+      "total_seconds": 1466784.067,
+      "total_text": "407h 26m",
+      "days_active": 88
     },
     "all_time": {
-      "total_seconds": 1462819.061,
-      "total_text": "406h 20m",
-      "days_active": 87
+      "total_seconds": 1466784.067,
+      "total_text": "407h 26m",
+      "days_active": 88
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-19",
-      "seconds": 19139.508,
-      "text": "5 hrs 18 mins"
-    },
     {
       "date": "2026-05-20",
       "seconds": 21581.68,
@@ -59,6 +54,11 @@
       "date": "2026-05-25",
       "seconds": 21953.358,
       "text": "6 hrs 5 mins"
+    },
+    {
+      "date": "2026-05-26",
+      "seconds": 3965.006,
+      "text": "1 hr 6 mins"
     }
   ],
   "heatmap": [
@@ -409,6 +409,10 @@
     {
       "date": "2026-05-25",
       "seconds": 21953.358
+    },
+    {
+      "date": "2026-05-26",
+      "seconds": 3965.006
     }
   ],
   "languages": [
@@ -425,12 +429,12 @@
       "total_seconds": 139521.832
     },
     {
-      "name": "JavaScript",
-      "total_seconds": 128117.941
+      "name": "Python",
+      "total_seconds": 131400.81
     },
     {
-      "name": "Python",
-      "total_seconds": 127435.804
+      "name": "JavaScript",
+      "total_seconds": 128117.941
     },
     {
       "name": "Astro",
@@ -1103,6 +1107,9 @@
       "Astro": 937.698,
       "MDX": 524.694,
       "Git": 3.899
+    },
+    "2026-05-26": {
+      "Python": 3965.006
     }
   }
 }
