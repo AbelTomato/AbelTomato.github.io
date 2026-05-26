@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-26T09:55:51.472Z",
-  "total": "144 hrs 3 mins",
-  "daily_average": "3 hrs 35 mins",
+  "lastUpdate": "2026-05-26T15:25:02.396Z",
+  "total": "144 hrs 30 mins",
+  "daily_average": "3 hrs 36 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 118063.397,
-      "total_text": "32h 47m",
+      "total_seconds": 119703.392,
+      "total_text": "33h 15m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 404443.65,
-      "total_text": "112h 20m",
+      "total_seconds": 406083.645,
+      "total_text": "112h 48m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1466784.067,
-      "total_text": "407h 26m",
+      "total_seconds": 1468424.062,
+      "total_text": "407h 53m",
       "days_active": 88
     },
     "all_time": {
-      "total_seconds": 1466784.067,
-      "total_text": "407h 26m",
+      "total_seconds": 1468424.062,
+      "total_text": "407h 53m",
       "days_active": 88
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-26",
-      "seconds": 3965.006,
-      "text": "1 hr 6 mins"
+      "seconds": 5605.001,
+      "text": "1 hr 33 mins"
     }
   ],
   "heatmap": [
@@ -412,7 +412,7 @@
     },
     {
       "date": "2026-05-26",
-      "seconds": 3965.006
+      "seconds": 5605.001
     }
   ],
   "languages": [
@@ -430,7 +430,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 131400.81
+      "total_seconds": 131545.499
     },
     {
       "name": "JavaScript",
@@ -438,7 +438,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 68828.59400000001
+      "total_seconds": 70323.90000000001
     },
     {
       "name": "Java",
@@ -1109,7 +1109,8 @@
       "Git": 3.899
     },
     "2026-05-26": {
-      "Python": 3965.006
+      "Python": 4109.695,
+      "Astro": 1495.306
     }
   }
 }
