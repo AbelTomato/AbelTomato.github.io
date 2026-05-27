@@ -13,7 +13,6 @@ interface SingleMomentCardProps {
   author: string;
   source: string;
   image: string;
-  color: string;
 }
 
 function SingleMomentCard({
@@ -21,7 +20,6 @@ function SingleMomentCard({
   author,
   source,
   image,
-  color,
 }: SingleMomentCardProps) {
   const imagePath = `../assets/${image}`;
   const resolvedImageSrc = momentsImages[imagePath]?.default || "";
