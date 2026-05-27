@@ -4,3 +4,4 @@
 export const SITE_TITLE = "AbelTomato's Blog";
 export const SITE_DESCRIPTION = "Time tries all, but TLE.";
 export const AUTHOR = "AbelTomato";
+export const CREATE_TIME = "2026-03-01";

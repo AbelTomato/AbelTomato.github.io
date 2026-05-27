@@ -1,7 +1,8 @@
 ---
 // src/pages/index.astro
 import BaseLayout from '@layouts/BaseLayout.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import ThreeColumnLayout from '@layouts/ThreeColumnLayout.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, CREATE_TIME } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '@components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
@@ -9,64 +10,24 @@ import WakaDashboard from '@features/waka/components/WakaDashboard.tsx';
 import CoCoders from '@features/co-coders/components/CoCoders.astro';
 import { getReadingStats } from '@utils/readingTime';
 import placeholderImg from '../../public/android-chrome-512x512.png'
+import ProfileCard from '@components/widgets/ProfileCard.astro';
+import { SiteStatsCard } from '@components/widgets/SiteStatsCard';
+import {getPostsData} from "@src/hooks/usePostsData";
 
-const recentPosts = (await getCollection('blog'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0,3);
-
-const allPosts = await getCollection('blog');
-const publishedPosts = allPosts.filter(post => post.data.draft !== true);
-const totalPosts = publishedPosts.length;
-const totalWords = publishedPosts.reduce((acc, post) => {
-  const {count} = getReadingStats(post.body || '');
-  return acc + count;
-}, 0);
-const avgWords = totalPosts > 0 ? Math.round(totalWords / totalPosts) : 0;
-
-const rawPosts = await getCollection('blog');
+const { recentPosts, totalTagsCounts, totalPostsCounts, totalPostsWords } = await getPostsData();
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<ThreeColumnLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <ProfileCard slot="left-sidebar" />
+
   <main class="container mx-auto px-4 py-16">
     <section class="flex flex-col items-center justify-center text-center mb-24">
       <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-gray-100">
         Welcome to {SITE_TITLE}
       </h1>
-      <p class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-2xl">
-        {SITE_DESCRIPTION}
-      </p>
 
       <WakaDashboard client:load />
     </section>
-
-    <section class="max-w-6xl mx-auto px-4 py-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="group relative overflow-hidden bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
-          <div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
-          </div>
-          <p class="text-sm font-bold text-slate-400 uppercase tracking-widest">文章总数</p>
-          <p class="text-5xl font-black text-slate-900 dark:text-white mt-2 leading-none">
-            {totalPosts} <span class="text-lg font-medium text-slate-400 italic">篇</span>
-          </p>
-          <p class="text-xs text-slate-500 mt-4 flex items-center gap-1">
-            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> 持续更新中
-          </p>
-        </div>
-
-        <div class="group relative overflow-hidden bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
-          <div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-15">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-          </div>
-          <p class="text-sm font-bold text-blue-400/80 uppercase tracking-widest">全站字数</p>
-          <p class="text-5xl font-black text-slate-900 dark:text-white mt-2 leading-none">
-            {(totalWords / 1000).toFixed(1)} <span class="text-lg font-medium text-slate-500 italic">k</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-
 
     <section class="w-full max-w-6xl mx-auto">
       <div class="flex items-end justify-between mb-12 border-b border-gray-200 dark:border-gray-700 pb-4">
@@ -139,4 +100,6 @@ const rawPosts = await getCollection('blog');
       <CoCoders />
     </section>
   </main>
-</BaseLayout>
+
+  <SiteStatsCard client:load slot="right-sidebar" createTime={CREATE_TIME} articleCount={totalPostsCounts} tagCount={totalTagsCounts} wordCount={totalPostsWords} />
+</ThreeColumnLayout>
