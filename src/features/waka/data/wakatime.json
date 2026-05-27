@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-27T10:55:07.367Z",
-  "total": "147 hrs 51 mins",
-  "daily_average": "3 hrs 41 mins",
+  "lastUpdate": "2026-05-27T11:41:08.775Z",
+  "total": "148 hrs 48 mins",
+  "daily_average": "3 hrs 43 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 116153.48200000002,
-      "total_text": "32h 15m",
+      "total_seconds": 119623.32600000002,
+      "total_text": "33h 13m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 409195.45700000005,
-      "total_text": "113h 39m",
+      "total_seconds": 412665.30100000004,
+      "total_text": "114h 37m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1486455.832,
-      "total_text": "412h 54m",
+      "total_seconds": 1489925.676,
+      "total_text": "413h 52m",
       "days_active": 89
     },
     "all_time": {
-      "total_seconds": 1486455.832,
-      "total_text": "412h 54m",
+      "total_seconds": 1489925.676,
+      "total_text": "413h 52m",
       "days_active": 89
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-27",
-      "seconds": 18031.77,
-      "text": "5 hrs"
+      "seconds": 21501.614,
+      "text": "5 hrs 58 mins"
     }
   ],
   "heatmap": [
@@ -416,7 +416,7 @@
     },
     {
       "date": "2026-05-27",
-      "seconds": 18031.77
+      "seconds": 21501.614
     }
   ],
   "languages": [
@@ -430,7 +430,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 144744.36
+      "total_seconds": 144985.411
     },
     {
       "name": "Python",
@@ -442,7 +442,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 79604.031
+      "total_seconds": 82830.12400000001
     },
     {
       "name": "Java",
@@ -482,7 +482,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 318.662
+      "total_seconds": 321.36199999999997
     },
     {
       "name": "INI",
@@ -1117,12 +1117,12 @@
       "Astro": 1495.306
     },
     "2026-05-27": {
-      "Astro": 9280.131,
-      "TypeScript": 5222.528,
+      "Astro": 12506.224,
+      "TypeScript": 5463.579,
       "Python": 2504.968,
       "JSON": 940.335,
       "INI": 82.059,
-      "Git": 1.749
+      "Git": 4.449
     }
   }
 }
