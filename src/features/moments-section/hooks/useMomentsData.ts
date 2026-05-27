@@ -7,7 +7,6 @@ export type MomentItem = {
   author: string;
   source: string;
   image: string;
-  color: string;
 };
 
 export type MomentsData = MomentItem[];
