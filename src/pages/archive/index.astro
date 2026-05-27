@@ -1,0 +1,50 @@
+---
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+import ProfileCard from "@components/widgets/ProfileCard.astro";
+import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import { ArchiveContainer } from "@components/widgets/ArchiveContainer";
+import { getPostsData } from "@src/hooks/usePostsData";
+import { CREATE_TIME } from "@src/consts";
+
+const {
+  posts,
+  tagCountsMap,
+  totalPostsCounts,
+  totalTagsCounts,
+  totalPostsWords,
+} = await getPostsData();
+---
+
+<ThreeColumnLayout
+  title="文章归档"
+  description="将所有文章按照年份和标签进行归档"
+>
+  <Fragment slot="left-sidebar">
+    <ProfileCard />
+  </Fragment>
+
+  <div class="space-y-6">
+    <div class="py-2">
+      <h1
+        class="text-3xl font-extrabol tracking-tight bg-linear-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent"
+      >
+        Content Archive
+      </h1>
+      <p class="text-sm text-slate-500 mt-2">
+        "Time tries all, but TLE." 岁月的跑道上，用文字留下点不被剪枝的记录。
+      </p>
+    </div>
+
+    <ArchiveContainer client:load posts={posts} tagCountsMap={tagCountsMap} />
+  </div>
+
+  <Fragment slot="right-sidebar">
+    <SiteStatsCard
+      client:load
+      articleCount={totalPostsCounts}
+      tagCount={totalTagsCounts}
+      wordCount={totalPostsWords}
+      createTime={CREATE_TIME}
+    />
+  </Fragment>
+</ThreeColumnLayout>
