@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-28T04:40:36.987Z",
-  "total": "147 hrs 16 mins",
-  "daily_average": "3 hrs 40 mins",
+  "lastUpdate": "2026-05-28T10:03:49.213Z",
+  "total": "149 hrs 44 mins",
+  "daily_average": "3 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 102546.47200000001,
-      "total_text": "28h 29m",
+      "total_seconds": 111388.24,
+      "total_text": "30h 56m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 409300.586,
-      "total_text": "113h 41m",
+      "total_seconds": 418142.354,
+      "total_text": "116h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1503802.709,
-      "total_text": "417h 43m",
+      "total_seconds": 1512644.477,
+      "total_text": "420h 10m",
       "days_active": 90
     },
     "all_time": {
-      "total_seconds": 1503802.709,
-      "total_text": "417h 43m",
+      "total_seconds": 1512644.477,
+      "total_text": "420h 10m",
       "days_active": 90
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-28",
-      "seconds": 12372.843,
-      "text": "3 hrs 26 mins"
+      "seconds": 21214.611,
+      "text": "5 hrs 53 mins"
     }
   ],
   "heatmap": [
@@ -420,13 +420,13 @@
     },
     {
       "date": "2026-05-28",
-      "seconds": 12372.843
+      "seconds": 21214.611
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 395062.57800000004
+      "total_seconds": 398112.99100000004
     },
     {
       "name": "C++",
@@ -434,7 +434,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 149681.792
+      "total_seconds": 153906.69
     },
     {
       "name": "Python",
@@ -442,11 +442,11 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 128117.941
+      "total_seconds": 128127.982
     },
     {
       "name": "Astro",
-      "total_seconds": 88723.55300000001
+      "total_seconds": 90239.922
     },
     {
       "name": "Java",
@@ -1129,10 +1129,13 @@
       "Git": 4.449
     },
     "2026-05-28": {
-      "Astro": 5893.429,
+      "TypeScript": 7417.089,
+      "Astro": 7409.798,
       "Python": 3214.996,
-      "TypeScript": 3192.191,
-      "Git": 72.227
+      "Markdown": 3050.413,
+      "Git": 72.227,
+      "Text": 40.047,
+      "JavaScript": 10.041
     }
   }
 }
