@@ -36,14 +36,14 @@ export const friendsList: Friend[] = [
   },
   {
     name: "Coast",
-    description: "软件学社学长，算法竞赛大佬",
+    description: "软件学社学长，绩点各种竞赛全能大佬",
     url: "https://coast23.github.io",
     avatar: getImg(avatarImages, "coast"),
     cover: getImg(coverImages, "coast"),
   },
   {
     name: "无止境",
-    description: "软件学社学长，走客户端和Android开发",
+    description: "软件学社学长，专注客户端和Android开发",
     url: "https://baakarshan.github.io/",
     avatar: getImg(avatarImages, "wzj"),
     cover: getImg(coverImages, "wzj"),
@@ -57,7 +57,7 @@ export const friendsList: Friend[] = [
   },
   {
     name: "两只鸽子",
-    description: "学社同级同学，聚焦于深度学习和开发",
+    description: "学社同级同学",
     url: "https://hatoya-doublepigeonblog.pages.dev/",
     avatar: getImg(avatarImages, "hatoya"),
     cover: getImg(coverImages, "hatoya"),
@@ -68,5 +68,12 @@ export const friendsList: Friend[] = [
     url: "https://silent-sure.github.io/",
     avatar: getImg(avatarImages, "jyt"),
     cover: getImg(coverImages, "jyt"),
+  },
+  {
+    name: "Kespher",
+    description: "24级的西瓜学长",
+    url: "https://kespher.github.io/",
+    avatar: getImg(avatarImages, "kespher"),
+    cover: getImg(coverImages, "kespher"),
   },
 ];
