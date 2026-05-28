@@ -2,29 +2,34 @@ import { Button } from "@components/ui/button";
 import { useEffect, useRef, useState } from "react";
 
 export default function ThemeToggle() {
-  // 设置一个默认初始值，不要在useState里读localStroage或者window！！服务器端没有这些东西
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof document !== "undefined") {
+      return document.documentElement.classList.contains("dark");
+    }
+    return false;
+  });
 
-  // 组件初次挂载时，读取缓存或者系统偏好
   useEffect(() => {
-    const localTheme = localStorage.getItem("theme");
-    const systemPrefersDark = window.matchMedia(
-      "(prefers-color-theme: dark)",
-    ).matches;
+    const syncThemeFromDOM = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
 
-    const shouldBeDark =
-      localTheme === "dark" || (!localTheme && systemPrefersDark);
-    setIsDark(shouldBeDark);
+    document.addEventListener("astro:after-swap", syncThemeFromDOM);
+    return () =>
+      document.removeEventListener("astro:after-swap", syncThemeFromDOM);
   }, []);
 
-  // isDark改变时同时修改当前页面的document和缓存内容
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+    const currentIsDark = document.documentElement.classList.contains("dark");
+
+    if (isDark !== currentIsDark) {
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
     }
   }, [isDark]);
 

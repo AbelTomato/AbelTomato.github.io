@@ -1,90 +1,81 @@
 ---
-import Layout from "@layouts/BaseLayout.astro";
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import MomentsSection from "@features/moments-section/components/MomentsSection.tsx";
+import ProfileCard from "@components/widgets/ProfileCard.astro";
+import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import { getPostsData } from "@src/hooks/usePostsData";
+import { CREATE_TIME } from "@src/consts";
+import { Card, CardHeader, CardTitle, CardContent } from "@components/ui/card";
+
+const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
+  await getPostsData();
 ---
 
-<Layout
+<ThreeColumnLayout
   title="关于我"
   description="认识一下 AbelTomato —— 一个想让自己变得有趣的人"
 >
-  <div class="text-center mb-12">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
-      关于我
-    </h1>
+  <ProfileCard slot="left-sidebar" />
 
-    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-      AbelTomato —— 一个想让自己变得有趣的人
-    </p>
-
-    <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">March 1, 2026</p>
-
-    <hr
-      class="mt-6 mx-auto w-24 border-t-2 border-blue-500 dark:border-blue-400"
-    />
-  </div>
-  <div class="max-w-3xl mx-auto prose prose-lg dark:prose-invert">
-    <p>你好，我是AbelTomato</p>
-    <h2>关于名字的来由</h2>
-    <p>
-      Abel:
-      是我初中时外教要求大家起的英文名，然后我在网上随便找了个字典序靠前的（bushi。后面第一节外教课把名字报上去，刚下课我就发现忘了自己名字叫什么了，冲出教室冲着外教背影大喊：“What's
-      my name?!”传为众人笑谈，沿用至今。
-    </p>
-    <p>
-      Tomato:
-      没什么特别的原因，只是因为我喜欢吃番茄。其实改成AbelPotato也是可以的。
-    </p>
-    <h2>个人简介</h2>
-    <p>
-      目前是XMU计算机类的一名大一学生，梦想是赚<strong>很多</strong
-      >钱，也许有点庸俗，但我确实没什么理想
-    </p>
-    <p>
-      至于创建这个博客的目的，大概是为了让自己的那些想法和念头有一个着落点，不至于飘渺无依
-    </p>
-    <p>
-      以后会更新一些学习上的心得，以及生活中琐碎的日常感想，如果对你有所帮助，我很荣幸
-    </p>
-    <h2 class="font-bold mb-4 text-gray-900 dark:text-gray-100">爱好</h2>
-    <ul class="space-y-4 list-none p-0">
-      <li class="flex items-center gap-3 group">
-        <span class="text-2xl group-hover:scale-125 transition-transform"
-          >📚</span
-        >
-        <div class="flex flex-col">
-          <span class="font-bold">看小说</span>
-          <span class="text-sm text-gray-500">（我是超级小说p）</span>
-        </div>
-      </li>
-      <li class="flex items-center gap-3 group">
-        <span class="text-2xl group-hover:scale-125 transition-transform"
-          >🎮</span
-        >
-        <div class="flex flex-col">
-          <span class="font-bold">打游戏</span>
-          <span class="text-sm text-gray-500">（Minecraft等等）</span>
-        </div>
-      </li>
-      <li class="flex items-center gap-3 group">
-        <span class="text-2xl group-hover:scale-125 transition-transform"
-          >🍳</span
-        >
-        <div class="flex flex-col">
-          <span class="font-bold">做饭</span>
-          <span class="text-sm text-gray-500"
-            >（是的我觉得吃到自己做的饭真的很爽）</span
+  <main class="w-full flex flex-col gap-6">
+    <Card className="w-full mx-auto shadow-sm">
+      <CardHeader className="pb-4">
+        <div class="text-center md:text-left">
+          <h1
+            class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100"
           >
+            一个番茄
+          </h1>
+          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            Last updated: March 1, 2026
+          </p>
+          <hr
+            class="mt-4 w-16 border-t-2 border-blue-500 dark:border-blue-400"
+          />
         </div>
-      </li>
-      <li class="flex items-center gap-3 group">
-        <span class="text-2xl animate-pulse">🧭</span>
-        <div class="flex flex-col">
-          <span class="font-bold">探索中...</span>
-          <span class="text-sm text-gray-400 italic">未来的无限可能</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+      </CardHeader>
 
-  <MomentsSection client:load />
-</Layout>
+      <CardContent
+        className="w-full mx-auto prose prose-gray dark:prose-invert max-w-none"
+      >
+        <p>你好，我是AbelTomato</p>
+
+        <h2>关于名字</h2>
+        <p><strong>Abel:</strong></p>
+        <p class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+          是我初中时外教要求大家起的英文名，然后我在网上随便找了个字典序靠前的。后面第一节外教课把名字报上去，刚下课我就忘了自己名字叫什么了，冲出教室冲着外教背影大喊：“What's
+          my name?!”传为众人笑谈，沿用至今。
+        </p>
+
+        <p><strong>Tomato:</strong></p>
+        <p class="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+          没什么特别的原因，只是因为我喜欢吃番茄。其实改成AbelPotato也是可以的。
+        </p>
+
+        <hr />
+
+        <h2>个人简介</h2>
+        <p>XMU大一学生，学校里平平无奇的一个人</p>
+        <p>
+          梦想是赚<strong>很多</strong
+          >钱，然后过一种平平淡淡无忧无虑的生活，可以随便做自己喜欢的事，而无需被裹挟
+        </p>
+        <p>创建这个博客，大概是为了练手，以及记录一些想法和生活</p>
+        <p>如果博客中的内容有帮助到你，我很荣幸</p>
+      </CardContent>
+    </Card>
+
+    <div class="w-full">
+      <MomentsSection client:idle />
+    </div>
+  </main>
+
+  <SiteStatsCard
+    client:load
+    slot="right-sidebar"
+    createTime={CREATE_TIME}
+    articleCount={totalPostsCounts}
+    tagCount={totalTagsCounts}
+    wordCount={totalPostsWords}
+  />
+</ThreeColumnLayout>

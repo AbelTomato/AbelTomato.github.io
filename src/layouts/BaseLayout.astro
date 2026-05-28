@@ -4,6 +4,7 @@ import BaseHead from "@components/layout/BaseHead.astro";
 import Header from "@components/layout/Header.astro";
 import Footer from "@components/layout/Footer.astro";
 import FloatingTools from "@features/floating-tools/components/FloatingTools";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -23,27 +24,35 @@ const { title, description } = Astro.props;
     <BaseHead title={title} description={description} />
 
     <script is:inline>
-      const theme = (() => {
-        if (
-          typeof localStorage !== "undefined" &&
-          localStorage.getItem("theme")
-        ) {
-          return localStorage.getItem("theme");
+      const applyThemeAndFont = () => {
+        const theme = (() => {
+          if (
+            typeof localStorage !== "undefined" &&
+            localStorage.getItem("theme")
+          ) {
+            return localStorage.getItem("theme");
+          }
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        })();
+
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
         }
-        return window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-      })();
 
-      if (theme === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+        const savedSize = localStorage.getItem("fontSize") || "100";
+        document.documentElement.style.fontSize = `${savedSize}%`;
+      };
 
-      const savedSize = localStorage.getItem("fontSize") || "100";
-      document.documentElement.style.fontSize = `${savedSize}%`;
+      applyThemeAndFont();
+
+      document.addEventListener("astro:after-swap", applyThemeAndFont);
     </script>
+
+    <ClientRouter />
   </head>
 
   <body
