@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-28T10:03:49.213Z",
-  "total": "149 hrs 44 mins",
-  "daily_average": "3 hrs 44 mins",
+  "lastUpdate": "2026-05-28T14:54:06.199Z",
+  "total": "151 hrs 20 mins",
+  "daily_average": "3 hrs 46 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 111388.24,
-      "total_text": "30h 56m",
+      "total_seconds": 117155.889,
+      "total_text": "32h 32m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 418142.354,
-      "total_text": "116h 9m",
+      "total_seconds": 423910.003,
+      "total_text": "117h 45m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1512644.477,
-      "total_text": "420h 10m",
+      "total_seconds": 1518412.126,
+      "total_text": "421h 46m",
       "days_active": 90
     },
     "all_time": {
-      "total_seconds": 1512644.477,
-      "total_text": "420h 10m",
+      "total_seconds": 1518412.126,
+      "total_text": "421h 46m",
       "days_active": 90
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-28",
-      "seconds": 21214.611,
-      "text": "5 hrs 53 mins"
+      "seconds": 26982.26,
+      "text": "7 hrs 29 mins"
     }
   ],
   "heatmap": [
@@ -420,7 +420,7 @@
     },
     {
       "date": "2026-05-28",
-      "seconds": 21214.611
+      "seconds": 26982.26
     }
   ],
   "languages": [
@@ -434,7 +434,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 153906.69
+      "total_seconds": 157337.619
     },
     {
       "name": "Python",
@@ -454,7 +454,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 26675.645999999993
+      "total_seconds": 28397.795999999995
     },
     {
       "name": "HTML",
@@ -485,16 +485,16 @@
       "total_seconds": 1248.058
     },
     {
+      "name": "Bash",
+      "total_seconds": 624.506
+    },
+    {
       "name": "Git",
-      "total_seconds": 393.58899999999994
+      "total_seconds": 394.739
     },
     {
       "name": "INI",
       "total_seconds": 118.732
-    },
-    {
-      "name": "Bash",
-      "total_seconds": 11.086
     },
     {
       "name": "TeX",
@@ -1129,11 +1129,13 @@
       "Git": 4.449
     },
     "2026-05-28": {
-      "TypeScript": 7417.089,
+      "TypeScript": 10848.018,
       "Astro": 7409.798,
       "Python": 3214.996,
       "Markdown": 3050.413,
-      "Git": 72.227,
+      "JSON": 1722.15,
+      "Bash": 613.42,
+      "Git": 73.377,
       "Text": 40.047,
       "JavaScript": 10.041
     }
