@@ -1,0 +1,5951 @@
+{
+  "userProfileQuestionProgress": {
+    "numAcceptedQuestions": [
+      {
+        "count": 69,
+        "difficulty": "EASY"
+      },
+      {
+        "count": 107,
+        "difficulty": "MEDIUM"
+      },
+      {
+        "count": 31,
+        "difficulty": "HARD"
+      }
+    ],
+    "numFailedQuestions": [
+      {
+        "count": 0,
+        "difficulty": "EASY"
+      },
+      {
+        "count": 0,
+        "difficulty": "MEDIUM"
+      },
+      {
+        "count": 0,
+        "difficulty": "HARD"
+      }
+    ],
+    "numUntouchedQuestions": [
+      {
+        "count": 997,
+        "difficulty": "EASY"
+      },
+      {
+        "count": 2152,
+        "difficulty": "MEDIUM"
+      },
+      {
+        "count": 976,
+        "difficulty": "HARD"
+      }
+    ]
+  },
+  "skillSet": {
+    "langLevels": [
+      {
+        "langName": "cpp",
+        "langVerboseName": "C++",
+        "level": 1
+      },
+      {
+        "langName": "python3",
+        "langVerboseName": "Python3",
+        "level": 2
+      },
+      {
+        "langName": "javascript",
+        "langVerboseName": "JavaScript",
+        "level": 1
+      },
+      {
+        "langName": "typescript",
+        "langVerboseName": "TypeScript",
+        "level": 1
+      }
+    ],
+    "topics": [
+      {
+        "slug": "array",
+        "name": "Array",
+        "translatedName": "数组"
+      },
+      {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "translatedName": "二分查找"
+      },
+      {
+        "slug": "binary-tree",
+        "name": "Binary Tree",
+        "translatedName": "二叉树"
+      },
+      {
+        "slug": "depth-first-search",
+        "name": "Depth-First Search",
+        "translatedName": "深度优先搜索"
+      },
+      {
+        "slug": "dynamic-programming",
+        "name": "Dynamic Programming",
+        "translatedName": "动态规划"
+      },
+      {
+        "slug": "greedy",
+        "name": "Greedy",
+        "translatedName": "贪心"
+      },
+      {
+        "slug": "hash-table",
+        "name": "Hash Table",
+        "translatedName": "哈希表"
+      },
+      {
+        "slug": "linked-list",
+        "name": "Linked List",
+        "translatedName": "链表"
+      },
+      {
+        "slug": "math",
+        "name": "Math",
+        "translatedName": "数学"
+      },
+      {
+        "slug": "matrix",
+        "name": "Matrix",
+        "translatedName": "矩阵"
+      },
+      {
+        "slug": "prefix-sum",
+        "name": "Prefix Sum",
+        "translatedName": "前缀和"
+      },
+      {
+        "slug": "simulation",
+        "name": "Simulation",
+        "translatedName": "模拟"
+      },
+      {
+        "slug": "sorting",
+        "name": "Sorting",
+        "translatedName": "排序"
+      },
+      {
+        "slug": "stack",
+        "name": "Stack",
+        "translatedName": "栈"
+      },
+      {
+        "slug": "string",
+        "name": "String",
+        "translatedName": "字符串"
+      },
+      {
+        "slug": "tree",
+        "name": "Tree",
+        "translatedName": "树"
+      },
+      {
+        "slug": "two-pointers",
+        "name": "Two Pointers",
+        "translatedName": "双指针"
+      }
+    ],
+    "topicAreaScores": [
+      {
+        "score": 23,
+        "topicArea": {
+          "name": "数据结构",
+          "slug": "data-structures"
+        }
+      },
+      {
+        "score": 19,
+        "topicArea": {
+          "name": "设计",
+          "slug": "design"
+        }
+      },
+      {
+        "score": 0,
+        "topicArea": {
+          "name": "基础架构",
+          "slug": "architecture"
+        }
+      },
+      {
+        "score": 20,
+        "topicArea": {
+          "name": "算法",
+          "slug": "algorithms"
+        }
+      }
+    ]
+  },
+  "userContestRanking": {
+    "attendedContestsCount": 5,
+    "rating": 1920.7277465740267,
+    "globalRanking": 33210,
+    "localRanking": 9080,
+    "globalTotalParticipants": 883836,
+    "localTotalParticipants": 155177,
+    "topPercentage": 5.8
+  },
+  "userContestRankingHistory": [
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1772943027,
+      "rating": 1620.372,
+      "score": 12,
+      "ranking": 545,
+      "contest": {
+        "title": "第 492 场周赛",
+        "titleCn": "第 492 场周赛",
+        "startTime": 1772937000
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1773547327,
+      "rating": 1701.097,
+      "score": 12,
+      "ranking": 428,
+      "contest": {
+        "title": "第 493 场周赛",
+        "titleCn": "第 493 场周赛",
+        "startTime": 1773541800
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1774755025,
+      "rating": 1764.693,
+      "score": 13,
+      "ranking": 268,
+      "contest": {
+        "title": "第 495 场周赛",
+        "titleCn": "第 495 场周赛",
+        "startTime": 1774751400
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1777779218,
+      "rating": 1874.225,
+      "score": 18,
+      "ranking": 60,
+      "contest": {
+        "title": "第 500 场周赛",
+        "titleCn": "第 500 场周赛",
+        "startTime": 1777775400
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1778343267,
+      "rating": 1920.728,
+      "score": 18,
+      "ranking": 145,
+      "contest": {
+        "title": "第 182 场双周赛",
+        "titleCn": "第 182 场双周赛",
+        "startTime": 1778337000
+      }
+    }
+  ],
+  "recentSubmission": [
+    {
+      "submissionId": 727885970,
+      "submitTime": 1780014845,
+      "question": {
+        "title": "Letter Combinations of a Phone Number",
+        "translatedTitle": "电话号码的字母组合",
+        "titleSlug": "letter-combinations-of-a-phone-number",
+        "questionFrontendId": "17"
+      }
+    },
+    {
+      "submissionId": 727885449,
+      "submitTime": 1780014374,
+      "question": {
+        "title": "Subsets",
+        "translatedTitle": "子集",
+        "titleSlug": "subsets",
+        "questionFrontendId": "78"
+      }
+    },
+    {
+      "submissionId": 727885242,
+      "submitTime": 1780014134,
+      "question": {
+        "title": "Subsets",
+        "translatedTitle": "子集",
+        "titleSlug": "subsets",
+        "questionFrontendId": "78"
+      }
+    },
+    {
+      "submissionId": 727885040,
+      "submitTime": 1780013884,
+      "question": {
+        "title": "Permutations",
+        "translatedTitle": "全排列",
+        "titleSlug": "permutations",
+        "questionFrontendId": "46"
+      }
+    },
+    {
+      "submissionId": 727883278,
+      "submitTime": 1780013515,
+      "question": {
+        "title": "Minimum Element After Replacement With Digit Sum",
+        "translatedTitle": "替换为数位和以后的最小元素",
+        "titleSlug": "minimum-element-after-replacement-with-digit-sum",
+        "questionFrontendId": "3300"
+      }
+    },
+    {
+      "submissionId": 727681981,
+      "submitTime": 1779929899,
+      "question": {
+        "title": "Longest Common Suffix Queries",
+        "translatedTitle": "最长公共后缀查询",
+        "titleSlug": "longest-common-suffix-queries",
+        "questionFrontendId": "3093"
+      }
+    },
+    {
+      "submissionId": 727465129,
+      "submitTime": 1779842262,
+      "question": {
+        "title": "Implement Trie (Prefix Tree)",
+        "translatedTitle": "实现 Trie (前缀树)",
+        "titleSlug": "implement-trie-prefix-tree",
+        "questionFrontendId": "208"
+      }
+    },
+    {
+      "submissionId": 727464181,
+      "submitTime": 1779841259,
+      "question": {
+        "title": "Course Schedule",
+        "translatedTitle": "课程表",
+        "titleSlug": "course-schedule",
+        "questionFrontendId": "207"
+      }
+    },
+    {
+      "submissionId": 727463452,
+      "submitTime": 1779840170,
+      "question": {
+        "title": "Count the Number of Special Characters II",
+        "translatedTitle": "统计特殊字母的数量 II",
+        "titleSlug": "count-the-number-of-special-characters-ii",
+        "questionFrontendId": "3121"
+      }
+    },
+    {
+      "submissionId": 727244176,
+      "submitTime": 1779758344,
+      "question": {
+        "title": "Rotting Oranges",
+        "translatedTitle": "腐烂的橘子",
+        "titleSlug": "rotting-oranges",
+        "questionFrontendId": "994"
+      }
+    },
+    {
+      "submissionId": 727240823,
+      "submitTime": 1779756438,
+      "question": {
+        "title": "Number of Islands",
+        "translatedTitle": "岛屿数量",
+        "titleSlug": "number-of-islands",
+        "questionFrontendId": "200"
+      }
+    },
+    {
+      "submissionId": 727239945,
+      "submitTime": 1779755686,
+      "question": {
+        "title": "Count the Number of Special Characters I",
+        "translatedTitle": "统计特殊字母的数量 I",
+        "titleSlug": "count-the-number-of-special-characters-i",
+        "questionFrontendId": "3120"
+      }
+    },
+    {
+      "submissionId": 727021366,
+      "submitTime": 1779671172,
+      "question": {
+        "title": "Binary Tree Maximum Path Sum",
+        "translatedTitle": "二叉树中的最大路径和",
+        "titleSlug": "binary-tree-maximum-path-sum",
+        "questionFrontendId": "124"
+      }
+    },
+    {
+      "submissionId": 727021155,
+      "submitTime": 1779671075,
+      "question": {
+        "title": "Binary Tree Maximum Path Sum",
+        "translatedTitle": "二叉树中的最大路径和",
+        "titleSlug": "binary-tree-maximum-path-sum",
+        "questionFrontendId": "124"
+      }
+    },
+    {
+      "submissionId": 727020194,
+      "submitTime": 1779670467,
+      "question": {
+        "title": "Jump Game VII",
+        "translatedTitle": "跳跃游戏 VII",
+        "titleSlug": "jump-game-vii",
+        "questionFrontendId": "1871"
+      }
+    }
+  ],
+  "userProgressQuestionList": {
+    "totalNum": 207,
+    "questions": [
+      {
+        "translatedTitle": "电话号码的字母组合",
+        "frontendId": "17",
+        "title": "Letter Combinations of a Phone Number",
+        "titleSlug": "letter-combinations-of-a-phone-number",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-29T00:34:04.572977+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "子集",
+        "frontendId": "78",
+        "title": "Subsets",
+        "titleSlug": "subsets",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-29T00:26:13.406350+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "全排列",
+        "frontendId": "46",
+        "title": "Permutations",
+        "titleSlug": "permutations",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-29T00:18:04.384646+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "替换为数位和以后的最小元素",
+        "frontendId": "3300",
+        "title": "Minimum Element After Replacement With Digit Sum",
+        "titleSlug": "minimum-element-after-replacement-with-digit-sum",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-29T00:11:54.912006+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最长公共后缀查询",
+        "frontendId": "3093",
+        "title": "Longest Common Suffix Queries",
+        "titleSlug": "longest-common-suffix-queries",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-28T01:01:37.559842+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "WA",
+        "topicTags": [
+          {
+            "name": "Trie",
+            "nameTranslated": "字典树",
+            "slug": "trie"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "实现 Trie (前缀树)",
+        "frontendId": "208",
+        "title": "Implement Trie (Prefix Tree)",
+        "titleSlug": "implement-trie-prefix-tree",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-27T00:37:41.972026+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Trie",
+            "nameTranslated": "字典树",
+            "slug": "trie"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "课程表",
+        "frontendId": "207",
+        "title": "Course Schedule",
+        "titleSlug": "course-schedule",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-27T00:20:58.718961+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Graph",
+            "nameTranslated": "图",
+            "slug": "graph"
+          },
+          {
+            "name": "Topological Sort",
+            "nameTranslated": "拓扑排序",
+            "slug": "topological-sort"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计特殊字母的数量 II",
+        "frontendId": "3121",
+        "title": "Count the Number of Special Characters II",
+        "titleSlug": "count-the-number-of-special-characters-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-27T00:02:49.863079+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "腐烂的橘子",
+        "frontendId": "994",
+        "title": "Rotting Oranges",
+        "titleSlug": "rotting-oranges",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-26T01:19:03.702008+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "岛屿数量",
+        "frontendId": "200",
+        "title": "Number of Islands",
+        "titleSlug": "number-of-islands",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-26T00:47:17.823210+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计特殊字母的数量 I",
+        "frontendId": "3120",
+        "title": "Count the Number of Special Characters I",
+        "titleSlug": "count-the-number-of-special-characters-i",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-26T00:34:46.142433+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树中的最大路径和",
+        "frontendId": "124",
+        "title": "Binary Tree Maximum Path Sum",
+        "titleSlug": "binary-tree-maximum-path-sum",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-25T01:06:11.949579+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "跳跃游戏 VII",
+        "frontendId": "1871",
+        "title": "Jump Game VII",
+        "titleSlug": "jump-game-vii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-25T00:54:26.275865+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "跳跃游戏 V",
+        "frontendId": "1340",
+        "title": "Jump Game V",
+        "titleSlug": "jump-game-v",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-24T02:38:04.440824+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的最近公共祖先",
+        "frontendId": "236",
+        "title": "Lowest Common Ancestor of a Binary Tree",
+        "titleSlug": "lowest-common-ancestor-of-a-binary-tree",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-23T02:37:43.420668+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检查数组是否经排序和轮转得到",
+        "frontendId": "1752",
+        "title": "Check if Array Is Sorted and Rotated",
+        "titleSlug": "check-if-array-is-sorted-and-rotated",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-23T02:12:37.836480+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "路径总和 III",
+        "frontendId": "437",
+        "title": "Path Sum III",
+        "titleSlug": "path-sum-iii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-22T01:00:52.854989+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "搜索旋转排序数组",
+        "frontendId": "33",
+        "title": "Search in Rotated Sorted Array",
+        "titleSlug": "search-in-rotated-sorted-array",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-22T00:10:07.546465+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "从中序与后序遍历序列构造二叉树",
+        "frontendId": "106",
+        "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+        "titleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-21T01:02:57.917940+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "从前序与中序遍历序列构造二叉树",
+        "frontendId": "105",
+        "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "titleSlug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-21T00:46:47.103012+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最长公共前缀的长度",
+        "frontendId": "3043",
+        "title": "Find the Length of the Longest Common Prefix",
+        "titleSlug": "find-the-length-of-the-longest-common-prefix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-21T00:29:11.569378+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Trie",
+            "nameTranslated": "字典树",
+            "slug": "trie"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树展开为链表",
+        "frontendId": "114",
+        "title": "Flatten Binary Tree to Linked List",
+        "titleSlug": "flatten-binary-tree-to-linked-list",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-20T00:43:07.030064+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的右视图",
+        "frontendId": "199",
+        "title": "Binary Tree Right Side View",
+        "titleSlug": "binary-tree-right-side-view",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-20T00:22:53.588167+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找到两个数组的前缀公共数组",
+        "frontendId": "2657",
+        "title": "Find the Prefix Common Array of Two Arrays",
+        "titleSlug": "find-the-prefix-common-array-of-two-arrays",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-20T00:09:04.346440+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉搜索树中第 K 小的元素",
+        "frontendId": "230",
+        "title": "Kth Smallest Element in a BST",
+        "titleSlug": "kth-smallest-element-in-a-bst",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-19T00:57:29.191416+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Search Tree",
+            "nameTranslated": "二叉搜索树",
+            "slug": "binary-search-tree"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "验证二叉搜索树",
+        "frontendId": "98",
+        "title": "Validate Binary Search Tree",
+        "titleSlug": "validate-binary-search-tree",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-19T00:42:31.986908+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Search Tree",
+            "nameTranslated": "二叉搜索树",
+            "slug": "binary-search-tree"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "将有序数组转换为二叉搜索树",
+        "frontendId": "108",
+        "title": "Convert Sorted Array to Binary Search Tree",
+        "titleSlug": "convert-sorted-array-to-binary-search-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-19T00:30:15.456255+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Binary Search Tree",
+            "nameTranslated": "二叉搜索树",
+            "slug": "binary-search-tree"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最小公共值",
+        "frontendId": "2540",
+        "title": "Minimum Common Value",
+        "titleSlug": "minimum-common-value",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-19T00:15:47.966992+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "TLE",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的层序遍历",
+        "frontendId": "102",
+        "title": "Binary Tree Level Order Traversal",
+        "titleSlug": "binary-tree-level-order-traversal",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-18T01:17:02.825822+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的直径",
+        "frontendId": "543",
+        "title": "Diameter of Binary Tree",
+        "titleSlug": "diameter-of-binary-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-18T01:10:20.019959+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "跳跃游戏 IV",
+        "frontendId": "1345",
+        "title": "Jump Game IV",
+        "titleSlug": "jump-game-iv",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-18T00:56:16.384693+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "对称二叉树",
+        "frontendId": "101",
+        "title": "Symmetric Tree",
+        "titleSlug": "symmetric-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-17T01:55:13.488200+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "翻转二叉树",
+        "frontendId": "226",
+        "title": "Invert Binary Tree",
+        "titleSlug": "invert-binary-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-17T01:40:16.330979+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的最大深度",
+        "frontendId": "104",
+        "title": "Maximum Depth of Binary Tree",
+        "titleSlug": "maximum-depth-of-binary-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-17T01:27:14.591582+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "跳跃游戏 III",
+        "frontendId": "1306",
+        "title": "Jump Game III",
+        "titleSlug": "jump-game-iii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-17T01:22:34.341123+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的中序遍历",
+        "frontendId": "94",
+        "title": "Binary Tree Inorder Traversal",
+        "titleSlug": "binary-tree-inorder-traversal",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-16T01:40:33.998880+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "寻找旋转排序数组中的最小值 II",
+        "frontendId": "154",
+        "title": "Find Minimum in Rotated Sorted Array II",
+        "titleSlug": "find-minimum-in-rotated-sorted-array-ii",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-16T01:24:07.486936+00:00",
+        "numSubmitted": 6,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "LRU 缓存",
+        "frontendId": "146",
+        "title": "LRU Cache",
+        "titleSlug": "lru-cache",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-15T01:09:48.308053+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Doubly-Linked List",
+            "nameTranslated": "双向链表",
+            "slug": "doubly-linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "寻找旋转排序数组中的最小值",
+        "frontendId": "153",
+        "title": "Find Minimum in Rotated Sorted Array",
+        "titleSlug": "find-minimum-in-rotated-sorted-array",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-15T00:09:58.105481+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "合并 K 个升序链表",
+        "frontendId": "23",
+        "title": "Merge k Sorted Lists",
+        "titleSlug": "merge-k-sorted-lists",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-14T01:22:37.982656+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          },
+          {
+            "name": "Merge Sort",
+            "nameTranslated": "归并排序",
+            "slug": "merge-sort"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "排序链表",
+        "frontendId": "148",
+        "title": "Sort List",
+        "titleSlug": "sort-list",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-14T00:55:58.876481+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          },
+          {
+            "name": "Merge Sort",
+            "nameTranslated": "归并排序",
+            "slug": "merge-sort"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检查数组是否是好的",
+        "frontendId": "2784",
+        "title": "Check if Array is Good",
+        "titleSlug": "check-if-array-is-good",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-14T00:05:23.653965+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "随机链表的复制",
+        "frontendId": "138",
+        "title": "Copy List with Random Pointer",
+        "titleSlug": "copy-list-with-random-pointer",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-13T00:56:47.523389+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "使数组互补的最少操作次数",
+        "frontendId": "1674",
+        "title": "Minimum Moves to Make Array Complementary",
+        "titleSlug": "minimum-moves-to-make-array-complementary",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-13T00:34:28.804137+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "K 个一组翻转链表",
+        "frontendId": "25",
+        "title": "Reverse Nodes in k-Group",
+        "titleSlug": "reverse-nodes-in-k-group",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-12T02:28:56.404497+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "完成所有任务的最少初始能量",
+        "frontendId": "1665",
+        "title": "Minimum Initial Energy to Finish Tasks",
+        "titleSlug": "minimum-initial-energy-to-finish-tasks",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-12T01:40:21.832974+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "两两交换链表中的节点",
+        "frontendId": "24",
+        "title": "Swap Nodes in Pairs",
+        "titleSlug": "swap-nodes-in-pairs",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-11T00:54:54.446906+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "删除链表的倒数第 N 个结点",
+        "frontendId": "19",
+        "title": "Remove Nth Node From End of List",
+        "titleSlug": "remove-nth-node-from-end-of-list",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-11T00:37:23.494586+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "分割数组中数字的数位",
+        "frontendId": "2553",
+        "title": "Separate the Digits in an Array",
+        "titleSlug": "separate-the-digits-in-an-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-11T00:21:16.959763+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "达到末尾下标所需的最大跳跃次数",
+        "frontendId": "2770",
+        "title": "Maximum Number of Jumps to Reach the Last Index",
+        "titleSlug": "maximum-number-of-jumps-to-reach-the-last-index",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-10T02:10:57.801606+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "使二进制字符串连贯的最少翻转次数",
+        "frontendId": "3922",
+        "title": "Minimum Flips to Make Binary String Coherent",
+        "titleSlug": "minimum-flips-to-make-binary-string-coherent",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-09T15:49:27.932205+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "得到目标点的最少代数",
+        "frontendId": "3923",
+        "title": "Minimum Generations to Target Point",
+        "titleSlug": "minimum-generations-to-target-point",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-09T15:31:18.348500+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "有限重边的最小阈值路径",
+        "frontendId": "3924",
+        "title": "Minimum Threshold Path With Limited Heavy Edges",
+        "titleSlug": "minimum-threshold-path-with-limited-heavy-edges",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-09T15:02:27.047643+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "分数验证器",
+        "frontendId": "3921",
+        "title": "Score Validator",
+        "titleSlug": "score-validator",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-09T14:33:14.091186+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "两数相加",
+        "frontendId": "2",
+        "title": "Add Two Numbers",
+        "titleSlug": "add-two-numbers",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-09T01:12:29.741115+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "合并两个有序链表",
+        "frontendId": "21",
+        "title": "Merge Two Sorted Lists",
+        "titleSlug": "merge-two-sorted-lists",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-09T00:51:49.545331+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "环形链表 II",
+        "frontendId": "142",
+        "title": "Linked List Cycle II",
+        "titleSlug": "linked-list-cycle-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-09T00:46:34.074774+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "循环轮转矩阵",
+        "frontendId": "1914",
+        "title": "Cyclically Rotating a Grid",
+        "titleSlug": "cyclically-rotating-a-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-09T00:45:41.192171+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "通过质数传送到达终点的最少跳跃次数",
+        "frontendId": "3629",
+        "title": "Minimum Jumps to Reach End via Prime Teleportation",
+        "titleSlug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-08T00:43:45.416635+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Number Theory",
+            "nameTranslated": "数论",
+            "slug": "number-theory"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "跳跃游戏 IX",
+        "frontendId": "3660",
+        "title": "Jump Game IX",
+        "titleSlug": "jump-game-ix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-07T02:18:40.882133+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "环形链表",
+        "frontendId": "141",
+        "title": "Linked List Cycle",
+        "titleSlug": "linked-list-cycle",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-06T06:01:10.925342+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转盒子",
+        "frontendId": "1861",
+        "title": "Rotating the Box",
+        "titleSlug": "rotating-the-box",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-06T05:34:36.795435+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "回文链表",
+        "frontendId": "234",
+        "title": "Palindrome Linked List",
+        "titleSlug": "palindrome-linked-list",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-05T02:26:20.495309+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "反转链表",
+        "frontendId": "206",
+        "title": "Reverse Linked List",
+        "titleSlug": "reverse-linked-list",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-05T02:15:00.696304+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Recursion",
+            "nameTranslated": "递归",
+            "slug": "recursion"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "相交链表",
+        "frontendId": "160",
+        "title": "Intersection of Two Linked Lists",
+        "titleSlug": "intersection-of-two-linked-lists",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-05T02:10:16.251114+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转链表",
+        "frontendId": "61",
+        "title": "Rotate List",
+        "titleSlug": "rotate-list",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-05T01:55:46.248265+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "搜索二维矩阵 II",
+        "frontendId": "240",
+        "title": "Search a 2D Matrix II",
+        "titleSlug": "search-a-2d-matrix-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-04T02:25:08.248138+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转图像",
+        "frontendId": "48",
+        "title": "Rotate Image",
+        "titleSlug": "rotate-image",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-04T02:04:03.508930+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "螺旋矩阵",
+        "frontendId": "54",
+        "title": "Spiral Matrix",
+        "titleSlug": "spiral-matrix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-04T01:57:57.664225+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "删除元素后最大固定点数目",
+        "frontendId": "3920",
+        "title": "Maximize Fixed Points After Deletions",
+        "titleSlug": "maximize-fixed-points-after-deletions",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-03T03:18:38.543179+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "在下标间移动的最小代价",
+        "frontendId": "3919",
+        "title": "Minimum Cost to Move Between Indices",
+        "titleSlug": "minimum-cost-to-move-between-indices",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-03T02:54:46.223338+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "数与其逆序数之间的质数和",
+        "frontendId": "3918",
+        "title": "Sum of Primes Between Number and Its Reverse",
+        "titleSlug": "sum-of-primes-between-number-and-its-reverse",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-03T02:36:39.550518+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Number Theory",
+            "nameTranslated": "数论",
+            "slug": "number-theory"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计下标的相反奇偶性得分",
+        "frontendId": "3917",
+        "title": "Count Indices With Opposite Parity",
+        "titleSlug": "count-indices-with-opposite-parity",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-03T02:31:52.305310+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转字符串",
+        "frontendId": "796",
+        "title": "Rotate String",
+        "titleSlug": "rotate-string",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-03T01:05:50.445535+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "矩阵置零",
+        "frontendId": "73",
+        "title": "Set Matrix Zeroes",
+        "titleSlug": "set-matrix-zeroes",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-02T02:40:51.620964+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转数字",
+        "frontendId": "788",
+        "title": "Rotated Digits",
+        "titleSlug": "rotated-digits",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-02T02:24:47.209407+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "缺失的第一个正数",
+        "frontendId": "41",
+        "title": "First Missing Positive",
+        "titleSlug": "first-missing-positive",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-01T02:16:13.392021+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "旋转函数",
+        "frontendId": "396",
+        "title": "Rotate Function",
+        "titleSlug": "rotate-function",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-01T00:44:34.564010+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "除了自身以外数组的乘积",
+        "frontendId": "238",
+        "title": "Product of Array Except Self",
+        "titleSlug": "product-of-array-except-self",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-30T02:23:03.543938+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "网格中得分最大的路径",
+        "frontendId": "3742",
+        "title": "Maximum Path Score in a Grid",
+        "titleSlug": "maximum-path-score-in-a-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-30T01:17:56.751662+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "网格图操作后的最大分数",
+        "frontendId": "3225",
+        "title": "Maximum Score From Grid Operations",
+        "titleSlug": "maximum-score-from-grid-operations",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-29T01:20:32.728386+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "轮转数组",
+        "frontendId": "189",
+        "title": "Rotate Array",
+        "titleSlug": "rotate-array",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-28T05:28:47.839154+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "合并区间",
+        "frontendId": "56",
+        "title": "Merge Intervals",
+        "titleSlug": "merge-intervals",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-28T05:03:13.452030+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "获取单值网格的最小操作数",
+        "frontendId": "2033",
+        "title": "Minimum Operations to Make a Uni-Value Grid",
+        "titleSlug": "minimum-operations-to-make-a-uni-value-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-28T04:54:08.210284+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最大子数组和",
+        "frontendId": "53",
+        "title": "Maximum Subarray",
+        "titleSlug": "maximum-subarray",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-27T00:43:36.997698+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检查网格中是否存在有效路径",
+        "frontendId": "1391",
+        "title": "Check if There is a Valid Path in a Grid",
+        "titleSlug": "check-if-there-is-a-valid-path-in-a-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-27T00:37:19.589948+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最小覆盖子串",
+        "frontendId": "76",
+        "title": "Minimum Window Substring",
+        "titleSlug": "minimum-window-substring",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-26T08:09:19.497834+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二维网格图中探测环",
+        "frontendId": "1559",
+        "title": "Detect Cycles in 2D Grid",
+        "titleSlug": "detect-cycles-in-2d-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-26T07:28:54.957242+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "正方形上的点之间的最大距离",
+        "frontendId": "3464",
+        "title": "Maximize the Distance Between Points on a Square",
+        "titleSlug": "maximize-the-distance-between-points-on-a-square",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-25T07:12:17.408921+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Geometry",
+            "nameTranslated": "几何",
+            "slug": "geometry"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "滑动窗口最大值",
+        "frontendId": "239",
+        "title": "Sliding Window Maximum",
+        "titleSlug": "sliding-window-maximum",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-24T01:09:38.847328+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Queue",
+            "nameTranslated": "队列",
+            "slug": "queue"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          },
+          {
+            "name": "Monotonic Queue",
+            "nameTranslated": "单调队列",
+            "slug": "monotonic-queue"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "距离原点最远的点",
+        "frontendId": "2833",
+        "title": "Furthest Point From Origin",
+        "titleSlug": "furthest-point-from-origin",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-23T23:49:41.229840+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Counting",
+            "nameTranslated": "计数",
+            "slug": "counting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "和为 K 的子数组",
+        "frontendId": "560",
+        "title": "Subarray Sum Equals K",
+        "titleSlug": "subarray-sum-equals-k",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-23T01:57:03.983160+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "等值距离和",
+        "frontendId": "2615",
+        "title": "Sum of Distances",
+        "titleSlug": "sum-of-distances",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-23T01:33:23.777544+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找到字符串中所有字母异位词",
+        "frontendId": "438",
+        "title": "Find All Anagrams in a String",
+        "titleSlug": "find-all-anagrams-in-a-string",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-22T00:03:23.278589+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "距离字典两次编辑以内的单词",
+        "frontendId": "2452",
+        "title": "Words Within Two Edits of Dictionary",
+        "titleSlug": "words-within-two-edits-of-dictionary",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-21T23:48:39.083496+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Trie",
+            "nameTranslated": "字典树",
+            "slug": "trie"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "无重复字符的最长子串",
+        "frontendId": "3",
+        "title": "Longest Substring Without Repeating Characters",
+        "titleSlug": "longest-substring-without-repeating-characters",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-21T01:25:48.891263+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "执行交换操作后的最小汉明距离",
+        "frontendId": "1722",
+        "title": "Minimize Hamming Distance After Swap Operations",
+        "titleSlug": "minimize-hamming-distance-after-swap-operations",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-21T01:13:37.043534+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "接雨水",
+        "frontendId": "42",
+        "title": "Trapping Rain Water",
+        "titleSlug": "trapping-rain-water",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-20T00:26:22.476835+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Monotonic Stack",
+            "nameTranslated": "单调栈",
+            "slug": "monotonic-stack"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "两栋颜色不同且距离最远的房子",
+        "frontendId": "2078",
+        "title": "Two Furthest Houses With Different Colors",
+        "titleSlug": "two-furthest-houses-with-different-colors",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-20T00:02:00.654510+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "整数的镜像距离",
+        "frontendId": "3783",
+        "title": "Mirror Distance of an Integer",
+        "titleSlug": "mirror-distance-of-an-integer",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-19T03:52:40.865601+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "三数之和",
+        "frontendId": "15",
+        "title": "3Sum",
+        "titleSlug": "3sum",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-19T03:49:02.117399+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "下标对中的最大距离",
+        "frontendId": "1855",
+        "title": "Maximum Distance Between a Pair of Values",
+        "titleSlug": "maximum-distance-between-a-pair-of-values",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-19T02:47:59.772156+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "盛最多水的容器",
+        "frontendId": "11",
+        "title": "Container With Most Water",
+        "titleSlug": "container-with-most-water",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-18T02:08:03.325914+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "移动零",
+        "frontendId": "283",
+        "title": "Move Zeroes",
+        "titleSlug": "move-zeroes",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-18T01:48:15.318755+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最长连续序列",
+        "frontendId": "128",
+        "title": "Longest Consecutive Sequence",
+        "titleSlug": "longest-consecutive-sequence",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-17T01:24:28.100913+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "两数之和",
+        "frontendId": "1",
+        "title": "Two Sum",
+        "titleSlug": "two-sum",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-17T00:43:02.330545+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "镜像对之间最小绝对距离",
+        "frontendId": "3761",
+        "title": "Minimum Absolute Distance Between Mirror Pairs",
+        "titleSlug": "minimum-absolute-distance-between-mirror-pairs",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-17T00:36:52.184970+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "字母异位词分组",
+        "frontendId": "49",
+        "title": "Group Anagrams",
+        "titleSlug": "group-anagrams",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-16T01:48:23.530363+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "距离最小相等元素查询",
+        "frontendId": "3488",
+        "title": "Closest Equal Element Queries",
+        "titleSlug": "closest-equal-element-queries",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-16T01:29:48.831760+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "到目标字符串的最短距离",
+        "frontendId": "2515",
+        "title": "Shortest Distance to Target String in a Circular Array",
+        "titleSlug": "shortest-distance-to-target-string-in-a-circular-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-15T00:02:25.910766+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "按序打印",
+        "frontendId": "1114",
+        "title": "Print in Order",
+        "titleSlug": "print-in-order",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-14T00:56:29.986258+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Concurrency",
+            "nameTranslated": "多线程",
+            "slug": "concurrency"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最小移动总距离",
+        "frontendId": "2463",
+        "title": "Minimum Total Distance Traveled",
+        "titleSlug": "minimum-total-distance-traveled",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-14T00:46:32.180336+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "到目标元素的最小距离",
+        "frontendId": "1848",
+        "title": "Minimum Distance to the Target Element",
+        "titleSlug": "minimum-distance-to-the-target-element",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-13T00:22:48.979443+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二指输入的的最小距离",
+        "frontendId": "1320",
+        "title": "Minimum Distance to Type a Word Using Two Fingers",
+        "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-12T03:31:15.396578+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "三个相等元素之间的最小距离 II",
+        "frontendId": "3741",
+        "title": "Minimum Distance Between Three Equal Elements II",
+        "titleSlug": "minimum-distance-between-three-equal-elements-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-11T15:03:26.496341+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出字符串中第一个匹配项的下标",
+        "frontendId": "28",
+        "title": "Find the Index of the First Occurrence in a String",
+        "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-10T02:45:10.950978+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "删除有序数组中的重复项",
+        "frontendId": "26",
+        "title": "Remove Duplicates from Sorted Array",
+        "titleSlug": "remove-duplicates-from-sorted-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-10T01:06:50.652840+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "三个相等元素之间的最小距离 I",
+        "frontendId": "3740",
+        "title": "Minimum Distance Between Three Equal Elements I",
+        "titleSlug": "minimum-distance-between-three-equal-elements-i",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-10T00:27:53.983487+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "区间乘法查询后的异或 II",
+        "frontendId": "3655",
+        "title": "XOR After Range Multiplication Queries II",
+        "titleSlug": "xor-after-range-multiplication-queries-ii",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-09T01:25:25.742946+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "有效的括号",
+        "frontendId": "20",
+        "title": "Valid Parentheses",
+        "titleSlug": "valid-parentheses",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T15:09:26.803494+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最长公共前缀",
+        "frontendId": "14",
+        "title": "Longest Common Prefix",
+        "titleSlug": "longest-common-prefix",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T14:55:05.099509+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Trie",
+            "nameTranslated": "字典树",
+            "slug": "trie"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "罗马数字转整数",
+        "frontendId": "13",
+        "title": "Roman to Integer",
+        "titleSlug": "roman-to-integer",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T14:27:57.590270+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "移除元素",
+        "frontendId": "27",
+        "title": "Remove Element",
+        "titleSlug": "remove-element",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T12:29:08.025147+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "回文数",
+        "frontendId": "9",
+        "title": "Palindrome Number",
+        "titleSlug": "palindrome-number",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T12:00:10.978738+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "奇偶链表",
+        "frontendId": "328",
+        "title": "Odd Even Linked List",
+        "titleSlug": "odd-even-linked-list",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-08T00:44:17.368936+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "删除排序链表中的重复元素",
+        "frontendId": "83",
+        "title": "Remove Duplicates from Sorted List",
+        "titleSlug": "remove-duplicates-from-sorted-list",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T00:23:10.495577+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最大重复子字符串",
+        "frontendId": "1668",
+        "title": "Maximum Repeating Substring",
+        "titleSlug": "maximum-repeating-substring",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T00:13:35.454336+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "转变日期格式",
+        "frontendId": "1507",
+        "title": "Reformat Date",
+        "titleSlug": "reformat-date",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-08T00:06:26.727879+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "区间乘法查询后的异或 I",
+        "frontendId": "3653",
+        "title": "XOR After Range Multiplication Queries I",
+        "titleSlug": "xor-after-range-multiplication-queries-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-07T23:50:34.789800+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Divide and Conquer",
+            "nameTranslated": "分治",
+            "slug": "divide-and-conquer"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检查是否是类的对象实例",
+        "frontendId": "2618",
+        "title": "Check if Object Instance of Class",
+        "titleSlug": "check-if-object-instance-of-class",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-07T02:23:41.718088+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "模拟行走机器人 II",
+        "frontendId": "2069",
+        "title": "Walking Robot Simulation II",
+        "titleSlug": "walking-robot-simulation-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-07T01:36:02.737180+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "模拟行走机器人",
+        "frontendId": "874",
+        "title": "Walking Robot Simulation",
+        "titleSlug": "walking-robot-simulation",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-06T02:35:49.714482+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "机器人能否返回原点",
+        "frontendId": "657",
+        "title": "Robot Return to Origin",
+        "titleSlug": "robot-return-to-origin",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-04-05T10:39:58.555255+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "网格图中机器人回家的最小代价",
+        "frontendId": "2087",
+        "title": "Minimum Cost Homecoming of a Robot in a Grid",
+        "titleSlug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-04T03:24:51.305755+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "可以被机器人摧毁的最大墙壁数目",
+        "frontendId": "3661",
+        "title": "Maximum Walls Destroyed by Robots",
+        "titleSlug": "maximum-walls-destroyed-by-robots",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-03T01:11:33.757456+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "机器人可以获得的最大金币数",
+        "frontendId": "3418",
+        "title": "Maximum Amount of Money Robot Can Earn",
+        "titleSlug": "maximum-amount-of-money-robot-can-earn",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-02T00:44:13.369680+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "小行星碰撞",
+        "frontendId": "735",
+        "title": "Asteroid Collision",
+        "titleSlug": "asteroid-collision",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-04-01T00:26:54.852501+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "机器人碰撞",
+        "frontendId": "2751",
+        "title": "Robot Collisions",
+        "titleSlug": "robot-collisions",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-04-01T00:09:35.854527+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "字典序最小的生成字符串",
+        "frontendId": "3474",
+        "title": "Lexicographically Smallest Generated String",
+        "titleSlug": "lexicographically-smallest-generated-string",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-31T01:12:15.207190+00:00",
+        "numSubmitted": 7,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "判断通过操作能否让字符串相等 II",
+        "frontendId": "2840",
+        "title": "Check if Strings Can be Made Equal With Operations II",
+        "titleSlug": "check-if-strings-can-be-made-equal-with-operations-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-30T00:26:02.155612+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "判断通过操作能否让字符串相等 I",
+        "frontendId": "2839",
+        "title": "Check if Strings Can be Made Equal With Operations I",
+        "titleSlug": "check-if-strings-can-be-made-equal-with-operations-i",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-29T03:41:46.559779+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "增量偶权环查询",
+        "frontendId": "3887",
+        "title": "Incremental Even-Weighted Cycle Queries",
+        "titleSlug": "incremental-even-weighted-cycle-queries",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-29T03:30:25.913017+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "设计事件管理器",
+        "frontendId": "3885",
+        "title": "Design Event Manager",
+        "titleSlug": "design-event-manager",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-29T03:11:20.821065+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Ordered Set",
+            "nameTranslated": "有序集合",
+            "slug": "ordered-set"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "双端字符匹配",
+        "frontendId": "3884",
+        "title": "First Matching Character From Both Ends",
+        "titleSlug": "first-matching-character-from-both-ends",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-29T02:30:57.182340+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出对应 LCP 矩阵的字符串",
+        "frontendId": "2573",
+        "title": "Find the String with LCP",
+        "titleSlug": "find-the-string-with-lcp",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-28T14:39:16.325766+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "循环移位后的矩阵相似检查",
+        "frontendId": "2946",
+        "title": "Matrix Similarity After Cyclic Shifts",
+        "titleSlug": "matrix-similarity-after-cyclic-shifts",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-27T09:41:40.599536+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "等和矩阵分割 II",
+        "frontendId": "3548",
+        "title": "Equal Sum Grid Partition II",
+        "titleSlug": "equal-sum-grid-partition-ii",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-26T01:25:11.111468+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Enumeration",
+            "nameTranslated": "枚举",
+            "slug": "enumeration"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "等和矩阵分割 I",
+        "frontendId": "3546",
+        "title": "Equal Sum Grid Partition I",
+        "titleSlug": "equal-sum-grid-partition-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-25T01:27:12.003677+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Enumeration",
+            "nameTranslated": "枚举",
+            "slug": "enumeration"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "设计循环队列",
+        "frontendId": "622",
+        "title": "Design Circular Queue",
+        "titleSlug": "design-circular-queue",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-24T05:17:07.027220+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Queue",
+            "nameTranslated": "队列",
+            "slug": "queue"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "吃苹果的最大数目",
+        "frontendId": "1705",
+        "title": "Maximum Number of Eaten Apples",
+        "titleSlug": "maximum-number-of-eaten-apples",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-24T05:10:40.838241+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "乘积最大子数组",
+        "frontendId": "152",
+        "title": "Maximum Product Subarray",
+        "titleSlug": "maximum-product-subarray",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-24T03:26:12.709594+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "构造乘积矩阵",
+        "frontendId": "2906",
+        "title": "Construct Product Matrix",
+        "titleSlug": "construct-product-matrix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-24T02:53:02.471811+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "重复叠加字符串匹配",
+        "frontendId": "686",
+        "title": "Repeated String Match",
+        "titleSlug": "repeated-string-match",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-23T03:26:18.548047+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "矩阵的最大非负积",
+        "frontendId": "1594",
+        "title": "Maximum Non Negative Product in a Matrix",
+        "titleSlug": "maximum-non-negative-product-in-a-matrix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-23T02:54:11.337009+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "判断矩阵经轮转后是否一致",
+        "frontendId": "1886",
+        "title": "Determine Whether Matrix Can Be Obtained By Rotation",
+        "titleSlug": "determine-whether-matrix-can-be-obtained-by-rotation",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-22T15:27:03.816489+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "垂直翻转子矩阵",
+        "frontendId": "3643",
+        "title": "Flip Square Submatrix Vertically",
+        "titleSlug": "flip-square-submatrix-vertically",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-21T08:16:00.437648+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "重复的子字符串",
+        "frontendId": "459",
+        "title": "Repeated Substring Pattern",
+        "titleSlug": "repeated-substring-pattern",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-20T08:31:43.778430+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "String Matching",
+            "nameTranslated": "字符串匹配",
+            "slug": "string-matching"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "子矩阵的最小绝对差",
+        "frontendId": "3567",
+        "title": "Minimum Absolute Difference in Sliding Submatrix",
+        "titleSlug": "minimum-absolute-difference-in-sliding-submatrix",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-20T07:56:36.714145+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计 X 和 Y 频数相等的子矩阵数量",
+        "frontendId": "3212",
+        "title": "Count Submatrices With Equal Frequency of X and Y",
+        "titleSlug": "count-submatrices-with-equal-frequency-of-x-and-y",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-19T15:19:38.070096+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "隐藏个人信息",
+        "frontendId": "831",
+        "title": "Masking Personal Information",
+        "titleSlug": "masking-personal-information",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-18T10:59:23.247977+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "密钥格式化",
+        "frontendId": "482",
+        "title": "License Key Formatting",
+        "titleSlug": "license-key-formatting",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-18T10:29:39.893723+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检测大写字母",
+        "frontendId": "520",
+        "title": "Detect Capital",
+        "titleSlug": "detect-capital",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-18T09:08:33.931269+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "元素和小于等于 k 的子矩阵的数目",
+        "frontendId": "3070",
+        "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+        "titleSlug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-18T08:53:12.633682+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "多次求和构造目标数组",
+        "frontendId": "1354",
+        "title": "Construct Target Array With Multiple Sums",
+        "titleSlug": "construct-target-array-with-multiple-sums",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-17T11:43:27.974644+00:00",
+        "numSubmitted": 7,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "查找和最小的 K 对数字",
+        "frontendId": "373",
+        "title": "Find K Pairs with Smallest Sums",
+        "titleSlug": "find-k-pairs-with-smallest-sums",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-17T11:13:50.371915+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最后一块石头的重量",
+        "frontendId": "1046",
+        "title": "Last Stone Weight",
+        "titleSlug": "last-stone-weight",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-17T03:48:23.081751+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "重新排列后的最大子矩阵",
+        "frontendId": "1727",
+        "title": "Largest Submatrix With Rearrangements",
+        "titleSlug": "largest-submatrix-with-rearrangements",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-17T03:10:52.490050+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "用栈实现队列",
+        "frontendId": "232",
+        "title": "Implement Queue using Stacks",
+        "titleSlug": "implement-queue-using-stacks",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-16T11:18:33.197331+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Queue",
+            "nameTranslated": "队列",
+            "slug": "queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "买票需要的时间",
+        "frontendId": "2073",
+        "title": "Time Needed to Buy Tickets",
+        "titleSlug": "time-needed-to-buy-tickets",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-16T09:30:46.138777+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Queue",
+            "nameTranslated": "队列",
+            "slug": "queue"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "无法吃午餐的学生数量",
+        "frontendId": "1700",
+        "title": "Number of Students Unable to Eat Lunch",
+        "titleSlug": "number-of-students-unable-to-eat-lunch",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-16T09:17:28.582868+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Queue",
+            "nameTranslated": "队列",
+            "slug": "queue"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "矩阵中最大的三个菱形和",
+        "frontendId": "1878",
+        "title": "Get Biggest Three Rhombus Sums in a Grid",
+        "titleSlug": "get-biggest-three-rhombus-sums-in-a-grid",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-16T03:27:54.509567+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "添加一个点后可激活的最大点数",
+        "frontendId": "3873",
+        "title": "Maximum Points Activated with One Addition",
+        "titleSlug": "maximum-points-activated-with-one-addition",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-15T12:31:58.402917+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "奇妙序列",
+        "frontendId": "1622",
+        "title": "Fancy Sequence",
+        "titleSlug": "fancy-sequence",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-15T11:56:32.960081+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Design",
+            "nameTranslated": "设计",
+            "slug": "design"
+          },
+          {
+            "name": "Segment Tree",
+            "nameTranslated": "线段树",
+            "slug": "segment-tree"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Number Theory",
+            "nameTranslated": "数论",
+            "slug": "number-theory"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "替换最多一个元素后的最长等差子数组",
+        "frontendId": "3872",
+        "title": "Longest Arithmetic Sequence After Changing At Most One Element",
+        "titleSlug": "longest-arithmetic-sequence-after-changing-at-most-one-element",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-15T03:42:07.893753+00:00",
+        "numSubmitted": 4,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Enumeration",
+            "nameTranslated": "枚举",
+            "slug": "enumeration"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计范围内的逗号 II",
+        "frontendId": "3871",
+        "title": "Count Commas in Range II",
+        "titleSlug": "count-commas-in-range-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-15T02:42:05.252575+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "统计范围内的逗号",
+        "frontendId": "3870",
+        "title": "Count Commas in Range",
+        "titleSlug": "count-commas-in-range",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-15T02:32:05.150747+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "长度为 n 的开心字符串中字典序第 k 小的字符串",
+        "frontendId": "1415",
+        "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+        "titleSlug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-14T13:30:59.243718+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "去除重复字母",
+        "frontendId": "316",
+        "title": "Remove Duplicate Letters",
+        "titleSlug": "remove-duplicate-letters",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-13T03:01:12.477114+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Monotonic Stack",
+            "nameTranslated": "单调栈",
+            "slug": "monotonic-stack"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "有效的山脉数组",
+        "frontendId": "941",
+        "title": "Valid Mountain Array",
+        "titleSlug": "valid-mountain-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-13T01:33:46.676217+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "加一",
+        "frontendId": "66",
+        "title": "Plus One",
+        "titleSlug": "plus-one",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-13T01:28:12.986348+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "移山所需的最少秒数",
+        "frontendId": "3296",
+        "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+        "titleSlug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-13T01:12:30.320188+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Heap (Priority Queue)",
+            "nameTranslated": "堆（优先队列）",
+            "slug": "heap-priority-queue"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "升级后最大生成树稳定性",
+        "frontendId": "3600",
+        "title": "Maximize Spanning Tree Stability with Upgrades",
+        "titleSlug": "maximize-spanning-tree-stability-with-upgrades",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-12T09:27:01.787283+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Union Find",
+            "nameTranslated": "并查集",
+            "slug": "union-find"
+          },
+          {
+            "name": "Graph",
+            "nameTranslated": "图",
+            "slug": "graph"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Minimum Spanning Tree",
+            "nameTranslated": "最小生成树",
+            "slug": "minimum-spanning-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "柱状图中最大的矩形",
+        "frontendId": "84",
+        "title": "Largest Rectangle in Histogram",
+        "titleSlug": "largest-rectangle-in-histogram",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-11T03:30:11.486686+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Monotonic Stack",
+            "nameTranslated": "单调栈",
+            "slug": "monotonic-stack"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "每日温度",
+        "frontendId": "739",
+        "title": "Daily Temperatures",
+        "titleSlug": "daily-temperatures",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-11T02:42:05.258733+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Monotonic Stack",
+            "nameTranslated": "单调栈",
+            "slug": "monotonic-stack"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "商品折扣后的最终价格",
+        "frontendId": "1475",
+        "title": "Final Prices With a Special Discount in a Shop",
+        "titleSlug": "final-prices-with-a-special-discount-in-a-shop",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-11T02:38:59.100985+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Monotonic Stack",
+            "nameTranslated": "单调栈",
+            "slug": "monotonic-stack"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "数字的补数",
+        "frontendId": "476",
+        "title": "Number Complement",
+        "titleSlug": "number-complement",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-11T02:07:38.421042+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "十进制整数的反码",
+        "frontendId": "1009",
+        "title": "Complement of Base 10 Integer",
+        "titleSlug": "complement-of-base-10-integer",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-11T02:05:39.020835+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出所有稳定的二进制数组 II",
+        "frontendId": "3130",
+        "title": "Find All Possible Stable Binary Arrays II",
+        "titleSlug": "find-all-possible-stable-binary-arrays-ii",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-03-10T07:10:26.120113+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "函数的独占时间",
+        "frontendId": "636",
+        "title": "Exclusive Time of Functions",
+        "titleSlug": "exclusive-time-of-functions",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-10T01:32:42.076976+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "逆波兰表达式求值",
+        "frontendId": "150",
+        "title": "Evaluate Reverse Polish Notation",
+        "titleSlug": "evaluate-reverse-polish-notation",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-09T15:50:46.885023+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出所有稳定的二进制数组 I",
+        "frontendId": "3129",
+        "title": "Find All Possible Stable Binary Arrays I",
+        "titleSlug": "find-all-possible-stable-binary-arrays-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-09T04:58:00.618687+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出不同的二进制字符串",
+        "frontendId": "1980",
+        "title": "Find Unique Binary String",
+        "titleSlug": "find-unique-binary-string",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-08T10:20:47.970287+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "将一个字符串排序的最小操作次数",
+        "frontendId": "3863",
+        "title": "Minimum Operations to Sort a String",
+        "titleSlug": "minimum-operations-to-sort-a-string",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-08T03:45:27.651123+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找出最小平衡下标",
+        "frontendId": "3862",
+        "title": "Find the Smallest Balanced Index",
+        "titleSlug": "find-the-smallest-balanced-index",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-08T02:46:44.702639+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "容量最小的箱子",
+        "frontendId": "3861",
+        "title": "Minimum Capacity Box",
+        "titleSlug": "minimum-capacity-box",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-08T02:32:50.192957+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "用栈操作构建数组",
+        "frontendId": "1441",
+        "title": "Build an Array With Stack Operations",
+        "titleSlug": "build-an-array-with-stack-operations",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-07T16:04:20.126457+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Stack",
+            "nameTranslated": "栈",
+            "slug": "stack"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "使二进制字符串字符交替的最少反转次数",
+        "frontendId": "1888",
+        "title": "Minimum Number of Flips to Make the Binary String Alternating",
+        "titleSlug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-03-07T15:25:06.336022+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Sliding Window",
+            "nameTranslated": "滑动窗口",
+            "slug": "sliding-window"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "找到所有数组中消失的数字",
+        "frontendId": "448",
+        "title": "Find All Numbers Disappeared in an Array",
+        "titleSlug": "find-all-numbers-disappeared-in-an-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-06T10:42:00.228689+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "有多少小于当前数字的数字",
+        "frontendId": "1365",
+        "title": "How Many Numbers Are Smaller Than the Current Number",
+        "titleSlug": "how-many-numbers-are-smaller-than-the-current-number",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-06T10:33:07.614715+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Counting Sort",
+            "nameTranslated": "计数排序",
+            "slug": "counting-sort"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "错误的集合",
+        "frontendId": "645",
+        "title": "Set Mismatch",
+        "titleSlug": "set-mismatch",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-06T10:26:28.524211+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "检查二进制字符串字段",
+        "frontendId": "1784",
+        "title": "Check if Binary String Has at Most One Segment of Ones",
+        "titleSlug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-06T10:18:41.833991+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "生成交替二进制字符串的最少操作数",
+        "frontendId": "1758",
+        "title": "Minimum Changes To Make Alternating Binary String",
+        "titleSlug": "minimum-changes-to-make-alternating-binary-string",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-05T11:05:03.933837+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最大连续 1 的个数",
+        "frontendId": "485",
+        "title": "Max Consecutive Ones",
+        "titleSlug": "max-consecutive-ones",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-05T10:51:21.851372+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "重新排列数组",
+        "frontendId": "1470",
+        "title": "Shuffle the Array",
+        "titleSlug": "shuffle-the-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-05T10:47:11.428044+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "数组串联",
+        "frontendId": "1929",
+        "title": "Concatenation of Array",
+        "titleSlug": "concatenation-of-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-03-05T09:26:17.210796+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "计算十进制表示",
+        "frontendId": "3697",
+        "title": "Compute Decimal Representation",
+        "titleSlug": "compute-decimal-representation",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2025-09-28T12:44:27.790030+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "三段式数组 I",
+        "frontendId": "3637",
+        "title": "Trionic Array I",
+        "titleSlug": "trionic-array-i",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2025-08-06T01:53:31.167857+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      }
+    ]
+  }
+}

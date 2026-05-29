@@ -1,14 +1,10 @@
 ---
 // src/pages/index.astro
-import BaseLayout from '@layouts/BaseLayout.astro';
 import ThreeColumnLayout from '@layouts/ThreeColumnLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, CREATE_TIME } from '../consts';
-import { getCollection } from 'astro:content';
 import FormattedDate from '@components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import WakaDashboard from '@features/waka/components/WakaDashboard.tsx';
 import CoCoders from '@features/co-coders/components/CoCoders.astro';
-import { getReadingStats } from '@utils/readingTime';
 import placeholderImg from '../../public/android-chrome-512x512.png'
 import ProfileCard from '@components/widgets/ProfileCard.astro';
 import { SiteStatsCard } from '@components/widgets/SiteStatsCard';
@@ -25,8 +21,6 @@ const { recentPosts, totalTagsCounts, totalPostsCounts, totalPostsWords } = awai
       <h1 class="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-gray-100">
         Welcome to {SITE_TITLE}
       </h1>
-
-      <WakaDashboard client:load />
     </section>
 
     <section class="w-full max-w-6xl mx-auto">

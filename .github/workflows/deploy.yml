@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 获取完整历史
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -34,15 +34,24 @@ jobs:
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
-      # --- 同步数据回仓库 ---
+      - name: Sync LeetCode Data
+        run: npx tsx scripts/fetch-leetcode.ts
+        env:
+          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
+
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
           git add src/features/waka/data/wakatime.json
+          git add src/features/leetcode-stats/data/leetcode.json
+
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update wakatime data [skip ci]"
-            git push
+            git commit -m "chore: automated metrics sync (wakatime & leetcode) [skip ci]"
+            git push origin main
+          else
+            echo "数据无变化"
           fi
 
       - name: Build Astro
