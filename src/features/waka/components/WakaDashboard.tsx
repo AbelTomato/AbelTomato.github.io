@@ -6,7 +6,6 @@ import { LanguageStats } from "./LanguageStats";
 import { ActiveTrend } from "./ActiveTrend";
 import { HeatMap } from "./HeatMap";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Code } from "astro:components";
 
 export default function WakaDashboard() {
   const [queryClient] = useState(() => new QueryClient());

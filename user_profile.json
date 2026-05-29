@@ -1,0 +1,186 @@
+{
+  "haveFollowed": false,
+  "siteRanking": 100000,
+  "profile": {
+    "userSlug": "abeltomato",
+    "realName": "AbelTomato",
+    "aboutMe": "",
+    "asciiCode": "",
+    "userAvatar": "https://assets.leetcode.cn/aliyun-lc-upload/users/abeltomato/avatar_1777338081.png",
+    "gender": "None",
+    "websites": [],
+    "skillTags": [],
+    "ipRegion": "福建",
+    "birthday": "08/18/2007",
+    "location": "0%0",
+    "useDefaultAvatar": false,
+    "certificationLevel": "NORMAL",
+    "github": null,
+    "school": null,
+    "company": null,
+    "job": null,
+    "globalLocation": {
+      "country": "中国",
+      "province": "福建",
+      "city": "厦门",
+      "overseasCity": false
+    },
+    "socialAccounts": [
+      {
+        "provider": "qq",
+        "profileUrl": null
+      },
+      {
+        "provider": "github",
+        "profileUrl": "https://github.com/AbelTomato"
+      },
+      {
+        "provider": "weixin",
+        "profileUrl": null
+      }
+    ],
+    "skillSet": {
+      "langLevels": [
+        {
+          "langName": "cpp",
+          "langVerboseName": "C++",
+          "level": 1
+        },
+        {
+          "langName": "python3",
+          "langVerboseName": "Python3",
+          "level": 2
+        },
+        {
+          "langName": "javascript",
+          "langVerboseName": "JavaScript",
+          "level": 1
+        },
+        {
+          "langName": "typescript",
+          "langVerboseName": "TypeScript",
+          "level": 1
+        }
+      ],
+      "topics": [
+        {
+          "slug": "array",
+          "name": "Array",
+          "translatedName": "数组"
+        },
+        {
+          "slug": "binary-search",
+          "name": "Binary Search",
+          "translatedName": "二分查找"
+        },
+        {
+          "slug": "binary-tree",
+          "name": "Binary Tree",
+          "translatedName": "二叉树"
+        },
+        {
+          "slug": "depth-first-search",
+          "name": "Depth-First Search",
+          "translatedName": "深度优先搜索"
+        },
+        {
+          "slug": "dynamic-programming",
+          "name": "Dynamic Programming",
+          "translatedName": "动态规划"
+        },
+        {
+          "slug": "greedy",
+          "name": "Greedy",
+          "translatedName": "贪心"
+        },
+        {
+          "slug": "hash-table",
+          "name": "Hash Table",
+          "translatedName": "哈希表"
+        },
+        {
+          "slug": "linked-list",
+          "name": "Linked List",
+          "translatedName": "链表"
+        },
+        {
+          "slug": "math",
+          "name": "Math",
+          "translatedName": "数学"
+        },
+        {
+          "slug": "matrix",
+          "name": "Matrix",
+          "translatedName": "矩阵"
+        },
+        {
+          "slug": "prefix-sum",
+          "name": "Prefix Sum",
+          "translatedName": "前缀和"
+        },
+        {
+          "slug": "simulation",
+          "name": "Simulation",
+          "translatedName": "模拟"
+        },
+        {
+          "slug": "sorting",
+          "name": "Sorting",
+          "translatedName": "排序"
+        },
+        {
+          "slug": "stack",
+          "name": "Stack",
+          "translatedName": "栈"
+        },
+        {
+          "slug": "string",
+          "name": "String",
+          "translatedName": "字符串"
+        },
+        {
+          "slug": "tree",
+          "name": "Tree",
+          "translatedName": "树"
+        },
+        {
+          "slug": "two-pointers",
+          "name": "Two Pointers",
+          "translatedName": "双指针"
+        }
+      ],
+      "topicAreaScores": [
+        {
+          "score": 23,
+          "topicArea": {
+            "name": "数据结构",
+            "slug": "data-structures"
+          }
+        },
+        {
+          "score": 19,
+          "topicArea": {
+            "name": "设计",
+            "slug": "design"
+          }
+        },
+        {
+          "score": 0,
+          "topicArea": {
+            "name": "基础架构",
+            "slug": "architecture"
+          }
+        },
+        {
+          "score": 20,
+          "topicArea": {
+            "name": "算法",
+            "slug": "algorithms"
+          }
+        }
+      ]
+    }
+  },
+  "educationRecordList": [],
+  "occupationRecordList": []
+}

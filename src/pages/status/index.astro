@@ -1,0 +1,30 @@
+---
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+import WakaDashboard from "@features/waka/components/WakaDashboard";
+import LeetcodeStats from "@features/leetcode-stats/components/LeetcodeStats";
+import ProfileCard from "@components/widgets/ProfileCard.astro";
+import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import { getPostsData } from "@src/hooks/usePostsData";
+import { CREATE_TIME } from "@src/consts";
+
+const { totalPostsCounts, totalPostsWords, totalTagsCounts } =
+  await getPostsData();
+---
+
+<ThreeColumnLayout title="状态" description="个人状态与数据统计">
+  <ProfileCard slot="left-sidebar" />
+
+  <main class="w-full mx-auto">
+    <WakaDashboard client:load />
+    <LeetcodeStats client:load />
+  </main>
+
+  <SiteStatsCard
+    client:idle
+    createTime={CREATE_TIME}
+    articleCount={totalPostsCounts}
+    wordCount={totalPostsWords}
+    tagCount={totalTagsCounts}
+    slot="right-sidebar"
+  />
+</ThreeColumnLayout>
