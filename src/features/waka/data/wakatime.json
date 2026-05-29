@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-29T03:32:23.294Z",
-  "total": "150 hrs 20 mins",
-  "daily_average": "3 hrs 45 mins",
+  "lastUpdate": "2026-05-29T09:11:22.492Z",
+  "total": "154 hrs 19 mins",
+  "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 106203.78600000001,
-      "total_text": "29h 30m",
+      "total_seconds": 120551.44900000001,
+      "total_text": "33h 29m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 421105.25999999995,
-      "total_text": "116h 58m",
+      "total_seconds": 435452.92299999995,
+      "total_text": "120h 57m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1529299.216,
-      "total_text": "424h 48m",
+      "total_seconds": 1543646.879,
+      "total_text": "428h 47m",
       "days_active": 91
     },
     "all_time": {
-      "total_seconds": 1529299.216,
-      "total_text": "424h 48m",
+      "total_seconds": 1543646.879,
+      "total_text": "428h 47m",
       "days_active": 91
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 10572.716,
-      "text": "2 hrs 56 mins"
+      "seconds": 24920.379,
+      "text": "6 hrs 55 mins"
     }
   ],
   "heatmap": [
@@ -424,7 +424,7 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 10572.716
+      "seconds": 24920.379
     }
   ],
   "languages": [
@@ -438,7 +438,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 163028.661
+      "total_seconds": 175217.628
     },
     {
       "name": "Python",
@@ -450,7 +450,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 90239.922
+      "total_seconds": 90929.695
     },
     {
       "name": "Java",
@@ -458,7 +458,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 29829.675999999996
+      "total_seconds": 30886.327999999994
     },
     {
       "name": "HTML",
@@ -489,12 +489,12 @@
       "total_seconds": 1248.058
     },
     {
-      "name": "Bash",
-      "total_seconds": 624.506
+      "name": "Git",
+      "total_seconds": 807.01
     },
     {
-      "name": "Git",
-      "total_seconds": 394.739
+      "name": "Bash",
+      "total_seconds": 624.506
     },
     {
       "name": "INI",
@@ -1144,10 +1144,12 @@
       "JavaScript": 10.041
     },
     "2026-05-29": {
-      "TypeScript": 5376.668,
+      "TypeScript": 17565.635,
       "Python": 3298.722,
-      "JSON": 1431.88,
-      "YAML": 465.446
+      "JSON": 2488.532,
+      "Astro": 689.773,
+      "YAML": 465.446,
+      "Git": 412.271
     }
   }
 }
