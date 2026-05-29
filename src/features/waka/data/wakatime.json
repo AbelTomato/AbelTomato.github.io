@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-05-29T09:11:22.492Z",
+  "lastUpdate": "2026-05-29T09:53:41.219Z",
   "total": "154 hrs 19 mins",
   "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 120551.44900000001,
+      "total_seconds": 120591.90400000001,
       "total_text": "33h 29m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 435452.92299999995,
-      "total_text": "120h 57m",
+      "total_seconds": 435493.3779999999,
+      "total_text": "120h 58m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1543646.879,
-      "total_text": "428h 47m",
+      "total_seconds": 1543687.334,
+      "total_text": "428h 48m",
       "days_active": 91
     },
     "all_time": {
-      "total_seconds": 1543646.879,
-      "total_text": "428h 47m",
+      "total_seconds": 1543687.334,
+      "total_text": "428h 48m",
       "days_active": 91
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 24920.379,
-      "text": "6 hrs 55 mins"
+      "seconds": 24960.834,
+      "text": "6 hrs 56 mins"
     }
   ],
   "heatmap": [
@@ -424,7 +424,7 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 24920.379
+      "seconds": 24960.834
     }
   ],
   "languages": [
@@ -438,7 +438,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 175217.628
+      "total_seconds": 175249.77
     },
     {
       "name": "Python",
@@ -490,7 +490,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 807.01
+      "total_seconds": 815.323
     },
     {
       "name": "Bash",
@@ -1144,12 +1144,12 @@
       "JavaScript": 10.041
     },
     "2026-05-29": {
-      "TypeScript": 17565.635,
+      "TypeScript": 17597.777,
       "Python": 3298.722,
       "JSON": 2488.532,
       "Astro": 689.773,
       "YAML": 465.446,
-      "Git": 412.271
+      "Git": 420.584
     }
   }
 }
