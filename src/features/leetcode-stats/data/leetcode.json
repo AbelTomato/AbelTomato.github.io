@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 31,
+        "count": 32,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -267,6 +267,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 728063529,
+      "submitTime": 1780107396,
+      "question": {
+        "title": "Block Placement Queries",
+        "translatedTitle": "物块放置查询",
+        "titleSlug": "block-placement-queries",
+        "questionFrontendId": "3161"
+      }
+    },
+    {
       "submissionId": 727885970,
       "submitTime": 1780014845,
       "question": {
@@ -405,21 +415,44 @@
         "titleSlug": "binary-tree-maximum-path-sum",
         "questionFrontendId": "124"
       }
-    },
-    {
-      "submissionId": 727020194,
-      "submitTime": 1779670467,
-      "question": {
-        "title": "Jump Game VII",
-        "translatedTitle": "跳跃游戏 VII",
-        "titleSlug": "jump-game-vii",
-        "questionFrontendId": "1871"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 207,
+    "totalNum": 208,
     "questions": [
+      {
+        "translatedTitle": "物块放置查询",
+        "frontendId": "3161",
+        "title": "Block Placement Queries",
+        "titleSlug": "block-placement-queries",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-30T02:26:21.638895+00:00",
+        "numSubmitted": 5,
+        "questionStatus": "SOLVED",
+        "lastResult": "TLE",
+        "topicTags": [
+          {
+            "name": "Binary Indexed Tree",
+            "nameTranslated": "树状数组",
+            "slug": "binary-indexed-tree"
+          },
+          {
+            "name": "Segment Tree",
+            "nameTranslated": "线段树",
+            "slug": "segment-tree"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
       {
         "translatedTitle": "电话号码的字母组合",
         "frontendId": "17",

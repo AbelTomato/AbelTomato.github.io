@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-05-29T20:24:45.237Z",
-  "total": "154 hrs 19 mins",
-  "daily_average": "3 hrs 51 mins",
+  "lastUpdate": "2026-05-30T02:58:10.970Z",
+  "total": "149 hrs 56 mins",
+  "daily_average": "3 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 120591.90400000001,
-      "total_text": "33h 29m",
+      "total_seconds": 111677.57500000001,
+      "total_text": "31h 1m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 435493.3779999999,
-      "total_text": "120h 58m",
+      "total_seconds": 432791.10899999994,
+      "total_text": "120h 13m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1543687.334,
-      "total_text": "428h 48m",
-      "days_active": 91
+      "total_seconds": 1546385.065,
+      "total_text": "429h 33m",
+      "days_active": 92
     },
     "all_time": {
-      "total_seconds": 1543687.334,
-      "total_text": "428h 48m",
-      "days_active": 91
+      "total_seconds": 1546385.065,
+      "total_text": "429h 33m",
+      "days_active": 92
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-23",
-      "seconds": 11612.06,
-      "text": "3 hrs 13 mins"
-    },
     {
       "date": "2026-05-24",
       "seconds": 6158.213,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 24960.834,
-      "text": "6 hrs 56 mins"
+      "seconds": 25258.565,
+      "text": "7 hrs"
+    },
+    {
+      "date": "2026-05-30",
+      "seconds": 2400,
+      "text": "40 mins"
     }
   ],
   "heatmap": [
@@ -424,7 +424,11 @@
     },
     {
       "date": "2026-05-29",
-      "seconds": 24960.834
+      "seconds": 25258.565
+    },
+    {
+      "date": "2026-05-30",
+      "seconds": 2400
     }
   ],
   "languages": [
@@ -438,11 +442,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 175249.77
+      "total_seconds": 175547.501
     },
     {
       "name": "Python",
-      "total_seconds": 140564.18500000003
+      "total_seconds": 142964.18500000003
     },
     {
       "name": "JavaScript",
@@ -1144,12 +1148,15 @@
       "JavaScript": 10.041
     },
     "2026-05-29": {
-      "TypeScript": 17597.777,
+      "TypeScript": 17895.508,
       "Python": 3298.722,
       "JSON": 2488.532,
       "Astro": 689.773,
       "YAML": 465.446,
       "Git": 420.584
+    },
+    "2026-05-30": {
+      "Python": 2400
     }
   }
 }
