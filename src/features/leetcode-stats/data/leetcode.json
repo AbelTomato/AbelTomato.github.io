@@ -2,15 +2,15 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 69,
+        "count": 70,
         "difficulty": "EASY"
       },
       {
-        "count": 108,
+        "count": 109,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 32,
+        "count": 33,
         "difficulty": "HARD"
       }
     ],
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2151,
+        "count": 2152,
         "difficulty": "MEDIUM"
       },
       {
@@ -267,6 +267,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 728232498,
+      "submitTime": 1780198960,
+      "question": {
+        "title": "Lexicographically Maximum MEX Array",
+        "translatedTitle": "字典序最大的 MEX 数组",
+        "titleSlug": "lexicographically-maximum-mex-array",
+        "questionFrontendId": "3948"
+      }
+    },
+    {
+      "submissionId": 728224077,
+      "submitTime": 1780196706,
+      "question": {
+        "title": "Maximum Number of Items From Sale I",
+        "translatedTitle": "购买最多物品数目 I",
+        "titleSlug": "maximum-number-of-items-from-sale-i",
+        "questionFrontendId": "3946"
+      }
+    },
+    {
+      "submissionId": 728217525,
+      "submitTime": 1780194684,
+      "question": {
+        "title": "Digit Frequency Score",
+        "translatedTitle": "计算数字频率得分",
+        "titleSlug": "digit-frequency-score",
+        "questionFrontendId": "3945"
+      }
+    },
+    {
       "submissionId": 728210269,
       "submitTime": 1780190540,
       "question": {
@@ -385,41 +415,47 @@
         "titleSlug": "rotting-oranges",
         "questionFrontendId": "994"
       }
-    },
-    {
-      "submissionId": 727240823,
-      "submitTime": 1779756438,
-      "question": {
-        "title": "Number of Islands",
-        "translatedTitle": "岛屿数量",
-        "titleSlug": "number-of-islands",
-        "questionFrontendId": "200"
-      }
-    },
-    {
-      "submissionId": 727239945,
-      "submitTime": 1779755686,
-      "question": {
-        "title": "Count the Number of Special Characters I",
-        "translatedTitle": "统计特殊字母的数量 I",
-        "titleSlug": "count-the-number-of-special-characters-i",
-        "questionFrontendId": "3120"
-      }
-    },
-    {
-      "submissionId": 727021366,
-      "submitTime": 1779671172,
-      "question": {
-        "title": "Binary Tree Maximum Path Sum",
-        "translatedTitle": "二叉树中的最大路径和",
-        "titleSlug": "binary-tree-maximum-path-sum",
-        "questionFrontendId": "124"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 209,
+    "totalNum": 212,
     "questions": [
+      {
+        "translatedTitle": "字典序最大的 MEX 数组",
+        "frontendId": "3948",
+        "title": "Lexicographically Maximum MEX Array",
+        "titleSlug": "lexicographically-maximum-mex-array",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-05-31T03:42:40.101097+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "购买最多物品数目 I",
+        "frontendId": "3946",
+        "title": "Maximum Number of Items From Sale I",
+        "titleSlug": "maximum-number-of-items-from-sale-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-31T03:05:02.414144+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "计算数字频率得分",
+        "frontendId": "3945",
+        "title": "Digit Frequency Score",
+        "titleSlug": "digit-frequency-score",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-05-31T02:31:24.012233+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
       {
         "translatedTitle": "摧毁小行星",
         "frontendId": "2126",
