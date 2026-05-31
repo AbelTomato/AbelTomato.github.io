@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 107,
+        "count": 108,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2152,
+        "count": 2151,
         "difficulty": "MEDIUM"
       },
       {
@@ -176,7 +176,7 @@
         }
       },
       {
-        "score": 20,
+        "score": 21,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -266,6 +266,16 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 728210269,
+      "submitTime": 1780190540,
+      "question": {
+        "title": "Destroying Asteroids",
+        "translatedTitle": "摧毁小行星",
+        "titleSlug": "destroying-asteroids",
+        "questionFrontendId": "2126"
+      }
+    },
     {
       "submissionId": 728063529,
       "submitTime": 1780107396,
@@ -405,21 +415,39 @@
         "titleSlug": "binary-tree-maximum-path-sum",
         "questionFrontendId": "124"
       }
-    },
-    {
-      "submissionId": 727021155,
-      "submitTime": 1779671075,
-      "question": {
-        "title": "Binary Tree Maximum Path Sum",
-        "translatedTitle": "二叉树中的最大路径和",
-        "titleSlug": "binary-tree-maximum-path-sum",
-        "questionFrontendId": "124"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 208,
+    "totalNum": 209,
     "questions": [
+      {
+        "translatedTitle": "摧毁小行星",
+        "frontendId": "2126",
+        "title": "Destroying Asteroids",
+        "titleSlug": "destroying-asteroids",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-05-31T01:22:20.062308+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
       {
         "translatedTitle": "物块放置查询",
         "frontendId": "3161",
