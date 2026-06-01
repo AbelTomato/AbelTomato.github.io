@@ -68,7 +68,7 @@ function StatCard({ title, data, icon, highlight = false }: StatItemProps) {
 
 export const CodeStats = ({ stats }: CodeStatsProps) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
       <StatCard
         title="总编码时长"
         data={stats?.all_time}

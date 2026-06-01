@@ -40,8 +40,8 @@ export const ActiveTrend = ({ weeklyTotalHours, weekly }: ActiveTrendProps) => {
     <Card className="w-full self-start">
       <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-6">
         <div className="space-y-1">
-          <CardTitle className="text-sm font-medium italic text-muted-foreground tracking-wide">
-            #Active Trend
+          <CardTitle className="text-sm font-semibold tracking-wide uppercase text-foreground">
+            # Active Trend
           </CardTitle>
           <CardDescription>最近一周编码时长趋势</CardDescription>
         </div>

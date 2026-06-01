@@ -59,12 +59,12 @@ export default function QuestionStats({
   const activeQuestions = selectedTag ? tagToQuestionsMap[selectedTag] : [];
 
   return (
-    <div className="w-full max-w-4xl space-y-6">
-      <Card className="w-full max-w-4xl transition-all duration-300 border bg-white border-zinc-200 text-zinc-900 shadow-xl shadow-zinc-200/80 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:shadow-none">
+    <div className="w-full mx-auto space-y-6">
+      <Card className="w-full mx-auto transition-all duration-300 border bg-white border-zinc-200 shadow-xl text-zinc-900 shadow-zinc-200/80 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:shadow-none">
         <CardHeader className="border-b pb-6 border-zinc-100 dark:border-zinc-800/50">
           <div className="space-y-1">
-            <CardTitle className="text-xl font-black tracking-tight flex items-center gap-2">
-              <Layers className="h-5 w-5 text-amber-500" />
+            <CardTitle className="text-xl font-black tracking-tight flex items-center gap-2 text-amber-500">
+              <Layers className="h-5 w-5" />
               LeetCode Questions Stats
             </CardTitle>
           </div>

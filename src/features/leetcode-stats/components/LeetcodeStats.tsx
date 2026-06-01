@@ -3,7 +3,8 @@ import { useState } from "react";
 import { useLeetcodeData } from "../hooks/useLeetcodeData";
 import ContestTrend from "./ContestTrend";
 import QuestionStats from "./QuestionStats";
-import { Loader2, AlertCircle } from "lucide-react";
+import LoadingStatus from "@components/ui/LoadingStatus";
+import ErrorStatus from "@components/ui/ErrorStatus";
 
 export default function LeetcodeStats() {
   const [queryClient] = useState(() => new QueryClient());
@@ -16,29 +17,14 @@ export default function LeetcodeStats() {
 }
 
 function LeetcodeStatsContent() {
-  const { data, isLoading, error } = useLeetcodeData();
+  const { data, isLoading, error, dataUpdatedAt } = useLeetcodeData();
 
   if (isLoading) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-100 text-zinc-400 gap-2">
-        <Loader2 className="h-8 w-8 animate-spin text-amber-500" />
-        <p className="text-sm font-medium font-mono">
-          LOADING LEETCODE DATA...
-        </p>
-      </div>
-    );
+    return <LoadingStatus loadingSource="LeetCode" />;
   }
 
   if (error || !data) {
-    return (
-      <div className="flex flex-col items-center justify-center min-h-100 p-6 rounded-2xl max-w-md border text-rose-600 border-rose-200 bg-rose-50 dark:text-rose-500 dark:border-rose-900/30 dark:bg-rose-950/10">
-        <AlertCircle className="h-8 w-8" />
-        <p className="text-sm font-bold font-mono">ERROR FETCHING DATA</p>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 text-center mt-1">
-          {error?.message || "Data is empty."}
-        </p>
-      </div>
-    );
+    return <ErrorStatus error={error} fallbackMessage="Data is empty." />;
   }
 
   const {
@@ -70,7 +56,9 @@ function LeetcodeStatsContent() {
   };
 
   return (
-    <div className="w-full mx-auto flex flex-col gap-6 animate-in fade-in duration-300 rounded-3xl transition-all justify-center items-center">
+    <div className="w-full mx-auto flex flex-col gap-6 animate-in fade-in duration-300">
+      <LeetcodeReport lastUpdated={dataUpdatedAt} />
+
       {userContestRanking && (
         <ContestTrend
           attendedCount={userContestRanking.attendedContestsCount}
@@ -86,6 +74,44 @@ function LeetcodeStatsContent() {
         numAcQuestions={userProfileQuestionProgress.numAcceptedQuestions}
         questionList={formattedQuestionList}
       />
+    </div>
+  );
+}
+
+function LeetcodeReport({ lastUpdated }: { lastUpdated: number }) {
+  return (
+    <div className="w-full flex flex-col sm:flex-row sm:items-end justify-between gap-2 px-1 border-b pb-4 border-border">
+      <div className="space-y-1">
+        <h2 className="text-2xl font-bold tracking-tight text-foreground">
+          算法训练报告
+        </h2>
+        <p className="text-sm text-muted-foreground">
+          基于 leetcode-query API 的自动化数据面板
+        </p>
+      </div>
+
+      {lastUpdated > 0 && (
+        <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-mono">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+          </span>
+          <span>Last synced:</span>
+          <time
+            dateTime={new Date(lastUpdated).toISOString()}
+            className="font-semibold"
+          >
+            {new Date(lastUpdated).toLocaleString("zh-CN", {
+              timeZone: "Asia/Shanghai",
+              hour12: false,
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
+          </time>
+        </div>
+      )}
     </div>
   );
 }

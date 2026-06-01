@@ -9,9 +9,9 @@ export const CodeReport = ({ lastUpdate }: CodeReportProps) => {
   return (
     <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 px-1 border-b pb-4 border-border">
       <div className="space-y-1">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground">
+        <h2 className="text-2xl font-bold tracking-tight text-foreground">
           编码报告
-        </h1>
+        </h2>
         <p className="text-sm text-muted-foreground">
           基于 WakaTime 的自动化数据面板
         </p>
