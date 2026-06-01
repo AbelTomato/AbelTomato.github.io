@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-01T10:38:29.486Z",
-  "total": "151 hrs 45 mins",
-  "daily_average": "3 hrs 46 mins",
+  "lastUpdate": "2026-06-01T11:32:18.790Z",
+  "total": "152 hrs 8 mins",
+  "daily_average": "3 hrs 47 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 111230.595,
-      "total_text": "30h 53m",
+      "total_seconds": 112620.992,
+      "total_text": "31h 17m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 452101.17699999997,
-      "total_text": "125h 35m",
+      "total_seconds": 453491.57399999996,
+      "total_text": "125h 58m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1574049.656,
-      "total_text": "437h 14m",
+      "total_seconds": 1575440.053,
+      "total_text": "437h 37m",
       "days_active": 94
     },
     "all_time": {
-      "total_seconds": 1574049.656,
-      "total_text": "437h 14m",
+      "total_seconds": 1575440.053,
+      "total_text": "437h 37m",
       "days_active": 94
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-01",
-      "seconds": 14717.045,
-      "text": "4 hrs 5 mins"
+      "seconds": 16107.442,
+      "text": "4 hrs 28 mins"
     }
   ],
   "heatmap": [
@@ -436,13 +436,13 @@
     },
     {
       "date": "2026-06-01",
-      "seconds": 14717.045
+      "seconds": 16107.442
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 404940.99500000005
+      "total_seconds": 405644.97800000006
     },
     {
       "name": "C++",
@@ -450,7 +450,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 181823.11599999998
+      "total_seconds": 182164.65899999999
     },
     {
       "name": "Python",
@@ -493,16 +493,16 @@
       "total_seconds": 1561.0259999999998
     },
     {
+      "name": "Git Config",
+      "total_seconds": 1493.319
+    },
+    {
       "name": "CMake",
       "total_seconds": 1287.412
     },
     {
-      "name": "Git Config",
-      "total_seconds": 1266.297
-    },
-    {
       "name": "Git",
-      "total_seconds": 1179.644
+      "total_seconds": 1183.013
     },
     {
       "name": "Bash",
@@ -1172,15 +1172,15 @@
       "Python": 5400
     },
     "2026-06-01": {
-      "TypeScript": 5085.55,
+      "TypeScript": 5427.093,
       "Python": 3600,
       "JSON": 2121.684,
       "C++": 1540.128,
-      "Other": 1243.005,
-      "Markdown": 614.434,
-      "Git": 364.321,
+      "Other": 1357.485,
+      "Markdown": 1318.417,
+      "Git": 367.69,
+      "Git Config": 245.261,
       "Astro": 104.684,
-      "Git Config": 18.239,
       "JavaScript": 15,
       "YAML": 10
     }
