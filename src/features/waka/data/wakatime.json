@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-01T11:32:18.790Z",
-  "total": "152 hrs 8 mins",
-  "daily_average": "3 hrs 47 mins",
+  "lastUpdate": "2026-06-01T17:38:16.542Z",
+  "total": "152 hrs 31 mins",
+  "daily_average": "3 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 112620.992,
-      "total_text": "31h 17m",
+      "total_seconds": 114000.088,
+      "total_text": "31h 40m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 453491.57399999996,
-      "total_text": "125h 58m",
+      "total_seconds": 454870.67,
+      "total_text": "126h 21m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1575440.053,
-      "total_text": "437h 37m",
+      "total_seconds": 1576819.149,
+      "total_text": "438h 0m",
       "days_active": 94
     },
     "all_time": {
-      "total_seconds": 1575440.053,
-      "total_text": "437h 37m",
+      "total_seconds": 1576819.149,
+      "total_text": "438h 0m",
       "days_active": 94
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-01",
-      "seconds": 16107.442,
-      "text": "4 hrs 28 mins"
+      "seconds": 17486.538,
+      "text": "4 hrs 51 mins"
     }
   ],
   "heatmap": [
@@ -436,17 +436,17 @@
     },
     {
       "date": "2026-06-01",
-      "seconds": 16107.442
+      "seconds": 17486.538
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 405644.97800000006
+      "total_seconds": 406294.813
     },
     {
       "name": "C++",
-      "total_seconds": 362133.2240000001
+      "total_seconds": 362408.9160000001
     },
     {
       "name": "TypeScript",
@@ -470,7 +470,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 33008.011999999995
+      "total_seconds": 33289.011999999995
     },
     {
       "name": "HTML",
@@ -494,7 +494,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 1493.319
+      "total_seconds": 1541.149
     },
     {
       "name": "CMake",
@@ -1174,15 +1174,16 @@
     "2026-06-01": {
       "TypeScript": 5427.093,
       "Python": 3600,
-      "JSON": 2121.684,
-      "C++": 1540.128,
-      "Other": 1357.485,
-      "Markdown": 1318.417,
+      "JSON": 2402.684,
+      "Markdown": 1968.252,
+      "C++": 1815.82,
+      "Other": 1482.224,
       "Git": 367.69,
-      "Git Config": 245.261,
+      "Git Config": 293.091,
       "Astro": 104.684,
       "JavaScript": 15,
-      "YAML": 10
+      "YAML": 10,
+      "CMake": 0
     }
   }
 }
