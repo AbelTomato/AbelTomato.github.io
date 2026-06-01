@@ -6,6 +6,8 @@ import { LanguageStats } from "./LanguageStats";
 import { ActiveTrend } from "./ActiveTrend";
 import { HeatMap } from "./HeatMap";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import LoadingStatus from "@components/ui/LoadingStatus";
+import ErrorStatus from "@components/ui/ErrorStatus";
 
 export default function WakaDashboard() {
   const [queryClient] = useState(() => new QueryClient());
@@ -75,20 +77,11 @@ function DashboardContent() {
   }, [data]);
 
   if (isLoading) {
-    return (
-      <div className="flex h-100 items-center justify-center text-sm text-muted-foreground font-mono animate-pulse">
-        Fetching WakaTime pulses...
-      </div>
-    );
+    return <LoadingStatus loadingSource="WakaTime" />;
   }
 
   if (error || !dashboardState.hasData) {
-    return (
-      <div className="mx-auto max-w-md my-12 p-6 text-center border rounded-xl bg-destructive/5 border-destructive/20">
-        <p className="font-semibold text-destructive mb-1">数据链路中断</p>
-        <p className="text-xs text-muted-foreground">请检查API密钥配置</p>
-      </div>
-    );
+    return <ErrorStatus error={error} />;
   }
 
   const {
@@ -102,12 +95,12 @@ function DashboardContent() {
   } = dashboardState;
 
   return (
-    <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-6 antialiased selection:bg-primary/10">
+    <div className="w-full mx-auto p-4 md:p-6 space-y-6 antialiased selection:bg-primary/10">
       <CodeReport lastUpdate={lastUpdate} />
 
       <CodeStats stats={stats} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
         <LanguageStats
           languages={languages}
           totalLangSeconds={totalLangSeconds}
@@ -116,9 +109,7 @@ function DashboardContent() {
         <ActiveTrend weeklyTotalHours={weeklyTotalHours} weekly={weekly} />
       </div>
 
-      <div className="w-full">
-        <HeatMap heatmap={heatmap} />
-      </div>
+      <HeatMap heatmap={heatmap} />
     </div>
   );
 }

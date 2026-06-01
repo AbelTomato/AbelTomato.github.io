@@ -69,7 +69,7 @@ export default function ContestTrend({
   const maxRating = Math.max(...formattedData.map((d) => d.rating)) + 50;
 
   return (
-    <Card className="w-full max-w-4xl transition-all duration-300 border bg-white border-zinc-200 text-zinc-900 shadow-xl shadow-zinc-200/80 dark:shadow-none dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100">
+    <Card className="w-full mx-auto transition-all duration-300 border bg-white border-zinc-200 text-zinc-900 shadow-xl shadow-zinc-200/80 dark:shadow-none dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-6 border-b border-zinc-100 dark:border-zinc-800/50">
         <div className="space-y-1">
           <CardTitle className="text-xl font-black tracking-tight flex items-center gap-2 text-amber-500">

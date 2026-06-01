@@ -42,8 +42,8 @@ export const HeatMap = ({ heatmap }: HeatMapProps) => {
   return (
     <Card className="w-full">
       <CardHeader className="space-y-1 pb-6">
-        <CardTitle className="text-sm font-medium italic text-muted-foreground tracking-wide uppercase">
-          #Coding Heatmap
+        <CardTitle className="text-sm font-semibold tracking-wide uppercase text-foreground">
+          # Coding Heatmap
         </CardTitle>
         <CardDescription className="italic">
           {heatmap?.length || 0} DAYS RECORDED

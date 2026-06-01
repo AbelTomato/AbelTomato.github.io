@@ -50,7 +50,7 @@ export const LanguageStats = ({
   return (
     <Card className="flex flex-col h-full self-start">
       <CardHeader className="pb-3">
-        <CardTitle className="text-sm font-medium italic text-muted-foreground tracking-wide">
+        <CardTitle className="text-sm font-semibold tracking-wide uppercase text-foreground">
           # Languages
         </CardTitle>
       </CardHeader>
