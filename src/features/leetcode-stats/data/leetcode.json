@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 70,
+        "count": 71,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 997,
+        "count": 996,
         "difficulty": "EASY"
       },
       {
@@ -267,6 +267,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 728379224,
+      "submitTime": 1780274293,
+      "question": {
+        "title": "Maximum Number of Items From Sale I",
+        "translatedTitle": "购买最多物品数目 I",
+        "titleSlug": "maximum-number-of-items-from-sale-i",
+        "questionFrontendId": "3946"
+      }
+    },
+    {
+      "submissionId": 728378154,
+      "submitTime": 1780273108,
+      "question": {
+        "title": "Minimum Cost of Buying Candies With Discount",
+        "translatedTitle": "打折购买糖果的最小开销",
+        "titleSlug": "minimum-cost-of-buying-candies-with-discount",
+        "questionFrontendId": "2144"
+      }
+    },
+    {
       "submissionId": 728232498,
       "submitTime": 1780198960,
       "question": {
@@ -395,31 +415,51 @@
         "titleSlug": "course-schedule",
         "questionFrontendId": "207"
       }
-    },
-    {
-      "submissionId": 727463452,
-      "submitTime": 1779840170,
-      "question": {
-        "title": "Count the Number of Special Characters II",
-        "translatedTitle": "统计特殊字母的数量 II",
-        "titleSlug": "count-the-number-of-special-characters-ii",
-        "questionFrontendId": "3121"
-      }
-    },
-    {
-      "submissionId": 727244176,
-      "submitTime": 1779758344,
-      "question": {
-        "title": "Rotting Oranges",
-        "translatedTitle": "腐烂的橘子",
-        "titleSlug": "rotting-oranges",
-        "questionFrontendId": "994"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 212,
+    "totalNum": 214,
     "questions": [
+      {
+        "translatedTitle": "购买最多物品数目 I",
+        "frontendId": "3946",
+        "title": "Maximum Number of Items From Sale I",
+        "titleSlug": "maximum-number-of-items-from-sale-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-01T00:38:11.169350+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "打折购买糖果的最小开销",
+        "frontendId": "2144",
+        "title": "Minimum Cost of Buying Candies With Discount",
+        "titleSlug": "minimum-cost-of-buying-candies-with-discount",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-01T00:18:27.832945+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
       {
         "translatedTitle": "字典序最大的 MEX 数组",
         "frontendId": "3948",
