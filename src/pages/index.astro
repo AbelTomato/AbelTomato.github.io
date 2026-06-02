@@ -6,15 +6,22 @@ import FormattedDate from '@components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import CoCoders from '@features/co-coders/components/CoCoders.astro';
 import placeholderImg from '../../public/android-chrome-512x512.png'
-import ProfileCard from '@components/widgets/ProfileCard.astro';
-import { SiteStatsCard } from '@components/widgets/SiteStatsCard';
+import LeftSidebar from '@components/widgets/LeftSidebar.astro';
+import RightSidebar from '@components/widgets/RightSidebar.astro';
 import {getPostsData} from "@src/hooks/usePostsData";
 
 const { recentPosts, totalTagsCounts, totalPostsCounts, totalPostsWords } = await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
 ---
 
 <ThreeColumnLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <ProfileCard slot="left-sidebar" />
+  <LeftSidebar slot="left-sidebar" />
 
   <main class="container mx-auto px-4 py-16">
     <section class="flex flex-col items-center justify-center text-center mb-24">
@@ -95,5 +102,5 @@ const { recentPosts, totalTagsCounts, totalPostsCounts, totalPostsWords } = awai
     </section>
   </main>
 
-  <SiteStatsCard client:load slot="right-sidebar" createTime={CREATE_TIME} articleCount={totalPostsCounts} tagCount={totalTagsCounts} wordCount={totalPostsWords} />
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
 </ThreeColumnLayout>

@@ -1,7 +1,7 @@
 ---
 import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
-import ProfileCard from "@components/widgets/ProfileCard.astro";
-import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { ArchiveContainer } from "@components/widgets/ArchiveContainer";
 import { getPostsData } from "@src/hooks/usePostsData";
 import { CREATE_TIME } from "@src/consts";
@@ -13,15 +13,20 @@ const {
   totalTagsCounts,
   totalPostsWords,
 } = await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
 ---
 
 <ThreeColumnLayout
   title="文章归档"
   description="将所有文章按照年份和标签进行归档"
 >
-  <Fragment slot="left-sidebar">
-    <ProfileCard />
-  </Fragment>
+  <LeftSidebar slot="left-sidebar" />
 
   <div class="space-y-6">
     <div class="py-2">
@@ -36,13 +41,5 @@ const {
     <ArchiveContainer client:load posts={posts} tagCountsMap={tagCountsMap} />
   </div>
 
-  <Fragment slot="right-sidebar">
-    <SiteStatsCard
-      client:load
-      articleCount={totalPostsCounts}
-      tagCount={totalTagsCounts}
-      wordCount={totalPostsWords}
-      createTime={CREATE_TIME}
-    />
-  </Fragment>
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
 </ThreeColumnLayout>

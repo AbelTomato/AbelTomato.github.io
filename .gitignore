@@ -24,3 +24,5 @@ pnpm-debug.log*
 .idea/
 
 AI-suggestions.md
+
+.clinerules

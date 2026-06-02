@@ -1,21 +1,27 @@
 ---
 import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
-import MomentsSection from "@features/moments-section/components/MomentsSection.tsx";
-import ProfileCard from "@components/widgets/ProfileCard.astro";
-import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
 import { CREATE_TIME } from "@src/consts";
 import { Card, CardHeader, CardTitle, CardContent } from "@components/ui/card";
 
 const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
   await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
 ---
 
 <ThreeColumnLayout
   title="关于我"
   description="认识一下 AbelTomato —— 一个想让自己变得有趣的人"
 >
-  <ProfileCard slot="left-sidebar" />
+  <LeftSidebar slot="left-sidebar" />
 
   <main class="w-full flex flex-col gap-6">
     <Card className="w-full mx-auto shadow-sm">
@@ -64,18 +70,7 @@ const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
         <p>如果博客中的内容有帮助到你，我很荣幸</p>
       </CardContent>
     </Card>
-
-    <div class="w-full">
-      <MomentsSection client:idle />
-    </div>
   </main>
 
-  <SiteStatsCard
-    client:load
-    slot="right-sidebar"
-    createTime={CREATE_TIME}
-    articleCount={totalPostsCounts}
-    tagCount={totalTagsCounts}
-    wordCount={totalPostsWords}
-  />
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
 </ThreeColumnLayout>
