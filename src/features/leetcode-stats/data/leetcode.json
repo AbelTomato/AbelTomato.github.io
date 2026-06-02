@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 71,
+        "count": 72,
         "difficulty": "EASY"
       },
       {
-        "count": 109,
+        "count": 110,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 996,
+        "count": 995,
         "difficulty": "EASY"
       },
       {
-        "count": 2152,
+        "count": 2151,
         "difficulty": "MEDIUM"
       },
       {
@@ -267,6 +267,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 728590649,
+      "submitTime": 1780362418,
+      "question": {
+        "title": "Maximum Number of Items From Sale II",
+        "translatedTitle": "购买最多物品数目 II",
+        "titleSlug": "maximum-number-of-items-from-sale-ii",
+        "questionFrontendId": "3947"
+      }
+    },
+    {
+      "submissionId": 728587557,
+      "submitTime": 1780360114,
+      "question": {
+        "title": "Earliest Finish Time for Land and Water Rides I",
+        "translatedTitle": "最早完成陆地和水上游乐设施的时间 I",
+        "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
+        "questionFrontendId": "3633"
+      }
+    },
+    {
+      "submissionId": 728587281,
+      "submitTime": 1780359809,
+      "question": {
+        "title": "Earliest Finish Time for Land and Water Rides I",
+        "translatedTitle": "最早完成陆地和水上游乐设施的时间 I",
+        "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
+        "questionFrontendId": "3633"
+      }
+    },
+    {
       "submissionId": 728379224,
       "submitTime": 1780274293,
       "question": {
@@ -385,41 +415,61 @@
         "titleSlug": "minimum-element-after-replacement-with-digit-sum",
         "questionFrontendId": "3300"
       }
-    },
-    {
-      "submissionId": 727681981,
-      "submitTime": 1779929899,
-      "question": {
-        "title": "Longest Common Suffix Queries",
-        "translatedTitle": "最长公共后缀查询",
-        "titleSlug": "longest-common-suffix-queries",
-        "questionFrontendId": "3093"
-      }
-    },
-    {
-      "submissionId": 727465129,
-      "submitTime": 1779842262,
-      "question": {
-        "title": "Implement Trie (Prefix Tree)",
-        "translatedTitle": "实现 Trie (前缀树)",
-        "titleSlug": "implement-trie-prefix-tree",
-        "questionFrontendId": "208"
-      }
-    },
-    {
-      "submissionId": 727464181,
-      "submitTime": 1779841259,
-      "question": {
-        "title": "Course Schedule",
-        "translatedTitle": "课程表",
-        "titleSlug": "course-schedule",
-        "questionFrontendId": "207"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 214,
+    "totalNum": 216,
     "questions": [
+      {
+        "translatedTitle": "购买最多物品数目 II",
+        "frontendId": "3947",
+        "title": "Maximum Number of Items From Sale II",
+        "titleSlug": "maximum-number-of-items-from-sale-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-02T01:06:57.334014+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": []
+      },
+      {
+        "translatedTitle": "最早完成陆地和水上游乐设施的时间 I",
+        "frontendId": "3633",
+        "title": "Earliest Finish Time for Land and Water Rides I",
+        "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-02T00:28:33.963470+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
       {
         "translatedTitle": "购买最多物品数目 I",
         "frontendId": "3946",
