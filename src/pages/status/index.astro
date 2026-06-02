@@ -2,17 +2,24 @@
 import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import WakaDashboard from "@features/waka/components/WakaDashboard";
 import LeetcodeStats from "@features/leetcode-stats/components/LeetcodeStats";
-import ProfileCard from "@components/widgets/ProfileCard.astro";
-import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
 import { CREATE_TIME } from "@src/consts";
 
 const { totalPostsCounts, totalPostsWords, totalTagsCounts } =
   await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
 ---
 
 <ThreeColumnLayout title="状态" description="个人状态与数据统计">
-  <ProfileCard slot="left-sidebar" />
+  <LeftSidebar slot="left-sidebar" />
 
   <main class="w-full mx-auto">
     <div class="mb-10 px-1">
@@ -29,12 +36,5 @@ const { totalPostsCounts, totalPostsWords, totalTagsCounts } =
     <LeetcodeStats client:load />
   </main>
 
-  <SiteStatsCard
-    client:idle
-    createTime={CREATE_TIME}
-    articleCount={totalPostsCounts}
-    wordCount={totalPostsWords}
-    tagCount={totalTagsCounts}
-    slot="right-sidebar"
-  />
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
 </ThreeColumnLayout>

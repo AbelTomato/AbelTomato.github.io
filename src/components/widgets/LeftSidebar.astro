@@ -1,0 +1,13 @@
+---
+import ProfileCard from "@components/widgets/ProfileCard.astro";
+
+interface Props {
+  showProfile?: boolean;
+}
+
+const { showProfile = true } = Astro.props;
+---
+
+<div class="flex flex-col gap-4">
+  {showProfile && <ProfileCard />}
+</div>

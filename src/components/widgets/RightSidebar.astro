@@ -1,0 +1,39 @@
+---
+import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import MomentsCarousel from "@components/widgets/MomentsCarousel";
+
+interface SiteData {
+  createTime: string;
+  articleCount: number;
+  tagCount: number;
+  wordCount: number;
+}
+
+interface Props {
+  siteData: SiteData;
+  showSiteStats?: boolean;
+  showMomentsCarousel?: boolean;
+}
+
+const {
+  siteData,
+  showSiteStats = true,
+  showMomentsCarousel = true,
+} = Astro.props;
+const { createTime, articleCount, tagCount, wordCount } = siteData;
+---
+
+<div class="flex flex-col gap-4">
+  {
+    showSiteStats && (
+      <SiteStatsCard
+        client:idle
+        createTime={createTime}
+        articleCount={articleCount}
+        tagCount={tagCount}
+        wordCount={wordCount}
+      />
+    )
+  }
+  {showMomentsCarousel && <MomentsCarousel client:idle />}
+</div>

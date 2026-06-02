@@ -1,0 +1,49 @@
+---
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+import MomentsSection from "@features/moments-section/components/MomentsSection.tsx";
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
+import { getPostsData } from "@src/hooks/usePostsData";
+import { CREATE_TIME } from "@src/consts";
+
+const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
+  await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
+---
+
+<ThreeColumnLayout
+  title="个人爱好"
+  description="AbelTomato 的爱好 & 品味 —— 书籍、音乐、影视，以及更多"
+>
+  <LeftSidebar slot="left-sidebar" />
+
+  <main class="w-full flex flex-col gap-6">
+    <div class="text-center md:text-left mb-4">
+      <h1
+        class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100"
+      >
+        # 个人爱好
+      </h1>
+      <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+        一些我喜欢的东西，和让我有所触动的瞬间
+      </p>
+      <hr class="mt-4 w-16 border-t-2 border-blue-500 dark:border-blue-400" />
+    </div>
+
+    <section>
+      <MomentsSection client:idle />
+    </section>
+  </main>
+
+  <RightSidebar
+    slot="right-sidebar"
+    siteData={siteData}
+    showMomentsCarousel={false}
+  />
+</ThreeColumnLayout>

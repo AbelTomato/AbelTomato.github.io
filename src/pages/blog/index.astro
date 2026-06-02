@@ -1,8 +1,8 @@
 ---
 import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
-import ProfileCard from "@components/widgets/ProfileCard.astro";
-import { SiteStatsCard } from "@components/widgets/SiteStatsCard";
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { CREATE_TIME } from "@src/consts";
 
 const {
@@ -15,13 +15,20 @@ const {
   totalPostsWords,
   totalTagsCounts,
 } = await getPostsData();
+
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
 ---
 
 <ThreeColumnLayout
   title="Blog - 所有文章"
   description="浏览 AbelTomato's Blog 的所有文章"
 >
-  <ProfileCard slot="left-sidebar" />
+  <LeftSidebar slot="left-sidebar" />
 
   <main class="py-12 container mx-auto px-4">
     <h1
@@ -125,12 +132,5 @@ const {
     }
   </main>
 
-  <SiteStatsCard
-    client:load
-    slot="right-sidebar"
-    createTime={CREATE_TIME}
-    articleCount={totalPostsCounts}
-    tagCount={totalTagsCounts}
-    wordCount={totalPostsWords}
-  />
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
 </ThreeColumnLayout>
