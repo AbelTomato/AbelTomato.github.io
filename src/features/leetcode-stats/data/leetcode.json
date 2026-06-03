@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 110,
+        "count": 113,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2151,
+        "count": 2148,
         "difficulty": "MEDIUM"
       },
       {
@@ -267,6 +267,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 728816965,
+      "submitTime": 1780447242,
+      "question": {
+        "title": "Generate Parentheses",
+        "translatedTitle": "括号生成",
+        "titleSlug": "generate-parentheses",
+        "questionFrontendId": "22"
+      }
+    },
+    {
+      "submissionId": 728815377,
+      "submitTime": 1780445680,
+      "question": {
+        "title": "Combination Sum",
+        "translatedTitle": "组合总和",
+        "titleSlug": "combination-sum",
+        "questionFrontendId": "39"
+      }
+    },
+    {
+      "submissionId": 728815242,
+      "submitTime": 1780445487,
+      "question": {
+        "title": "Combination Sum",
+        "translatedTitle": "组合总和",
+        "titleSlug": "combination-sum",
+        "questionFrontendId": "39"
+      }
+    },
+    {
+      "submissionId": 728814523,
+      "submitTime": 1780444156,
+      "question": {
+        "title": "Earliest Finish Time for Land and Water Rides II",
+        "translatedTitle": "最早完成陆地和水上游乐设施的时间 II",
+        "titleSlug": "earliest-finish-time-for-land-and-water-rides-ii",
+        "questionFrontendId": "3635"
+      }
+    },
+    {
       "submissionId": 728590649,
       "submitTime": 1780362418,
       "question": {
@@ -375,51 +415,100 @@
         "titleSlug": "letter-combinations-of-a-phone-number",
         "questionFrontendId": "17"
       }
-    },
-    {
-      "submissionId": 727885449,
-      "submitTime": 1780014374,
-      "question": {
-        "title": "Subsets",
-        "translatedTitle": "子集",
-        "titleSlug": "subsets",
-        "questionFrontendId": "78"
-      }
-    },
-    {
-      "submissionId": 727885242,
-      "submitTime": 1780014134,
-      "question": {
-        "title": "Subsets",
-        "translatedTitle": "子集",
-        "titleSlug": "subsets",
-        "questionFrontendId": "78"
-      }
-    },
-    {
-      "submissionId": 727885040,
-      "submitTime": 1780013884,
-      "question": {
-        "title": "Permutations",
-        "translatedTitle": "全排列",
-        "titleSlug": "permutations",
-        "questionFrontendId": "46"
-      }
-    },
-    {
-      "submissionId": 727883278,
-      "submitTime": 1780013515,
-      "question": {
-        "title": "Minimum Element After Replacement With Digit Sum",
-        "translatedTitle": "替换为数位和以后的最小元素",
-        "titleSlug": "minimum-element-after-replacement-with-digit-sum",
-        "questionFrontendId": "3300"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 216,
+    "totalNum": 219,
     "questions": [
+      {
+        "translatedTitle": "括号生成",
+        "frontendId": "22",
+        "title": "Generate Parentheses",
+        "titleSlug": "generate-parentheses",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-03T00:40:42.000266+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "组合总和",
+        "frontendId": "39",
+        "title": "Combination Sum",
+        "titleSlug": "combination-sum",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-03T00:14:39.928729+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最早完成陆地和水上游乐设施的时间 II",
+        "frontendId": "3635",
+        "title": "Earliest Finish Time for Land and Water Rides II",
+        "titleSlug": "earliest-finish-time-for-land-and-water-rides-ii",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-02T23:49:15.247191+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
       {
         "translatedTitle": "购买最多物品数目 II",
         "frontendId": "3947",
