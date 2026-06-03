@@ -185,13 +185,13 @@
     ]
   },
   "userContestRanking": {
-    "attendedContestsCount": 5,
-    "rating": 1920.7277465740267,
-    "globalRanking": 33210,
-    "localRanking": 9080,
-    "globalTotalParticipants": 883836,
-    "localTotalParticipants": 155177,
-    "topPercentage": 5.8
+    "attendedContestsCount": 6,
+    "rating": 1954.1064056027135,
+    "globalRanking": 27423,
+    "localRanking": 7804,
+    "globalTotalParticipants": 883881,
+    "localTotalParticipants": 155190,
+    "topPercentage": 4.99
   },
   "userContestRankingHistory": [
     {
@@ -262,6 +262,20 @@
         "title": "第 182 场双周赛",
         "titleCn": "第 182 场双周赛",
         "startTime": 1778337000
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1780199860,
+      "rating": 1954.106,
+      "score": 14,
+      "ranking": 138,
+      "contest": {
+        "title": "第 504 场周赛",
+        "titleCn": "第 504 场周赛",
+        "startTime": 1780194600
       }
     }
   ],
