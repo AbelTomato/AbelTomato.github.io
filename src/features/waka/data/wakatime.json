@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-04T09:55:30.249Z",
-  "total": "156 hrs 44 mins",
-  "daily_average": "3 hrs 54 mins",
+  "lastUpdate": "2026-06-04T14:59:18.705Z",
+  "total": "158 hrs",
+  "daily_average": "3 hrs 56 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 96542.024,
-      "total_text": "26h 49m",
+      "total_seconds": 101073.908,
+      "total_text": "28h 4m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 471178.322,
-      "total_text": "130h 52m",
+      "total_seconds": 475710.206,
+      "total_text": "132h 8m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1615268.524,
-      "total_text": "448h 41m",
+      "total_seconds": 1619800.4079999998,
+      "total_text": "449h 56m",
       "days_active": 97
     },
     "all_time": {
-      "total_seconds": 1615268.524,
-      "total_text": "448h 41m",
+      "total_seconds": 1619800.4079999998,
+      "total_text": "449h 56m",
       "days_active": 97
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 18115.168,
-      "text": "5 hrs 1 min"
+      "seconds": 22647.052,
+      "text": "6 hrs 17 mins"
     }
   ],
   "heatmap": [
@@ -448,13 +448,13 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 18115.168
+      "seconds": 22647.052
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 419515.43500000006
+      "total_seconds": 424067.4270000001
     },
     {
       "name": "C++",
@@ -502,7 +502,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 1669.993
+      "total_seconds": 1726.154
     },
     {
       "name": "Git",
@@ -1219,14 +1219,14 @@
       "Other": 0
     },
     "2026-06-04": {
-      "Markdown": 9860.462,
+      "Markdown": 14412.454,
       "Python": 6386.487,
-      "Text": 779.963,
+      "Text": 703.694,
       "TOML": 340.501,
       "Other": 246.301,
       "Git": 236.767,
       "MDX": 165.677,
-      "Git Config": 99.01
+      "Git Config": 155.171
     }
   }
 }
