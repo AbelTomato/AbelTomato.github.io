@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-04T03:56:31.642Z",
-  "total": "154 hrs 21 mins",
-  "daily_average": "3 hrs 50 mins",
+  "lastUpdate": "2026-06-04T07:48:41.807Z",
+  "total": "156 hrs 36 mins",
+  "daily_average": "3 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 87972.42,
-      "total_text": "24h 26m",
+      "total_seconds": 96029.571,
+      "total_text": "26h 40m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 462608.718,
-      "total_text": "128h 30m",
+      "total_seconds": 470665.869,
+      "total_text": "130h 44m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1606698.92,
-      "total_text": "446h 18m",
+      "total_seconds": 1614756.071,
+      "total_text": "448h 32m",
       "days_active": 97
     },
     "all_time": {
-      "total_seconds": 1606698.92,
-      "total_text": "446h 18m",
+      "total_seconds": 1614756.071,
+      "total_text": "448h 32m",
       "days_active": 97
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 9545.564,
-      "text": "2 hrs 39 mins"
+      "seconds": 17602.715,
+      "text": "4 hrs 53 mins"
     }
   ],
   "heatmap": [
@@ -448,13 +448,13 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 9545.564
+      "seconds": 17602.715
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 412434.6390000001
+      "total_seconds": 419420.6450000001
     },
     {
       "name": "C++",
@@ -466,7 +466,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 169088.432
+      "total_seconds": 169519.219
     },
     {
       "name": "JavaScript",
@@ -494,7 +494,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 7774.613000000001
+      "total_seconds": 7940.290000000001
     },
     {
       "name": "YAML",
@@ -526,7 +526,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 30.307
+      "total_seconds": 339.501
     },
     {
       "name": "TeX",
@@ -1219,12 +1219,14 @@
       "Other": 0
     },
     "2026-06-04": {
-      "Python": 5889.378,
-      "Markdown": 2779.666,
-      "Text": 550.599,
-      "Other": 232.909,
+      "Markdown": 9765.672,
+      "Python": 6320.165,
+      "Text": 702.694,
+      "TOML": 339.501,
+      "Other": 246.301,
+      "MDX": 165.677,
       "Git Config": 62.705,
-      "TOML": 30.307
+      "Git": 0
     }
   }
 }
