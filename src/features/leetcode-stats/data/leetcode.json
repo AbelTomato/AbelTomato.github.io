@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 113,
+        "count": 114,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2148,
+        "count": 2147,
         "difficulty": "MEDIUM"
       },
       {
@@ -281,6 +281,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 729047845,
+      "submitTime": 1780540300,
+      "question": {
+        "title": "Total Waviness of Numbers in Range I",
+        "translatedTitle": "范围内总波动值 I",
+        "titleSlug": "total-waviness-of-numbers-in-range-i",
+        "questionFrontendId": "3751"
+      }
+    },
+    {
+      "submissionId": 729047588,
+      "submitTime": 1780540242,
+      "question": {
+        "title": "Total Waviness of Numbers in Range I",
+        "translatedTitle": "范围内总波动值 I",
+        "titleSlug": "total-waviness-of-numbers-in-range-i",
+        "questionFrontendId": "3751"
+      }
+    },
+    {
       "submissionId": 728816965,
       "submitTime": 1780447242,
       "question": {
@@ -409,31 +429,39 @@
         "titleSlug": "destroying-asteroids",
         "questionFrontendId": "2126"
       }
-    },
-    {
-      "submissionId": 728063529,
-      "submitTime": 1780107396,
-      "question": {
-        "title": "Block Placement Queries",
-        "translatedTitle": "物块放置查询",
-        "titleSlug": "block-placement-queries",
-        "questionFrontendId": "3161"
-      }
-    },
-    {
-      "submissionId": 727885970,
-      "submitTime": 1780014845,
-      "question": {
-        "title": "Letter Combinations of a Phone Number",
-        "translatedTitle": "电话号码的字母组合",
-        "titleSlug": "letter-combinations-of-a-phone-number",
-        "questionFrontendId": "17"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 219,
+    "totalNum": 220,
     "questions": [
+      {
+        "translatedTitle": "范围内总波动值 I",
+        "frontendId": "3751",
+        "title": "Total Waviness of Numbers in Range I",
+        "titleSlug": "total-waviness-of-numbers-in-range-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-04T02:31:38.770176+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Enumeration",
+            "nameTranslated": "枚举",
+            "slug": "enumeration"
+          }
+        ]
+      },
       {
         "translatedTitle": "括号生成",
         "frontendId": "22",

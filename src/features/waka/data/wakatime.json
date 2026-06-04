@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-03T20:55:20.651Z",
-  "total": "153 hrs 15 mins",
-  "daily_average": "3 hrs 49 mins",
+  "lastUpdate": "2026-06-04T03:56:31.642Z",
+  "total": "154 hrs 21 mins",
+  "daily_average": "3 hrs 50 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 105723.48999999999,
-      "total_text": "29h 22m",
+      "total_seconds": 87972.42,
+      "total_text": "24h 26m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 458945.716,
-      "total_text": "127h 29m",
+      "total_seconds": 462608.718,
+      "total_text": "128h 30m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1597153.356,
-      "total_text": "443h 39m",
-      "days_active": 96
+      "total_seconds": 1606698.92,
+      "total_text": "446h 18m",
+      "days_active": 97
     },
     "all_time": {
-      "total_seconds": 1597153.356,
-      "total_text": "443h 39m",
-      "days_active": 96
+      "total_seconds": 1606698.92,
+      "total_text": "446h 18m",
+      "days_active": 97
     }
   },
   "weekly": [
-    {
-      "date": "2026-05-28",
-      "seconds": 27296.634,
-      "text": "7 hrs 34 mins"
-    },
     {
       "date": "2026-05-29",
       "seconds": 25258.565,
@@ -59,6 +54,11 @@
       "date": "2026-06-03",
       "seconds": 9295.834,
       "text": "2 hrs 34 mins"
+    },
+    {
+      "date": "2026-06-04",
+      "seconds": 9545.564,
+      "text": "2 hrs 39 mins"
     }
   ],
   "heatmap": [
@@ -445,12 +445,16 @@
     {
       "date": "2026-06-03",
       "seconds": 9295.834
+    },
+    {
+      "date": "2026-06-04",
+      "seconds": 9545.564
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 409654.97300000006
+      "total_seconds": 412434.6390000001
     },
     {
       "name": "C++",
@@ -462,7 +466,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 163199.054
+      "total_seconds": 169088.432
     },
     {
       "name": "JavaScript",
@@ -498,7 +502,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 1570.983
+      "total_seconds": 1633.6879999999999
     },
     {
       "name": "TSConfig",
@@ -519,6 +523,10 @@
     {
       "name": "Bash",
       "total_seconds": 624.506
+    },
+    {
+      "name": "TOML",
+      "total_seconds": 30.307
     },
     {
       "name": "TeX",
@@ -1209,6 +1217,14 @@
       "INI": 514.762,
       "Git Config": 29.834,
       "Other": 0
+    },
+    "2026-06-04": {
+      "Python": 5889.378,
+      "Markdown": 2779.666,
+      "Text": 550.599,
+      "Other": 232.909,
+      "Git Config": 62.705,
+      "TOML": 30.307
     }
   }
 }
