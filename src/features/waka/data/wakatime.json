@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-06-05T09:48:49.512Z",
-  "total": "154 hrs 50 mins",
-  "daily_average": "3 hrs 57 mins",
+  "lastUpdate": "2026-06-05T14:49:35.484Z",
+  "total": "155 hrs 5 mins",
+  "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 75815.34300000001,
-      "total_text": "21h 3m",
-      "days_active": 6
+      "total_seconds": 76683.05000000002,
+      "total_text": "21h 18m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 457968.74799999996,
-      "total_text": "127h 12m",
-      "days_active": 29
+      "total_seconds": 458836.45499999996,
+      "total_text": "127h 27m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1619800.4079999998,
-      "total_text": "449h 56m",
-      "days_active": 97
+      "total_seconds": 1620668.1149999998,
+      "total_text": "450h 11m",
+      "days_active": 98
     },
     "all_time": {
-      "total_seconds": 1619800.4079999998,
-      "total_text": "449h 56m",
-      "days_active": 97
+      "total_seconds": 1620668.1149999998,
+      "total_text": "450h 11m",
+      "days_active": 98
     }
   },
   "weekly": [
@@ -52,13 +52,13 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 22647.052,
-      "text": "6 hrs 17 mins"
+      "seconds": 22707.292,
+      "text": "6 hrs 18 mins"
     },
     {
       "date": "2026-06-05",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 807.467,
+      "text": "13 mins"
     }
   ],
   "heatmap": [
@@ -448,21 +448,21 @@
     },
     {
       "date": "2026-06-04",
-      "seconds": 22647.052
+      "seconds": 22707.292
     },
     {
       "date": "2026-06-05",
-      "seconds": 0
+      "seconds": 807.467
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 424067.4270000001
+      "total_seconds": 424051.39800000004
     },
     {
       "name": "C++",
-      "total_seconds": 362408.9160000001
+      "total_seconds": 363216.3830000001
     },
     {
       "name": "TypeScript",
@@ -1223,15 +1223,17 @@
       "Other": 0
     },
     "2026-06-04": {
-      "Markdown": 14412.454,
+      "Markdown": 14396.425,
       "Python": 6386.487,
       "Text": 703.694,
       "TOML": 340.501,
-      "Other": 246.301,
+      "Other": 322.57,
       "Git": 236.767,
       "MDX": 165.677,
       "Git Config": 155.171
     },
-    "2026-06-05": {}
+    "2026-06-05": {
+      "C++": 807.467
+    }
   }
 }
