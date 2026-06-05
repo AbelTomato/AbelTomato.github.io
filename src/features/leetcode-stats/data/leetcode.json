@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 33,
+        "count": 34,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -281,6 +281,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 729289465,
+      "submitTime": 1780642319,
+      "question": {
+        "title": "Total Waviness of Numbers in Range II",
+        "translatedTitle": "范围内总波动值 II",
+        "titleSlug": "total-waviness-of-numbers-in-range-ii",
+        "questionFrontendId": "3753"
+      }
+    },
+    {
       "submissionId": 729047845,
       "submitTime": 1780540300,
       "question": {
@@ -419,21 +429,34 @@
         "titleSlug": "digit-frequency-score",
         "questionFrontendId": "3945"
       }
-    },
-    {
-      "submissionId": 728210269,
-      "submitTime": 1780190540,
-      "question": {
-        "title": "Destroying Asteroids",
-        "translatedTitle": "摧毁小行星",
-        "titleSlug": "destroying-asteroids",
-        "questionFrontendId": "2126"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 220,
+    "totalNum": 221,
     "questions": [
+      {
+        "translatedTitle": "范围内总波动值 II",
+        "frontendId": "3753",
+        "title": "Total Waviness of Numbers in Range II",
+        "titleSlug": "total-waviness-of-numbers-in-range-ii",
+        "difficulty": "HARD",
+        "lastSubmittedAt": "2026-06-05T06:51:56.672663+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
       {
         "translatedTitle": "范围内总波动值 I",
         "frontendId": "3751",
