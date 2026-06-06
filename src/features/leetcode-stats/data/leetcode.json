@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 72,
+        "count": 73,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 995,
+        "count": 994,
         "difficulty": "EASY"
       },
       {
@@ -281,6 +281,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 729500822,
+      "submitTime": 1780745704,
+      "question": {
+        "title": "Left and Right Sum Differences",
+        "translatedTitle": "左右元素和的差值",
+        "titleSlug": "left-and-right-sum-differences",
+        "questionFrontendId": "2574"
+      }
+    },
+    {
       "submissionId": 729289465,
       "submitTime": 1780642319,
       "question": {
@@ -419,21 +429,34 @@
         "titleSlug": "maximum-number-of-items-from-sale-i",
         "questionFrontendId": "3946"
       }
-    },
-    {
-      "submissionId": 728217525,
-      "submitTime": 1780194684,
-      "question": {
-        "title": "Digit Frequency Score",
-        "translatedTitle": "计算数字频率得分",
-        "titleSlug": "digit-frequency-score",
-        "questionFrontendId": "3945"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 221,
+    "totalNum": 222,
     "questions": [
+      {
+        "translatedTitle": "左右元素和的差值",
+        "frontendId": "2574",
+        "title": "Left and Right Sum Differences",
+        "titleSlug": "left-and-right-sum-differences",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-06T11:35:03.507944+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Prefix Sum",
+            "nameTranslated": "前缀和",
+            "slug": "prefix-sum"
+          }
+        ]
+      },
       {
         "translatedTitle": "范围内总波动值 II",
         "frontendId": "3753",

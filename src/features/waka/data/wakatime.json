@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-06-06T08:33:12.567Z",
-  "total": "150 hrs 56 mins",
+  "lastUpdate": "2026-06-06T13:41:47.297Z",
+  "total": "155 hrs 4 mins",
   "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 66735.50400000002,
-      "total_text": "18h 32m",
-      "days_active": 6
+      "total_seconds": 81615.543,
+      "total_text": "22h 40m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 423177.86,
-      "total_text": "117h 32m",
-      "days_active": 29
+      "total_seconds": 438057.899,
+      "total_text": "121h 40m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1620668.1149999998,
-      "total_text": "450h 11m",
-      "days_active": 98
+      "total_seconds": 1635548.1539999999,
+      "total_text": "454h 19m",
+      "days_active": 99
     },
     "all_time": {
-      "total_seconds": 1620668.1149999998,
-      "total_text": "450h 11m",
-      "days_active": 98
+      "total_seconds": 1635548.1539999999,
+      "total_text": "454h 19m",
+      "days_active": 99
     }
   },
   "weekly": [
@@ -52,13 +52,13 @@
     },
     {
       "date": "2026-06-05",
-      "seconds": 807.467,
-      "text": "13 mins"
+      "seconds": 876.499,
+      "text": "14 mins"
     },
     {
       "date": "2026-06-06",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 14811.007,
+      "text": "4 hrs 6 mins"
     }
   ],
   "heatmap": [
@@ -452,11 +452,11 @@
     },
     {
       "date": "2026-06-05",
-      "seconds": 807.467
+      "seconds": 876.499
     },
     {
       "date": "2026-06-06",
-      "seconds": 0
+      "seconds": 14811.007
     }
   ],
   "languages": [
@@ -466,15 +466,15 @@
     },
     {
       "name": "C++",
-      "total_seconds": 363216.3830000001
+      "total_seconds": 363686.7930000001
+    },
+    {
+      "name": "Python",
+      "total_seconds": 183995.16999999998
     },
     {
       "name": "TypeScript",
       "total_seconds": 183429.636
-    },
-    {
-      "name": "Python",
-      "total_seconds": 169585.541
     },
     {
       "name": "JavaScript",
@@ -1237,8 +1237,11 @@
       "Git Config": 155.171
     },
     "2026-06-05": {
-      "C++": 807.467
+      "C++": 876.499
     },
-    "2026-06-06": {}
+    "2026-06-06": {
+      "Python": 14409.629,
+      "C++": 401.378
+    }
   }
 }
