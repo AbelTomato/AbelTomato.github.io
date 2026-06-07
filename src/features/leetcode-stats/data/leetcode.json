@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 114,
+        "count": 115,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2149,
+        "count": 2148,
         "difficulty": "MEDIUM"
       },
       {
@@ -281,6 +281,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 729583734,
+      "submitTime": 1780802927,
+      "question": {
+        "title": "Create Binary Tree From Descriptions",
+        "translatedTitle": "根据描述创建二叉树",
+        "titleSlug": "create-binary-tree-from-descriptions",
+        "questionFrontendId": "2196"
+      }
+    },
+    {
       "submissionId": 729500822,
       "submitTime": 1780745704,
       "question": {
@@ -419,21 +429,44 @@
         "titleSlug": "lexicographically-maximum-mex-array",
         "questionFrontendId": "3948"
       }
-    },
-    {
-      "submissionId": 728224077,
-      "submitTime": 1780196706,
-      "question": {
-        "title": "Maximum Number of Items From Sale I",
-        "translatedTitle": "购买最多物品数目 I",
-        "titleSlug": "maximum-number-of-items-from-sale-i",
-        "questionFrontendId": "3946"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 222,
+    "totalNum": 223,
     "questions": [
+      {
+        "translatedTitle": "根据描述创建二叉树",
+        "frontendId": "2196",
+        "title": "Create Binary Tree From Descriptions",
+        "titleSlug": "create-binary-tree-from-descriptions",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-07T03:28:46.576518+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Hash Table",
+            "nameTranslated": "哈希表",
+            "slug": "hash-table"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
       {
         "translatedTitle": "左右元素和的差值",
         "frontendId": "2574",
