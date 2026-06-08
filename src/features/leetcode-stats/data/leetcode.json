@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 73,
+        "count": 81,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 996,
+        "count": 988,
         "difficulty": "EASY"
       },
       {
@@ -81,6 +81,11 @@
         "slug": "binary-tree",
         "name": "Binary Tree",
         "translatedName": "二叉树"
+      },
+      {
+        "slug": "breadth-first-search",
+        "name": "Breadth-First Search",
+        "translatedName": "广度优先搜索"
       },
       {
         "slug": "depth-first-search",
@@ -281,6 +286,96 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 729874653,
+      "submitTime": 1780921724,
+      "question": {
+        "title": "Balanced Binary Tree",
+        "translatedTitle": "平衡二叉树",
+        "titleSlug": "balanced-binary-tree",
+        "questionFrontendId": "110"
+      }
+    },
+    {
+      "submissionId": 729873307,
+      "submitTime": 1780921368,
+      "question": {
+        "title": "Same Tree",
+        "translatedTitle": "相同的树",
+        "titleSlug": "same-tree",
+        "questionFrontendId": "100"
+      }
+    },
+    {
+      "submissionId": 729872414,
+      "submitTime": 1780921149,
+      "question": {
+        "title": "Merge Sorted Array",
+        "translatedTitle": "合并两个有序数组",
+        "titleSlug": "merge-sorted-array",
+        "questionFrontendId": "88"
+      }
+    },
+    {
+      "submissionId": 729868168,
+      "submitTime": 1780919891,
+      "question": {
+        "title": "Remove Duplicates from Sorted List",
+        "translatedTitle": "删除排序链表中的重复元素",
+        "titleSlug": "remove-duplicates-from-sorted-list",
+        "questionFrontendId": "83"
+      }
+    },
+    {
+      "submissionId": 729866412,
+      "submitTime": 1780919358,
+      "question": {
+        "title": "Climbing Stairs",
+        "translatedTitle": "爬楼梯",
+        "titleSlug": "climbing-stairs",
+        "questionFrontendId": "70"
+      }
+    },
+    {
+      "submissionId": 729865840,
+      "submitTime": 1780919189,
+      "question": {
+        "title": "Sqrt(x)",
+        "translatedTitle": "x 的平方根 ",
+        "titleSlug": "sqrtx",
+        "questionFrontendId": "69"
+      }
+    },
+    {
+      "submissionId": 729865663,
+      "submitTime": 1780919134,
+      "question": {
+        "title": "Add Binary",
+        "translatedTitle": "二进制求和",
+        "titleSlug": "add-binary",
+        "questionFrontendId": "67"
+      }
+    },
+    {
+      "submissionId": 729864961,
+      "submitTime": 1780918889,
+      "question": {
+        "title": "Length of Last Word",
+        "translatedTitle": "最后一个单词的长度",
+        "titleSlug": "length-of-last-word",
+        "questionFrontendId": "58"
+      }
+    },
+    {
+      "submissionId": 729864196,
+      "submitTime": 1780918628,
+      "question": {
+        "title": "Search Insert Position",
+        "translatedTitle": "搜索插入位置",
+        "titleSlug": "search-insert-position",
+        "questionFrontendId": "35"
+      }
+    },
+    {
       "submissionId": 729833155,
       "submitTime": 1780908743,
       "question": {
@@ -339,101 +434,243 @@
         "titleSlug": "total-waviness-of-numbers-in-range-ii",
         "questionFrontendId": "3753"
       }
-    },
-    {
-      "submissionId": 729047845,
-      "submitTime": 1780540300,
-      "question": {
-        "title": "Total Waviness of Numbers in Range I",
-        "translatedTitle": "范围内总波动值 I",
-        "titleSlug": "total-waviness-of-numbers-in-range-i",
-        "questionFrontendId": "3751"
-      }
-    },
-    {
-      "submissionId": 729047588,
-      "submitTime": 1780540242,
-      "question": {
-        "title": "Total Waviness of Numbers in Range I",
-        "translatedTitle": "范围内总波动值 I",
-        "titleSlug": "total-waviness-of-numbers-in-range-i",
-        "questionFrontendId": "3751"
-      }
-    },
-    {
-      "submissionId": 728816965,
-      "submitTime": 1780447242,
-      "question": {
-        "title": "Generate Parentheses",
-        "translatedTitle": "括号生成",
-        "titleSlug": "generate-parentheses",
-        "questionFrontendId": "22"
-      }
-    },
-    {
-      "submissionId": 728815377,
-      "submitTime": 1780445680,
-      "question": {
-        "title": "Combination Sum",
-        "translatedTitle": "组合总和",
-        "titleSlug": "combination-sum",
-        "questionFrontendId": "39"
-      }
-    },
-    {
-      "submissionId": 728815242,
-      "submitTime": 1780445487,
-      "question": {
-        "title": "Combination Sum",
-        "translatedTitle": "组合总和",
-        "titleSlug": "combination-sum",
-        "questionFrontendId": "39"
-      }
-    },
-    {
-      "submissionId": 728814523,
-      "submitTime": 1780444156,
-      "question": {
-        "title": "Earliest Finish Time for Land and Water Rides II",
-        "translatedTitle": "最早完成陆地和水上游乐设施的时间 II",
-        "titleSlug": "earliest-finish-time-for-land-and-water-rides-ii",
-        "questionFrontendId": "3635"
-      }
-    },
-    {
-      "submissionId": 728590649,
-      "submitTime": 1780362418,
-      "question": {
-        "title": "Maximum Number of Items From Sale II",
-        "translatedTitle": "购买最多物品数目 II",
-        "titleSlug": "maximum-number-of-items-from-sale-ii",
-        "questionFrontendId": "3947"
-      }
-    },
-    {
-      "submissionId": 728587557,
-      "submitTime": 1780360114,
-      "question": {
-        "title": "Earliest Finish Time for Land and Water Rides I",
-        "translatedTitle": "最早完成陆地和水上游乐设施的时间 I",
-        "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
-        "questionFrontendId": "3633"
-      }
-    },
-    {
-      "submissionId": 728587281,
-      "submitTime": 1780359809,
-      "question": {
-        "title": "Earliest Finish Time for Land and Water Rides I",
-        "translatedTitle": "最早完成陆地和水上游乐设施的时间 I",
-        "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
-        "questionFrontendId": "3633"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 226,
+    "totalNum": 235,
     "questions": [
+      {
+        "translatedTitle": "平衡二叉树",
+        "frontendId": "110",
+        "title": "Balanced Binary Tree",
+        "titleSlug": "balanced-binary-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T12:28:43.453559+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "相同的树",
+        "frontendId": "100",
+        "title": "Same Tree",
+        "titleSlug": "same-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T12:22:47.960545+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "合并两个有序数组",
+        "frontendId": "88",
+        "title": "Merge Sorted Array",
+        "titleSlug": "merge-sorted-array",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T12:19:09.162739+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Sorting",
+            "nameTranslated": "排序",
+            "slug": "sorting"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "删除排序链表中的重复元素",
+        "frontendId": "83",
+        "title": "Remove Duplicates from Sorted List",
+        "titleSlug": "remove-duplicates-from-sorted-list",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:58:10.391446+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Linked List",
+            "nameTranslated": "链表",
+            "slug": "linked-list"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "爬楼梯",
+        "frontendId": "70",
+        "title": "Climbing Stairs",
+        "titleSlug": "climbing-stairs",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:49:18.145186+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Memoization",
+            "nameTranslated": "记忆化",
+            "slug": "memoization"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "x 的平方根 ",
+        "frontendId": "69",
+        "title": "Sqrt(x)",
+        "titleSlug": "sqrtx",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:46:29.118801+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二进制求和",
+        "frontendId": "67",
+        "title": "Add Binary",
+        "titleSlug": "add-binary",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:45:33.666198+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Bit Manipulation",
+            "nameTranslated": "位运算",
+            "slug": "bit-manipulation"
+          },
+          {
+            "name": "Math",
+            "nameTranslated": "数学",
+            "slug": "math"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "最后一个单词的长度",
+        "frontendId": "58",
+        "title": "Length of Last Word",
+        "titleSlug": "length-of-last-word",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:41:29.180526+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "搜索插入位置",
+        "frontendId": "35",
+        "title": "Search Insert Position",
+        "titleSlug": "search-insert-position",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-08T11:37:07.526789+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Binary Search",
+            "nameTranslated": "二分查找",
+            "slug": "binary-search"
+          }
+        ]
+      },
       {
         "translatedTitle": "分割回文串",
         "frontendId": "131",

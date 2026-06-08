@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-08T10:52:52.283Z",
-  "total": "149 hrs 41 mins",
-  "daily_average": "3 hrs 43 mins",
+  "lastUpdate": "2026-06-08T15:51:04.803Z",
+  "total": "151 hrs 9 mins",
+  "daily_average": "3 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 70236.363,
-      "total_text": "19h 30m",
+      "total_seconds": 75525.66900000001,
+      "total_text": "20h 58m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 424227.68299999996,
-      "total_text": "117h 50m",
+      "total_seconds": 429516.98899999994,
+      "total_text": "119h 18m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1647055.5119999999,
-      "total_text": "457h 30m",
+      "total_seconds": 1652344.818,
+      "total_text": "458h 59m",
       "days_active": 101
     },
     "all_time": {
-      "total_seconds": 1647055.5119999999,
-      "total_text": "457h 30m",
+      "total_seconds": 1652344.818,
+      "total_text": "458h 59m",
       "days_active": 101
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-08",
-      "seconds": 3288.487,
-      "text": "54 mins"
+      "seconds": 8577.793,
+      "text": "2 hrs 22 mins"
     }
   ],
   "heatmap": [
@@ -464,13 +464,13 @@
     },
     {
       "date": "2026-06-08",
-      "seconds": 3288.487
+      "seconds": 8577.793
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 432302.08400000003
+      "total_seconds": 432782.89300000004
     },
     {
       "name": "C++",
@@ -478,15 +478,15 @@
     },
     {
       "name": "Python",
-      "total_seconds": 187199.598
+      "total_seconds": 191204.055
     },
     {
       "name": "TypeScript",
-      "total_seconds": 183429.636
+      "total_seconds": 184119.195
     },
     {
       "name": "JavaScript",
-      "total_seconds": 128160.982
+      "total_seconds": 128271.41100000001
     },
     {
       "name": "Astro",
@@ -510,7 +510,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 7940.290000000001
+      "total_seconds": 7944.342000000001
     },
     {
       "name": "YAML",
@@ -1255,9 +1255,12 @@
       "Markdown": 8218.871
     },
     "2026-06-08": {
-      "Python": 3204.428,
+      "Python": 7208.885,
+      "TypeScript": 689.559,
+      "Markdown": 512.624,
+      "JavaScript": 110.429,
       "Git Config": 52.244,
-      "Markdown": 31.815
+      "MDX": 4.052
     }
   }
 }
