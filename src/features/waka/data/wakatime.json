@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-07T19:22:02.194Z",
-  "total": "152 hrs 34 mins",
-  "daily_average": "3 hrs 47 mins",
+  "lastUpdate": "2026-06-08T03:57:10.774Z",
+  "total": "148 hrs 56 mins",
+  "daily_average": "3 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 84434.414,
-      "total_text": "23h 27m",
+      "total_seconds": 67547.929,
+      "total_text": "18h 45m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 435903.09299999994,
-      "total_text": "121h 5m",
+      "total_seconds": 421539.24899999995,
+      "total_text": "117h 5m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1643767.025,
-      "total_text": "456h 36m",
-      "days_active": 100
+      "total_seconds": 1644367.078,
+      "total_text": "456h 46m",
+      "days_active": 101
     },
     "all_time": {
-      "total_seconds": 1643767.025,
-      "total_text": "456h 36m",
-      "days_active": 100
+      "total_seconds": 1644367.078,
+      "total_text": "456h 46m",
+      "days_active": 101
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-01",
-      "seconds": 17486.538,
-      "text": "4 hrs 51 mins"
-    },
     {
       "date": "2026-06-02",
       "seconds": 11038.373,
@@ -59,6 +54,11 @@
       "date": "2026-06-07",
       "seconds": 8218.871,
       "text": "2 hrs 16 mins"
+    },
+    {
+      "date": "2026-06-08",
+      "seconds": 600.053,
+      "text": "10 mins"
     }
   ],
   "heatmap": [
@@ -461,12 +461,16 @@
     {
       "date": "2026-06-07",
       "seconds": 8218.871
+    },
+    {
+      "date": "2026-06-08",
+      "seconds": 600.053
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 432270.26900000003
+      "total_seconds": 432302.08400000003
     },
     {
       "name": "C++",
@@ -474,7 +478,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 183995.16999999998
+      "total_seconds": 184511.164
     },
     {
       "name": "TypeScript",
@@ -514,7 +518,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 1726.154
+      "total_seconds": 1778.398
     },
     {
       "name": "Git",
@@ -1249,6 +1253,11 @@
     },
     "2026-06-07": {
       "Markdown": 8218.871
+    },
+    "2026-06-08": {
+      "Python": 515.994,
+      "Git Config": 52.244,
+      "Markdown": 31.815
     }
   }
 }
