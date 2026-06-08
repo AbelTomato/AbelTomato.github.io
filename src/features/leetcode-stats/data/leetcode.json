@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 115,
+        "count": 118,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2149,
+        "count": 2146,
         "difficulty": "MEDIUM"
       },
       {
@@ -176,7 +176,7 @@
         }
       },
       {
-        "score": 21,
+        "score": 22,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -280,6 +280,36 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 729833155,
+      "submitTime": 1780908743,
+      "question": {
+        "title": "Palindrome Partitioning",
+        "translatedTitle": "分割回文串",
+        "titleSlug": "palindrome-partitioning",
+        "questionFrontendId": "131"
+      }
+    },
+    {
+      "submissionId": 729829407,
+      "submitTime": 1780907990,
+      "question": {
+        "title": "Word Search",
+        "translatedTitle": "单词搜索",
+        "titleSlug": "word-search",
+        "questionFrontendId": "79"
+      }
+    },
+    {
+      "submissionId": 729823139,
+      "submitTime": 1780906657,
+      "question": {
+        "title": "Partition Array According to Given Pivot",
+        "translatedTitle": "根据给定数字划分数组",
+        "titleSlug": "partition-array-according-to-given-pivot",
+        "questionFrontendId": "2161"
+      }
+    },
     {
       "submissionId": 729583734,
       "submitTime": 1780802927,
@@ -399,41 +429,105 @@
         "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
         "questionFrontendId": "3633"
       }
-    },
-    {
-      "submissionId": 728379224,
-      "submitTime": 1780274293,
-      "question": {
-        "title": "Maximum Number of Items From Sale I",
-        "translatedTitle": "购买最多物品数目 I",
-        "titleSlug": "maximum-number-of-items-from-sale-i",
-        "questionFrontendId": "3946"
-      }
-    },
-    {
-      "submissionId": 728378154,
-      "submitTime": 1780273108,
-      "question": {
-        "title": "Minimum Cost of Buying Candies With Discount",
-        "translatedTitle": "打折购买糖果的最小开销",
-        "titleSlug": "minimum-cost-of-buying-candies-with-discount",
-        "questionFrontendId": "2144"
-      }
-    },
-    {
-      "submissionId": 728232498,
-      "submitTime": 1780198960,
-      "question": {
-        "title": "Lexicographically Maximum MEX Array",
-        "translatedTitle": "字典序最大的 MEX 数组",
-        "titleSlug": "lexicographically-maximum-mex-array",
-        "questionFrontendId": "3948"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 223,
+    "totalNum": 226,
     "questions": [
+      {
+        "translatedTitle": "分割回文串",
+        "frontendId": "131",
+        "title": "Palindrome Partitioning",
+        "titleSlug": "palindrome-partitioning",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-08T08:52:22.356684+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "单词搜索",
+        "frontendId": "79",
+        "title": "Word Search",
+        "titleSlug": "word-search",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-08T08:39:46.891030+00:00",
+        "numSubmitted": 3,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "String",
+            "nameTranslated": "字符串",
+            "slug": "string"
+          },
+          {
+            "name": "Backtracking",
+            "nameTranslated": "回溯",
+            "slug": "backtracking"
+          },
+          {
+            "name": "Matrix",
+            "nameTranslated": "矩阵",
+            "slug": "matrix"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "根据给定数字划分数组",
+        "frontendId": "2161",
+        "title": "Partition Array According to Given Pivot",
+        "titleSlug": "partition-array-according-to-given-pivot",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-08T08:17:37.074771+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Two Pointers",
+            "nameTranslated": "双指针",
+            "slug": "two-pointers"
+          },
+          {
+            "name": "Simulation",
+            "nameTranslated": "模拟",
+            "slug": "simulation"
+          }
+        ]
+      },
       {
         "translatedTitle": "根据描述创建二叉树",
         "frontendId": "2196",
