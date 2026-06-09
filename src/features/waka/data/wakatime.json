@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-08T20:14:07.264Z",
-  "total": "151 hrs 9 mins",
-  "daily_average": "3 hrs 45 mins",
+  "lastUpdate": "2026-06-09T03:26:56.770Z",
+  "total": "150 hrs 21 mins",
+  "daily_average": "3 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 75525.66900000001,
-      "total_text": "20h 58m",
+      "total_seconds": 67028.621,
+      "total_text": "18h 37m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 429516.98899999994,
-      "total_text": "119h 18m",
+      "total_seconds": 429402.072,
+      "total_text": "119h 16m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1652344.818,
-      "total_text": "458h 59m",
-      "days_active": 101
+      "total_seconds": 1654886.143,
+      "total_text": "459h 41m",
+      "days_active": 102
     },
     "all_time": {
-      "total_seconds": 1652344.818,
-      "total_text": "458h 59m",
-      "days_active": 101
+      "total_seconds": 1654886.143,
+      "total_text": "459h 41m",
+      "days_active": 102
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-02",
-      "seconds": 11038.373,
-      "text": "3 hrs 3 mins"
-    },
     {
       "date": "2026-06-03",
       "seconds": 9295.834,
@@ -59,6 +54,11 @@
       "date": "2026-06-08",
       "seconds": 8577.793,
       "text": "2 hrs 22 mins"
+    },
+    {
+      "date": "2026-06-09",
+      "seconds": 2541.325,
+      "text": "42 mins"
     }
   ],
   "heatmap": [
@@ -465,6 +465,10 @@
     {
       "date": "2026-06-08",
       "seconds": 8577.793
+    },
+    {
+      "date": "2026-06-09",
+      "seconds": 2541.325
     }
   ],
   "languages": [
@@ -478,7 +482,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 191204.055
+      "total_seconds": 193745.38
     },
     {
       "name": "TypeScript",
@@ -1261,6 +1265,9 @@
       "JavaScript": 110.429,
       "Git Config": 52.244,
       "MDX": 4.052
+    },
+    "2026-06-09": {
+      "Python": 2541.325
     }
   }
 }

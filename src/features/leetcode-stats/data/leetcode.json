@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 81,
+        "count": 84,
         "difficulty": "EASY"
       },
       {
-        "count": 118,
+        "count": 119,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 988,
+        "count": 985,
         "difficulty": "EASY"
       },
       {
-        "count": 2146,
+        "count": 2145,
         "difficulty": "MEDIUM"
       },
       {
@@ -160,7 +160,7 @@
     ],
     "topicAreaScores": [
       {
-        "score": 24,
+        "score": 25,
         "topicArea": {
           "name": "数据结构",
           "slug": "data-structures"
@@ -181,7 +181,7 @@
         }
       },
       {
-        "score": 22,
+        "score": 23,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -285,6 +285,46 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 729934265,
+      "submitTime": 1780965704,
+      "question": {
+        "title": "Maximum Total Subarray Value I",
+        "translatedTitle": "最大子数组总值 I",
+        "titleSlug": "maximum-total-subarray-value-i",
+        "questionFrontendId": "3689"
+      }
+    },
+    {
+      "submissionId": 729934168,
+      "submitTime": 1780965611,
+      "question": {
+        "title": "Pascal's Triangle",
+        "translatedTitle": "杨辉三角",
+        "titleSlug": "pascals-triangle",
+        "questionFrontendId": "118"
+      }
+    },
+    {
+      "submissionId": 729933784,
+      "submitTime": 1780965195,
+      "question": {
+        "title": "Path Sum",
+        "translatedTitle": "路径总和",
+        "titleSlug": "path-sum",
+        "questionFrontendId": "112"
+      }
+    },
+    {
+      "submissionId": 729933416,
+      "submitTime": 1780964745,
+      "question": {
+        "title": "Minimum Depth of Binary Tree",
+        "translatedTitle": "二叉树的最小深度",
+        "titleSlug": "minimum-depth-of-binary-tree",
+        "questionFrontendId": "111"
+      }
+    },
     {
       "submissionId": 729874653,
       "submitTime": 1780921724,
@@ -394,51 +434,123 @@
         "titleSlug": "word-search",
         "questionFrontendId": "79"
       }
-    },
-    {
-      "submissionId": 729823139,
-      "submitTime": 1780906657,
-      "question": {
-        "title": "Partition Array According to Given Pivot",
-        "translatedTitle": "根据给定数字划分数组",
-        "titleSlug": "partition-array-according-to-given-pivot",
-        "questionFrontendId": "2161"
-      }
-    },
-    {
-      "submissionId": 729583734,
-      "submitTime": 1780802927,
-      "question": {
-        "title": "Create Binary Tree From Descriptions",
-        "translatedTitle": "根据描述创建二叉树",
-        "titleSlug": "create-binary-tree-from-descriptions",
-        "questionFrontendId": "2196"
-      }
-    },
-    {
-      "submissionId": 729500822,
-      "submitTime": 1780745704,
-      "question": {
-        "title": "Left and Right Sum Differences",
-        "translatedTitle": "左右元素和的差值",
-        "titleSlug": "left-and-right-sum-differences",
-        "questionFrontendId": "2574"
-      }
-    },
-    {
-      "submissionId": 729289465,
-      "submitTime": 1780642319,
-      "question": {
-        "title": "Total Waviness of Numbers in Range II",
-        "translatedTitle": "范围内总波动值 II",
-        "titleSlug": "total-waviness-of-numbers-in-range-ii",
-        "questionFrontendId": "3753"
-      }
     }
   ],
   "userProgressQuestionList": {
-    "totalNum": 235,
+    "totalNum": 239,
     "questions": [
+      {
+        "translatedTitle": "最大子数组总值 I",
+        "frontendId": "3689",
+        "title": "Maximum Total Subarray Value I",
+        "titleSlug": "maximum-total-subarray-value-i",
+        "difficulty": "MEDIUM",
+        "lastSubmittedAt": "2026-06-09T00:41:43.872003+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Greedy",
+            "nameTranslated": "贪心",
+            "slug": "greedy"
+          },
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "杨辉三角",
+        "frontendId": "118",
+        "title": "Pascal's Triangle",
+        "titleSlug": "pascals-triangle",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-09T00:40:11.380267+00:00",
+        "numSubmitted": 1,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Array",
+            "nameTranslated": "数组",
+            "slug": "array"
+          },
+          {
+            "name": "Dynamic Programming",
+            "nameTranslated": "动态规划",
+            "slug": "dynamic-programming"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "路径总和",
+        "frontendId": "112",
+        "title": "Path Sum",
+        "titleSlug": "path-sum",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-09T00:33:15.173953+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
+      {
+        "translatedTitle": "二叉树的最小深度",
+        "frontendId": "111",
+        "title": "Minimum Depth of Binary Tree",
+        "titleSlug": "minimum-depth-of-binary-tree",
+        "difficulty": "EASY",
+        "lastSubmittedAt": "2026-06-09T00:25:44.962764+00:00",
+        "numSubmitted": 2,
+        "questionStatus": "SOLVED",
+        "lastResult": "AC",
+        "topicTags": [
+          {
+            "name": "Tree",
+            "nameTranslated": "树",
+            "slug": "tree"
+          },
+          {
+            "name": "Depth-First Search",
+            "nameTranslated": "深度优先搜索",
+            "slug": "depth-first-search"
+          },
+          {
+            "name": "Breadth-First Search",
+            "nameTranslated": "广度优先搜索",
+            "slug": "breadth-first-search"
+          },
+          {
+            "name": "Binary Tree",
+            "nameTranslated": "二叉树",
+            "slug": "binary-tree"
+          }
+        ]
+      },
       {
         "translatedTitle": "平衡二叉树",
         "frontendId": "110",
