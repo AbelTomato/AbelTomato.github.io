@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 87,
+        "count": 88,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 982,
+        "count": 981,
         "difficulty": "EASY"
       },
       {
@@ -291,6 +291,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 730329780,
+      "submitTime": 1781139884,
+      "question": {
+        "title": "Single Number",
+        "translatedTitle": "只出现一次的数字",
+        "titleSlug": "single-number",
+        "questionFrontendId": "136"
+      }
+    },
+    {
       "submissionId": 730249226,
       "submitTime": 1781085756,
       "question": {
@@ -428,16 +438,6 @@
         "translatedTitle": "x 的平方根 ",
         "titleSlug": "sqrtx",
         "questionFrontendId": "69"
-      }
-    },
-    {
-      "submissionId": 729865663,
-      "submitTime": 1780919134,
-      "question": {
-        "title": "Add Binary",
-        "translatedTitle": "二进制求和",
-        "titleSlug": "add-binary",
-        "questionFrontendId": "67"
       }
     }
   ],
