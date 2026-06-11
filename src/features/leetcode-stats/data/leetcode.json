@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 88,
+        "count": 91,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 981,
+        "count": 978,
         "difficulty": "EASY"
       },
       {
@@ -291,6 +291,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 730458865,
+      "submitTime": 1781179154,
+      "question": {
+        "title": "Excel Sheet Column Title",
+        "translatedTitle": "Excel 表列名称",
+        "titleSlug": "excel-sheet-column-title",
+        "questionFrontendId": "168"
+      }
+    },
+    {
+      "submissionId": 730457401,
+      "submitTime": 1781178657,
+      "question": {
+        "title": "Binary Tree Postorder Traversal",
+        "translatedTitle": "二叉树的后序遍历",
+        "titleSlug": "binary-tree-postorder-traversal",
+        "questionFrontendId": "145"
+      }
+    },
+    {
+      "submissionId": 730457230,
+      "submitTime": 1781178603,
+      "question": {
+        "title": "Binary Tree Preorder Traversal",
+        "translatedTitle": "二叉树的前序遍历",
+        "titleSlug": "binary-tree-preorder-traversal",
+        "questionFrontendId": "144"
+      }
+    },
+    {
       "submissionId": 730370251,
       "submitTime": 1781154697,
       "question": {
@@ -408,36 +438,6 @@
         "translatedTitle": "相同的树",
         "titleSlug": "same-tree",
         "questionFrontendId": "100"
-      }
-    },
-    {
-      "submissionId": 729872414,
-      "submitTime": 1780921149,
-      "question": {
-        "title": "Merge Sorted Array",
-        "translatedTitle": "合并两个有序数组",
-        "titleSlug": "merge-sorted-array",
-        "questionFrontendId": "88"
-      }
-    },
-    {
-      "submissionId": 729868168,
-      "submitTime": 1780919891,
-      "question": {
-        "title": "Remove Duplicates from Sorted List",
-        "translatedTitle": "删除排序链表中的重复元素",
-        "titleSlug": "remove-duplicates-from-sorted-list",
-        "questionFrontendId": "83"
-      }
-    },
-    {
-      "submissionId": 729866412,
-      "submitTime": 1780919358,
-      "question": {
-        "title": "Climbing Stairs",
-        "translatedTitle": "爬楼梯",
-        "titleSlug": "climbing-stairs",
-        "questionFrontendId": "70"
       }
     }
   ],
