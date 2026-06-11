@@ -1,13 +1,16 @@
 ---
 import ProfileCard from "@components/widgets/ProfileCard.astro";
+import FriendsPreviewCard from "@components/widgets/FriendsPreviewCard.astro";
 
 interface Props {
   showProfile?: boolean;
+  showFriendsPreview?: boolean;
 }
 
-const { showProfile = true } = Astro.props;
+const { showProfile = true, showFriendsPreview = true } = Astro.props;
 ---
 
 <div class="flex flex-col gap-4">
   {showProfile && <ProfileCard />}
+  {showFriendsPreview && <FriendsPreviewCard />}
 </div>

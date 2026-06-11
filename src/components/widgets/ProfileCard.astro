@@ -5,46 +5,46 @@ const skills = ["React", "TypeScript", "C++"];
 ---
 
 <div
-  class="max-w-sm mx-auto bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800/80 rounded-2xl shadow-sm hover:shadow-md dark:shadow-none transition-all duration-300"
+  class="mx-auto w-full max-w-sm rounded-xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none"
 >
   <div class="p-6 flex flex-col items-center text-center">
     <div
-      class="relative w-20 h-20 mb-4 rounded-full p-0.5 bg-slate-200 dark:bg-slate-800"
+      class="relative mb-4 h-20 w-20 rounded-full bg-blue-100 p-0.5 dark:bg-blue-950/60"
     >
       <img
         src={avatar.src}
         alt="头像"
-        class="w-full h-full object-cover rounded-full"
+        class="h-full w-full rounded-full border-2 border-white object-cover dark:border-zinc-900"
       />
     </div>
 
     <h2
-      class="text-xl font-bold text-slate-800 dark:text-slate-100 tracking-tight"
+      class="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
     >
       AbelTomato
     </h2>
-    <p class="text-xs text-slate-400 dark:text-slate-500 font-mono mt-1">
+    <p class="mt-1 font-mono text-xs text-zinc-400 dark:text-zinc-500">
       Time tries all, but TLE.
     </p>
 
     <p
-      class="text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed max-w-xs"
+      class="mt-3 max-w-xs text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
     >
       末9大一计算机在读。正在学习React
     </p>
 
-    <hr class="w-full border-slate-100 dark:border-slate-800/60 my-4" />
+    <hr class="my-4 w-full border-zinc-100 dark:border-zinc-800" />
 
     <div class="w-full text-left">
       <h3
-        class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2"
+        class="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500"
       >
         Technical Skills
       </h3>
       <div class="flex flex-wrap gap-1.5">
         {
           skills.map((skill) => (
-            <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-slate-50 border border-slate-200 text-slate-600 dark:bg-slate-800/50 dark:border-slate-700/50 dark:text-slate-300 cursor-default">
+            <span class="cursor-default rounded-md border border-blue-100 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/30 dark:text-blue-300">
               {skill}
             </span>
           ))
@@ -52,14 +52,14 @@ const skills = ["React", "TypeScript", "C++"];
       </div>
     </div>
 
-    <hr class="w-full border-slate-100 dark:border-slate-800/60 my-4" />
+    <hr class="my-4 w-full border-zinc-100 dark:border-zinc-800" />
 
     <div class="w-full grid grid-cols-3 gap-2 text-sm font-medium">
       <a
         href="https://github.com/AbelTomato"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex flex-col items-center py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white transition-all"
+        class="flex flex-col items-center rounded-lg border border-zinc-100 bg-zinc-50 py-2 text-zinc-600 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-300 dark:hover:border-blue-900/60 dark:hover:bg-blue-950/30 dark:hover:text-blue-300"
       >
         <span class="text-xs">GitHub</span>
       </a>
@@ -68,7 +68,7 @@ const skills = ["React", "TypeScript", "C++"];
         href="https://www.luogu.com.cn/user/561297"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex flex-col items-center py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white transition-all"
+        class="flex flex-col items-center rounded-lg border border-zinc-100 bg-zinc-50 py-2 text-zinc-600 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-300 dark:hover:border-blue-900/60 dark:hover:bg-blue-950/30 dark:hover:text-blue-300"
       >
         <span class="text-xs">洛谷</span>
       </a>
@@ -77,7 +77,7 @@ const skills = ["React", "TypeScript", "C++"];
         href="https://space.bilibili.com/512099551?spm_id_from=333.1007.0.0"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex flex-col items-center py-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white transition-all"
+        class="flex flex-col items-center rounded-lg border border-zinc-100 bg-zinc-50 py-2 text-zinc-600 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-300 dark:hover:border-blue-900/60 dark:hover:bg-blue-950/30 dark:hover:text-blue-300"
       >
         <span class="text-xs">Bilibili</span>
       </a>
