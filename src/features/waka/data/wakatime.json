@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-11T16:20:28.783Z",
+  "lastUpdate": "2026-06-11T20:21:43.729Z",
   "total": "150 hrs 30 mins",
   "daily_average": "3 hrs 44 mins",
   "stats": {
@@ -502,7 +502,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 94824.094
+      "total_seconds": 94969.094
     },
     {
       "name": "Java",
@@ -1283,9 +1283,8 @@
     "2026-06-11": {
       "C++": 3413.566,
       "Markdown": 473.329,
-      "Other": 145,
-      "TypeScript": 65,
-      "Astro": 16
+      "Astro": 161,
+      "TypeScript": 65
     }
   }
 }
