@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-11T15:59:28.114Z",
-  "total": "150 hrs 25 mins",
+  "lastUpdate": "2026-06-11T16:20:28.783Z",
+  "total": "150 hrs 30 mins",
   "daily_average": "3 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 43595.697,
-      "total_text": "12h 6m",
+      "total_seconds": 43918.113,
+      "total_text": "12h 11m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 418332.86199999996,
-      "total_text": "116h 12m",
+      "total_seconds": 418655.278,
+      "total_text": "116h 17m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1663456.345,
-      "total_text": "462h 4m",
+      "total_seconds": 1663778.761,
+      "total_text": "462h 9m",
       "days_active": 104
     },
     "all_time": {
-      "total_seconds": 1663456.345,
-      "total_text": "462h 4m",
+      "total_seconds": 1663778.761,
+      "total_text": "462h 9m",
       "days_active": 104
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-11",
-      "seconds": 3790.479,
-      "text": "1 hr 3 mins"
+      "seconds": 4112.895,
+      "text": "1 hr 8 mins"
     }
   ],
   "heatmap": [
@@ -476,13 +476,13 @@
     },
     {
       "date": "2026-06-11",
-      "seconds": 3790.479
+      "seconds": 4112.895
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 433159.80600000004
+      "total_seconds": 433256.22200000007
     },
     {
       "name": "C++",
@@ -494,7 +494,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 184119.195
+      "total_seconds": 184184.195
     },
     {
       "name": "JavaScript",
@@ -502,7 +502,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 94808.094
+      "total_seconds": 94824.094
     },
     {
       "name": "Java",
@@ -1282,7 +1282,10 @@
     },
     "2026-06-11": {
       "C++": 3413.566,
-      "Markdown": 376.913
+      "Markdown": 473.329,
+      "Other": 145,
+      "TypeScript": 65,
+      "Astro": 16
     }
   }
 }
