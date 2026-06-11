@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 119,
+        "count": 120,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2146,
+        "count": 2145,
         "difficulty": "MEDIUM"
       },
       {
@@ -291,6 +291,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 730370251,
+      "submitTime": 1781154697,
+      "question": {
+        "title": "Number of Ways to Assign Edge Weights I",
+        "translatedTitle": "给边赋权值的方案数 I",
+        "titleSlug": "number-of-ways-to-assign-edge-weights-i",
+        "questionFrontendId": "3558"
+      }
+    },
+    {
       "submissionId": 730329780,
       "submitTime": 1781139884,
       "question": {
@@ -428,16 +438,6 @@
         "translatedTitle": "爬楼梯",
         "titleSlug": "climbing-stairs",
         "questionFrontendId": "70"
-      }
-    },
-    {
-      "submissionId": 729865840,
-      "submitTime": 1780919189,
-      "question": {
-        "title": "Sqrt(x)",
-        "translatedTitle": "x 的平方根 ",
-        "titleSlug": "sqrtx",
-        "questionFrontendId": "69"
       }
     }
   ],
