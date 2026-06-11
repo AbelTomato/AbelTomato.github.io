@@ -4,7 +4,6 @@ import ThreeColumnLayout from '@layouts/ThreeColumnLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, CREATE_TIME } from '../consts';
 import FormattedDate from '@components/ui/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import CoCoders from '@features/co-coders/components/CoCoders.astro';
 import placeholderImg from '../../public/android-chrome-512x512.png'
 import LeftSidebar from '@components/widgets/LeftSidebar.astro';
 import RightSidebar from '@components/widgets/RightSidebar.astro';
@@ -97,9 +96,6 @@ const siteData = {
       </div>
     </section>
 
-    <section class="w-full max-w-6xl mx-auto mt-24">
-      <CoCoders />
-    </section>
   </main>
 
   <RightSidebar slot="right-sidebar" siteData={siteData} />
