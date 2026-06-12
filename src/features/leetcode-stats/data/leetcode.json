@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 91,
+        "count": 93,
         "difficulty": "EASY"
       },
       {
@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 35,
+        "count": 36,
         "difficulty": "HARD"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 978,
+        "count": 976,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 977,
+        "count": 976,
         "difficulty": "HARD"
       }
     ]
@@ -186,7 +186,7 @@
         }
       },
       {
-        "score": 23,
+        "score": 24,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -290,6 +290,36 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 730638805,
+      "submitTime": 1781269593,
+      "question": {
+        "title": "Number of Ways to Assign Edge Weights II",
+        "translatedTitle": "给边赋权值的方案数 II",
+        "titleSlug": "number-of-ways-to-assign-edge-weights-ii",
+        "questionFrontendId": "3559"
+      }
+    },
+    {
+      "submissionId": 730628508,
+      "submitTime": 1781264748,
+      "question": {
+        "title": "Excel Sheet Column Number",
+        "translatedTitle": "Excel 表列序号",
+        "titleSlug": "excel-sheet-column-number",
+        "questionFrontendId": "171"
+      }
+    },
+    {
+      "submissionId": 730628241,
+      "submitTime": 1781264587,
+      "question": {
+        "title": "Majority Element",
+        "translatedTitle": "多数元素",
+        "titleSlug": "majority-element",
+        "questionFrontendId": "169"
+      }
+    },
     {
       "submissionId": 730458865,
       "submitTime": 1781179154,
@@ -408,36 +438,6 @@
         "translatedTitle": "路径总和",
         "titleSlug": "path-sum",
         "questionFrontendId": "112"
-      }
-    },
-    {
-      "submissionId": 729933416,
-      "submitTime": 1780964745,
-      "question": {
-        "title": "Minimum Depth of Binary Tree",
-        "translatedTitle": "二叉树的最小深度",
-        "titleSlug": "minimum-depth-of-binary-tree",
-        "questionFrontendId": "111"
-      }
-    },
-    {
-      "submissionId": 729874653,
-      "submitTime": 1780921724,
-      "question": {
-        "title": "Balanced Binary Tree",
-        "translatedTitle": "平衡二叉树",
-        "titleSlug": "balanced-binary-tree",
-        "questionFrontendId": "110"
-      }
-    },
-    {
-      "submissionId": 729873307,
-      "submitTime": 1780921368,
-      "question": {
-        "title": "Same Tree",
-        "translatedTitle": "相同的树",
-        "titleSlug": "same-tree",
-        "questionFrontendId": "100"
       }
     }
   ],
