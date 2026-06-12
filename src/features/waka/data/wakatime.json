@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-12T14:57:30.218Z",
-  "total": "151 hrs 36 mins",
-  "daily_average": "3 hrs 46 mins",
+  "lastUpdate": "2026-06-12T15:54:44.776Z",
+  "total": "152 hrs 27 mins",
+  "daily_average": "3 hrs 47 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 54801.465000000004,
-      "total_text": "15h 13m",
+      "total_seconds": 57891.768000000004,
+      "total_text": "16h 4m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 420356.172,
-      "total_text": "116h 45m",
+      "total_seconds": 423446.475,
+      "total_text": "117h 37m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1675538.612,
-      "total_text": "465h 25m",
+      "total_seconds": 1678628.915,
+      "total_text": "466h 17m",
       "days_active": 105
     },
     "all_time": {
-      "total_seconds": 1675538.612,
-      "total_text": "465h 25m",
+      "total_seconds": 1678628.915,
+      "total_text": "466h 17m",
       "days_active": 105
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-12",
-      "seconds": 11759.851,
-      "text": "3 hrs 15 mins"
+      "seconds": 14850.154,
+      "text": "4 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -480,21 +480,21 @@
     },
     {
       "date": "2026-06-12",
-      "seconds": 11759.851
+      "seconds": 14850.154
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 435274.60900000005
+      "total_seconds": 436966.7750000001
     },
     {
       "name": "C++",
-      "total_seconds": 375490.1040000001
+      "total_seconds": 376530.5970000001
     },
     {
       "name": "Python",
-      "total_seconds": 198525.103
+      "total_seconds": 198612.19700000001
     },
     {
       "name": "TypeScript",
@@ -559,6 +559,10 @@
     {
       "name": "TOML",
       "total_seconds": 340.501
+    },
+    {
+      "name": "PowerShell",
+      "total_seconds": 192.762
     },
     {
       "name": "TeX",
@@ -1291,11 +1295,14 @@
       "TypeScript": 65
     },
     "2026-06-12": {
-      "C++": 8389.745,
-      "Markdown": 2018.387,
+      "C++": 9430.238,
+      "Markdown": 3710.553,
       "Astro": 1010.522,
       "TypeScript": 228.196,
-      "Other": 113.001
+      "PowerShell": 192.762,
+      "Other": 113.001,
+      "Python": 87.094,
+      "Text": 77.788
     }
   }
 }
