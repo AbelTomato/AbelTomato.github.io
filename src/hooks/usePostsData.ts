@@ -40,7 +40,7 @@ export async function getPostsData(): Promise<PostsData> {
   const maxCount = Math.max(...counts);
   const minCount = Math.min(...counts);
 
-  const recentPosts = posts.slice(0, 3);
+  const recentPosts = posts.slice(0, 5);
 
   const totalTagsCounts = allTags.length;
   const totalPostsCounts = posts.length;
