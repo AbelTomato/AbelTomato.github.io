@@ -37,10 +37,14 @@ const { title, description } = Astro.props;
             : "light";
         })();
 
-        if (theme === "dark") {
-          document.documentElement.classList.add("dark");
-        } else {
+        if (theme === "light") {
           document.documentElement.classList.remove("dark");
+          document.documentElement.classList.add("light");
+          document.documentElement.style.colorScheme = "light";
+        } else {
+          document.documentElement.classList.remove("light");
+          document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = "dark";
         }
 
         const savedSize = localStorage.getItem("fontSize") || "100";
@@ -55,9 +59,7 @@ const { title, description } = Astro.props;
     <ClientRouter />
   </head>
 
-  <body
-    class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col transition-colors duration-300"
-  >
+  <body class="min-h-screen flex flex-col">
     <Header />
     <div class="grow w-full">
       <slot />
