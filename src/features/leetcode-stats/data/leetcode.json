@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 93,
+        "count": 94,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "EASY"
       },
       {
@@ -291,6 +291,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 730718497,
+      "submitTime": 1781337195,
+      "question": {
+        "title": "Weighted Word Mapping",
+        "translatedTitle": "带权单词映射",
+        "titleSlug": "weighted-word-mapping",
+        "questionFrontendId": "3838"
+      }
+    },
+    {
       "submissionId": 730638805,
       "submitTime": 1781269593,
       "question": {
@@ -428,16 +438,6 @@
         "translatedTitle": "杨辉三角",
         "titleSlug": "pascals-triangle",
         "questionFrontendId": "118"
-      }
-    },
-    {
-      "submissionId": 729933784,
-      "submitTime": 1780965195,
-      "question": {
-        "title": "Path Sum",
-        "translatedTitle": "路径总和",
-        "titleSlug": "path-sum",
-        "questionFrontendId": "112"
       }
     }
   ],
