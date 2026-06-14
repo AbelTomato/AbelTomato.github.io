@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@components/ui/button";
+import { Card, CardContent } from "@components/ui/card";
 import { useMomentsData } from "@features/moments-section/hooks/useMomentsData";
 
 const momentsImages = import.meta.glob<{ default: string }>(
@@ -9,6 +11,19 @@ const momentsImages = import.meta.glob<{ default: string }>(
 );
 
 const AUTO_PLAY_INTERVAL = 4000;
+
+function getMomentImageSrc(image: string) {
+  const imagePath = `../../features/moments-section/assets/${image}`;
+  return momentsImages[imagePath]?.default || "";
+}
+
+function preloadImage(src: string) {
+  if (!src || typeof window === "undefined") return;
+
+  const image = new Image();
+  image.src = src;
+  void image.decode?.().catch(() => undefined);
+}
 
 function MomentsCarouselContent() {
   const { data: moments, isLoading, error } = useMomentsData();
@@ -83,35 +98,48 @@ function MomentsCarouselContent() {
     };
   }, [isPaused, total, resetAutoPlay]);
 
+  useEffect(() => {
+    if (!moments || total === 0) return;
+
+    const indexesToPreload = new Set([
+      currentIndex,
+      (currentIndex + 1) % total,
+      (currentIndex - 1 + total) % total,
+    ]);
+
+    indexesToPreload.forEach((index) => {
+      preloadImage(getMomentImageSrc(moments[index]!.image));
+    });
+  }, [currentIndex, moments, total]);
+
   // Loading
   if (isLoading) {
     return (
-      <div className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 shadow-sm">
+      <Card className="w-full max-w-sm p-5 shadow-sm">
         <div className="flex h-40 items-center justify-center text-sm text-muted-foreground font-mono animate-pulse">
           加载中...
         </div>
-      </div>
+      </Card>
     );
   }
 
   // Error / Empty
   if (error || !moments || total === 0) {
     return (
-      <div className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 shadow-sm">
+      <Card className="w-full max-w-sm p-5 shadow-sm">
         <div className="mx-auto p-4 text-center border rounded-xl bg-destructive/5 border-destructive/20">
           <p className="text-sm font-semibold text-destructive">获取数据失败</p>
         </div>
-      </div>
+      </Card>
     );
   }
 
   const current = moments[currentIndex]!;
-  const imagePath = `../../features/moments-section/assets/${current.image}`;
-  const resolvedImageSrc = momentsImages[imagePath]?.default || "";
+  const resolvedImageSrc = getMomentImageSrc(current.image);
 
   return (
-    <div
-      className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-sm overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
+    <Card
+      className="w-full max-w-sm gap-0 py-0 shadow-sm cursor-pointer transition-shadow hover:shadow-md"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onClick={() => {
@@ -124,12 +152,12 @@ function MomentsCarouselContent() {
       </h3>
 
       {/* 图片区 */}
-      <div className="relative aspect-4/3 overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+      <CardContent className="relative aspect-4/3 overflow-hidden bg-muted p-0">
         <img
           key={currentIndex}
           src={resolvedImageSrc}
           alt={current.source}
-          loading="lazy"
+          loading="eager"
           decoding="async"
           className="w-full h-full object-cover animate-in fade-in duration-700"
         />
@@ -137,29 +165,35 @@ function MomentsCarouselContent() {
         {/* 左右箭头 */}
         {total > 1 && (
           <>
-            <button
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrev();
               }}
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors"
+              className="absolute left-2 top-1/2 size-7 -translate-y-1/2 rounded-full bg-black/40 text-white hover:bg-black/60 hover:text-white"
               aria-label="上一条"
             >
               <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button
+            </Button>
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon-sm"
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();
               }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors"
+              className="absolute right-2 top-1/2 size-7 -translate-y-1/2 rounded-full bg-black/40 text-white hover:bg-black/60 hover:text-white"
               aria-label="下一条"
             >
               <ChevronRight className="w-4 h-4" />
-            </button>
+            </Button>
           </>
         )}
-      </div>
+      </CardContent>
 
       {/* 文字区 */}
       <div
@@ -195,7 +229,7 @@ function MomentsCarouselContent() {
           ))}
         </div>
       )}
-    </div>
+    </Card>
   );
 }
 
