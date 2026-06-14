@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 120,
+        "count": 121,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,15 +30,15 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 975,
+        "count": 976,
         "difficulty": "EASY"
       },
       {
-        "count": 2145,
+        "count": 2146,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 977,
         "difficulty": "HARD"
       }
     ]
@@ -186,7 +186,7 @@
         }
       },
       {
-        "score": 23,
+        "score": 24,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -290,6 +290,16 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 730875072,
+      "submitTime": 1781428790,
+      "question": {
+        "title": "Maximum Twin Sum of a Linked List",
+        "translatedTitle": "链表最大孪生和",
+        "titleSlug": "maximum-twin-sum-of-a-linked-list",
+        "questionFrontendId": "2130"
+      }
+    },
     {
       "submissionId": 730718497,
       "submitTime": 1781337195,
@@ -428,16 +438,6 @@
         "translatedTitle": "最大子数组总值 I",
         "titleSlug": "maximum-total-subarray-value-i",
         "questionFrontendId": "3689"
-      }
-    },
-    {
-      "submissionId": 729934168,
-      "submitTime": 1780965611,
-      "question": {
-        "title": "Pascal's Triangle",
-        "translatedTitle": "杨辉三角",
-        "titleSlug": "pascals-triangle",
-        "questionFrontendId": "118"
       }
     }
   ],
