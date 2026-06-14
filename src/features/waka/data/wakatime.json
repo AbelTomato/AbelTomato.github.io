@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-14T16:01:11.340Z",
-  "total": "151 hrs 13 mins",
+  "lastUpdate": "2026-06-14T16:18:48.620Z",
+  "total": "151 hrs 14 mins",
   "daily_average": "3 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 44745.507,
+      "total_seconds": 44759.86899999999,
       "total_text": "12h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 403765.35800000007,
+      "total_seconds": 403779.72000000003,
       "total_text": "112h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1688518.21,
-      "total_text": "469h 1m",
+      "total_seconds": 1688532.5720000002,
+      "total_text": "469h 2m",
       "days_active": 107
     },
     "all_time": {
-      "total_seconds": 1688518.21,
-      "total_text": "469h 1m",
+      "total_seconds": 1688532.5720000002,
+      "total_text": "469h 2m",
       "days_active": 107
     }
   },
@@ -57,7 +57,7 @@
     },
     {
       "date": "2026-06-14",
-      "seconds": 1538.927,
+      "seconds": 1553.289,
       "text": "25 mins"
     }
   ],
@@ -488,7 +488,7 @@
     },
     {
       "date": "2026-06-14",
-      "seconds": 1538.927
+      "seconds": 1553.289
     }
   ],
   "languages": [
@@ -506,7 +506,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 186368.229
+      "total_seconds": 186380.406
     },
     {
       "name": "JavaScript",
@@ -514,7 +514,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 97771.086
+      "total_seconds": 97800.372
     },
     {
       "name": "Java",
@@ -538,7 +538,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 2247.7969999999996
+      "total_seconds": 2249.9819999999995
     },
     {
       "name": "YAML",
@@ -1321,15 +1321,14 @@
       "JavaScript": 676.337,
       "Git": 257.418,
       "CSS": 170.146,
-      "JSON": 16,
-      "Other": 0
+      "JSON": 16
     },
     "2026-06-14": {
-      "TypeScript": 1081.18,
-      "Git": 350.071,
-      "Astro": 70.696,
-      "Other": 30.149,
-      "JSON": 6.831
+      "TypeScript": 1093.357,
+      "Git": 352.256,
+      "Astro": 99.982,
+      "JSON": 6.831,
+      "Other": 0.863
     }
   }
 }
