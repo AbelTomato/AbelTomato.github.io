@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 98,
+        "count": 99,
         "difficulty": "EASY"
       },
       {
@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 36,
+        "count": 37,
         "difficulty": "HARD"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 972,
+        "count": 971,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 977,
+        "count": 976,
         "difficulty": "HARD"
       }
     ]
@@ -165,7 +165,7 @@
     ],
     "topicAreaScores": [
       {
-        "score": 25,
+        "score": 26,
         "topicArea": {
           "name": "数据结构",
           "slug": "data-structures"
@@ -290,6 +290,26 @@
     }
   ],
   "recentSubmission": [
+    {
+      "submissionId": 731394013,
+      "submitTime": 1781682415,
+      "question": {
+        "title": "Process String with Special Operations II",
+        "translatedTitle": "用特殊操作处理字符串 II",
+        "titleSlug": "process-string-with-special-operations-ii",
+        "questionFrontendId": "3614"
+      }
+    },
+    {
+      "submissionId": 731381166,
+      "submitTime": 1781678977,
+      "question": {
+        "title": "Happy Number",
+        "translatedTitle": "快乐数",
+        "titleSlug": "happy-number",
+        "questionFrontendId": "202"
+      }
+    },
     {
       "submissionId": 731181781,
       "submitTime": 1781587041,
@@ -418,26 +438,6 @@
         "translatedTitle": "带权单词映射",
         "titleSlug": "weighted-word-mapping",
         "questionFrontendId": "3838"
-      }
-    },
-    {
-      "submissionId": 730638805,
-      "submitTime": 1781269593,
-      "question": {
-        "title": "Number of Ways to Assign Edge Weights II",
-        "translatedTitle": "给边赋权值的方案数 II",
-        "titleSlug": "number-of-ways-to-assign-edge-weights-ii",
-        "questionFrontendId": "3559"
-      }
-    },
-    {
-      "submissionId": 730628508,
-      "submitTime": 1781264748,
-      "question": {
-        "title": "Excel Sheet Column Number",
-        "translatedTitle": "Excel 表列序号",
-        "titleSlug": "excel-sheet-column-number",
-        "questionFrontendId": "171"
       }
     }
   ],
