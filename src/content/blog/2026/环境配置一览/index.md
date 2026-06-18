@@ -96,17 +96,28 @@ nano ~/.bashrc
 # 智能自动激活虚拟环境
 cd() {
     builtin cd "$@" || return
-    # 检查当前目录下是否存在虚拟环境激活脚本
+
+    local env_dir=""
+    # 动态探测当前目录下是否存在 venv 或 .venv
     if [ -f ".venv/Scripts/activate" ]; then
+        env_dir=".venv"
+    elif [ -f "venv/Scripts/activate" ]; then
+        env_dir="venv"
+    fi
+
+    if [ -n "$env_dir" ]; then
         # 确保没有重复激活同一个环境
-        if [ "$VIRTUAL_ENV" != "$(pwd)/.venv" ]; then
-            echo -e "\033[1;32m[Auto-Activate]\033[0m 发现虚拟环境，正在自动激活..."
-            source .venv/Scripts/activate
+        if [ "$VIRTUAL_ENV" != "$(pwd)/$env_dir" ]; then
+            echo -e "\033[1;32m[Auto-Activate]\033[0m 发现虚拟环境 ($env_dir)，正在自动激活..."
+            source "$env_dir/Scripts/activate"
         fi
     # 如果离开了带虚拟环境的目录，且当前处于虚拟环境里，就自动退出
     elif [ -n "$VIRTUAL_ENV" ]; then
-        # 允许在子目录中继续保持激活状态
-        if [[ "$(pwd)" != "${VIRTUAL_ENV%/.venv}"* ]]; then
+        # 直接切掉最后一级（无论是 /venv 还是 /.venv），精准拿到项目根目录
+        local project_dir="${VIRTUAL_ENV%/*}"
+        
+        # 巧妙利用末尾斜杠匹配，防止 /workspace-toxic 误触发 /workspace 的路径
+        if [[ "$(pwd)/" != "$project_dir/"* ]]; then
             echo -e "\033[1;33m[Auto-Deactivate]\033[0m 已离开项目目录，自动退出虚拟环境。"
             deactivate
         fi
@@ -122,8 +133,7 @@ cd() {
 source ~/.bashrc
 ```
 
-- 如果配置未生效，首先检查虚拟环境文件夹名称是否为`.venv`，如果不是，返回`nano ~/.bashrc`并修改对应名称
-- 否则推测为Git Bash默认读取`.bash_profile`文件，尝试在终端中执行以下命令并重试
+- 如果配置未生效,推测为Git Bash默认读取`.bash_profile`文件，尝试在终端中执行以下命令并重试
 
 ```bash
 echo "source ~/.bashrc" >> ~/.bash_profile
