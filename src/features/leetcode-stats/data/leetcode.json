@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 123,
+        "count": 126,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 37,
+        "count": 38,
         "difficulty": "HARD"
       }
     ],
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2144,
+        "count": 2141,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -291,6 +291,76 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 731502359,
+      "submitTime": 1781749278,
+      "question": {
+        "title": "Find Minimum in Rotated Sorted Array",
+        "translatedTitle": "寻找旋转排序数组中的最小值",
+        "titleSlug": "find-minimum-in-rotated-sorted-array",
+        "questionFrontendId": "153"
+      }
+    },
+    {
+      "submissionId": 731502330,
+      "submitTime": 1781749270,
+      "question": {
+        "title": "Search in Rotated Sorted Array",
+        "translatedTitle": "搜索旋转排序数组",
+        "titleSlug": "search-in-rotated-sorted-array",
+        "questionFrontendId": "33"
+      }
+    },
+    {
+      "submissionId": 731502244,
+      "submitTime": 1781749245,
+      "question": {
+        "title": "Find First and Last Position of Element in Sorted Array",
+        "translatedTitle": "在排序数组中查找元素的第一个和最后一个位置",
+        "titleSlug": "find-first-and-last-position-of-element-in-sorted-array",
+        "questionFrontendId": "34"
+      }
+    },
+    {
+      "submissionId": 731501223,
+      "submitTime": 1781748912,
+      "question": {
+        "title": "Search a 2D Matrix",
+        "translatedTitle": "搜索二维矩阵",
+        "titleSlug": "search-a-2d-matrix",
+        "questionFrontendId": "74"
+      }
+    },
+    {
+      "submissionId": 731500539,
+      "submitTime": 1781748684,
+      "question": {
+        "title": "Search Insert Position",
+        "translatedTitle": "搜索插入位置",
+        "titleSlug": "search-insert-position",
+        "questionFrontendId": "35"
+      }
+    },
+    {
+      "submissionId": 731500215,
+      "submitTime": 1781748561,
+      "question": {
+        "title": "N-Queens",
+        "translatedTitle": "N 皇后",
+        "titleSlug": "n-queens",
+        "questionFrontendId": "51"
+      }
+    },
+    {
+      "submissionId": 731497081,
+      "submitTime": 1781747323,
+      "question": {
+        "title": "Angle Between Hands of a Clock",
+        "translatedTitle": "时钟指针的夹角",
+        "titleSlug": "angle-between-hands-of-a-clock",
+        "questionFrontendId": "1344"
+      }
+    },
+    {
       "submissionId": 731394013,
       "submitTime": 1781682415,
       "question": {
@@ -368,76 +438,6 @@
         "translatedTitle": "位1的个数",
         "titleSlug": "number-of-1-bits",
         "questionFrontendId": "191"
-      }
-    },
-    {
-      "submissionId": 731180373,
-      "submitTime": 1781586118,
-      "question": {
-        "title": "Number of 1 Bits",
-        "translatedTitle": "位1的个数",
-        "titleSlug": "number-of-1-bits",
-        "questionFrontendId": "191"
-      }
-    },
-    {
-      "submissionId": 731180259,
-      "submitTime": 1781586052,
-      "question": {
-        "title": "Number of 1 Bits",
-        "translatedTitle": "位1的个数",
-        "titleSlug": "number-of-1-bits",
-        "questionFrontendId": "191"
-      }
-    },
-    {
-      "submissionId": 731179976,
-      "submitTime": 1781585862,
-      "question": {
-        "title": "Process String with Special Operations I",
-        "translatedTitle": "用特殊操作处理字符串 I",
-        "titleSlug": "process-string-with-special-operations-i",
-        "questionFrontendId": "3612"
-      }
-    },
-    {
-      "submissionId": 731067849,
-      "submitTime": 1781521903,
-      "question": {
-        "title": "Reverse Bits",
-        "translatedTitle": "颠倒二进制位",
-        "titleSlug": "reverse-bits",
-        "questionFrontendId": "190"
-      }
-    },
-    {
-      "submissionId": 731050948,
-      "submitTime": 1781515329,
-      "question": {
-        "title": "Delete the Middle Node of a Linked List",
-        "translatedTitle": "删除链表的中间节点",
-        "titleSlug": "delete-the-middle-node-of-a-linked-list",
-        "questionFrontendId": "2095"
-      }
-    },
-    {
-      "submissionId": 730875072,
-      "submitTime": 1781428790,
-      "question": {
-        "title": "Maximum Twin Sum of a Linked List",
-        "translatedTitle": "链表最大孪生和",
-        "titleSlug": "maximum-twin-sum-of-a-linked-list",
-        "questionFrontendId": "2130"
-      }
-    },
-    {
-      "submissionId": 730718497,
-      "submitTime": 1781337195,
-      "question": {
-        "title": "Weighted Word Mapping",
-        "translatedTitle": "带权单词映射",
-        "titleSlug": "weighted-word-mapping",
-        "questionFrontendId": "3838"
       }
     }
   ],

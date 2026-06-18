@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-17T20:11:33.788Z",
-  "total": "135 hrs 36 mins",
-  "daily_average": "3 hrs 22 mins",
+  "lastUpdate": "2026-06-18T03:54:18.738Z",
+  "total": "132 hrs 10 mins",
+  "daily_average": "3 hrs 17 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 36367.02,
-      "total_text": "10h 6m",
+      "total_seconds": 34830.838,
+      "total_text": "9h 40m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 366490.661,
-      "total_text": "101h 48m",
+      "total_seconds": 349927.86600000004,
+      "total_text": "97h 12m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1696071.823,
-      "total_text": "471h 7m",
-      "days_active": 110
+      "total_seconds": 1698648.536,
+      "total_text": "471h 50m",
+      "days_active": 111
     },
     "all_time": {
-      "total_seconds": 1696071.823,
-      "total_text": "471h 7m",
-      "days_active": 110
+      "total_seconds": 1698648.536,
+      "total_text": "471h 50m",
+      "days_active": 111
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-11",
-      "seconds": 4112.895,
-      "text": "1 hr 8 mins"
-    },
     {
       "date": "2026-06-12",
       "seconds": 15430.938,
@@ -59,6 +54,11 @@
       "date": "2026-06-17",
       "seconds": 1166.799,
       "text": "19 mins"
+    },
+    {
+      "date": "2026-06-18",
+      "seconds": 2576.713,
+      "text": "42 mins"
     }
   ],
   "heatmap": [
@@ -501,6 +501,10 @@
     {
       "date": "2026-06-17",
       "seconds": 1166.799
+    },
+    {
+      "date": "2026-06-18",
+      "seconds": 2576.713
     }
   ],
   "languages": [
@@ -514,7 +518,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 200187.855
+      "total_seconds": 202764.568
     },
     {
       "name": "TypeScript",
@@ -1353,10 +1357,14 @@
       "JavaScript": 1225.168,
       "Markdown": 618.437,
       "Astro": 434.634,
-      "CSS": 11
+      "CSS": 11,
+      "Other": 0
     },
     "2026-06-17": {
       "TypeScript": 1166.799
+    },
+    "2026-06-18": {
+      "Python": 2576.713
     }
   }
 }
