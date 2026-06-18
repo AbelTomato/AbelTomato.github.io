@@ -2,9 +2,9 @@
 title: '环境配置一览'
 description: '记录了各种环境的配置方法'
 pubDate: '2026-06-12'
-updatedDate: '2026-06-13'
+updatedDate: '2026-06-18'
 heroImage: "./hero.jpg"
-tags: ["笔记"]
+tags: ["笔记", "开发"]
 ---
 
 被环境配置折磨114514年之后，我决定将配置环境的流程固定记录下来，以供之后参考
