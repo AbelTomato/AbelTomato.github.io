@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 99,
+        "count": 100,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 971,
+        "count": 970,
         "difficulty": "EASY"
       },
       {
@@ -291,6 +291,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 731668573,
+      "submitTime": 1781857932,
+      "question": {
+        "title": "Find the Highest Altitude",
+        "translatedTitle": "找到最高海拔",
+        "titleSlug": "find-the-highest-altitude",
+        "questionFrontendId": "1732"
+      }
+    },
+    {
       "submissionId": 731502359,
       "submitTime": 1781749278,
       "question": {
@@ -423,16 +433,6 @@
     {
       "submissionId": 731180432,
       "submitTime": 1781586155,
-      "question": {
-        "title": "Number of 1 Bits",
-        "translatedTitle": "位1的个数",
-        "titleSlug": "number-of-1-bits",
-        "questionFrontendId": "191"
-      }
-    },
-    {
-      "submissionId": 731180402,
-      "submitTime": 1781586138,
       "question": {
         "title": "Number of 1 Bits",
         "translatedTitle": "位1的个数",
