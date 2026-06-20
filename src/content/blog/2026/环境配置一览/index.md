@@ -2,7 +2,7 @@
 title: '环境配置一览'
 description: '记录了各种环境的配置方法'
 pubDate: '2026-06-12'
-updatedDate: '2026-06-18'
+updatedDate: '2026-06-20'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发"]
 ---
@@ -138,3 +138,86 @@ source ~/.bashrc
 ```bash
 echo "source ~/.bashrc" >> ~/.bash_profile
 ```
+
+---
+
+## 3.配置Ubuntu虚拟机使用主机VPN流量
+
+由于虚拟机的网络连接默认使用NAT模式，即在物理机内虚拟出一个"路由器"，虚拟机连接在虚拟路由器上，上网时流量经过虚拟路由器，借由物理机网卡转发
+
+而大多数常规VPN软件默认只代理宿主机本地的系统代理端口，则不会接管虚拟机的流量
+
+还可能是桥接模式，虚拟机成为局域网内的一台独立实体电脑，和物理机地位平等，直接向真实路由器申请IP地址，此时VPN更无法起效
+
+下面是配置流程：
+
+### 3.1.Windows + Git Bash环境
+
+- 打开物理机上的VPN客户端，勾选"允许局域网连接"或"局域网共享"
+
+![允许局域网连接](Clash-LAN.png)
+
+- 记录此时的代理端口，这里是9205
+- 在物理机终端输入`ipconfig`，找到虚拟机对应的IP地址，这里用的是VMware Network Adapter Vmnet8，为`192.168.134.1`
+
+![Bash-ipconfig](Bash-ipconfig.png)
+
+- 回到Ubuntu虚拟机，打开设置 -> 网络
+- 找到网络代理，把它从Off改成手动
+- 在HTTP/HTTPS后面填入
+  - Host：刚刚查到的物理机IP
+  - Port：VPN端口
+- 保存，设置成功
+
+注意这种设置只对浏览器和常规软件生效，如果在终端中还需要走代理，在Ubuntu终端中临时跑一句：
+
+`export http_proxy="http://你的物理机IP:端口" && export https_proxy=$http_proxy`
+
+---
+
+## 4.让主机的VSCode连接虚拟机环境
+
+### 4.1.Ubuntu
+
+- 在Ubuntu中打开终端，先更新包列表
+
+```bash
+sudo apt update
+```
+
+- 安装SSH服务端
+
+```bash
+sudo apt install openssh-server -y
+```
+
+- 检查服务是否正在运行
+
+```bash
+sudo systemctl status ssh
+```
+
+- 若为active(running)则成功，若未运行，输入下面命令，使其作为常驻服务
+
+```bash
+sudo systemctl enable --now ssh
+```
+
+- 查询虚拟机IP地址，找类似`192.168.x.x`或`10.x.x.x`的地址
+
+```bash
+ip a
+```
+
+- 回到主机VSCode，下载`Remote SSH`插件
+- 点开左侧`Remote Explorer`图标，点击`+`添加新连接
+- 在上方弹出输入框中，输入
+
+```txt
+ssh 你的Ubuntu用户名@刚才查到的虚拟机IP
+```
+
+- 注意这里用户名一定要小写！！
+- 按回车，让你选择配置文件保存在哪里，默认第一个
+- 随后在左侧对应IP点击新窗口连接，选择`Linux`，`Continue`，输入密码
+- 连接成功后，就按照正常打开文件夹的方式，打开你要工作的目录，再次输入密码确认即可
