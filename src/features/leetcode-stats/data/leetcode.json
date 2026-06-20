@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 100,
+        "count": 103,
         "difficulty": "EASY"
       },
       {
@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 38,
+        "count": 39,
         "difficulty": "HARD"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 970,
+        "count": 967,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 974,
         "difficulty": "HARD"
       }
     ]
@@ -179,7 +179,7 @@
         }
       },
       {
-        "score": 8,
+        "score": 12,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -291,6 +291,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 731739801,
+      "submitTime": 1781924522,
+      "question": {
+        "title": "Duplicate Emails",
+        "translatedTitle": "查找重复的电子邮箱",
+        "titleSlug": "duplicate-emails",
+        "questionFrontendId": "182"
+      }
+    },
+    {
+      "submissionId": 731738856,
+      "submitTime": 1781924054,
+      "question": {
+        "title": "Employees Earning More Than Their Managers",
+        "translatedTitle": "超过经理收入的员工",
+        "titleSlug": "employees-earning-more-than-their-managers",
+        "questionFrontendId": "181"
+      }
+    },
+    {
+      "submissionId": 731738220,
+      "submitTime": 1781923684,
+      "question": {
+        "title": "Combine Two Tables",
+        "translatedTitle": "组合两个表",
+        "titleSlug": "combine-two-tables",
+        "questionFrontendId": "175"
+      }
+    },
+    {
+      "submissionId": 731736276,
+      "submitTime": 1781922477,
+      "question": {
+        "title": "Maximum Building Height",
+        "translatedTitle": "最高建筑高度",
+        "titleSlug": "maximum-building-height",
+        "questionFrontendId": "1840"
+      }
+    },
+    {
       "submissionId": 731668573,
       "submitTime": 1781857932,
       "question": {
@@ -398,46 +438,6 @@
         "translatedTitle": "第十行",
         "titleSlug": "tenth-line",
         "questionFrontendId": "195"
-      }
-    },
-    {
-      "submissionId": 731181678,
-      "submitTime": 1781586975,
-      "question": {
-        "title": "Tenth Line",
-        "translatedTitle": "第十行",
-        "titleSlug": "tenth-line",
-        "questionFrontendId": "195"
-      }
-    },
-    {
-      "submissionId": 731181629,
-      "submitTime": 1781586944,
-      "question": {
-        "title": "Tenth Line",
-        "translatedTitle": "第十行",
-        "titleSlug": "tenth-line",
-        "questionFrontendId": "195"
-      }
-    },
-    {
-      "submissionId": 731181317,
-      "submitTime": 1781586735,
-      "question": {
-        "title": "Valid Phone Numbers",
-        "translatedTitle": "有效电话号码",
-        "titleSlug": "valid-phone-numbers",
-        "questionFrontendId": "193"
-      }
-    },
-    {
-      "submissionId": 731180432,
-      "submitTime": 1781586155,
-      "question": {
-        "title": "Number of 1 Bits",
-        "translatedTitle": "位1的个数",
-        "titleSlug": "number-of-1-bits",
-        "questionFrontendId": "191"
       }
     }
   ],
