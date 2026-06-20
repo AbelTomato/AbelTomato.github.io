@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-20T14:02:05.785Z",
-  "total": "150 hrs 40 mins",
-  "daily_average": "3 hrs 44 mins",
+  "lastUpdate": "2026-06-20T19:25:54.170Z",
+  "total": "151 hrs 19 mins",
+  "daily_average": "3 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 90782.818,
-      "total_text": "25h 13m",
+      "total_seconds": 93156.101,
+      "total_text": "25h 52m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 376505.86400000006,
-      "total_text": "104h 35m",
+      "total_seconds": 378879.14700000006,
+      "total_text": "105h 14m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1777762.101,
-      "total_text": "493h 49m",
+      "total_seconds": 1780135.384,
+      "total_text": "494h 28m",
       "days_active": 113
     },
     "all_time": {
-      "total_seconds": 1777762.101,
-      "total_text": "493h 49m",
+      "total_seconds": 1780135.384,
+      "total_text": "494h 28m",
       "days_active": 113
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-20",
-      "seconds": 33685.862,
-      "text": "9 hrs 21 mins"
+      "seconds": 36059.145,
+      "text": "10 hrs"
     }
   ],
   "heatmap": [
@@ -512,13 +512,13 @@
     },
     {
       "date": "2026-06-20",
-      "seconds": 33685.862
+      "seconds": 36059.145
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 470016.102
+      "total_seconds": 470072.68000000005
     },
     {
       "name": "C++",
@@ -526,7 +526,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 211029.067
+      "total_seconds": 213602.265
     },
     {
       "name": "TypeScript",
@@ -1406,20 +1406,20 @@
       "TOML": 0.929
     },
     "2026-06-20": {
-      "Markdown": 13657.632,
+      "Markdown": 13714.21,
       "SQL": 7080.914,
+      "Python": 6672.354,
       "C": 4243.03,
-      "Python": 4099.156,
       "JSON": 2764.443,
       "Git Config": 742.51,
       "Text": 447.598,
-      "Other": 256.493,
       "TypeScript": 200.643,
       "TSConfig": 115.863,
       "Git": 36.406,
       "TOML": 31.864,
       "HTML": 7.464,
-      "CSS": 1.846
+      "CSS": 1.846,
+      "Other": 0
     }
   }
 }
