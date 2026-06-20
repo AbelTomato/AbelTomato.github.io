@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-19T19:49:12.264Z",
-  "total": "144 hrs 1 min",
-  "daily_average": "3 hrs 34 mins",
+  "lastUpdate": "2026-06-20T01:54:13.678Z",
+  "total": "141 hrs 52 mins",
+  "daily_average": "3 hrs 31 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 64752.84,
-      "total_text": "17h 59m",
+      "total_seconds": 59137.409,
+      "total_text": "16h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 373699.12600000005,
-      "total_text": "103h 48m",
+      "total_seconds": 344860.455,
+      "total_text": "95h 47m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1744001.476,
-      "total_text": "484h 26m",
-      "days_active": 112
+      "total_seconds": 1746116.692,
+      "total_text": "485h 1m",
+      "days_active": 113
     },
     "all_time": {
-      "total_seconds": 1744001.476,
-      "total_text": "484h 26m",
-      "days_active": 112
+      "total_seconds": 1746116.692,
+      "total_text": "485h 1m",
+      "days_active": 113
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-13",
-      "seconds": 7730.647,
-      "text": "2 hrs 8 mins"
-    },
     {
       "date": "2026-06-14",
       "seconds": 1553.289,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-06-19",
-      "seconds": 24834.069,
-      "text": "6 hrs 53 mins"
+      "seconds": 24908.832,
+      "text": "6 hrs 55 mins"
+    },
+    {
+      "date": "2026-06-20",
+      "seconds": 2040.453,
+      "text": "34 mins"
     }
   ],
   "heatmap": [
@@ -508,13 +508,17 @@
     },
     {
       "date": "2026-06-19",
-      "seconds": 24834.069
+      "seconds": 24908.832
+    },
+    {
+      "date": "2026-06-20",
+      "seconds": 2040.453
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 456293.297
+      "total_seconds": 458398.923
     },
     {
       "name": "C++",
@@ -526,7 +530,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 194740.08000000002
+      "total_seconds": 194697.938
     },
     {
       "name": "JavaScript",
@@ -1389,17 +1393,20 @@
     "2026-06-19": {
       "C": 8224.294,
       "SQL": 5400,
-      "Markdown": 3736.105,
-      "TypeScript": 3188.086,
+      "Markdown": 3801.278,
+      "TypeScript": 3145.944,
       "Python": 2859.28,
       "JSON": 1074.609,
       "TSConfig": 127.418,
       "YAML": 105.513,
       "CSS": 93.784,
+      "Other": 51.732,
       "JavaScript": 13,
       "Git Config": 11.051,
-      "TOML": 0.929,
-      "Other": 0
+      "TOML": 0.929
+    },
+    "2026-06-20": {
+      "Markdown": 2040.453
     }
   }
 }
