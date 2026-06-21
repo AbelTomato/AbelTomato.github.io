@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-21T14:09:33.568Z",
+  "lastUpdate": "2026-06-21T19:29:19.121Z",
   "total": "157 hrs 20 mins",
   "daily_average": "3 hrs 54 mins",
   "stats": {
@@ -530,7 +530,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 225972.53000000003
+      "total_seconds": 226418.817
     },
     {
       "name": "TypeScript",
@@ -573,12 +573,12 @@
       "total_seconds": 7944.342000000001
     },
     {
-      "name": "Git",
-      "total_seconds": 3092.071
-    },
-    {
       "name": "Git Config",
       "total_seconds": 2687.442
+    },
+    {
+      "name": "Git",
+      "total_seconds": 2645.7839999999997
     },
     {
       "name": "YAML",
@@ -1426,13 +1426,13 @@
       "Other": 0
     },
     "2026-06-21": {
-      "Python": 12370.265,
+      "Python": 12816.552,
       "Markdown": 8350.5,
       "C++": 5400,
       "SQL": 2293.603,
       "TypeScript": 1678.585,
-      "Git": 659.985,
       "TeX": 353.391,
+      "Git": 213.698,
       "Other": 158.15,
       "Git Config": 117.907,
       "JSON": 14.614
