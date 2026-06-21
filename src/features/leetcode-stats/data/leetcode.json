@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 976,
         "difficulty": "HARD"
       }
     ]
@@ -297,7 +297,7 @@
         "title": "Maximum Total Value",
         "translatedTitle": "最大总价值",
         "titleSlug": "maximum-total-value",
-        "questionFrontendId": "101036"
+        "questionFrontendId": "3971"
       }
     },
     {
@@ -307,7 +307,7 @@
         "title": "Shortest Path With At Most K Consecutive Identical Characters",
         "translatedTitle": "最多 K 个连续相同字符的最短路径",
         "titleSlug": "shortest-path-with-at-most-k-consecutive-identical-characters",
-        "questionFrontendId": "100879"
+        "questionFrontendId": "3970"
       }
     },
     {
@@ -317,7 +317,7 @@
         "title": "Valid Subarrays With Matching Sum Digits I",
         "translatedTitle": "求和后首尾数字相同的有效子数组 I",
         "titleSlug": "valid-subarrays-with-matching-sum-digits-i",
-        "questionFrontendId": "101079"
+        "questionFrontendId": "3969"
       }
     },
     {
@@ -327,7 +327,7 @@
         "title": "Maximum Manhattan Distance After All Moves",
         "translatedTitle": "移动后的最大曼哈顿距离",
         "titleSlug": "maximum-manhattan-distance-after-all-moves",
-        "questionFrontendId": "101101"
+        "questionFrontendId": "3968"
       }
     },
     {
