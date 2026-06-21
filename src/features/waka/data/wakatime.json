@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-21T09:49:01.978Z",
-  "total": "154 hrs 13 mins",
-  "daily_average": "3 hrs 49 mins",
+  "lastUpdate": "2026-06-21T14:09:33.568Z",
+  "total": "157 hrs 20 mins",
+  "daily_average": "3 hrs 54 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 111801.65800000001,
-      "total_text": "31h 3m",
+      "total_seconds": 122999.812,
+      "total_text": "34h 9m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 377238.8,
-      "total_text": "104h 47m",
+      "total_seconds": 388436.95399999997,
+      "total_text": "107h 53m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1800334.23,
-      "total_text": "500h 5m",
+      "total_seconds": 1811532.384,
+      "total_text": "503h 12m",
       "days_active": 114
     },
     "all_time": {
-      "total_seconds": 1800334.23,
-      "total_text": "500h 5m",
+      "total_seconds": 1811532.384,
+      "total_text": "503h 12m",
       "days_active": 114
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-21",
-      "seconds": 20198.846,
-      "text": "5 hrs 36 mins"
+      "seconds": 31397,
+      "text": "8 hrs 43 mins"
     }
   ],
   "heatmap": [
@@ -516,13 +516,13 @@
     },
     {
       "date": "2026-06-21",
-      "seconds": 20198.846
+      "seconds": 31397
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 472980.7100000001
+      "total_seconds": 478423.18000000005
     },
     {
       "name": "C++",
@@ -530,7 +530,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 221055.459
+      "total_seconds": 225972.53000000003
     },
     {
       "name": "TypeScript",
@@ -573,12 +573,12 @@
       "total_seconds": 7944.342000000001
     },
     {
-      "name": "Git Config",
-      "total_seconds": 2687.442
+      "name": "Git",
+      "total_seconds": 3092.071
     },
     {
-      "name": "Git",
-      "total_seconds": 2591.3959999999997
+      "name": "Git Config",
+      "total_seconds": 2687.442
     },
     {
       "name": "YAML",
@@ -605,12 +605,12 @@
       "total_seconds": 624.506
     },
     {
-      "name": "PowerShell",
-      "total_seconds": 192.762
+      "name": "TeX",
+      "total_seconds": 362.808
     },
     {
-      "name": "TeX",
-      "total_seconds": 9.417
+      "name": "PowerShell",
+      "total_seconds": 192.762
     },
     {
       "name": "CSV",
@@ -1426,13 +1426,14 @@
       "Other": 0
     },
     "2026-06-21": {
-      "Python": 7453.194,
+      "Python": 12370.265,
+      "Markdown": 8350.5,
       "C++": 5400,
-      "Markdown": 2908.03,
       "SQL": 2293.603,
       "TypeScript": 1678.585,
-      "Other": 173.603,
-      "Git": 159.31,
+      "Git": 659.985,
+      "TeX": 353.391,
+      "Other": 158.15,
       "Git Config": 117.907,
       "JSON": 14.614
     }
