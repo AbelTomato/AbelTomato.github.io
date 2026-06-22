@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-22T11:07:19.239Z",
-  "total": "161 hrs 14 mins",
+  "lastUpdate": "2026-06-22T11:31:06.424Z",
+  "total": "161 hrs 39 mins",
   "daily_average": "4 hrs",
   "stats": {
     "last_7_days": {
-      "total_seconds": 146094.07799999998,
-      "total_text": "40h 34m",
+      "total_seconds": 147619.124,
+      "total_text": "41h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 400945.803,
-      "total_text": "111h 22m",
+      "total_seconds": 402470.84900000005,
+      "total_text": "111h 47m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1835653.293,
-      "total_text": "509h 54m",
+      "total_seconds": 1837178.3390000002,
+      "total_text": "510h 19m",
       "days_active": 115
     },
     "all_time": {
-      "total_seconds": 1835653.293,
-      "total_text": "509h 54m",
+      "total_seconds": 1837178.3390000002,
+      "total_text": "510h 19m",
       "days_active": 115
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-22",
-      "seconds": 24120.909,
-      "text": "6 hrs 42 mins"
+      "seconds": 25645.955,
+      "text": "7 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -520,13 +520,13 @@
     },
     {
       "date": "2026-06-22",
-      "seconds": 24120.909
+      "seconds": 25645.955
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 485828.28500000003
+      "total_seconds": 486845.67000000004
     },
     {
       "name": "C++",
@@ -542,7 +542,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 130229.50000000001
+      "total_seconds": 130513.53500000002
     },
     {
       "name": "Astro",
@@ -554,7 +554,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 37375.31999999999
+      "total_seconds": 37531.43899999999
     },
     {
       "name": "C",
@@ -1451,15 +1451,15 @@
     },
     "2026-06-22": {
       "C": 10606.15,
-      "Markdown": 7410.657,
+      "Markdown": 8428.042,
       "SQL": 3846.749,
       "Astro": 922.861,
       "Python": 563.396,
+      "JSON": 365.93,
+      "JavaScript": 327.619,
       "MDX": 269.937,
-      "JSON": 209.811,
-      "Other": 138.259,
+      "Other": 205.766,
       "Git": 94.392,
-      "JavaScript": 43.584,
       "Perl": 15.113,
       "Makefile": 0
     }
