@@ -10,30 +10,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
 
-import mermaid from "mdx-mermaid";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://AbelTomato.github.io",
   base: "/",
   integrations: [
     mdx({
-      remarkPlugins: [
-        remarkMath,
-        [
-          mermaid,
-          {
-            output: "svg",
-            theme: "dark",
-            mermaid: {
-              themeVariables: {
-                fontFamily:
-                  '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", -apple-system, sans-serif',
-              },
-            },
-          },
-        ],
-      ],
+      remarkPlugins: [remarkMath],
       rehypePlugins: [rehypeKatex],
     }),
     sitemap(),

@@ -29,15 +29,12 @@ import receive_window5 from "./接收窗口5.png";
 import ppp_frame_format from "./PPP帧格式.png";
 import ppp_work_state from "./PPP工作状态.png";
 import mac_overview from "./媒体接入控制.png";
-import { Mermaid } from "mdx-mermaid/lib/Mermaid";
 
 ## 1.封装成帧
 
 ### 1.1.数据帧
 
 通过对计算机网络体系结构的了解，我们可以知道，以OSI体系结构为例，当前主机将要传输给目标主机的数据将会自应用层向下逐级传递，其中对于中间的运输层、网络层等，都会在目标数据的基础上添加协议首部。其中对于数据链路层，添加的数据链路层协议首部，我们将其简称为帧头和帧尾。对于添加了帧头和帧尾之后的整组数据，我们称之为数据帧。
-
-<Mermaid />
 
 <figure>
 <div align="center">
@@ -1056,10 +1053,10 @@ $$
 \mathbf{S} \cdot \mathbf{T} = \frac{1}{m} \sum^{m}_{i = 1} S_{i} T_{i} = 0
 $$
 
-同理，任何一个向量与其反码向量 $\overline{\mathbf{T}}$ 的规格化内积也为 $0$
+同理，任何一个向量与其反码向量的规格化内积也为 $0$
 
 $$
-\mathbf{S} \cdot \overline{\mathbf{T}} = 0
+\mathbf{S} \cdot \bar T = 0
 $$
 
 而任何一个站点的码片向量，与它自身的规格化内积必然为 $1$
@@ -1071,7 +1068,7 @@ $$
 它与自身反码的规格化内积必然为 $-1$
 
 $$
-\mathbf{S} \cdot \overline{\mathbf{S}} = -1
+\mathbf{S} \cdot \bar S = -1
 $$
 
 ---
@@ -1085,7 +1082,7 @@ $$
 则叠加总信号为
 
 $$
-\mathbf{X} = \mathbf{A} + \overline{\mathbf{B}}
+\mathbf{X} = \mathbf{A} + \bar B
 $$
 
 对于每个站点，接收端将这个总信号向量与站点自己的码向量作内积，就得出来对应的结果：
@@ -1093,7 +1090,7 @@ $$
 对于A
 
 $$
-(\mathbf{A} + \overline{\mathbf{B}}) \cdot \mathbf{A} = \mathbf{A} \cdot \mathbf{A} + \mathbf{A} \cdot \overline{\mathbf{B}} = 1 + 0 = 1
+(\mathbf{A} + \bar B) \cdot \mathbf{A} = \mathbf{A} \cdot \mathbf{A} + \mathbf{A} \cdot \bar B = 1 + 0 = 1
 $$
 
 则A发送的为比特`1`
@@ -1101,7 +1098,7 @@ $$
 对于B
 
 $$
-(\mathbf{A} + \overline{\mathbf{B}}) \cdot \mathbf{B} = \mathbf{B} \cdot \mathbf{A} + \mathbf{B} \cdot \overline{\mathbf{B}} = 0 + (-1) = -1
+(\mathbf{A} + \bar B) \cdot \mathbf{B} = \mathbf{B} \cdot \mathbf{A} + \mathbf{B} \cdot \bar B = 0 + (-1) = -1
 $$
 
 则B发送的为比特`0`
@@ -1109,7 +1106,7 @@ $$
 对于C
 
 $$
-(\mathbf{A} + \overline{\mathbf{B}}) \cdot \mathbf{C} = \mathbf{C} \cdot \mathbf{A} + \mathbf{C} \cdot \overline{\mathbf{B}} = 0 + 0 = 0
+(\mathbf{A} + \bar B) \cdot \mathbf{C} = \mathbf{C} \cdot \mathbf{A} + \mathbf{C} \cdot \bar B = 0 + 0 = 0
 $$
 
 则C未发送数据

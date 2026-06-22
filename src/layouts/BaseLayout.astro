@@ -4,6 +4,7 @@ import BaseHead from "@components/layout/BaseHead.astro";
 import Header from "@components/layout/Header.astro";
 import Footer from "@components/layout/Footer.astro";
 import FloatingTools from "@features/floating-tools/components/FloatingTools";
+import MermaidRenderer from "@components/MermaidRenderer.astro";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
@@ -66,5 +67,6 @@ const { title, description } = Astro.props;
     </div>
     <Footer />
     <FloatingTools client:idle />
+    <MermaidRenderer />
   </body>
 </html>

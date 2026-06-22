@@ -1,0 +1,64 @@
+<script>
+  const mermaidSelector = 'pre[data-language="mermaid"] > code';
+  const renderedAttribute = "data-mermaid-rendered";
+
+  const initializeMermaid = async () => {
+    const { default: mermaid } = await import("mermaid");
+
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "dark",
+      securityLevel: "strict",
+      themeVariables: {
+        fontFamily:
+          '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", -apple-system, sans-serif',
+      },
+    });
+
+    return mermaid;
+  };
+
+  const renderMermaidBlocks = async () => {
+    const blocks = Array.from(
+      document.querySelectorAll<HTMLElement>(mermaidSelector),
+    ).filter((block) => block.dataset.mermaidRendered !== "true");
+
+    if (blocks.length === 0) {
+      return;
+    }
+
+    const mermaid = await initializeMermaid();
+
+    await Promise.all(
+      blocks.map(async (block, index) => {
+        const source = block.textContent?.trim();
+
+        if (!source) {
+          return;
+        }
+
+        const wrapper = document.createElement("div");
+        wrapper.className =
+          "my-6 overflow-x-auto rounded-xl border bg-card p-4 text-center";
+
+        try {
+          const id = `mermaid-${Date.now()}-${index}`;
+          const { svg } = await mermaid.render(id, source);
+
+          wrapper.innerHTML = svg;
+          block.closest("pre")?.replaceWith(wrapper);
+        } catch (error) {
+          block.setAttribute(renderedAttribute, "true");
+          block.closest("pre")?.classList.add("border-destructive/20");
+          console.error("Mermaid 渲染失败：", error);
+        }
+      }),
+    );
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    void renderMermaidBlocks();
+  });
+
+  void renderMermaidBlocks();
+</script>
