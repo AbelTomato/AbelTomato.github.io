@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-23T06:09:40.323Z",
-  "total": "165 hrs 5 mins",
+  "lastUpdate": "2026-06-23T06:12:32.405Z",
+  "total": "165 hrs 8 mins",
   "daily_average": "4 hrs 5 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 168766.84599999996,
-      "total_text": "46h 52m",
+      "total_seconds": 168893.072,
+      "total_text": "46h 54m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 422806.167,
-      "total_text": "117h 26m",
+      "total_seconds": 422932.39300000004,
+      "total_text": "117h 28m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1863671.87,
-      "total_text": "517h 41m",
+      "total_seconds": 1863798.0960000001,
+      "total_text": "517h 43m",
       "days_active": 116
     },
     "all_time": {
-      "total_seconds": 1863671.87,
-      "total_text": "517h 41m",
+      "total_seconds": 1863798.0960000001,
+      "total_text": "517h 43m",
       "days_active": 116
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-23",
-      "seconds": 12437.952,
-      "text": "3 hrs 27 mins"
+      "seconds": 12564.178,
+      "text": "3 hrs 29 mins"
     }
   ],
   "heatmap": [
@@ -524,7 +524,7 @@
     },
     {
       "date": "2026-06-23",
-      "seconds": 12437.952
+      "seconds": 12564.178
     }
   ],
   "languages": [
@@ -550,7 +550,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 100376.668
+      "total_seconds": 100482.58800000002
     },
     {
       "name": "Java",
@@ -582,7 +582,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 2942.6289999999995
+      "total_seconds": 2962.9349999999995
     },
     {
       "name": "Git Config",
@@ -1471,10 +1471,10 @@
       "Markdown": 3926.606,
       "SQL": 3600,
       "Python": 2502.593,
-      "Astro": 824.362,
+      "Astro": 930.282,
       "Other": 809.57,
       "CMake": 443,
-      "Git": 174.821,
+      "Git": 195.127,
       "C++": 110,
       "TypeScript": 26,
       "JSON": 21
