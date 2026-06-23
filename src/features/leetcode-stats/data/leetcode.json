@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 121,
+        "count": 126,
         "difficulty": "EASY"
       },
       {
@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 40,
+        "count": 41,
         "difficulty": "HARD"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 950,
+        "count": 945,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 977,
+        "count": 976,
         "difficulty": "HARD"
       }
     ]
@@ -179,7 +179,7 @@
         }
       },
       {
-        "score": 26,
+        "score": 29,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -291,6 +291,66 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732201635,
+      "submitTime": 1782183181,
+      "question": {
+        "title": "Number of ZigZag Arrays I",
+        "translatedTitle": "锯齿形数组的总数 I",
+        "titleSlug": "number-of-zigzag-arrays-i",
+        "questionFrontendId": "3699"
+      }
+    },
+    {
+      "submissionId": 732189655,
+      "submitTime": 1782179748,
+      "question": {
+        "title": "Queries Quality and Percentage",
+        "translatedTitle": "查询结果的质量和占比",
+        "titleSlug": "queries-quality-and-percentage",
+        "questionFrontendId": "1211"
+      }
+    },
+    {
+      "submissionId": 732188285,
+      "submitTime": 1782179336,
+      "question": {
+        "title": "Reformat Department Table",
+        "translatedTitle": "重新格式化部门表",
+        "titleSlug": "reformat-department-table",
+        "questionFrontendId": "1179"
+      }
+    },
+    {
+      "submissionId": 732185687,
+      "submitTime": 1782178455,
+      "question": {
+        "title": "Article Views I",
+        "translatedTitle": "文章浏览 I",
+        "titleSlug": "article-views-i",
+        "questionFrontendId": "1148"
+      }
+    },
+    {
+      "submissionId": 732185288,
+      "submitTime": 1782178293,
+      "question": {
+        "title": "User Activity for the Past 30 Days I",
+        "translatedTitle": "查询近30天活跃用户数",
+        "titleSlug": "user-activity-for-the-past-30-days-i",
+        "questionFrontendId": "1141"
+      }
+    },
+    {
+      "submissionId": 732183733,
+      "submitTime": 1782177675,
+      "question": {
+        "title": "Sales Analysis III",
+        "translatedTitle": "销售分析 III",
+        "titleSlug": "sales-analysis-iii",
+        "questionFrontendId": "1084"
+      }
+    },
+    {
       "submissionId": 732009179,
       "submitTime": 1782095907,
       "question": {
@@ -378,66 +438,6 @@
         "translatedTitle": "判断三角形",
         "titleSlug": "triangle-judgement",
         "questionFrontendId": "610"
-      }
-    },
-    {
-      "submissionId": 731873042,
-      "submitTime": 1782013031,
-      "question": {
-        "title": "Maximum Total Value",
-        "translatedTitle": "最大总价值",
-        "titleSlug": "maximum-total-value",
-        "questionFrontendId": "3971"
-      }
-    },
-    {
-      "submissionId": 731868152,
-      "submitTime": 1782011275,
-      "question": {
-        "title": "Shortest Path With At Most K Consecutive Identical Characters",
-        "translatedTitle": "最多 K 个连续相同字符的最短路径",
-        "titleSlug": "shortest-path-with-at-most-k-consecutive-identical-characters",
-        "questionFrontendId": "3970"
-      }
-    },
-    {
-      "submissionId": 731863554,
-      "submitTime": 1782009664,
-      "question": {
-        "title": "Valid Subarrays With Matching Sum Digits I",
-        "translatedTitle": "求和后首尾数字相同的有效子数组 I",
-        "titleSlug": "valid-subarrays-with-matching-sum-digits-i",
-        "questionFrontendId": "3969"
-      }
-    },
-    {
-      "submissionId": 731862062,
-      "submitTime": 1782009187,
-      "question": {
-        "title": "Maximum Manhattan Distance After All Moves",
-        "translatedTitle": "移动后的最大曼哈顿距离",
-        "titleSlug": "maximum-manhattan-distance-after-all-moves",
-        "questionFrontendId": "3968"
-      }
-    },
-    {
-      "submissionId": 731857694,
-      "submitTime": 1782006217,
-      "question": {
-        "title": "Maximum Ice Cream Bars",
-        "translatedTitle": "雪糕的最大数量",
-        "titleSlug": "maximum-ice-cream-bars",
-        "questionFrontendId": "1833"
-      }
-    },
-    {
-      "submissionId": 731857506,
-      "submitTime": 1782006040,
-      "question": {
-        "title": "Sales Person",
-        "translatedTitle": "销售员",
-        "titleSlug": "sales-person",
-        "questionFrontendId": "607"
       }
     }
   ],
