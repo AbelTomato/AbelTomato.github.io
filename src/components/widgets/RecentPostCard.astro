@@ -1,0 +1,68 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+import FormattedDate from "@components/ui/FormattedDate.astro";
+import placeholderImg from "../../../public/android-chrome-512x512.png";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const heroImage = post.data.heroImage ?? placeholderImg;
+---
+
+<a
+  href={`/blog/${post.id}/`}
+  class="group block overflow-hidden rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:border-blue-300 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800/50 dark:hover:border-blue-600 dark:hover:bg-gray-800"
+>
+  <article
+    class="grid min-h-32 grid-cols-[1fr_8rem] sm:min-h-36 sm:grid-cols-[1fr_11rem]"
+  >
+    <div class="flex min-w-0 flex-col gap-4 p-5 sm:flex-row">
+      <div
+        class="shrink-0 pt-0.5 font-mono text-sm text-muted-foreground sm:w-28"
+      >
+        <FormattedDate date={post.data.pubDate} />
+      </div>
+
+      <div class="min-w-0 flex-1">
+        <h3
+          class="mb-1 line-clamp-1 text-lg font-semibold text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-100 dark:group-hover:text-blue-400"
+        >
+          {post.data.title}
+        </h3>
+
+        <p class="mb-3 line-clamp-2 text-sm text-muted-foreground">
+          {post.data.description}
+        </p>
+
+        {
+          post.data.tags && post.data.tags.length > 0 && (
+            <div class="flex max-h-12 flex-wrap gap-1.5 overflow-hidden">
+              {post.data.tags.slice(0, 4).map((tag: string) => (
+                <span class="inline-block rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600 dark:bg-gray-700 dark:text-gray-400">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
+      </div>
+    </div>
+
+    <div class="h-32 overflow-hidden bg-gray-100 sm:h-36 dark:bg-gray-700">
+      <Image
+        src={heroImage}
+        alt={post.data.heroImage ? post.data.title : "placeholder"}
+        width={352}
+        height={240}
+        format="avif"
+        quality={80}
+        loading="lazy"
+        decoding="async"
+        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
+  </article>
+</a>
