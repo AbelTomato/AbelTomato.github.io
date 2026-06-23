@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-23T09:37:10.783Z",
-  "total": "168 hrs 14 mins",
-  "daily_average": "4 hrs 10 mins",
+  "lastUpdate": "2026-06-23T14:47:06.067Z",
+  "total": "169 hrs 54 mins",
+  "daily_average": "4 hrs 13 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 180060.21499999997,
-      "total_text": "50h 1m",
+      "total_seconds": 186101.21499999997,
+      "total_text": "51h 41m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 434099.536,
-      "total_text": "120h 34m",
+      "total_seconds": 440140.536,
+      "total_text": "122h 15m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1874965.239,
-      "total_text": "520h 49m",
+      "total_seconds": 1881006.239,
+      "total_text": "522h 30m",
       "days_active": 116
     },
     "all_time": {
-      "total_seconds": 1874965.239,
-      "total_text": "520h 49m",
+      "total_seconds": 1881006.239,
+      "total_text": "522h 30m",
       "days_active": 116
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-23",
-      "seconds": 23731.321,
-      "text": "6 hrs 35 mins"
+      "seconds": 29772.321,
+      "text": "8 hrs 16 mins"
     }
   ],
   "heatmap": [
@@ -524,13 +524,13 @@
     },
     {
       "date": "2026-06-23",
-      "seconds": 23731.321
+      "seconds": 29772.321
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 505326.652
+      "total_seconds": 509158.46200000006
     },
     {
       "name": "C++",
@@ -538,7 +538,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 237503.288
+      "total_seconds": 238367.57200000001
     },
     {
       "name": "TypeScript",
@@ -558,7 +558,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 37691.882999999994
+      "total_seconds": 38107.882999999994
     },
     {
       "name": "C",
@@ -605,6 +605,14 @@
       "total_seconds": 1176.839
     },
     {
+      "name": "CSV",
+      "total_seconds": 1172.607
+    },
+    {
+      "name": "PowerShell",
+      "total_seconds": 642.735
+    },
+    {
       "name": "INI",
       "total_seconds": 633.4939999999999
     },
@@ -613,20 +621,12 @@
       "total_seconds": 624.506
     },
     {
-      "name": "PowerShell",
-      "total_seconds": 424.598
-    },
-    {
       "name": "TeX",
       "total_seconds": 362.808
     },
     {
       "name": "Perl",
       "total_seconds": 15.113
-    },
-    {
-      "name": "CSV",
-      "total_seconds": 5.607
     },
     {
       "name": "Makefile",
@@ -1468,17 +1468,19 @@
       "Other": 0
     },
     "2026-06-23": {
-      "Python": 8612.674,
-      "Markdown": 7705.269,
+      "Markdown": 11537.079,
+      "Python": 9476.958,
       "SQL": 3600,
-      "Other": 1274.105,
+      "CSV": 1167,
       "Astro": 991.827,
+      "Other": 816.874,
+      "JSON": 576.444,
       "CMake": 517.615,
+      "PowerShell": 449.973,
       "TypeScript": 273.215,
       "Git": 248.079,
-      "PowerShell": 231.836,
-      "JSON": 160.444,
-      "C++": 116.257
+      "C++": 116.257,
+      "Text": 1
     }
   }
 }
