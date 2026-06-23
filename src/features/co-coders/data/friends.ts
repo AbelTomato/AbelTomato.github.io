@@ -69,11 +69,4 @@ export const friendsList: Friend[] = [
     avatar: getImg(avatarImages, "jyt"),
     cover: getImg(coverImages, "jyt"),
   },
-  {
-    name: "Kespher",
-    description: "24级的西瓜学长",
-    url: "https://kespher.github.io/",
-    avatar: getImg(avatarImages, "kespher"),
-    cover: getImg(coverImages, "kespher"),
-  },
 ];
