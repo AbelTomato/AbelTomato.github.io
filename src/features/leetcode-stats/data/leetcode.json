@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 126,
+        "count": 127,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 945,
+        "count": 944,
         "difficulty": "EASY"
       },
       {
@@ -48,6 +48,11 @@
       {
         "langName": "cpp",
         "langVerboseName": "C++",
+        "level": 1
+      },
+      {
+        "langName": "mysql",
+        "langVerboseName": "MySQL",
         "level": 1
       },
       {
@@ -291,6 +296,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732383577,
+      "submitTime": 1782270925,
+      "question": {
+        "title": "Average Selling Price",
+        "translatedTitle": "平均售价",
+        "titleSlug": "average-selling-price",
+        "questionFrontendId": "1251"
+      }
+    },
+    {
       "submissionId": 732201635,
       "submitTime": 1782183181,
       "question": {
@@ -428,16 +443,6 @@
         "translatedTitle": "只出现一次的最大数字",
         "titleSlug": "biggest-single-number",
         "questionFrontendId": "619"
-      }
-    },
-    {
-      "submissionId": 732000781,
-      "submitTime": 1782092845,
-      "question": {
-        "title": "Triangle Judgement",
-        "translatedTitle": "判断三角形",
-        "titleSlug": "triangle-judgement",
-        "questionFrontendId": "610"
       }
     }
   ],
