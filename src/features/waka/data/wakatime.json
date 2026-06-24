@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-24T14:27:48.132Z",
-  "total": "172 hrs 2 mins",
-  "daily_average": "4 hrs 15 mins",
+  "lastUpdate": "2026-06-24T19:45:03.840Z",
+  "total": "172 hrs 40 mins",
+  "daily_average": "4 hrs 16 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 208013.13199999998,
-      "total_text": "57h 46m",
+      "total_seconds": 210324.91699999996,
+      "total_text": "58h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 441265.89400000003,
-      "total_text": "122h 34m",
+      "total_seconds": 443577.67900000006,
+      "total_text": "123h 12m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1904084.955,
-      "total_text": "528h 54m",
+      "total_seconds": 1906396.74,
+      "total_text": "529h 33m",
       "days_active": 117
     },
     "all_time": {
-      "total_seconds": 1904084.955,
-      "total_text": "528h 54m",
+      "total_seconds": 1906396.74,
+      "total_text": "529h 33m",
       "days_active": 117
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-24",
-      "seconds": 20471.833,
-      "text": "5 hrs 41 mins"
+      "seconds": 22783.618,
+      "text": "6 hrs 19 mins"
     }
   ],
   "heatmap": [
@@ -528,13 +528,13 @@
     },
     {
       "date": "2026-06-24",
-      "seconds": 20471.833
+      "seconds": 22783.618
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 519194.795
+      "total_seconds": 520992.188
     },
     {
       "name": "C++",
@@ -562,7 +562,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 38107.882999999994
+      "total_seconds": 38108.882999999994
     },
     {
       "name": "C",
@@ -594,19 +594,19 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 2060.983
+      "total_seconds": 2061.983
+    },
+    {
+      "name": "CMake",
+      "total_seconds": 1832.027
     },
     {
       "name": "TSConfig",
       "total_seconds": 1813.307
     },
     {
-      "name": "CMake",
-      "total_seconds": 1805.027
-    },
-    {
       "name": "GDScript3",
-      "total_seconds": 1420.372
+      "total_seconds": 1522.819
     },
     {
       "name": "TOML",
@@ -627,6 +627,10 @@
     {
       "name": "Bash",
       "total_seconds": 624.506
+    },
+    {
+      "name": "Godot Resource",
+      "total_seconds": 391.113
     },
     {
       "name": "TeX",
@@ -1491,16 +1495,21 @@
       "Text": 1
     },
     "2026-06-24": {
-      "Markdown": 7542.535,
+      "Markdown": 9339.928,
       "Python": 4951.76,
       "SQL": 3600,
-      "GDScript3": 1420.372,
+      "GDScript3": 1522.819,
       "TypeScript": 1133.212,
-      "Other": 942.019,
+      "Other": 877.804,
+      "Godot Resource": 391.113,
       "Git Config": 388.108,
       "Git": 332.462,
       "C++": 147.416,
-      "HTML": 13.949
+      "Text": 56.047,
+      "CMake": 27,
+      "HTML": 13.949,
+      "JSON": 1,
+      "YAML": 1
     }
   }
 }
