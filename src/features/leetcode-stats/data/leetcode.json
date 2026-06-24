@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 41,
+        "count": 42,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -296,6 +296,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732406617,
+      "submitTime": 1782281882,
+      "question": {
+        "title": "Number of ZigZag Arrays II",
+        "translatedTitle": "锯齿形数组的总数 II",
+        "titleSlug": "number-of-zigzag-arrays-ii",
+        "questionFrontendId": "3700"
+      }
+    },
+    {
       "submissionId": 732396519,
       "submitTime": 1782277034,
       "question": {
@@ -428,16 +438,6 @@
     {
       "submissionId": 732004804,
       "submitTime": 1782094429,
-      "question": {
-        "title": "Actors and Directors Who Cooperated At Least Three Times",
-        "translatedTitle": "合作过至少三次的演员和导演",
-        "titleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
-        "questionFrontendId": "1050"
-      }
-    },
-    {
-      "submissionId": 732004453,
-      "submitTime": 1782094289,
       "question": {
         "title": "Actors and Directors Who Cooperated At Least Three Times",
         "translatedTitle": "合作过至少三次的演员和导演",

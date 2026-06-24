@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-24T06:01:29.175Z",
-  "total": "167 hrs 54 mins",
-  "daily_average": "4 hrs 9 mins",
+  "lastUpdate": "2026-06-24T09:27:54.863Z",
+  "total": "169 hrs 18 mins",
+  "daily_average": "4 hrs 12 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 193150.00999999998,
-      "total_text": "53h 39m",
+      "total_seconds": 198189.19099999996,
+      "total_text": "55h 3m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 426402.77200000006,
-      "total_text": "118h 26m",
+      "total_seconds": 431441.95300000004,
+      "total_text": "119h 50m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1889221.8329999999,
-      "total_text": "524h 47m",
+      "total_seconds": 1894261.014,
+      "total_text": "526h 11m",
       "days_active": 117
     },
     "all_time": {
-      "total_seconds": 1889221.8329999999,
-      "total_text": "524h 47m",
+      "total_seconds": 1894261.014,
+      "total_text": "526h 11m",
       "days_active": 117
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-24",
-      "seconds": 5608.711,
-      "text": "1 hr 33 mins"
+      "seconds": 10647.892,
+      "text": "2 hrs 57 mins"
     }
   ],
   "heatmap": [
@@ -528,13 +528,13 @@
     },
     {
       "date": "2026-06-24",
-      "seconds": 5608.711
+      "seconds": 10647.892
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 512866.94
+      "total_seconds": 514678.273
     },
     {
       "name": "C++",
@@ -542,11 +542,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 238373.47600000002
+      "total_seconds": 240789.86700000003
     },
     {
       "name": "TypeScript",
-      "total_seconds": 196850.381
+      "total_seconds": 197983.593
     },
     {
       "name": "JavaScript",
@@ -574,7 +574,7 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 22813.195000000003
+      "total_seconds": 22827.144000000004
     },
     {
       "name": "CSS",
@@ -1488,10 +1488,12 @@
     },
     "2026-06-24": {
       "SQL": 3600,
-      "Markdown": 1214.68,
-      "Other": 679.17,
+      "Markdown": 3026.013,
+      "Python": 2422.295,
+      "TypeScript": 1133.212,
+      "Other": 343.466,
       "Git": 108.957,
-      "Python": 5.904
+      "HTML": 13.949
     }
   }
 }
