@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-25T09:20:35.889Z",
-  "total": "174 hrs 32 mins",
-  "daily_average": "4 hrs 19 mins",
+  "lastUpdate": "2026-06-25T14:31:57.151Z",
+  "total": "177 hrs 4 mins",
+  "daily_average": "4 hrs 23 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 205426.176,
-      "total_text": "57h 3m",
+      "total_seconds": 214549.79700000002,
+      "total_text": "59h 35m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 456169.52100000007,
-      "total_text": "126h 42m",
+      "total_seconds": 465293.14200000005,
+      "total_text": "129h 14m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1924593.5829999999,
-      "total_text": "534h 36m",
+      "total_seconds": 1933717.204,
+      "total_text": "537h 8m",
       "days_active": 118
     },
     "all_time": {
-      "total_seconds": 1924593.5829999999,
-      "total_text": "534h 36m",
+      "total_seconds": 1933717.204,
+      "total_text": "537h 8m",
       "days_active": 118
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-25",
-      "seconds": 18193.764,
-      "text": "5 hrs 3 mins"
+      "seconds": 27317.385,
+      "text": "7 hrs 35 mins"
     }
   ],
   "heatmap": [
@@ -532,13 +532,13 @@
     },
     {
       "date": "2026-06-25",
-      "seconds": 18193.764
+      "seconds": 27317.385
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 528302.8
+      "total_seconds": 533639.41
     },
     {
       "name": "C++",
@@ -546,11 +546,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 251795.24500000002
+      "total_seconds": 255370.74400000004
     },
     {
       "name": "TypeScript",
-      "total_seconds": 198384.606
+      "total_seconds": 198385.456
     },
     {
       "name": "JavaScript",
@@ -566,7 +566,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 38369.41499999999
+      "total_seconds": 38490.973999999995
     },
     {
       "name": "C",
@@ -618,7 +618,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 1178.8899999999999
+      "total_seconds": 1183.993
     },
     {
       "name": "PowerShell",
@@ -1528,18 +1528,18 @@
       "YAML": 1
     },
     "2026-06-25": {
-      "Python": 8475.913,
-      "Markdown": 7253.748,
-      "Other": 1024.869,
-      "TypeScript": 401.013,
+      "Markdown": 12590.358,
+      "Python": 12051.412,
+      "Other": 1108.869,
+      "TypeScript": 401.863,
       "HTML": 391.911,
-      "JSON": 260.532,
+      "JSON": 382.091,
       "Microsoft Visual Studio Solution": 125.546,
       "CSV": 122.493,
       "Git Config": 111.082,
       "CSS": 17.835,
+      "TOML": 7.154,
       "C#": 3,
-      "TOML": 2.051,
       "TSConfig": 1.686,
       "GDScript3": 1.085,
       "XML": 1
