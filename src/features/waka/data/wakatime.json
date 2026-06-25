@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-25T14:31:57.151Z",
-  "total": "177 hrs 4 mins",
+  "lastUpdate": "2026-06-25T19:59:42.043Z",
+  "total": "177 hrs 29 mins",
   "daily_average": "4 hrs 23 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 214549.79700000002,
-      "total_text": "59h 35m",
+      "total_seconds": 216059.662,
+      "total_text": "60h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 465293.14200000005,
-      "total_text": "129h 14m",
+      "total_seconds": 466803.00700000004,
+      "total_text": "129h 40m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1933717.204,
-      "total_text": "537h 8m",
+      "total_seconds": 1935227.069,
+      "total_text": "537h 33m",
       "days_active": 118
     },
     "all_time": {
-      "total_seconds": 1933717.204,
-      "total_text": "537h 8m",
+      "total_seconds": 1935227.069,
+      "total_text": "537h 33m",
       "days_active": 118
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-25",
-      "seconds": 27317.385,
-      "text": "7 hrs 35 mins"
+      "seconds": 28827.25,
+      "text": "8 hrs"
     }
   ],
   "heatmap": [
@@ -532,13 +532,13 @@
     },
     {
       "date": "2026-06-25",
-      "seconds": 27317.385
+      "seconds": 28827.25
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 533639.41
+      "total_seconds": 533850.4890000001
     },
     {
       "name": "C++",
@@ -546,11 +546,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 255370.74400000004
+      "total_seconds": 256667.09600000002
     },
     {
       "name": "TypeScript",
-      "total_seconds": 198385.456
+      "total_seconds": 198387.88999999998
     },
     {
       "name": "JavaScript",
@@ -1528,10 +1528,10 @@
       "YAML": 1
     },
     "2026-06-25": {
-      "Markdown": 12590.358,
-      "Python": 12051.412,
+      "Python": 13347.764,
+      "Markdown": 12801.437,
       "Other": 1108.869,
-      "TypeScript": 401.863,
+      "TypeScript": 404.297,
       "HTML": 391.911,
       "JSON": 382.091,
       "Microsoft Visual Studio Solution": 125.546,
