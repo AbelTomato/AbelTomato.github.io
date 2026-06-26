@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 130,
+        "count": 133,
         "difficulty": "EASY"
       },
       {
@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 42,
+        "count": 43,
         "difficulty": "HARD"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 941,
+        "count": 938,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -93,9 +93,19 @@
         "translatedName": "广度优先搜索"
       },
       {
+        "slug": "database",
+        "name": "Database",
+        "translatedName": "数据库"
+      },
+      {
         "slug": "depth-first-search",
         "name": "Depth-First Search",
         "translatedName": "深度优先搜索"
+      },
+      {
+        "slug": "divide-and-conquer",
+        "name": "Divide and Conquer",
+        "translatedName": "分治"
       },
       {
         "slug": "dynamic-programming",
@@ -184,7 +194,7 @@
         }
       },
       {
-        "score": 31,
+        "score": 32,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -296,6 +306,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732707706,
+      "submitTime": 1782441512,
+      "question": {
+        "title": "Count Subarrays With Majority Element II",
+        "translatedTitle": "统计主要元素子数组数目 II",
+        "titleSlug": "count-subarrays-with-majority-element-ii",
+        "questionFrontendId": "3739"
+      }
+    },
+    {
+      "submissionId": 732702112,
+      "submitTime": 1782439564,
+      "question": {
+        "title": "Find Users With Valid E-Mails",
+        "translatedTitle": "查找拥有有效邮箱的用户",
+        "titleSlug": "find-users-with-valid-e-mails",
+        "questionFrontendId": "1517"
+      }
+    },
+    {
+      "submissionId": 732699839,
+      "submitTime": 1782438605,
+      "question": {
+        "title": "Group Sold Products By The Date",
+        "translatedTitle": "按日期分组销售产品",
+        "titleSlug": "group-sold-products-by-the-date",
+        "questionFrontendId": "1484"
+      }
+    },
+    {
+      "submissionId": 732698315,
+      "submitTime": 1782437920,
+      "question": {
+        "title": "Top Travellers",
+        "translatedTitle": "排名靠前的旅行者",
+        "titleSlug": "top-travellers",
+        "questionFrontendId": "1407"
+      }
+    },
+    {
       "submissionId": 732638204,
       "submitTime": 1782386958,
       "question": {
@@ -403,46 +453,6 @@
         "translatedTitle": "查询近30天活跃用户数",
         "titleSlug": "user-activity-for-the-past-30-days-i",
         "questionFrontendId": "1141"
-      }
-    },
-    {
-      "submissionId": 732183733,
-      "submitTime": 1782177675,
-      "question": {
-        "title": "Sales Analysis III",
-        "translatedTitle": "销售分析 III",
-        "titleSlug": "sales-analysis-iii",
-        "questionFrontendId": "1084"
-      }
-    },
-    {
-      "submissionId": 732009179,
-      "submitTime": 1782095907,
-      "question": {
-        "title": "Maximum Number of Balloons",
-        "translatedTitle": "“气球” 的最大数量",
-        "titleSlug": "maximum-number-of-balloons",
-        "questionFrontendId": "1189"
-      }
-    },
-    {
-      "submissionId": 732007785,
-      "submitTime": 1782095476,
-      "question": {
-        "title": "Project Employees I",
-        "translatedTitle": "项目员工 I",
-        "titleSlug": "project-employees-i",
-        "questionFrontendId": "1075"
-      }
-    },
-    {
-      "submissionId": 732006081,
-      "submitTime": 1782094898,
-      "question": {
-        "title": "Product Sales Analysis I",
-        "translatedTitle": "产品销售分析 I",
-        "titleSlug": "product-sales-analysis-i",
-        "questionFrontendId": "1068"
       }
     }
   ],

@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-25T19:59:42.043Z",
-  "total": "177 hrs 29 mins",
-  "daily_average": "4 hrs 23 mins",
+  "lastUpdate": "2026-06-26T03:37:10.707Z",
+  "total": "176 hrs 33 mins",
+  "daily_average": "4 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 216059.662,
-      "total_text": "60h 0m",
+      "total_seconds": 199179.33200000002,
+      "total_text": "55h 19m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 466803.00700000004,
-      "total_text": "129h 40m",
+      "total_seconds": 451825.70499999996,
+      "total_text": "125h 30m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1935227.069,
-      "total_text": "537h 33m",
-      "days_active": 118
+      "total_seconds": 1943255.571,
+      "total_text": "539h 47m",
+      "days_active": 119
     },
     "all_time": {
-      "total_seconds": 1935227.069,
-      "total_text": "537h 33m",
-      "days_active": 118
+      "total_seconds": 1943255.571,
+      "total_text": "539h 47m",
+      "days_active": 119
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-19",
-      "seconds": 24908.832,
-      "text": "6 hrs 55 mins"
-    },
     {
       "date": "2026-06-20",
       "seconds": 36059.145,
@@ -59,6 +54,11 @@
       "date": "2026-06-25",
       "seconds": 28827.25,
       "text": "8 hrs"
+    },
+    {
+      "date": "2026-06-26",
+      "seconds": 8028.502,
+      "text": "2 hrs 13 mins"
     }
   ],
   "heatmap": [
@@ -533,12 +533,16 @@
     {
       "date": "2026-06-25",
       "seconds": 28827.25
+    },
+    {
+      "date": "2026-06-26",
+      "seconds": 8028.502
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 533850.4890000001
+      "total_seconds": 534040.8750000001
     },
     {
       "name": "C++",
@@ -546,7 +550,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 256667.09600000002
+      "total_seconds": 261675.583
     },
     {
       "name": "TypeScript",
@@ -569,12 +573,12 @@
       "total_seconds": 38490.973999999995
     },
     {
-      "name": "C",
-      "total_seconds": 27879.025999999998
+      "name": "SQL",
+      "total_seconds": 28701.266
     },
     {
-      "name": "SQL",
-      "total_seconds": 26301.266
+      "name": "C",
+      "total_seconds": 27879.025999999998
     },
     {
       "name": "HTML",
@@ -1543,6 +1547,12 @@
       "TSConfig": 1.686,
       "GDScript3": 1.085,
       "XML": 1
+    },
+    "2026-06-26": {
+      "Python": 5008.487,
+      "SQL": 2400,
+      "Other": 429.629,
+      "Markdown": 190.386
     }
   }
 }
