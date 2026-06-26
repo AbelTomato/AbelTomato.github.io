@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-26T03:37:10.707Z",
-  "total": "176 hrs 33 mins",
-  "daily_average": "4 hrs 22 mins",
+  "lastUpdate": "2026-06-26T09:25:08.673Z",
+  "total": "180 hrs 52 mins",
+  "daily_average": "4 hrs 28 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 199179.33200000002,
-      "total_text": "55h 19m",
+      "total_seconds": 214754.75900000002,
+      "total_text": "59h 39m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 451825.70499999996,
-      "total_text": "125h 30m",
+      "total_seconds": 467401.132,
+      "total_text": "129h 50m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1943255.571,
-      "total_text": "539h 47m",
+      "total_seconds": 1958830.998,
+      "total_text": "544h 7m",
       "days_active": 119
     },
     "all_time": {
-      "total_seconds": 1943255.571,
-      "total_text": "539h 47m",
+      "total_seconds": 1958830.998,
+      "total_text": "544h 7m",
       "days_active": 119
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-26",
-      "seconds": 8028.502,
-      "text": "2 hrs 13 mins"
+      "seconds": 23603.929,
+      "text": "6 hrs 33 mins"
     }
   ],
   "heatmap": [
@@ -536,13 +536,13 @@
     },
     {
       "date": "2026-06-26",
-      "seconds": 8028.502
+      "seconds": 23603.929
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 534040.8750000001
+      "total_seconds": 537105.9800000001
     },
     {
       "name": "C++",
@@ -550,11 +550,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 261675.583
+      "total_seconds": 273134.914
     },
     {
       "name": "TypeScript",
-      "total_seconds": 198387.88999999998
+      "total_seconds": 198741.09
     },
     {
       "name": "JavaScript",
@@ -1549,10 +1549,11 @@
       "XML": 1
     },
     "2026-06-26": {
-      "Python": 5008.487,
+      "Python": 16467.818,
+      "Markdown": 3255.491,
       "SQL": 2400,
-      "Other": 429.629,
-      "Markdown": 190.386
+      "Other": 1127.42,
+      "TypeScript": 353.2
     }
   }
 }
