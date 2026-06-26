@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-26T09:25:08.673Z",
-  "total": "180 hrs 52 mins",
-  "daily_average": "4 hrs 28 mins",
+  "lastUpdate": "2026-06-26T14:23:16.797Z",
+  "total": "185 hrs 16 mins",
+  "daily_average": "4 hrs 35 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 214754.75900000002,
-      "total_text": "59h 39m",
+      "total_seconds": 230542.71300000002,
+      "total_text": "64h 2m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 467401.132,
-      "total_text": "129h 50m",
+      "total_seconds": 483189.086,
+      "total_text": "134h 13m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1958830.998,
-      "total_text": "544h 7m",
+      "total_seconds": 1974618.9519999998,
+      "total_text": "548h 30m",
       "days_active": 119
     },
     "all_time": {
-      "total_seconds": 1958830.998,
-      "total_text": "544h 7m",
+      "total_seconds": 1974618.9519999998,
+      "total_text": "548h 30m",
       "days_active": 119
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-26",
-      "seconds": 23603.929,
-      "text": "6 hrs 33 mins"
+      "seconds": 39391.883,
+      "text": "10 hrs 56 mins"
     }
   ],
   "heatmap": [
@@ -536,13 +536,13 @@
     },
     {
       "date": "2026-06-26",
-      "seconds": 23603.929
+      "seconds": 39391.883
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 537105.9800000001
+      "total_seconds": 541475.7810000001
     },
     {
       "name": "C++",
@@ -550,11 +550,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 273134.914
+      "total_seconds": 284804.753
     },
     {
       "name": "TypeScript",
-      "total_seconds": 198741.09
+      "total_seconds": 198902.63999999998
     },
     {
       "name": "JavaScript",
@@ -1549,11 +1549,11 @@
       "XML": 1
     },
     "2026-06-26": {
-      "Python": 16467.818,
-      "Markdown": 3255.491,
+      "Python": 28137.657,
+      "Markdown": 7625.292,
       "SQL": 2400,
-      "Other": 1127.42,
-      "TypeScript": 353.2
+      "Other": 714.184,
+      "TypeScript": 514.75
     }
   }
 }
