@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-27T13:41:01.675Z",
-  "total": "187 hrs 21 mins",
+  "lastUpdate": "2026-06-27T16:11:43.408Z",
+  "total": "187 hrs 47 mins",
   "daily_average": "4 hrs 38 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 223905.79,
-      "total_text": "62h 11m",
+      "total_seconds": 225513.139,
+      "total_text": "62h 38m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 485314.67399999994,
-      "total_text": "134h 48m",
+      "total_seconds": 486922.023,
+      "total_text": "135h 15m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2004041.1739999999,
-      "total_text": "556h 40m",
+      "total_seconds": 2005648.5229999998,
+      "total_text": "557h 7m",
       "days_active": 120
     },
     "all_time": {
-      "total_seconds": 2004041.1739999999,
-      "total_text": "556h 40m",
+      "total_seconds": 2005648.5229999998,
+      "total_text": "557h 7m",
       "days_active": 120
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-27",
-      "seconds": 28421.747,
-      "text": "7 hrs 53 mins"
+      "seconds": 30029.096,
+      "text": "8 hrs 20 mins"
     }
   ],
   "heatmap": [
@@ -540,13 +540,13 @@
     },
     {
       "date": "2026-06-27",
-      "seconds": 28421.747
+      "seconds": 30029.096
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 563750.606
+      "total_seconds": 564408.4160000001
     },
     {
       "name": "C++",
@@ -554,11 +554,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 288258.841
+      "total_seconds": 288424.673
     },
     {
       "name": "TypeScript",
-      "total_seconds": 198902.63999999998
+      "total_seconds": 199686.34699999998
     },
     {
       "name": "JavaScript",
@@ -1560,10 +1560,12 @@
       "TypeScript": 514.75
     },
     "2026-06-27": {
-      "Markdown": 21097.031,
+      "Markdown": 21754.841,
       "SQL": 3870.628,
-      "Python": 3454.088,
-      "Other": 0
+      "Python": 3619.92,
+      "TypeScript": 783.707,
+      "Other": 0,
+      "CSS": 0
     }
   }
 }
