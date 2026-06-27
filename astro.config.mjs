@@ -5,6 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import rehypeCodeBlocks from "./src/utils/rehypeCodeBlocks.ts";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -17,7 +18,7 @@ export default defineConfig({
   integrations: [
     mdx({
       remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
+      rehypePlugins: [rehypeKatex, rehypeCodeBlocks],
     }),
     sitemap(),
     react(),
@@ -33,6 +34,7 @@ export default defineConfig({
           throwOnError: false,
         },
       ],
+      rehypeCodeBlocks,
     ],
     shikiConfig: {
       theme: "github-dark",

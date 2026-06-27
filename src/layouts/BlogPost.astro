@@ -125,6 +125,68 @@ const {
   </main>
 </BaseLayout>
 
+<script>
+  const initializeCodeBlockToggles = () => {
+    const toggles = document.querySelectorAll<HTMLButtonElement>(
+      ".code-block__toggle:not([data-code-toggle-ready])",
+    );
+
+    toggles.forEach((toggle) => {
+      toggle.dataset.codeToggleReady = "true";
+      toggle.querySelectorAll("svg").forEach((icon) => icon.remove());
+
+      let toggleText = toggle.querySelector<HTMLElement>(
+        ".code-block__toggle-text",
+      );
+
+      if (!toggleText) {
+        const text = toggle.textContent?.trim() || "收起";
+
+        toggle.textContent = "";
+        toggleText = document.createElement("span");
+        toggleText.className = "code-block__toggle-text";
+        toggleText.textContent = text;
+        toggle.append(toggleText);
+      }
+
+      if (!toggle.querySelector(".code-block__toggle-mark")) {
+        const toggleMark = document.createElement("span");
+        toggleMark.className = "code-block__toggle-mark";
+        toggleMark.setAttribute("aria-hidden", "true");
+        toggle.append(toggleMark);
+      }
+
+      toggle.addEventListener("click", () => {
+        const codeBlock = toggle.closest<HTMLElement>(".code-block");
+
+        if (!codeBlock) {
+          return;
+        }
+
+        const collapsed = codeBlock.dataset.collapsed === "true";
+        const nextCollapsed = !collapsed;
+        const toggleText = toggle.querySelector<HTMLElement>(
+          ".code-block__toggle-text",
+        );
+
+        codeBlock.dataset.collapsed = String(nextCollapsed);
+        toggle.setAttribute("aria-expanded", String(!nextCollapsed));
+        toggle.setAttribute(
+          "aria-label",
+          nextCollapsed ? "展开代码块" : "收起代码块",
+        );
+
+        if (toggleText) {
+          toggleText.textContent = nextCollapsed ? "展开" : "收起";
+        }
+      });
+    });
+  };
+
+  document.addEventListener("astro:page-load", initializeCodeBlockToggles);
+  initializeCodeBlockToggles();
+</script>
+
 <style is:global>
   html {
     scroll-behavior: smooth;

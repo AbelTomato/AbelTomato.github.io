@@ -198,6 +198,56 @@ pre code {
   @apply p-0 border-none !text-inherit;
 }
 
+.prose .code-block {
+  @apply my-6 overflow-hidden rounded-xl border border-border bg-card shadow-sm;
+}
+
+.prose .code-block__header {
+  @apply flex items-center justify-between gap-3 border-b border-border bg-muted/50 px-4 py-3;
+}
+
+.prose .code-block__language {
+  @apply inline-flex items-center rounded-md border border-border bg-background/70 px-3 py-1.5 font-mono text-sm font-semibold leading-none text-muted-foreground;
+}
+
+.prose .code-block__toggle {
+  @apply inline-flex items-center gap-2 rounded-md px-3 py-1.5 font-mono text-sm font-medium leading-none text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+}
+
+.prose .code-block__toggle-mark {
+  @apply block size-4 shrink-0 bg-current transition-transform duration-200 ease-out;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.prose .code-block[data-collapsed="true"] .code-block__toggle-mark {
+  @apply rotate-180;
+}
+
+.prose .code-block__toggle svg {
+  @apply hidden;
+}
+
+.prose .code-block__body {
+  @apply grid transition-[grid-template-rows] duration-200 ease-out;
+  grid-template-rows: 1fr;
+}
+
+.prose .code-block[data-collapsed="true"] .code-block__body {
+  grid-template-rows: 0fr;
+}
+
+.prose .code-block__body > pre {
+  @apply m-0 min-w-0 rounded-none border-0 bg-transparent p-4;
+}
+
+.prose .code-block__body > pre > code {
+  @apply block min-w-max;
+}
+
+.prose .code-block[data-collapsed="true"] .code-block__body > pre {
+  @apply overflow-hidden py-0;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: "Geist Variable", sans-serif;
