@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-06-26T19:46:51.643Z",
-  "total": "185 hrs 32 mins",
-  "daily_average": "4 hrs 35 mins",
+  "lastUpdate": "2026-06-27T02:59:25.389Z",
+  "total": "180 hrs 58 mins",
+  "daily_average": "4 hrs 28 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 231543.18800000002,
-      "total_text": "64h 19m",
+      "total_seconds": 200939.79200000002,
+      "total_text": "55h 48m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 484189.561,
-      "total_text": "134h 29m",
+      "total_seconds": 462348.676,
+      "total_text": "128h 25m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 1975619.427,
-      "total_text": "548h 46m",
-      "days_active": 119
+      "total_seconds": 1981075.176,
+      "total_text": "550h 17m",
+      "days_active": 120
     },
     "all_time": {
-      "total_seconds": 1975619.427,
-      "total_text": "548h 46m",
-      "days_active": 119
+      "total_seconds": 1981075.176,
+      "total_text": "550h 17m",
+      "days_active": 120
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-20",
-      "seconds": 36059.145,
-      "text": "10 hrs"
-    },
     {
       "date": "2026-06-21",
       "seconds": 31397,
@@ -59,6 +54,11 @@
       "date": "2026-06-26",
       "seconds": 40392.358,
       "text": "11 hrs 13 mins"
+    },
+    {
+      "date": "2026-06-27",
+      "seconds": 5455.749,
+      "text": "1 hr 30 mins"
     }
   ],
   "heatmap": [
@@ -537,12 +537,16 @@
     {
       "date": "2026-06-26",
       "seconds": 40392.358
+    },
+    {
+      "date": "2026-06-27",
+      "seconds": 5455.749
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 542653.5750000001
+      "total_seconds": 543827.621
     },
     {
       "name": "C++",
@@ -550,7 +554,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 284804.753
+      "total_seconds": 285215.82800000004
     },
     {
       "name": "TypeScript",
@@ -574,7 +578,7 @@
     },
     {
       "name": "SQL",
-      "total_seconds": 28701.266
+      "total_seconds": 32571.894
     },
     {
       "name": "C",
@@ -1554,6 +1558,11 @@
       "SQL": 2400,
       "Other": 536.865,
       "TypeScript": 514.75
+    },
+    "2026-06-27": {
+      "SQL": 3870.628,
+      "Markdown": 1174.046,
+      "Python": 411.075
     }
   }
 }
