@@ -5,6 +5,8 @@ import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { CREATE_TIME } from "@src/consts";
 
+const PAGE_SIZE = 12;
+
 const {
   posts,
   allTags,
@@ -15,6 +17,11 @@ const {
   totalPostsWords,
   totalTagsCounts,
 } = await getPostsData();
+
+const visiblePosts = posts.slice(0, PAGE_SIZE);
+const hasNextPage = posts.length > PAGE_SIZE;
+const lastPage = Math.ceil(posts.length / PAGE_SIZE);
+const pageNumbers = Array.from({ length: lastPage }, (_, index) => index + 1);
 
 const siteData = {
   createTime: CREATE_TIME,
@@ -74,53 +81,75 @@ const siteData = {
       }
     </div>
     {
-      posts.length > 0 ? (
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700">
-              <a href={`/blog/${post.id}/`} class="block">
-                {post.data.heroImage && (
-                  <div class="overflow-hidden aspect-video">
-                    <img
-                      src={post.data.heroImage.src}
-                      alt={post.data.title}
-                      loading="lazy"
-                      decoding="async"
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                )}
-
-                <div class="p-6">
-                  {post.data.tags && (
-                    <div class="flex flex-wrap gap-2 mb-3">
-                      {post.data.tags.map((tag) => (
-                        <span class="text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
-                          {tag}
-                        </span>
-                      ))}
+      visiblePosts.length > 0 ? (
+        <div>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {visiblePosts.map((post) => (
+              <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700">
+                <a href={`/blog/${post.id}/`} class="block">
+                  {post.data.heroImage && (
+                    <div class="overflow-hidden aspect-video">
+                      <img
+                        src={post.data.heroImage.src}
+                        alt={post.data.title}
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
                   )}
 
-                  <h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                    {post.data.title}
-                  </h2>
+                  <div class="p-6">
+                    {post.data.tags && (
+                      <div class="flex flex-wrap gap-2 mb-3">
+                        {post.data.tags.map((tag) => (
+                          <span class="text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
 
-                  <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2 text-sm">
-                    {post.data.description}
-                  </p>
+                    <h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      {post.data.title}
+                    </h2>
 
-                  <time class="text-xs text-gray-400 dark:text-gray-500 font-mono">
-                    {post.data.pubDate.toLocaleDateString("zh-CN", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </time>
-                </div>
-              </a>
-            </div>
-          ))}
+                    <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2 text-sm">
+                      {post.data.description}
+                    </p>
+
+                    <time class="text-xs text-gray-400 dark:text-gray-500 font-mono">
+                      {post.data.pubDate.toLocaleDateString("zh-CN", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+          {hasNextPage && (
+            <nav
+              class="mt-12 flex flex-wrap items-center justify-center gap-2"
+              aria-label="博客分页"
+            >
+              {pageNumbers.map((pageNumber) => (
+                <a
+                  href={pageNumber === 1 ? "/blog/" : `/blog/${pageNumber}/`}
+                  aria-current={pageNumber === 1 ? "page" : undefined}
+                  class={`min-w-10 rounded-xl border px-3 py-2 text-center text-sm font-medium shadow-sm transition-colors ${
+                    pageNumber === 1
+                      ? "border-blue-500 bg-blue-500 text-white"
+                      : "border-gray-200 bg-white text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+                  }`}
+                >
+                  {pageNumber}
+                </a>
+              ))}
+            </nav>
+          )}
         </div>
       ) : (
         <div class="text-center py-20">
