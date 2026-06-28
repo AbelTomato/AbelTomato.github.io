@@ -1,7 +1,7 @@
 {
-  "lastUpdate": "2026-06-28T14:58:13.288Z",
+  "lastUpdate": "2026-06-28T19:18:47.780Z",
   "total": "191 hrs 16 mins",
-  "daily_average": "4 hrs 43 mins",
+  "daily_average": "4 hrs 44 mins",
   "stats": {
     "last_7_days": {
       "total_seconds": 225749.62099999998,
@@ -558,7 +558,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 298921.875
+      "total_seconds": 299114.983
     },
     {
       "name": "TypeScript",
@@ -570,7 +570,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 100975.45600000002
+      "total_seconds": 101123.64400000001
     },
     {
       "name": "Java",
@@ -1573,15 +1573,15 @@
     },
     "2026-06-28": {
       "Markdown": 16087.956,
-      "Python": 10497.202,
+      "Python": 10690.31,
       "SQL": 3600,
-      "Astro": 431.323,
-      "Other": 347.657,
+      "Astro": 579.511,
       "TypeScript": 307.818,
       "CSV": 133.895,
       "Microsoft Visual Studio Solution": 101.664,
       "HTML": 99.47,
       "Git": 20.303,
+      "Other": 6.361,
       "CSS": 4.459,
       "TOML": 1.735
     }
