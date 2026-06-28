@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-28T13:44:42.592Z",
-  "total": "190 hrs 17 mins",
+  "lastUpdate": "2026-06-28T14:11:00.863Z",
+  "total": "190 hrs 28 mins",
   "daily_average": "4 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 222240.712,
-      "total_text": "61h 44m",
+      "total_seconds": 222907.581,
+      "total_text": "61h 55m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 489788.031,
-      "total_text": "136h 3m",
+      "total_seconds": 490454.9,
+      "total_text": "136h 14m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2033773.096,
-      "total_text": "564h 56m",
+      "total_seconds": 2034439.9649999999,
+      "total_text": "565h 7m",
       "days_active": 121
     },
     "all_time": {
-      "total_seconds": 2033773.096,
-      "total_text": "564h 56m",
+      "total_seconds": 2034439.9649999999,
+      "total_text": "565h 7m",
       "days_active": 121
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-28",
-      "seconds": 28124.573,
-      "text": "7 hrs 48 mins"
+      "seconds": 28791.442,
+      "text": "7 hrs 59 mins"
     }
   ],
   "heatmap": [
@@ -544,13 +544,13 @@
     },
     {
       "date": "2026-06-28",
-      "seconds": 28124.573
+      "seconds": 28791.442
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 579082.182
+      "total_seconds": 579721.5810000001
     },
     {
       "name": "C++",
@@ -562,7 +562,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 199966.69499999998
+      "total_seconds": 199994.16499999998
     },
     {
       "name": "JavaScript",
@@ -1572,15 +1572,17 @@
       "CSS": 0
     },
     "2026-06-28": {
-      "Markdown": 14673.766,
+      "Markdown": 15313.165,
       "Python": 9229.236,
       "SQL": 3600,
-      "TypeScript": 280.348,
+      "TypeScript": 307.818,
       "CSV": 133.895,
       "Microsoft Visual Studio Solution": 101.664,
       "HTML": 99.47,
       "CSS": 4.459,
-      "TOML": 1.735
+      "TOML": 1.735,
+      "Other": 0,
+      "Git": 0
     }
   }
 }
