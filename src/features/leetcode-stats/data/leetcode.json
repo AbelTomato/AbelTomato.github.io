@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 133,
+        "count": 136,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 43,
+        "count": 44,
         "difficulty": "HARD"
       }
     ],
@@ -320,6 +320,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732997901,
+      "submitTime": 1782617358,
+      "question": {
+        "title": "Maximum Subarray Sum After Multiplier",
+        "translatedTitle": "乘以系数后最大子数组和",
+        "titleSlug": "maximum-subarray-sum-after-multiplier",
+        "questionFrontendId": "3976"
+      }
+    },
+    {
+      "submissionId": 732996259,
+      "submitTime": 1782616792,
+      "question": {
+        "title": "Minimum Time to Reach Target With Limited Power",
+        "translatedTitle": "有限电量到达目标节点的最少时间",
+        "titleSlug": "minimum-time-to-reach-target-with-limited-power",
+        "questionFrontendId": "3977"
+      }
+    },
+    {
+      "submissionId": 732991055,
+      "submitTime": 1782615038,
+      "question": {
+        "title": "Filter Occupied Intervals",
+        "translatedTitle": "筛选忙碌区间",
+        "titleSlug": "filter-occupied-intervals",
+        "questionFrontendId": "3975"
+      }
+    },
+    {
+      "submissionId": 732987646,
+      "submitTime": 1782613953,
+      "question": {
+        "title": "Maximum Total Sum of K Selected Elements",
+        "translatedTitle": "K 个元素的最大总和",
+        "titleSlug": "maximum-total-sum-of-k-selected-elements",
+        "questionFrontendId": "3974"
+      }
+    },
+    {
       "submissionId": 732983406,
       "submitTime": 1782612395,
       "question": {
@@ -427,46 +467,6 @@
         "translatedTitle": "进店却未进行过交易的顾客",
         "titleSlug": "customer-who-visited-but-did-not-make-any-transactions",
         "questionFrontendId": "1581"
-      }
-    },
-    {
-      "submissionId": 732844027,
-      "submitTime": 1782521713,
-      "question": {
-        "title": "Patients With a Condition",
-        "translatedTitle": "患某种疾病的患者",
-        "titleSlug": "patients-with-a-condition",
-        "questionFrontendId": "1527"
-      }
-    },
-    {
-      "submissionId": 732707706,
-      "submitTime": 1782441512,
-      "question": {
-        "title": "Count Subarrays With Majority Element II",
-        "translatedTitle": "统计主要元素子数组数目 II",
-        "titleSlug": "count-subarrays-with-majority-element-ii",
-        "questionFrontendId": "3739"
-      }
-    },
-    {
-      "submissionId": 732702112,
-      "submitTime": 1782439564,
-      "question": {
-        "title": "Find Users With Valid E-Mails",
-        "translatedTitle": "查找拥有有效邮箱的用户",
-        "titleSlug": "find-users-with-valid-e-mails",
-        "questionFrontendId": "1517"
-      }
-    },
-    {
-      "submissionId": 732699839,
-      "submitTime": 1782438605,
-      "question": {
-        "title": "Group Sold Products By The Date",
-        "translatedTitle": "按日期分组销售产品",
-        "titleSlug": "group-sold-products-by-the-date",
-        "questionFrontendId": "1484"
       }
     }
   ],

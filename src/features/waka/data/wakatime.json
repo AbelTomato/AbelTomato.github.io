@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-28T03:42:36.932Z",
-  "total": "182 hrs 33 mins",
-  "daily_average": "4 hrs 31 mins",
+  "lastUpdate": "2026-06-28T08:50:45.057Z",
+  "total": "187 hrs 48 mins",
+  "daily_average": "4 hrs 38 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 194400.946,
-      "total_text": "54h 0m",
+      "total_seconds": 213271.839,
+      "total_text": "59h 14m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 461948.265,
-      "total_text": "128h 19m",
+      "total_seconds": 480819.15800000005,
+      "total_text": "133h 33m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2005933.3299999998,
-      "total_text": "557h 12m",
+      "total_seconds": 2024804.2229999998,
+      "total_text": "562h 26m",
       "days_active": 121
     },
     "all_time": {
-      "total_seconds": 2005933.3299999998,
-      "total_text": "557h 12m",
+      "total_seconds": 2024804.2229999998,
+      "total_text": "562h 26m",
       "days_active": 121
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-28",
-      "seconds": 284.807,
-      "text": "4 mins"
+      "seconds": 19155.7,
+      "text": "5 hrs 19 mins"
     }
   ],
   "heatmap": [
@@ -544,13 +544,13 @@
     },
     {
       "date": "2026-06-28",
-      "seconds": 284.807
+      "seconds": 19155.7
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 564408.4160000001
+      "total_seconds": 571907.481
     },
     {
       "name": "C++",
@@ -558,7 +558,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 288424.673
+      "total_seconds": 295859.737
     },
     {
       "name": "TypeScript",
@@ -582,7 +582,7 @@
     },
     {
       "name": "SQL",
-      "total_seconds": 32571.894
+      "total_seconds": 36171.894
     },
     {
       "name": "C",
@@ -590,7 +590,7 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 23219.055000000004
+      "total_seconds": 23318.525000000005
     },
     {
       "name": "CSS",
@@ -626,11 +626,11 @@
     },
     {
       "name": "CSV",
-      "total_seconds": 1295.1
+      "total_seconds": 1428.995
     },
     {
       "name": "TOML",
-      "total_seconds": 1183.993
+      "total_seconds": 1185.7279999999998
     },
     {
       "name": "PowerShell",
@@ -654,7 +654,7 @@
     },
     {
       "name": "Microsoft Visual Studio Solution",
-      "total_seconds": 125.546
+      "total_seconds": 227.21
     },
     {
       "name": "Perl",
@@ -1572,8 +1572,15 @@
       "CSS": 0
     },
     "2026-06-28": {
+      "Markdown": 7499.065,
+      "Python": 7435.064,
+      "SQL": 3600,
       "TypeScript": 280.348,
-      "CSS": 4.459
+      "CSV": 133.895,
+      "Microsoft Visual Studio Solution": 101.664,
+      "HTML": 99.47,
+      "CSS": 4.459,
+      "TOML": 1.735
     }
   }
 }
