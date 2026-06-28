@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 137,
+        "count": 142,
         "difficulty": "EASY"
       },
       {
-        "count": 132,
+        "count": 133,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 934,
+        "count": 929,
         "difficulty": "EASY"
       },
       {
-        "count": 2140,
+        "count": 2139,
         "difficulty": "MEDIUM"
       },
       {
@@ -194,14 +194,14 @@
         }
       },
       {
-        "score": 34,
+        "score": 36,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
         }
       },
       {
-        "score": 24,
+        "score": 25,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -320,6 +320,66 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 732983406,
+      "submitTime": 1782612395,
+      "question": {
+        "title": "Maximum Element After Decreasing and Rearranging",
+        "translatedTitle": "减小和重新排列数组后的最大元素",
+        "titleSlug": "maximum-element-after-decreasing-and-rearranging",
+        "questionFrontendId": "1846"
+      }
+    },
+    {
+      "submissionId": 732982635,
+      "submitTime": 1782611877,
+      "question": {
+        "title": "Find Followers Count",
+        "translatedTitle": "求关注者的数量",
+        "titleSlug": "find-followers-count",
+        "questionFrontendId": "1729"
+      }
+    },
+    {
+      "submissionId": 732981205,
+      "submitTime": 1782610753,
+      "question": {
+        "title": "Daily Leads and Partners",
+        "translatedTitle": "每天的领导和合伙人",
+        "titleSlug": "daily-leads-and-partners",
+        "questionFrontendId": "1693"
+      }
+    },
+    {
+      "submissionId": 732980988,
+      "submitTime": 1782610558,
+      "question": {
+        "title": "Invalid Tweets",
+        "translatedTitle": "无效的推文",
+        "titleSlug": "invalid-tweets",
+        "questionFrontendId": "1683"
+      }
+    },
+    {
+      "submissionId": 732980804,
+      "submitTime": 1782610377,
+      "question": {
+        "title": "Fix Names in a Table",
+        "translatedTitle": "修复表中的名字",
+        "titleSlug": "fix-names-in-a-table",
+        "questionFrontendId": "1667"
+      }
+    },
+    {
+      "submissionId": 732980218,
+      "submitTime": 1782609779,
+      "question": {
+        "title": "Average Time of Process per Machine",
+        "translatedTitle": "每台机器的进程平均运行时间",
+        "titleSlug": "average-time-of-process-per-machine",
+        "questionFrontendId": "1661"
+      }
+    },
+    {
       "submissionId": 732848802,
       "submitTime": 1782525826,
       "question": {
@@ -407,66 +467,6 @@
         "translatedTitle": "按日期分组销售产品",
         "titleSlug": "group-sold-products-by-the-date",
         "questionFrontendId": "1484"
-      }
-    },
-    {
-      "submissionId": 732698315,
-      "submitTime": 1782437920,
-      "question": {
-        "title": "Top Travellers",
-        "translatedTitle": "排名靠前的旅行者",
-        "titleSlug": "top-travellers",
-        "questionFrontendId": "1407"
-      }
-    },
-    {
-      "submissionId": 732638204,
-      "submitTime": 1782386958,
-      "question": {
-        "title": "Count Subarrays With Majority Element I",
-        "translatedTitle": "统计主要元素子数组数目 I",
-        "titleSlug": "count-subarrays-with-majority-element-i",
-        "questionFrontendId": "3737"
-      }
-    },
-    {
-      "submissionId": 732406617,
-      "submitTime": 1782281882,
-      "question": {
-        "title": "Number of ZigZag Arrays II",
-        "translatedTitle": "锯齿形数组的总数 II",
-        "titleSlug": "number-of-zigzag-arrays-ii",
-        "questionFrontendId": "3700"
-      }
-    },
-    {
-      "submissionId": 732396519,
-      "submitTime": 1782277034,
-      "question": {
-        "title": "Replace Employee ID With The Unique Identifier",
-        "translatedTitle": "使用唯一标识码替换员工ID",
-        "titleSlug": "replace-employee-id-with-the-unique-identifier",
-        "questionFrontendId": "1378"
-      }
-    },
-    {
-      "submissionId": 732396003,
-      "submitTime": 1782276701,
-      "question": {
-        "title": "List the Products Ordered in a Period",
-        "translatedTitle": "列出指定时间段内所有的下单产品",
-        "titleSlug": "list-the-products-ordered-in-a-period",
-        "questionFrontendId": "1327"
-      }
-    },
-    {
-      "submissionId": 732389767,
-      "submitTime": 1782272949,
-      "question": {
-        "title": "Students and Examinations",
-        "translatedTitle": "学生们参加各科测试的次数",
-        "titleSlug": "students-and-examinations",
-        "questionFrontendId": "1280"
       }
     }
   ],
