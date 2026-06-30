@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-06-30T09:34:04.915Z",
-  "total": "191 hrs 40 mins",
-  "daily_average": "4 hrs 44 mins",
+  "lastUpdate": "2026-06-30T14:16:44.176Z",
+  "total": "194 hrs 51 mins",
+  "daily_average": "4 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 207645.68099999998,
-      "total_text": "57h 40m",
+      "total_seconds": 219120.57,
+      "total_text": "60h 52m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 531941.192,
-      "total_text": "147h 45m",
+      "total_seconds": 543416.081,
+      "total_text": "150h 56m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2091273.8029999998,
-      "total_text": "580h 54m",
+      "total_seconds": 2102748.692,
+      "total_text": "584h 5m",
       "days_active": 123
     },
     "all_time": {
-      "total_seconds": 2091273.8029999998,
-      "total_text": "580h 54m",
+      "total_seconds": 2102748.692,
+      "total_text": "584h 5m",
       "days_active": 123
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-06-30",
-      "seconds": 23820.55,
-      "text": "6 hrs 37 mins"
+      "seconds": 35295.439,
+      "text": "9 hrs 48 mins"
     }
   ],
   "heatmap": [
@@ -552,13 +552,13 @@
     },
     {
       "date": "2026-06-30",
-      "seconds": 23820.55
+      "seconds": 35295.439
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 599834.7069999999
+      "total_seconds": 609803.9489999999
     },
     {
       "name": "C++",
@@ -566,7 +566,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 315235.4650000001
+      "total_seconds": 316583.52200000006
     },
     {
       "name": "TypeScript",
@@ -586,7 +586,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 40663.331999999995
+      "total_seconds": 41244.276
     },
     {
       "name": "SQL",
@@ -1632,16 +1632,16 @@
       "GDScript3": 5.084
     },
     "2026-06-30": {
-      "Markdown": 13805.083,
-      "Python": 4442.201,
+      "Markdown": 23774.325,
+      "Python": 5790.258,
       "C++": 2591.409,
-      "Other": 1109.163,
-      "Text": 807.27,
+      "Other": 952.894,
+      "JSON": 675.987,
+      "Text": 540.185,
       "Bash": 356.513,
       "CMake": 271.537,
       "TypeScript": 154.535,
       "JavaScript": 105.116,
-      "JSON": 95.043,
       "YAML": 28.774,
       "C#": 20,
       "Git": 14.906,
