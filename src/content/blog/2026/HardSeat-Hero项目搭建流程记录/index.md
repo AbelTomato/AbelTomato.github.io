@@ -2,7 +2,7 @@
 title: 'HardSeat-Hero项目搭建流程记录'
 description: '一个想买火车票回家的人的故事——硬座英雄，全项目的构建流程，以及领域模型、TTL缓存等概念的讲解'
 pubDate: '2026-06-28'
-updatedDate: '2026-06-28'
+updatedDate: '2026-06-30'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "Python", "React", "缓存", "数据库", "算法"]
 ---
@@ -1010,3 +1010,558 @@ def create_train_data_provider() -> TrainDataProvider:
         return _create_static_price_provider()
     raise ValueError(f"Unsupported TRAIN_DATA_PROVIDER: {provider_name}")
 ```
+
+其中`static`对应的是本地静态库，后面会引入
+
+---
+
+## 5.第五阶段：搜索算法设计
+
+### 5.1.候选中转站
+
+目前数据源已经打通可用，我们进入下一步，也就是中转方案的筛选
+
+筛选中转方案，就自然要从价格、地理位置等方向来筛选
+
+根据统计，当前中国的铁路客运站数量已经超过3300座，如果单纯地采用全量枚举的方法来查找方案，再加上网络I/O和搜索本身的消耗，会显得非常低效
+
+所以在这里，我提出了考虑采用地理经纬度做候选站剪枝的方法
+
+写到这里突然发现，按照地理位置和路线径向距离剪枝，可能会把最优解剪掉
+
+比如说从东莞到拉萨，中间可以在郑州或者西安转车，但是由于离径向距离太远，在第一步就被剪掉了，所以后面怎么搜索都搜不到方案
+
+在`CandidateTranferStationGenerator`中，这样筛选：
+
+```python
+class CandidateTranferStationGenerator:
+    def __init__(
+        self,
+        repository: StationMetadataRepository | None = None,
+        config: CandidataTransferConfig | None = None
+    ) -> None:
+        self.repository = repository or StationMetadataRepository()
+        self.config = config or CandidateTransferConfig()
+
+    def generate(self, query: RouteQuery) -> list[str]:
+        # 换乘枢纽和铁路通道先验
+        origin = self.repository.get(query.from_station)
+        destination = self.repository.get(query.to_station)
+        if origin is None or destination is None:
+            return self._fallback_low_price_hubs(query)
+
+        # 地理走廊过滤
+        ab_distance = haversin_km(origin, destination)
+        if ab_distance == 0:
+            return []
+
+        # 定义走廊距离
+        corridor_km = max(
+            self.config.min_corrider_km,
+            min(self.config.max_corridor_km, self.config.corridor_ratio * ab_distance),
+        )
+        scored: list[tuple[tuple[float, float, float, str], str]] = []
+        for station in self.repository.all():
+            if station.name in [origin.name, destination.name]:
+                continue
+
+            # 投影方向过滤
+            projection, perpendicular = project_station(origin, destination, station)
+            projection_margin_km = ab_distance * 0.25
+            if projection < -projection_margin_km or projection > ab_distance + projection_margin_km:
+                continue
+            if projection < self.config.endpoint_exclusion_km or projection > ab_distance - self.config.endpoint_exclusion_km:
+                continue
+
+            # 走廊宽度过滤
+            cheap_transfer_score = self._cheap_transfer_score(station.name)
+            if cheap_transfer_score > 0:
+                max_perpendicular = max(corridor_km, min(500, ab_distance * 0.75))
+                if perpendicular > max_perpendicular:
+                    continue
+            elif perpendicular > corridor_km:
+                continue
+            score = (-cheap_transfer_score, -station.centrality_score, perpendicular, station.name)
+            scored.append((score, station.name))
+        
+        scored.sort(key=lambda item: item[0])
+        return [name for _, name in scored[: self.config.max_candidates]]
+
+    def _fallback_low_price_hubs(self, query: RouteQuery) -> list[str]:
+        blocked = {query.from_station, query.to_station}
+        hubs = [
+            station.name
+            for station in self.repository.all()
+            if station.name in LOW_PRICE_TRANSFER_HUBS and station.name not in blocked
+        ]
+        return hubs[: self.config.max_candidates]
+
+    def _cheap_transfer_score(self, station_name: str) -> float:
+        if station_name in CHEAP_TRANSFER_SCORES:
+            return CHEAP_TRANSFER_SCORES[station_name]
+        if station_name in LOW_PRICE_TRANSFER_HUBS:
+            return 50
+        return 0
+```
+
+所以想了一下，决定重构原有的算法策略，但现在先把原来的讲一下吧
+
+候选站的生成依据包括：
+
+- 地理走廊过滤
+- 投影方向过滤
+- 铁路中心性
+- 换乘枢纽和铁路通道先验
+- 站名稳定排序
+
+原则就是先减少明显的不合理站，再把有限的远程请求用在可能更便宜的候选上，比如从东莞到厦门，不可能绕到东北，除非你疯了
+
+---
+
+### 5.2.一换搜索优化
+
+早起的组合逻辑是双层枚举
+
+```python
+for first in first_legs:
+    for second in second_legs:
+        ...
+```
+
+显然是 $O(nm)$ 的复杂度
+
+然后考虑做了点优化，首先第一段为空时，肯定不查询第二段了
+
+然后考虑了一下换乘时间的单调性，将第二段的车次按照发车时间排序，这样对于固定的第一段到车时间，可以直接二分找到后面的可换乘的第二段
+
+不对，现在再看这里，复杂度也不太对，算一下
+
+首先排序，是 $O(m \log m)$ 的复杂度不变
+
+然后看查找和遍历成本，对于第 $i$ 个第一段车次，假设二分出来的合法第二段有 $k_{i}$ 个，那么单次查找加处理的复杂度就是 $O(\log m + k_{i})$
+
+总的就是
+
+$$
+\sum^{n}_{i = 1} (\log m + k_{i}) = n \log m + \sum^{n}_{i = 1} k_{i}
+$$
+
+um，假设第二段所有车次的发车时间在全天均匀，对于第一段的某班车，它到达之后，后续可选择的第二段车次比例为 $p$
+
+那么，平均每班第一段车能匹配到的第二段数量就是 $E(k) = m \times p$
+
+总体大概这样：
+
+$$
+O(m \log m + n \log m + n \cdot m \cdot p)
+$$
+
+我们发现这极度依赖于数据。
+
+算了不分析了，再写下去成算法分析笔记了
+
+---
+
+### 5.3.算法流程
+
+#### 5.3.1.整体概述
+
+纵览整体流程，大概是这样：
+
+```mermaid
+graph TD
+    A[整体入口] --> B[搜索策略分支]
+    B --> C[缓存 / 限流]
+    C --> D[单中转]
+    D --> E[多中转最便宜路径]
+    E --> F[排序 / 去重 / 流式输出]
+    F --> G[诊断与遥测]
+```
+
+然后对于给定的`RouteQuery`，查询直达和中转车次，组合成为`TransferPlan`
+
+主要处理：
+
+- 查询直达车次
+- 查询 1 次中转方案
+- 当 `max_transfers >= 2` 时，用类似 Dijkstra/A* 的优先队列搜索多段路径
+- 控制远程查询次数、并发数、查询间隔
+- 使用内存缓存和可选 SQLite 持久缓存
+- 记录诊断信息和搜索遥测
+- 支持普通一次性搜索和流式搜索
+
+回顾一下模型：
+
+- `RouteQuery`
+
+```python
+class RouteQuery(BaseModel):
+    from_station: str = Field(min_length=1, max_length=64)
+    to_station: str = Field(min_length=1, max_length=64)
+    date: date
+    max_transfers: int = Field(default=1, ge=0, le=2)
+    min_transfer_minutes: int = Field(default=30, ge=0, le=360)
+    max_total_duration_minutes: int | None = Field(default=None, ge=60)
+    candidate_limit: int = Field(default=50, ge=1, le=200)
+    candidate_strategy: Literal["balanced", "direct_corridor", "wide_detour", "hub_first", "exhaustive_budgeted"] = "balanced"
+    max_detour_ratio: float | None = Field(default=None, ge=0, le=3)
+    max_detour_km: int | None = Field(default=None, ge=0, le=5000)
+    corridor_width_km: int | None = Field(default=None, ge=1, le=2000)
+
+    @field_validator("from_station", "to_station", mode="before")
+    @classmethod
+    def strip_station_name(cls, value: Any) -> str:
+        if isinstance(value, str):
+            return value.strip()
+        return value
+
+    @model_validator(mode="after")
+    def validate_distinct_stations(self) -> "RouteQuery":
+        if self.from_station == self.to_station:
+            raise ValueError("from_station and to_station must be different")
+        return self
+```
+
+- `TransferPlan`
+
+```python
+class TransferPlan(BaseModel):
+    total_price: Decimal
+    total_duration_minutes: int
+    transfer_minutes: int
+    transfer_stations: list[str]
+    segments: list[TrainSegment]
+```
+
+这里实际上有两套搜索算法
+
+```python
+async def _iter_plans(self, query: RouteQuery, context: SearchContext) -> AsyncIterator[TransferPlan]:
+    if query.max_transfers >= 2:
+        for plan in await self.cheapest_path_searcher.search(query, context):
+            yield plan
+        return
+
+    best_price = BestPriceTracker()
+    direct_segments = await self._search_segments(query.from_station, query.to_station, query, context)
+    ...
+
+    if query.max_transfers >= 1:
+        async for plan in self._iter_one_transfer(query, best_price, context):
+            ...
+```
+
+分支规则如下：
+
+```txt
+max_transfers == 0  -> 只查直达
+max_transfers == 1  -> 查直达 + 一次中转
+max_transfers >= 2  -> 走多中转路径搜索 CheapestPathSearcher
+```
+
+---
+
+#### 5.3.2.直达算法
+
+```python
+direct_segments = await self._search_segments(query.from_station, query.to_station, query, context)
+for segment in direct_segments:
+    if segment.lowest_price is not None:
+        plan = self._build_plan([segment])
+        if self._plan_within_duration_limit(plan, query):
+            await best_price.update(plan.total_price)
+            yield plan
+```
+
+逻辑就是直接查询从`from_station`到`to_station`的所有车次，然后过滤没有价格的，构成单段方案
+
+---
+
+#### 5.3.3.一次中转算法
+
+整体入口大概是这样：
+
+```python
+async def _iter_one_transfer(
+    self,
+    query: RouteQuery,
+    best_price: BestPriceTracker,
+    context: SearchContext,
+) -> AsyncIterator[TransferPlan]:
+    tasks = [
+        asyncio.create_task(self._one_transfer_plans_for_station(query, transfer_station, best_price, context))
+        for transfer_station in self._ranked_transfer_candidates(query)
+    ]
+    for task in asyncio.as_completed(tasks):
+        ...
+```
+
+其实核心思想也就只是搜索，然后剪枝，并且只有最低价剪枝
+
+为什么不加其他的剪枝？比如距离，时间什么的？
+
+review需求，因为我们只要最低价方案，**不计代价！**
+
+---
+
+#### 5.3.4.多中转算法
+
+##### 5.3.4.1.考虑A*
+
+当`max_transfers >= 2`时，使用`CheapestPathSearcher`类做核心搜索工作
+
+本质上是按累计价格排序的优先队列搜索，和Dijkstra差不多，然后我本来想加A*的，就像这样
+
+```python
+next_price + self._heuristic_lower_bound(...)
+```
+
+但实际上这个`_heuristic_lower_bound`里什么都没有
+
+```python
+def _heuristic_lower_bound(self, from_station: str, to_station: str) -> Decimal:
+    return Decimal("0")
+```
+
+因为感觉真的很难确定一个启发式下界，稍有不慎就剪去了最优解
+
+---
+
+##### 5.3.4.2.搜索状态
+
+```python
+@dataclass(frozen=True)
+class PathSearchState:
+    current_station: str
+    segments: tuple[TrainSegment, ...]
+    accumulated_price: Decimal
+    arrive_at: datetime | None
+    visited_stations: frozenset[str]
+
+    @property
+    def transfer_count(self) -> int:
+        return max(0, len(self.segments) - 1)
+```
+
+表示当前已经走到`current_station`，已经搭了`segments`这些车，累计花费`accumulated_price`，到达当前站的时间为`arrive_at`，已经访问过`visited_stations`
+
+这里`visited_stations`时为了防止有环的，但感觉其实没必要？因为铁路网络里不可能有有意义的环
+
+---
+
+##### 5.3.4.3.优先队列
+
+```python
+queue: list[tuple[Decimal, int, PathSearchState]] = []
+counter = 0
+initial_state = PathSearchState(
+    current_station=query.from_station,
+    segments=(),
+    accumulated_price=Decimal("0"),
+    arrive_at=None,
+    visited_stations=frozenset({query.from_station}),
+)
+heapq.heappush(queue, (Decimal("0"), counter, initial_state))
+```
+
+然后队列元素是`(priority, counter, state)`
+
+每次扩展时取出累计价格最低的状态
+
+```python
+while queue:
+    priority, _, state = heapq.heappop(queue)
+    if best_price is not None and priority > best_price:
+        break
+```
+
+---
+
+##### 5.3.4.4.尝试下一站
+
+```python
+def _next_stations(self, state: PathSearchState, query: RouteQuery, candidates: list[str]) -> list[str]:
+    stations = [query.to_station]
+    if state.transfer_count < query.max_transfers:
+        stations.extend(station for station in candidates if station not in state.visited_stations)
+    return stations
+```
+
+肯定是尽可能尝试直接到达终点，同时如果换乘次数还没到上限，就继续尝试候选中转站
+
+---
+
+##### 5.3.4.5.Pareto剪枝
+
+```python
+key = (state.current_station, state.transfer_count)
+entries = self._entries.setdefault(key, [])
+for entry in entries:
+    if entry.price <= state.accumulated_price and entry.arrive_at <= state.arrive_at:
+        return False
+```
+
+对于同一个当前站+换乘次数，如果之前已经有一个状态有价格更低且到达时间更早，则当前状态没有任何优势，直接丢弃
+
+---
+
+#### 5.3.5.排序算法
+
+无论直达、一次中转、多中转，最后都会按同一个排序：
+
+```python
+def _plan_sort_key(self, plan: TransferPlan) -> tuple[Decimal, int, int, int]:
+    return (
+        plan.total_price,
+        self._transfer_wait_comfort_penalty(plan),
+        len(plan.transfer_stations),
+        plan.total_duration_minutes,
+    )
+```
+
+也就是总价优先，换乘等待舒适度其次，换乘次数再后，最后是总耗时
+
+定义换乘等待惩罚
+
+```python
+if wait_minutes < COMFORTABLE_MIN_TRANSFER_MINUTES:
+    penalty += (COMFORTABLE_MIN_TRANSFER_MINUTES - wait_minutes) * 10
+elif wait_minutes > COMFORTABLE_MAX_TRANSFER_MINUTES:
+    penalty += wait_minutes - COMFORTABLE_MAX_TRANSFER_MINUTES
+```
+
+---
+
+### 5.4.并发设计
+
+在搜索过程中，并发主要出现在三个地方：
+
+- 一次中转候选站并发搜索
+- 远程查询并发数限制
+- 并发共享状态的锁保护
+
+#### 5.4.1.一次中转候选站并发搜索
+
+```python
+tasks = [
+    asyncio.create_task(self._one_transfer_plans_for_station(query, transfer_station, best_price, context))
+    for transfer_staion in self._ranked_transfer_candidates(query)
+]
+```
+
+这里其实就是对每个候选的中转站都创建一个异步任务，例如候选站为南京、郑州、武汉、长沙，则会同时启动这几个中转方案的查询任务
+
+```mermaid
+graph TD
+    A[开始：出发地 厦门] --> B[获取候选中转站列表]
+    B --> C{候选中转站}
+    C --> D1[南京]
+    C --> D2[郑州]
+    C --> D3[武汉]
+    C --> D4[长沙]
+
+    D1 --> E1[异步任务：查南京中转方案]
+    D2 --> E2[异步任务：查郑州中转方案]
+    D3 --> E3[异步任务：查武汉中转方案]
+    D4 --> E4[异步任务：查长沙中转方案]
+
+    E1 --> F[汇总所有中转方案结果]
+    E2 --> F
+    E3 --> F
+    E4 --> F
+
+    F --> G[输出可选中转方案列表]
+```
+
+然后收集结果的时候使用
+
+```python
+for task in asyncio.as_completed(tasks):
+    try:
+        plans = await task
+    except TrainDataProviderError:
+        continue
+    for plan in plans:
+        yield plan
+```
+
+这里`asyncio.as_completed(tasks)`就代表哪个任务先完成，就先处理哪个任务
+
+通过这样设计，可以保证慢中转站不会阻塞快中转站，且总搜索时间接近最慢的任务，而不是所有任务串行之和
+
+但同时，如果候选站很多，会一次性创建大量`task`，本身调度有开销
+
+---
+
+#### 5.4.2.远程查询并发限制
+
+```python
+self._remote_query_semphore = asyncio.Seamphore(max_concurrent_remote_queries)
+```
+
+然后调用`provider`的时候
+
+```python
+async with self._remote_query_semphore:
+    segments = await self.provider.search_segments(from_station, to_station, query)
+```
+
+代表同时最多只有`max_concurrent_remote_queries`个`provider.search_segments`正在执行，即使`_iter_one_transfer()`给很多中转站创建了`task`，但最终到外部数据源，也就是`provider`的并发也被限制住了
+
+由于这个`semaphore`直接包住了对`provider`的查询动作，所以它控制的就是`RouteSearchService`这个服务实例对`provider`的总并发压力，也就是它是服务级别的
+
+---
+
+#### 5.4.3.远程查询次数限制和锁
+
+```python
+async with context.remote_query_lock:
+    if context.remote_query_count >= self.max_remote_queries:
+        return []
+
+    should_wait = self.remote_query_interval_seconds > 0 and context.remote_query_count > 0
+    context.remote_query_count += 1
+    context.diagnostics.remote_query_count = context.remote_query_count
+```
+
+然后这里的`context.remote_query_count`是这个单次搜索中的远程查询计数
+
+为什么要加锁？因为一次中转可能会触发创建多个任务，多个任务同时进入`_search_segments()`，如果没有锁，则可能出现竞态
+
+---
+
+#### 5.4.4.远程查询间隔
+
+```python
+should_wait = self.remote_query_interval_seconds > 0 and context.remote_query_count > 0
+context.remote_query_count += 1
+
+if should_wait:
+    await asyncio.sleep(self.remote_query_interval_seconds)
+```
+
+---
+
+#### 5.4.5.当前最低价并发共享
+
+对于一次中转任务，共享同一个`best_price = BestPriceTracker()`
+
+定义`BestPriceTracker`为
+
+```python
+class BesttPriceTracker:
+    def __init__(self) -> None:
+        self._value: Decimal | None = None
+        self._lock = asyncio.Lock()
+
+    async def get(self) -> Decimal | None:
+        async with self._lock:
+            return self._value
+        
+    async def update(self, price: Decimal) -> None:
+        async with self._lock:
+            if self._value is None or self._value > price:
+                self._value = price
+```
+
+用来让多个中转站任务共享当前最低价，同时加锁防止竞态
