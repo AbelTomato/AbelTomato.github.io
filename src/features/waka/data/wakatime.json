@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-01T03:44:09.532Z",
-  "total": "192 hrs 1 min",
-  "daily_average": "4 hrs 44 mins",
+  "lastUpdate": "2026-07-01T08:18:15.032Z",
+  "total": "195 hrs 18 mins",
+  "daily_average": "4 hrs 49 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 207948.80200000003,
-      "total_text": "57h 45m",
+      "total_seconds": 219806.407,
+      "total_text": "61h 3m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 537536.472,
-      "total_text": "149h 18m",
+      "total_seconds": 549394.0769999999,
+      "total_text": "152h 36m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2114363.621,
-      "total_text": "587h 19m",
+      "total_seconds": 2126221.226,
+      "total_text": "590h 37m",
       "days_active": 124
     },
     "all_time": {
-      "total_seconds": 2114363.621,
-      "total_text": "587h 19m",
+      "total_seconds": 2126221.226,
+      "total_text": "590h 37m",
       "days_active": 124
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-01",
-      "seconds": 8381.363,
-      "text": "2 hrs 19 mins"
+      "seconds": 20238.968,
+      "text": "5 hrs 37 mins"
     }
   ],
   "heatmap": [
@@ -556,17 +556,17 @@
     },
     {
       "date": "2026-07-01",
-      "seconds": 8381.363
+      "seconds": 20238.968
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 615210.4539999999
+      "total_seconds": 622497.156
     },
     {
       "name": "C++",
-      "total_seconds": 390116.2520000001
+      "total_seconds": 393681.9350000001
     },
     {
       "name": "Python",
@@ -590,7 +590,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 41244.276
+      "total_seconds": 42081.244999999995
     },
     {
       "name": "SQL",
@@ -614,7 +614,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 3744.5330000000004
+      "total_seconds": 3861.8620000000005
     },
     {
       "name": "Git",
@@ -622,7 +622,7 @@
     },
     {
       "name": "CMake",
-      "total_seconds": 2509.534
+      "total_seconds": 2565.534
     },
     {
       "name": "Bash",
@@ -1654,10 +1654,13 @@
       "XML": 9
     },
     "2026-07-01": {
-      "Markdown": 4555.872,
+      "Markdown": 11842.574,
+      "C++": 3656.706,
       "Python": 3380.053,
-      "Other": 354.415,
-      "C++": 91.023
+      "JSON": 836.969,
+      "Other": 349.337,
+      "Git Config": 117.329,
+      "CMake": 56
     }
   }
 }
