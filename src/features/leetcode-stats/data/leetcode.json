@@ -210,13 +210,13 @@
     ]
   },
   "userContestRanking": {
-    "attendedContestsCount": 7,
-    "rating": 1992.5769047760691,
-    "globalRanking": 22605,
-    "localRanking": 6644,
-    "globalTotalParticipants": 884473,
-    "localTotalParticipants": 155233,
-    "topPercentage": 4.24
+    "attendedContestsCount": 8,
+    "rating": 2049.207498562173,
+    "globalRanking": 16518,
+    "localRanking": 5152,
+    "globalTotalParticipants": 884795,
+    "localTotalParticipants": 155236,
+    "topPercentage": 3.29
   },
   "userContestRankingHistory": [
     {
@@ -310,11 +310,25 @@
       "finishTimeInSeconds": 1782014829,
       "rating": 1992.577,
       "score": 19,
-      "ranking": 140,
+      "ranking": 139,
       "contest": {
         "title": "第 507 场周赛",
         "titleCn": "第 507 场周赛",
         "startTime": 1782009000
+      }
+    },
+    {
+      "attended": true,
+      "totalProblems": 4,
+      "trendingDirection": "UP",
+      "finishTimeInSeconds": 1782617957,
+      "rating": 2049.207,
+      "score": 19,
+      "ranking": 54,
+      "contest": {
+        "title": "第 508 场周赛",
+        "titleCn": "第 508 场周赛",
+        "startTime": 1782613800
       }
     }
   ],
