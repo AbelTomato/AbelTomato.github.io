@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 150,
+        "count": 151,
         "difficulty": "EASY"
       },
       {
-        "count": 137,
+        "count": 138,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 921,
+        "count": 920,
         "difficulty": "EASY"
       },
       {
-        "count": 2138,
+        "count": 2137,
         "difficulty": "MEDIUM"
       },
       {
@@ -320,6 +320,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 733491212,
+      "submitTime": 1782871352,
+      "question": {
+        "title": "Find the Safest Path in a Grid",
+        "translatedTitle": "找出最安全路径",
+        "titleSlug": "find-the-safest-path-in-a-grid",
+        "questionFrontendId": "2812"
+      }
+    },
+    {
+      "submissionId": 733486055,
+      "submitTime": 1782869163,
+      "question": {
+        "title": "Employees With Missing Information",
+        "translatedTitle": "丢失信息的雇员",
+        "titleSlug": "employees-with-missing-information",
+        "questionFrontendId": "1965"
+      }
+    },
+    {
       "submissionId": 733308712,
       "submitTime": 1782782081,
       "question": {
@@ -447,26 +467,6 @@
         "translatedTitle": "K 个元素的最大总和",
         "titleSlug": "maximum-total-sum-of-k-selected-elements",
         "questionFrontendId": "3974"
-      }
-    },
-    {
-      "submissionId": 732983406,
-      "submitTime": 1782612395,
-      "question": {
-        "title": "Maximum Element After Decreasing and Rearranging",
-        "translatedTitle": "减小和重新排列数组后的最大元素",
-        "titleSlug": "maximum-element-after-decreasing-and-rearranging",
-        "questionFrontendId": "1846"
-      }
-    },
-    {
-      "submissionId": 732982635,
-      "submitTime": 1782611877,
-      "question": {
-        "title": "Find Followers Count",
-        "translatedTitle": "求关注者的数量",
-        "titleSlug": "find-followers-count",
-        "questionFrontendId": "1729"
       }
     }
   ],
