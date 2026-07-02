@@ -2,7 +2,7 @@
 title: 'BeamDrop项目搭建流程记录'
 description: '一场由小学期程设大作业引发的惨剧，浅谈局域网传输中的网络与协议'
 pubDate: '2026-06-30'
-updatedDate: '2026-07-01'
+updatedDate: '2026-07-02'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "C++", "计网"]
 ---
@@ -673,3 +673,317 @@ reinterpret_cast<const char*>(&yes), sizeof(yes)
 它们合起来就做了一件事：把定义的开关变量`yes`安全递给操作系统的C语言内核，作为`setsockopt`的参数值，告诉操作系统，把`SO_REUSEADDR`这个socket选项打开
 
 等价于`SO_REUSEADDR = true;`
+
+---
+
+###### 3.2.3.3.4.组装监听地址: `sockaddr_in`
+
+```cpp
+sockaddr_in address();
+address.sin_family = AF_INET;
+address.sin_port = htons(port);
+```
+
+其中，对于`sockaddr_in`，它是IPv4的通讯录条目，在网络编程中，要让一个Socket去连接别人或者在本地监听，这里就是为了实现监听，需要获取目标IP地址和端口号，而这个`sockaddr_in`本质上是一个结构体类型，内部包装了这两样东西
+
+具体地，在`<netinet/in.h>`头文件中(也可能不一样，我本机环境是`<_ip_types.h>`)，有定义：
+
+```cpp
+struct sockaddr_in {
+    short sin_family;           // 地址族，必须是AF_INET
+    u_short sin_port;           // 16位端口号(必须是网络字节序)
+    struct in_addr sin_addr;    // 32位IPv4地址结构体
+    char sin_zero[8];           // 填充字节，单纯为了对齐内存，全为0
+};
+```
+
+然后`address.sin_family = AF_INET;`，前面就已经说到了，表示IPv4
+
+`address.sin_port = htons(port);`把本机字节序转为网络字节序
+
+为什么要转？因为现在主流的消费级CPU在内存里存多字节数据时，默认为小端序，也就是把低位字节放在低内存地址
+
+但是网络协议TCP/IP当年规定，网线上传输的数据必须为大端序
+
+`htons`，即`Host to Network short`，表示将本地主机的16位整数转成网络字节序，同理如果是32位的`long`，就叫`htonl`
+
+---
+
+###### 3.2.3.3.5.把字符串host转成二进制IP: `inet_pton()`
+
+```cpp
+if (inet_pton(AF_INET, host.c_str(), &address.sin_addr) != 1) {
+    detail::clost_socket(handle);
+    throw std::runtime_error("invalid bind host: " + host);
+}
+```
+
+`inet_pton`，即internet network presentation to network，把人类看得懂的IP地址转换成计算机底层网络传输所需要的二进制大整数
+
+然后函数原型大概是这样：
+
+```c
+int inet_pton(int af, const char *src, void *dst);
+```
+
+- `af`：地址族，`AF_INET`表示IPv4，`AF_INET6`表示IPv6
+- `src`：源字符串
+- `dst`：目的内存，指向接收二进制结果的结构体
+
+返回值是`1`成功，`0`输入格式错误，`-1`系统错误
+
+具体来说，执行结果类似：
+
+```text
+"127.0.0.1" -> 0x7f000001
+"0.0.0.0"   -> 0x00000000
+```
+
+`0.0.0.0` 的含义是监听所有本机 IPv4 网卡地址
+
+然后限制就是当前版本暂时只支持IPv4吧，后面可能会加IPv6
+
+---
+
+###### 3.2.3.3.6.绑定地址和端口: `bind()`
+
+```cpp
+if (bind(handle, reinterpret_cast<sockaddr*>(&address), sizeof(address)) != 0) {
+    detail::close_socket(handle);
+    throw detail::socket_error("bind failed");
+}
+```
+
+现在我们拿到了需要监听的IP地址和端口号，但要想真正实现监听，需要将这两个东西绑定到Socket即套接字句柄上
+
+如果没有`bind`，外界发来的数据包就不知道应该塞给哪个进程，`bind`之后，操作系统就知道发往这个IP和端口的数据，都接到`handle`这个套接字里面
+
+在Windows下，函数原型就是
+
+```c
+int bind(SOCKET s, const struct sockaddr *name, int namelen);
+```
+
+我们前面提到，Windows的无效套接字是`INVALID_SOCKET`，然后Linux的就是文件描述符`int`，所以在标准的C/Linux原型下就是
+
+```c
+int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+```
+
+底层就是个`UINT_PTR`，也就是无符号指针级别整数
+
+中间就是通用地址结构体指针，因为我们前面定义的`address`是`sockaddr_in`类型，但是底层C系统调用`bind`是一套比较远古的接口，只认一个通用的基类结构体叫做`sockaddr`，所以这里必须要强制转换过去
+
+---
+
+###### 3.2.3.3.7.开始监听: `listen(handle, 8)`
+
+```cpp
+if (listen(handle, 8) != 0) {
+    detail::close_socket(handle);
+    throw std::runtime_error("listen failed");
+}
+```
+
+需要澄清的是，这个`listen`函数意思准确上来说并不是等连接，而是一种宣告
+
+在调用`listen()`之前，`handle`只是一个普通的，既能发送也能接受的句柄
+
+然后调用`listen(handle, 8)`，就相当于向操作系统宣告，标记这个套接字为被动套接字，只负责监听
+
+然后对于后面的参数`8`，这个叫做`backlog`
+
+在TCP协议栈中，内核为每个正在处于监听状态的套接字维护两个队列：
+
+- **半连接队列(SYN Queue)**：客户端发送`SYN`过来，服务器返回`SYN-ACK`，但还没收到客户端的`ACK`，也就是处于三次握手的中间阶段
+- **全连接队列(Accept Queue)**：三次握手已经完成，连接建立成功，正在排队等待`accept()`处理
+
+而那个`8`就是全连接队列的最大长度，意思就是同一时间最多只能建立`8`个连接，也就是并发限制
+
+---
+
+###### 3.2.3.3.8.保存监听句柄
+
+```cpp
+listen_handle_ = detail::to_native_handle(handle);
+```
+
+然后BeamDrop中用`std::intptr_t`保存native handle，实现跨平台封装
+
+```cpp
+inline std::intptr_t to_native_handle(SocketHandle handle) {
+    return static_cast<std::intptr_t>(handle);
+}
+```
+
+然后后面的`accept_one()`会重新把它转为平台的socket handle
+
+```cpp
+inline SocketHandle to_socket_handle(std::intptr_t handle) {
+    return static_cast<SocketHandle>(handle);
+}
+```
+
+调用
+
+```cpp
+detail::to_socket_handle(liten_handle_);
+```
+
+为什么要这样转来转去的？原因还是Windows和Linux的类型不兼容问题，在Linux下是`int`，在Windows下是`SOCKET`，本质上是一个`unsigned __int64`
+
+所以为了让跨平台框架在两边都能编译成功，必须要找一个万能容器
+
+满足硬性条件：体积够大，能装下任何平台上的套接字，并且强转过去再过来的时候，没有精度损失
+
+显然`std::intptr_t`作为64位的类型，满足这个条件
+
+这样写就避免了这样的恶心的定义：
+
+```cpp
+#ifdef _WIN32
+    SOCKET liten_handle_;
+#else
+    int listen_handle_;
+#endif
+```
+
+---
+
+##### 3.2.3.4.服务端阻塞等待连接: `accept_one()`
+
+来，接下来让我们回到`run_serve()`
+
+在服务端监听套接字建立成功之后，就有
+
+```cpp
+auto connection = server.accept_one();
+```
+
+###### 3.2.3.4.1.`TcpConnection`
+
+其中`connection`是`TcpConnection`类型
+
+```cpp
+class TcpConnection {
+public:
+    using NativeHandle = std::intptr_t;
+
+    TcpConnection() = default;
+    explicit TcpConnection(NativeHandle handle);
+    ~TcpConnection();
+
+    TcpConnection(const TcpConnection&) = delete;
+    TcpConnection operator=(const TcpConnection&) = delete;
+
+    TcpConnection(TcpConnection&& other) noexcept;
+    TcpConnection operator=(TcpConnection&& other) noexcept;
+
+    [[nodiscard]] bool valid() const noexcept;
+    void close() noexcept;
+
+    void write_all(std::span<const std::uint8_t> bytes) const;
+    [[nodiscard]] std::vector<std::uint8_t> read_exact(std::size_t size) const;
+
+private:
+    NativeHandle handle_(-1);
+};
+```
+
+在这里讲一下类型吧，`intptr_t`其实就是一个有符号的整数类型，存在的唯一目的就是足够大，保证能装下任何一个有效的指针地址
+
+然后`uint8_t`其实就是`unsigned char`，因为网络上传输的都是原生的字节，也就是八个比特，直接写`char`会导致语意不清，以为是文本字符，这里主要是明确类型
+
+其中禁用了拷贝，但是允许移动语义，加一个`noexcept`防止它运行的时候偷偷调用拷贝
+
+`[[nodiscard]]`是一个警告属性，用于标记这个函数必须接着返回值，如果直接调用类似`connection.valid();`，就会直接编译错误
+
+然后`std::span`是C++20的新特性，简单来说，它就是一个非占有性的连续内存视图，它自己不分配内存，也不销毁内存，只是盯着一段已经存在的且连续的内存看
+
+它的内部实质上就只是一个胖指针，包含两个东西
+
+- 一个指向连续内存首部的指针`ptr`
+- 一个表示元素数量的长度`size`
+
+在没有`std::span`之前，如果要写一个处理连续数组的函数，有两种写法：
+
+```cpp
+void process(const int* arr, size_t size);  // 不安全，size传错直接内存越界
+```
+
+或者
+
+```cpp
+void process(const std::vector<int>& arr);  // 安全，但是如果用户手里如果是个C风格数组或者std::array，塞不进来
+```
+
+而`std::span`终结了这种混乱
+
+```cpp
+void process(std::span<const int> arr);
+
+int c_arr[] = {1, 2, 3};
+std::vector<int> vec = {4, 5, 6};
+std::array<int, 3> cpp_arr = {7, 8, 9};
+
+// 全都没问题
+process(c_arr);
+process(vec);
+process(array);
+```
+
+---
+
+###### 3.2.3.4.2.`accept_one()`
+
+实现：
+
+```cpp
+TcpConnection TcpServer::accept_one() const {
+    if (listen_handle_ == -1) {
+        throw std::runtime_error("cannot accept on closed TCP server");
+    }
+
+    sockaddr_in client_address{};   // IPv4
+#ifdef _WIN32
+    int address_length = sizeof(client_address);
+#else
+    socklen_t address_length = sizeof(client_address);
+#endif
+    const auto client = accept(detail::to_socket_handle(listen_handle_),
+                        reinterpret_cast<sockaddr*>(&client_address), &address_length);
+    if (client == detail::kInvalidSocket) {
+        throw detail::socket_error("accept failed");
+    }
+
+    return TcpConnection{detail::to_native_handle(client)};
+}
+```
+
+首先很显然的判断当前这个服务端的监听套接字到底有没有跑起来，没跑起来那玩个毛，直接抛异常
+
+然后就是跨平台编程不得不品的一环`#ifdef`，原因还是老生常谈的类型不一样的问题，这里不多说了
+
+然后是重点，这里用`accept`函数创建了一个`client`，不多bb，我们直接来看函数原型
+
+我这里是Windows环境，所以返回值就是`SOCKET`，如果是Linux就是`int`
+
+```cpp
+SOCKET accept(SOCKET s, struct sockaddr *addr, int *addrlen);
+```
+
+需要注意，这个`accept`是**阻塞**的，除非把监听套接字设置成了非阻塞`O_NONBLOCK`，服务端会一直停在这里，直到有客户端连接
+
+连接之前，服务端socket状态为`LISTEN`，`run_serve()`阻塞在`accept_one()`
+
+客户端发起连接后，TCP三次握手完成，`accept()`函数返回一个新的套接字socket
+
+`listen_handle_`表示继续监听socket，`client`表示这一个客户端连接socket
+
+然后包装成
+
+```cpp
+return TcpConnection{detail::to_native_handle(client)};
+```
+
+这个返回的`TcpConnection`之后用于收发数据，需要注意的是，监听socket和连接socket不是同一个，`TcpServer`持有的是监听句柄，`TcpConnection`持有的是连接句柄
