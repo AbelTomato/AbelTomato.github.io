@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-02T03:30:43.270Z",
-  "total": "198 hrs 45 mins",
-  "daily_average": "4 hrs 54 mins",
+  "lastUpdate": "2026-07-02T08:54:49.769Z",
+  "total": "203 hrs 7 mins",
+  "daily_average": "5 hrs 1 min",
   "stats": {
     "last_7_days": {
-      "total_seconds": 214833.382,
-      "total_text": "59h 40m",
+      "total_seconds": 230551.709,
+      "total_text": "64h 2m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 562352.929,
-      "total_text": "156h 12m",
+      "total_seconds": 578071.256,
+      "total_text": "160h 34m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2150225.451,
-      "total_text": "597h 17m",
+      "total_seconds": 2165943.778,
+      "total_text": "601h 39m",
       "days_active": 125
     },
     "all_time": {
-      "total_seconds": 2150225.451,
-      "total_text": "597h 17m",
+      "total_seconds": 2165943.778,
+      "total_text": "601h 39m",
       "days_active": 125
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-02",
-      "seconds": 11319.779,
-      "text": "3 hrs 8 mins"
+      "seconds": 27038.106,
+      "text": "7 hrs 30 mins"
     }
   ],
   "heatmap": [
@@ -560,21 +560,21 @@
     },
     {
       "date": "2026-07-02",
-      "seconds": 11319.779
+      "seconds": 27038.106
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 634607.1809999999
+      "total_seconds": 646590.5119999999
     },
     {
       "name": "C++",
-      "total_seconds": 394464.4080000001
+      "total_seconds": 395657.6050000001
     },
     {
       "name": "Python",
-      "total_seconds": 329804.68700000003
+      "total_seconds": 333428.42100000003
     },
     {
       "name": "TypeScript",
@@ -602,7 +602,7 @@
     },
     {
       "name": "C",
-      "total_seconds": 27879.025999999998
+      "total_seconds": 28022.414999999997
     },
     {
       "name": "HTML",
@@ -626,7 +626,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 3310.446
+      "total_seconds": 3426.639
     },
     {
       "name": "CMake",
@@ -1669,14 +1669,15 @@
       "Other": 3.703
     },
     "2026-07-02": {
-      "Markdown": 6385.646,
-      "Python": 2318.154,
-      "Other": 1588.888,
-      "Bash": 935.525,
+      "Markdown": 18368.977,
+      "Python": 5941.888,
+      "C++": 1199.12,
+      "Bash": 1051.718,
+      "Other": 247.371,
+      "C": 143.389,
       "Text": 51.041,
       "HTML": 19.311,
       "CSV": 10.015,
-      "C++": 5.923,
       "JSON": 5.276
     }
   }
