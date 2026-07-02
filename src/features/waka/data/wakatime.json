@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-02T09:27:49.096Z",
-  "total": "203 hrs 42 mins",
-  "daily_average": "5 hrs 2 mins",
+  "lastUpdate": "2026-07-02T13:58:25.616Z",
+  "total": "205 hrs 27 mins",
+  "daily_average": "5 hrs 4 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 232689.257,
-      "total_text": "64h 38m",
+      "total_seconds": 238964.23,
+      "total_text": "66h 22m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 580208.804,
-      "total_text": "161h 10m",
+      "total_seconds": 586483.777,
+      "total_text": "162h 54m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2168081.326,
-      "total_text": "602h 14m",
+      "total_seconds": 2174356.2989999996,
+      "total_text": "603h 59m",
       "days_active": 125
     },
     "all_time": {
-      "total_seconds": 2168081.326,
-      "total_text": "602h 14m",
+      "total_seconds": 2174356.2989999996,
+      "total_text": "603h 59m",
       "days_active": 125
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-02",
-      "seconds": 29175.654,
-      "text": "8 hrs 6 mins"
+      "seconds": 35450.627,
+      "text": "9 hrs 50 mins"
     }
   ],
   "heatmap": [
@@ -560,25 +560,25 @@
     },
     {
       "date": "2026-07-02",
-      "seconds": 29175.654
+      "seconds": 35450.627
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 648095.3229999999
+      "total_seconds": 649538.649
     },
     {
       "name": "C++",
-      "total_seconds": 396269.4980000001
+      "total_seconds": 396394.4500000001
     },
     {
       "name": "Python",
-      "total_seconds": 333428.42100000003
+      "total_seconds": 333960.1890000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 201781.00900000005
+      "total_seconds": 205446.52900000004
     },
     {
       "name": "JavaScript",
@@ -594,7 +594,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 42086.52099999999
+      "total_seconds": 42246.236999999994
     },
     {
       "name": "SQL",
@@ -622,7 +622,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 3482.7619999999993
+      "total_seconds": 3832.452999999999
     },
     {
       "name": "Bash",
@@ -1669,17 +1669,18 @@
       "Other": 3.703
     },
     "2026-07-02": {
-      "Markdown": 19873.788,
-      "Python": 5941.888,
-      "C++": 1811.013,
+      "Markdown": 21317.114,
+      "Python": 6473.656,
+      "TypeScript": 3665.52,
+      "C++": 1935.965,
       "Bash": 1051.718,
+      "Git": 370.535,
       "Other": 247.371,
+      "JSON": 164.992,
       "C": 143.389,
       "Text": 51.041,
-      "Git": 20.844,
       "HTML": 19.311,
-      "CSV": 10.015,
-      "JSON": 5.276
+      "CSV": 10.015
     }
   }
 }
