@@ -2,7 +2,7 @@
 title: 'BeamDrop项目搭建流程记录'
 description: '一场由小学期程设大作业引发的惨剧，浅谈局域网传输中的网络与协议'
 pubDate: '2026-06-30'
-updatedDate: '2026-07-02'
+updatedDate: '2026-07-03'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "C++", "计网"]
 ---
@@ -987,3 +987,464 @@ return TcpConnection{detail::to_native_handle(client)};
 ```
 
 这个返回的`TcpConnection`之后用于收发数据，需要注意的是，监听socket和连接socket不是同一个，`TcpServer`持有的是监听句柄，`TcpConnection`持有的是连接句柄
+
+具体可以理解为，`TcpServer`持有的那个监听句柄，就像是酒店门口的迎宾，只负责迎接客人，但是不提供服务，像是点餐由服务员来做，做饭由厨师来做
+
+---
+
+#### 3.2.4.客户端
+
+##### 3.2.4.1.启动流程
+
+客户端启动入口在`src/main.cpp`的`run_send()`，来看核心代码
+
+```cpp
+int run_send(int argc, char* argv[]) {
+    const auto options = parse_send_options(argc, argv);
+    const beamdrop::logger::Logger logger(options.log_file);
+    logger.info("send starting endpoint=" + options.endpoint.host + ':'
+                + std::to_string(options.endpoint.port) + "path=" + path.text(options.path));
+
+    try {
+        std::vector<beamdrop::filesystem::FileEntry> entries;
+        for (const auto& path : options.paths) {
+            auto scanned = beamdrop::filesystem::scan_files(path);
+            entries.insert(entries.end(), scanned.begin(), scanned.end());
+        }
+        logger.info("send scanned file_count=" + std::to_string(entries.size()));
+
+        beamdrop::network::TcpClient client;
+        auto connection = client.connect(options.endpoint.host, options.endpoint.port);
+        logger.info("send connected endpoint=" + options.endpoint.host + ':'
+                     + std::to_string(options.endpoint.port));
+
+        beamdrop::protocol::Packet hello;
+        hello.header.type = beamdrop::protocol::PacketType::Hello;
+        const beamdrop::transfer::TransferManifest manifest{
+            static_cast<std::uint64_t>(entries.size()), total_entry_bytes(entries)
+        };
+        logger.info("send manifest file_count=" + std::to_string(manifest.file_count)
+                    + " total_bytes=" + std::to_string(manifest.total_bytes));
+        hello.payload = beamdrop::transfer::TransferManifestCodec::encode(manifest);
+        beamdrop::protocol::write_packet(connection, hello);
+
+        beamdrop::transfer::Sender sender{connection, print_progress, options.chunk_size};
+        sender.send_files(entries);
+
+        beamdrop::protocol::Packet finish;
+        finish.header.type = beamdrop::protocol::PacketType::Finish;
+        beamdrop::protocol::write_packet(connection, finish);
+
+        std::cout << "beamdrop send sent " << entries.size() << " file(s) to "
+                    << options.endpoint.host << ':' << options.endpoint.port << '\n';
+        logger.info("send completed file_count=" + std::to_string(entries.size()));
+        return 0;
+    } catch (const std::exception& error) {
+        logger.error(std::string{"send failed: "} + error.what());
+        throw;
+    }
+}
+```
+
+还是用图画出来流程：
+
+```mermaid
+flowchart TD
+    A[run_send] --> B[parse_send_options]
+    B --> C[scan_files]
+    C --> D[TcpClient::connect(host, port)]
+    D --> E[write_packet(HELLO)]
+    E --> F[Sender::send_files]
+    F --> G[write_packet(FINISH)]
+```
+
+---
+
+##### 3.2.4.2.客户端参数解析: `parse_send_options()`
+
+同样的，有默认值：
+
+```cpp
+struct SendOptions {
+    std::vector<std::filesystem::path> paths;
+    Endpoint endpoint{"", 0};
+    bool has_endpoint = false;
+    std::filesystem::path log_file = "logs/beamdrop.log";
+    std::size_t chunk_size = 1024 * 1024;
+};
+```
+
+对于用户，需要输入类似：
+
+```bash
+beamdrop send <path...> -- to <host:port>
+```
+
+当然也有类似于`--config`, `--log-file`, `--chunk-size`的参数，但解析逻辑和前面类似，就不讲了
+
+其中`--to`会由`parse_endpoint()`函数解析
+
+```cpp
+Endpoint parse_endpoint(std::string& text) {
+    const auto separator = text.rfind(':');
+    if (seperator == std::string::npos || separator == 0 || separator + 1 >= text.size()) {
+        throw std::runtime_error("--to must be host:port format");
+    }
+
+    return Endpoint{text.substr(0, separator), parse_port(text.substr(separator + 1))};
+}
+```
+
+然后`parse_port()`会检查端口不能超过`65535`，同时将其转为`std::uint16_t`类型
+
+```cpp
+std::uint16_t parse_port(const std::string& port) {
+    const auto value = std::stoul(text);
+    if (value > 65535) {
+        throw std::runtime_error("port out of range: " + text);
+    }
+    return static_cast<std::uint16_t>(value);
+}
+```
+
+---
+
+##### 3.2.4.3.客户端建立TCP连接: `TcpClient::connect()`
+
+然后后面的就是
+
+```cpp
+const beamdrop::logger::Logger logger{options.log_file};
+logger.info("send starting endpoint=" + options.endpoint.host + ':'
+            + std::to_string(options.endpoint.port) + " paths=" + paths_text(options.paths));
+```
+
+建立日志，以及
+
+```cpp
+std::vector<beamdrop::filesystem::FileEntry> entries;
+for (const auto& path : options.paths) {
+    auto scanned = beamdrop::filesystem::scan_files(path);
+    entries.insert(entries.end(), scanned.begin(), scanned.end());
+}
+logger.info("send scanned file_count=" + std::to_string(entries.size()));
+```
+
+读取文件，就不提了，重点是后面的
+
+```cpp
+beamdrop::netword::TcpClient client;
+auto connection = client.connect(options.endpoint.host, options.endpoint.port);
+```
+
+`client.connect()`的具体实现在`src/network/TcpClient.cpp`，我们来看：
+
+```cpp
+TcpConnection TcpClient::connect(const std::string& host, std::uint16_t port) const {
+    detail::ensure_socket_runtime();
+
+    addrinfo hints{};
+    hints.ai_family = AF_INET;
+    hints.ai_socktype = SOCK_STREAM;
+    hints.ai_protocol = IPPROTO_TCP;
+
+    addrinfo* result = nullptr;
+    const auto port_text = std::to_string(port);
+    if (getaddrinfo(host.c_str(), port_text.c_str(), &hints, &result) != 0) {
+        throw std::runtime_error("getaddrinfo failed for host " + host);
+    }
+
+    detail::SocketHandle connected = detail::kInvalidSocket;
+    for (addrinfo* item = result; item != nullptr; item = item->ai_next) {
+        const auto handle = socket(item->ai_family, item->ai_socktype, item->ai_protocol);
+        if (handle == detail::kInvalidSocket) {
+            continue;
+        }
+
+        if (::connect(handle, item->ai_addr, static_cast<int>(item->ai_addrlen)) == 0) {
+            connected = handle;
+            break;
+        }
+
+        detail::close_socket(handle);
+    }
+
+    freeaddrinfo(result);
+
+    if (connected == detail::kInvalidSocket) {
+        throw detail::socket_error("connect failed");
+    }
+
+    return TcpConnection(detail::to_native_handle(connected));
+}
+```
+
+我们接下来逐步把它拆开讲解
+
+---
+
+###### 3.2.4.3.1.初始化socket环境
+
+这里和server那边一样，都是要先初始化socket，确保Windows下`WSAStartup()`已经执行
+
+```cpp
+detail::ensure_socket_runtime();
+```
+
+---
+
+###### 3.2.4.3.2.准备地址解析参数: `addrinfo hints`
+
+```cpp
+addrinfo hints{};
+hints.ai_family = AF_INET;
+hints.ai_socktype = SOCK_STREAM;
+hints.ai_protocol = IPPROTO_TCP;
+```
+
+这个东西叫`hints`，顾名思义，就是在调用`getaddrinfo`去解析域名或者IP之前，先给系统提的硬性筛选条件
+
+- `ai_family = AF_INET`：只要IPv4
+- `ai_socktype = SOCK_STREAM`：只要流式传输，提供一个面向连接的、可靠的字节流管道
+- `ai_protocol = IPPROTO_TCP`：只要TCP协议
+
+---
+
+###### 3.2.4.3.3.解析目标地址
+
+```cpp
+addrinfo* result = nullptr;
+const auto port_text = std::to_string(port);
+if (getaddrinfo(host.c_str(), port_text.c_str(), &hints, &result) != 0) {
+    throw std::runtime_error("getaddrinfo failed for host " + host);
+}
+```
+
+一步步来看：
+
+首先声明了一个`result`，这个`result`实际上是个指针的指针的接收者，当`getaddrinfo`成功之后，会在堆上动态分配一个链表，里面存着解析出来的各种IP地址信息，然后这个`result`就指向这个链表的头节点
+
+然后将`port`转成`string`类型，便于后面处理
+
+接下来就是解析目标地址函数`getaddrinfo`，来看看函数原型
+
+```c
+int getaddrinfo(const char *nodename, const char *servname, const struct addrinfo *hints, struct addrinfo **res);
+```
+
+前面两个参数就分别是主机IP和端口号，由于接口太老，只能转为C风格字符串也就是`char*`传进去
+
+然后`hints`就是我们前面的配置，往里面传入这个`addrinfo*`类型的地址
+
+最后可以看到那个`**res`，就代表它是指针的指针，我们这里通过对`addrinfo*`类型的`result`再取一次址得到，用于存储指向链表头指针的指针地址
+
+总结一下`getaddrinfo()`的作用就是，把`host` + `port`解析成一个或者多个可以`connect`的`sockaddr`
+
+为什么会有多个`sockaddr`？因为前面传入的`host`可能会解析出好几个不同的IP地址，然后`getaddrinfo`会把这些所有可能连得通的组合，塞进一个由`addrinfo`结构体串起来的单向链表里面，结构类似于这样：
+
+```mermaid
+flowchart LR
+    result[("result 指针")] -->|指向| node1
+
+    node1["addrinfo 节点 1<br>ai_family: AF_INET6<br>ai_socktype: SOCK_STREAM<br>ai_addr: [IPv6地址]<br>ai_next: ──────>"]
+    node1 -->|ai_next| node2
+
+    node2["addrinfo 节点 2<br>ai_family: AF_INET<br>ai_socktype: SOCK_STREAM<br>ai_addr: [IP地址A]<br>ai_next: ──────>"]
+    node2 -->|ai_next| node3
+
+    node3["addrinfo 节点 3<br>ai_family: AF_INET<br>ai_socktype: SOCK_STREAM<br>ai_addr: [IP地址B]<br>ai_next: nullptr"]
+```
+
+---
+
+###### 3.2.3.4.4.对解析结果逐个尝试socket + connect
+
+```cpp
+detail::SocketHandle connected = detail::kInvalidSocket;
+for (addrinfo* item = result; item != nullptr; item = item->ai_next) {
+    const auto handle = socket(item->ai_family, item->ai_socktype, item->ai_protocol);
+    if (handle == detail::kInvalidSocket) {
+        continue;
+    }
+
+    if (::connect(handle, item->ai_addr, static_cast<int>(item->ai_addrlen)) == 0) {
+        connected = handle;
+        break;
+    }
+
+    detail::close_socket(handle);
+}
+```
+
+每个节点`item`里面有三个最核心的字段：
+
+- `ai_family` / `ai_socktype` / `ai_protocol`：这是套接字的配置模板，其实也就是我们前面的`hints`，操作系统根据它们的值决定是创建一个IPv4的TCP socket，还是一个IPv6的UDP socket
+- `ai_addr`：指向一个底层的结构体`sockaddr`，里面塞满了真正的IP地址和端口号
+- `ai_next`：链表的指针域，指向下一个备选方案
+
+所以上面这段代码的逻辑就很清晰了，就是逐个遍历，谁先连到算谁的
+
+循环体就是标准的单向链表遍历，这个不说了，看内部
+
+首先对于当前节点，拿着这个配置去尝试建立套接字，如果建立失败了就还是`kInvalidSocket`，直接下一个
+
+然后如果建立成功，就尝试连接，也就是后面的`connect()`
+
+如果连接成功，就取当前这个，赋给`connected`，然后`break`跑路
+
+如果没成功，就要记得`close_socket()`断开连接，不然白白耗费文件描述符
+
+```mermaid
+flowchart TD
+    A[开始遍历候选地址] --> B{是否还有未尝试的地址？}
+    B -->|是| C[创建 socket]
+    C --> D[调用 connect 连接该地址]
+    D --> E{连接是否成功？}
+    E -->|成功| F[保存 connected 状态并跳出循环]
+    E -->|失败| G[关闭这个 socket]
+    G --> B
+    B -->|否| H[结束]
+    F --> H
+```
+
+通过这一步，操作系统层面的连接已经建立
+
+---
+
+###### 3.2.3.4.5.释放地址解析结果
+
+```cpp
+freeaddrinfo(result);
+```
+
+这里一定要记得释放`getaddrinfo()`分配的大链表内存
+
+---
+
+###### 3.2.3.4.6.返回`TcpConnection`
+
+```cpp
+if (connected == detail::kInvalidSocket) {
+    throw detail::socket_error("connect failed");
+}
+
+return TcpConnection{detail::to_native_handle(connected)};
+```
+
+如果所有候选地址都失败，则抛出异常，成功则返回`TcpConnection`连接
+
+---
+
+##### 3.2.4.4.`TcpConnection`
+
+在继续后面的HELLO的发送之前，我们先看看`TcpConnection`背后数据的读写，在上面已经给出过`TcpConnection`的定义，我们这边不再说了，只具体看`write_all()`和`read_exact()`两个函数的具体实现
+
+###### 3.2.4.4.1.写数据: `write_all()`
+
+在`src/network/TcpConnection.cpp`中有实现：
+
+```cpp
+void TcpConnection::write_all(std::span<const std::uint8_t> bytes) const {
+    if (!valid()) {
+        throw std::runtime_error("cannot write to invalid TCP connection");
+    }
+
+    std::size_t sent_total = 0;
+    while (sent_total < bytes.size()) {
+        const auto remaining = bytes.size() - sent_total;
+        const int chunk_size = remaining > static_cast<std::size_t>(INT_MAX)
+                                    ? INT_MAX
+                                    : static_cast<int>(remaining);
+        const int sent = send(detail::to_socket_handle(handle_),
+                                reinterpret_cast<const char*>(bytes.data() + sent_total), chunk_size, 0);
+        if (sent <= 0) {
+            throw detail::socket_error("sent failed");
+        }
+        sent_total += static_cast<std::size_t>(sent);
+    }
+}
+```
+
+一句话总结，这段代码实现的实际上是一个应用层单向阻塞式可靠投递回路，它的每一行都在处理一件事：怎么在不稳定的网络系统调用，实现高层逻辑所需要的绝对发送
+
+首先是惯例的前置检查，进入任何系统调用之前，先验证内核句柄`handle_`的有效性，防止调用无效套接字，引发操作系统的`EBADF`即错误文件描述符报错
+
+随后是动态流控分块，对`chunk_size`大小进行限制
+
+- **API协议对齐**：标准POSIX也就是在Linux平台下，`send`函数的第三个参数是`size_t`类型，但是在Windows下是`int`，或者某些特殊平台的特殊包装下，输入参数会被限制在`INT_MAX`字节
+- **大对象切片逻辑**：所以这里的逻辑就是为了防止你一次性塞进去一个大于2GB也就是`INT_MAX`字节的`std::span`导致数据溢出或者符号截断，这里就是典型的在应用层控制网络层行为，确保丢给`send`的尺寸永远在安全范围内
+
+然后就是指针偏移和内核投递，也就是那个`send`
+
+看`send`的函数原型：
+
+```c
+int send(SOCKET s, const char *buf, int len, int flags);
+```
+
+来具体看看这四个参数：
+
+- `s`：也就是套接字文件描述符，操作系统拿到这个东西之后，去进程的文件描述符表里面查对应的`socket`结构体，获取类似本地IP，端口，对端IP，端口以及连接专用的内核发送和接收的缓冲区
+- `buf`：用户态缓冲区指针，表示数据在用户态内存中的首地址，这里实现了偏移，通过`bytes.data() + sent_total`实现类似底层滑动窗口的指针前移，每次成功发送 $N$ 字节，用户态指针就向后移动 $N$，从而保证下次投递的绝对是未发送的数据
+- `len`：要发送的字节数，但需要注意的是，这个数字是你期望发送的量，实际不一定能发送这么多。假如你需要发送64KB的数据，但实际上内核缓冲区只剩下10KB的容量，在阻塞模式下会卡住继续等待拷贝，在非阻塞模式下，直接返回`10240`即10KB，剩下的54KB动都不动
+- `flags`：行为标志位，这里传`0`表示默认行为，有socket属性决定，但也有另外的参数
+  - `MSG_NOSIGNAL`：在Linux下，如果对方断开了连接，触发RST，继续调用`send`时，内核默认会向进程发送一个`SIGPIPE`信号，直接杀死程序，而这个参数就可以让`send`只返回错误码
+  - `MSG_DONTWAIT`：强制将此次`send`变为非阻塞
+  - `MSG_OOB`：发送带外数据，也就是紧急数据
+
+上面提到了`buf`，这个就是缓冲区，这里需要讲一下，在网络编程中分为两个极其重要的缓冲区：
+
+- **用户态缓冲区**：在这里也就是通过`std::span<std::uint8_t> bytes`传进来的那一大堆数据，存在于**程序的内存空间**里
+- **内核态缓冲区**：这是操作系统为每个TCP连接偷偷开辟的一块物理内存。具体来说，当调用`send`的时候，会依次发生下面的几件事：
+  - 搬运数据：也就是数据从用户态缓冲区到内核态缓冲区之间的转移
+  - 返回成功：只要内核态缓冲区能装下，操作系统就会回头告诉程序这里OK了，于是`send`返回成功写入的字节数
+  - 网卡异步发送：需要注意，此时数据可能还没发送到网线上，但程序已经在继续往下跑了，网卡在后台将内核缓冲区里的数据切成一小块一小块发送出去
+
+---
+
+###### 3.2.4.4.2.读数据: `read_exact()`
+
+```cpp
+std::vector<std::uint8_t> TcpConnection::read_exact(std::size_t size) const {
+    if (!valid()) {
+        throw std::runtime_error("cannot read from invalid TCP connection");
+    }
+
+    std::vector<std::uint8_t> bytes(size);
+    std::size_t received_total = 0;
+    while (received_total < size) {
+        const auto remaining = size - received_total;
+        const int chunk_size = remaining > static_cast<std::size_t>(INT_MAX)
+                                    ? INT_MAX
+                                    : static_cast<int>(remaining);
+        const int received = recv(detail::to_socket_handle(handle_),
+                                    reinterpret_cast<char*>(bytes.data() + received_total), chunk_size, 0);
+        if (received <= 0) {
+            throw detail::socket_error("recv failed");
+        }
+        received_total += static_cast<std::size_t>(received);
+    }
+
+    return bytes;
+}
+```
+
+这里的逻辑和`write_all()`类似，但关键点在于TCP传输是字节流，而不保留消息边界
+
+也就是说，发送端一次`send()`的内容，接收端可能要用多次`recv`来完成，也可能一次`recv`拿到多个上层消息的一部分
+
+因此在BeamDrop中，不直接说我要读一个包，而是
+
+```mermaid
+graph LR
+    A[开始] --> B[读取固定长度 Header]
+    B --> C{是否读取成功?}
+    C -- 否 --> F[报错/重试]
+    C -- 是 --> D[从 Header 解析 Payload 长度]
+    D --> E[精确读取 Payload 长度字节]
+    E --> G{是否读取完整?}
+    G -- 否 --> H[报错/重试]
+    G -- 是 --> I[结束]
+```
+
+然后`read_exact(size)`的作用就是，不读够`size`字节不返回
