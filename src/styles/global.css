@@ -18,12 +18,34 @@
     color-scheme: dark;
   }
   .prose h2 {
-    @apply text-3xl font-bold mt-10 mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 block;
+    @apply mt-12 mb-6 block border-b border-border pb-3 text-4xl font-extrabold tracking-tight;
     color: var(--tw-prose-headings);
   }
   .prose h3 {
-    @apply text-xl font-semibold mt-8 mb-4;
+    @apply mt-10 mb-4 text-2xl font-bold tracking-tight;
+    color: var(--tw-prose-headings);
   }
+  .prose h4 {
+    @apply mt-8 mb-3 border-l-4 border-primary/60 pl-3 text-xl font-bold;
+    color: var(--tw-prose-headings);
+  }
+  .prose h5 {
+    @apply mt-7 mb-2 text-lg font-semibold;
+    color: var(--tw-prose-headings);
+  }
+  .prose h5::before {
+    content: "# ";
+    @apply text-muted-foreground;
+  }
+  .prose h6 {
+    @apply mt-6 mb-2 text-lg font-bold tracking-normal;
+    color: var(--tw-prose-headings);
+  }
+  .prose h6::before {
+    content: "› ";
+    @apply text-muted-foreground;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
@@ -216,7 +238,8 @@ pre code {
 
 .prose .code-block__toggle-mark {
   @apply block size-4 shrink-0 bg-current transition-transform duration-200 ease-out;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E")
+    center / contain no-repeat;
 }
 
 .prose .code-block[data-collapsed="true"] .code-block__toggle-mark {
