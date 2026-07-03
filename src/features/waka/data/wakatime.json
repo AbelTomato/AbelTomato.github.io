@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-03T09:16:51.115Z",
-  "total": "211 hrs 36 mins",
-  "daily_average": "5 hrs 13 mins",
+  "lastUpdate": "2026-07-03T10:58:09.097Z",
+  "total": "212 hrs 1 min",
+  "daily_average": "5 hrs 14 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 225935.33299999998,
-      "total_text": "62h 45m",
+      "total_seconds": 227427.191,
+      "total_text": "63h 10m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 605492.404,
-      "total_text": "168h 11m",
+      "total_seconds": 606984.262,
+      "total_text": "168h 36m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2202660.76,
-      "total_text": "611h 51m",
+      "total_seconds": 2204152.618,
+      "total_text": "612h 15m",
       "days_active": 126
     },
     "all_time": {
-      "total_seconds": 2202660.76,
-      "total_text": "611h 51m",
+      "total_seconds": 2204152.618,
+      "total_text": "612h 15m",
       "days_active": 126
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-03",
-      "seconds": 21626.876,
-      "text": "6 hrs"
+      "seconds": 23118.734,
+      "text": "6 hrs 25 mins"
     }
   ],
   "heatmap": [
@@ -564,13 +564,13 @@
     },
     {
       "date": "2026-07-03",
-      "seconds": 21626.876
+      "seconds": 23118.734
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 671274.7409999999
+      "total_seconds": 671877.7509999999
     },
     {
       "name": "C++",
@@ -578,7 +578,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 335304.2780000001
+      "total_seconds": 335907.2050000001
     },
     {
       "name": "TypeScript",
@@ -590,7 +590,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 100963.57400000001
+      "total_seconds": 101029.839
     },
     {
       "name": "Java",
@@ -614,7 +614,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 9640.878
+      "total_seconds": 10636.319000000001
     },
     {
       "name": "MDX",
@@ -626,7 +626,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 3893.979999999999
+      "total_seconds": 3978.061999999999
     },
     {
       "name": "Bash",
@@ -1689,11 +1689,13 @@
       "CSV": 10.015
     },
     "2026-07-03": {
-      "Markdown": 16552.414,
-      "Other": 2243.812,
+      "Markdown": 17155.424,
       "C++": 1672.08,
-      "Python": 972.602,
-      "Git": 128.922,
+      "Python": 1575.529,
+      "Other": 1383.945,
+      "CSS": 995.441,
+      "Git": 213.004,
+      "Astro": 66.265,
       "CMake": 29.438,
       "Bash": 19.515,
       "JSON": 8.093
