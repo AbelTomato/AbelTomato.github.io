@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 156,
+        "count": 157,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 915,
+        "count": 914,
         "difficulty": "EASY"
       },
       {
@@ -194,7 +194,7 @@
         }
       },
       {
-        "score": 41,
+        "score": 42,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -334,6 +334,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734105034,
+      "submitTime": 1783179004,
+      "question": {
+        "title": "Find Users with High Token Usage",
+        "translatedTitle": "查找高 tokens 使用量的用户",
+        "titleSlug": "find-users-with-high-token-usage",
+        "questionFrontendId": "3793"
+      }
+    },
+    {
       "submissionId": 733983196,
       "submitTime": 1783130459,
       "question": {
@@ -471,16 +481,6 @@
         "translatedTitle": "每个产品在不同商店的价格",
         "titleSlug": "rearrange-products-table",
         "questionFrontendId": "1795"
-      }
-    },
-    {
-      "submissionId": 733128246,
-      "submitTime": 1782692702,
-      "question": {
-        "title": "Number of Strings That Appear as Substrings in Word",
-        "translatedTitle": "作为子字符串出现在单词中的字符串数目",
-        "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
-        "questionFrontendId": "1967"
       }
     }
   ],
