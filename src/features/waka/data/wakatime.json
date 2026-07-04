@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-07-03T19:20:49.957Z",
-  "total": "213 hrs 59 mins",
-  "daily_average": "5 hrs 17 mins",
+  "lastUpdate": "2026-07-04T02:49:17.263Z",
+  "total": "209 hrs 35 mins",
+  "daily_average": "5 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 234496.934,
-      "total_text": "65h 8m",
+      "total_seconds": 210579.838,
+      "total_text": "58h 29m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 614054.0049999999,
-      "total_text": "170h 34m",
+      "total_seconds": 597458.713,
+      "total_text": "165h 57m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2211222.3609999996,
-      "total_text": "614h 13m",
-      "days_active": 126
+      "total_seconds": 2217334.3609999996,
+      "total_text": "615h 55m",
+      "days_active": 127
     },
     "all_time": {
-      "total_seconds": 2211222.3609999996,
-      "total_text": "614h 13m",
-      "days_active": 126
+      "total_seconds": 2217334.3609999996,
+      "total_text": "615h 55m",
+      "days_active": 127
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-27",
-      "seconds": 30029.096,
-      "text": "8 hrs 20 mins"
-    },
     {
       "date": "2026-06-28",
       "seconds": 31769.925,
@@ -59,6 +54,11 @@
       "date": "2026-07-03",
       "seconds": 30188.477,
       "text": "8 hrs 23 mins"
+    },
+    {
+      "date": "2026-07-04",
+      "seconds": 6112,
+      "text": "1 hr 41 mins"
     }
   ],
   "heatmap": [
@@ -565,12 +565,16 @@
     {
       "date": "2026-07-03",
       "seconds": 30188.477
+    },
+    {
+      "date": "2026-07-04",
+      "seconds": 6112
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 677457.813
+      "total_seconds": 677542.985
     },
     {
       "name": "C++",
@@ -578,7 +582,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 336954.37400000007
+      "total_seconds": 342947.20200000005
     },
     {
       "name": "TypeScript",
@@ -1702,6 +1706,11 @@
       "Bash": 19.515,
       "SQL": 9.922,
       "JSON": 8.093
+    },
+    "2026-07-04": {
+      "Python": 5992.828,
+      "Markdown": 85.172,
+      "Other": 34
     }
   }
 }
