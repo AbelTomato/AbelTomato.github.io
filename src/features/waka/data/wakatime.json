@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-05T08:51:37.927Z",
-  "total": "216 hrs 19 mins",
-  "daily_average": "5 hrs 20 mins",
+  "lastUpdate": "2026-07-05T13:37:17.659Z",
+  "total": "218 hrs 52 mins",
+  "daily_average": "5 hrs 24 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 208648.981,
-      "total_text": "57h 57m",
+      "total_seconds": 217834.002,
+      "total_text": "60h 30m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 626421.2819999999,
-      "total_text": "174h 0m",
+      "total_seconds": 635606.3029999998,
+      "total_text": "176h 33m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2247173.4289999995,
-      "total_text": "624h 12m",
+      "total_seconds": 2256358.4499999993,
+      "total_text": "626h 45m",
       "days_active": 128
     },
     "all_time": {
-      "total_seconds": 2247173.4289999995,
-      "total_text": "624h 12m",
+      "total_seconds": 2256358.4499999993,
+      "total_text": "626h 45m",
       "days_active": 128
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-05",
-      "seconds": 16728.944,
-      "text": "4 hrs 38 mins"
+      "seconds": 25913.965,
+      "text": "7 hrs 11 mins"
     }
   ],
   "heatmap": [
@@ -572,13 +572,13 @@
     },
     {
       "date": "2026-07-05",
-      "seconds": 16728.944
+      "seconds": 25913.965
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 688748.495
+      "total_seconds": 690085.802
     },
     {
       "name": "C++",
@@ -586,7 +586,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 352756.0350000001
+      "total_seconds": 361255.2620000001
     },
     {
       "name": "TypeScript",
@@ -1718,12 +1718,12 @@
       "Text": 6.903
     },
     "2026-07-05": {
+      "Python": 11436.075,
+      "Markdown": 6314.961,
       "C++": 5744.965,
-      "Markdown": 4977.654,
-      "Python": 2936.848,
       "TypeScript": 2252.014,
-      "Other": 651.513,
-      "JSON": 165.95
+      "JSON": 165.95,
+      "Other": 0
     }
   }
 }
