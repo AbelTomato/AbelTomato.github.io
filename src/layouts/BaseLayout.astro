@@ -70,7 +70,7 @@ const { title, description } = Astro.props;
       <slot />
     </div>
     <Footer />
-    <FloatingTools client:idle />
+    <FloatingTools client:idle transition:persist />
     <MermaidRenderer />
   </body>
 </html>

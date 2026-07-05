@@ -15,6 +15,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://abel-tomato-github-io.vercel.app",
   base: "/",
+  prefetch: true,
   integrations: [
     mdx({
       remarkPlugins: [remarkMath],

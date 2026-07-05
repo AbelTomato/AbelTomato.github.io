@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { navigate } from "astro:transitions/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@components/ui/button";
@@ -11,6 +12,17 @@ const momentsImages = import.meta.glob<{ default: string }>(
 );
 
 const AUTO_PLAY_INTERVAL = 4000;
+
+const requestIdle = (callback: () => void) => {
+  if (typeof window === "undefined") return;
+
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout: 1500 });
+    return;
+  }
+
+  window.setTimeout(callback, 250);
+};
 
 function getMomentImageSrc(image: string) {
   const imagePath = `../../features/moments-section/assets/${image}`;
@@ -29,6 +41,8 @@ function MomentsCarouselContent() {
   const { data: moments, isLoading, error } = useMomentsData();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isInView, setIsInView] = useState(true);
+  const rootRef = useRef<HTMLDivElement | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const total = moments?.length ?? 0;
@@ -38,12 +52,12 @@ function MomentsCarouselContent() {
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
-    if (!isPaused && total > 1) {
+    if (!isPaused && isInView && !document.hidden && total > 1) {
       timerRef.current = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % total);
       }, AUTO_PLAY_INTERVAL);
     }
-  }, [isPaused, total]);
+  }, [isInView, isPaused, total]);
 
   const goTo = useCallback(
     (index: number) => {
@@ -82,7 +96,7 @@ function MomentsCarouselContent() {
 
   // 自动轮播 + 暂停/恢复
   useEffect(() => {
-    if (isPaused || total <= 1) {
+    if (isPaused || !isInView || total <= 1) {
       if (timerRef.current) {
         clearInterval(timerRef.current);
         timerRef.current = null;
@@ -96,19 +110,46 @@ function MomentsCarouselContent() {
         timerRef.current = null;
       }
     };
-  }, [isPaused, total, resetAutoPlay]);
+  }, [isInView, isPaused, total, resetAutoPlay]);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root || typeof IntersectionObserver === "undefined") return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry?.isIntersecting ?? true),
+      { rootMargin: "160px" },
+    );
+
+    observer.observe(root);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      } else {
+        resetAutoPlay();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [resetAutoPlay]);
 
   useEffect(() => {
     if (!moments || total === 0) return;
 
-    const indexesToPreload = new Set([
-      currentIndex,
-      (currentIndex + 1) % total,
-      (currentIndex - 1 + total) % total,
-    ]);
+    const indexesToPreload = new Set([(currentIndex + 1) % total]);
 
-    indexesToPreload.forEach((index) => {
-      preloadImage(getMomentImageSrc(moments[index]!.image));
+    requestIdle(() => {
+      indexesToPreload.forEach((index) => {
+        preloadImage(getMomentImageSrc(moments[index]!.image));
+      });
     });
   }, [currentIndex, moments, total]);
 
@@ -139,30 +180,35 @@ function MomentsCarouselContent() {
 
   return (
     <Card
+      ref={rootRef}
+      role="link"
+      tabIndex={0}
       className="w-full max-w-sm gap-0 py-0 shadow-sm cursor-pointer transition-shadow hover:shadow-md"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onClick={() => {
-        window.location.href = "/hobbies";
+        void navigate("/hobbies");
+      }}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          void navigate("/hobbies");
+        }
       }}
     >
-      {/* 标题 */}
       <h3 className="text-sm font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider px-5 pt-5 pb-3">
         # 语录
       </h3>
 
-      {/* 图片区 */}
       <CardContent className="relative aspect-4/3 overflow-hidden bg-muted p-0">
         <img
-          key={currentIndex}
           src={resolvedImageSrc}
           alt={current.source}
           loading="eager"
           decoding="async"
-          className="w-full h-full object-cover animate-in fade-in duration-700"
+          className="w-full h-full object-cover"
         />
 
-        {/* 左右箭头 */}
         {total > 1 && (
           <>
             <Button
@@ -195,11 +241,7 @@ function MomentsCarouselContent() {
         )}
       </CardContent>
 
-      {/* 文字区 */}
-      <div
-        key={currentIndex}
-        className="p-4 animate-in fade-in slide-in-from-bottom-2 duration-500"
-      >
+      <div className="p-4">
         <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed italic mb-3 min-h-[3em]">
           "{current.text}"
         </p>
@@ -209,7 +251,6 @@ function MomentsCarouselContent() {
         </div>
       </div>
 
-      {/* 圆点指示器 */}
       {total > 1 && (
         <div className="flex items-center justify-center gap-1.5 pb-3">
           {moments.map((_, idx) => (
