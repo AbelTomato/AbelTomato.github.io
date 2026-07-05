@@ -2,15 +2,15 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 154,
+        "count": 158,
         "difficulty": "EASY"
       },
       {
-        "count": 139,
+        "count": 144,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 45,
+        "count": 46,
         "difficulty": "HARD"
       }
     ],
@@ -30,15 +30,15 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 917,
+        "count": 915,
         "difficulty": "EASY"
       },
       {
-        "count": 2136,
+        "count": 2135,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 974,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -194,7 +194,7 @@
         }
       },
       {
-        "score": 40,
+        "score": 42,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -334,6 +334,126 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734155366,
+      "submitTime": 1783227424,
+      "question": {
+        "title": "Number of Paths with Max Score",
+        "translatedTitle": "最大得分的路径数目",
+        "titleSlug": "number-of-paths-with-max-score",
+        "questionFrontendId": "1301"
+      }
+    },
+    {
+      "submissionId": 734155082,
+      "submitTime": 1783227249,
+      "question": {
+        "title": "Number of Paths with Max Score",
+        "translatedTitle": "最大得分的路径数目",
+        "titleSlug": "number-of-paths-with-max-score",
+        "questionFrontendId": "1301"
+      }
+    },
+    {
+      "submissionId": 734140181,
+      "submitTime": 1783222006,
+      "question": {
+        "title": "Number of Paths with Max Score",
+        "translatedTitle": "最大得分的路径数目",
+        "titleSlug": "number-of-paths-with-max-score",
+        "questionFrontendId": "1301"
+      }
+    },
+    {
+      "submissionId": 734140027,
+      "submitTime": 1783221960,
+      "question": {
+        "title": "Divisible Game",
+        "translatedTitle": "可整除游戏",
+        "titleSlug": "divisible-game",
+        "questionFrontendId": "3984"
+      }
+    },
+    {
+      "submissionId": 734136281,
+      "submitTime": 1783220772,
+      "question": {
+        "title": "Subsequence After One Replacement",
+        "translatedTitle": "一次替换后的子序列",
+        "titleSlug": "subsequence-after-one-replacement",
+        "questionFrontendId": "3983"
+      }
+    },
+    {
+      "submissionId": 734129919,
+      "submitTime": 1783218782,
+      "question": {
+        "title": "Sum of Integers with Maximum Digit Range",
+        "translatedTitle": "最大数字范围的整数之和",
+        "titleSlug": "sum-of-integers-with-maximum-digit-range",
+        "questionFrontendId": "3982"
+      }
+    },
+    {
+      "submissionId": 734126168,
+      "submitTime": 1783216857,
+      "question": {
+        "title": "Nth Highest Salary",
+        "translatedTitle": "第N高的薪水",
+        "titleSlug": "nth-highest-salary",
+        "questionFrontendId": "177"
+      }
+    },
+    {
+      "submissionId": 734125899,
+      "submitTime": 1783216691,
+      "question": {
+        "title": "Second Highest Salary",
+        "translatedTitle": "第二高的薪水",
+        "titleSlug": "second-highest-salary",
+        "questionFrontendId": "176"
+      }
+    },
+    {
+      "submissionId": 734105034,
+      "submitTime": 1783179004,
+      "question": {
+        "title": "Find Users with High Token Usage",
+        "translatedTitle": "查找高 tokens 使用量的用户",
+        "titleSlug": "find-users-with-high-token-usage",
+        "questionFrontendId": "3793"
+      }
+    },
+    {
+      "submissionId": 733983196,
+      "submitTime": 1783130459,
+      "question": {
+        "title": "Minimum Score of a Path Between Two Cities",
+        "translatedTitle": "两个城市间路径的最小分数",
+        "titleSlug": "minimum-score-of-a-path-between-two-cities",
+        "questionFrontendId": "2492"
+      }
+    },
+    {
+      "submissionId": 733982175,
+      "submitTime": 1783129772,
+      "question": {
+        "title": "Find Books with No Available Copies",
+        "translatedTitle": "查找无可用副本的书籍",
+        "titleSlug": "find-books-with-no-available-copies",
+        "questionFrontendId": "3570"
+      }
+    },
+    {
+      "submissionId": 733980917,
+      "submitTime": 1783128920,
+      "question": {
+        "title": "Find Products with Valid Serial Numbers",
+        "translatedTitle": "查找具有有效序列号的产品",
+        "titleSlug": "find-products-with-valid-serial-numbers",
+        "questionFrontendId": "3465"
+      }
+    },
+    {
       "submissionId": 733831029,
       "submitTime": 1783040938,
       "question": {
@@ -361,126 +481,6 @@
         "translatedTitle": "每位教师所教授的科目种类的数量",
         "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
         "questionFrontendId": "2356"
-      }
-    },
-    {
-      "submissionId": 733655174,
-      "submitTime": 1782951815,
-      "question": {
-        "title": "Find a Safe Walk Through a Grid",
-        "translatedTitle": "穿越网格图的安全路径",
-        "titleSlug": "find-a-safe-walk-through-a-grid",
-        "questionFrontendId": "3286"
-      }
-    },
-    {
-      "submissionId": 733654365,
-      "submitTime": 1782950545,
-      "question": {
-        "title": "Employees Whose Manager Left the Company",
-        "translatedTitle": "上级经理已离职的公司员工",
-        "titleSlug": "employees-whose-manager-left-the-company",
-        "questionFrontendId": "1978"
-      }
-    },
-    {
-      "submissionId": 733491212,
-      "submitTime": 1782871352,
-      "question": {
-        "title": "Find the Safest Path in a Grid",
-        "translatedTitle": "找出最安全路径",
-        "titleSlug": "find-the-safest-path-in-a-grid",
-        "questionFrontendId": "2812"
-      }
-    },
-    {
-      "submissionId": 733486055,
-      "submitTime": 1782869163,
-      "question": {
-        "title": "Employees With Missing Information",
-        "translatedTitle": "丢失信息的雇员",
-        "titleSlug": "employees-with-missing-information",
-        "questionFrontendId": "1965"
-      }
-    },
-    {
-      "submissionId": 733308712,
-      "submitTime": 1782782081,
-      "question": {
-        "title": "Number of Substrings Containing All Three Characters",
-        "translatedTitle": "包含所有三种字符的子字符串数目",
-        "titleSlug": "number-of-substrings-containing-all-three-characters",
-        "questionFrontendId": "1358"
-      }
-    },
-    {
-      "submissionId": 733306009,
-      "submitTime": 1782779931,
-      "question": {
-        "title": "The Latest Login in 2020",
-        "translatedTitle": "2020年最后一次登录",
-        "titleSlug": "the-latest-login-in-2020",
-        "questionFrontendId": "1890"
-      }
-    },
-    {
-      "submissionId": 733304880,
-      "submitTime": 1782778299,
-      "question": {
-        "title": "Calculate Special Bonus",
-        "translatedTitle": "计算特殊奖金",
-        "titleSlug": "calculate-special-bonus",
-        "questionFrontendId": "1873"
-      }
-    },
-    {
-      "submissionId": 733304787,
-      "submitTime": 1782778081,
-      "question": {
-        "title": "Rearrange Products Table",
-        "translatedTitle": "每个产品在不同商店的价格",
-        "titleSlug": "rearrange-products-table",
-        "questionFrontendId": "1795"
-      }
-    },
-    {
-      "submissionId": 733128246,
-      "submitTime": 1782692702,
-      "question": {
-        "title": "Number of Strings That Appear as Substrings in Word",
-        "translatedTitle": "作为子字符串出现在单词中的字符串数目",
-        "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
-        "questionFrontendId": "1967"
-      }
-    },
-    {
-      "submissionId": 733128180,
-      "submitTime": 1782692596,
-      "question": {
-        "title": "Primary Department for Each Employee",
-        "translatedTitle": "员工的直属部门",
-        "titleSlug": "primary-department-for-each-employee",
-        "questionFrontendId": "1789"
-      }
-    },
-    {
-      "submissionId": 733127676,
-      "submitTime": 1782691545,
-      "question": {
-        "title": "Recyclable and Low Fat Products",
-        "translatedTitle": "可回收且低脂的产品",
-        "titleSlug": "recyclable-and-low-fat-products",
-        "questionFrontendId": "1757"
-      }
-    },
-    {
-      "submissionId": 733127621,
-      "submitTime": 1782691413,
-      "question": {
-        "title": "Find Total Time Spent by Each Employee",
-        "translatedTitle": "查找每个员工花费的总时间",
-        "titleSlug": "find-total-time-spent-by-each-employee",
-        "questionFrontendId": "1741"
       }
     }
   ],

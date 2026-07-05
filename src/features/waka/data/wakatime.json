@@ -1,40 +1,30 @@
 {
-  "lastUpdate": "2026-07-03T09:16:51.115Z",
-  "total": "211 hrs 36 mins",
-  "daily_average": "5 hrs 13 mins",
+  "lastUpdate": "2026-07-05T13:37:17.659Z",
+  "total": "218 hrs 52 mins",
+  "daily_average": "5 hrs 24 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 225935.33299999998,
-      "total_text": "62h 45m",
+      "total_seconds": 217834.002,
+      "total_text": "60h 30m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 605492.404,
-      "total_text": "168h 11m",
+      "total_seconds": 635606.3029999998,
+      "total_text": "176h 33m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2202660.76,
-      "total_text": "611h 51m",
-      "days_active": 126
+      "total_seconds": 2256358.4499999993,
+      "total_text": "626h 45m",
+      "days_active": 128
     },
     "all_time": {
-      "total_seconds": 2202660.76,
-      "total_text": "611h 51m",
-      "days_active": 126
+      "total_seconds": 2256358.4499999993,
+      "total_text": "626h 45m",
+      "days_active": 128
     }
   },
   "weekly": [
-    {
-      "date": "2026-06-27",
-      "seconds": 30029.096,
-      "text": "8 hrs 20 mins"
-    },
-    {
-      "date": "2026-06-28",
-      "seconds": 31769.925,
-      "text": "8 hrs 49 mins"
-    },
     {
       "date": "2026-06-29",
       "seconds": 28928.805,
@@ -57,8 +47,18 @@
     },
     {
       "date": "2026-07-03",
-      "seconds": 21626.876,
-      "text": "6 hrs"
+      "seconds": 30188.477,
+      "text": "8 hrs 23 mins"
+    },
+    {
+      "date": "2026-07-04",
+      "seconds": 19222.124,
+      "text": "5 hrs 20 mins"
+    },
+    {
+      "date": "2026-07-05",
+      "seconds": 25913.965,
+      "text": "7 hrs 11 mins"
     }
   ],
   "heatmap": [
@@ -564,25 +564,33 @@
     },
     {
       "date": "2026-07-03",
-      "seconds": 21626.876
+      "seconds": 30188.477
+    },
+    {
+      "date": "2026-07-04",
+      "seconds": 19222.124
+    },
+    {
+      "date": "2026-07-05",
+      "seconds": 25913.965
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 671274.7409999999
+      "total_seconds": 690085.802
     },
     {
       "name": "C++",
-      "total_seconds": 398683.1430000001
+      "total_seconds": 404428.1080000001
     },
     {
       "name": "Python",
-      "total_seconds": 335304.2780000001
+      "total_seconds": 361255.2620000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 205722.11000000004
+      "total_seconds": 207974.12400000004
     },
     {
       "name": "JavaScript",
@@ -590,7 +598,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 100963.57400000001
+      "total_seconds": 101029.839
     },
     {
       "name": "Java",
@@ -598,11 +606,11 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 42259.558
+      "total_seconds": 42425.507999999994
     },
     {
       "name": "SQL",
-      "total_seconds": 36171.894
+      "total_seconds": 36181.816
     },
     {
       "name": "C",
@@ -614,7 +622,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 9640.878
+      "total_seconds": 10644.319000000001
     },
     {
       "name": "MDX",
@@ -626,7 +634,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 3893.979999999999
+      "total_seconds": 3978.061999999999
     },
     {
       "name": "Bash",
@@ -637,12 +645,12 @@
       "total_seconds": 2752.699
     },
     {
-      "name": "YAML",
-      "total_seconds": 2302.042
+      "name": "TOML",
+      "total_seconds": 2553.147
     },
     {
-      "name": "TOML",
-      "total_seconds": 2227.2309999999998
+      "name": "YAML",
+      "total_seconds": 2302.042
     },
     {
       "name": "TSConfig",
@@ -654,7 +662,7 @@
     },
     {
       "name": "CSV",
-      "total_seconds": 1439.01
+      "total_seconds": 1565.608
     },
     {
       "name": "PowerShell",
@@ -1689,14 +1697,33 @@
       "CSV": 10.015
     },
     "2026-07-03": {
-      "Markdown": 16552.414,
-      "Other": 2243.812,
+      "Markdown": 22735.486,
+      "Python": 2622.698,
       "C++": 1672.08,
-      "Python": 972.602,
-      "Git": 128.922,
+      "Other": 1356.021,
+      "CSS": 1003.441,
+      "TOML": 325.916,
+      "Git": 213.004,
+      "CSV": 126.598,
+      "Astro": 66.265,
       "CMake": 29.438,
       "Bash": 19.515,
+      "SQL": 9.922,
       "JSON": 8.093
+    },
+    "2026-07-04": {
+      "Python": 12864.813,
+      "Markdown": 6313.028,
+      "Other": 37.38,
+      "Text": 6.903
+    },
+    "2026-07-05": {
+      "Python": 11436.075,
+      "Markdown": 6314.961,
+      "C++": 5744.965,
+      "TypeScript": 2252.014,
+      "JSON": 165.95,
+      "Other": 0
     }
   }
 }
