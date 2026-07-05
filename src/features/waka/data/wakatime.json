@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-05T13:37:17.659Z",
-  "total": "218 hrs 52 mins",
+  "lastUpdate": "2026-07-05T16:28:13.272Z",
+  "total": "219 hrs 8 mins",
   "daily_average": "5 hrs 24 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 217834.002,
-      "total_text": "60h 30m",
+      "total_seconds": 218800.806,
+      "total_text": "60h 46m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 635606.3029999998,
-      "total_text": "176h 33m",
+      "total_seconds": 636573.1069999998,
+      "total_text": "176h 49m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2256358.4499999993,
-      "total_text": "626h 45m",
+      "total_seconds": 2257325.2539999993,
+      "total_text": "627h 2m",
       "days_active": 128
     },
     "all_time": {
-      "total_seconds": 2256358.4499999993,
-      "total_text": "626h 45m",
+      "total_seconds": 2257325.2539999993,
+      "total_text": "627h 2m",
       "days_active": 128
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-05",
-      "seconds": 25913.965,
-      "text": "7 hrs 11 mins"
+      "seconds": 26880.769,
+      "text": "7 hrs 28 mins"
     }
   ],
   "heatmap": [
@@ -572,13 +572,13 @@
     },
     {
       "date": "2026-07-05",
-      "seconds": 25913.965
+      "seconds": 26880.769
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 690085.802
+      "total_seconds": 690087.8150000001
     },
     {
       "name": "C++",
@@ -586,11 +586,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 361255.2620000001
+      "total_seconds": 361509.6640000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 207974.12400000004
+      "total_seconds": 208498.12400000004
     },
     {
       "name": "JavaScript",
@@ -598,7 +598,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 101029.839
+      "total_seconds": 101198.228
     },
     {
       "name": "Java",
@@ -622,7 +622,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 10644.319000000001
+      "total_seconds": 10662.319000000001
     },
     {
       "name": "MDX",
@@ -1718,11 +1718,13 @@
       "Text": 6.903
     },
     "2026-07-05": {
-      "Python": 11436.075,
-      "Markdown": 6314.961,
+      "Python": 11690.477,
+      "Markdown": 6316.974,
       "C++": 5744.965,
-      "TypeScript": 2252.014,
+      "TypeScript": 2776.014,
+      "Astro": 168.389,
       "JSON": 165.95,
+      "CSS": 18,
       "Other": 0
     }
   }
