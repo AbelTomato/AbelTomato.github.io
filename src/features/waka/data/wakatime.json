@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-06T03:26:54.871Z",
-  "total": "216 hrs 8 mins",
-  "daily_average": "5 hrs 20 mins",
+  "lastUpdate": "2026-07-06T07:46:22.236Z",
+  "total": "217 hrs 42 mins",
+  "daily_average": "5 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 202092.189,
-      "total_text": "56h 8m",
+      "total_seconds": 207746.284,
+      "total_text": "57h 42m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 633982.2879999998,
-      "total_text": "176h 6m",
+      "total_seconds": 639636.3829999999,
+      "total_text": "177h 40m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2269545.4419999993,
-      "total_text": "630h 25m",
+      "total_seconds": 2275199.536999999,
+      "total_text": "631h 59m",
       "days_active": 129
     },
     "all_time": {
-      "total_seconds": 2269545.4419999993,
-      "total_text": "630h 25m",
+      "total_seconds": 2275199.536999999,
+      "total_text": "631h 59m",
       "days_active": 129
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-06",
-      "seconds": 12220.188,
-      "text": "3 hrs 23 mins"
+      "seconds": 17874.283,
+      "text": "4 hrs 57 mins"
     }
   ],
   "heatmap": [
@@ -576,13 +576,13 @@
     },
     {
       "date": "2026-07-06",
-      "seconds": 12220.188
+      "seconds": 17874.283
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 690996.1340000001
+      "total_seconds": 695737.611
     },
     {
       "name": "C++",
@@ -590,7 +590,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 371016.04200000013
+      "total_seconds": 372115.6600000001
     },
     {
       "name": "TypeScript",
@@ -1732,13 +1732,13 @@
       "Other": 0
     },
     "2026-07-06": {
-      "Python": 9506.378,
-      "Markdown": 908.319,
+      "Python": 10605.996,
+      "Markdown": 5649.796,
       "Astro": 891.94,
       "TypeScript": 369,
-      "Other": 234.981,
       "JSON": 170.06,
       "CSS": 126,
+      "Other": 47.981,
       "Bash": 12.51,
       "JavaScript": 1
     }

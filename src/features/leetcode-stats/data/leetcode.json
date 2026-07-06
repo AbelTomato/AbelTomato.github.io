@@ -334,6 +334,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734359938,
+      "submitTime": 1783323034,
+      "question": {
+        "title": "Palindromic Subarray Sum",
+        "translatedTitle": "回文子数组求和",
+        "titleSlug": "palindromic-subarray-sum",
+        "questionFrontendId": "3985"
+      }
+    },
+    {
       "submissionId": 734295369,
       "submitTime": 1783300775,
       "question": {
@@ -471,16 +481,6 @@
         "translatedTitle": "两个城市间路径的最小分数",
         "titleSlug": "minimum-score-of-a-path-between-two-cities",
         "questionFrontendId": "2492"
-      }
-    },
-    {
-      "submissionId": 733982175,
-      "submitTime": 1783129772,
-      "question": {
-        "title": "Find Books with No Available Copies",
-        "translatedTitle": "查找无可用副本的书籍",
-        "titleSlug": "find-books-with-no-available-copies",
-        "questionFrontendId": "3570"
       }
     }
   ],
