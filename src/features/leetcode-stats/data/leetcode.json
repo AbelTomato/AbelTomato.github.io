@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 144,
+        "count": 146,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 46,
+        "count": 47,
         "difficulty": "HARD"
       }
     ],
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2135,
+        "count": 2133,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 974,
         "difficulty": "HARD"
       }
     ]
@@ -194,7 +194,7 @@
         }
       },
       {
-        "score": 42,
+        "score": 43,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -334,6 +334,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734295369,
+      "submitTime": 1783300775,
+      "question": {
+        "title": "Palindromic Subarray Sum",
+        "translatedTitle": "回文子数组求和",
+        "titleSlug": "palindromic-subarray-sum",
+        "questionFrontendId": "3985"
+      }
+    },
+    {
+      "submissionId": 734292313,
+      "submitTime": 1783298476,
+      "question": {
+        "title": "Remove Covered Intervals",
+        "translatedTitle": "删除被覆盖区间",
+        "titleSlug": "remove-covered-intervals",
+        "questionFrontendId": "1288"
+      }
+    },
+    {
+      "submissionId": 734292089,
+      "submitTime": 1783298189,
+      "question": {
+        "title": "Remove Covered Intervals",
+        "translatedTitle": "删除被覆盖区间",
+        "titleSlug": "remove-covered-intervals",
+        "questionFrontendId": "1288"
+      }
+    },
+    {
+      "submissionId": 734291142,
+      "submitTime": 1783296623,
+      "question": {
+        "title": "Rank Scores",
+        "translatedTitle": "分数排名",
+        "titleSlug": "rank-scores",
+        "questionFrontendId": "178"
+      }
+    },
+    {
       "submissionId": 734155366,
       "submitTime": 1783227424,
       "question": {
@@ -441,46 +481,6 @@
         "translatedTitle": "查找无可用副本的书籍",
         "titleSlug": "find-books-with-no-available-copies",
         "questionFrontendId": "3570"
-      }
-    },
-    {
-      "submissionId": 733980917,
-      "submitTime": 1783128920,
-      "question": {
-        "title": "Find Products with Valid Serial Numbers",
-        "translatedTitle": "查找具有有效序列号的产品",
-        "titleSlug": "find-products-with-valid-serial-numbers",
-        "questionFrontendId": "3465"
-      }
-    },
-    {
-      "submissionId": 733831029,
-      "submitTime": 1783040938,
-      "question": {
-        "title": "Network Recovery Pathways",
-        "translatedTitle": "恢复网络路径",
-        "titleSlug": "network-recovery-pathways",
-        "questionFrontendId": "3620"
-      }
-    },
-    {
-      "submissionId": 733829058,
-      "submitTime": 1783038865,
-      "question": {
-        "title": "Find Valid Emails",
-        "translatedTitle": "查找合法邮箱",
-        "titleSlug": "find-valid-emails",
-        "questionFrontendId": "3436"
-      }
-    },
-    {
-      "submissionId": 733828732,
-      "submitTime": 1783038365,
-      "question": {
-        "title": "Number of Unique Subjects Taught by Each Teacher",
-        "translatedTitle": "每位教师所教授的科目种类的数量",
-        "titleSlug": "number-of-unique-subjects-taught-by-each-teacher",
-        "questionFrontendId": "2356"
       }
     }
   ],
