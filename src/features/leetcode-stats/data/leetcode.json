@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 158,
+        "count": 159,
         "difficulty": "EASY"
       },
       {
-        "count": 146,
+        "count": 147,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 915,
+        "count": 914,
         "difficulty": "EASY"
       },
       {
-        "count": 2133,
+        "count": 2132,
         "difficulty": "MEDIUM"
       },
       {
@@ -334,6 +334,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734622918,
+      "submitTime": 1783425456,
+      "question": {
+        "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+        "translatedTitle": "连接非零数字并乘以其数字和 I",
+        "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+        "questionFrontendId": "3754"
+      }
+    },
+    {
+      "submissionId": 734622412,
+      "submitTime": 1783425292,
+      "question": {
+        "title": "Consecutive Numbers",
+        "translatedTitle": "连续出现的数字",
+        "titleSlug": "consecutive-numbers",
+        "questionFrontendId": "180"
+      }
+    },
+    {
       "submissionId": 734359938,
       "submitTime": 1783323034,
       "question": {
@@ -461,26 +481,6 @@
         "translatedTitle": "第二高的薪水",
         "titleSlug": "second-highest-salary",
         "questionFrontendId": "176"
-      }
-    },
-    {
-      "submissionId": 734105034,
-      "submitTime": 1783179004,
-      "question": {
-        "title": "Find Users with High Token Usage",
-        "translatedTitle": "查找高 tokens 使用量的用户",
-        "titleSlug": "find-users-with-high-token-usage",
-        "questionFrontendId": "3793"
-      }
-    },
-    {
-      "submissionId": 733983196,
-      "submitTime": 1783130459,
-      "question": {
-        "title": "Minimum Score of a Path Between Two Cities",
-        "translatedTitle": "两个城市间路径的最小分数",
-        "titleSlug": "minimum-score-of-a-path-between-two-cities",
-        "questionFrontendId": "2492"
       }
     }
   ],
