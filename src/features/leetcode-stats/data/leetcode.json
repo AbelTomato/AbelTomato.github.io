@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 147,
+        "count": 149,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2132,
+        "count": 2130,
         "difficulty": "MEDIUM"
       },
       {
@@ -334,6 +334,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734776596,
+      "submitTime": 1783498403,
+      "question": {
+        "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+        "translatedTitle": "连接非零数字并乘以其数字和 II",
+        "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+        "questionFrontendId": "3756"
+      }
+    },
+    {
+      "submissionId": 734776519,
+      "submitTime": 1783498384,
+      "question": {
+        "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+        "translatedTitle": "连接非零数字并乘以其数字和 II",
+        "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+        "questionFrontendId": "3756"
+      }
+    },
+    {
+      "submissionId": 734751919,
+      "submitTime": 1783492936,
+      "question": {
+        "title": "Department Highest Salary",
+        "translatedTitle": "部门工资最高的员工",
+        "titleSlug": "department-highest-salary",
+        "questionFrontendId": "184"
+      }
+    },
+    {
       "submissionId": 734622918,
       "submitTime": 1783425456,
       "question": {
@@ -451,36 +481,6 @@
         "translatedTitle": "一次替换后的子序列",
         "titleSlug": "subsequence-after-one-replacement",
         "questionFrontendId": "3983"
-      }
-    },
-    {
-      "submissionId": 734129919,
-      "submitTime": 1783218782,
-      "question": {
-        "title": "Sum of Integers with Maximum Digit Range",
-        "translatedTitle": "最大数字范围的整数之和",
-        "titleSlug": "sum-of-integers-with-maximum-digit-range",
-        "questionFrontendId": "3982"
-      }
-    },
-    {
-      "submissionId": 734126168,
-      "submitTime": 1783216857,
-      "question": {
-        "title": "Nth Highest Salary",
-        "translatedTitle": "第N高的薪水",
-        "titleSlug": "nth-highest-salary",
-        "questionFrontendId": "177"
-      }
-    },
-    {
-      "submissionId": 734125899,
-      "submitTime": 1783216691,
-      "question": {
-        "title": "Second Highest Salary",
-        "translatedTitle": "第二高的薪水",
-        "titleSlug": "second-highest-salary",
-        "questionFrontendId": "176"
       }
     }
   ],
