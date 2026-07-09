@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-09T09:37:25.119Z",
-  "total": "214 hrs 17 mins",
-  "daily_average": "5 hrs 15 mins",
+  "lastUpdate": "2026-07-09T14:56:48.494Z",
+  "total": "216 hrs 46 mins",
+  "daily_average": "5 hrs 19 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 144366.71499999997,
-      "total_text": "40h 6m",
+      "total_seconds": 153294.511,
+      "total_text": "42h 34m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 670167.9689999998,
-      "total_text": "186h 9m",
+      "total_seconds": 679095.7649999999,
+      "total_text": "188h 38m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2325400.598999999,
-      "total_text": "645h 56m",
+      "total_seconds": 2334328.394999999,
+      "total_text": "648h 25m",
       "days_active": 132
     },
     "all_time": {
-      "total_seconds": 2325400.598999999,
-      "total_text": "645h 56m",
+      "total_seconds": 2334328.394999999,
+      "total_text": "648h 25m",
       "days_active": 132
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-09",
-      "seconds": 18203.367,
-      "text": "5 hrs 3 mins"
+      "seconds": 27131.163,
+      "text": "7 hrs 32 mins"
     }
   ],
   "heatmap": [
@@ -588,17 +588,17 @@
     },
     {
       "date": "2026-07-09",
-      "seconds": 18203.367
+      "seconds": 27131.163
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 710349.6820000001
+      "total_seconds": 711655.8070000001
     },
     {
       "name": "C++",
-      "total_seconds": 427011.0650000001
+      "total_seconds": 432922.9400000001
     },
     {
       "name": "Python",
@@ -645,6 +645,10 @@
       "total_seconds": 8194.023000000001
     },
     {
+      "name": "CMake",
+      "total_seconds": 6120.117
+    },
+    {
       "name": "Git Config",
       "total_seconds": 4395.871
     },
@@ -655,10 +659,6 @@
     {
       "name": "Bash",
       "total_seconds": 3469.67
-    },
-    {
-      "name": "CMake",
-      "total_seconds": 3424.781
     },
     {
       "name": "TOML",
@@ -1772,11 +1772,11 @@
       "Java": 11.624
     },
     "2026-07-09": {
-      "C++": 13441.031,
-      "Markdown": 2145.363,
-      "Other": 1128.91,
+      "C++": 19352.906,
+      "Markdown": 3451.488,
+      "CMake": 3367.418,
       "Python": 815.981,
-      "CMake": 672.082
+      "Other": 143.37
     }
   }
 }
