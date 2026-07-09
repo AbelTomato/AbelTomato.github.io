@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 149,
+        "count": 151,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2130,
+        "count": 2128,
         "difficulty": "MEDIUM"
       },
       {
@@ -176,6 +176,11 @@
         "slug": "two-pointers",
         "name": "Two Pointers",
         "translatedName": "双指针"
+      },
+      {
+        "slug": "union-find",
+        "name": "Union Find",
+        "translatedName": "并查集"
       }
     ],
     "topicAreaScores": [
@@ -194,7 +199,7 @@
         }
       },
       {
-        "score": 43,
+        "score": 44,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -334,6 +339,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 734933168,
+      "submitTime": 1783576867,
+      "question": {
+        "title": "Path Existence Queries in a Graph I",
+        "translatedTitle": "针对图的路径存在性查询 I",
+        "titleSlug": "path-existence-queries-in-a-graph-i",
+        "questionFrontendId": "3532"
+      }
+    },
+    {
+      "submissionId": 734931424,
+      "submitTime": 1783576170,
+      "question": {
+        "title": "Game Play Analysis IV",
+        "translatedTitle": "游戏玩法分析 IV",
+        "titleSlug": "game-play-analysis-iv",
+        "questionFrontendId": "550"
+      }
+    },
+    {
       "submissionId": 734776596,
       "submitTime": 1783498403,
       "question": {
@@ -461,26 +486,6 @@
         "translatedTitle": "最大得分的路径数目",
         "titleSlug": "number-of-paths-with-max-score",
         "questionFrontendId": "1301"
-      }
-    },
-    {
-      "submissionId": 734140027,
-      "submitTime": 1783221960,
-      "question": {
-        "title": "Divisible Game",
-        "translatedTitle": "可整除游戏",
-        "titleSlug": "divisible-game",
-        "questionFrontendId": "3984"
-      }
-    },
-    {
-      "submissionId": 734136281,
-      "submitTime": 1783220772,
-      "question": {
-        "title": "Subsequence After One Replacement",
-        "translatedTitle": "一次替换后的子序列",
-        "titleSlug": "subsequence-after-one-replacement",
-        "questionFrontendId": "3983"
       }
     }
   ],
