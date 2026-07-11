@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-11T02:33:19.868Z",
-  "total": "218 hrs 4 mins",
-  "daily_average": "5 hrs 22 mins",
+  "lastUpdate": "2026-07-11T07:54:18.741Z",
+  "total": "221 hrs 43 mins",
+  "daily_average": "5 hrs 27 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 131470.549,
-      "total_text": "36h 31m",
+      "total_seconds": 144585.188,
+      "total_text": "40h 9m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 698082.3359999999,
-      "total_text": "193h 54m",
+      "total_seconds": 711196.975,
+      "total_text": "197h 33m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2361915.033999999,
-      "total_text": "656h 5m",
+      "total_seconds": 2375029.672999999,
+      "total_text": "659h 43m",
       "days_active": 134
     },
     "all_time": {
-      "total_seconds": 2361915.033999999,
-      "total_text": "656h 5m",
+      "total_seconds": 2375029.672999999,
+      "total_text": "659h 43m",
       "days_active": 134
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-11",
-      "seconds": 978.742,
-      "text": "16 mins"
+      "seconds": 14093.381,
+      "text": "3 hrs 54 mins"
     }
   ],
   "heatmap": [
@@ -596,17 +596,17 @@
     },
     {
       "date": "2026-07-11",
-      "seconds": 978.742
+      "seconds": 14093.381
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 713685.7930000002
+      "total_seconds": 720162.0130000002
     },
     {
       "name": "C++",
-      "total_seconds": 452467.05300000013
+      "total_seconds": 457404.0670000001
     },
     {
       "name": "Python",
@@ -630,7 +630,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 43154.83799999999
+      "total_seconds": 43635.34899999999
     },
     {
       "name": "SQL",
@@ -654,19 +654,19 @@
     },
     {
       "name": "CMake",
-      "total_seconds": 7122.473
+      "total_seconds": 7221.219
     },
     {
       "name": "Bash",
-      "total_seconds": 4642.443
+      "total_seconds": 4713.244
+    },
+    {
+      "name": "Git",
+      "total_seconds": 4674.329999999999
     },
     {
       "name": "Git Config",
       "total_seconds": 4395.871
-    },
-    {
-      "name": "Git",
-      "total_seconds": 3989.900999999999
     },
     {
       "name": "TOML",
@@ -1794,15 +1794,22 @@
       "C++": 16982.276,
       "TypeScript": 3222.61,
       "Markdown": 1885.826,
-      "Bash": 1172.773,
+      "Bash": 1003.574,
       "CMake": 1002.356,
       "JSON": 362,
+      "Other": 169.199,
       "Astro": 2,
-      "YAML": 0,
-      "Other": 0
+      "YAML": 0
     },
     "2026-07-11": {
-      "C++": 978.742
+      "Markdown": 6476.22,
+      "C++": 5915.756,
+      "Git": 684.429,
+      "JSON": 480.511,
+      "Bash": 240,
+      "Other": 195.718,
+      "CMake": 98.746,
+      "Text": 2.001
     }
   }
 }
