@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 152,
+        "count": 154,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2127,
+        "count": 2125,
         "difficulty": "MEDIUM"
       },
       {
@@ -111,6 +111,11 @@
         "slug": "dynamic-programming",
         "name": "Dynamic Programming",
         "translatedName": "动态规划"
+      },
+      {
+        "slug": "graph",
+        "name": "Graph",
+        "translatedName": "图"
       },
       {
         "slug": "greedy",
@@ -206,7 +211,7 @@
         }
       },
       {
-        "score": 25,
+        "score": 26,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -353,6 +358,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 735237468,
+      "submitTime": 1783735449,
+      "question": {
+        "title": "Investments in 2016",
+        "translatedTitle": "2016年的投资",
+        "titleSlug": "investments-in-2016",
+        "questionFrontendId": "585"
+      }
+    },
+    {
+      "submissionId": 735235570,
+      "submitTime": 1783734279,
+      "question": {
+        "title": "Count the Number of Complete Components",
+        "translatedTitle": "统计完全连通分量的数量",
+        "titleSlug": "count-the-number-of-complete-components",
+        "questionFrontendId": "2685"
+      }
+    },
+    {
       "submissionId": 735071080,
       "submitTime": 1783646260,
       "question": {
@@ -480,26 +505,6 @@
         "translatedTitle": "删除被覆盖区间",
         "titleSlug": "remove-covered-intervals",
         "questionFrontendId": "1288"
-      }
-    },
-    {
-      "submissionId": 734291142,
-      "submitTime": 1783296623,
-      "question": {
-        "title": "Rank Scores",
-        "translatedTitle": "分数排名",
-        "titleSlug": "rank-scores",
-        "questionFrontendId": "178"
-      }
-    },
-    {
-      "submissionId": 734155366,
-      "submitTime": 1783227424,
-      "question": {
-        "title": "Number of Paths with Max Score",
-        "translatedTitle": "最大得分的路径数目",
-        "titleSlug": "number-of-paths-with-max-score",
-        "questionFrontendId": "1301"
       }
     }
   ],
