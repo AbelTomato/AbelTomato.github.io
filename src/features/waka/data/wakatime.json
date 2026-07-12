@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-07-11T19:02:00.750Z",
-  "total": "225 hrs 39 mins",
-  "daily_average": "5 hrs 33 mins",
+  "lastUpdate": "2026-07-12T02:39:48.312Z",
+  "total": "222 hrs 48 mins",
+  "daily_average": "5 hrs 29 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 158778.92599999998,
-      "total_text": "44h 6m",
+      "total_seconds": 132681.059,
+      "total_text": "36h 51m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 725390.7129999999,
-      "total_text": "201h 29m",
+      "total_seconds": 710742.677,
+      "total_text": "197h 25m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2389223.410999999,
-      "total_text": "663h 40m",
-      "days_active": 134
+      "total_seconds": 2390006.312999999,
+      "total_text": "663h 53m",
+      "days_active": 135
     },
     "all_time": {
-      "total_seconds": 2389223.410999999,
-      "total_text": "663h 40m",
-      "days_active": 134
+      "total_seconds": 2390006.312999999,
+      "total_text": "663h 53m",
+      "days_active": 135
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-05",
-      "seconds": 26880.769,
-      "text": "7 hrs 28 mins"
-    },
     {
       "date": "2026-07-06",
       "seconds": 29541.885,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-07-11",
-      "seconds": 28287.119,
+      "seconds": 28291.64,
       "text": "7 hrs 51 mins"
+    },
+    {
+      "date": "2026-07-12",
+      "seconds": 778.381,
+      "text": "12 mins"
     }
   ],
   "heatmap": [
@@ -596,17 +596,21 @@
     },
     {
       "date": "2026-07-11",
-      "seconds": 28287.119
+      "seconds": 28291.64
+    },
+    {
+      "date": "2026-07-12",
+      "seconds": 778.381
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 722319.9290000002
+      "total_seconds": 721941.5160000002
     },
     {
       "name": "C++",
-      "total_seconds": 469500.3850000001
+      "total_seconds": 470114.88800000015
     },
     {
       "name": "Python",
@@ -1803,13 +1807,17 @@
     },
     "2026-07-11": {
       "C++": 18012.074,
-      "Markdown": 8634.136,
+      "Markdown": 8091.845,
+      "Other": 742.53,
       "Git": 685.897,
       "JSON": 567.54,
-      "Other": 195.718,
       "CMake": 98.746,
       "Bash": 91.007,
       "Text": 2.001
+    },
+    "2026-07-12": {
+      "C++": 614.503,
+      "Markdown": 163.878
     }
   }
 }
