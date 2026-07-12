@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-12T13:17:36.548Z",
-  "total": "229 hrs 12 mins",
-  "daily_average": "5 hrs 39 mins",
+  "lastUpdate": "2026-07-12T19:04:38.025Z",
+  "total": "230 hrs 26 mins",
+  "daily_average": "5 hrs 41 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 155707.60400000002,
-      "total_text": "43h 15m",
+      "total_seconds": 160111.165,
+      "total_text": "44h 28m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 733769.222,
-      "total_text": "203h 49m",
+      "total_seconds": 738172.7829999999,
+      "total_text": "205h 2m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2413032.857999999,
-      "total_text": "670h 17m",
+      "total_seconds": 2417436.4189999993,
+      "total_text": "671h 30m",
       "days_active": 135
     },
     "all_time": {
-      "total_seconds": 2413032.857999999,
-      "total_text": "670h 17m",
+      "total_seconds": 2417436.4189999993,
+      "total_text": "671h 30m",
       "days_active": 135
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-12",
-      "seconds": 23804.926,
-      "text": "6 hrs 36 mins"
+      "seconds": 28208.487,
+      "text": "7 hrs 50 mins"
     }
   ],
   "heatmap": [
@@ -600,7 +600,7 @@
     },
     {
       "date": "2026-07-12",
-      "seconds": 23804.926
+      "seconds": 28208.487
     }
   ],
   "languages": [
@@ -610,7 +610,7 @@
     },
     {
       "name": "C++",
-      "total_seconds": 493723.4510000001
+      "total_seconds": 497691.8310000001
     },
     {
       "name": "Python",
@@ -658,7 +658,7 @@
     },
     {
       "name": "CMake",
-      "total_seconds": 7221.219
+      "total_seconds": 7656.4
     },
     {
       "name": "Git",
@@ -1816,10 +1816,10 @@
       "Text": 2.001
     },
     "2026-07-12": {
-      "C++": 23676.254,
+      "C++": 27644.634,
+      "CMake": 435.181,
       "Markdown": 117.09,
-      "Python": 11.582,
-      "Other": 0
+      "Python": 11.582
     }
   }
 }
