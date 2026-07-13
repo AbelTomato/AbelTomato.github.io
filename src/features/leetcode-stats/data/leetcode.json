@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 156,
+        "count": 158,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2125,
+        "count": 2123,
         "difficulty": "MEDIUM"
       },
       {
@@ -358,6 +358,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 735548673,
+      "submitTime": 1783902379,
+      "question": {
+        "title": "Tree Node",
+        "translatedTitle": "树节点",
+        "titleSlug": "tree-node",
+        "questionFrontendId": "608"
+      }
+    },
+    {
+      "submissionId": 735548268,
+      "submitTime": 1783901644,
+      "question": {
+        "title": "Sequential Digits",
+        "translatedTitle": "顺次数",
+        "titleSlug": "sequential-digits",
+        "questionFrontendId": "1291"
+      }
+    },
+    {
+      "submissionId": 735548238,
+      "submitTime": 1783901587,
+      "question": {
+        "title": "Sequential Digits",
+        "translatedTitle": "顺次数",
+        "titleSlug": "sequential-digits",
+        "questionFrontendId": "1291"
+      }
+    },
+    {
       "submissionId": 735395799,
       "submitTime": 1783825111,
       "question": {
@@ -475,36 +505,6 @@
         "translatedTitle": "游戏玩法分析 IV",
         "titleSlug": "game-play-analysis-iv",
         "questionFrontendId": "550"
-      }
-    },
-    {
-      "submissionId": 734776596,
-      "submitTime": 1783498403,
-      "question": {
-        "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
-        "translatedTitle": "连接非零数字并乘以其数字和 II",
-        "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
-        "questionFrontendId": "3756"
-      }
-    },
-    {
-      "submissionId": 734776519,
-      "submitTime": 1783498384,
-      "question": {
-        "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
-        "translatedTitle": "连接非零数字并乘以其数字和 II",
-        "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
-        "questionFrontendId": "3756"
-      }
-    },
-    {
-      "submissionId": 734751919,
-      "submitTime": 1783492936,
-      "question": {
-        "title": "Department Highest Salary",
-        "translatedTitle": "部门工资最高的员工",
-        "titleSlug": "department-highest-salary",
-        "questionFrontendId": "184"
       }
     }
   ],
