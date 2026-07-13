@@ -6,11 +6,14 @@ import FormattedDate from "@components/ui/FormattedDate.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "@components/TableOfContents.astro";
+import CommentSection from "@features/comments/components/CommentSection";
 
 type Props = CollectionEntry<"blog">["data"] & {
+  slug: string;
   count?: number;
   minutes?: number;
   headings?: MarkdownHeading[];
+  comments?: boolean;
 };
 
 const {
@@ -19,9 +22,11 @@ const {
   pubDate,
   updatedDate,
   heroImage,
+  slug,
   count,
   minutes,
   headings = [],
+  comments = true,
 } = Astro.props;
 ---
 
@@ -116,6 +121,8 @@ const {
 
           <slot />
         </div>
+
+        {comments && <CommentSection postSlug={slug} client:load />}
       </article>
 
       <div class="hidden lg:block sticky top-24">
