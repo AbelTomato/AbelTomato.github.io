@@ -18,6 +18,7 @@ const stats = getReadingStats(post.body || "");
 
 const propsForlayout = {
   ...post.data,
+  slug: post.id,
   count: stats.count,
   minutes: stats.minutes,
   headings: headings,

@@ -16,6 +16,7 @@ const blog = defineCollection({
       tags: z.array(z.string()).optional(),
       draft: z.boolean().optional().default(false),
       author: z.string().optional().default("AbelTomato"),
+      comments: z.boolean().optional().default(true),
     }),
 });
 
