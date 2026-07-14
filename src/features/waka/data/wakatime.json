@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-14T13:40:53.513Z",
-  "total": "238 hrs 46 mins",
-  "daily_average": "5 hrs 53 mins",
+  "lastUpdate": "2026-07-14T19:18:22.379Z",
+  "total": "239 hrs 35 mins",
+  "daily_average": "5 hrs 54 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 180004.983,
-      "total_text": "50h 0m",
+      "total_seconds": 182945.86000000002,
+      "total_text": "50h 49m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 790900.7540000001,
-      "total_text": "219h 41m",
+      "total_seconds": 793841.631,
+      "total_text": "220h 30m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2479448.3259999994,
-      "total_text": "688h 44m",
+      "total_seconds": 2482389.2029999993,
+      "total_text": "689h 33m",
       "days_active": 137
     },
     "all_time": {
-      "total_seconds": 2479448.3259999994,
-      "total_text": "688h 44m",
+      "total_seconds": 2482389.2029999993,
+      "total_text": "689h 33m",
       "days_active": 137
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-14",
-      "seconds": 24034.737,
-      "text": "6 hrs 40 mins"
+      "seconds": 26975.614,
+      "text": "7 hrs 29 mins"
     }
   ],
   "heatmap": [
@@ -608,13 +608,13 @@
     },
     {
       "date": "2026-07-14",
-      "seconds": 24034.737
+      "seconds": 26975.614
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 741273.675
+      "total_seconds": 741408.3480000001
     },
     {
       "name": "C++",
@@ -622,7 +622,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 382563.15400000016
+      "total_seconds": 386467.3580000001
     },
     {
       "name": "TypeScript",
@@ -1844,11 +1844,10 @@
       "Objective-C": 8.198
     },
     "2026-07-14": {
+      "Python": 10286.332,
       "C++": 7032.854,
-      "Markdown": 6588.038,
-      "Python": 6382.128,
+      "Markdown": 6722.711,
       "TypeScript": 1349.364,
-      "Other": 1098,
       "JSON": 1085.993,
       "CMake": 349.197,
       "PowerShell": 66,
