@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-14T08:02:42.047Z",
-  "total": "236 hrs 8 mins",
-  "daily_average": "5 hrs 49 mins",
+  "lastUpdate": "2026-07-14T13:40:53.513Z",
+  "total": "238 hrs 46 mins",
+  "daily_average": "5 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 170534.03000000003,
-      "total_text": "47h 22m",
+      "total_seconds": 180004.983,
+      "total_text": "50h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 781429.8010000001,
-      "total_text": "217h 3m",
+      "total_seconds": 790900.7540000001,
+      "total_text": "219h 41m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2469977.372999999,
-      "total_text": "686h 6m",
+      "total_seconds": 2479448.3259999994,
+      "total_text": "688h 44m",
       "days_active": 137
     },
     "all_time": {
-      "total_seconds": 2469977.372999999,
-      "total_text": "686h 6m",
+      "total_seconds": 2479448.3259999994,
+      "total_text": "688h 44m",
       "days_active": 137
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-14",
-      "seconds": 14563.784,
-      "text": "4 hrs 2 mins"
+      "seconds": 24034.737,
+      "text": "6 hrs 40 mins"
     }
   ],
   "heatmap": [
@@ -608,25 +608,25 @@
     },
     {
       "date": "2026-07-14",
-      "seconds": 14563.784
+      "seconds": 24034.737
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 739517.4720000001
+      "total_seconds": 741273.675
     },
     {
       "name": "C++",
-      "total_seconds": 524519.2900000002
+      "total_seconds": 526168.8150000002
     },
     {
       "name": "Python",
-      "total_seconds": 379658.2930000001
+      "total_seconds": 382563.15400000016
     },
     {
       "name": "TypeScript",
-      "total_seconds": 215602.52200000003
+      "total_seconds": 216951.88600000003
     },
     {
       "name": "JavaScript",
@@ -642,7 +642,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 44927.98399999999
+      "total_seconds": 45423.98399999999
     },
     {
       "name": "SQL",
@@ -662,7 +662,7 @@
     },
     {
       "name": "CMake",
-      "total_seconds": 9496.243999999999
+      "total_seconds": 9647.243999999999
     },
     {
       "name": "MDX",
@@ -702,7 +702,7 @@
     },
     {
       "name": "PowerShell",
-      "total_seconds": 733.094
+      "total_seconds": 799.094
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -1844,11 +1844,14 @@
       "Objective-C": 8.198
     },
     "2026-07-14": {
-      "C++": 5383.329,
-      "Markdown": 4831.835,
-      "Python": 3477.267,
-      "JSON": 589.993,
-      "CMake": 198.197,
+      "C++": 7032.854,
+      "Markdown": 6588.038,
+      "Python": 6382.128,
+      "TypeScript": 1349.364,
+      "Other": 1098,
+      "JSON": 1085.993,
+      "CMake": 349.197,
+      "PowerShell": 66,
       "Git Config": 43.653,
       "Objective-C": 39.51
     }
