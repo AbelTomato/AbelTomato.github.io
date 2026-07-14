@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 158,
+        "count": 159,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 50,
+        "count": 51,
         "difficulty": "HARD"
       }
     ],
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2123,
+        "count": 2122,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 973,
+        "count": 972,
         "difficulty": "HARD"
       }
     ]
@@ -358,6 +358,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 735751536,
+      "submitTime": 1783989878,
+      "question": {
+        "title": "Exchange Seats",
+        "translatedTitle": "换座位",
+        "titleSlug": "exchange-seats",
+        "questionFrontendId": "626"
+      }
+    },
+    {
+      "submissionId": 735750905,
+      "submitTime": 1783989087,
+      "question": {
+        "title": "Find the Number of Subsequences With Equal GCD",
+        "translatedTitle": "最大公约数相等的子序列数量",
+        "titleSlug": "find-the-number-of-subsequences-with-equal-gcd",
+        "questionFrontendId": "3336"
+      }
+    },
+    {
       "submissionId": 735548673,
       "submitTime": 1783902379,
       "question": {
@@ -485,26 +505,6 @@
         "translatedTitle": "至少有5名直接下属的经理",
         "titleSlug": "managers-with-at-least-5-direct-reports",
         "questionFrontendId": "570"
-      }
-    },
-    {
-      "submissionId": 734933168,
-      "submitTime": 1783576867,
-      "question": {
-        "title": "Path Existence Queries in a Graph I",
-        "translatedTitle": "针对图的路径存在性查询 I",
-        "titleSlug": "path-existence-queries-in-a-graph-i",
-        "questionFrontendId": "3532"
-      }
-    },
-    {
-      "submissionId": 734931424,
-      "submitTime": 1783576170,
-      "question": {
-        "title": "Game Play Analysis IV",
-        "translatedTitle": "游戏玩法分析 IV",
-        "titleSlug": "game-play-analysis-iv",
-        "questionFrontendId": "550"
       }
     }
   ],

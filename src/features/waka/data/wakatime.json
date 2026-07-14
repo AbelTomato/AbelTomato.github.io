@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-07-13T19:22:16.666Z",
-  "total": "238 hrs 24 mins",
-  "daily_average": "5 hrs 52 mins",
+  "lastUpdate": "2026-07-14T02:24:56.287Z",
+  "total": "232 hrs 58 mins",
+  "daily_average": "5 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 168546.45,
-      "total_text": "46h 49m",
+      "total_seconds": 159157.545,
+      "total_text": "44h 12m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 768419.3060000001,
-      "total_text": "213h 26m",
+      "total_seconds": 770053.3160000001,
+      "total_text": "213h 54m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2455413.588999999,
-      "total_text": "682h 3m",
-      "days_active": 136
+      "total_seconds": 2458600.8879999993,
+      "total_text": "682h 56m",
+      "days_active": 137
     },
     "all_time": {
-      "total_seconds": 2455413.588999999,
-      "total_text": "682h 3m",
-      "days_active": 136
+      "total_seconds": 2458600.8879999993,
+      "total_text": "682h 56m",
+      "days_active": 137
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-07",
-      "seconds": 12576.204,
-      "text": "3 hrs 29 mins"
-    },
     {
       "date": "2026-07-08",
       "seconds": 7753.889,
@@ -59,6 +54,11 @@
       "date": "2026-07-13",
       "seconds": 36966.222,
       "text": "10 hrs 16 mins"
+    },
+    {
+      "date": "2026-07-14",
+      "seconds": 3187.299,
+      "text": "53 mins"
     }
   ],
   "heatmap": [
@@ -605,16 +605,20 @@
     {
       "date": "2026-07-13",
       "seconds": 36966.222
+    },
+    {
+      "date": "2026-07-14",
+      "seconds": 3187.299
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 734685.6370000001
+      "total_seconds": 734707.479
     },
     {
       "name": "C++",
-      "total_seconds": 519135.9610000001
+      "total_seconds": 521857.7110000001
     },
     {
       "name": "Python",
@@ -1838,6 +1842,11 @@
       "JSON": 615.613,
       "Git": 17.508,
       "Objective-C": 8.198
+    },
+    "2026-07-14": {
+      "C++": 2721.75,
+      "Other": 443.707,
+      "Markdown": 21.842
     }
   }
 }
