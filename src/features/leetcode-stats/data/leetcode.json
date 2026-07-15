@@ -2,11 +2,11 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 161,
+        "count": 162,
         "difficulty": "EASY"
       },
       {
-        "count": 159,
+        "count": 161,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,11 +30,11 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 913,
+        "count": 912,
         "difficulty": "EASY"
       },
       {
-        "count": 2122,
+        "count": 2120,
         "difficulty": "MEDIUM"
       },
       {
@@ -204,7 +204,7 @@
         }
       },
       {
-        "score": 45,
+        "score": 46,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -358,6 +358,46 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 735960424,
+      "submitTime": 1784079118,
+      "question": {
+        "title": "Product Sales Analysis III",
+        "translatedTitle": "产品销售分析 III",
+        "titleSlug": "product-sales-analysis-iii",
+        "questionFrontendId": "1070"
+      }
+    },
+    {
+      "submissionId": 735958646,
+      "submitTime": 1784078410,
+      "question": {
+        "title": "Customers Who Bought All Products",
+        "translatedTitle": "买下所有产品的客户",
+        "titleSlug": "customers-who-bought-all-products",
+        "questionFrontendId": "1045"
+      }
+    },
+    {
+      "submissionId": 735957650,
+      "submitTime": 1784077966,
+      "question": {
+        "title": "GCD of Odd and Even Sums",
+        "translatedTitle": "奇数和与偶数和的最大公约数",
+        "titleSlug": "gcd-of-odd-and-even-sums",
+        "questionFrontendId": "3658"
+      }
+    },
+    {
+      "submissionId": 735957548,
+      "submitTime": 1784077914,
+      "question": {
+        "title": "GCD of Odd and Even Sums",
+        "translatedTitle": "奇数和与偶数和的最大公约数",
+        "titleSlug": "gcd-of-odd-and-even-sums",
+        "questionFrontendId": "3658"
+      }
+    },
+    {
       "submissionId": 735751536,
       "submitTime": 1783989878,
       "question": {
@@ -465,46 +505,6 @@
         "translatedTitle": "数组序号转换",
         "titleSlug": "rank-transform-of-an-array",
         "questionFrontendId": "1331"
-      }
-    },
-    {
-      "submissionId": 735237468,
-      "submitTime": 1783735449,
-      "question": {
-        "title": "Investments in 2016",
-        "translatedTitle": "2016年的投资",
-        "titleSlug": "investments-in-2016",
-        "questionFrontendId": "585"
-      }
-    },
-    {
-      "submissionId": 735235570,
-      "submitTime": 1783734279,
-      "question": {
-        "title": "Count the Number of Complete Components",
-        "translatedTitle": "统计完全连通分量的数量",
-        "titleSlug": "count-the-number-of-complete-components",
-        "questionFrontendId": "2685"
-      }
-    },
-    {
-      "submissionId": 735071080,
-      "submitTime": 1783646260,
-      "question": {
-        "title": "Path Existence Queries in a Graph II",
-        "translatedTitle": "针对图的路径存在性查询 II",
-        "titleSlug": "path-existence-queries-in-a-graph-ii",
-        "questionFrontendId": "3534"
-      }
-    },
-    {
-      "submissionId": 735066895,
-      "submitTime": 1783641837,
-      "question": {
-        "title": "Managers with at Least 5 Direct Reports",
-        "translatedTitle": "至少有5名直接下属的经理",
-        "titleSlug": "managers-with-at-least-5-direct-reports",
-        "questionFrontendId": "570"
       }
     }
   ],
