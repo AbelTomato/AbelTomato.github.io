@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 161,
+        "count": 164,
         "difficulty": "MEDIUM"
       },
       {
@@ -20,7 +20,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 1,
+        "count": 0,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2120,
+        "count": 2118,
         "difficulty": "MEDIUM"
       },
       {
@@ -358,6 +358,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 736153080,
+      "submitTime": 1784162556,
+      "question": {
+        "title": "Create Grid With Exactly K Paths I",
+        "translatedTitle": "创建一个恰好有 K 条路径的网格图 I",
+        "titleSlug": "create-grid-with-exactly-k-paths-i",
+        "questionFrontendId": "3988"
+      }
+    },
+    {
+      "submissionId": 736152698,
+      "submitTime": 1784162123,
+      "question": {
+        "title": "Market Analysis I",
+        "translatedTitle": "市场分析 I",
+        "titleSlug": "market-analysis-i",
+        "questionFrontendId": "1158"
+      }
+    },
+    {
+      "submissionId": 736151927,
+      "submitTime": 1784160841,
+      "question": {
+        "title": "Sum of GCD of Formed Pairs",
+        "translatedTitle": "数对的最大公约数之和",
+        "titleSlug": "sum-of-gcd-of-formed-pairs",
+        "questionFrontendId": "3867"
+      }
+    },
+    {
       "submissionId": 735960424,
       "submitTime": 1784079118,
       "question": {
@@ -475,36 +505,6 @@
         "translatedTitle": "统计起止时间经过的秒数",
         "titleSlug": "number-of-elapsed-seconds-between-two-times",
         "questionFrontendId": "3986"
-      }
-    },
-    {
-      "submissionId": 735384585,
-      "submitTime": 1783821365,
-      "question": {
-        "title": "Median of Two Sorted Arrays",
-        "translatedTitle": "寻找两个正序数组的中位数",
-        "titleSlug": "median-of-two-sorted-arrays",
-        "questionFrontendId": "4"
-      }
-    },
-    {
-      "submissionId": 735380898,
-      "submitTime": 1783819366,
-      "question": {
-        "title": "Friend Requests II: Who Has the Most Friends",
-        "translatedTitle": "好友申请 II ：谁有最多的好友",
-        "titleSlug": "friend-requests-ii-who-has-the-most-friends",
-        "questionFrontendId": "602"
-      }
-    },
-    {
-      "submissionId": 735379169,
-      "submitTime": 1783818040,
-      "question": {
-        "title": "Rank Transform of an Array",
-        "translatedTitle": "数组序号转换",
-        "titleSlug": "rank-transform-of-an-array",
-        "questionFrontendId": "1331"
       }
     }
   ],
