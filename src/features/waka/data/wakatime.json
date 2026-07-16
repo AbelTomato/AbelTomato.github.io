@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-16T08:11:01.906Z",
-  "total": "245 hrs 3 mins",
-  "daily_average": "6 hrs 2 mins",
+  "lastUpdate": "2026-07-16T13:47:54.191Z",
+  "total": "245 hrs 38 mins",
+  "daily_average": "6 hrs 3 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 181485.56,
-      "total_text": "50h 24m",
+      "total_seconds": 183589.458,
+      "total_text": "50h 59m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 822871.987,
-      "total_text": "228h 34m",
+      "total_seconds": 824975.885,
+      "total_text": "229h 9m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2517792.0109999995,
-      "total_text": "699h 23m",
+      "total_seconds": 2519895.9089999995,
+      "total_text": "699h 58m",
       "days_active": 139
     },
     "all_time": {
-      "total_seconds": 2517792.0109999995,
-      "total_text": "699h 23m",
+      "total_seconds": 2519895.9089999995,
+      "total_text": "699h 58m",
       "days_active": 139
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-16",
-      "seconds": 3412.639,
-      "text": "56 mins"
+      "seconds": 5516.537,
+      "text": "1 hr 31 mins"
     }
   ],
   "heatmap": [
@@ -616,17 +616,17 @@
     },
     {
       "date": "2026-07-16",
-      "seconds": 3412.639
+      "seconds": 5516.537
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 754126.7080000001
+      "total_seconds": 754165.7080000001
     },
     {
       "name": "C++",
-      "total_seconds": 528808.6890000002
+      "total_seconds": 530425.8560000001
     },
     {
       "name": "Python",
@@ -658,7 +658,7 @@
     },
     {
       "name": "C",
-      "total_seconds": 28022.414999999997
+      "total_seconds": 28019.482
     },
     {
       "name": "HTML",
@@ -730,7 +730,7 @@
     },
     {
       "name": "Objective-C",
-      "total_seconds": 47.708
+      "total_seconds": 52.455999999999996
     },
     {
       "name": "C#",
@@ -1582,7 +1582,7 @@
     },
     "2026-06-22": {
       "Markdown": 19147.049,
-      "C": 10606.15,
+      "C": 10603.217,
       "SQL": 4326.749,
       "Python": 2454.721,
       "Astro": 1375.001,
@@ -1591,8 +1591,8 @@
       "MDX": 249.681,
       "Git": 122.024,
       "Perl": 15.113,
-      "Makefile": 0,
-      "Other": 0
+      "Other": 2.933,
+      "Makefile": 0
     },
     "2026-06-23": {
       "Markdown": 13713.628,
@@ -1877,12 +1877,13 @@
       "Other": 8
     },
     "2026-07-16": {
+      "C++": 2335.788,
       "Python": 971.186,
-      "C++": 718.621,
+      "Other": 866.602,
       "CSS": 627,
-      "Markdown": 562.022,
-      "Other": 423.619,
+      "Markdown": 601.022,
       "Git": 110.191,
+      "Objective-C": 4.748,
       "JSON": 0,
       "Astro": 0
     }
