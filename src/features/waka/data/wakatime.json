@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-16T13:47:54.191Z",
+  "lastUpdate": "2026-07-16T19:08:34.745Z",
   "total": "245 hrs 38 mins",
   "daily_average": "6 hrs 3 mins",
   "stats": {
@@ -622,11 +622,11 @@
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 754165.7080000001
+      "total_seconds": 754195.4630000001
     },
     {
       "name": "C++",
-      "total_seconds": 530425.8560000001
+      "total_seconds": 530868.8390000002
     },
     {
       "name": "Python",
@@ -666,7 +666,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 12463.458
+      "total_seconds": 12671.979000000001
     },
     {
       "name": "CMake",
@@ -682,7 +682,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 5349.394999999999
+      "total_seconds": 5534.7379999999985
     },
     {
       "name": "Bash",
@@ -1877,12 +1877,11 @@
       "Other": 8
     },
     "2026-07-16": {
-      "C++": 2335.788,
+      "C++": 2778.771,
       "Python": 971.186,
-      "Other": 866.602,
-      "CSS": 627,
-      "Markdown": 601.022,
-      "Git": 110.191,
+      "CSS": 835.521,
+      "Markdown": 630.777,
+      "Git": 295.534,
       "Objective-C": 4.748,
       "JSON": 0,
       "Astro": 0
