@@ -1,0 +1,34 @@
+---
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import CoCoders from "@features/co-coders/components/CoCoders.astro";
+import { CREATE_TIME } from "@src/consts";
+import { getPostsData } from "@src/hooks/usePostsData";
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+
+const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
+  await getPostsData();
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
+---
+
+<ThreeColumnLayout title="友链" description="一些有趣的朋友">
+  <LeftSidebar slot="left-sidebar" />
+  <main class="w-full flex flex-col gap-6">
+    <Card className="rounded-xl">
+      <CardHeader><CardTitle className="text-3xl">友链</CardTitle></CardHeader>
+      <CardContent
+        ><p class="text-sm leading-7 text-muted-foreground">
+          一生大笑能几回，斗酒相逢须醉倒
+        </p></CardContent
+      >
+    </Card>
+    <CoCoders />
+  </main>
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
+</ThreeColumnLayout>

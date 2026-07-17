@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE } from "@src/consts";
 import HeaderLink from "@components/layout/HeaderLink.astro";
+import AboutMenu from "@components/layout/AboutMenu.astro";
 ---
 
 <header
@@ -29,8 +30,8 @@ import HeaderLink from "@components/layout/HeaderLink.astro";
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/archive">Archive</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/hobbies">Hobbies</HeaderLink>
+      <AboutMenu />
+      <HeaderLink href="/echo">Echo</HeaderLink>
       <HeaderLink href="/status">Status</HeaderLink>
     </div>
 
@@ -74,13 +75,15 @@ import HeaderLink from "@components/layout/HeaderLink.astro";
 </header>
 
 <style is:global>
-  .internal-links a {
+  .internal-links > a,
+  .internal-links .about-menu__trigger {
     position: relative;
     text-decoration: none;
     border-bottom: 4px solid transparent !important;
   }
 
-  .internal-links a::after {
+  .internal-links > a::after,
+  .internal-links .about-menu__trigger::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -93,15 +96,18 @@ import HeaderLink from "@components/layout/HeaderLink.astro";
     transition: transform 0.25s ease-out;
   }
 
-  .internal-links a:hover::after {
+  .internal-links > a:hover::after,
+  .internal-links .about-menu__trigger:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 
-  .internal-links a.active {
+  .internal-links > a.active,
+  .internal-links .about-menu__trigger.active {
     color: #3b82f6 !important;
   }
-  .internal-links a.active::after {
+  .internal-links > a.active::after,
+  .internal-links .about-menu__trigger.active::after {
     transform: scaleX(1);
     background-color: #3b82f6;
   }

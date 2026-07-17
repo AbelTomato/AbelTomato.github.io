@@ -5,7 +5,6 @@ import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
 import { CREATE_TIME } from "@src/consts";
 import { Card, CardHeader, CardTitle, CardContent } from "@components/ui/card";
-import CoCoders from "@features/co-coders/components/CoCoders.astro";
 
 const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
   await getPostsData();
@@ -71,18 +70,6 @@ const siteData = {
         <p>如果博客中的内容有帮助到你，我很荣幸</p>
       </CardContent>
     </Card>
-
-    <div class="flex items-center gap-4 py-2" aria-hidden="true">
-      <div class="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
-      <span
-        class="text-xs font-medium uppercase tracking-wider text-gray-400 dark:text-gray-500"
-      >
-        Friends
-      </span>
-      <div class="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
-    </div>
-
-    <CoCoders />
   </main>
 
   <RightSidebar slot="right-sidebar" siteData={siteData} />

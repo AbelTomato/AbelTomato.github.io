@@ -1,0 +1,64 @@
+---
+const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, "");
+const isAboutSection = ["/about", "/guestbook", "/friends"].includes(pathname);
+---
+
+<div class="about-menu relative flex h-full items-center" data-about-menu>
+  <button
+    class:list={["about-menu__trigger", { active: isAboutSection }]}
+    type="button"
+    aria-label="展开 About 菜单"
+    aria-expanded="false"
+    aria-controls="about-menu-panel"
+    data-about-menu-trigger
+  >
+    <span>About</span>
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 7.5 5 5 5-5" /></svg>
+  </button>
+  <div
+    id="about-menu-panel"
+    class="about-menu__panel"
+    role="menu"
+    data-about-menu-panel
+    hidden
+  >
+    <a href="/about" role="menuitem" class:list={{ "about-menu__item": true, "about-menu__item--active": pathname === "/about" }}>个人简介</a>
+    <a href="/guestbook" role="menuitem" class:list={{ "about-menu__item": true, "about-menu__item--active": pathname === "/guestbook" }}>留言板</a>
+    <a href="/friends" role="menuitem" class:list={{ "about-menu__item": true, "about-menu__item--active": pathname === "/friends" }}>友链</a>
+  </div>
+</div>
+
+<style>
+  .about-menu__trigger { display: inline-flex; align-items: center; justify-content: center; gap: .125rem; height: 100%; color: inherit; }
+  .about-menu__trigger:focus-visible, .about-menu__item:focus-visible { outline: 2px solid var(--color-ring, #3b82f6); outline-offset: 2px; }
+  .about-menu__trigger svg { width: .875rem; height: .875rem; transition: transform .2s ease; }
+  .about-menu[data-open] .about-menu__trigger svg { transform: rotate(180deg); }
+  .about-menu__panel { position: absolute; top: calc(100% - .25rem); left: 50%; z-index: 60; min-width: 8.5rem; padding: .375rem; border: 1px solid rgb(255 255 255 / .45); border-radius: .75rem; background: rgb(255 255 255 / .68); box-shadow: 0 10px 25px rgb(15 23 42 / .12); backdrop-filter: blur(14px) saturate(150%); -webkit-backdrop-filter: blur(14px) saturate(150%); transform: translateX(-50%); }
+  :global(.dark) .about-menu__panel { border-color: rgb(255 255 255 / .14); background: rgb(24 24 27 / .68); box-shadow: 0 10px 25px rgb(0 0 0 / .3); }
+  .about-menu__item { display: block; border-radius: .5rem; padding: .5rem .625rem; font-size: .875rem; text-decoration: none; white-space: nowrap; }
+  .about-menu__item:hover, .about-menu__item--active { color: #2563eb; background: rgb(239 246 255); }
+  :global(.dark) .about-menu__item:hover, :global(.dark) .about-menu__item--active { background: rgb(30 58 138 / .3); }
+</style>
+
+<script>
+  const initializeAboutMenus = () => {
+    document.querySelectorAll<HTMLElement>("[data-about-menu]").forEach((menu) => {
+      if (menu.dataset.ready) return;
+      menu.dataset.ready = "true";
+      const trigger = menu.querySelector<HTMLButtonElement>("[data-about-menu-trigger]");
+      const panel = menu.querySelector<HTMLElement>("[data-about-menu-panel]");
+      if (!trigger || !panel) return;
+
+      const close = () => { menu.removeAttribute("data-open"); panel.hidden = true; trigger.setAttribute("aria-expanded", "false"); };
+      const toggle = () => { const open = menu.hasAttribute("data-open"); if (open) close(); else { menu.setAttribute("data-open", ""); panel.hidden = false; trigger.setAttribute("aria-expanded", "true"); } };
+      const open = () => { menu.setAttribute("data-open", ""); panel.hidden = false; trigger.setAttribute("aria-expanded", "true"); };
+      trigger.addEventListener("click", toggle);
+      menu.addEventListener("mouseenter", open);
+      menu.addEventListener("mouseleave", close);
+      document.addEventListener("click", (event) => { if (!menu.contains(event.target as Node)) close(); });
+      menu.addEventListener("keydown", (event) => { if (event.key === "Escape") { close(); trigger.focus(); } });
+    });
+  };
+  initializeAboutMenus();
+  document.addEventListener("astro:page-load", initializeAboutMenus);
+</script>
