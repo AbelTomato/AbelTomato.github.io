@@ -1,10 +1,16 @@
 import { useEffect, useRef, useState } from "react";
-import { MessageCircle, RefreshCw, Send } from "lucide-react";
+import { Copy, MessageCircle, RefreshCw, Send } from "lucide-react";
 
 import { Button } from "@components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import { Card, CardContent } from "@components/ui/card";
 import { fetchComments, submitComment } from "../api";
 import type { PublicComment } from "../types";
+import {
+  formatCommentTimestamp,
+  getCommentAnchorId,
+  getCommentAvatarClassName,
+  getCommentAvatarInitial,
+} from "../utils/commentPresentation";
 
 interface CommentSectionProps {
   postSlug: string;
@@ -161,6 +167,12 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
     }
   }
 
+  function handleCommentCopy(content: string) {
+    if (navigator.clipboard?.writeText) {
+      void navigator.clipboard.writeText(content);
+    }
+  }
+
   return (
     <section className="mx-auto mt-14 max-w-none border-t pt-10">
       <div className="mb-6 flex items-center justify-between gap-4">
@@ -206,28 +218,54 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
           </p>
         ) : null}
 
-        {comments.map((comment) => (
-          <Card key={comment.id} size="sm">
-            <CardHeader>
-              <CardTitle className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-                <span className="font-bold text-foreground">
-                  {comment.authorName}
-                </span>
-                <time className="text-[11px] font-normal text-zinc-500">
-                  {new Intl.DateTimeFormat("zh-CN", {
-                    dateStyle: "medium",
-                    timeStyle: "short",
-                  }).format(new Date(comment.createdAt))}
-                </time>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="whitespace-pre-wrap text-sm leading-7 text-foreground/80">
-                {comment.content}
-              </p>
-            </CardContent>
-          </Card>
-        ))}
+        {comments.map((comment) => {
+          const anchorId = getCommentAnchorId(comment.id);
+
+          return (
+            <Card
+              key={comment.id}
+              id={anchorId}
+              size="sm"
+              className="group/card scroll-mt-6 border border-foreground/10 bg-card/70 py-0 backdrop-blur-sm transition-[transform,background-color,box-shadow] duration-200 motion-reduce:transition-none hover:-translate-y-px hover:bg-card/90 hover:shadow-lg hover:shadow-black/10 focus-within:-translate-y-px focus-within:bg-card/90 focus-within:shadow-lg focus-within:shadow-black/10"
+            >
+              <CardContent className="flex gap-3 p-4 sm:gap-4">
+                <div
+                  className={`flex size-10 shrink-0 items-center justify-center rounded-full border border-white/10 font-mono text-sm font-semibold text-white shadow-inner shadow-white/10 ${getCommentAvatarClassName(comment.authorName)}`}
+                  aria-hidden="true"
+                >
+                  {getCommentAvatarInitial(comment.authorName)}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex min-w-0 items-center gap-2">
+                    <span className="truncate text-sm font-bold text-foreground">
+                      {comment.authorName}
+                    </span>
+                    <time
+                      className="ml-auto shrink-0 font-mono text-[10px] font-normal text-muted-foreground"
+                      dateTime={comment.createdAt}
+                    >
+                      {formatCommentTimestamp(comment.createdAt)}
+                    </time>
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      size="icon-xs"
+                      onClick={() => handleCommentCopy(comment.content)}
+                      className="shrink-0 text-muted-foreground opacity-100 sm:opacity-0 sm:group-hover/card:opacity-100 sm:group-focus-within/card:opacity-100"
+                      aria-label={`复制 ${comment.authorName} 的评论内容`}
+                      title="复制评论"
+                    >
+                      <Copy className="size-3.5" aria-hidden="true" />
+                    </Button>
+                  </div>
+                  <p className="mt-2 whitespace-pre-wrap text-sm leading-7 text-foreground/80">
+                    {comment.content}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
 
       <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
