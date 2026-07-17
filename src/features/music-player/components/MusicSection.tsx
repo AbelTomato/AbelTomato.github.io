@@ -55,7 +55,7 @@ export default function MusicSection() {
             </div>
             <Slider aria-label="播放进度" className="[&_[data-slot=slider-range]]:bg-primary" value={[player.currentTime]} min={0} max={Math.max(player.duration, 1)} step={1} disabled={!player.hasAudio} onValueChange={([nextTime]) => player.seek(nextTime)} />
           </div>
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 sm:gap-3">
             <div className="flex justify-end"><Button variant="ghost" size="icon" className="rounded-full text-foreground hover:bg-muted hover:text-foreground" aria-label="上一首" onClick={() => player.changeTrack(-1)}><SkipBack /></Button></div>
             <Button size="icon-lg" className="size-12 rounded-full bg-primary text-primary-foreground hover:bg-primary/90" aria-label={player.isPlaying ? "暂停" : "播放"} onClick={player.togglePlayback}>
               {player.isPlaying ? <Pause className="size-5 fill-current" /> : <Play className="size-5 fill-current" />}
@@ -64,7 +64,7 @@ export default function MusicSection() {
               <Button variant="ghost" size="icon" className="rounded-full text-foreground hover:bg-muted hover:text-foreground" aria-label="下一首" onClick={() => player.changeTrack(1)}><SkipForward /></Button>
               <div className="ml-auto flex min-w-0 items-center gap-2">
                 {player.volume === 0 ? <VolumeX className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" /> : <Volume2 className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />}
-                <Slider aria-label="音量" className="w-20 shrink-0 [&_[data-slot=slider-range]]:bg-primary [&_[data-slot=slider-track]]:h-2 [&_[data-slot=slider-range]]:h-2 [&_[data-slot=slider-thumb]]:size-4 sm:w-28" value={[player.volume]} min={0} max={100} step={1} onValueChange={([volume]) => player.setVolume(volume)} />
+                <Slider aria-label="音量" className="hidden w-20 shrink-0 sm:block sm:w-28 [&_[data-slot=slider-range]]:bg-primary [&_[data-slot=slider-track]]:h-2 [&_[data-slot=slider-range]]:h-2 [&_[data-slot=slider-thumb]]:size-4" value={[player.volume]} min={0} max={100} step={1} onValueChange={([volume]) => player.setVolume(volume)} />
               </div>
             </div>
           </div>
