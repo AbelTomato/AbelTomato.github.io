@@ -201,7 +201,12 @@ PUBLIC_TURNSTILE_SITE_KEY=<Cloudflare Turnstile Site Key>
 2. 提交一条测试评论。
 3. 评论提交后应提示：`评论已提交，审核后展示`。
 4. 未审核评论不应立即显示在公开文章页。
-5. 登录管理员接口：
+5. 打开 `https://abeltomato.github.io/comment-admin/`，使用生成 `COMMENT_ADMIN_PASSWORD_HASH` 时对应的管理员密码登录；在“待审核”中通过测试评论。
+6. 刷新文章页，确认评论显示。
+
+### 管理员 API（备用）
+
+管理员网页通过以下 API 工作；仅在界面不可用时再手动调用：
 
 ```bash
 curl -X POST "https://comment-api-production-xxxx.up.railway.app/api/admin/login" ^
@@ -211,14 +216,14 @@ curl -X POST "https://comment-api-production-xxxx.up.railway.app/api/admin/login
 
 Windows `cmd.exe` 使用上面的 `^` 续行；PowerShell 或 Bash 需要改为对应语法。
 
-6. 复制返回的 token，查看 pending 评论：
+1. 复制返回的 token，查看 pending 评论：
 
 ```bash
 curl "https://comment-api-production-xxxx.up.railway.app/api/admin/comments?status=pending" ^
   -H "authorization: Bearer <token>"
 ```
 
-7. 批准评论：
+2. 批准评论：
 
 ```bash
 curl -X PATCH "https://comment-api-production-xxxx.up.railway.app/api/admin/comments/<comment-id>/status" ^
@@ -227,7 +232,7 @@ curl -X PATCH "https://comment-api-production-xxxx.up.railway.app/api/admin/comm
   -d "{\"status\":\"approved\"}"
 ```
 
-8. 刷新文章页，确认评论显示。
+3. 刷新文章页，确认评论显示。
 
 ## 11. 常见故障
 
