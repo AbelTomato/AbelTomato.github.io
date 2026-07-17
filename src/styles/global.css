@@ -4,6 +4,24 @@
 @import "@fontsource/lxgw-wenkai";
 @import "@fontsource-variable/jetbrains-mono";
 
+@keyframes music-wave {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+.music-wave-bar { transform-origin: bottom; }
+.music-wave-bar-playing { animation: music-wave 0.8s ease-in-out infinite; }
+.music-wave-bar-1 { animation-delay: -0.1s; animation-duration: 0.65s; }
+.music-wave-bar-2 { animation-delay: -0.55s; animation-duration: 0.9s; }
+.music-wave-bar-3 { animation-delay: -0.25s; animation-duration: 0.7s; }
+.music-wave-bar-4 { animation-delay: -0.7s; animation-duration: 0.85s; }
+.music-scrollbar-hidden { scrollbar-width: none; -ms-overflow-style: none; }
+.music-scrollbar-hidden::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .music-wave-bar-playing { animation: none; }
+}
+
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:where(.dark, .dark *), &:not(:where(.light, .light *)));
