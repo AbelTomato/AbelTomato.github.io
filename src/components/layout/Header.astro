@@ -8,8 +8,8 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
   id="main-header"
   class="sticky top-0 z-50 m-0 px-0 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-[0_2px_8px_rgba(0,0,0,0.03)] dark:shadow-none transition-transform duration-300 ease-in-out"
 >
-  <nav class="flex items-center justify-between w-full px-6 lg:px-12 h-16">
-    <h2 class="text-xl font-bold">
+  <nav class="flex h-16 w-full items-center justify-between gap-4 px-4 sm:px-6 lg:px-12">
+    <h2 class="min-w-0 text-xl font-bold">
       <a
         href="/"
         class="flex items-center no-underline text-gray-900 dark:text-gray-100 hover:opacity-90 transition-opacity"
@@ -17,16 +17,16 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
         <img
           src="/android-chrome-512x512.png"
           alt="logo"
-          class="h-8 w-auto mr-2 invert dark:invert-0 hover:rotate-12 transition-transform duration-300"
+          class="mr-2 h-8 w-auto shrink-0 invert transition-transform duration-300 hover:rotate-12 dark:invert-0"
         />
         <span
-          class="bg-linear-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent"
+          class="truncate bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent dark:from-white dark:to-gray-300"
           >{SITE_TITLE}</span
         >
       </a>
     </h2>
 
-    <div class="internal-links flex gap-6 h-full items-center">
+    <div class="internal-links hidden h-full items-center gap-6 lg:flex">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/archive">Archive</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
@@ -35,7 +35,7 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
       <HeaderLink href="/status">Status</HeaderLink>
     </div>
 
-    <div class="social-links flex gap-4">
+    <div class="social-links hidden gap-4 lg:flex">
       <a
         href="https://github.com/AbelTomato"
         target="_blank"
@@ -71,6 +71,30 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
         </svg>
       </a>
     </div>
+
+    <details class="group relative lg:hidden">
+      <summary class="flex size-10 cursor-pointer list-none items-center justify-center rounded-md text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 [&::-webkit-details-marker]:hidden">
+        <span class="sr-only">打开导航菜单</span>
+        <svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        <svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+      </summary>
+      <div class="absolute right-0 top-12 z-60 w-56 rounded-xl border border-border bg-popover p-2 text-popover-foreground shadow-lg">
+        <div class="grid gap-1">
+          <a href="/" class="rounded-md px-3 py-2 text-sm hover:bg-accent">Home</a>
+          <a href="/archive" class="rounded-md px-3 py-2 text-sm hover:bg-accent">Archive</a>
+          <a href="/blog" class="rounded-md px-3 py-2 text-sm hover:bg-accent">Blog</a>
+          <a href="/echo" class="rounded-md px-3 py-2 text-sm hover:bg-accent">Echo</a>
+          <a href="/status" class="rounded-md px-3 py-2 text-sm hover:bg-accent">Status</a>
+          <a href="/about" class="rounded-md px-3 py-2 text-sm hover:bg-accent">个人简介</a>
+          <a href="/guestbook" class="rounded-md px-3 py-2 text-sm hover:bg-accent">留言板</a>
+          <a href="/friends" class="rounded-md px-3 py-2 text-sm hover:bg-accent">友链</a>
+        </div>
+        <div class="mt-2 flex gap-3 border-t border-border px-3 pt-3 text-sm text-muted-foreground">
+          <a href="https://github.com/AbelTomato" target="_blank" rel="noreferrer" class="hover:text-foreground">GitHub</a>
+          <a href="mailto:abelmiaotomato@gmail.com" class="hover:text-foreground">邮箱</a>
+        </div>
+      </div>
+    </details>
   </nav>
 </header>
 

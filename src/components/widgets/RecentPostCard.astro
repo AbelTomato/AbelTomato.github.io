@@ -17,7 +17,7 @@ const heroImage = post.data.heroImage ?? placeholderImg;
   class="group block overflow-hidden rounded-xl border border-gray-200 bg-white transition-all duration-200 hover:border-blue-300 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800/50 dark:hover:border-blue-600 dark:hover:bg-gray-800"
 >
   <article
-    class="grid min-h-32 grid-cols-[1fr_8rem] sm:min-h-36 sm:grid-cols-[1fr_11rem]"
+    class="grid min-h-28 grid-cols-[minmax(0,1fr)_5.5rem] sm:min-h-36 sm:grid-cols-[minmax(0,1fr)_11rem]"
   >
     <div class="flex min-w-0 flex-col gap-4 p-5 sm:flex-row">
       <div
@@ -51,7 +51,7 @@ const heroImage = post.data.heroImage ?? placeholderImg;
       </div>
     </div>
 
-    <div class="h-32 overflow-hidden bg-gray-100 sm:h-36 dark:bg-gray-700">
+    <div class="h-28 overflow-hidden bg-gray-100 sm:h-36 dark:bg-gray-700">
       <Image
         src={heroImage}
         alt={post.data.heroImage ? post.data.title : "placeholder"}
