@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-17T04:24:53.291Z",
-  "total": "244 hrs 30 mins",
-  "daily_average": "6 hrs 1 min",
+  "lastUpdate": "2026-07-17T04:47:59.058Z",
+  "total": "244 hrs 47 mins",
+  "daily_average": "6 hrs 2 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 163108.219,
-      "total_text": "45h 18m",
+      "total_seconds": 164117.231,
+      "total_text": "45h 35m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 827957.6880000001,
-      "total_text": "229h 59m",
+      "total_seconds": 828966.7000000001,
+      "total_text": "230h 16m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2524044.5109999995,
-      "total_text": "701h 7m",
+      "total_seconds": 2525053.5229999996,
+      "total_text": "701h 24m",
       "days_active": 140
     },
     "all_time": {
-      "total_seconds": 2524044.5109999995,
-      "total_text": "701h 7m",
+      "total_seconds": 2525053.5229999996,
+      "total_text": "701h 24m",
       "days_active": 140
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-17",
-      "seconds": 4148.602,
-      "text": "1 hr 9 mins"
+      "seconds": 5157.614,
+      "text": "1 hr 25 mins"
     }
   ],
   "heatmap": [
@@ -620,7 +620,7 @@
     },
     {
       "date": "2026-07-17",
-      "seconds": 4148.602
+      "seconds": 5157.614
     }
   ],
   "languages": [
@@ -638,7 +638,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 223130.57100000003
+      "total_seconds": 224026.98200000002
     },
     {
       "name": "JavaScript",
@@ -654,7 +654,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 46025.98399999999
+      "total_seconds": 46367.92099999999
     },
     {
       "name": "SQL",
@@ -670,7 +670,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 12671.979000000001
+      "total_seconds": 12683.046
     },
     {
       "name": "CMake",
@@ -1892,12 +1892,14 @@
       "Astro": 0
     },
     "2026-07-17": {
-      "TypeScript": 1942.575,
+      "TypeScript": 2838.986,
       "Bash": 1533.246,
-      "Other": 259.809,
+      "JSON": 341.937,
       "Markdown": 204.401,
       "Astro": 118.638,
-      "Git": 89.933
+      "Git": 89.933,
+      "Other": 19.406,
+      "CSS": 11.067
     }
   }
 }
