@@ -78,7 +78,7 @@ export default function CommentAdmin() {
     setError("");
     try {
       await updateAdminCommentStatus(token, id, nextStatus);
-      setMessage(nextStatus === "approved" ? "评论已通过" : "评论已删除");
+      setMessage(nextStatus === "approved" ? "评论已通过" : nextStatus === "rejected" ? "评论已拒绝" : "评论已删除");
       await loadComments(token, status);
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : "操作失败");
@@ -127,7 +127,7 @@ export default function CommentAdmin() {
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex flex-wrap gap-2" role="tablist" aria-label="评论状态筛选">
+        <div className="flex flex-wrap gap-2" aria-label="评论状态筛选">
           {statuses.map((item) => (
             <Button
               key={item.value}
@@ -176,6 +176,11 @@ export default function CommentAdmin() {
                   {status !== "approved" ? (
                     <Button type="button" size="sm" onClick={() => void changeStatus(comment.id, "approved")} disabled={loading}>
                       <Check />通过
+                    </Button>
+                  ) : null}
+                  {status !== "rejected" ? (
+                    <Button type="button" size="sm" variant="outline" onClick={() => void changeStatus(comment.id, "rejected")} disabled={loading}>
+                      <X />拒绝
                     </Button>
                   ) : null}
                   <Button type="button" size="sm" variant="outline" onClick={() => void changeStatus(comment.id, "deleted")} disabled={loading}>

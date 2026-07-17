@@ -12,13 +12,19 @@ interface CommentSectionProps {
 
 type LoadState = "idle" | "loading" | "loaded" | "error";
 type SubmitState = "idle" | "submitting" | "success" | "error";
+type TurnstileState = "idle" | "loading" | "ready" | "error";
 
 declare global {
   interface Window {
     turnstile?: {
       render: (
         element: HTMLElement,
-        options: { sitekey: string; callback: (token: string) => void },
+        options: {
+          sitekey: string;
+          callback: (token: string) => void;
+          "expired-callback"?: () => void;
+          "error-callback"?: () => void;
+        },
       ) => string;
       reset: (widgetId?: string) => void;
     };
@@ -29,56 +35,100 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY as
   | string
   | undefined;
 
+let turnstileLoader: Promise<void> | undefined;
+
+function loadTurnstile(): Promise<void> {
+  if (window.turnstile) return Promise.resolve();
+  if (turnstileLoader) return turnstileLoader;
+
+  turnstileLoader = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src =
+      "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    script.async = true;
+    script.defer = true;
+    script.onload = () =>
+      window.turnstile ? resolve() : reject(new Error("人机验证服务加载失败"));
+    script.onerror = () => reject(new Error("人机验证服务加载失败"));
+    document.head.append(script);
+  });
+
+  return turnstileLoader;
+}
+
 export default function CommentSection({ postSlug }: CommentSectionProps) {
   const [comments, setComments] = useState<PublicComment[]>([]);
   const [loadState, setLoadState] = useState<LoadState>("idle");
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
+  const [turnstileState, setTurnstileState] = useState<TurnstileState>(
+    turnstileSiteKey ? "loading" : "idle",
+  );
   const [message, setMessage] = useState("");
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const turnstileContainerRef = useRef<HTMLDivElement | null>(null);
   const turnstileWidgetIdRef = useRef<string | undefined>(undefined);
 
-  async function loadComments() {
+  async function loadComments(signal?: AbortSignal) {
     setLoadState("loading");
 
     try {
-      setComments(await fetchComments(postSlug));
+      const nextComments = await fetchComments(postSlug, signal);
+      if (signal?.aborted) return;
+      setComments(nextComments);
       setLoadState("loaded");
     } catch {
+      if (signal?.aborted) return;
       setLoadState("error");
     }
   }
 
   useEffect(() => {
-    void loadComments();
+    const controller = new AbortController();
+    void loadComments(controller.signal);
+    return () => controller.abort();
   }, [postSlug]);
 
   useEffect(() => {
-    if (
-      !turnstileSiteKey ||
-      !window.turnstile ||
-      !turnstileContainerRef.current
-    ) {
-      return;
-    }
+    if (!turnstileSiteKey || !turnstileContainerRef.current) return;
+    let cancelled = false;
 
-    if (turnstileWidgetIdRef.current) {
-      return;
-    }
+    void loadTurnstile()
+      .then(() => {
+        if (cancelled || !window.turnstile || !turnstileContainerRef.current)
+          return;
+        turnstileWidgetIdRef.current = window.turnstile.render(
+          turnstileContainerRef.current,
+          {
+            sitekey: turnstileSiteKey,
+            callback: (token) => {
+              setTurnstileToken(token);
+              setTurnstileState("ready");
+            },
+            "expired-callback": () => setTurnstileToken(null),
+            "error-callback": () => setTurnstileState("error"),
+          },
+        );
+        setTurnstileState("ready");
+      })
+      .catch(() => {
+        if (!cancelled) setTurnstileState("error");
+      });
 
-    turnstileWidgetIdRef.current = window.turnstile.render(
-      turnstileContainerRef.current,
-      {
-        sitekey: turnstileSiteKey,
-        callback: setTurnstileToken,
-      },
-    );
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
+
+    if (turnstileState === "error") {
+      setSubmitState("error");
+      setMessage("人机验证服务加载失败，请刷新页面后重试");
+      return;
+    }
 
     if (turnstileSiteKey && !turnstileToken) {
       setSubmitState("error");
@@ -113,14 +163,6 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
   return (
     <section className="mx-auto mt-14 max-w-none border-t pt-10">
-      {turnstileSiteKey ? (
-        <script
-          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-          async
-          defer
-        />
-      ) : null}
-
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
           <h2 className="flex items-center gap-2 text-2xl font-semibold text-foreground">
@@ -229,7 +271,21 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
           />
         </label>
 
-        {turnstileSiteKey ? <div ref={turnstileContainerRef} /> : null}
+        {turnstileSiteKey ? (
+          <div className="space-y-2">
+            <div ref={turnstileContainerRef} />
+            {turnstileState === "loading" ? (
+              <p className="text-sm text-muted-foreground">
+                正在加载人机验证...
+              </p>
+            ) : null}
+            {turnstileState === "error" ? (
+              <p className="text-sm text-destructive">
+                人机验证服务加载失败，请刷新页面后重试
+              </p>
+            ) : null}
+          </div>
+        ) : null}
 
         <div className="flex flex-wrap items-center gap-3">
           <Button
