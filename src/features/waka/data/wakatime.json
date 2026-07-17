@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-17T12:50:43.614Z",
+  "lastUpdate": "2026-07-17T13:25:41.798Z",
   "total": "249 hrs 53 mins",
   "daily_average": "6 hrs 9 mins",
   "stats": {
@@ -681,12 +681,12 @@
       "total_seconds": 8194.023000000001
     },
     {
-      "name": "Bash",
-      "total_seconds": 6097.496999999999
+      "name": "Git",
+      "total_seconds": 6158.973999999998
     },
     {
-      "name": "Git",
-      "total_seconds": 5971.400999999998
+      "name": "Bash",
+      "total_seconds": 6097.496999999999
     },
     {
       "name": "Git Config",
@@ -1897,8 +1897,8 @@
       "Markdown": 2849.42,
       "Bash": 1533.246,
       "JSON": 1213.734,
-      "Other": 711.095,
-      "Git": 436.663,
+      "Git": 624.236,
+      "Other": 523.522,
       "CSS": 259.747,
       "JavaScript": 237.543,
       "YAML": 25.874
