@@ -64,7 +64,7 @@ export default function MusicSection() {
               <Button variant="ghost" size="icon" className="rounded-full text-foreground hover:bg-muted hover:text-foreground" aria-label="下一首" onClick={() => player.changeTrack(1)}><SkipForward /></Button>
               <div className="ml-auto flex min-w-0 items-center gap-2">
                 {player.volume === 0 ? <VolumeX className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" /> : <Volume2 className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />}
-                <Slider aria-label="音量" className="hidden w-20 shrink-0 sm:block sm:w-28 [&_[data-slot=slider-range]]:bg-primary [&_[data-slot=slider-track]]:h-2 [&_[data-slot=slider-range]]:h-2 [&_[data-slot=slider-thumb]]:size-4" value={[player.volume]} min={0} max={100} step={1} onValueChange={([volume]) => player.setVolume(volume)} />
+                <Slider aria-label="音量" className="hidden h-5 w-20 shrink-0 sm:flex sm:w-28 [&_[data-slot=slider-track]]:h-2 [&_[data-slot=slider-track]]:bg-muted-foreground/35 [&_[data-slot=slider-range]]:h-2 [&_[data-slot=slider-range]]:bg-primary [&_[data-slot=slider-thumb]]:size-4" value={[player.volume]} min={0} max={100} step={1} onValueChange={([volume]) => player.setVolume(volume)} />
               </div>
             </div>
           </div>
