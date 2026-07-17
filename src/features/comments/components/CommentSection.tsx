@@ -78,7 +78,8 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
 
     if (turnstileSiteKey && !turnstileToken) {
       setSubmitState("error");
@@ -100,7 +101,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
       const result = await submitComment(payload);
 
-      event.currentTarget.reset();
+      form.reset();
       window.turnstile?.reset(turnstileWidgetIdRef.current);
       setTurnstileToken(null);
       setSubmitState("success");
