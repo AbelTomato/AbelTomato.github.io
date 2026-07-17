@@ -3,7 +3,7 @@ import FontSizeAdjuster from "./FontSizeAdjuster";
 import ThemeToggle from "./ThemeToggle";
 import BackToTop from "./BackToTop";
 import { Button } from "@components/ui/button";
-import { motion, useDragControls } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function FloatingTools() {
   const [expanded, setExpanded] = useState(false);
@@ -11,23 +11,13 @@ export default function FloatingTools() {
 
   const isDraggingRef = useRef(false);
 
-  const dragControls = useDragControls();
-
-  function startDrag(event: React.PointerEvent) {
-    const target = event.target as HTMLElement;
-    if (target.closest(".menu-items-container")) return;
-    dragControls.start(event);
-  }
-
   return (
     <div
       ref={constraintsRef}
-      className="fixed inset-0 pointer-events-none z-50"
+      className="fixed inset-0 pointer-events-none z-[70]"
     >
       <motion.div
         drag
-        dragControls={dragControls}
-        dragListener={false}
         dragConstraints={constraintsRef}
         dragElastic={0.1}
         dragMomentum={true}
@@ -46,7 +36,6 @@ export default function FloatingTools() {
           variant="outline"
           size="icon"
           className="h-11 w-11 rounded-full shadow-md border border-input bg-background text-foreground hover:scale-115 hover:bg-accent active:scale-85 transition-all duration-200 select-none"
-          onPointerDown={startDrag}
           onClick={() => {
             if (isDraggingRef.current) return;
             setExpanded((prev) => !prev);

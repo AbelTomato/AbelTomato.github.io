@@ -4,7 +4,9 @@ import BaseHead from "@components/layout/BaseHead.astro";
 import Header from "@components/layout/Header.astro";
 import Footer from "@components/layout/Footer.astro";
 import FloatingTools from "@features/floating-tools/components/FloatingTools";
+import FloatingAllay from "@features/floating-allay/components/FloatingAllay";
 import MermaidRenderer from "@components/MermaidRenderer.astro";
+import AmbientBlogBackground from "@components/core/AmbientBlogBackground";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
@@ -64,12 +66,16 @@ const { title, description } = Astro.props;
     <ClientRouter />
   </head>
 
-  <body class="min-h-screen flex flex-col">
-    <Header />
-    <div class="grow w-full">
-      <slot />
+  <body class="min-h-screen flex flex-col bg-transparent">
+    <AmbientBlogBackground client:idle transition:persist />
+    <div class="relative z-10 flex min-h-screen flex-col">
+      <Header />
+      <div class="grow w-full">
+        <slot />
+      </div>
+      <Footer />
     </div>
-    <Footer />
+    <FloatingAllay client:idle transition:persist />
     <FloatingTools client:idle transition:persist />
     <MermaidRenderer />
   </body>

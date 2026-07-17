@@ -1,0 +1,48 @@
+.loader {
+  --dur: 1s;
+  --wheel: hsl(0 0% 60%);
+  --fur: hsl(30 90% 55%);
+  --fur-light: hsl(30 90% 90%);
+  --fur-highlight: hsl(30 90% 80%);
+  --pink: hsl(0 90% 85%);
+  position: relative;
+  width: 12em;
+  height: 12em;
+  font-size: 12px;
+}
+
+.wheel, .hamster, .hamster div, .spoke { position: absolute; }
+.wheel, .spoke { top: 0; left: 0; width: 100%; height: 100%; border-radius: 50%; }
+.wheel { background: radial-gradient(100% 100% at center, transparent 47.8%, var(--wheel) 48%); z-index: 2; }
+.spoke { animation: spin var(--dur) linear infinite; background: radial-gradient(100% 100% at center, var(--wheel) 4.8%, transparent 5%), linear-gradient(transparent 46.9%, hsl(0 0% 65%) 47% 52.9%, transparent 53%) 50% 50% / 99% 99% no-repeat; }
+
+.hamster { animation: hamster var(--dur) ease-in-out infinite; top: 50%; left: calc(50% - 3.5em); width: 7em; height: 3.75em; transform: rotate(4deg) translate(-.8em, 1.85em); transform-origin: 50% 0; z-index: 1; }
+.head { animation: head var(--dur) ease-in-out infinite; background: var(--fur); border-radius: 70% 30% 0 100% / 40% 25% 25% 60%; box-shadow: 0 -.25em 0 var(--fur-highlight) inset, .75em -1.55em 0 var(--fur-light) inset; top: 0; left: -2em; width: 2.75em; height: 2.5em; transform-origin: 100% 50%; }
+.ear { animation: ear var(--dur) ease-in-out infinite; background: var(--pink); border-radius: 50%; box-shadow: -.25em 0 var(--fur) inset; top: -.25em; right: -.25em; width: .75em; height: .75em; transform-origin: 50% 75%; }
+.eye { animation: eye var(--dur) linear infinite; background: #000; border-radius: 50%; top: .375em; left: 1.25em; width: .5em; height: .5em; }
+.nose { background: hsl(0 90% 75%); border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%; top: .75em; left: 0; width: .2em; height: .25em; }
+.body { animation: body var(--dur) ease-in-out infinite; background: var(--fur-light); border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%; box-shadow: .1em .75em 0 var(--fur) inset, .15em -.5em 0 var(--fur-highlight) inset; top: .25em; left: .5em; width: 4.5em; height: 3em; transform-origin: 17% 50%; transform-style: preserve-3d; }
+.limb { transform-origin: 50% 0; }
+.frontRight, .frontLeft { clip-path: polygon(0 0, 100% 0, 70% 80%, 60% 100%, 0 100%, 40% 80%); top: 2em; left: .5em; width: 1em; height: 1.5em; }
+.frontRight { animation: frontRight var(--dur) linear infinite; background: linear-gradient(var(--fur-highlight) 80%, hsl(0 90% 75%) 80%); transform: rotate(15deg) translateZ(-1px); }
+.frontLeft { animation: frontLeft var(--dur) linear infinite; background: linear-gradient(var(--fur-light) 80%, var(--pink) 80%); transform: rotate(15deg); }
+.backRight, .backLeft { border-radius: .75em .75em 0 0; clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 90%, 70% 100%, 30% 100%, 40% 90%, 0 30%); top: 1em; left: 2.8em; width: 1.5em; height: 2.5em; transform-origin: 50% 30%; }
+.backRight { animation: backRight var(--dur) linear infinite; background: linear-gradient(var(--fur-highlight) 90%, hsl(0 90% 75%) 90%); transform: rotate(-25deg) translateZ(-1px); }
+.backLeft { animation: backLeft var(--dur) linear infinite; background: linear-gradient(var(--fur-light) 90%, var(--pink) 90%); transform: rotate(-25deg); }
+.tail { animation: tail var(--dur) linear infinite; background: var(--pink); border-radius: .25em 50% 50% .25em; box-shadow: 0 -.2em 0 hsl(0 90% 75%) inset; top: 1.5em; right: -.5em; width: 1em; height: .5em; transform: rotate(30deg) translateZ(-1px); transform-origin: .25em .25em; }
+
+@keyframes hamster { from, to { transform: rotate(4deg) translate(-.8em,1.85em); } 50% { transform: rotate(0) translate(-.8em,1.85em); } }
+@keyframes head { from,25%,50%,75%,to { transform: rotate(0); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(8deg); } }
+@keyframes eye { from,90%,to { transform: scaleY(1); } 95% { transform: scaleY(0); } }
+@keyframes ear { from,25%,50%,75%,to { transform: rotate(0); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(12deg); } }
+@keyframes body { from,25%,50%,75%,to { transform: rotate(0); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(-2deg); } }
+@keyframes frontRight { from,25%,50%,75%,to { transform: rotate(50deg) translateZ(-1px); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(-30deg) translateZ(-1px); } }
+@keyframes frontLeft { from,25%,50%,75%,to { transform: rotate(-30deg); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(50deg); } }
+@keyframes backRight { from,25%,50%,75%,to { transform: rotate(-60deg) translateZ(-1px); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(20deg) translateZ(-1px); } }
+@keyframes backLeft { from,25%,50%,75%,to { transform: rotate(20deg); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(-60deg); } }
+@keyframes tail { from,25%,50%,75%,to { transform: rotate(30deg) translateZ(-1px); } 12.5%,37.5%,62.5%,87.5% { transform: rotate(10deg) translateZ(-1px); } }
+@keyframes spin { to { transform: rotate(-1turn); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .loader *, .loader { animation: none !important; }
+}

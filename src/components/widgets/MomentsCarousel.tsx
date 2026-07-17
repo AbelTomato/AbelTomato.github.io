@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
+import { HamsterLoader } from "@components/ui/HamsterLoader";
 import { useMomentsData } from "@features/moments-section/hooks/useMomentsData";
 
 const momentsImages = import.meta.glob<{ default: string }>(
@@ -157,8 +158,8 @@ function MomentsCarouselContent() {
   if (isLoading) {
     return (
       <Card className="w-full max-w-sm p-5 shadow-sm">
-        <div className="flex h-40 items-center justify-center text-sm text-muted-foreground font-mono animate-pulse">
-          加载中...
+        <div className="flex h-40 items-center justify-center">
+          <HamsterLoader label="正在加载瞬间..." />
         </div>
       </Card>
     );
@@ -187,12 +188,12 @@ function MomentsCarouselContent() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onClick={() => {
-        void navigate("/hobbies");
+        void navigate("/echo");
       }}
       onKeyDown={(event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          void navigate("/hobbies");
+          void navigate("/echo");
         }
       }}
     >
