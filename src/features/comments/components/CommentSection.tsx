@@ -2,12 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { MessageCircle, RefreshCw, Send } from "lucide-react";
 
 import { Button } from "@components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
 import { fetchComments, submitComment } from "../api";
 import type { PublicComment } from "../types";
 
@@ -59,7 +54,11 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
   }, [postSlug]);
 
   useEffect(() => {
-    if (!turnstileSiteKey || !window.turnstile || !turnstileContainerRef.current) {
+    if (
+      !turnstileSiteKey ||
+      !window.turnstile ||
+      !turnstileContainerRef.current
+    ) {
       return;
     }
 
@@ -115,7 +114,11 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
   return (
     <section className="mx-auto mt-14 max-w-none border-t pt-10">
       {turnstileSiteKey ? (
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+        <script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+          async
+          defer
+        />
       ) : null}
 
       <div className="mb-6 flex items-center justify-between gap-4">
@@ -125,7 +128,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
             评论
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            评论会在审核后展示。
+            评论会在审核后展示
           </p>
         </div>
         <Button
@@ -136,7 +139,9 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
           disabled={loadState === "loading"}
           aria-label="刷新评论"
         >
-          <RefreshCw className={loadState === "loading" ? "animate-spin" : ""} />
+          <RefreshCw
+            className={loadState === "loading" ? "animate-spin" : ""}
+          />
         </Button>
       </div>
 
@@ -149,22 +154,24 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
         {loadState === "error" ? (
           <div className="mx-auto max-w-md rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">
-            评论加载失败，请稍后重试。
+            评论加载失败，请稍后重试
           </div>
         ) : null}
 
         {loadState === "loaded" && comments.length === 0 ? (
           <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">
-            暂无评论。
+            暂无评论
           </p>
         ) : null}
 
         {comments.map((comment) => (
           <Card key={comment.id} size="sm">
             <CardHeader>
-              <CardTitle className="flex flex-wrap items-center justify-between gap-2">
-                <span>{comment.authorName}</span>
-                <time className="text-xs font-normal text-muted-foreground">
+              <CardTitle className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <span className="font-bold text-foreground">
+                  {comment.authorName}
+                </span>
+                <time className="text-[11px] font-normal text-zinc-500">
                   {new Intl.DateTimeFormat("zh-CN", {
                     dateStyle: "medium",
                     timeStyle: "short",
@@ -173,7 +180,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="whitespace-pre-wrap text-sm leading-7 text-foreground">
+              <p className="whitespace-pre-wrap text-sm leading-7 text-foreground/80">
                 {comment.content}
               </p>
             </CardContent>
@@ -183,40 +190,53 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
       <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
         <div className="grid gap-4 sm:grid-cols-2">
-          <label className="grid gap-2 text-sm font-medium">
-            昵称
+          <label className="grid gap-1.5 text-sm font-medium">
+            <span>
+              昵称 <span className="text-destructive">（必填）</span>
+            </span>
             <input
               name="authorName"
               required
               maxLength={64}
-              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
             />
           </label>
-          <label className="grid gap-2 text-sm font-medium">
-            邮箱
+          <label className="grid gap-1.5 text-sm font-medium">
+            <span>
+              邮箱{" "}
+              <span className="font-normal text-muted-foreground">
+                （选填）
+              </span>
+            </span>
             <input
               name="authorEmail"
               type="email"
               maxLength={254}
-              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
             />
           </label>
         </div>
-        <label className="grid gap-2 text-sm font-medium">
-          内容
+        <label className="grid gap-1.5 text-sm font-medium">
+          <span>
+            内容 <span className="text-destructive">（必填）</span>
+          </span>
           <textarea
             name="content"
             required
             maxLength={2000}
             rows={5}
-            className="resize-y rounded-lg border bg-background px-3 py-2 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+            className="resize-y rounded-lg border bg-background px-3 py-2 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
           />
         </label>
 
         {turnstileSiteKey ? <div ref={turnstileContainerRef} /> : null}
 
         <div className="flex flex-wrap items-center gap-3">
-          <Button type="submit" disabled={submitState === "submitting"}>
+          <Button
+            type="submit"
+            className="rounded-md bg-blue-700 px-4 text-white shadow-sm transition-colors hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500"
+            disabled={submitState === "submitting"}
+          >
             <Send />
             {submitState === "submitting" ? "提交中" : "提交评论"}
           </Button>
