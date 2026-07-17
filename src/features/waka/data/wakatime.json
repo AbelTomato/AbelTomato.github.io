@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-17T02:52:03.820Z",
-  "total": "243 hrs 32 mins",
-  "daily_average": "6 hrs",
+  "lastUpdate": "2026-07-17T03:27:39.832Z",
+  "total": "244 hrs 19 mins",
+  "daily_average": "6 hrs 1 min",
   "stats": {
     "last_7_days": {
-      "total_seconds": 159625.101,
-      "total_text": "44h 20m",
+      "total_seconds": 162414.326,
+      "total_text": "45h 6m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 824474.5700000002,
-      "total_text": "229h 1m",
+      "total_seconds": 827263.7950000002,
+      "total_text": "229h 47m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2520561.3929999997,
-      "total_text": "700h 9m",
+      "total_seconds": 2523350.6179999993,
+      "total_text": "700h 55m",
       "days_active": 140
     },
     "all_time": {
-      "total_seconds": 2520561.3929999997,
-      "total_text": "700h 9m",
+      "total_seconds": 2523350.6179999993,
+      "total_text": "700h 55m",
       "days_active": 140
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-17",
-      "seconds": 665.484,
-      "text": "11 mins"
+      "seconds": 3454.709,
+      "text": "57 mins"
     }
   ],
   "heatmap": [
@@ -620,7 +620,7 @@
     },
     {
       "date": "2026-07-17",
-      "seconds": 665.484
+      "seconds": 3454.709
     }
   ],
   "languages": [
@@ -638,7 +638,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 221187.996
+      "total_seconds": 222824.47400000002
     },
     {
       "name": "JavaScript",
@@ -646,7 +646,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 102320.168
+      "total_seconds": 102364.106
     },
     {
       "name": "Java",
@@ -681,16 +681,16 @@
       "total_seconds": 8194.023000000001
     },
     {
+      "name": "Bash",
+      "total_seconds": 6097.496999999999
+    },
+    {
       "name": "Git Config",
       "total_seconds": 5888.644
     },
     {
       "name": "Git",
-      "total_seconds": 5534.7379999999985
-    },
-    {
-      "name": "Bash",
-      "total_seconds": 5153.320999999999
+      "total_seconds": 5624.6709999999985
     },
     {
       "name": "TOML",
@@ -1892,9 +1892,12 @@
       "Astro": 0
     },
     "2026-07-17": {
-      "Bash": 589.07,
+      "TypeScript": 1636.478,
+      "Bash": 1533.246,
+      "Git": 89.933,
       "Markdown": 76.414,
-      "Other": 0
+      "Other": 74.7,
+      "Astro": 43.938
     }
   }
 }
