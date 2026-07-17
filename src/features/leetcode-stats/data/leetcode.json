@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 164,
+        "count": 165,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 51,
+        "count": 52,
         "difficulty": "HARD"
       }
     ],
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2118,
+        "count": 2117,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 972,
+        "count": 971,
         "difficulty": "HARD"
       }
     ]
@@ -204,7 +204,7 @@
         }
       },
       {
-        "score": 46,
+        "score": 47,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -372,6 +372,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 736346291,
+      "submitTime": 1784248251,
+      "question": {
+        "title": "Product Price at a Given Date",
+        "translatedTitle": "指定日期的产品价格",
+        "titleSlug": "product-price-at-a-given-date",
+        "questionFrontendId": "1164"
+      }
+    },
+    {
+      "submissionId": 736345820,
+      "submitTime": 1784247495,
+      "question": {
+        "title": "Sorted GCD Pair Queries",
+        "translatedTitle": "查询排序后的最大公约数",
+        "titleSlug": "sorted-gcd-pair-queries",
+        "questionFrontendId": "3312"
+      }
+    },
+    {
       "submissionId": 736153080,
       "submitTime": 1784162556,
       "question": {
@@ -499,26 +519,6 @@
         "translatedTitle": "网格中保持一致的最大列数",
         "titleSlug": "maximum-consistent-columns-in-a-grid",
         "questionFrontendId": "3989"
-      }
-    },
-    {
-      "submissionId": 735391196,
-      "submitTime": 1783824161,
-      "question": {
-        "title": "Minimum Total Cost to Process All Elements",
-        "translatedTitle": "处理所有元素的成本",
-        "titleSlug": "minimum-total-cost-to-process-all-elements",
-        "questionFrontendId": "3987"
-      }
-    },
-    {
-      "submissionId": 735389226,
-      "submitTime": 1783823590,
-      "question": {
-        "title": "Number of Elapsed Seconds Between Two Times",
-        "translatedTitle": "统计起止时间经过的秒数",
-        "titleSlug": "number-of-elapsed-seconds-between-two-times",
-        "questionFrontendId": "3986"
       }
     }
   ],
