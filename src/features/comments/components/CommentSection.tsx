@@ -3,6 +3,7 @@ import { Copy, MessageCircle, RefreshCw, Send } from "lucide-react";
 
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
+import { HamsterLoader } from "@components/ui/HamsterLoader";
 import { fetchComments, submitComment } from "../api";
 import type { PublicComment } from "../types";
 import {
@@ -13,7 +14,11 @@ import {
 } from "../utils/commentPresentation";
 
 interface CommentSectionProps {
-  postSlug: string;
+  resourceId: string;
+  title?: string;
+  description?: string;
+  emptyText?: string;
+  submitLabel?: string;
 }
 
 type LoadState = "idle" | "loading" | "loaded" | "error";
@@ -62,7 +67,13 @@ function loadTurnstile(): Promise<void> {
   return turnstileLoader;
 }
 
-export default function CommentSection({ postSlug }: CommentSectionProps) {
+export default function CommentSection({
+  resourceId,
+  title = "评论",
+  description = "评论会在审核后展示",
+  emptyText = "暂无评论",
+  submitLabel = "提交评论",
+}: CommentSectionProps) {
   const [comments, setComments] = useState<PublicComment[]>([]);
   const [loadState, setLoadState] = useState<LoadState>("idle");
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
@@ -78,7 +89,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
     setLoadState("loading");
 
     try {
-      const nextComments = await fetchComments(postSlug, signal);
+      const nextComments = await fetchComments(resourceId, signal);
       if (signal?.aborted) return;
       setComments(nextComments);
       setLoadState("loaded");
@@ -92,7 +103,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
     const controller = new AbortController();
     void loadComments(controller.signal);
     return () => controller.abort();
-  }, [postSlug]);
+  }, [resourceId]);
 
   useEffect(() => {
     if (!turnstileSiteKey || !turnstileContainerRef.current) return;
@@ -147,9 +158,8 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
     try {
       const payload = {
-        postSlug,
+        postSlug: resourceId,
         authorName: formData.get("authorName"),
-        authorEmail: formData.get("authorEmail") || null,
         content: formData.get("content"),
         ...(turnstileToken ? { turnstileToken } : {}),
       };
@@ -179,10 +189,10 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
         <div>
           <h2 className="flex items-center gap-2 text-2xl font-semibold text-foreground">
             <MessageCircle className="size-5" aria-hidden="true" />
-            评论
+            {title}
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            评论会在审核后展示
+            {description}
           </p>
         </div>
         <Button
@@ -201,9 +211,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
       <div className="space-y-4">
         {loadState === "loading" ? (
-          <p className="py-6 text-center font-mono text-sm text-muted-foreground animate-pulse">
-            正在加载评论...
-          </p>
+          <HamsterLoader label="正在加载评论..." />
         ) : null}
 
         {loadState === "error" ? (
@@ -214,7 +222,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
 
         {loadState === "loaded" && comments.length === 0 ? (
           <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">
-            暂无评论
+            {emptyText}
           </p>
         ) : null}
 
@@ -269,43 +277,29 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
       </div>
 
       <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <label className="grid gap-1.5 text-sm font-medium">
-            <span>
-              昵称 <span className="text-destructive">（必填）</span>
-            </span>
-            <input
-              name="authorName"
-              required
-              maxLength={64}
-              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
-            />
-          </label>
-          <label className="grid gap-1.5 text-sm font-medium">
-            <span>
-              邮箱{" "}
-              <span className="font-normal text-muted-foreground">
-                （选填）
-              </span>
-            </span>
-            <input
-              name="authorEmail"
-              type="email"
-              maxLength={254}
-              className="h-10 rounded-lg border bg-background px-3 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
-            />
-          </label>
-        </div>
         <label className="grid gap-1.5 text-sm font-medium">
           <span>
-            内容 <span className="text-destructive">（必填）</span>
+            昵称 <span className="text-destructive/70">*</span>
+          </span>
+          <input
+            name="authorName"
+            required
+            maxLength={64}
+            placeholder="留下你的称呼"
+            className="h-10 rounded-lg border border-foreground/10 bg-foreground/[0.035] px-3 text-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/65 hover:border-foreground/20 focus:border-blue-500/70 focus:bg-foreground/[0.055] focus:shadow-[0_0_0_3px_rgb(59_130_246_/_0.12),0_0_20px_rgb(59_130_246_/_0.08)] focus-visible:ring-0"
+          />
+        </label>
+        <label className="grid gap-1.5 text-sm font-medium">
+          <span>
+            内容 <span className="text-destructive/70">*</span>
           </span>
           <textarea
             name="content"
             required
             maxLength={2000}
             rows={5}
-            className="resize-y rounded-lg border bg-background px-3 py-2 text-sm outline-none transition-colors duration-200 focus:border-blue-500 focus-visible:ring-3 focus-visible:ring-blue-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+            placeholder="写下想说的话..."
+            className="resize-y rounded-lg border border-foreground/10 bg-foreground/[0.035] px-3 py-2 text-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/65 hover:border-foreground/20 focus:border-blue-500/70 focus:bg-foreground/[0.055] focus:shadow-[0_0_0_3px_rgb(59_130_246_/_0.12),0_0_20px_rgb(59_130_246_/_0.08)] focus-visible:ring-0"
           />
         </label>
 
@@ -332,7 +326,7 @@ export default function CommentSection({ postSlug }: CommentSectionProps) {
             disabled={submitState === "submitting"}
           >
             <Send />
-            {submitState === "submitting" ? "提交中" : "提交评论"}
+            {submitState === "submitting" ? "提交中" : submitLabel}
           </Button>
           {message ? (
             <p

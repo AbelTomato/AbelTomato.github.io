@@ -10,7 +10,7 @@ export interface PublicComment {
 export interface SubmitCommentInput {
   postSlug: string;
   authorName: FormDataEntryValue | null;
-  authorEmail: FormDataEntryValue | null;
+  authorEmail?: FormDataEntryValue | null;
   content: FormDataEntryValue | null;
   turnstileToken?: string;
 }

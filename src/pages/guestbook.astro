@@ -1,0 +1,44 @@
+---
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import CommentSection from "@features/comments/components/CommentSection";
+import { GUESTBOOK_RESOURCE_ID } from "@features/comments/constants";
+import { CREATE_TIME } from "@src/consts";
+import { getPostsData } from "@src/hooks/usePostsData";
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+
+const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
+  await getPostsData();
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
+---
+
+<ThreeColumnLayout title="留言板" description="在这里留下你的想法">
+  <LeftSidebar slot="left-sidebar" />
+  <main class="w-full">
+    <Card className="rounded-xl">
+      <CardHeader>
+        <CardTitle className="text-3xl">留言板</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p class="text-sm leading-7 text-muted-foreground">
+          欢迎留下想说的话^^
+        </p>
+        <CommentSection
+          resourceId={GUESTBOOK_RESOURCE_ID}
+          title="全部留言"
+          description="留言会在审核后展示"
+          emptyText="还没有留言"
+          submitLabel="提交留言"
+          client:load
+        />
+      </CardContent>
+    </Card>
+  </main>
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
+</ThreeColumnLayout>

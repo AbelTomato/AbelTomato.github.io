@@ -122,7 +122,7 @@ const {
           <slot />
         </div>
 
-        {comments && <CommentSection postSlug={slug} client:load />}
+        {comments && <CommentSection resourceId={slug} client:load />}
       </article>
 
       <div class="hidden lg:block sticky top-24">

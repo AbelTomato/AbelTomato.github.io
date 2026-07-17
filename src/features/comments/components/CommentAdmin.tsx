@@ -3,12 +3,14 @@ import { Check, LogIn, RefreshCw, Trash2, X } from "lucide-react";
 
 import { Button } from "@components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import { HamsterLoader } from "@components/ui/HamsterLoader";
 import {
   adminLogin,
   fetchAdminComments,
   updateAdminCommentStatus,
 } from "../adminApi";
 import type { AdminComment, AdminCommentStatus } from "../adminTypes";
+import { getCommentResourceLabel } from "../constants";
 
 const tokenStorageKey = "comment-admin-token";
 const statuses: Array<{ value: AdminCommentStatus; label: string }> = [
@@ -154,7 +156,7 @@ export default function CommentAdmin() {
 
       {message ? <p className="text-sm text-muted-foreground">{message}</p> : null}
       {error ? <div className="max-w-md rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">{error}</div> : null}
-      {loading && comments.length === 0 ? <p className="py-8 text-center font-mono text-sm text-muted-foreground animate-pulse">正在加载评论...</p> : null}
+      {loading && comments.length === 0 ? <HamsterLoader label="正在加载评论..." /> : null}
       {!loading && comments.length === 0 ? <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">没有{statuses.find((item) => item.value === status)?.label}评论。</p> : null}
 
       <div className="space-y-4">
@@ -167,7 +169,7 @@ export default function CommentAdmin() {
                   {new Intl.DateTimeFormat("zh-CN", { dateStyle: "medium", timeStyle: "short" }).format(new Date(comment.createdAt))}
                 </time>
               </CardTitle>
-              <p className="break-all font-mono text-xs font-normal text-muted-foreground">/{comment.postSlug}</p>
+              <p className="break-all font-mono text-xs font-normal text-muted-foreground">{getCommentResourceLabel(comment.postSlug)}</p>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="whitespace-pre-wrap text-sm leading-7">{comment.content}</p>

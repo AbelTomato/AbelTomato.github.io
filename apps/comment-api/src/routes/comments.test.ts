@@ -73,6 +73,20 @@ describe("comments route", () => {
     expect(response.status).toBe(400);
   });
 
+  it("lists comments for the isolated guestbook resource", async () => {
+    const commentService = createMockCommentService();
+    const app = createApp({ commentService });
+
+    const response = await app.request(
+      "/api/comments?postSlug=__guestbook__",
+    );
+
+    expect(response.status).toBe(200);
+    expect(commentService.listApprovedByPostSlug).toHaveBeenCalledWith(
+      "__guestbook__",
+    );
+  });
+
   it("creates a pending comment", async () => {
     const commentService = createMockCommentService();
     const app = createApp({ commentService });
@@ -97,6 +111,22 @@ describe("comments route", () => {
       ipAddress: null,
       userAgent: null,
     });
+  });
+
+  it("creates a pending guestbook message in its own resource", async () => {
+    const commentService = createMockCommentService();
+    const app = createApp({ commentService });
+
+    const response = await app.request("/api/comments", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(createValidCommentPayload({ postSlug: "__guestbook__" })),
+    });
+
+    expect(response.status).toBe(202);
+    expect(commentService.createPending).toHaveBeenCalledWith(
+      expect.objectContaining({ postSlug: "__guestbook__" }),
+    );
   });
 
   it("passes client metadata when creating comments", async () => {
