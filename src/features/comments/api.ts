@@ -6,16 +6,23 @@ import type {
 
 const apiBase = import.meta.env.PUBLIC_COMMENT_API_URL ?? "";
 
-export async function fetchComments(postSlug: string): Promise<PublicComment[]> {
+async function readJson(response: Response): Promise<unknown> {
+  return response.json().catch(() => ({}));
+}
+
+export async function fetchComments(
+  postSlug: string,
+  signal?: AbortSignal,
+): Promise<PublicComment[]> {
   const params = new URLSearchParams({ postSlug });
-  const response = await fetch(`${apiBase}/api/comments?${params.toString()}`);
+  const response = await fetch(`${apiBase}/api/comments?${params.toString()}`, { signal });
 
   if (!response.ok) {
     throw new Error("评论加载失败，请稍后重试。");
   }
 
-  const data = (await response.json()) as { comments: PublicComment[] };
-  return data.comments;
+  const data = (await readJson(response)) as { comments?: PublicComment[] };
+  return data.comments ?? [];
 }
 
 export async function submitComment(
@@ -27,7 +34,7 @@ export async function submitComment(
     body: JSON.stringify(input),
   });
 
-  const data = (await response.json()) as {
+  const data = (await readJson(response)) as {
     status?: "pending";
     message?: string;
     error?: { message?: string };
