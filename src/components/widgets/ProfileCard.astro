@@ -1,11 +1,9 @@
 ---
 import avatar from "@assets/images/common/喵喵.jpg";
-
-const skills = ["React", "TypeScript", "C++"];
 ---
 
 <div
-  class="mx-auto w-full max-w-sm rounded-xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none"
+  class="mx-auto w-full max-w-sm rounded-xl border border-zinc-200/60 bg-white/45 shadow-sm backdrop-blur-xl transition-all duration-300 hover:shadow-md dark:border-zinc-700/60 dark:bg-zinc-900/45 dark:shadow-none"
 >
   <div class="p-6 flex flex-col items-center text-center">
     <div
@@ -35,26 +33,7 @@ const skills = ["React", "TypeScript", "C++"];
 
     <hr class="my-4 w-full border-zinc-100 dark:border-zinc-800" />
 
-    <div class="w-full text-left">
-      <h3
-        class="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500"
-      >
-        Technical Skills
-      </h3>
-      <div class="flex flex-wrap gap-1.5">
-        {
-          skills.map((skill) => (
-            <span class="cursor-default rounded-md border border-blue-100 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/30 dark:text-blue-300">
-              {skill}
-            </span>
-          ))
-        }
-      </div>
-    </div>
-
-    <hr class="my-4 w-full border-zinc-100 dark:border-zinc-800" />
-
-    <div class="w-full grid grid-cols-3 gap-2 text-sm font-medium">
+    <div class="w-full grid grid-cols-2 gap-2 text-sm font-medium">
       <a
         href="https://github.com/AbelTomato"
         target="_blank"
@@ -62,15 +41,6 @@ const skills = ["React", "TypeScript", "C++"];
         class="flex flex-col items-center rounded-lg border border-zinc-100 bg-zinc-50 py-2 text-zinc-600 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-300 dark:hover:border-blue-900/60 dark:hover:bg-blue-950/30 dark:hover:text-blue-300"
       >
         <span class="text-xs">GitHub</span>
-      </a>
-
-      <a
-        href="https://www.luogu.com.cn/user/561297"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex flex-col items-center rounded-lg border border-zinc-100 bg-zinc-50 py-2 text-zinc-600 transition-all hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-300 dark:hover:border-blue-900/60 dark:hover:bg-blue-950/30 dark:hover:text-blue-300"
-      >
-        <span class="text-xs">洛谷</span>
       </a>
 
       <a

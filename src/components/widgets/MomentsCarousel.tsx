@@ -13,6 +13,7 @@ const momentsImages = import.meta.glob<{ default: string }>(
 );
 
 const AUTO_PLAY_INTERVAL = 4000;
+const TRANSITION_DURATION = 520;
 
 const requestIdle = (callback: () => void) => {
   if (typeof window === "undefined") return;
@@ -41,12 +42,35 @@ function preloadImage(src: string) {
 function MomentsCarouselContent() {
   const { data: moments, isLoading, error } = useMomentsData();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [previousIndex, setPreviousIndex] = useState<number | null>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [isInView, setIsInView] = useState(true);
   const rootRef = useRef<HTMLDivElement | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const transitionTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const total = moments?.length ?? 0;
+
+  const changeSlide = useCallback(
+    (index: number) => {
+      if (total === 0) return;
+
+      const nextIndex = ((index % total) + total) % total;
+      if (nextIndex === currentIndex) return;
+
+      if (transitionTimerRef.current) {
+        clearTimeout(transitionTimerRef.current);
+      }
+
+      setPreviousIndex(currentIndex);
+      setCurrentIndex(nextIndex);
+      transitionTimerRef.current = setTimeout(() => {
+        setPreviousIndex(null);
+        transitionTimerRef.current = null;
+      }, TRANSITION_DURATION);
+    },
+    [currentIndex, total],
+  );
 
   // 重置自动轮播计时器
   const resetAutoPlay = useCallback(() => {
@@ -55,26 +79,26 @@ function MomentsCarouselContent() {
     }
     if (!isPaused && isInView && !document.hidden && total > 1) {
       timerRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % total);
+        changeSlide(currentIndex + 1);
       }, AUTO_PLAY_INTERVAL);
     }
-  }, [isInView, isPaused, total]);
+  }, [changeSlide, currentIndex, isInView, isPaused, total]);
 
   const goTo = useCallback(
     (index: number) => {
       if (total === 0) return;
-      setCurrentIndex(((index % total) + total) % total);
+      changeSlide(index);
     },
-    [total],
+    [changeSlide, total],
   );
 
   const goNext = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % total);
-  }, [total]);
+    changeSlide(currentIndex + 1);
+  }, [changeSlide, currentIndex]);
 
   const goPrevRaw = useCallback(() => {
-    setCurrentIndex((prev) => (prev - 1 + total) % total);
-  }, [total]);
+    changeSlide(currentIndex - 1);
+  }, [changeSlide, currentIndex]);
 
   // 手动导航 + 重置计时器
   const handlePrev = useCallback(() => {
@@ -143,6 +167,14 @@ function MomentsCarouselContent() {
   }, [resetAutoPlay]);
 
   useEffect(() => {
+    return () => {
+      if (transitionTimerRef.current) {
+        clearTimeout(transitionTimerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     if (!moments || total === 0) return;
 
     const indexesToPreload = new Set([(currentIndex + 1) % total]);
@@ -177,14 +209,16 @@ function MomentsCarouselContent() {
   }
 
   const current = moments[currentIndex]!;
+  const previous = previousIndex === null ? null : moments[previousIndex];
   const resolvedImageSrc = getMomentImageSrc(current.image);
+  const previousImageSrc = previous ? getMomentImageSrc(previous.image) : "";
 
   return (
     <Card
       ref={rootRef}
       role="link"
       tabIndex={0}
-      className="w-full max-w-sm gap-0 py-0 shadow-sm cursor-pointer transition-shadow hover:shadow-md"
+      className="w-full max-w-sm gap-0 py-0 !bg-card/45 shadow-sm cursor-pointer backdrop-blur-xl transition-shadow hover:shadow-md"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onClick={() => {
@@ -202,12 +236,21 @@ function MomentsCarouselContent() {
       </h3>
 
       <CardContent className="relative aspect-4/3 overflow-hidden bg-muted p-0">
+        {previous && (
+          <img
+            src={previousImageSrc}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover animate-out fade-out zoom-out-[0.98] duration-500 motion-reduce:animate-none"
+          />
+        )}
         <img
+          key={current.image}
           src={resolvedImageSrc}
           alt={current.source}
           loading="eager"
           decoding="async"
-          className="w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover animate-in fade-in zoom-in-[0.98] duration-500 motion-reduce:animate-none"
         />
 
         {total > 1 && (

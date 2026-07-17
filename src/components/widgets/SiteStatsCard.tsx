@@ -32,7 +32,7 @@ export const SiteStatsCard: React.FC<SiteStatsCardProps> = ({
   );
 
   return (
-    <div className="w-full max-w-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-5 shadow-sm font-sans">
+    <div className="w-full max-w-sm rounded-xl border border-zinc-200/60 bg-white/45 p-5 font-sans shadow-sm backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/45">
       <h3 className="text-sm font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-4">
         站点统计
       </h3>
