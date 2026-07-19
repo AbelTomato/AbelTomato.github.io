@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 166,
+        "count": 168,
         "difficulty": "MEDIUM"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 912,
+        "count": 913,
         "difficulty": "EASY"
       },
       {
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 972,
+        "count": 973,
         "difficulty": "HARD"
       }
     ]
@@ -190,7 +190,7 @@
     ],
     "topicAreaScores": [
       {
-        "score": 27,
+        "score": 28,
         "topicArea": {
           "name": "数据结构",
           "slug": "data-structures"
@@ -372,6 +372,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 736691305,
+      "submitTime": 1784430915,
+      "question": {
+        "title": "Monthly Transactions I",
+        "translatedTitle": "每月交易 I",
+        "titleSlug": "monthly-transactions-i",
+        "questionFrontendId": "1193"
+      }
+    },
+    {
+      "submissionId": 736688223,
+      "submitTime": 1784429992,
+      "question": {
+        "title": "Smallest Subsequence of Distinct Characters",
+        "translatedTitle": "不同字符的最小子序列",
+        "titleSlug": "smallest-subsequence-of-distinct-characters",
+        "questionFrontendId": "1081"
+      }
+    },
+    {
       "submissionId": 736517114,
       "submitTime": 1784334027,
       "question": {
@@ -499,26 +519,6 @@
         "translatedTitle": "最大公约数相等的子序列数量",
         "titleSlug": "find-the-number-of-subsequences-with-equal-gcd",
         "questionFrontendId": "3336"
-      }
-    },
-    {
-      "submissionId": 735548673,
-      "submitTime": 1783902379,
-      "question": {
-        "title": "Tree Node",
-        "translatedTitle": "树节点",
-        "titleSlug": "tree-node",
-        "questionFrontendId": "608"
-      }
-    },
-    {
-      "submissionId": 735548268,
-      "submitTime": 1783901644,
-      "question": {
-        "title": "Sequential Digits",
-        "translatedTitle": "顺次数",
-        "titleSlug": "sequential-digits",
-        "questionFrontendId": "1291"
       }
     }
   ],
