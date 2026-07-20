@@ -24,7 +24,7 @@ const filteredHeadings = headings.filter((h) => h.depth > 1 && h.depth <= 6);
               class={`toc-item depth-${h.depth}`}
               style={`--indent: ${h.depth - 2}`}
             >
-              <a href={`#${h.slug}`} class="toc-link">
+              <a href={`#${h.slug}`} class="toc-link" data-toc-target={h.slug}>
                 <span class="toc-bullet" />
                 {h.text}
               </a>
@@ -81,6 +81,14 @@ const filteredHeadings = headings.filter((h) => h.depth > 1 && h.depth <= 6);
 
   .toc-link:hover .toc-bullet {
     @apply bg-blue-500 scale-150 shadow-[0_0_8px_rgba(236,72,153,0.6)];
+  }
+
+  .toc-link.is-active {
+    @apply text-blue-600 dark:text-blue-400 font-semibold;
+  }
+
+  .toc-link.is-active .toc-bullet {
+    @apply bg-blue-500 scale-150 shadow-[0_0_8px_rgba(59,130,246,0.55)];
   }
   .toc-container::-webkit-scrollbar {
     width: 4px;
