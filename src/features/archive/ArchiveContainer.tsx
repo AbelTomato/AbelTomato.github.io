@@ -17,11 +17,23 @@ export function ArchiveContainer({
   tagCountsMap,
 }: ArchiveContainerProps) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPosts = useMemo(() => {
-    if (!selectedTag) return posts;
-    return posts.filter((post) => post.data.tags?.includes(selectedTag));
-  }, [selectedTag, posts]);
+    const normalizedQuery = searchQuery.trim().toLocaleLowerCase();
+
+    return posts.filter((post) => {
+      const matchesTag = !selectedTag || post.data.tags?.includes(selectedTag);
+      const matchesSearch =
+        !normalizedQuery ||
+        post.data.title.toLocaleLowerCase().includes(normalizedQuery) ||
+        post.data.tags?.some((tag) =>
+          tag.toLocaleLowerCase().includes(normalizedQuery),
+        );
+
+      return matchesTag && matchesSearch;
+    });
+  }, [searchQuery, selectedTag, posts]);
 
   const postsByYearMonth = useMemo(
     () => groupPostsByYearMonth(filteredPosts),
@@ -37,9 +49,12 @@ export function ArchiveContainer({
     <div className="space-y-8">
       <ArchiveTagFilter
         postCount={posts.length}
+        filteredPostCount={filteredPosts.length}
         selectedTag={selectedTag}
+        searchQuery={searchQuery}
         tagCountsMap={tagCountsMap}
         onSelectTag={setSelectedTag}
+        onSearchQueryChange={setSearchQuery}
       />
       <ArchiveTimeline
         postsByYearMonth={postsByYearMonth}

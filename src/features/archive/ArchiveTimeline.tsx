@@ -15,14 +15,14 @@ export function ArchiveTimeline({
   sortedYears,
 }: ArchiveTimelineProps) {
   return (
-    <Card className="rounded-xl shadow-xs relative overflow-hidden transition-colors">
+    <Card className="relative overflow-hidden rounded-xl border-white/10 bg-card/65 shadow-lg shadow-cyan-950/5 backdrop-blur-md transition-colors">
       <CardContent className="p-6">
         {sortedYears.length === 0 ? (
           <p className="text-center text-sm text-muted-foreground py-8">
             这里一片空白
           </p>
         ) : (
-          <div className="space-y-8 relative before:absolute before:inset-y-0 before:left-4 before:w-0.5 before:bg-border">
+          <div className="relative space-y-8 before:absolute before:inset-y-1 before:left-4 before:border-l before:border-dashed before:border-cyan-300/35">
             {sortedYears.map((year) => (
               <ArchiveYearGroup
                 key={year}
@@ -46,8 +46,8 @@ function ArchiveYearGroup({ postsByYearMonth, year }: ArchiveYearGroupProps) {
   return (
     <div className="space-y-4 relative">
       <div className="flex items-center gap-4 pl-10 relative">
-        <span className="absolute left-2.75 w-3 h-3 rounded-full bg-primary border-4 border-card shadow-xs"></span>
-        <h2 className="text-xl font-bold text-foreground tracking-wide font-mono">
+        <span className="absolute left-2.75 size-3 rounded-full border-4 border-card bg-cyan-400 shadow-[0_0_14px_rgb(34_211_238_/_0.7)]"></span>
+        <h2 className="font-mono text-xl font-bold tracking-wide text-cyan-200">
           {year}
         </h2>
         <span className="text-xs text-muted-foreground">
@@ -77,8 +77,8 @@ function ArchiveMonthGroup({ month, posts }: ArchiveMonthGroupProps) {
   return (
     <div className="space-y-3 relative">
       <div className="flex items-center gap-3 relative">
-        <span className="absolute left-[-1.65rem] w-2.5 h-2.5 rounded-full bg-muted-foreground/70 border-4 border-card shadow-xs"></span>
-        <h3 className="text-sm font-semibold text-foreground/90 font-mono">
+        <span className="absolute left-[-1.65rem] size-2.5 rounded-full border-4 border-card bg-cyan-300/60"></span>
+        <h3 className="font-mono text-sm font-semibold text-foreground/90">
           {month} 月
         </h3>
         <span className="text-xs text-muted-foreground">
@@ -101,28 +101,28 @@ interface ArchivePostItemProps {
 
 function ArchivePostItem({ post }: ArchivePostItemProps) {
   return (
-    <li className="group relative py-2 px-3 rounded-lg hover:bg-muted/60 border border-transparent hover:border-border/40 transition-all">
+    <li className="group relative rounded-lg border border-transparent px-3 py-2 transition-all duration-200 hover:translate-x-1 hover:border-cyan-300/15 hover:bg-cyan-300/5">
       <a
         href={`/blog/${post.id}`}
         className="flex flex-col sm:flex-row sm:items-center justify-between gap-2"
       >
-        <div className="flex items-center gap-3">
-          <span className="text-xs font-mono text-muted-foreground group-hover:text-primary transition-colors">
+          <div className="flex min-w-0 items-center gap-3">
+          <span className="font-mono text-xs text-muted-foreground/80 transition-colors group-hover:text-cyan-300">
             {new Date(post.data.pubDate).toLocaleDateString("zh-CN", {
               month: "2-digit",
               day: "2-digit",
             })}
           </span>
-          <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors line-clamp-1">
+          <span className="line-clamp-1 text-sm font-semibold text-foreground/90 transition-colors group-hover:text-cyan-200">
             {post.data.title}
           </span>
         </div>
 
-        <div className="flex gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
+        <div className="flex shrink-0 flex-wrap gap-x-1.5 text-[11px] text-muted-foreground/70 transition-colors group-hover:text-cyan-100/75">
           {post.data.tags?.slice(0, 2).map((tag) => (
             <span
               key={tag}
-              className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground border border-border/50"
+              className="after:ml-1 after:content-['·'] last:after:hidden"
             >
               {tag}
             </span>
