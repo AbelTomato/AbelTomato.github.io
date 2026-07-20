@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Copy, MessageCircle, RefreshCw, Send } from "lucide-react";
+import toast from "react-hot-toast";
 
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
@@ -76,14 +77,16 @@ export default function CommentSection({
 }: CommentSectionProps) {
   const [comments, setComments] = useState<PublicComment[]>([]);
   const [loadState, setLoadState] = useState<LoadState>("idle");
+  const [hasCompletedInitialLoad, setHasCompletedInitialLoad] = useState(false);
+  const [refreshAnimationId, setRefreshAnimationId] = useState(0);
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
   const [turnstileState, setTurnstileState] = useState<TurnstileState>(
     turnstileSiteKey ? "loading" : "idle",
   );
-  const [message, setMessage] = useState("");
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const turnstileContainerRef = useRef<HTMLDivElement | null>(null);
   const turnstileWidgetIdRef = useRef<string | undefined>(undefined);
+  const refreshInFlightRef = useRef(false);
 
   async function loadComments(signal?: AbortSignal) {
     setLoadState("loading");
@@ -96,6 +99,20 @@ export default function CommentSection({
     } catch {
       if (signal?.aborted) return;
       setLoadState("error");
+      toast.error("评论加载失败，请稍后重试");
+    } finally {
+      if (!signal?.aborted) setHasCompletedInitialLoad(true);
+    }
+  }
+
+  async function handleRefresh() {
+    if (refreshInFlightRef.current || loadState === "loading") return;
+    refreshInFlightRef.current = true;
+    setRefreshAnimationId((currentId) => currentId + 1);
+    try {
+      await loadComments();
+    } finally {
+      refreshInFlightRef.current = false;
     }
   }
 
@@ -143,18 +160,17 @@ export default function CommentSection({
 
     if (turnstileState === "error") {
       setSubmitState("error");
-      setMessage("人机验证服务加载失败，请刷新页面后重试");
+      toast.error("人机验证服务加载失败，请刷新页面后重试");
       return;
     }
 
     if (turnstileSiteKey && !turnstileToken) {
       setSubmitState("error");
-      setMessage("请先完成人机验证");
+      toast.error("请先完成人机验证");
       return;
     }
 
     setSubmitState("submitting");
-    setMessage("");
 
     try {
       const payload = {
@@ -170,10 +186,10 @@ export default function CommentSection({
       window.turnstile?.reset(turnstileWidgetIdRef.current);
       setTurnstileToken(null);
       setSubmitState("success");
-      setMessage(result.message);
+      toast.success(result.message);
     } catch (error) {
       setSubmitState("error");
-      setMessage(error instanceof Error ? error.message : "评论提交失败");
+      toast.error(error instanceof Error ? error.message : "评论提交失败");
     }
   }
 
@@ -198,26 +214,27 @@ export default function CommentSection({
         <Button
           type="button"
           variant="outline"
-          size="sm"
-          onClick={() => void loadComments()}
+          size="icon"
+          onClick={handleRefresh}
           disabled={loadState === "loading"}
+          className="group size-9 rounded-full border-cyan-300/20 bg-slate-950/35 text-cyan-100 shadow-[inset_0_1px_rgb(255_255_255_/_0.08),0_4px_16px_rgb(8_145_178_/_0.12)] backdrop-blur-md transition-[border-color,background-color,box-shadow,color] duration-300 hover:border-cyan-200/50 hover:bg-cyan-950/40 hover:shadow-[inset_0_1px_rgb(255_255_255_/_0.12),0_8px_22px_rgb(8_145_178_/_0.28)] active:translate-y-0 active:border-cyan-200/70 active:bg-cyan-900/50 focus-visible:border-cyan-200/60 focus-visible:ring-cyan-300/40 motion-reduce:transition-none"
           aria-label="刷新评论"
+          title="刷新评论"
         >
           <RefreshCw
-            className={loadState === "loading" ? "animate-spin" : ""}
+            key={refreshAnimationId}
+            className={`size-4 ${
+              refreshAnimationId > 0
+                ? "motion-safe:animate-[spin_500ms_ease-out_1]"
+                : ""
+            }`}
           />
         </Button>
       </div>
 
       <div className="space-y-4">
-        {loadState === "loading" ? (
+        {loadState === "loading" && !hasCompletedInitialLoad ? (
           <HamsterLoader label="正在加载评论..." />
-        ) : null}
-
-        {loadState === "error" ? (
-          <div className="mx-auto max-w-md rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">
-            评论加载失败，请稍后重试
-          </div>
         ) : null}
 
         {loadState === "loaded" && comments.length === 0 ? (
@@ -276,9 +293,9 @@ export default function CommentSection({
         })}
       </div>
 
-      <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
-        <label className="grid gap-1.5 text-sm font-medium">
-          <span>
+      <form className="mt-10 space-y-5" onSubmit={handleSubmit}>
+        <label className="grid gap-2 text-sm font-medium text-foreground/90">
+          <span className="tracking-wide">
             昵称 <span className="text-destructive/70">*</span>
           </span>
           <input
@@ -286,11 +303,11 @@ export default function CommentSection({
             required
             maxLength={64}
             placeholder="留下你的称呼"
-            className="h-10 rounded-lg border border-foreground/10 bg-foreground/[0.035] px-3 text-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/65 hover:border-foreground/20 focus:border-blue-500/70 focus:bg-foreground/[0.055] focus:shadow-[0_0_0_3px_rgb(59_130_246_/_0.12),0_0_20px_rgb(59_130_246_/_0.08)] focus-visible:ring-0"
+            className="h-11 rounded-xl border border-cyan-300/15 bg-slate-950/35 px-3.5 text-sm text-foreground shadow-inner shadow-white/[0.025] outline-none backdrop-blur-md transition-all duration-300 placeholder:text-muted-foreground/85 hover:border-cyan-200/30 hover:bg-slate-950/45 focus:border-cyan-300/55 focus:bg-slate-950/55 focus:shadow-[0_0_0_3px_rgb(34_211_238_/_0.10),0_0_24px_rgb(45_212_191_/_0.10)] focus-visible:ring-0"
           />
         </label>
-        <label className="grid gap-1.5 text-sm font-medium">
-          <span>
+        <label className="grid gap-2 text-sm font-medium text-foreground/90">
+          <span className="tracking-wide">
             内容 <span className="text-destructive/70">*</span>
           </span>
           <textarea
@@ -299,7 +316,7 @@ export default function CommentSection({
             maxLength={2000}
             rows={5}
             placeholder="写下想说的话..."
-            className="resize-y rounded-lg border border-foreground/10 bg-foreground/[0.035] px-3 py-2 text-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/65 hover:border-foreground/20 focus:border-blue-500/70 focus:bg-foreground/[0.055] focus:shadow-[0_0_0_3px_rgb(59_130_246_/_0.12),0_0_20px_rgb(59_130_246_/_0.08)] focus-visible:ring-0"
+            className="resize-y rounded-xl border border-cyan-300/15 bg-slate-950/35 px-3.5 py-3 text-sm leading-6 text-foreground shadow-inner shadow-white/[0.025] outline-none backdrop-blur-md transition-all duration-300 placeholder:text-muted-foreground/85 hover:border-cyan-200/30 hover:bg-slate-950/45 focus:border-cyan-300/55 focus:bg-slate-950/55 focus:shadow-[0_0_0_3px_rgb(34_211_238_/_0.10),0_0_24px_rgb(45_212_191_/_0.10)] focus-visible:ring-0"
           />
         </label>
 
@@ -319,26 +336,15 @@ export default function CommentSection({
           </div>
         ) : null}
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3 pt-1">
           <Button
             type="submit"
-            className="rounded-md bg-blue-700 px-4 text-white shadow-sm transition-colors hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-500"
+            className="h-10 rounded-full border border-cyan-200/25 bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 px-5 text-white shadow-[0_8px_24px_rgb(8_145_178_/_0.22),inset_0_1px_rgb(255_255_255_/_0.22)] transition-[transform,box-shadow,filter] duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_12px_30px_rgb(8_145_178_/_0.32),inset_0_1px_rgb(255_255_255_/_0.28)] focus-visible:ring-cyan-300/50 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
             disabled={submitState === "submitting"}
           >
-            <Send />
+            <Send className="transition-transform duration-300 ease-out group-hover/button:-translate-y-0.5 group-hover/button:translate-x-0.5 group-focus-visible/button:-translate-y-0.5 group-focus-visible/button:translate-x-0.5 motion-reduce:transition-none motion-reduce:group-hover/button:translate-x-0 motion-reduce:group-hover/button:translate-y-0" />
             {submitState === "submitting" ? "提交中" : submitLabel}
           </Button>
-          {message ? (
-            <p
-              className={
-                submitState === "error"
-                  ? "text-sm text-destructive"
-                  : "text-sm text-muted-foreground"
-              }
-            >
-              {message}
-            </p>
-          ) : null}
         </div>
       </form>
     </section>

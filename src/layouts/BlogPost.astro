@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "@components/ui/FormattedDate.astro";
+import ArticleChangelog from "@components/blog/ArticleChangelog.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "@components/TableOfContents.astro";
@@ -14,6 +15,8 @@ type Props = CollectionEntry<"blog">["data"] & {
   minutes?: number;
   headings?: MarkdownHeading[];
   comments?: boolean;
+  previousPost?: CollectionEntry<"blog">;
+  nextPost?: CollectionEntry<"blog">;
 };
 
 const {
@@ -27,17 +30,21 @@ const {
   minutes,
   headings = [],
   comments = true,
+  changelog = [],
+  previousPost,
+  nextPost,
 } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
   <main class="max-w-350 mx-auto px-4 py-8">
     <div
       class="grid grid-cols-1 lg:grid-cols-[1fr_768px_1fr] gap-12 items-start"
     >
       <div class="hidden lg:block"></div>
 
-      <article class="min-h-[60vh] w-full">
+      <article class="min-h-[60vh] w-full" data-article>
         {
           heroImage && (
             <div class="hero-image mb-8">
@@ -66,7 +73,7 @@ const {
               {
                 updatedDate && (
                   <p class="italic">
-                    Last updated on <FormattedDate date={updatedDate} />
+                    最后更新：<FormattedDate date={updatedDate} />
                   </p>
                 )
               }
@@ -119,8 +126,49 @@ const {
             )
           }
 
-          <slot />
+          <div data-article-content><slot /></div>
         </div>
+
+        <ArticleChangelog changelog={changelog} />
+
+        {
+          (previousPost || nextPost) && (
+            <nav class="article-pagination" aria-label="文章导航">
+              {previousPost ? (
+                <a href={`/blog/${previousPost.id}`} class="article-pagination__item">
+                  <span class="article-pagination__eyebrow">
+                    <span class="article-pagination__arrow" aria-hidden="true">←</span>
+                    上一篇
+                  </span>
+                  <span class="article-pagination__tag">
+                    {previousPost.data.tags?.[0] ?? "文章"}
+                  </span>
+                  <strong>{previousPost.data.title}</strong>
+                  <span class="article-pagination__description">{previousPost.data.description}</span>
+                  <time class="article-pagination__meta" datetime={previousPost.data.pubDate.toISOString()}>
+                    <FormattedDate date={previousPost.data.pubDate} />
+                  </time>
+                </a>
+              ) : <div />}
+              {nextPost ? (
+                <a href={`/blog/${nextPost.id}`} class="article-pagination__item article-pagination__item--next">
+                  <span class="article-pagination__eyebrow">
+                    下一篇
+                    <span class="article-pagination__arrow" aria-hidden="true">→</span>
+                  </span>
+                  <span class="article-pagination__tag">
+                    {nextPost.data.tags?.[0] ?? "文章"}
+                  </span>
+                  <strong>{nextPost.data.title}</strong>
+                  <span class="article-pagination__description">{nextPost.data.description}</span>
+                  <time class="article-pagination__meta" datetime={nextPost.data.pubDate.toISOString()}>
+                    <FormattedDate date={nextPost.data.pubDate} />
+                  </time>
+                </a>
+              ) : <div />}
+            </nav>
+          )
+        }
 
         {comments && <CommentSection resourceId={slug} client:load />}
       </article>
@@ -130,10 +178,29 @@ const {
       </div>
     </div>
   </main>
+  <dialog class="image-lightbox" aria-label="图片预览">
+    <button class="image-lightbox__close" type="button" aria-label="关闭图片预览">×</button>
+    <button class="image-lightbox__previous" type="button" aria-label="查看上一张图片">‹</button>
+    <img alt="" />
+    <button class="image-lightbox__next" type="button" aria-label="查看下一张图片">›</button>
+    <a class="image-lightbox__original" target="_blank" rel="noreferrer">查看原图</a>
+  </dialog>
 </BaseLayout>
 
 <script>
   const initializeCodeBlockToggles = () => {
+    document.querySelectorAll<HTMLElement>(".code-block__body > pre").forEach((pre) => {
+      if (pre.querySelector(".code-block__line-numbers")) return;
+      const code = pre.querySelector("code");
+      if (!code) return;
+      const lines = Math.max(1, (code.textContent ?? "").replace(/\n$/, "").split("\n").length);
+      const numbers = document.createElement("span");
+      numbers.className = "code-block__line-numbers";
+      numbers.setAttribute("aria-hidden", "true");
+      numbers.textContent = Array.from({ length: lines }, (_, index) => String(index + 1)).join("\n");
+      pre.prepend(numbers);
+    });
+
     const toggles = document.querySelectorAll<HTMLButtonElement>(
       ".code-block__toggle:not([data-code-toggle-ready])",
     );
@@ -188,10 +255,79 @@ const {
         }
       });
     });
+
+    document.querySelectorAll<HTMLButtonElement>(".code-block__copy:not([data-code-copy-ready])").forEach((button) => {
+      button.dataset.codeCopyReady = "true";
+      button.addEventListener("click", async () => {
+        const code = button.closest(".code-block")?.querySelector("pre code")?.textContent ?? "";
+        try {
+          await navigator.clipboard.writeText(code);
+          button.textContent = "已复制";
+        } catch {
+          button.textContent = "复制失败";
+        }
+        window.setTimeout(() => { button.textContent = "复制"; }, 1600);
+      });
+    });
   };
 
-  document.addEventListener("astro:page-load", initializeCodeBlockToggles);
-  initializeCodeBlockToggles();
+  const initializeReadingEnhancements = () => {
+    const article = document.querySelector<HTMLElement>("[data-article-content]");
+    const progress = document.querySelector<HTMLElement>(".reading-progress > span");
+    if (!article || !progress || article.dataset.enhanced === "true") return;
+    article.dataset.enhanced = "true";
+
+    const updateProgress = () => {
+      const rect = article.getBoundingClientRect();
+      const total = Math.max(article.offsetHeight - window.innerHeight * 0.6, 1);
+      progress.style.width = `${Math.min(100, Math.max(0, (-rect.top + window.innerHeight * 0.25) / total * 100))}%`;
+    };
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+
+    const links = [...document.querySelectorAll<HTMLAnchorElement>(".toc-link")];
+    const headings = [...article.querySelectorAll<HTMLElement>("h2[id], h3[id], h4[id], h5[id], h6[id]")];
+    const setActive = (id: string) => links.forEach((link) => {
+      const active = link.hash === `#${id}`;
+      link.classList.toggle("is-active", active);
+      if (active) link.scrollIntoView({ block: "nearest" });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (visible) setActive((visible.target as HTMLElement).id);
+    }, { rootMargin: "-18% 0px -68% 0px", threshold: 0 });
+    headings.forEach((heading) => observer.observe(heading));
+
+    const images = [...article.querySelectorAll<HTMLImageElement>("img")];
+    const dialog = document.querySelector<HTMLDialogElement>(".image-lightbox");
+    const dialogImage = dialog?.querySelector<HTMLImageElement>("img");
+    const original = dialog?.querySelector<HTMLAnchorElement>(".image-lightbox__original");
+    let index = 0;
+    const openImage = (nextIndex: number) => {
+      if (!dialog || !dialogImage || !original || images.length === 0) return;
+      index = (nextIndex + images.length) % images.length;
+      const image = images[index];
+      dialogImage.src = image.currentSrc || image.src;
+      dialogImage.alt = image.alt;
+      original.href = dialogImage.src;
+      dialog.showModal();
+    };
+    images.forEach((image, imageIndex) => {
+      image.classList.add("article-image");
+      image.addEventListener("click", () => openImage(imageIndex));
+    });
+    dialog?.querySelector(".image-lightbox__close")?.addEventListener("click", () => dialog.close());
+    dialog?.querySelector(".image-lightbox__previous")?.addEventListener("click", () => openImage(index - 1));
+    dialog?.querySelector(".image-lightbox__next")?.addEventListener("click", () => openImage(index + 1));
+    dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+  };
+
+  const initializeArticlePage = () => {
+    initializeCodeBlockToggles();
+    initializeReadingEnhancements();
+  };
+  document.addEventListener("astro:page-load", initializeArticlePage);
+  initializeArticlePage();
 </script>
 
 <style is:global>

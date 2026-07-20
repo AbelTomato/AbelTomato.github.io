@@ -169,6 +169,16 @@ function createCodeBlockWrapper(node: Element): Element {
             type: "element",
             tagName: "button",
             properties: {
+              className: ["code-block__copy"],
+              type: "button",
+              ariaLabel: "复制代码",
+            },
+            children: [createTextNode("复制")],
+          },
+          {
+            type: "element",
+            tagName: "button",
+            properties: {
               className: ["code-block__toggle"],
               type: "button",
               ariaExpanded: "true",

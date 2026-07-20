@@ -3,6 +3,9 @@ title: "2026蓝桥杯国赛游记"
 description: "泉州混一混国赛~"
 pubDate: "2026-06-08"
 updatedDate: "2026-06-11"
+changelog:
+  - date: '2026-06-11'
+    note: 补充 B、C 题相关内容。
 heroImage: "./hero.jpg"
 tags: ["游记", "生活"]
 ---

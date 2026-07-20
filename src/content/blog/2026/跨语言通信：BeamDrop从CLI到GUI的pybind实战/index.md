@@ -3,6 +3,9 @@ title: '跨语言通信：BeamDrop从CLI到GUI的pybind实战'
 description: '浅谈如何应用pybind实现Python与C++的跨语言通信，以及如何在Python中应用异步调用C++网络库'
 pubDate: '2026-07-13'
 updatedDate: '2026-07-20'
+changelog:
+  - date: '2026-07-20'
+    note: 补充 progress_callback 回调与 GIL 处理说明。
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "Python", "C++", "跨语言通信"]
 ---

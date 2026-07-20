@@ -7,6 +7,7 @@ import FloatingTools from "@features/floating-tools/components/FloatingTools";
 import FloatingAllay from "@features/floating-allay/components/FloatingAllay";
 import MermaidRenderer from "@components/MermaidRenderer.astro";
 import AmbientBlogBackground from "@components/core/AmbientBlogBackground";
+import ToastViewport from "@components/ui/ToastViewport";
 import { ClientRouter } from "astro:transitions";
 
 interface Props {
@@ -77,6 +78,7 @@ const { title, description } = Astro.props;
     </div>
     <FloatingAllay client:idle transition:persist />
     <FloatingTools client:idle transition:persist />
+    <ToastViewport client:load transition:persist />
     <MermaidRenderer />
   </body>
 </html>

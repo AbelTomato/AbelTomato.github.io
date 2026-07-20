@@ -1,0 +1,38 @@
+---
+import FormattedDate from "@components/ui/FormattedDate.astro";
+
+interface ChangelogEntry {
+  date: Date;
+  note: string;
+}
+
+interface Props {
+  changelog?: ChangelogEntry[];
+}
+
+const { changelog = [] } = Astro.props;
+---
+
+{
+  changelog.length > 0 && (
+    <section class="article-changelog" aria-labelledby="changelog-title">
+      <div class="article-changelog__header">
+        <span class="article-changelog__signal" aria-hidden="true"></span>
+        <h2 id="changelog-title">本文变更记录</h2>
+      </div>
+      <ol class="article-changelog__timeline">
+        {changelog.map((item) => (
+          <li class="article-changelog__entry">
+            <span class="article-changelog__node" aria-hidden="true"></span>
+            <div class="article-changelog__content">
+              <time datetime={item.date.toISOString()}>
+                <FormattedDate date={item.date} />
+              </time>
+              <p>{item.note}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
