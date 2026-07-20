@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-20T06:30:17.855Z",
-  "total": "248 hrs 20 mins",
+  "lastUpdate": "2026-07-20T08:56:17.473Z",
+  "total": "248 hrs 26 mins",
   "daily_average": "6 hrs 7 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 98325.308,
-      "total_text": "27h 18m",
+      "total_seconds": 98700.603,
+      "total_text": "27h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 773588.5130000002,
-      "total_text": "214h 53m",
+      "total_seconds": 773963.8080000002,
+      "total_text": "214h 59m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2553738.8969999994,
-      "total_text": "709h 22m",
+      "total_seconds": 2554114.1919999993,
+      "total_text": "709h 28m",
       "days_active": 143
     },
     "all_time": {
-      "total_seconds": 2553738.8969999994,
-      "total_text": "709h 22m",
+      "total_seconds": 2554114.1919999993,
+      "total_text": "709h 28m",
       "days_active": 143
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-20",
-      "seconds": 4565.926,
-      "text": "1 hr 16 mins"
+      "seconds": 4941.221,
+      "text": "1 hr 22 mins"
     }
   ],
   "heatmap": [
@@ -632,13 +632,13 @@
     },
     {
       "date": "2026-07-20",
-      "seconds": 4565.926
+      "seconds": 4941.221
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 760765.6960000001
+      "total_seconds": 760796.9180000001
     },
     {
       "name": "C++",
@@ -650,7 +650,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 233401.999
+      "total_seconds": 233677.65000000002
     },
     {
       "name": "JavaScript",
@@ -658,7 +658,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 107008.894
+      "total_seconds": 107054.13900000001
     },
     {
       "name": "Java",
@@ -666,7 +666,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 47239.717999999986
+      "total_seconds": 47279.21999999999
     },
     {
       "name": "SQL",
@@ -1927,13 +1927,15 @@
       "Other": 0
     },
     "2026-07-20": {
-      "Markdown": 2372.895,
+      "Markdown": 2404.117,
       "Python": 2021.834,
-      "TypeScript": 121.199,
-      "Other": 21.804,
+      "TypeScript": 396.85,
+      "Astro": 46.058,
+      "JSON": 39.502,
       "Git": 21.58,
       "HTML": 5.801,
-      "Astro": 0.813
+      "Other": 5.479,
+      "JavaScript": 0
     }
   }
 }
