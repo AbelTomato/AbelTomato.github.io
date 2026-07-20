@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 168,
+        "count": 169,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2118,
+        "count": 2117,
         "difficulty": "MEDIUM"
       },
       {
@@ -204,7 +204,7 @@
         }
       },
       {
-        "score": 47,
+        "score": 48,
         "topicArea": {
           "name": "基础架构",
           "slug": "architecture"
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 736874153,
+      "submitTime": 1784519121,
+      "question": {
+        "title": "Last Person to Fit in the Bus",
+        "translatedTitle": "最后一个能进入巴士的人",
+        "titleSlug": "last-person-to-fit-in-the-bus",
+        "questionFrontendId": "1204"
+      }
+    },
+    {
       "submissionId": 736850784,
       "submitTime": 1784513165,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "奇数和与偶数和的最大公约数",
         "titleSlug": "gcd-of-odd-and-even-sums",
         "questionFrontendId": "3658"
-      }
-    },
-    {
-      "submissionId": 735751536,
-      "submitTime": 1783989878,
-      "question": {
-        "title": "Exchange Seats",
-        "translatedTitle": "换座位",
-        "titleSlug": "exchange-seats",
-        "questionFrontendId": "626"
       }
     }
   ],
