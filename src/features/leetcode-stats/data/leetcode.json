@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 163,
+        "count": 164,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 913,
+        "count": 912,
         "difficulty": "EASY"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 736850784,
+      "submitTime": 1784513165,
+      "question": {
+        "title": "Shift 2D Grid",
+        "translatedTitle": "二维网格迁移",
+        "titleSlug": "shift-2d-grid",
+        "questionFrontendId": "1260"
+      }
+    },
+    {
       "submissionId": 736691305,
       "submitTime": 1784430915,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "换座位",
         "titleSlug": "exchange-seats",
         "questionFrontendId": "626"
-      }
-    },
-    {
-      "submissionId": 735750905,
-      "submitTime": 1783989087,
-      "question": {
-        "title": "Find the Number of Subsequences With Equal GCD",
-        "translatedTitle": "最大公约数相等的子序列数量",
-        "titleSlug": "find-the-number-of-subsequences-with-equal-gcd",
-        "questionFrontendId": "3336"
       }
     }
   ],
