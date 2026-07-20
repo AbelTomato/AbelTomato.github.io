@@ -2,7 +2,7 @@
 title: '跨语言通信：BeamDrop从CLI到GUI的pybind实战'
 description: '浅谈如何应用pybind实现Python与C++的跨语言通信，以及如何在Python中应用异步调用C++网络库'
 pubDate: '2026-07-13'
-updatedDate: '2026-07-13'
+updatedDate: '2026-07-20'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "Python", "C++", "跨语言通信"]
 ---
@@ -378,3 +378,372 @@ except b.BeamDropError as e:
 '@ | & "$PWD\.venv\Scripts\python.exe"
 Remove-Item Env:PYTHONPATH
 ```
+
+---
+
+### 3.6.加入`progress_callback`回调
+
+接下来继续，要实现前端界面能够实时显示传输进度，就需要Python将自身的回调函数交给C++，在那边调用
+
+具体地，我们对原有的`send()`函数改造一下，加上回调函数的传参
+
+```cpp
+[beamdrop_error](const std::vector<std::string> &paths, const std::string &host, int port,
+                         std::size_t chunk_size, py::object on_progress)
+```
+
+然后在这里，传入的`on_progress`的合法情况只有两种，要么是空，也就是没有回调，要么就是Python的可调用类型，所以在函数体内也加一个校验
+
+```cpp
+if (!on_progress.is_none() && !PyCallable_Check(on_progress.ptr())) {
+    throw py::type_error("on_progress must be callable or None");
+}
+```
+
+然后尝试将这个传入的函数化为`request`中能够被调用的`progress_callback`
+
+```cpp
+if (!on_progress.is_none()) {
+    py::function callback = py::reinterpret_borrow<py::function>(on_progress);
+    request.progress_callback = [callback = std::move(callback)](
+                                    const beamdrop::app::TransferProgress &progress) {
+        py::gil_scoped_acquire aquire;
+        try {
+            callback(progress);
+        } catch (py::error_already_set &error) {
+            const std::string message = error.what();
+            error.discard_as_unraisable(callback);
+            throw PythonProgressCallbackError(message);
+        }
+    };
+}
+```
+
+#### 3.6.1.GIL: 全局解释器锁
+
+在讲这段代码之前，先需要知道什么叫GIL
+
+GIL，也叫做全局解释器锁，意思就是，在任意一个确定的时刻，一个Python进程内只有一个线程能够运行
+
+所以说，Python内部其实并没有真正的多线程，在CPU也就是计算密集型任务上，无法利用多核加速，只能不断地切换线程达到时间片轮转，也就是一个核吭哧吭哧地跑，其他核在旁边冻得要感冒了
+
+为什么Python的设计要弄出来这个东西，大概来讲，有三个原因
+
+- 首先最重要的，因为Python内部的GC也就是垃圾回收机制是依靠对Python对象的引用计数实现的，如果没有GIL，就可能出现多个线程同时对单个对象的引用计数加加减减的情况，产生竞态，导致内存泄漏等等
+- 其次，为了偷懒和效率，在Python出现的初期，多核CPU尚未普及，然后加一把GIL锁，单线程运行快，又简化了CPython的C语言底层实现，扩展库写起来也简单
+- 最后则是积重难返，等到后来发现不对劲，想删了，发现已经有太多的核心代码和第三方库依赖这个GIL，一拆就崩
+
+虽然现在人们正在尝试逐步将GIL拆掉，目前也已经推出了实验性的无锁CPython，在Python3.13以上，但是等到整个生态都支持无锁也就不知道要到什么时候了
+
+这个GIL锁，再加上Python本身就是一门解释型语言，在计算密集型场景下，跑得就更像蜗牛了
+
+---
+
+#### 3.6.2.回调函数转换
+
+回到刚才的代码，这段代码实际上是将Python的回调函数包装成C++能够调用的lambda表达式
+
+首先
+
+```cpp
+py::function callback = py::reinterpret_borrow<py::function>(on_progress);
+```
+
+这里用了`py::reinterpret_borrow`，而上面我们在构造`beamdrop_error`的时候用到了`py::reinterptre_steal`，这里简单讲一下两者的区别
+
+我们上面提到，Python中对象是持有一个引用计数的，然后GC就根据这个引用计数销毁对象
+
+对于`py::reinterptre_borrow`，它就相当于普通地引用这个对象，使得该对象的引用计数增加1，等到这里的`callback`销毁之后，对应的这个Python对象也销毁，引用计数减少1，相对来说比较安全
+
+而`py::reinterptre_steal`，顾名思义，就是将所有权拿过来，它不增加引用计数，但是销毁之后引用计数也会减少1，因此如果操作不当，则会造成悬空引用等问题
+
+为什么上面的`beamdrop_error`用`py::reinterpret_steal`？因为其所取的对象是在括号内用`PyErr_NewException`构造出来的类似于右值的东西，出了这条语句就自动销毁了，相当于此时只有`beamdrop_error`持有这个对象，是安全的
+
+而`callback`不同，这个`on_progress`是由Python端传进来的函数，不可盲目转移所有权，只能用`reinterpret_borrow`借用
+
+然后这里就通过`reinterpret_borrow`将`on_progress`强制转换为`py::function`类型，并赋给`callback`，这个就是库的底层实现
+
+随后拿到`callback`，我们构造一个lambda表达式，其中`[callback = std::move(callback)]`变量捕获，应用移动语义将所有权完全转移到这个lambda内部
+
+传参`progress`，这里重点是调用了
+
+```cpp
+py::gil_scoped_acquire acquire;
+```
+
+这里的意思是重新申请Python的全局解释器锁
+
+为什么要重新申请？因为为了防止为了调用C++传输进程导致Python进程等待同步阻塞，我们在调度例如`SendService.send()`这样的耗时网络I/O任务之前，会先通过
+
+```cpp
+py::gil_scoped_release release;
+```
+
+释放GIL，这样C++进程就可以异步去执行传输任务，Python端则可以回去继续执行自己的任务，如果不释放就会导致前端UI无响应这样，背后就是Python进程阻塞了
+
+但这里为什么要拿回来呢？因为这里需要回调Python端的回调函数，需要抢占线程，否则多线程并发读写可能导致混乱，比如正在调用回调的过程中，另一个线程把这个回调函数销毁了，进程自然崩溃
+
+随后就是调用回调和异常处理
+
+```cpp
+try {
+    callback(progress);
+} catch (py::error_already_set &error) {
+    const std::string message = error.what();
+    error.discard_as_unraisable(callback);
+    throw PythonProgressCallbackError(message);
+}
+```
+
+这里的`py::error_already_set`就是捕获抛出的Python异常，但由于C++进程肯定没办法直接把Python异常抛回给Python主进程，所以这里用`discard_as_unraiseable`方法标记异常上下文，意为不可引发，然后在控制台或者别的什么地方抛出一个Traceback，方便追踪，避免直接抛回去异常导致整个Python解释器崩了
+
+最后在C++进程抛出一个自定义的`public`继承`std::runtime_error`的异常，用于标记在调用回调的过程中寄了
+
+这里还有一个比较有意思的是，注意到在申请全局解释器锁的时候，我们相当于声明了一个对象`acquire`，而不是调用函数方法`py::gil_scoped_acquire()`，这样做的好处就是通过RAII原则，在退出当前作用域的时候，自动析构`acquire`对象，而无需手动`release`
+
+这样一来就成功将Python的回调传给C++了
+
+---
+
+#### 3.6.3.`ReceiveServerService`转译
+
+发送端已经OK，接下来则需要让Python也可以直接调用C++接收端的持续监听服务
+
+为了暂时的简单起见，这里没有同步将接收端的回调函数也配置了，暂时实现一个无回调同步版本的接收端
+
+```cpp
+py::class_<beamdrop::app::ReceiveServerService,
+            std::shared_ptr<beamdrop::app::ReceiveServerService>>(m, "ReceiverService")
+    .def(py::init<>())
+    .def(
+        "start",
+        [beamdrop_error](beamdrop::app::ReceiveServerService &service, const std::string &host,
+                            int port, const std::string &save_dir, const std::string &state_file) {
+            if (port < 0 || port > 65535) {
+                throw py::value_error("port must be in range 0..65535");
+            }
+
+            beamdrop::app::ReceiveServerRequest request;
+            request.host = host;
+            request.port = static_cast<std::uint16_t>(port);
+            request.receive_request.save_dir = std::filesystem::path{save_dir};
+            request.receive_request.state_file = std::filesystem::path{state_file};
+
+            const auto result = service.start(request);
+            if (!result) {
+                raise_service_error(beamdrop_error, result.error());
+            }
+            return result.value();
+        },
+        py::arg("host"), py::arg("port"), py::arg("save_dir"), py::arg("state_file"))
+    .def("status", &beamdrop::app::ReceiveServerService::status)
+    .def("stop", [beamdrop_error](beamdrop::app::ReceiveServerService &service) {
+        const auto result = service.stop();
+        if (!result) {
+            raise_service_error(beamdrop_error, result.error());
+        }
+        return result.value();
+    });
+```
+
+---
+
+#### 3.6.4.测试编写
+
+使用pytest编写测试，验证回调函数的正常调用和异常抛出行为与预期的符合
+
+```python
+import hashlib
+import socket
+import time
+from pathlib import Path
+
+import pytest
+
+import beamdrop_native as b
+
+
+def free_loopback_port() -> int:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.bind(("127.0.0.1", 0))
+        return sock.getsockname()[1]
+
+
+def wait_for_file(path: Path, timeout_seconds: float = 2.0) -> None:
+    deadline = time.monotonic() + timeout_seconds
+    while time.monotonic() < deadline:
+        if path.exists():
+            return
+        time.sleep(0.02)
+    raise AssertionError(f"received file not found: {path}")
+
+
+@pytest.fixture
+def receiver(tmp_path: Path):
+    service = b.ReceiverService()
+    port = free_loopback_port()
+    received_dir = tmp_path / "received"
+    received_dir.mkdir()
+
+    started = service.start(
+        "127.0.0.1",
+        port,
+        str(received_dir),
+        str(tmp_path / "receiver-state.json"),
+    )
+    assert started.state == b.ReceiverState.RUNNING
+
+    try:
+        yield service, port, received_dir
+    finally:
+        status = service.status()
+        if status.state != b.ReceiverState.STOPPED:
+            service.stop()
+
+
+def test_send_reports_progress_and_transfers_file(receiver, tmp_path: Path) -> None:
+    service, port, received_dir = receiver
+    del service  # fixture owns lifetime; prevents an unused-variable warning
+
+    source = tmp_path / "数据.bin"
+    source.write_bytes(bytes(range(256)) * 16_384)  # 4 MiB
+    stages: list[object] = []
+
+    result = b.send(
+        [str(source)],
+        "127.0.0.1",
+        port,
+        on_progress=lambda progress: stages.append(progress.stage),
+    )
+
+    assert result.file_count == 1
+    assert result.total_bytes == source.stat().st_size
+    assert b.TransferStage.TASK_STARTED in stages
+    assert b.TransferStage.TRANSFERRING in stages
+    assert b.TransferStage.FILE_COMPLETED in stages
+    assert b.TransferStage.TASK_COMPLETED in stages
+
+    received = received_dir / source.name
+    wait_for_file(received)
+    assert hashlib.sha256(received.read_bytes()).digest() == hashlib.sha256(source.read_bytes()).digest()
+
+
+def test_send_converts_python_callback_exception_to_internal_error(receiver, tmp_path: Path) -> None:
+    service, port, _ = receiver
+    del service
+
+    source = tmp_path / "数据.bin"
+    source.write_bytes(b"callback failure test")
+
+    def failing_callback(_: object) -> None:
+        raise RuntimeError("intentional callback failure")
+
+    with pytest.raises(b.BeamDropError) as caught:
+        b.send([str(source)], "127.0.0.1", port, on_progress=failing_callback)
+
+    assert caught.value.code == b.ErrorCode.INTERNAL_ERROR
+
+
+def test_send_rejects_non_callable_progress_handler() -> None:
+    with pytest.raises(TypeError, match="on_progress must be callable or None"):
+        b.send([], "127.0.0.1", 19090, on_progress=42)
+
+```
+
+这里用中文名是为了验证utf-8编码的正常转换
+
+最后这里比较重要的就是，我实际上并不单独运行pytest，而是通过CTest间接调用测试脚本，统一验证
+
+CTest本身无法理解pytest，但是它只是实现了执行CMake在配置阶段注册的一条外部命令
+
+```cmake
+add_test(
+    NAME beamdrop_python_binding_tests
+    COMMAND ${Python_EXECUTABLE} -m pytest
+            ${CMAKE_CURRENT_SOURCE_DIR}/tests
+            -v
+)
+set_tests_properties(beamdrop_python_binding_tests PROPERTIES
+    ENVIRONMENT "PYTHONPATH=$<TARGET_FILE_DIR:beamdrop_native>"
+)
+```
+
+在具体的构建与测试中，大概像下面这样
+
+<div align="center">
+
+构建阶段
+
+```mermaid
+flowchart LR
+    A[cmake --preset windows-msvc2026-python] --> B["find_package(Python) 找到配置时解释器"]
+    B --> C["生成 build/.../CTestTestfile.cmake"]
+    C --> D["注册 beamdrop_python_binding_tests"]
+```
+
+测试阶段
+
+```mermaid
+flowchart LR
+    A["ctest -C Debug"] --> B["读取 CTestTestfile.cmake"]
+    B --> C["设置 PYTHONPATH=<Debug下beamdrop_native.pyd所在目录>"]
+    C --> D["执行 <Python_EXECUTABLE> -m pytest bindings/python/tests -v"]
+    D --> E["pytest import beamdrop_native 并运行 3 个测试"]
+```
+
+</div>
+
+---
+
+## 4.从pybind到Python应用层
+
+### 4.1.Gateway
+
+到目前为止，Python端已经可以通过pybind导出的动态链接库`.pyd`直接调用C++的发送和接收服务
+
+也就是说相当于在路由层就可以直接
+
+```python
+@app.post("api/transfer/send")
+async def send(request: SendRequest):
+    result = await beamdrop_native.send(request)
+    ...
+```
+
+但是仔细思考，这样做会有什么问题？
+
+稍微画一下数据流向图
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[React] --> B[FastAPI]
+    B --> C[pybind层]
+    C --> D[C++传输逻辑]
+```
+
+</div>
+
+发现什么问题？现在FastAPI直接依赖于pybind层，也就说明如果以后我们需要修改方案，比如说用subprocess或者gRPC进行进程间通信这样，那整个FastAPI的路由层都要大改，所以我们考虑在FastAPI和pybind层之间引入一个过渡层，进行一个通用接口的适配
+
+首先需要抽象出一个父类，这个适配层作用在应用层，起到一个应用层网关的作用，故命名为gateway
+
+那么这个需要抽象出什么方法？就目前设计来看，只需要设计发送、启动接收端、获取接收端状态、停止接收端这四个方法，因此有抽象类
+
+```python
+class NativeGateway(Protocol):
+    def send(self, on_progress: ProgressCallback, cancel_event: Event | None = None) -> NativeSendResult:
+        ...
+
+    def start_receiver(self, request: StartReceiverRequest) -> ReceiverSnapshot:
+        ...
+
+    def receiver_status(self) -> ReceiverSnapshot:
+        ...
+
+    def stop_receiver(self) -> ReceiverSnapshot:
+        ...
+```
+
+通过继承出一个`PybindNativeGateway`，我们就成功将整个架构拆分为表现层、业务层、网关层、绑定层、逻辑层
