@@ -3,6 +3,11 @@ title: '环境配置一览'
 description: '记录了各种环境的配置方法'
 pubDate: '2026-06-12'
 updatedDate: '2026-06-20'
+changelog:
+  - date: '2026-06-20'
+    note: 补充 Ubuntu 虚拟机使用主机 VPN 流量的配置方法。
+  - date: '2026-06-13'
+    note: 补充 FastAPI 与 Windows + Git Bash 环境配置。
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发"]
 ---
