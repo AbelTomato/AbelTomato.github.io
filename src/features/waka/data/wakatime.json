@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-21T13:47:07.228Z",
-  "total": "250 hrs",
+  "lastUpdate": "2026-07-21T15:43:58.335Z",
+  "total": "250 hrs 2 mins",
   "daily_average": "6 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 81492.29000000001,
-      "total_text": "22h 38m",
+      "total_seconds": 81578.54400000001,
+      "total_text": "22h 39m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 752334.1090000002,
-      "total_text": "208h 58m",
+      "total_seconds": 752420.3630000002,
+      "total_text": "209h 0m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2563881.493,
-      "total_text": "712h 11m",
+      "total_seconds": 2563967.7469999995,
+      "total_text": "712h 12m",
       "days_active": 144
     },
     "all_time": {
-      "total_seconds": 2563881.493,
-      "total_text": "712h 11m",
+      "total_seconds": 2563967.7469999995,
+      "total_text": "712h 12m",
       "days_active": 144
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-21",
-      "seconds": 4013.774,
-      "text": "1 hr 6 mins"
+      "seconds": 4100.028,
+      "text": "1 hr 8 mins"
     }
   ],
   "heatmap": [
@@ -636,7 +636,7 @@
     },
     {
       "date": "2026-07-21",
-      "seconds": 4013.774
+      "seconds": 4100.028
     }
   ],
   "languages": [
@@ -662,7 +662,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 107440.80400000002
+      "total_seconds": 107527.058
     },
     {
       "name": "JSON",
@@ -1946,8 +1946,8 @@
     "2026-07-21": {
       "TypeScript": 3298.781,
       "Markdown": 559.27,
+      "Astro": 132.093,
       "JSON": 108.641,
-      "Astro": 45.839,
       "Git": 1.243,
       "Other": 0
     }
