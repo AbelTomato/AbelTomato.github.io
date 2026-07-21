@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-21T15:43:58.335Z",
+  "lastUpdate": "2026-07-21T19:20:24.246Z",
   "total": "250 hrs 2 mins",
   "daily_average": "6 hrs 10 mins",
   "stats": {
@@ -1948,8 +1948,7 @@
       "Markdown": 559.27,
       "Astro": 132.093,
       "JSON": 108.641,
-      "Git": 1.243,
-      "Other": 0
+      "Git": 1.243
     }
   }
 }
