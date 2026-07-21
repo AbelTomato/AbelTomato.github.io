@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-21T08:26:29.023Z",
-  "total": "249 hrs 28 mins",
-  "daily_average": "6 hrs 9 mins",
+  "lastUpdate": "2026-07-21T13:47:07.228Z",
+  "total": "250 hrs",
+  "daily_average": "6 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 79561.109,
-      "total_text": "22h 6m",
+      "total_seconds": 81492.29000000001,
+      "total_text": "22h 38m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 750402.9280000002,
-      "total_text": "208h 26m",
+      "total_seconds": 752334.1090000002,
+      "total_text": "208h 58m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 2561950.3119999995,
-      "total_text": "711h 39m",
+      "total_seconds": 2563881.493,
+      "total_text": "712h 11m",
       "days_active": 144
     },
     "all_time": {
-      "total_seconds": 2561950.3119999995,
-      "total_text": "711h 39m",
+      "total_seconds": 2563881.493,
+      "total_text": "712h 11m",
       "days_active": 144
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-21",
-      "seconds": 2082.593,
-      "text": "34 mins"
+      "seconds": 4013.774,
+      "text": "1 hr 6 mins"
     }
   ],
   "heatmap": [
@@ -636,13 +636,13 @@
     },
     {
       "date": "2026-07-21",
-      "seconds": 2082.593
+      "seconds": 4013.774
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 762383.8840000002
+      "total_seconds": 762418.0550000002
     },
     {
       "name": "C++",
@@ -654,7 +654,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 236804.54500000004
+      "total_seconds": 238680.18600000002
     },
     {
       "name": "JavaScript",
@@ -662,11 +662,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 107422.19300000001
+      "total_seconds": 107440.80400000002
     },
     {
       "name": "JSON",
-      "total_seconds": 48772.21999999998
+      "total_seconds": 48773.734999999986
     },
     {
       "name": "Java",
@@ -702,7 +702,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 6045.714999999998
+      "total_seconds": 6046.957999999999
     },
     {
       "name": "Git Config",
@@ -1944,11 +1944,12 @@
       "Other": 5.479
     },
     "2026-07-21": {
-      "TypeScript": 1423.14,
-      "Markdown": 525.099,
-      "JSON": 107.126,
-      "Astro": 27.228,
-      "Git": 0
+      "TypeScript": 3298.781,
+      "Markdown": 559.27,
+      "JSON": 108.641,
+      "Astro": 45.839,
+      "Git": 1.243,
+      "Other": 0
     }
   }
 }
