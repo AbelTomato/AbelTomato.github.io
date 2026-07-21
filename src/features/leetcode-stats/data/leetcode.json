@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 169,
+        "count": 170,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2117,
+        "count": 2116,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 737068962,
+      "submitTime": 1784601160,
+      "question": {
+        "title": "Maximize Active Section with Trade I",
+        "translatedTitle": "操作后最大活跃区段数 I",
+        "titleSlug": "maximize-active-section-with-trade-i",
+        "questionFrontendId": "3499"
+      }
+    },
+    {
       "submissionId": 736874153,
       "submitTime": 1784519121,
       "question": {
@@ -504,16 +514,6 @@
     {
       "submissionId": 735957650,
       "submitTime": 1784077966,
-      "question": {
-        "title": "GCD of Odd and Even Sums",
-        "translatedTitle": "奇数和与偶数和的最大公约数",
-        "titleSlug": "gcd-of-odd-and-even-sums",
-        "questionFrontendId": "3658"
-      }
-    },
-    {
-      "submissionId": 735957548,
-      "submitTime": 1784077914,
       "question": {
         "title": "GCD of Odd and Even Sums",
         "translatedTitle": "奇数和与偶数和的最大公约数",
