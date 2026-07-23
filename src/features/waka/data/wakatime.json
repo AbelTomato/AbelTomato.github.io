@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-23T14:52:28.945Z",
-  "total": "244 hrs 6 mins",
+  "lastUpdate": "2026-07-23T19:15:08.277Z",
+  "total": "244 hrs 38 mins",
   "daily_average": "6 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 45903.812,
-      "total_text": "12h 45m",
+      "total_seconds": 47789.092,
+      "total_text": "13h 16m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 682171.5990000002,
-      "total_text": "189h 29m",
+      "total_seconds": 684056.8790000001,
+      "total_text": "190h 0m",
       "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 2565799.7209999994,
-      "total_text": "712h 43m",
+      "total_seconds": 2567685.0009999997,
+      "total_text": "713h 14m",
       "days_active": 145
     },
     "all_time": {
-      "total_seconds": 2565799.7209999994,
-      "total_text": "712h 43m",
+      "total_seconds": 2567685.0009999997,
+      "total_text": "713h 14m",
       "days_active": 145
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-23",
-      "seconds": 1831.974,
-      "text": "30 mins"
+      "seconds": 3717.254,
+      "text": "1 hr 1 min"
     }
   ],
   "heatmap": [
@@ -644,13 +644,13 @@
     },
     {
       "date": "2026-07-23",
-      "seconds": 1831.974
+      "seconds": 3717.254
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 763367.2330000001
+      "total_seconds": 765128.8180000002
     },
     {
       "name": "C++",
@@ -705,12 +705,12 @@
       "total_seconds": 8203.673
     },
     {
-      "name": "Bash",
-      "total_seconds": 6097.496999999999
+      "name": "Git",
+      "total_seconds": 6170.652999999998
     },
     {
-      "name": "Git",
-      "total_seconds": 6046.957999999999
+      "name": "Bash",
+      "total_seconds": 6097.496999999999
     },
     {
       "name": "Git Config",
@@ -1960,9 +1960,9 @@
     },
     "2026-07-22": {},
     "2026-07-23": {
-      "Markdown": 949.178,
+      "Markdown": 2710.763,
       "Other": 882.796,
-      "Git": 0
+      "Git": 123.695
     }
   }
 }
