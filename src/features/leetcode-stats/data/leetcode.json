@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 170,
+        "count": 171,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2117,
+        "count": 2116,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 737667499,
+      "submitTime": 1784815813,
+      "question": {
+        "title": "Number of Unique XOR Triplets I",
+        "translatedTitle": "不同 XOR 三元组的数目 I",
+        "titleSlug": "number-of-unique-xor-triplets-i",
+        "questionFrontendId": "3513"
+      }
+    },
+    {
       "submissionId": 737470510,
       "submitTime": 1784733897,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "产品销售分析 III",
         "titleSlug": "product-sales-analysis-iii",
         "questionFrontendId": "1070"
-      }
-    },
-    {
-      "submissionId": 735958646,
-      "submitTime": 1784078410,
-      "question": {
-        "title": "Customers Who Bought All Products",
-        "translatedTitle": "买下所有产品的客户",
-        "titleSlug": "customers-who-bought-all-products",
-        "questionFrontendId": "1045"
       }
     }
   ],
