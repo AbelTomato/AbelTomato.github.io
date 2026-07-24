@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-07-23T19:15:08.277Z",
-  "total": "244 hrs 38 mins",
-  "daily_average": "6 hrs 10 mins",
+  "lastUpdate": "2026-07-24T02:35:02.882Z",
+  "total": "244 hrs 12 mins",
+  "daily_average": "6 hrs 20 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 47789.092,
-      "total_text": "13h 16m",
-      "days_active": 6
+      "total_seconds": 23851.025,
+      "total_text": "6h 37m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 684056.8790000001,
-      "total_text": "190h 0m",
-      "days_active": 29
+      "total_seconds": 661270.1820000001,
+      "total_text": "183h 41m",
+      "days_active": 28
     },
     "last_365_days": {
       "total_seconds": 2567685.0009999997,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-17",
-      "seconds": 23938.067,
-      "text": "6 hrs 38 mins"
-    },
     {
       "date": "2026-07-18",
       "seconds": 3649.364,
@@ -59,6 +54,11 @@
       "date": "2026-07-23",
       "seconds": 3717.254,
       "text": "1 hr 1 min"
+    },
+    {
+      "date": "2026-07-24",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -645,12 +645,16 @@
     {
       "date": "2026-07-23",
       "seconds": 3717.254
+    },
+    {
+      "date": "2026-07-24",
+      "seconds": 0
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 765128.8180000002
+      "total_seconds": 764440.8260000002
     },
     {
       "name": "C++",
@@ -658,23 +662,23 @@
     },
     {
       "name": "Python",
-      "total_seconds": 399513.7330000001
+      "total_seconds": 399406.4870000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 238680.18600000002
+      "total_seconds": 237781.24800000002
     },
     {
       "name": "JavaScript",
-      "total_seconds": 132230.26300000004
+      "total_seconds": 131818.54700000002
     },
     {
       "name": "Astro",
-      "total_seconds": 107527.058
+      "total_seconds": 108681.80900000001
     },
     {
       "name": "JSON",
-      "total_seconds": 48773.734999999986
+      "total_seconds": 50320.93799999999
     },
     {
       "name": "Java",
@@ -686,7 +690,7 @@
     },
     {
       "name": "C",
-      "total_seconds": 28019.482
+      "total_seconds": 28019.225
     },
     {
       "name": "HTML",
@@ -694,7 +698,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 13398.103000000001
+      "total_seconds": 13592.69
     },
     {
       "name": "CMake",
@@ -714,7 +718,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 5888.644
+      "total_seconds": 5317.841
     },
     {
       "name": "TOML",
@@ -1536,15 +1540,15 @@
     "2026-06-15": {
       "TypeScript": 860.026,
       "Git": 102.954,
-      "Astro": 54.663,
-      "TSConfig": 9,
-      "Other": 0
+      "Astro": 38.663,
+      "Other": 16,
+      "TSConfig": 9
     },
     "2026-06-16": {
-      "TypeScript": 3056.57,
-      "JavaScript": 1225.168,
+      "TypeScript": 2300.487,
+      "Astro": 1602.433,
+      "JavaScript": 813.452,
       "Markdown": 618.437,
-      "Astro": 434.634,
       "CSS": 11,
       "Other": 0
     },
@@ -1552,48 +1556,47 @@
       "TypeScript": 1166.799
     },
     "2026-06-18": {
-      "Markdown": 11855.322,
+      "Markdown": 10658.132,
       "C": 4800,
       "Python": 3882.776,
-      "Other": 820.114,
+      "JSON": 2013.352,
       "TOML": 790.946,
       "Text": 686.822,
       "Git Config": 128.576,
       "TypeScript": 88.284,
       "Git": 42.744,
-      "JSON": 0,
-      "Astro": 0
+      "Astro": 2.952,
+      "Other": 1
     },
     "2026-06-19": {
       "C": 8224.294,
       "SQL": 5400,
-      "Markdown": 3838.618,
-      "TypeScript": 3150.944,
-      "Python": 2777.787,
-      "JSON": 1074.609,
+      "Markdown": 3848.625,
+      "Python": 3073.929,
+      "TypeScript": 3008.089,
+      "JSON": 768.46,
+      "CSS": 288.371,
       "TSConfig": 127.418,
       "YAML": 105.513,
-      "CSS": 93.784,
-      "Other": 90.885,
+      "Other": 39.153,
       "JavaScript": 13,
       "Git Config": 11.051,
       "TOML": 0.929
     },
     "2026-06-20": {
-      "Markdown": 13543.968,
+      "Markdown": 14043.159,
       "SQL": 7080.914,
-      "Python": 6582.03,
+      "Python": 6178.642,
       "C": 4248.582,
-      "JSON": 3020.172,
-      "Git Config": 742.511,
-      "Text": 429.169,
+      "JSON": 2860.172,
+      "Text": 1064.169,
       "TypeScript": 201.28,
+      "Git Config": 171.708,
       "TSConfig": 114.529,
       "Git": 36.406,
       "TOML": 32.864,
       "CSS": 18.915,
-      "HTML": 7.805,
-      "Other": 0
+      "HTML": 7.805
     },
     "2026-06-21": {
       "Python": 12597.045,
@@ -1610,7 +1613,7 @@
     },
     "2026-06-22": {
       "Markdown": 19147.049,
-      "C": 10603.217,
+      "C": 10602.96,
       "SQL": 4326.749,
       "Python": 2454.721,
       "Astro": 1375.001,
@@ -1619,7 +1622,7 @@
       "MDX": 249.681,
       "Git": 122.024,
       "Perl": 15.113,
-      "Other": 2.933,
+      "Other": 3.19,
       "Makefile": 0
     },
     "2026-06-23": {
@@ -1963,6 +1966,7 @@
       "Markdown": 2710.763,
       "Other": 882.796,
       "Git": 123.695
-    }
+    },
+    "2026-07-24": {}
   }
 }
