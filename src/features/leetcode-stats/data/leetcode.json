@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 171,
+        "count": 172,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2116,
+        "count": 2115,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 737803907,
+      "submitTime": 1784882598,
+      "question": {
+        "title": "Number of Unique XOR Triplets II",
+        "translatedTitle": "不同 XOR 三元组的数目 II",
+        "titleSlug": "number-of-unique-xor-triplets-ii",
+        "questionFrontendId": "3514"
+      }
+    },
+    {
       "submissionId": 737667499,
       "submitTime": 1784815813,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "数对的最大公约数之和",
         "titleSlug": "sum-of-gcd-of-formed-pairs",
         "questionFrontendId": "3867"
-      }
-    },
-    {
-      "submissionId": 735960424,
-      "submitTime": 1784079118,
-      "question": {
-        "title": "Product Sales Analysis III",
-        "translatedTitle": "产品销售分析 III",
-        "titleSlug": "product-sales-analysis-iii",
-        "questionFrontendId": "1070"
       }
     }
   ],

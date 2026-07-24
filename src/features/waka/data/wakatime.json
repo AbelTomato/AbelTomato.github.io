@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-07-24T08:26:11.726Z",
+  "lastUpdate": "2026-07-24T13:42:38.858Z",
   "total": "244 hrs 12 mins",
-  "daily_average": "6 hrs 20 mins",
+  "daily_average": "6 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 23851.025,
-      "total_text": "6h 37m",
-      "days_active": 5
+      "total_seconds": 23883.914,
+      "total_text": "6h 38m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 661270.1820000001,
+      "total_seconds": 661303.0710000001,
       "total_text": "183h 41m",
-      "days_active": 28
+      "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 2567685.0009999997,
-      "total_text": "713h 14m",
-      "days_active": 145
+      "total_seconds": 2567717.8899999997,
+      "total_text": "713h 15m",
+      "days_active": 146
     },
     "all_time": {
-      "total_seconds": 2567685.0009999997,
-      "total_text": "713h 14m",
-      "days_active": 145
+      "total_seconds": 2567717.8899999997,
+      "total_text": "713h 15m",
+      "days_active": 146
     }
   },
   "weekly": [
@@ -57,7 +57,7 @@
     },
     {
       "date": "2026-07-24",
-      "seconds": 0,
+      "seconds": 32.889,
       "text": "0 secs"
     }
   ],
@@ -648,7 +648,7 @@
     },
     {
       "date": "2026-07-24",
-      "seconds": 0
+      "seconds": 32.889
     }
   ],
   "languages": [
@@ -710,7 +710,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 6170.652999999998
+      "total_seconds": 6203.541999999999
     },
     {
       "name": "Bash",
@@ -1968,7 +1968,8 @@
       "Git": 123.695
     },
     "2026-07-24": {
-      "Git": 0
+      "Git": 32.889,
+      "Markdown": 0
     }
   }
 }
