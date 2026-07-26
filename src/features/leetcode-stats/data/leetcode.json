@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 165,
+        "count": 166,
         "difficulty": "EASY"
       },
       {
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2115,
+        "count": 2117,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 972,
+        "count": 973,
         "difficulty": "HARD"
       }
     ]
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 738111496,
+      "submitTime": 1785045593,
+      "question": {
+        "title": "Maximum Product of Three Numbers",
+        "translatedTitle": "三个数的最大乘积",
+        "titleSlug": "maximum-product-of-three-numbers",
+        "questionFrontendId": "628"
+      }
+    },
+    {
       "submissionId": 737897325,
       "submitTime": 1784945696,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "创建一个恰好有 K 条路径的网格图 I",
         "titleSlug": "create-grid-with-exactly-k-paths-i",
         "questionFrontendId": "3988"
-      }
-    },
-    {
-      "submissionId": 736152698,
-      "submitTime": 1784162123,
-      "question": {
-        "title": "Market Analysis I",
-        "translatedTitle": "市场分析 I",
-        "titleSlug": "market-analysis-i",
-        "questionFrontendId": "1158"
       }
     }
   ],
