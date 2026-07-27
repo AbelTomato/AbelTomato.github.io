@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 166,
+        "count": 167,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 910,
+        "count": 909,
         "difficulty": "EASY"
       },
       {
@@ -48,7 +48,7 @@
       {
         "langName": "cpp",
         "langVerboseName": "C++",
-        "level": 1
+        "level": 2
       },
       {
         "langName": "mysql",
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 738262913,
+      "submitTime": 1785118535,
+      "question": {
+        "title": "Maximum Product of Two Elements in an Array",
+        "translatedTitle": "数组中两元素的最大乘积",
+        "titleSlug": "maximum-product-of-two-elements-in-an-array",
+        "questionFrontendId": "1464"
+      }
+    },
+    {
       "submissionId": 738111496,
       "submitTime": 1785045593,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "查询排序后的最大公约数",
         "titleSlug": "sorted-gcd-pair-queries",
         "questionFrontendId": "3312"
-      }
-    },
-    {
-      "submissionId": 736153080,
-      "submitTime": 1784162556,
-      "question": {
-        "title": "Create Grid With Exactly K Paths I",
-        "translatedTitle": "创建一个恰好有 K 条路径的网格图 I",
-        "titleSlug": "create-grid-with-exactly-k-paths-i",
-        "questionFrontendId": "3988"
       }
     }
   ],
