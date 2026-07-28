@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-07-28T08:32:25.783Z",
-  "total": "237 hrs 9 mins",
-  "daily_average": "6 hrs 29 mins",
+  "lastUpdate": "2026-07-28T14:03:59.022Z",
+  "total": "238 hrs 42 mins",
+  "daily_average": "6 hrs 11 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 9007.973,
-      "total_text": "2h 30m",
-      "days_active": 3
+      "total_seconds": 14536.79,
+      "total_text": "4h 2m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 534451.2720000001,
-      "total_text": "148h 27m",
-      "days_active": 26
+      "total_seconds": 539980.089,
+      "total_text": "149h 59m",
+      "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 2572975.7199999993,
-      "total_text": "714h 42m",
-      "days_active": 147
+      "total_seconds": 2578504.5369999995,
+      "total_text": "716h 15m",
+      "days_active": 149
     },
     "all_time": {
-      "total_seconds": 2572975.7199999993,
-      "total_text": "714h 42m",
-      "days_active": 147
+      "total_seconds": 2578504.5369999995,
+      "total_text": "716h 15m",
+      "days_active": 149
     }
   },
   "weekly": [
@@ -52,13 +52,13 @@
     },
     {
       "date": "2026-07-27",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 403.546,
+      "text": "6 mins"
     },
     {
       "date": "2026-07-28",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 5125.271,
+      "text": "1 hr 25 mins"
     }
   ],
   "heatmap": [
@@ -660,17 +660,17 @@
     },
     {
       "date": "2026-07-27",
-      "seconds": 0
+      "seconds": 403.546
     },
     {
       "date": "2026-07-28",
-      "seconds": 0
+      "seconds": 5125.271
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 765699.6790000002
+      "total_seconds": 770818.1900000003
     },
     {
       "name": "C++",
@@ -1993,7 +1993,12 @@
       "Other": 0
     },
     "2026-07-26": {},
-    "2026-07-27": {},
-    "2026-07-28": {}
+    "2026-07-27": {
+      "Other": 403.546
+    },
+    "2026-07-28": {
+      "Markdown": 5118.511,
+      "Other": 6.76
+    }
   }
 }
