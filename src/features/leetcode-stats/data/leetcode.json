@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 172,
+        "count": 173,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2117,
+        "count": 2116,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 738538519,
+      "submitTime": 1785218176,
+      "question": {
+        "title": "Smallest Palindromic Rearrangement I",
+        "translatedTitle": "最小回文排列 I",
+        "titleSlug": "smallest-palindromic-rearrangement-i",
+        "questionFrontendId": "3517"
+      }
+    },
+    {
       "submissionId": 738262913,
       "submitTime": 1785118535,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "指定日期的产品价格",
         "titleSlug": "product-price-at-a-given-date",
         "questionFrontendId": "1164"
-      }
-    },
-    {
-      "submissionId": 736345820,
-      "submitTime": 1784247495,
-      "question": {
-        "title": "Sorted GCD Pair Queries",
-        "translatedTitle": "查询排序后的最大公约数",
-        "titleSlug": "sorted-gcd-pair-queries",
-        "questionFrontendId": "3312"
       }
     }
   ],
