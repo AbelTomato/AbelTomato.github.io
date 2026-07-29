@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-07-28T19:22:24.481Z",
-  "total": "238 hrs 42 mins",
-  "daily_average": "6 hrs 11 mins",
+  "lastUpdate": "2026-07-29T02:31:34.746Z",
+  "total": "231 hrs 57 mins",
+  "daily_average": "6 hrs",
   "stats": {
     "last_7_days": {
-      "total_seconds": 14536.79,
-      "total_text": "4h 2m",
-      "days_active": 5
+      "total_seconds": 15158.948,
+      "total_text": "4h 12m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 539980.089,
-      "total_text": "149h 59m",
+      "total_seconds": 511673.44200000004,
+      "total_text": "142h 7m",
       "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 2578504.5369999995,
-      "total_text": "716h 15m",
-      "days_active": 149
+      "total_seconds": 2579126.6949999994,
+      "total_text": "716h 25m",
+      "days_active": 150
     },
     "all_time": {
-      "total_seconds": 2578504.5369999995,
-      "total_text": "716h 15m",
-      "days_active": 149
+      "total_seconds": 2579126.6949999994,
+      "total_text": "716h 25m",
+      "days_active": 150
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-22",
-      "seconds": 0,
-      "text": "0 secs"
-    },
     {
       "date": "2026-07-23",
       "seconds": 3717.254,
@@ -59,6 +54,11 @@
       "date": "2026-07-28",
       "seconds": 5125.271,
       "text": "1 hr 25 mins"
+    },
+    {
+      "date": "2026-07-29",
+      "seconds": 622.158,
+      "text": "10 mins"
     }
   ],
   "heatmap": [
@@ -665,12 +665,16 @@
     {
       "date": "2026-07-28",
       "seconds": 5125.271
+    },
+    {
+      "date": "2026-07-29",
+      "seconds": 622.158
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 770818.1900000003
+      "total_seconds": 771440.3480000003
     },
     {
       "name": "C++",
@@ -1999,6 +2003,10 @@
     "2026-07-28": {
       "Markdown": 5118.511,
       "Other": 6.76
+    },
+    "2026-07-29": {
+      "Markdown": 622.158,
+      "Other": 0
     }
   }
 }
