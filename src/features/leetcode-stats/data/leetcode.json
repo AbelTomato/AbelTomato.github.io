@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 53,
+        "count": 54,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 974,
         "difficulty": "HARD"
       }
     ]
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 738908989,
+      "submitTime": 1785339307,
+      "question": {
+        "title": "Smallest Palindromic Rearrangement II",
+        "translatedTitle": "最小回文排列 II",
+        "titleSlug": "smallest-palindromic-rearrangement-ii",
+        "questionFrontendId": "3518"
+      }
+    },
+    {
       "submissionId": 738538519,
       "submitTime": 1785218176,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "找出数组的最大公约数",
         "titleSlug": "find-greatest-common-divisor-of-array",
         "questionFrontendId": "1979"
-      }
-    },
-    {
-      "submissionId": 736346291,
-      "submitTime": 1784248251,
-      "question": {
-        "title": "Product Price at a Given Date",
-        "translatedTitle": "指定日期的产品价格",
-        "titleSlug": "product-price-at-a-given-date",
-        "questionFrontendId": "1164"
       }
     }
   ],
