@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-07-30T13:58:46.318Z",
-  "total": "223 hrs 54 mins",
+  "lastUpdate": "2026-07-30T19:24:37.990Z",
+  "total": "223 hrs 55 mins",
   "daily_average": "5 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 18530.335,
-      "total_text": "5h 8m",
+      "total_seconds": 18619.646,
+      "total_text": "5h 10m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 480233.078,
-      "total_text": "133h 23m",
+      "total_seconds": 480322.38899999997,
+      "total_text": "133h 25m",
       "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 2586215.335999999,
-      "total_text": "718h 23m",
+      "total_seconds": 2586304.6469999994,
+      "total_text": "718h 25m",
       "days_active": 151
     },
     "all_time": {
-      "total_seconds": 2586215.335999999,
-      "total_text": "718h 23m",
+      "total_seconds": 2586304.6469999994,
+      "total_text": "718h 25m",
       "days_active": 151
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-07-30",
-      "seconds": 2724.783,
-      "text": "45 mins"
+      "seconds": 2814.094,
+      "text": "46 mins"
     }
   ],
   "heatmap": [
@@ -672,7 +672,7 @@
     },
     {
       "date": "2026-07-30",
-      "seconds": 2724.783
+      "seconds": 2814.094
     }
   ],
   "languages": [
@@ -2021,7 +2021,7 @@
       "TypeScript": 701.155,
       "Java Properties": 661.519,
       "JavaScript": 373.426,
-      "Other": 47.362,
+      "Other": 136.673,
       "Markdown": 14.504
     }
   }
