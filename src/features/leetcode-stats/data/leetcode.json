@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 167,
+        "count": 168,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 909,
+        "count": 908,
         "difficulty": "EASY"
       },
       {
@@ -211,7 +211,7 @@
         }
       },
       {
-        "score": 26,
+        "score": 27,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 738942013,
+      "submitTime": 1785376556,
+      "question": {
+        "title": "Minimum Number of Pushes to Type Word I",
+        "translatedTitle": "输入单词需要的最少按键次数 I",
+        "titleSlug": "minimum-number-of-pushes-to-type-word-i",
+        "questionFrontendId": "3014"
+      }
+    },
+    {
       "submissionId": 738908989,
       "submitTime": 1785339307,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "即时食物配送 II",
         "titleSlug": "immediate-food-delivery-ii",
         "questionFrontendId": "1174"
-      }
-    },
-    {
-      "submissionId": 736516965,
-      "submitTime": 1784333672,
-      "question": {
-        "title": "Find Greatest Common Divisor of Array",
-        "translatedTitle": "找出数组的最大公约数",
-        "titleSlug": "find-greatest-common-divisor-of-array",
-        "questionFrontendId": "1979"
       }
     }
   ],
