@@ -25,9 +25,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: pnpm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.3.0
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Sync WakaTime Data
         run: node scripts/sync-wakatime.js
@@ -35,7 +41,7 @@ jobs:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
       - name: Sync LeetCode Data
-        run: npx tsx scripts/fetch-leetcode.ts
+        run: pnpm exec tsx scripts/fetch-leetcode.ts
         env:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
 
@@ -55,7 +61,7 @@ jobs:
           fi
 
       - name: Build Astro
-        run: npm run build
+        run: pnpm run build
         env:
           PUBLIC_COMMENT_API_URL: ${{ vars.PUBLIC_COMMENT_API_URL }}
           PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
