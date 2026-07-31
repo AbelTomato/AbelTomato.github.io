@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 173,
+        "count": 174,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2116,
+        "count": 2115,
         "difficulty": "MEDIUM"
       },
       {
@@ -222,10 +222,10 @@
   "userContestRanking": {
     "attendedContestsCount": 10,
     "rating": 2068.038620575869,
-    "globalRanking": 15216,
-    "localRanking": 4760,
-    "globalTotalParticipants": 886894,
-    "localTotalParticipants": 155283,
+    "globalRanking": 15257,
+    "localRanking": 4765,
+    "globalTotalParticipants": 887466,
+    "localTotalParticipants": 155299,
     "topPercentage": 3.04
   },
   "userContestRankingHistory": [
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 739162463,
+      "submitTime": 1785465076,
+      "question": {
+        "title": "Minimum Number of Pushes to Type Word II",
+        "translatedTitle": "输入单词需要的最少按键次数 II",
+        "titleSlug": "minimum-number-of-pushes-to-type-word-ii",
+        "questionFrontendId": "3016"
+      }
+    },
+    {
       "submissionId": 738942013,
       "submitTime": 1785376556,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "不同字符的最小子序列",
         "titleSlug": "smallest-subsequence-of-distinct-characters",
         "questionFrontendId": "1081"
-      }
-    },
-    {
-      "submissionId": 736517114,
-      "submitTime": 1784334027,
-      "question": {
-        "title": "Immediate Food Delivery II",
-        "translatedTitle": "即时食物配送 II",
-        "titleSlug": "immediate-food-delivery-ii",
-        "questionFrontendId": "1174"
       }
     }
   ],

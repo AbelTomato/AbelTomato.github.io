@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-07-30T19:24:37.990Z",
-  "total": "223 hrs 55 mins",
-  "daily_average": "5 hrs 48 mins",
+  "lastUpdate": "2026-07-31T02:42:54.297Z",
+  "total": "216 hrs 38 mins",
+  "daily_average": "5 hrs 36 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 18619.646,
-      "total_text": "5h 10m",
+      "total_seconds": 23585.661999999997,
+      "total_text": "6h 33m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 480322.38899999997,
-      "total_text": "133h 25m",
+      "total_seconds": 452533.876,
+      "total_text": "125h 42m",
       "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 2586304.6469999994,
-      "total_text": "718h 25m",
-      "days_active": 151
+      "total_seconds": 2591439.5479999995,
+      "total_text": "719h 50m",
+      "days_active": 152
     },
     "all_time": {
-      "total_seconds": 2586304.6469999994,
-      "total_text": "718h 25m",
-      "days_active": 151
+      "total_seconds": 2591439.5479999995,
+      "total_text": "719h 50m",
+      "days_active": 152
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-24",
-      "seconds": 168.885,
-      "text": "2 mins"
-    },
     {
       "date": "2026-07-25",
       "seconds": 5121.834,
@@ -59,6 +54,11 @@
       "date": "2026-07-30",
       "seconds": 2814.094,
       "text": "46 mins"
+    },
+    {
+      "date": "2026-07-31",
+      "seconds": 5134.901,
+      "text": "1 hr 25 mins"
     }
   ],
   "heatmap": [
@@ -673,12 +673,16 @@
     {
       "date": "2026-07-30",
       "seconds": 2814.094
+    },
+    {
+      "date": "2026-07-31",
+      "seconds": 5134.901
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 775818.7100000002
+      "total_seconds": 778918.7750000001
     },
     {
       "name": "C++",
@@ -765,6 +769,14 @@
       "total_seconds": 1565.608
     },
     {
+      "name": "TeX",
+      "total_seconds": 1376.114
+    },
+    {
+      "name": "Lua",
+      "total_seconds": 1021.53
+    },
+    {
       "name": "PowerShell",
       "total_seconds": 799.094
     },
@@ -783,10 +795,6 @@
     {
       "name": "Godot Resource",
       "total_seconds": 365.113
-    },
-    {
-      "name": "TeX",
-      "total_seconds": 362.808
     },
     {
       "name": "Objective-C",
@@ -2023,6 +2031,11 @@
       "JavaScript": 373.426,
       "Other": 136.673,
       "Markdown": 14.504
+    },
+    "2026-07-31": {
+      "Markdown": 3100.065,
+      "Lua": 1021.53,
+      "TeX": 1013.306
     }
   }
 }
