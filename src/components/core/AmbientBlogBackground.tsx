@@ -45,6 +45,7 @@ export default function AmbientBlogBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gradientPrefix = useId().replace(/:/g, "");
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [renderTest, setRenderTest] = useState("");
   const beams = useMemo<Beam[]>(
     () =>
       beamPaths.map((_, index) => ({
@@ -56,6 +57,10 @@ export default function AmbientBlogBackground() {
       })),
     [],
   );
+
+  useEffect(() => {
+    setRenderTest(new URLSearchParams(window.location.search).get("render-test") ?? "");
+  }, []);
 
   useEffect(() => {
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -78,7 +83,7 @@ export default function AmbientBlogBackground() {
     let height = 0;
     let frameId = 0;
     let previousTime = 0;
-    let paused = document.hidden || reducedMotion;
+    let paused = document.hidden || reducedMotion || renderTest === "static-background";
 
     const createStar = (): Star => ({
       x: (Math.random() - 0.5) * width * 2,
@@ -139,11 +144,13 @@ export default function AmbientBlogBackground() {
     };
 
     const visibilityChange = () => {
-      paused = document.hidden || reducedMotion;
+      paused = document.hidden || reducedMotion || renderTest === "static-background";
     };
 
     resize();
-    if (reducedMotion) drawStars(0, false);
+    if (reducedMotion || renderTest === "static-background") {
+      drawStars(0, false);
+    }
     window.addEventListener("resize", resize, { passive: true });
     document.addEventListener("visibilitychange", visibilityChange);
     frameId = requestAnimationFrame(render);
@@ -153,13 +160,13 @@ export default function AmbientBlogBackground() {
       window.removeEventListener("resize", resize);
       document.removeEventListener("visibilitychange", visibilityChange);
     };
-  }, [reducedMotion]);
+  }, [reducedMotion, renderTest]);
 
   return (
-    <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-background">
+    <div data-ambient-background aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-background">
       <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
       <svg className="absolute inset-0 h-full w-full opacity-70 dark:opacity-90" fill="none" preserveAspectRatio="xMidYMid slice" viewBox="0 0 696 316">
-        {!reducedMotion && beamPaths.map((path, index) => {
+        {!reducedMotion && renderTest !== "static-background" && renderTest !== "no-svg" && beamPaths.map((path, index) => {
           const beam = beams[index];
           const gradientId = `${gradientPrefix}-${index}`;
           return (

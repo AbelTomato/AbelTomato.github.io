@@ -80,5 +80,35 @@ const { title, description } = Astro.props;
     <FloatingTools client:idle transition:persist />
     <ToastViewport client:load transition:persist />
     <MermaidRenderer />
+    <script is:inline>
+      const renderTest = new URLSearchParams(window.location.search).get("render-test");
+      if (renderTest) {
+        document.documentElement.dataset.renderTest = renderTest;
+      }
+    </script>
   </body>
 </html>
+
+<style is:global>
+  /*
+   * 临时线上渲染诊断：仅在 URL 带有 render-test 参数时生效。
+   * 示例：?render-test=no-background / no-backdrop / no-hover-effects
+   */
+  :root[data-render-test="no-background"] [data-ambient-background] {
+    display: none;
+  }
+
+  :root[data-render-test="no-backdrop"] * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  :root[data-render-test="no-hover-effects"] * {
+    transition: none !important;
+  }
+
+  :root[data-render-test="no-hover-effects"] *:hover {
+    filter: none !important;
+    transform: none !important;
+  }
+</style>
