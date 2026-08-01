@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 174,
+        "count": 175,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2115,
+        "count": 2114,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 739359164,
+      "submitTime": 1785555027,
+      "question": {
+        "title": "Predict the Winner",
+        "translatedTitle": "预测赢家",
+        "titleSlug": "predict-the-winner",
+        "questionFrontendId": "486"
+      }
+    },
+    {
       "submissionId": 739162463,
       "submitTime": 1785465076,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "每月交易 I",
         "titleSlug": "monthly-transactions-i",
         "questionFrontendId": "1193"
-      }
-    },
-    {
-      "submissionId": 736688223,
-      "submitTime": 1784429992,
-      "question": {
-        "title": "Smallest Subsequence of Distinct Characters",
-        "translatedTitle": "不同字符的最小子序列",
-        "titleSlug": "smallest-subsequence-of-distinct-characters",
-        "questionFrontendId": "1081"
       }
     }
   ],

@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-01T02:40:53.545Z",
-  "total": "209 hrs 23 mins",
-  "daily_average": "5 hrs 25 mins",
+  "lastUpdate": "2026-08-01T08:18:20.340Z",
+  "total": "210 hrs 7 mins",
+  "daily_average": "5 hrs 26 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 32103.679,
-      "total_text": "8h 55m",
+      "total_seconds": 34730.991,
+      "total_text": "9h 38m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 424045.51499999996,
-      "total_text": "117h 47m",
+      "total_seconds": 426672.827,
+      "total_text": "118h 31m",
       "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 2605079.3989999993,
-      "total_text": "723h 37m",
+      "total_seconds": 2607706.710999999,
+      "total_text": "724h 21m",
       "days_active": 153
     },
     "all_time": {
-      "total_seconds": 2605079.3989999993,
-      "total_text": "723h 37m",
+      "total_seconds": 2607706.710999999,
+      "total_text": "724h 21m",
       "days_active": 153
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-01",
-      "seconds": 815.627,
-      "text": "13 mins"
+      "seconds": 3442.939,
+      "text": "57 mins"
     }
   ],
   "heatmap": [
@@ -680,13 +680,13 @@
     },
     {
       "date": "2026-08-01",
-      "seconds": 815.627
+      "seconds": 3442.939
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 786258.8120000002
+      "total_seconds": 788758.7530000001
     },
     {
       "name": "C++",
@@ -698,7 +698,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 245414.02200000003
+      "total_seconds": 245428.41600000003
     },
     {
       "name": "JavaScript",
@@ -706,7 +706,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 110907.668
+      "total_seconds": 110913.062
     },
     {
       "name": "JSON",
@@ -742,7 +742,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 6420.942999999998
+      "total_seconds": 6433.932999999998
     },
     {
       "name": "Bash",
@@ -2050,8 +2050,11 @@
       "Git Config": 3.411
     },
     "2026-08-01": {
-      "Markdown": 815.627,
-      "Git": 0
+      "Markdown": 3315.568,
+      "Other": 94.593,
+      "TypeScript": 14.394,
+      "Git": 12.99,
+      "Astro": 5.394
     }
   }
 }
