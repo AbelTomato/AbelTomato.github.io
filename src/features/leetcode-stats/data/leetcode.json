@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 175,
+        "count": 176,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2116,
+        "count": 2115,
         "difficulty": "MEDIUM"
       },
       {
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 739519218,
+      "submitTime": 1785638027,
+      "question": {
+        "title": "Stone Game",
+        "translatedTitle": "石子游戏",
+        "titleSlug": "stone-game",
+        "questionFrontendId": "877"
+      }
+    },
+    {
       "submissionId": 739359164,
       "submitTime": 1785555027,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "二维网格迁移",
         "titleSlug": "shift-2d-grid",
         "questionFrontendId": "1260"
-      }
-    },
-    {
-      "submissionId": 736691305,
-      "submitTime": 1784430915,
-      "question": {
-        "title": "Monthly Transactions I",
-        "translatedTitle": "每月交易 I",
-        "titleSlug": "monthly-transactions-i",
-        "questionFrontendId": "1193"
       }
     }
   ],
