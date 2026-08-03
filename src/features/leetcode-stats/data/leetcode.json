@@ -148,6 +148,11 @@
         "translatedName": "矩阵"
       },
       {
+        "slug": "newtons-method",
+        "name": "牛顿迭代法",
+        "translatedName": null
+      },
+      {
         "slug": "prefix-sum",
         "name": "Prefix Sum",
         "translatedName": "前缀和"
@@ -171,6 +176,11 @@
         "slug": "string",
         "name": "String",
         "translatedName": "字符串"
+      },
+      {
+        "slug": "tournament-sort",
+        "name": "锦标赛排序",
+        "translatedName": null
       },
       {
         "slug": "tree",
