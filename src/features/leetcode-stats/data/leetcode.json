@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 54,
+        "count": 55,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 976,
+        "count": 975,
         "difficulty": "HARD"
       }
     ]
@@ -372,6 +372,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 739823327,
+      "submitTime": 1785752440,
+      "question": {
+        "title": "Stone Game III",
+        "translatedTitle": "石子游戏 III",
+        "titleSlug": "stone-game-iii",
+        "questionFrontendId": "1406"
+      }
+    },
+    {
       "submissionId": 739519218,
       "submitTime": 1785638027,
       "question": {
@@ -509,16 +519,6 @@
         "translatedTitle": "最后一个能进入巴士的人",
         "titleSlug": "last-person-to-fit-in-the-bus",
         "questionFrontendId": "1204"
-      }
-    },
-    {
-      "submissionId": 736850784,
-      "submitTime": 1784513165,
-      "question": {
-        "title": "Shift 2D Grid",
-        "translatedTitle": "二维网格迁移",
-        "titleSlug": "shift-2d-grid",
-        "questionFrontendId": "1260"
       }
     }
   ],
