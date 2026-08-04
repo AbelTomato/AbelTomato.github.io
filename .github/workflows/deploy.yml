@@ -62,7 +62,7 @@ jobs:
           fi
 
       - name: Build Astro
-        run: pnpm run build
+        run: pnpm run ci
         env:
           PUBLIC_COMMENT_API_URL: ${{ vars.PUBLIC_COMMENT_API_URL }}
           PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}

@@ -18,12 +18,16 @@ const TRANSITION_DURATION = 520;
 const requestIdle = (callback: () => void) => {
   if (typeof window === "undefined") return;
 
-  if ("requestIdleCallback" in window) {
-    window.requestIdleCallback(callback, { timeout: 1500 });
+  const idleWindow = window as Window & {
+    requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
+  };
+
+  if (idleWindow.requestIdleCallback) {
+    idleWindow.requestIdleCallback(callback, { timeout: 1500 });
     return;
   }
 
-  window.setTimeout(callback, 250);
+  globalThis.setTimeout(callback, 250);
 };
 
 function getMomentImageSrc(image: string) {

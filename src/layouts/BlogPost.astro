@@ -8,6 +8,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import CommentSection from "@features/comments/components/CommentSection";
+import MermaidRenderer from "@components/MermaidRenderer.astro";
 
 type Props = CollectionEntry<"blog">["data"] & {
   slug: string;
@@ -17,6 +18,7 @@ type Props = CollectionEntry<"blog">["data"] & {
   comments?: boolean;
   previousPost?: CollectionEntry<"blog">;
   nextPost?: CollectionEntry<"blog">;
+  hasMermaid?: boolean;
 };
 
 const {
@@ -33,6 +35,7 @@ const {
   changelog = [],
   previousPost,
   nextPost,
+  hasMermaid = false,
 } = Astro.props;
 ---
 
@@ -178,6 +181,7 @@ const {
       </div>
     </div>
   </main>
+  {hasMermaid && <MermaidRenderer />}
   <dialog class="image-lightbox" aria-label="图片预览">
     <button class="image-lightbox__close" type="button" aria-label="关闭图片预览">×</button>
     <button class="image-lightbox__previous" type="button" aria-label="查看上一张图片">‹</button>

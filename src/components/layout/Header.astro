@@ -138,6 +138,12 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
 </style>
 
 <script>
+  declare global {
+    interface Window {
+      __cleanupHeaderScroll?: () => void;
+    }
+  }
+
   const initHeaderScroll = () => {
     let lastScrollY = window.scrollY;
     let ticking = false;
