@@ -1,21 +1,29 @@
 <script>
   const mermaidSelector = 'pre[data-language="mermaid"] > code';
   const renderedAttribute = "data-mermaid-rendered";
+  let mermaidPromise: ReturnType<typeof importMermaid> | undefined;
 
-  const initializeMermaid = async () => {
-    const { default: mermaid } = await import("mermaid");
+  const importMermaid = () =>
+    import("mermaid").then(({ default: mermaid }) => {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "dark",
+        securityLevel: "strict",
+        themeVariables: {
+          fontFamily:
+            '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", -apple-system, sans-serif',
+        },
+      });
 
-    mermaid.initialize({
-      startOnLoad: false,
-      theme: "dark",
-      securityLevel: "strict",
-      themeVariables: {
-        fontFamily:
-          '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", -apple-system, sans-serif',
-      },
+      return mermaid;
     });
 
-    return mermaid;
+  const initializeMermaid = async () => {
+    if (!mermaidPromise) {
+      mermaidPromise = importMermaid();
+    }
+
+    return mermaidPromise;
   };
 
   const renderMermaidBlocks = async () => {

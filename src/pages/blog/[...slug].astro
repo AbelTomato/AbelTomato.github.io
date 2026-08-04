@@ -31,6 +31,7 @@ const propsForlayout = {
   count: stats.count,
   minutes: stats.minutes,
   headings: headings,
+  hasMermaid: /```mermaid\s/i.test(post.body || ""),
   previousPost,
   nextPost,
 };
