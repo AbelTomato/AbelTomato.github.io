@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 168,
+        "count": 169,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 910,
+        "count": 909,
         "difficulty": "EASY"
       },
       {
@@ -382,6 +382,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 739958737,
+      "submitTime": 1785815628,
+      "question": {
+        "title": "Find Missing Elements",
+        "translatedTitle": "找出缺失的元素",
+        "titleSlug": "find-missing-elements",
+        "questionFrontendId": "3731"
+      }
+    },
+    {
       "submissionId": 739823327,
       "submitTime": 1785752440,
       "question": {
@@ -519,16 +529,6 @@
         "translatedTitle": "操作后最大活跃区段数 I",
         "titleSlug": "maximize-active-section-with-trade-i",
         "questionFrontendId": "3499"
-      }
-    },
-    {
-      "submissionId": 736874153,
-      "submitTime": 1784519121,
-      "question": {
-        "title": "Last Person to Fit in the Bus",
-        "translatedTitle": "最后一个能进入巴士的人",
-        "titleSlug": "last-person-to-fit-in-the-bus",
-        "questionFrontendId": "1204"
       }
     }
   ],
