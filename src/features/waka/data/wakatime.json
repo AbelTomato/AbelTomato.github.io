@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-08-04T19:36:04.322Z",
-  "total": "190 hrs 22 mins",
-  "daily_average": "5 hrs 12 mins",
+  "lastUpdate": "2026-08-05T02:24:51.356Z",
+  "total": "179 hrs 41 mins",
+  "daily_average": "4 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 42245.195,
-      "total_text": "11h 44m",
+      "total_seconds": 40119.740000000005,
+      "total_text": "11h 8m",
       "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 363424.47799999994,
-      "total_text": "100h 57m",
+      "total_seconds": 336743.154,
+      "total_text": "93h 32m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2620749.7319999994,
-      "total_text": "727h 59m",
-      "days_active": 154
+      "total_seconds": 2623610.2929999996,
+      "total_text": "728h 46m",
+      "days_active": 155
     },
     "all_time": {
-      "total_seconds": 2620749.7319999994,
-      "total_text": "727h 59m",
-      "days_active": 154
+      "total_seconds": 2623610.2929999996,
+      "total_text": "728h 46m",
+      "days_active": 155
     }
   },
   "weekly": [
-    {
-      "date": "2026-07-29",
-      "seconds": 4986.016,
-      "text": "1 hr 23 mins"
-    },
     {
       "date": "2026-07-30",
       "seconds": 2814.094,
@@ -59,6 +54,11 @@
       "date": "2026-08-04",
       "seconds": 6477.708,
       "text": "1 hr 47 mins"
+    },
+    {
+      "date": "2026-08-05",
+      "seconds": 2860.561,
+      "text": "47 mins"
     }
   ],
   "heatmap": [
@@ -693,12 +693,16 @@
     {
       "date": "2026-08-04",
       "seconds": 6477.708
+    },
+    {
+      "date": "2026-08-05",
+      "seconds": 2860.561
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 798868.0610000001
+      "total_seconds": 801013.957
     },
     {
       "name": "C++",
@@ -2076,6 +2080,10 @@
       "Git": 777.39,
       "Other": 222.981,
       "CSV": 112.316
+    },
+    "2026-08-05": {
+      "Markdown": 2145.896,
+      "Other": 714.665
     }
   }
 }
