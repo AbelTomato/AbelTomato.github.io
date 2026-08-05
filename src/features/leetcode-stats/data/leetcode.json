@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 176,
+        "count": 177,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2117,
+        "count": 2116,
         "difficulty": "MEDIUM"
       },
       {
@@ -382,6 +382,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 740353609,
+      "submitTime": 1785941124,
+      "question": {
+        "title": "Remove Methods From Project",
+        "translatedTitle": "移除可疑的方法",
+        "titleSlug": "remove-methods-from-project",
+        "questionFrontendId": "3310"
+      }
+    },
+    {
       "submissionId": 739958737,
       "submitTime": 1785815628,
       "question": {
@@ -519,16 +529,6 @@
         "translatedTitle": "操作后最大活跃区段数 II",
         "titleSlug": "maximize-active-section-with-trade-ii",
         "questionFrontendId": "3501"
-      }
-    },
-    {
-      "submissionId": 737068962,
-      "submitTime": 1784601160,
-      "question": {
-        "title": "Maximize Active Section with Trade I",
-        "translatedTitle": "操作后最大活跃区段数 I",
-        "titleSlug": "maximize-active-section-with-trade-i",
-        "questionFrontendId": "3499"
       }
     }
   ],
