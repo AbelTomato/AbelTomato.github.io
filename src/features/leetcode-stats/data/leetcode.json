@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 169,
+        "count": 170,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 909,
+        "count": 908,
         "difficulty": "EASY"
       },
       {
@@ -382,6 +382,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 740466408,
+      "submitTime": 1785997058,
+      "question": {
+        "title": "Smallest Divisible Digit Product I",
+        "translatedTitle": "最小可整除数位乘积 I",
+        "titleSlug": "smallest-divisible-digit-product-i",
+        "questionFrontendId": "3345"
+      }
+    },
+    {
       "submissionId": 740353609,
       "submitTime": 1785941124,
       "question": {
@@ -519,16 +529,6 @@
         "translatedTitle": "不同 XOR 三元组的数目 I",
         "titleSlug": "number-of-unique-xor-triplets-i",
         "questionFrontendId": "3513"
-      }
-    },
-    {
-      "submissionId": 737470510,
-      "submitTime": 1784733897,
-      "question": {
-        "title": "Maximize Active Section with Trade II",
-        "translatedTitle": "操作后最大活跃区段数 II",
-        "titleSlug": "maximize-active-section-with-trade-ii",
-        "questionFrontendId": "3501"
       }
     }
   ],
