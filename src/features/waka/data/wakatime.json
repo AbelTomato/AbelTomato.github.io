@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-06T14:05:19.804Z",
-  "total": "172 hrs 28 mins",
+  "lastUpdate": "2026-08-06T23:57:23.303Z",
+  "total": "172 hrs 43 mins",
   "daily_average": "4 hrs 41 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 41365.229,
-      "total_text": "11h 29m",
+      "total_seconds": 42259.416,
+      "total_text": "11h 44m",
       "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 328226.53299999994,
-      "total_text": "91h 10m",
+      "total_seconds": 329120.72,
+      "total_text": "91h 25m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2627669.875999999,
-      "total_text": "729h 54m",
+      "total_seconds": 2628564.062999999,
+      "total_text": "730h 9m",
       "days_active": 156
     },
     "all_time": {
-      "total_seconds": 2627669.875999999,
-      "total_text": "729h 54m",
+      "total_seconds": 2628564.062999999,
+      "total_text": "730h 9m",
       "days_active": 156
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-06",
-      "seconds": 971.159,
-      "text": "16 mins"
+      "seconds": 1865.346,
+      "text": "31 mins"
     }
   ],
   "heatmap": [
@@ -700,7 +700,7 @@
     },
     {
       "date": "2026-08-06",
-      "seconds": 971.159
+      "seconds": 1865.346
     }
   ],
   "languages": [
@@ -798,7 +798,7 @@
     },
     {
       "name": "Lua",
-      "total_seconds": 1021.53
+      "total_seconds": 1072.1109999999999
     },
     {
       "name": "PowerShell",
@@ -825,16 +825,16 @@
       "total_seconds": 52.455999999999996
     },
     {
+      "name": "XML",
+      "total_seconds": 34.221000000000004
+    },
+    {
       "name": "C#",
       "total_seconds": 23
     },
     {
       "name": "Perl",
       "total_seconds": 15.113
-    },
-    {
-      "name": "XML",
-      "total_seconds": 10
     },
     {
       "name": "Makefile",
@@ -2091,7 +2091,9 @@
     },
     "2026-08-06": {
       "Markdown": 971.159,
-      "Other": 0
+      "Other": 819.385,
+      "Lua": 50.581,
+      "XML": 24.221
     }
   }
 }

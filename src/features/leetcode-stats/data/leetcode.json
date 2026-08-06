@@ -231,11 +231,11 @@
   },
   "userContestRanking": {
     "attendedContestsCount": 10,
-    "rating": 2068.039,
-    "globalRanking": 15253,
-    "localRanking": 4764,
-    "globalTotalParticipants": 887479,
-    "localTotalParticipants": 155302,
+    "rating": 2068.0470263103484,
+    "globalRanking": 15252,
+    "localRanking": 4766,
+    "globalTotalParticipants": 887481,
+    "localTotalParticipants": 155303,
     "topPercentage": 3.04
   },
   "userContestRankingHistory": [
@@ -356,7 +356,7 @@
       "totalProblems": 4,
       "trendingDirection": "UP",
       "finishTimeInSeconds": 1783222258,
-      "rating": 2055.009,
+      "rating": 2055.005,
       "score": 13,
       "ranking": 191,
       "contest": {
@@ -370,7 +370,7 @@
       "totalProblems": 4,
       "trendingDirection": "UP",
       "finishTimeInSeconds": 1783825710,
-      "rating": 2068.039,
+      "rating": 2068.047,
       "score": 13,
       "ranking": 221,
       "contest": {
