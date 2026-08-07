@@ -10,7 +10,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 55,
+        "count": 56,
         "difficulty": "HARD"
       }
     ],
@@ -38,7 +38,7 @@
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 974,
         "difficulty": "HARD"
       }
     ]
@@ -76,6 +76,11 @@
         "slug": "array",
         "name": "Array",
         "translatedName": "数组"
+      },
+      {
+        "slug": "backtracking",
+        "name": "Backtracking",
+        "translatedName": "回溯"
       },
       {
         "slug": "binary-search",
@@ -382,6 +387,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 740800553,
+      "submitTime": 1786114107,
+      "question": {
+        "title": "Smallest Divisible Digit Product II",
+        "translatedTitle": "最小可整除数位乘积 II",
+        "titleSlug": "smallest-divisible-digit-product-ii",
+        "questionFrontendId": "3348"
+      }
+    },
+    {
       "submissionId": 740466408,
       "submitTime": 1785997058,
       "question": {
@@ -519,16 +534,6 @@
         "translatedTitle": "不同 XOR 三元组的数目 II",
         "titleSlug": "number-of-unique-xor-triplets-ii",
         "questionFrontendId": "3514"
-      }
-    },
-    {
-      "submissionId": 737667499,
-      "submitTime": 1784815813,
-      "question": {
-        "title": "Number of Unique XOR Triplets I",
-        "translatedTitle": "不同 XOR 三元组的数目 I",
-        "titleSlug": "number-of-unique-xor-triplets-i",
-        "questionFrontendId": "3513"
       }
     }
   ],
