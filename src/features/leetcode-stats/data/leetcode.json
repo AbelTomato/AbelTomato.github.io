@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 177,
+        "count": 178,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2116,
+        "count": 2115,
         "difficulty": "MEDIUM"
       },
       {
@@ -387,6 +387,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 740972588,
+      "submitTime": 1786201564,
+      "question": {
+        "title": "Find the Lexicographically Smallest Valid Sequence",
+        "translatedTitle": "字典序最小的合法序列",
+        "titleSlug": "find-the-lexicographically-smallest-valid-sequence",
+        "questionFrontendId": "3302"
+      }
+    },
+    {
       "submissionId": 740800553,
       "submitTime": 1786114107,
       "question": {
@@ -524,16 +534,6 @@
         "translatedTitle": "两个数字的最大乘积",
         "titleSlug": "maximum-product-of-two-digits",
         "questionFrontendId": "3536"
-      }
-    },
-    {
-      "submissionId": 737803907,
-      "submitTime": 1784882598,
-      "question": {
-        "title": "Number of Unique XOR Triplets II",
-        "translatedTitle": "不同 XOR 三元组的数目 II",
-        "titleSlug": "number-of-unique-xor-triplets-ii",
-        "questionFrontendId": "3514"
       }
     }
   ],
