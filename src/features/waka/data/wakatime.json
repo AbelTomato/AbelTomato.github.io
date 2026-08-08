@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-08T06:50:11.407Z",
-  "total": "156 hrs 35 mins",
+  "lastUpdate": "2026-08-08T12:43:50.179Z",
+  "total": "156 hrs 54 mins",
   "daily_average": "4 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 16883.355,
-      "total_text": "4h 41m",
+      "total_seconds": 18062.275999999998,
+      "total_text": "5h 1m",
       "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 294848.92799999996,
-      "total_text": "81h 54m",
+      "total_seconds": 296027.849,
+      "total_text": "82h 13m",
       "days_active": 25
     },
     "last_365_days": {
-      "total_seconds": 2631155.3789999993,
-      "total_text": "730h 52m",
+      "total_seconds": 2632334.2999999993,
+      "total_text": "731h 12m",
       "days_active": 157
     },
     "all_time": {
-      "total_seconds": 2631155.3789999993,
-      "total_text": "730h 52m",
+      "total_seconds": 2632334.2999999993,
+      "total_text": "731h 12m",
       "days_active": 157
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-08",
-      "seconds": 2591.316,
-      "text": "43 mins"
+      "seconds": 3770.237,
+      "text": "1 hr 2 mins"
     }
   ],
   "heatmap": [
@@ -708,13 +708,13 @@
     },
     {
       "date": "2026-08-08",
-      "seconds": 2591.316
+      "seconds": 3770.237
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 805857.3320000002
+      "total_seconds": 806107.1420000001
     },
     {
       "name": "C++",
@@ -793,6 +793,10 @@
       "total_seconds": 2311.697
     },
     {
+      "name": "PowerShell",
+      "total_seconds": 2307.072
+    },
+    {
       "name": "TSConfig",
       "total_seconds": 1935.943
     },
@@ -803,10 +807,6 @@
     {
       "name": "TeX",
       "total_seconds": 1376.114
-    },
-    {
-      "name": "PowerShell",
-      "total_seconds": 1073.176
     },
     {
       "name": "Lua",
@@ -2105,9 +2105,9 @@
     },
     "2026-08-07": {},
     "2026-08-08": {
-      "Markdown": 1862.06,
-      "Other": 408.926,
-      "PowerShell": 274.082,
+      "Markdown": 2111.87,
+      "PowerShell": 1507.978,
+      "Other": 104.141,
       "Bash": 46.248
     }
   }
