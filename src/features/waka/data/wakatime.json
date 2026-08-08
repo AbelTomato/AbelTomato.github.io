@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-08-08T01:25:52.989Z",
-  "total": "155 hrs 51 mins",
-  "daily_average": "4 hrs 28 mins",
+  "lastUpdate": "2026-08-08T06:50:11.407Z",
+  "total": "156 hrs 35 mins",
+  "daily_average": "4 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 14292.038999999999,
-      "total_text": "3h 58m",
-      "days_active": 3
+      "total_seconds": 16883.355,
+      "total_text": "4h 41m",
+      "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 292257.61199999996,
-      "total_text": "81h 10m",
-      "days_active": 24
+      "total_seconds": 294848.92799999996,
+      "total_text": "81h 54m",
+      "days_active": 25
     },
     "last_365_days": {
-      "total_seconds": 2628564.062999999,
-      "total_text": "730h 9m",
-      "days_active": 156
+      "total_seconds": 2631155.3789999993,
+      "total_text": "730h 52m",
+      "days_active": 157
     },
     "all_time": {
-      "total_seconds": 2628564.062999999,
-      "total_text": "730h 9m",
-      "days_active": 156
+      "total_seconds": 2631155.3789999993,
+      "total_text": "730h 52m",
+      "days_active": 157
     }
   },
   "weekly": [
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-08",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 2591.316,
+      "text": "43 mins"
     }
   ],
   "heatmap": [
@@ -708,13 +708,13 @@
     },
     {
       "date": "2026-08-08",
-      "seconds": 0
+      "seconds": 2591.316
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 803995.2720000001
+      "total_seconds": 805857.3320000002
     },
     {
       "name": "C++",
@@ -774,7 +774,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 6097.496999999999
+      "total_seconds": 6143.744999999999
     },
     {
       "name": "Git Config",
@@ -805,12 +805,12 @@
       "total_seconds": 1376.114
     },
     {
-      "name": "Lua",
-      "total_seconds": 1072.1109999999999
+      "name": "PowerShell",
+      "total_seconds": 1073.176
     },
     {
-      "name": "PowerShell",
-      "total_seconds": 799.094
+      "name": "Lua",
+      "total_seconds": 1072.1109999999999
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -2104,6 +2104,11 @@
       "XML": 24.221
     },
     "2026-08-07": {},
-    "2026-08-08": {}
+    "2026-08-08": {
+      "Markdown": 1862.06,
+      "Other": 408.926,
+      "PowerShell": 274.082,
+      "Bash": 46.248
+    }
   }
 }
