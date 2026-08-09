@@ -1,7 +1,7 @@
 {
-  "lastUpdate": "2026-08-08T18:35:00.719Z",
-  "total": "156 hrs 54 mins",
-  "daily_average": "4 hrs 22 mins",
+  "lastUpdate": "2026-08-09T01:38:21.904Z",
+  "total": "146 hrs 12 mins",
+  "daily_average": "4 hrs 11 mins",
   "stats": {
     "last_7_days": {
       "total_seconds": 18062.275999999998,
@@ -9,9 +9,9 @@
       "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 296027.849,
-      "total_text": "82h 13m",
-      "days_active": 25
+      "total_seconds": 271398.0080000001,
+      "total_text": "75h 23m",
+      "days_active": 24
     },
     "last_365_days": {
       "total_seconds": 2632334.2999999993,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-08-02",
-      "seconds": 0,
-      "text": "0 secs"
-    },
     {
       "date": "2026-08-03",
       "seconds": 0,
@@ -59,6 +54,11 @@
       "date": "2026-08-08",
       "seconds": 3770.237,
       "text": "1 hr 2 mins"
+    },
+    {
+      "date": "2026-08-09",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -709,6 +709,10 @@
     {
       "date": "2026-08-08",
       "seconds": 3770.237
+    },
+    {
+      "date": "2026-08-09",
+      "seconds": 0
     }
   ],
   "languages": [
@@ -2109,6 +2113,9 @@
       "PowerShell": 1507.978,
       "Other": 104.141,
       "Bash": 46.248
+    },
+    "2026-08-09": {
+      "Markdown": 0
     }
   }
 }
