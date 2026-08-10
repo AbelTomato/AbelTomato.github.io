@@ -6,11 +6,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 178,
+        "count": 179,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 56,
+        "count": 57,
         "difficulty": "HARD"
       }
     ],
@@ -34,11 +34,11 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2118,
+        "count": 2117,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 975,
+        "count": 974,
         "difficulty": "HARD"
       }
     ]
@@ -387,6 +387,26 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 741348674,
+      "submitTime": 1786363905,
+      "question": {
+        "title": "Stone Game IV",
+        "translatedTitle": "石子游戏 IV",
+        "titleSlug": "stone-game-iv",
+        "questionFrontendId": "1510"
+      }
+    },
+    {
+      "submissionId": 741348516,
+      "submitTime": 1786363868,
+      "question": {
+        "title": "Stone Game II",
+        "translatedTitle": "石子游戏 II",
+        "titleSlug": "stone-game-ii",
+        "questionFrontendId": "1140"
+      }
+    },
+    {
       "submissionId": 740972588,
       "submitTime": 1786201564,
       "question": {
@@ -514,26 +534,6 @@
         "translatedTitle": "数组中两元素的最大乘积",
         "titleSlug": "maximum-product-of-two-elements-in-an-array",
         "questionFrontendId": "1464"
-      }
-    },
-    {
-      "submissionId": 738111496,
-      "submitTime": 1785045593,
-      "question": {
-        "title": "Maximum Product of Three Numbers",
-        "translatedTitle": "三个数的最大乘积",
-        "titleSlug": "maximum-product-of-three-numbers",
-        "questionFrontendId": "628"
-      }
-    },
-    {
-      "submissionId": 737897325,
-      "submitTime": 1784945696,
-      "question": {
-        "title": "Maximum Product of Two Digits",
-        "translatedTitle": "两个数字的最大乘积",
-        "titleSlug": "maximum-product-of-two-digits",
-        "questionFrontendId": "3536"
       }
     }
   ],
