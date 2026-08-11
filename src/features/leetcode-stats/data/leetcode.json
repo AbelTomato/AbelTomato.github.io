@@ -2,7 +2,7 @@
   "userProfileQuestionProgress": {
     "numAcceptedQuestions": [
       {
-        "count": 170,
+        "count": 171,
         "difficulty": "EASY"
       },
       {
@@ -30,7 +30,7 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 908,
+        "count": 907,
         "difficulty": "EASY"
       },
       {
@@ -205,7 +205,7 @@
     ],
     "topicAreaScores": [
       {
-        "score": 28,
+        "score": 29,
         "topicArea": {
           "name": "数据结构",
           "slug": "data-structures"
@@ -387,6 +387,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 741559242,
+      "submitTime": 1786440843,
+      "question": {
+        "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+        "translatedTitle": "大于等于顺序前缀和的最小缺失整数",
+        "titleSlug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
+        "questionFrontendId": "2996"
+      }
+    },
+    {
       "submissionId": 741348674,
       "submitTime": 1786363905,
       "question": {
@@ -524,16 +534,6 @@
         "translatedTitle": "最小回文排列 I",
         "titleSlug": "smallest-palindromic-rearrangement-i",
         "questionFrontendId": "3517"
-      }
-    },
-    {
-      "submissionId": 738262913,
-      "submitTime": 1785118535,
-      "question": {
-        "title": "Maximum Product of Two Elements in an Array",
-        "translatedTitle": "数组中两元素的最大乘积",
-        "titleSlug": "maximum-product-of-two-elements-in-an-array",
-        "questionFrontendId": "1464"
       }
     }
   ],
