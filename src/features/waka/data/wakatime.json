@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-12T13:05:13.092Z",
+  "lastUpdate": "2026-08-12T18:59:33.995Z",
   "total": "121 hrs 1 min",
   "daily_average": "3 hrs 28 mins",
   "stats": {
@@ -2136,8 +2136,7 @@
       "Markdown": 2222.881
     },
     "2026-08-12": {
-      "Markdown": 11494.604,
-      "Other": 0
+      "Markdown": 11494.604
     }
   }
 }
