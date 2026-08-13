@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-13T13:06:14.071Z",
-  "total": "116 hrs 2 mins",
-  "daily_average": "3 hrs 19 mins",
+  "lastUpdate": "2026-08-13T19:00:44.128Z",
+  "total": "116 hrs 45 mins",
+  "daily_average": "3 hrs 20 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 19606.25,
-      "total_text": "5h 26m",
+      "total_seconds": 22228.449,
+      "total_text": "6h 10m",
       "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 165781.10999999996,
-      "total_text": "46h 3m",
+      "total_seconds": 168403.30899999998,
+      "total_text": "46h 46m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2648170.312999999,
-      "total_text": "735h 36m",
+      "total_seconds": 2650792.511999999,
+      "total_text": "736h 19m",
       "days_active": 161
     },
     "all_time": {
-      "total_seconds": 2648170.312999999,
-      "total_text": "735h 36m",
+      "total_seconds": 2650792.511999999,
+      "total_text": "736h 19m",
       "days_active": 161
     }
   },
@@ -47,7 +47,7 @@
     },
     {
       "date": "2026-08-11",
-      "seconds": 2222.881,
+      "seconds": 2279.706,
       "text": "37 mins"
     },
     {
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-13",
-      "seconds": 1259.411,
-      "text": "20 mins"
+      "seconds": 3824.785,
+      "text": "1 hr 3 mins"
     }
   ],
   "heatmap": [
@@ -720,7 +720,7 @@
     },
     {
       "date": "2026-08-11",
-      "seconds": 2222.881
+      "seconds": 2279.706
     },
     {
       "date": "2026-08-12",
@@ -728,13 +728,13 @@
     },
     {
       "date": "2026-08-13",
-      "seconds": 1259.411
+      "seconds": 3824.785
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 820683.7440000002
+      "total_seconds": 822511.7740000001
     },
     {
       "name": "C++",
@@ -758,7 +758,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 51916.135999999984
+      "total_seconds": 51583.13699999999
     },
     {
       "name": "Java",
@@ -2137,15 +2137,16 @@
       "Markdown": 859.117
     },
     "2026-08-11": {
-      "Markdown": 2222.881
+      "Markdown": 2279.706
     },
     "2026-08-12": {
       "Markdown": 11494.604,
       "JSON": 0
     },
     "2026-08-13": {
-      "JSON": 1209.619,
-      "Other": 49.792
+      "Markdown": 1771.205,
+      "Other": 1176.96,
+      "JSON": 876.62
     }
   }
 }
