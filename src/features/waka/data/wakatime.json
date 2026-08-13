@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-08-13T07:24:25.221Z",
-  "total": "115 hrs 41 mins",
-  "daily_average": "3 hrs 24 mins",
+  "lastUpdate": "2026-08-13T13:06:14.071Z",
+  "total": "116 hrs 2 mins",
+  "daily_average": "3 hrs 19 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 18346.839,
-      "total_text": "5h 5m",
-      "days_active": 4
+      "total_seconds": 19606.25,
+      "total_text": "5h 26m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 164521.69899999996,
-      "total_text": "45h 42m",
-      "days_active": 23
+      "total_seconds": 165781.10999999996,
+      "total_text": "46h 3m",
+      "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2646910.9019999993,
-      "total_text": "735h 15m",
-      "days_active": 160
+      "total_seconds": 2648170.312999999,
+      "total_text": "735h 36m",
+      "days_active": 161
     },
     "all_time": {
-      "total_seconds": 2646910.9019999993,
-      "total_text": "735h 15m",
-      "days_active": 160
+      "total_seconds": 2648170.312999999,
+      "total_text": "735h 36m",
+      "days_active": 161
     }
   },
   "weekly": [
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-13",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 1259.411,
+      "text": "20 mins"
     }
   ],
   "heatmap": [
@@ -728,7 +728,7 @@
     },
     {
       "date": "2026-08-13",
-      "seconds": 0
+      "seconds": 1259.411
     }
   ],
   "languages": [
@@ -758,7 +758,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 50706.516999999985
+      "total_seconds": 51916.135999999984
     },
     {
       "name": "Java",
@@ -2140,8 +2140,12 @@
       "Markdown": 2222.881
     },
     "2026-08-12": {
-      "Markdown": 11494.604
+      "Markdown": 11494.604,
+      "JSON": 0
     },
-    "2026-08-13": {}
+    "2026-08-13": {
+      "JSON": 1209.619,
+      "Other": 49.792
+    }
   }
 }
