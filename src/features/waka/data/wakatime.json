@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-14T01:49:01.158Z",
-  "total": "110 hrs 16 mins",
-  "daily_average": "3 hrs 8 mins",
+  "lastUpdate": "2026-08-14T07:21:52.764Z",
+  "total": "111 hrs 15 mins",
+  "daily_average": "3 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 25747.579,
-      "total_text": "7h 9m",
+      "total_seconds": 29265.122000000003,
+      "total_text": "8h 7m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 139932.27000000002,
-      "total_text": "38h 52m",
+      "total_seconds": 143449.81300000002,
+      "total_text": "39h 50m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2654311.6419999995,
-      "total_text": "737h 18m",
+      "total_seconds": 2657829.1849999996,
+      "total_text": "738h 17m",
       "days_active": 162
     },
     "all_time": {
-      "total_seconds": 2654311.6419999995,
-      "total_text": "737h 18m",
+      "total_seconds": 2657829.1849999996,
+      "total_text": "738h 17m",
       "days_active": 162
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-14",
-      "seconds": 3099,
-      "text": "51 mins"
+      "seconds": 6616.543,
+      "text": "1 hr 50 mins"
     }
   ],
   "heatmap": [
@@ -732,13 +732,13 @@
     },
     {
       "date": "2026-08-14",
-      "seconds": 3099
+      "seconds": 6616.543
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 826022.9260000001
+      "total_seconds": 828206.3350000001
     },
     {
       "name": "C++",
@@ -754,7 +754,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 132191.97300000003
+      "total_seconds": 132218.30500000002
     },
     {
       "name": "Astro",
@@ -762,7 +762,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 51583.13699999999
+      "total_seconds": 51605.11099999999
     },
     {
       "name": "Java",
@@ -778,7 +778,7 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 23853.716000000008
+      "total_seconds": 23869.228000000006
     },
     {
       "name": "CSS",
@@ -802,7 +802,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 5321.252
+      "total_seconds": 5693.030000000001
     },
     {
       "name": "YAML",
@@ -853,6 +853,10 @@
       "total_seconds": 365.113
     },
     {
+      "name": "Vue",
+      "total_seconds": 258.08
+    },
+    {
       "name": "Objective-C",
       "total_seconds": 52.455999999999996
     },
@@ -867,6 +871,10 @@
     {
       "name": "Perl",
       "total_seconds": 15.113
+    },
+    {
+      "name": "SCSS",
+      "total_seconds": 8.684
     },
     {
       "name": "Image (png)",
@@ -2157,7 +2165,14 @@
       "JSON": 876.62
     },
     "2026-08-14": {
-      "Markdown": 3091.022,
+      "Markdown": 5274.431,
+      "Other": 631.774,
+      "Git Config": 371.778,
+      "Vue": 258.08,
+      "JavaScript": 26.332,
+      "JSON": 21.974,
+      "HTML": 15.512,
+      "SCSS": 8.684,
       "Image (png)": 7.978
     }
   }
