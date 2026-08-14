@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-14T13:02:14.263Z",
-  "total": "111 hrs 47 mins",
-  "daily_average": "3 hrs 11 mins",
+  "lastUpdate": "2026-08-14T18:51:43.220Z",
+  "total": "112 hrs 36 mins",
+  "daily_average": "3 hrs 12 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 31212.686,
-      "total_text": "8h 40m",
+      "total_seconds": 34142.9,
+      "total_text": "9h 29m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 145397.377,
-      "total_text": "40h 23m",
+      "total_seconds": 148327.59100000001,
+      "total_text": "41h 12m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2659776.7489999994,
-      "total_text": "738h 49m",
+      "total_seconds": 2662706.9629999995,
+      "total_text": "739h 38m",
       "days_active": 162
     },
     "all_time": {
-      "total_seconds": 2659776.7489999994,
-      "total_text": "738h 49m",
+      "total_seconds": 2662706.9629999995,
+      "total_text": "739h 38m",
       "days_active": 162
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-14",
-      "seconds": 8564.107,
-      "text": "2 hrs 22 mins"
+      "seconds": 11494.321,
+      "text": "3 hrs 11 mins"
     }
   ],
   "heatmap": [
@@ -732,13 +732,13 @@
     },
     {
       "date": "2026-08-14",
-      "seconds": 8564.107
+      "seconds": 11494.321
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 830785.6730000001
+      "total_seconds": 833327.3550000001
     },
     {
       "name": "C++",
@@ -754,7 +754,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 132218.30500000002
+      "total_seconds": 132263.02400000003
     },
     {
       "name": "Astro",
@@ -762,7 +762,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 51605.11099999999
+      "total_seconds": 51675.05599999999
     },
     {
       "name": "Java",
@@ -809,16 +809,16 @@
       "total_seconds": 3214.6769999999997
     },
     {
+      "name": "PowerShell",
+      "total_seconds": 2580.94
+    },
+    {
       "name": "TOML",
       "total_seconds": 2553.147
     },
     {
       "name": "GDScript3",
       "total_seconds": 2311.697
-    },
-    {
-      "name": "PowerShell",
-      "total_seconds": 2307.072
     },
     {
       "name": "TSConfig",
@@ -2165,11 +2165,12 @@
       "JSON": 876.62
     },
     "2026-08-14": {
-      "Markdown": 7853.769,
+      "Markdown": 10395.451,
       "Git Config": 371.778,
+      "PowerShell": 273.868,
       "Vue": 258.08,
-      "JavaScript": 26.332,
-      "JSON": 21.974,
+      "JSON": 91.919,
+      "JavaScript": 71.051,
       "HTML": 15.512,
       "SCSS": 8.684,
       "Image (png)": 7.978
