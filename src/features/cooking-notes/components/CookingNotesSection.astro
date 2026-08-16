@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { CookingPot } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import { cookingNotes } from "../data/cookingNotes";
+
+const cookingImageModules = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/*.{jpg,jpeg,png,webp,avif}",
+  { eager: true },
+);
+
+function resolveCookingImage(filename: string): ImageMetadata {
+  const image = cookingImageModules[`../assets/${filename}`]?.default;
+
+  if (!image) {
+    throw new Error(`下厨随记图片不存在：${filename}`);
+  }
+
+  return image;
+}
+
+const sortedNotes = [...cookingNotes].sort(
+  (left, right) => Date.parse(right.date) - Date.parse(left.date),
+);
+---
+
+<section aria-labelledby="cooking-notes-heading" class="space-y-5">
+  <div>
+    <h2
+      id="cooking-notes-heading"
+      class="flex items-center gap-2 text-2xl font-bold"
+    >
+      <CookingPot className="size-6 text-primary" aria-hidden="true" />
+      厨神笔记
+    </h2>
+    <p class="mt-1 text-sm text-muted-foreground">想吃我做的饭的留言预约^^</p>
+  </div>
+
+  {
+    sortedNotes.length > 0 ? (
+      <div class="space-y-4">
+        {sortedNotes.map((note) => {
+          const date = new Date(`${note.date}T00:00:00`);
+          const image = note.image
+            ? resolveCookingImage(note.image)
+            : undefined;
+
+          return (
+            <Card className="rounded-xl border-border/60 bg-card/70 py-0 shadow-sm shadow-primary/5 backdrop-blur-xl">
+              {image && (
+                <div class="aspect-video overflow-hidden bg-muted">
+                  <Image
+                    src={image}
+                    alt={note.imageAlt ?? `${note.title}成品`}
+                    width={720}
+                    height={405}
+                    format="avif"
+                    quality={78}
+                    loading="lazy"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              )}
+
+              <CardHeader className="gap-3 px-5 pt-5">
+                <div class="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+                  <CardTitle className="text-lg font-bold">
+                    {note.title}
+                  </CardTitle>
+                  <time
+                    datetime={note.date}
+                    class="shrink-0 font-mono text-xs text-muted-foreground"
+                  >
+                    {date.toLocaleDateString("zh-CN", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </div>
+              </CardHeader>
+
+              <CardContent className="px-5 pb-5">
+                <ul class="space-y-2 text-sm leading-relaxed text-card-foreground/90">
+                  {note.notes.map((item) => (
+                    <li class="flex gap-2.5">
+                      <span
+                        class="mt-2 size-1.5 shrink-0 rounded-full bg-primary/70"
+                        aria-hidden="true"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="rounded-xl border border-border bg-card/70 px-5 py-10 text-center text-sm text-muted-foreground">
+        还没有记录下厨经验。
+      </div>
+    )
+  }
+</section>

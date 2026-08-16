@@ -3,6 +3,7 @@ import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import MomentsSection from "@features/moments-section/components/MomentsSection.tsx";
 import MusicSection from "@features/music-player/components/MusicSection.tsx";
 import { EchoCarousel } from "@features/echo-carousel/components/EchoCarousel.tsx";
+import CookingNotesSection from "@features/cooking-notes/components/CookingNotesSection.astro";
 import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
@@ -38,10 +39,11 @@ const siteData = {
     <EchoCarousel client:idle />
 
     <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-8">
-      <MusicSection client:idle />
-      <section>
-        <MomentsSection client:idle />
-      </section>
+      <div class="flex min-w-0 flex-col gap-10">
+        <MusicSection client:idle />
+        <CookingNotesSection />
+      </div>
+      <MomentsSection client:idle />
     </div>
   </main>
 
