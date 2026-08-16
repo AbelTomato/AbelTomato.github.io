@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-16T06:36:59.853Z",
-  "total": "101 hrs 34 mins",
-  "daily_average": "2 hrs 54 mins",
+  "lastUpdate": "2026-08-16T08:03:11.790Z",
+  "total": "102 hrs 28 mins",
+  "daily_average": "2 hrs 56 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 32800.281,
-      "total_text": "9h 6m",
+      "total_seconds": 36044.642,
+      "total_text": "10h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 121300.60499999997,
-      "total_text": "33h 41m",
+      "total_seconds": 124544.96599999997,
+      "total_text": "34h 35m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2665134.581,
-      "total_text": "740h 18m",
+      "total_seconds": 2668378.942,
+      "total_text": "741h 12m",
       "days_active": 164
     },
     "all_time": {
-      "total_seconds": 2665134.581,
-      "total_text": "740h 18m",
+      "total_seconds": 2668378.942,
+      "total_text": "741h 12m",
       "days_active": 164
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-16",
-      "seconds": 557.631,
-      "text": "9 mins"
+      "seconds": 3801.992,
+      "text": "1 hr 3 mins"
     }
   ],
   "heatmap": [
@@ -740,7 +740,7 @@
     },
     {
       "date": "2026-08-16",
-      "seconds": 557.631
+      "seconds": 3801.992
     }
   ],
   "languages": [
@@ -758,7 +758,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 245428.41600000003
+      "total_seconds": 247457.66700000002
     },
     {
       "name": "JavaScript",
@@ -766,11 +766,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 110913.062
+      "total_seconds": 112018.607
     },
     {
       "name": "JSON",
-      "total_seconds": 51675.05599999999
+      "total_seconds": 51715.914999999986
     },
     {
       "name": "Java",
@@ -2187,7 +2187,11 @@
       "Markdown": 1810.294
     },
     "2026-08-16": {
-      "Markdown": 557.631
+      "TypeScript": 2029.251,
+      "Astro": 1105.545,
+      "Markdown": 557.631,
+      "Other": 68.706,
+      "JSON": 40.859
     }
   }
 }
