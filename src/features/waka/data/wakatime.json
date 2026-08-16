@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-16T08:03:11.790Z",
+  "lastUpdate": "2026-08-16T12:35:42.144Z",
   "total": "102 hrs 28 mins",
   "daily_average": "2 hrs 56 mins",
   "stats": {
@@ -758,7 +758,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 247457.66700000002
+      "total_seconds": 247490.708
     },
     {
       "name": "JavaScript",
@@ -766,7 +766,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 112018.607
+      "total_seconds": 112054.27200000001
     },
     {
       "name": "JSON",
@@ -2187,10 +2187,9 @@
       "Markdown": 1810.294
     },
     "2026-08-16": {
-      "TypeScript": 2029.251,
-      "Astro": 1105.545,
+      "TypeScript": 2062.292,
+      "Astro": 1141.21,
       "Markdown": 557.631,
-      "Other": 68.706,
       "JSON": 40.859
     }
   }
