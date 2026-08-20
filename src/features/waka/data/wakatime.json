@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-20T06:41:54.597Z",
-  "total": "79 hrs 41 mins",
-  "daily_average": "2 hrs 19 mins",
+  "lastUpdate": "2026-08-20T12:45:41.480Z",
+  "total": "79 hrs 57 mins",
+  "daily_average": "2 hrs 20 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 24907.804999999997,
-      "total_text": "6h 55m",
+      "total_seconds": 25884.644999999997,
+      "total_text": "7h 11m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 112152.7,
-      "total_text": "31h 9m",
+      "total_seconds": 113129.54,
+      "total_text": "31h 25m",
       "days_active": 23
     },
     "last_365_days": {
-      "total_seconds": 2676120.4469999997,
-      "total_text": "743h 22m",
+      "total_seconds": 2677097.2869999995,
+      "total_text": "743h 38m",
       "days_active": 167
     },
     "all_time": {
-      "total_seconds": 2676120.4469999997,
-      "total_text": "743h 22m",
+      "total_seconds": 2677097.2869999995,
+      "total_text": "743h 38m",
       "days_active": 167
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-20",
-      "seconds": 2036.378,
-      "text": "33 mins"
+      "seconds": 3013.218,
+      "text": "50 mins"
     }
   ],
   "heatmap": [
@@ -756,13 +756,13 @@
     },
     {
       "date": "2026-08-20",
-      "seconds": 2036.378
+      "seconds": 3013.218
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 838321.7750000001
+      "total_seconds": 838604.8600000001
     },
     {
       "name": "C++",
@@ -2220,9 +2220,9 @@
     },
     "2026-08-19": {},
     "2026-08-20": {
+      "Other": 1552.205,
       "Python": 1085.618,
-      "Other": 858.45,
-      "Markdown": 92.31
+      "Markdown": 375.395
     }
   }
 }
