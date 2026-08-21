@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-08-21T12:42:46.630Z",
-  "total": "72 hrs 53 mins",
-  "daily_average": "2 hrs 11 mins",
+  "lastUpdate": "2026-08-21T18:34:06.085Z",
+  "total": "73 hrs 55 mins",
+  "daily_average": "2 hrs 9 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 18104.583000000002,
-      "total_text": "5h 1m",
-      "days_active": 5
+      "total_seconds": 21826.111,
+      "total_text": "6h 3m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 116903.492,
-      "total_text": "32h 28m",
-      "days_active": 23
+      "total_seconds": 120625.02,
+      "total_text": "33h 30m",
+      "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2680871.2389999996,
-      "total_text": "744h 41m",
-      "days_active": 167
+      "total_seconds": 2684592.7669999995,
+      "total_text": "745h 43m",
+      "days_active": 168
     },
     "all_time": {
-      "total_seconds": 2680871.2389999996,
-      "total_text": "744h 41m",
-      "days_active": 167
+      "total_seconds": 2684592.7669999995,
+      "total_text": "745h 43m",
+      "days_active": 168
     }
   },
   "weekly": [
@@ -52,13 +52,13 @@
     },
     {
       "date": "2026-08-20",
-      "seconds": 6787.17,
-      "text": "1 hr 53 mins"
+      "seconds": 6888.594,
+      "text": "1 hr 54 mins"
     },
     {
       "date": "2026-08-21",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 3620.104,
+      "text": "1 hr"
     }
   ],
   "heatmap": [
@@ -756,17 +756,17 @@
     },
     {
       "date": "2026-08-20",
-      "seconds": 6787.17
+      "seconds": 6888.594
     },
     {
       "date": "2026-08-21",
-      "seconds": 0
+      "seconds": 3620.104
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 842058.829
+      "total_seconds": 845681.8930000002
     },
     {
       "name": "C++",
@@ -774,7 +774,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 404741.8760000001
+      "total_seconds": 404840.3400000001
     },
     {
       "name": "TypeScript",
@@ -2224,10 +2224,12 @@
     },
     "2026-08-19": {},
     "2026-08-20": {
-      "Markdown": 3829.364,
-      "Python": 2099.356,
+      "Markdown": 3832.324,
+      "Python": 2197.82,
       "Other": 858.45
     },
-    "2026-08-21": {}
+    "2026-08-21": {
+      "Markdown": 3620.104
+    }
   }
 }
