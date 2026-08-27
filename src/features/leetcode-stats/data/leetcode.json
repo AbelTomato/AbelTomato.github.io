@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 179,
+        "count": 180,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2124,
+        "count": 2123,
         "difficulty": "MEDIUM"
       },
       {
@@ -116,6 +116,11 @@
         "slug": "dynamic-programming",
         "name": "Dynamic Programming",
         "translatedName": "动态规划"
+      },
+      {
+        "slug": "enumeration",
+        "name": "Enumeration",
+        "translatedName": "枚举"
       },
       {
         "slug": "graph",
@@ -226,7 +231,7 @@
         }
       },
       {
-        "score": 27,
+        "score": 28,
         "topicArea": {
           "name": "算法",
           "slug": "algorithms"
@@ -387,6 +392,16 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 744927243,
+      "submitTime": 1787798855,
+      "question": {
+        "title": "Lexicographically Smallest Permutation Greater Than Target",
+        "translatedTitle": "大于目标字符串的最小字典序排列",
+        "titleSlug": "lexicographically-smallest-permutation-greater-than-target",
+        "questionFrontendId": "3720"
+      }
+    },
+    {
       "submissionId": 741559242,
       "submitTime": 1786440843,
       "question": {
@@ -524,16 +539,6 @@
         "translatedTitle": "最小回文排列 II",
         "titleSlug": "smallest-palindromic-rearrangement-ii",
         "questionFrontendId": "3518"
-      }
-    },
-    {
-      "submissionId": 738538519,
-      "submitTime": 1785218176,
-      "question": {
-        "title": "Smallest Palindromic Rearrangement I",
-        "translatedTitle": "最小回文排列 I",
-        "titleSlug": "smallest-palindromic-rearrangement-i",
-        "questionFrontendId": "3517"
       }
     }
   ],
