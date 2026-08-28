@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-28T09:40:33.069Z",
-  "total": "48 hrs 21 mins",
-  "daily_average": "1 hr 31 mins",
+  "lastUpdate": "2026-08-28T14:24:49.528Z",
+  "total": "49 hrs 52 mins",
+  "daily_average": "1 hr 34 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 38678.85,
-      "total_text": "10h 44m",
+      "total_seconds": 44115.593,
+      "total_text": "12h 15m",
       "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 139781.064,
-      "total_text": "38h 49m",
+      "total_seconds": 145217.807,
+      "total_text": "40h 20m",
       "days_active": 22
     },
     "last_365_days": {
-      "total_seconds": 2723271.6169999996,
-      "total_text": "756h 27m",
+      "total_seconds": 2728708.36,
+      "total_text": "757h 58m",
       "days_active": 172
     },
     "all_time": {
-      "total_seconds": 2723271.6169999996,
-      "total_text": "756h 27m",
+      "total_seconds": 2728708.36,
+      "total_text": "757h 58m",
       "days_active": 172
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-28",
-      "seconds": 3295.445,
-      "text": "54 mins"
+      "seconds": 8732.188,
+      "text": "2 hrs 25 mins"
     }
   ],
   "heatmap": [
@@ -788,13 +788,13 @@
     },
     {
       "date": "2026-08-28",
-      "seconds": 3295.445
+      "seconds": 8732.188
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 883160.0270000001
+      "total_seconds": 888579.5610000001
     },
     {
       "name": "C++",
@@ -850,7 +850,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 7299.9929999999995
+      "total_seconds": 7317.201999999999
     },
     {
       "name": "Bash",
@@ -2278,8 +2278,9 @@
       "Markdown": 23363.728
     },
     "2026-08-28": {
-      "Markdown": 3274.296,
-      "Git": 21.149
+      "Markdown": 8693.83,
+      "Git": 38.358,
+      "Other": 0
     }
   }
 }
