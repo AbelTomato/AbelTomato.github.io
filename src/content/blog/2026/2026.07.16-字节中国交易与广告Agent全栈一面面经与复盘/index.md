@@ -1,6 +1,6 @@
 ---
-title: '2026.07.16-字节中国交易与广告Agent全栈实习生面经与复盘'
-description: '2026.07.16-字节中国交易与广告Agent全栈实习生面经与复盘'
+title: '2026.07.16-字节中国交易与广告Agent全栈一面面经与复盘'
+description: '2026.07.16-字节中国交易与广告Agent全栈一面面经与复盘'
 pubDate: '2026-08-23'
 updatedDate: '2026-08-23'
 heroImage: "./hero.jpg"
