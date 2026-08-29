@@ -12,7 +12,7 @@
 ```env
 PORT=8787
 DATABASE_URL=postgres://user:password@host:5432/database
-COMMENT_ALLOWED_ORIGINS=https://abeltomato.github.io,http://localhost:4321
+COMMENT_ALLOWED_ORIGINS=https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,http://localhost:4321
 TURNSTILE_SECRET_KEY=cloudflare-turnstile-secret
 COMMENT_ADMIN_PASSWORD_HASH=sha256-password-hex
 COMMENT_JWT_SECRET=at-least-32-characters-secret

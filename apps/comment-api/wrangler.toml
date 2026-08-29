@@ -1,0 +1,11 @@
+name = "comment-api"
+main = "src/worker.ts"
+compatibility_date = "2026-08-29"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+COMMENT_ALLOWED_ORIGINS = "https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,http://localhost:4321"
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "cf0593ce36254d059c3bc2d33af25f79"
