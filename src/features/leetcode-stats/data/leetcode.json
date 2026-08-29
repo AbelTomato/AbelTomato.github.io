@@ -6,7 +6,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 180,
+        "count": 182,
         "difficulty": "MEDIUM"
       },
       {
@@ -34,7 +34,7 @@
         "difficulty": "EASY"
       },
       {
-        "count": 2123,
+        "count": 2121,
         "difficulty": "MEDIUM"
       },
       {
@@ -217,7 +217,7 @@
         }
       },
       {
-        "score": 19,
+        "score": 20,
         "topicArea": {
           "name": "设计",
           "slug": "design"
@@ -392,6 +392,36 @@
   ],
   "recentSubmission": [
     {
+      "submissionId": 745338681,
+      "submitTime": 1787972883,
+      "question": {
+        "title": "Decode String",
+        "translatedTitle": "字符串解码",
+        "titleSlug": "decode-string",
+        "questionFrontendId": "394"
+      }
+    },
+    {
+      "submissionId": 745332947,
+      "submitTime": 1787970992,
+      "question": {
+        "title": "Min Stack",
+        "translatedTitle": "最小栈",
+        "titleSlug": "min-stack",
+        "questionFrontendId": "155"
+      }
+    },
+    {
+      "submissionId": 745331465,
+      "submitTime": 1787970419,
+      "question": {
+        "title": "Valid Parentheses",
+        "translatedTitle": "有效的括号",
+        "titleSlug": "valid-parentheses",
+        "questionFrontendId": "20"
+      }
+    },
+    {
       "submissionId": 744927243,
       "submitTime": 1787798855,
       "question": {
@@ -509,36 +539,6 @@
         "translatedTitle": "预测赢家",
         "titleSlug": "predict-the-winner",
         "questionFrontendId": "486"
-      }
-    },
-    {
-      "submissionId": 739162463,
-      "submitTime": 1785465076,
-      "question": {
-        "title": "Minimum Number of Pushes to Type Word II",
-        "translatedTitle": "输入单词需要的最少按键次数 II",
-        "titleSlug": "minimum-number-of-pushes-to-type-word-ii",
-        "questionFrontendId": "3016"
-      }
-    },
-    {
-      "submissionId": 738942013,
-      "submitTime": 1785376556,
-      "question": {
-        "title": "Minimum Number of Pushes to Type Word I",
-        "translatedTitle": "输入单词需要的最少按键次数 I",
-        "titleSlug": "minimum-number-of-pushes-to-type-word-i",
-        "questionFrontendId": "3014"
-      }
-    },
-    {
-      "submissionId": 738908989,
-      "submitTime": 1785339307,
-      "question": {
-        "title": "Smallest Palindromic Rearrangement II",
-        "translatedTitle": "最小回文排列 II",
-        "titleSlug": "smallest-palindromic-rearrangement-ii",
-        "questionFrontendId": "3518"
       }
     }
   ],
