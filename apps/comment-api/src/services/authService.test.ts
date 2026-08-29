@@ -5,7 +5,7 @@ import { createAuthService, hashPassword } from "./authService";
 describe("auth service", () => {
   it("returns a valid token for the admin password", async () => {
     const authService = createAuthService({
-      adminPasswordHash: hashPassword("secret"),
+      adminPasswordHash: await hashPassword("secret"),
       jwtSecret: "12345678901234567890123456789012",
       now: () => 1000,
     });
@@ -18,7 +18,7 @@ describe("auth service", () => {
 
   it("rejects invalid passwords", async () => {
     const authService = createAuthService({
-      adminPasswordHash: hashPassword("secret"),
+      adminPasswordHash: await hashPassword("secret"),
       jwtSecret: "12345678901234567890123456789012",
     });
 
@@ -28,7 +28,7 @@ describe("auth service", () => {
   it("rejects expired tokens", async () => {
     let now = 1000;
     const authService = createAuthService({
-      adminPasswordHash: hashPassword("secret"),
+      adminPasswordHash: await hashPassword("secret"),
       jwtSecret: "12345678901234567890123456789012",
       now: () => now,
     });
