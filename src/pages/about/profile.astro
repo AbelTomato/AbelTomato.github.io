@@ -4,7 +4,7 @@ import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
 import { CREATE_TIME } from "@src/consts";
-import { Card, CardHeader, CardTitle, CardContent } from "@components/ui/card";
+import { Card, CardHeader, CardContent } from "@components/ui/card";
 
 const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
   await getPostsData();
