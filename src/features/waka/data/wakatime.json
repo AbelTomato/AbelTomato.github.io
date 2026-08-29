@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-29T12:19:43.859Z",
-  "total": "49 hrs 48 mins",
-  "daily_average": "1 hr 34 mins",
+  "lastUpdate": "2026-08-29T14:19:24.607Z",
+  "total": "50 hrs 46 mins",
+  "daily_average": "1 hr 36 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 45271.803,
-      "total_text": "12h 34m",
+      "total_seconds": 48780.735,
+      "total_text": "13h 33m",
       "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 152847.038,
-      "total_text": "42h 27m",
+      "total_seconds": 156355.97,
+      "total_text": "43h 25m",
       "days_active": 22
     },
     "last_365_days": {
-      "total_seconds": 2739151.6849999996,
-      "total_text": "760h 52m",
+      "total_seconds": 2742660.6169999996,
+      "total_text": "761h 51m",
       "days_active": 173
     },
     "all_time": {
-      "total_seconds": 2739151.6849999996,
-      "total_text": "760h 52m",
+      "total_seconds": 2742660.6169999996,
+      "total_text": "761h 51m",
       "days_active": 173
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-29",
-      "seconds": 10417.681,
-      "text": "2 hrs 53 mins"
+      "seconds": 13926.613,
+      "text": "3 hrs 52 mins"
     }
   ],
   "heatmap": [
@@ -792,7 +792,7 @@
     },
     {
       "date": "2026-08-29",
-      "seconds": 10417.681
+      "seconds": 13926.613
     }
   ],
   "languages": [
@@ -810,7 +810,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 250668.69700000001
+      "total_seconds": 251147.178
     },
     {
       "name": "JavaScript",
@@ -818,11 +818,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 113656.92000000001
+      "total_seconds": 114458.589
     },
     {
       "name": "JSON",
-      "total_seconds": 51933.04199999999
+      "total_seconds": 52318.46499999999
     },
     {
       "name": "Java",
@@ -858,7 +858,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 7436.223999999999
+      "total_seconds": 7437.440999999999
     },
     {
       "name": "Git Config",
@@ -870,7 +870,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 3713.361
+      "total_seconds": 4474.686
     },
     {
       "name": "PowerShell",
@@ -2288,13 +2288,14 @@
     },
     "2026-08-29": {
       "Bash": 2920.163,
-      "TypeScript": 2423.438,
-      "Astro": 1602.648,
+      "TypeScript": 2901.919,
+      "Astro": 2404.317,
+      "TOML": 1921.539,
       "YAML": 1463.738,
-      "TOML": 1160.214,
+      "Other": 1080.817,
+      "JSON": 602.55,
       "Markdown": 452.207,
-      "JSON": 217.127,
-      "Git": 119.022,
+      "Git": 120.239,
       "JavaScript": 59.124
     }
   }
