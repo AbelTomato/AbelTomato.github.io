@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-29T08:45:01.979Z",
-  "total": "49 hrs 6 mins",
-  "daily_average": "1 hr 32 mins",
+  "lastUpdate": "2026-08-29T09:57:43.005Z",
+  "total": "49 hrs 48 mins",
+  "daily_average": "1 hr 34 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 42779.092000000004,
-      "total_text": "11h 52m",
+      "total_seconds": 45271.803,
+      "total_text": "12h 34m",
       "days_active": 4
     },
     "last_30_days": {
-      "total_seconds": 150354.327,
-      "total_text": "41h 45m",
+      "total_seconds": 152847.038,
+      "total_text": "42h 27m",
       "days_active": 22
     },
     "last_365_days": {
-      "total_seconds": 2736658.974,
-      "total_text": "760h 10m",
+      "total_seconds": 2739151.6849999996,
+      "total_text": "760h 52m",
       "days_active": 173
     },
     "all_time": {
-      "total_seconds": 2736658.974,
-      "total_text": "760h 10m",
+      "total_seconds": 2739151.6849999996,
+      "total_text": "760h 52m",
       "days_active": 173
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-29",
-      "seconds": 7924.97,
-      "text": "2 hrs 12 mins"
+      "seconds": 10417.681,
+      "text": "2 hrs 53 mins"
     }
   ],
   "heatmap": [
@@ -792,13 +792,13 @@
     },
     {
       "date": "2026-08-29",
-      "seconds": 7924.97
+      "seconds": 10417.681
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 888630.6460000002
+      "total_seconds": 889057.4120000002
     },
     {
       "name": "C++",
@@ -810,7 +810,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 249288.33500000002
+      "total_seconds": 250668.69700000001
     },
     {
       "name": "JavaScript",
@@ -818,11 +818,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 113498.73300000001
+      "total_seconds": 113656.92000000001
     },
     {
       "name": "JSON",
-      "total_seconds": 51887.70199999998
+      "total_seconds": 51933.04199999999
     },
     {
       "name": "Java",
@@ -850,7 +850,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 8365.273
+      "total_seconds": 9063.908
     },
     {
       "name": "MDX",
@@ -866,11 +866,11 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 4241.467
+      "total_seconds": 4678.415
     },
     {
       "name": "TOML",
-      "total_seconds": 3668.2529999999997
+      "total_seconds": 3713.361
     },
     {
       "name": "PowerShell",
@@ -2287,16 +2287,16 @@
       "JSON": 0
     },
     "2026-08-29": {
-      "Bash": 2221.528,
-      "Astro": 1444.461,
-      "TOML": 1115.106,
-      "TypeScript": 1043.076,
-      "YAML": 1026.79,
-      "Other": 698.635,
-      "JSON": 171.787,
+      "Bash": 2920.163,
+      "TypeScript": 2423.438,
+      "Astro": 1602.648,
+      "YAML": 1463.738,
+      "TOML": 1160.214,
+      "Markdown": 452.207,
+      "JSON": 217.127,
       "Git": 119.022,
       "JavaScript": 59.124,
-      "Markdown": 25.441
+      "Other": 0
     }
   }
 }
