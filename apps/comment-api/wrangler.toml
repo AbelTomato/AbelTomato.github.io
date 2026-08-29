@@ -4,7 +4,7 @@ compatibility_date = "2026-08-29"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-COMMENT_ALLOWED_ORIGINS = "https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,http://localhost:4321"
+COMMENT_ALLOWED_ORIGINS = "https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,https://abeltomato-blog.vercel.app,http://localhost:4321"
 
 [[hyperdrive]]
 binding = "HYPERDRIVE"

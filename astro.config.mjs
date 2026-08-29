@@ -13,7 +13,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://abel-tomato-github-io.vercel.app",
+  site: "https://abeltomato-blog.vercel.app",
   base: "/",
   prefetch: true,
   integrations: [

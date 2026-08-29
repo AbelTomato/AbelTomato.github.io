@@ -12,7 +12,7 @@
 ```env
 PORT=8787
 DATABASE_URL=postgres://user:password@host:5432/database
-COMMENT_ALLOWED_ORIGINS=https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,http://localhost:4321
+COMMENT_ALLOWED_ORIGINS=https://abeltomato.github.io,https://abel-tomato-github-io.vercel.app,https://abeltomato-blog.vercel.app,http://localhost:4321
 TURNSTILE_SECRET_KEY=cloudflare-turnstile-secret
 COMMENT_ADMIN_PASSWORD_HASH=sha256-password-hex
 COMMENT_JWT_SECRET=at-least-32-characters-secret
@@ -22,7 +22,7 @@ COMMENT_HASH_SALT=at-least-16-characters-random-salt
 前端站点：
 
 ```env
-PUBLIC_COMMENT_API_URL=https://comment-api.example.com
+PUBLIC_COMMENT_API_URL=https://comment-api.abelmiaotomato.workers.dev
 PUBLIC_TURNSTILE_SITE_KEY=cloudflare-turnstile-site-key
 ```
 
@@ -61,6 +61,8 @@ pnpm db:check
 ## 部署
 
 推荐部署方式：GitHub Pages 承载静态博客，Railway 承载 `apps/comment-api` 和 PostgreSQL。
+
+如果当前生产站点切换到 Vercel 域名，请确保 Astro 的 `site` 配置与 `PUBLIC_COMMENT_API_URL`、`COMMENT_ALLOWED_ORIGINS` 同步更新，否则构建产物会继续指向旧站点或被 Worker CORS 拒绝。
 
 完整步骤见：[`docs/Railway评论系统部署指南.md`](./Railway评论系统部署指南.md)。
 

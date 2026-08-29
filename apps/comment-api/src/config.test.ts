@@ -28,7 +28,7 @@ describe("loadConfig", () => {
           "2bb80d537b1da3e38bd30361aa855686bde0ba0a31199529c70f4b5f3a3705b0",
         COMMENT_JWT_SECRET: "12345678901234567890123456789012",
         COMMENT_ALLOWED_ORIGINS:
-          "https://abeltomato.github.io, https://abel-tomato-github-io.vercel.app, http://localhost:4321",
+          "https://abeltomato.github.io, https://abel-tomato-github-io.vercel.app, https://abeltomato-blog.vercel.app, http://localhost:4321",
         TURNSTILE_SECRET_KEY: "secret",
         COMMENT_HASH_SALT: "1234567890abcdef",
       }),
@@ -43,6 +43,7 @@ describe("loadConfig", () => {
       allowedOrigins: [
         "https://abeltomato.github.io",
         "https://abel-tomato-github-io.vercel.app",
+        "https://abeltomato-blog.vercel.app",
         "http://localhost:4321",
       ],
       turnstileSecretKey: "secret",
