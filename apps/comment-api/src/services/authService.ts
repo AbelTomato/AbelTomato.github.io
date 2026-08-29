@@ -1,4 +1,4 @@
-import { createHash, createHmac, timingSafeEqual } from "node:crypto";
+import { hmacBase64Url, sha256Hex, timingSafeEqual } from "../utils/crypto";
 
 export interface AuthService {
   login(password: string): Promise<string | null>;
@@ -20,21 +20,25 @@ export function createAuthService({
 }: AuthServiceOptions): AuthService {
   return {
     async login(password) {
-      if (!safeEqual(hashPassword(password), adminPasswordHash)) {
+      if (!(await safeEqual(await hashPassword(password), adminPasswordHash))) {
         return null;
       }
 
       const payload = encodeBase64Url(
         JSON.stringify({ sub: "admin", exp: now() + tokenTtlMs }),
       );
-      const signature = sign(payload, jwtSecret);
+      const signature = await sign(payload, jwtSecret);
       return `${payload}.${signature}`;
     },
 
     async verifyToken(token) {
       const [payload, signature] = token.split(".");
 
-      if (!payload || !signature || !safeEqual(sign(payload, jwtSecret), signature)) {
+      if (
+        !payload ||
+        !signature ||
+        !(await safeEqual(await sign(payload, jwtSecret), signature))
+      ) {
         return false;
       }
 
@@ -53,27 +57,31 @@ export function createAuthService({
 }
 
 export function hashPassword(password: string) {
-  return createHash("sha256").update(password).digest("hex");
+  return sha256Hex(password);
 }
 
-function sign(payload: string, secret: string) {
-  return createHmac("sha256", secret).update(payload).digest("base64url");
+async function sign(payload: string, secret: string) {
+  return hmacBase64Url(secret, payload);
 }
 
 function encodeBase64Url(value: string) {
-  return Buffer.from(value, "utf8").toString("base64url");
+  return btoa(unescape(encodeURIComponent(value)))
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/u, "");
 }
 
 function decodeBase64Url(value: string) {
-  return Buffer.from(value, "base64url").toString("utf8");
+  const base64 = value.replace(/-/g, "+").replace(/_/g, "/");
+  return decodeURIComponent(
+    Array.from(atob(padBase64(base64)), (char) => `%${char.charCodeAt(0).toString(16).padStart(2, "0")}`).join(""),
+  );
 }
 
-function safeEqual(left: string, right: string) {
-  const leftBuffer = Buffer.from(left);
-  const rightBuffer = Buffer.from(right);
+async function safeEqual(left: string, right: string) {
+  return timingSafeEqual(left, right);
+}
 
-  return (
-    leftBuffer.byteLength === rightBuffer.byteLength &&
-    timingSafeEqual(leftBuffer, rightBuffer)
-  );
+function padBase64(value: string) {
+  return value.padEnd(Math.ceil(value.length / 4) * 4, "=");
 }

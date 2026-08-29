@@ -7,3 +7,4 @@ allowBuilds:
   msw: true
   puppeteer: true
   sharp: true
+  workerd: true

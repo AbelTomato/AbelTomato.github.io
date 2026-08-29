@@ -64,6 +64,13 @@ export function createApp(options: CreateAppOptions = {}) {
   });
 
   app.onError((error, c) => {
+    if (!(error instanceof Error) || error.name !== "HttpError") {
+      console.error("Unhandled request error", {
+        name: error instanceof Error ? error.name : "UnknownError",
+        message: error instanceof Error ? error.message : String(error),
+      });
+    }
+
     const { status, body } = errorToResponse(error);
     return c.json(body, status);
   });

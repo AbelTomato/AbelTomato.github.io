@@ -1,7 +1,6 @@
-import { createHash } from "node:crypto";
-
 import { createHttpError } from "../http/errors";
 import type { CommentRepository } from "../repositories/commentRepository.types";
+import { sha256Hex } from "../utils/crypto";
 import type {
   AdminComment,
   AdminCommentStatus,
@@ -42,12 +41,12 @@ export function createCommentService(
         parentId: input.parentId,
         authorName: input.authorName,
         authorEmailHash: input.authorEmail
-          ? hashValue(input.authorEmail, hashSalt)
+          ? await hashValue(input.authorEmail, hashSalt)
           : null,
         content: input.content,
-        ipHash: input.ipAddress ? hashValue(input.ipAddress, hashSalt) : null,
+        ipHash: input.ipAddress ? await hashValue(input.ipAddress, hashSalt) : null,
         userAgentHash: input.userAgent
-          ? hashValue(input.userAgent, hashSalt)
+          ? await hashValue(input.userAgent, hashSalt)
           : null,
       });
 
@@ -81,7 +80,5 @@ export function createUnavailableCommentService(): CommentService {
 }
 
 function hashValue(value: string, salt: string) {
-  return createHash("sha256")
-    .update(`${salt}:${value.trim().toLowerCase()}`)
-    .digest("hex");
+  return sha256Hex(`${salt}:${value.trim().toLowerCase()}`);
 }

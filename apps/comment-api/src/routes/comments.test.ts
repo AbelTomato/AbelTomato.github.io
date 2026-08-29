@@ -187,7 +187,10 @@ describe("comments route", () => {
 
   it("allows configured origins for write requests", async () => {
     const app = createApp({
-      allowedOrigins: ["https://abeltomato.github.io"],
+      allowedOrigins: [
+        "https://abeltomato.github.io",
+        "https://abel-tomato-github-io.vercel.app",
+      ],
       commentService: createMockCommentService(),
     });
 
@@ -203,6 +206,30 @@ describe("comments route", () => {
     expect(response.status).toBe(202);
     expect(response.headers.get("access-control-allow-origin")).toBe(
       "https://abeltomato.github.io",
+    );
+  });
+
+  it("allows the Vercel origin for write requests", async () => {
+    const app = createApp({
+      allowedOrigins: [
+        "https://abeltomato.github.io",
+        "https://abel-tomato-github-io.vercel.app",
+      ],
+      commentService: createMockCommentService(),
+    });
+
+    const response = await app.request("/api/comments", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        origin: "https://abel-tomato-github-io.vercel.app",
+      },
+      body: JSON.stringify(createValidCommentPayload()),
+    });
+
+    expect(response.status).toBe(202);
+    expect(response.headers.get("access-control-allow-origin")).toBe(
+      "https://abel-tomato-github-io.vercel.app",
     );
   });
 
