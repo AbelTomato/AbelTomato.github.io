@@ -4,10 +4,10 @@ description: '2026.08.21-字节抖电前端一面面经与复盘'
 pubDate: '2026-08-28'
 updatedDate: '2026-08-28'
 changelog:
-    - date: '2026-08-29'
-      note: '拓展了px与em的相关内容'
     - date: '2026-08-28'
       note: '上传了文章'
+    - date: '2026-08-29'
+      note: '拓展了px与em的相关内容'
 heroImage: "./hero.jpg"
 tags: ["面经"]
 ---
