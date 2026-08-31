@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-08-31T14:06:25.953Z",
-  "total": "58 hrs 42 mins",
-  "daily_average": "1 hr 48 mins",
+  "lastUpdate": "2026-08-31T22:29:41.094Z",
+  "total": "58 hrs 57 mins",
+  "daily_average": "1 hr 49 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 78679.659,
-      "total_text": "21h 51m",
+      "total_seconds": 79576.41100000001,
+      "total_text": "22h 6m",
       "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 161020.07900000003,
-      "total_text": "44h 43m",
+      "total_seconds": 161916.831,
+      "total_text": "44h 58m",
       "days_active": 22
     },
     "last_365_days": {
-      "total_seconds": 2775292.1029999997,
-      "total_text": "770h 54m",
+      "total_seconds": 2776188.8549999995,
+      "total_text": "771h 9m",
       "days_active": 175
     },
     "all_time": {
-      "total_seconds": 2775292.1029999997,
-      "total_text": "770h 54m",
+      "total_seconds": 2776188.8549999995,
+      "total_text": "771h 9m",
       "days_active": 175
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-08-31",
-      "seconds": 11485.48,
-      "text": "3 hrs 11 mins"
+      "seconds": 12382.232,
+      "text": "3 hrs 26 mins"
     }
   ],
   "heatmap": [
@@ -800,17 +800,17 @@
     },
     {
       "date": "2026-08-31",
-      "seconds": 11485.48
+      "seconds": 12382.232
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 912586.4690000003
+      "total_seconds": 913483.2210000003
     },
     {
       "name": "C++",
-      "total_seconds": 534968.6790000001
+      "total_seconds": 535183.0430000002
     },
     {
       "name": "Python",
@@ -862,7 +862,7 @@
     },
     {
       "name": "MDX",
-      "total_seconds": 8204.239000000001
+      "total_seconds": 8302.741
     },
     {
       "name": "Git",
@@ -2313,13 +2313,12 @@
       "Other": 12.423
     },
     "2026-08-31": {
-      "Markdown": 9759.576,
-      "C++": 917.053,
+      "Markdown": 10656.328,
+      "C++": 1131.417,
       "TypeScript": 313.574,
-      "Other": 312.866,
       "JSON": 170.965,
-      "Git": 10.88,
-      "MDX": 0.566
+      "MDX": 99.068,
+      "Git": 10.88
     }
   }
 }
