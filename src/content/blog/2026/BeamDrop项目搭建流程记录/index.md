@@ -4,12 +4,12 @@ description: '一场由小学期程设大作业引发的惨剧，浅谈局域网
 pubDate: '2026-06-30'
 updatedDate: '2026-07-03'
 changelog:
-  - date: '2026-07-03'
-    note: 补充客户端启动流程相关内容。
-  - date: '2026-07-02'
-    note: 补充服务端监听地址组装与 IP 转换实现。
-  - date: '2026-07-01'
-    note: 补充套接字及 BeamDrop Socket 封装说明。
+  - date: "2026-07-01"
+    note: "补充套接字及 BeamDrop Socket 封装说明。"
+  - date: "2026-07-02"
+    note: "补充服务端监听地址组装与 IP 转换实现。"
+  - date: "2026-07-03"
+    note: "补充客户端启动流程相关内容。"
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "C++", "计网"]
 ---

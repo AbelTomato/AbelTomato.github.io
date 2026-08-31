@@ -11,7 +11,8 @@
     "ci": "pnpm run check && pnpm run build",
     "preview": "astro preview",
     "astro": "astro",
-    "changelog:dry-run": "tsx scripts/generate-blog-changelog.ts"
+    "changelog:dry-run": "tsx scripts/generate-blog-changelog.ts",
+    "changelog:sort": "tsx scripts/sort-blog-changelog.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
