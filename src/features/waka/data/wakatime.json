@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-01T02:18:47.258Z",
-  "total": "58 hrs 57 mins",
-  "daily_average": "1 hr 49 mins",
+  "lastUpdate": "2026-09-01T03:41:47.391Z",
+  "total": "59 hrs 48 mins",
+  "daily_average": "1 hr 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 83296.281,
-      "total_text": "23h 8m",
+      "total_seconds": 86364.974,
+      "total_text": "23h 59m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 165636.701,
-      "total_text": "46h 0m",
+      "total_seconds": 168705.394,
+      "total_text": "46h 51m",
       "days_active": 23
     },
     "last_365_days": {
-      "total_seconds": 2779908.7249999996,
-      "total_text": "772h 11m",
+      "total_seconds": 2782977.4179999996,
+      "total_text": "773h 2m",
       "days_active": 176
     },
     "all_time": {
-      "total_seconds": 2779908.7249999996,
-      "total_text": "772h 11m",
+      "total_seconds": 2782977.4179999996,
+      "total_text": "773h 2m",
       "days_active": 176
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-01",
-      "seconds": 3650.607,
-      "text": "1 hr"
+      "seconds": 6719.3,
+      "text": "1 hr 51 mins"
     }
   ],
   "heatmap": [
@@ -804,13 +804,13 @@
     },
     {
       "date": "2026-09-01",
-      "seconds": 3650.607
+      "seconds": 6719.3
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 913561.0280000003
+      "total_seconds": 916627.8900000004
     },
     {
       "name": "C++",
@@ -830,7 +830,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 118335.91600000003
+      "total_seconds": 118502.80100000002
     },
     {
       "name": "JSON",
@@ -870,7 +870,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 7475.503999999999
+      "total_seconds": 7529.011999999999
     },
     {
       "name": "Git Config",
@@ -2325,12 +2325,12 @@
       "Git": 10.88
     },
     "2026-09-01": {
-      "Astro": 2785.937,
+      "Markdown": 3153.756,
+      "Astro": 2952.822,
       "TypeScript": 379.855,
-      "Other": 283.527,
       "CSS": 114.394,
-      "Markdown": 86.894,
-      "Git": 0
+      "Other": 64.965,
+      "Git": 53.508
     }
   }
 }
