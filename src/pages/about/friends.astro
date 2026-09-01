@@ -1,7 +1,6 @@
 ---
 import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
-import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
 import CoCoders from "@features/co-coders/components/CoCoders.astro";
 import { CREATE_TIME } from "@src/consts";
 import { getPostsData } from "@src/hooks/usePostsData";
@@ -20,14 +19,13 @@ const siteData = {
 <ThreeColumnLayout title="友链" description="一些有趣的朋友">
   <LeftSidebar slot="left-sidebar" />
   <main class="w-full flex flex-col gap-6">
-    <Card className="rounded-xl">
-      <CardHeader><CardTitle className="text-3xl">友链</CardTitle></CardHeader>
-      <CardContent
-        ><p class="text-sm leading-7 text-muted-foreground">
-          一生大笑能几回，斗酒相逢须醉倒
-        </p></CardContent
-      >
-    </Card>
+    <section class="space-y-3">
+      <h1 class="text-3xl font-bold tracking-tight text-foreground">友链</h1>
+      <p class="text-sm italic leading-7 text-muted-foreground">
+        一生大笑能几回，斗酒相逢须醉倒
+      </p>
+      <hr class="border-t border-border" />
+    </section>
     <CoCoders />
   </main>
   <RightSidebar slot="right-sidebar" siteData={siteData} />

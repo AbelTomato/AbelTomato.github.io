@@ -2,7 +2,7 @@
 title: '虚拟内存——从原理到实战'
 description: '从计算机存储层次结构出发，详述虚拟内存的原理及代码辅助理解应用'
 pubDate: '2026-08-01'
-updatedDate: '2026-08-01'
+updatedDate: '2026-08-31'
 changelog:
   - date: '2026-08-01'
     note: 上传了1 - 2.2的内容
