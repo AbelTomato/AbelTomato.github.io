@@ -1,7 +1,7 @@
 ---
 title: '洛谷P1514 [NOIP 2010 提高组] 引水入城'
 description: '关于洛谷 P1514 引水入城的题解记录，包含可达性判断、区间覆盖思路与代码实现。'
-pubDate: '2025-12-11'
+pubDate: "2025-12-11T13:56:00+08:00"
 updatedDate: '2025-12-11'
 tags: ["题解", "算法竞赛"]
 heroImage: "./hero.jpg"

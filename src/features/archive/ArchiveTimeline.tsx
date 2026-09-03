@@ -111,6 +111,7 @@ function ArchivePostItem({ post }: ArchivePostItemProps) {
             {new Date(post.data.pubDate).toLocaleDateString("zh-CN", {
               month: "2-digit",
               day: "2-digit",
+              timeZone: "Asia/Shanghai",
             })}
           </span>
           <span className="line-clamp-1 text-sm font-semibold text-foreground/90 transition-colors group-hover:text-cyan-200">

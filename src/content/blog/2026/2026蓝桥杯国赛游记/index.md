@@ -1,7 +1,7 @@
 ---
 title: "2026蓝桥杯国赛游记"
 description: "泉州混一混国赛~"
-pubDate: "2026-06-08"
+pubDate: "2026-06-08T00:02:00+08:00"
 updatedDate: "2026-06-11"
 changelog:
   - date: '2026-06-11'

@@ -1,7 +1,7 @@
 ---
 title: '最大流(Dinic算法)'
 description: '最大流(Dinic算法)'
-pubDate: '2025-11-19'
+pubDate: "2025-11-19T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["算法竞赛","算法学习笔记"]
 ---

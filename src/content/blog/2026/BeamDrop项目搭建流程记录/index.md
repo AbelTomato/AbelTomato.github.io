@@ -1,7 +1,7 @@
 ---
 title: 'BeamDrop项目搭建流程记录'
 description: '一场由小学期程设大作业引发的惨剧，浅谈局域网传输中的网络与协议'
-pubDate: '2026-06-30'
+pubDate: "2026-06-30T13:22:00+08:00"
 updatedDate: '2026-07-03'
 changelog:
   - date: "2026-07-01"

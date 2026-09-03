@@ -1,7 +1,7 @@
 ---
 title: '二阶常系数非齐次微分方程求解'
 description: '二阶常系数非齐次微分方程求解流程笔记'
-pubDate: '2026-04-22'
+pubDate: "2026-04-22T10:32:00+08:00"
 updatedDate: '2026-04-22'
 heroImage: "./hero.jpg"
 tags: ["微积分", "笔记"]

@@ -1,7 +1,7 @@
 ---
 title: '特征值与特征向量'
 description: '有关于特征值、特征向量相关概念的讲解'
-pubDate: '2026-01-01'
+pubDate: "2026-01-01T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","线性代数"]
 ---

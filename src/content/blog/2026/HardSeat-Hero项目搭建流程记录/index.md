@@ -1,7 +1,7 @@
 ---
 title: 'HardSeat-Hero项目搭建流程记录'
 description: '一个想买火车票回家的人的故事——硬座英雄，全项目的构建流程，以及领域模型、TTL缓存等概念的讲解'
-pubDate: '2026-06-28'
+pubDate: "2026-06-28T22:08:00+08:00"
 updatedDate: '2026-06-30'
 changelog:
   - date: '2026-06-30'

@@ -1,7 +1,7 @@
 ---
 title: 'X与Y'
 description: '有关性别问题的想法'
-pubDate: '2025-11-08'
+pubDate: "2025-11-08T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["随笔"]
 ---

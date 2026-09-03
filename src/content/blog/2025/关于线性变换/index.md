@@ -1,7 +1,7 @@
 ---
 title: '关于线性变换'
 description: '对于线性变换的一些理解'
-pubDate: '2025-12-03'
+pubDate: "2025-12-03T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","线性代数"]
 ---

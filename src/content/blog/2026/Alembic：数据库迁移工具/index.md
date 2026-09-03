@@ -1,7 +1,7 @@
 ---
 title: 'Alembic：数据库迁移工具'
 description: '介绍了数据库版本管理工具Alembic的原理与工作流程'
-pubDate: '2026-09-03'
+pubDate: "2026-09-03T12:14:00+08:00"
 updatedDate: '2026-09-03'
 heroImage: "./hero.jpg"
 tags: ["笔记", "数据库"]

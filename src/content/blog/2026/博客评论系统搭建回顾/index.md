@@ -1,7 +1,7 @@
 ---
 title: "博客评论系统搭建回顾"
 description: "Web应用部署初体验，从前端到Cloudflare worker再到Supabase，穿插Hyperdrive的部署实践"
-pubDate: "2026-08-30"
+pubDate: "2026-08-30T22:14:00+08:00"
 updatedDate: "2026-08-30"
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发"]

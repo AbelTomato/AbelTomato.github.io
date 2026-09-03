@@ -1,7 +1,7 @@
 ---
 title: '木剑'
 description: '一个关于初心的小故事'
-pubDate: '2025-08-17'
+pubDate: "2025-08-17T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["随笔"]
 ---

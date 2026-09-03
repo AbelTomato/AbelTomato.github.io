@@ -1,7 +1,7 @@
 ---
 title: '闭曲线的面积计算'
 description: '运用微积分计算闭曲线面积的方法'
-pubDate: '2025-12-19'
+pubDate: "2025-12-19T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","微积分"]
 ---

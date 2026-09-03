@@ -1,7 +1,7 @@
 ---
 title: '洛谷P1032 [NOIP 2002 提高组] 字串变换题解'
 description: '使用STL，折半搜索等方法对P1032进行求解'
-pubDate: '2025-11-29'
+pubDate: "2025-11-29T19:34:00+08:00"
 updatedDate: '2025-11-29'
 heroImage: "./hero.jpg"
 tags: ["算法竞赛", "做题笔记"]

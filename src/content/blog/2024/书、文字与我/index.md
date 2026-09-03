@@ -1,7 +1,7 @@
 ---
 title: '书、文字与我'
 description: '我在书本和文字间走出的道路'
-pubDate: '2024-11-29'
+pubDate: "2024-11-29T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["随笔"]
 ---

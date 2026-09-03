@@ -1,7 +1,7 @@
 ---
 title: 'Terminal命令备忘录'
 description: '记录常用终端、Git、SSH 命令，作为日常开发中的快速查阅清单'
-pubDate: '2026-04-16'
+pubDate: "2026-04-16T13:56:00+08:00"
 updatedDate: '2026-04-16'
 changelog:
   - date: '2026-04-16'

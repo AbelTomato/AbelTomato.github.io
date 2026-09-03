@@ -1,7 +1,7 @@
 ---
 title: 'FastAPI-路由机制和依赖注入'
 description: '从实际需求出发，探索FastAPI中的路由机制(APIRouter)和依赖注入(Depends)，浅谈Python装饰器特性'
-pubDate: '2026-06-23'
+pubDate: "2026-06-23T14:01:00+08:00"
 updatedDate: '2026-06-23'
 heroImage: "./hero.jpg"
 tags: ["笔记", "FastAPI", "Python"]

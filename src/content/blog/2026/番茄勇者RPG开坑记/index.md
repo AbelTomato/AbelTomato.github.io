@@ -1,7 +1,7 @@
 ---
 title: "番茄勇者RPG开坑记"
 description: "个人项目RPG开坑"
-pubDate: "2026-03-16"
+pubDate: "2026-03-16T19:34:00+08:00"
 draft: false
 heroImage: "./hero.jpg"
 tags: ["C++", "OOP", "项目"]

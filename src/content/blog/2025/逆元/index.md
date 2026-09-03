@@ -1,7 +1,7 @@
 ---
 title: '逆元'
 description: '逆元的介绍和使用'
-pubDate: '2025-12-18'
+pubDate: "2025-12-18T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","数论"]
 ---

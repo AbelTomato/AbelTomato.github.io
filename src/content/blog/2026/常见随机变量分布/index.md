@@ -1,7 +1,7 @@
 ---
 title: '常见随机变量分布'
 description: '列出了一些常见的随机变量分布的性质'
-pubDate: '2026-04-22'
+pubDate: "2026-04-22T15:01:00+08:00"
 updatedDate: '2026-04-23'
 changelog:
   - date: '2026-04-23'

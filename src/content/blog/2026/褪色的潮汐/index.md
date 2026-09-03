@@ -1,7 +1,7 @@
 ---
 title: '褪色的潮汐'
 description: '当对文字的感知在经年累月中被模糊，偶然间窥见浪花的本色'
-pubDate: '2026-05-14'
+pubDate: "2026-05-14T09:29:00+08:00"
 updatedDate: '2026-05-14'
 heroImage: "./hero.jpg"
 tags: ["随笔"]
