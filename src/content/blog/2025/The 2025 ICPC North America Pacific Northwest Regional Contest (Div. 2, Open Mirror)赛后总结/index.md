@@ -1,7 +1,7 @@
 ---
 title: 'The 2025 ICPC North America Pacific Northwest Regional Contest (Div. 2, Open Mirror)赛后总结'
 description: 'The 2025 ICPC North America Pacific Northwest Regional Contest (Div. 2, Open Mirror)赛后总结'
-pubDate: '2025-12-12'
+pubDate: "2025-12-12T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---

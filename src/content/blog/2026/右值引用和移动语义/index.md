@@ -1,7 +1,7 @@
 ---
 title: '右值引用和移动语义'
 description: '对右值引用与移动语义的概念进行了阐明，讲述使用移动语义的重要性'
-pubDate: '2026-04-09'
+pubDate: "2026-04-09T19:34:00+08:00"
 updatedDate: '2026-04-09'
 heroImage: "./hero.jpg"
 tags: ["C++"]

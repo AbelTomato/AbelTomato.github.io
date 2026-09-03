@@ -1,7 +1,7 @@
 ---
 title: 'Educational Codeforces Round 184赛后总结'
 description: 'Educational Codeforces Round 184赛后总结'
-pubDate: '2025-11-16'
+pubDate: "2025-11-16T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["算法竞赛","赛后总结"]
 ---

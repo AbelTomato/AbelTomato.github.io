@@ -1,7 +1,7 @@
 ---
 title: '同余方程与不定方程'
 description: '同余方程与不定方程的概念和相关定理的证明'
-pubDate: '2025-12-18'
+pubDate: "2025-12-18T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","数论"]
 ---

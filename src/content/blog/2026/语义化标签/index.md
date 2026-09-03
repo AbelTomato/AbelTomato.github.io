@@ -1,7 +1,7 @@
 ---
 title: "语义化标签"
 description: "对HTML中标签的语义及相关内容进行介绍"
-pubDate: "2026-03-06"
+pubDate: "2026-03-06T19:34:00+08:00"
 heroImage: "./hero.jpg"
 draft: false
 tags: ["HTML","笔记"]

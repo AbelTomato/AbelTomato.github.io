@@ -1,7 +1,7 @@
 ---
 title: "3130. 找出所有稳定的二进制数组 II "
 description: "运用组合数学及逆元知识，求解力扣3130"
-pubDate: "2026-03-10"
+pubDate: "2026-03-10T19:34:00+08:00"
 draft: false
 heroImage: "./hero.jpg"
 tags: ["LeetCode", "题解" ,"算法" ,"组合数学"]

@@ -1,7 +1,7 @@
 ---
 title: '关于有理函数积分中最复杂的形式'
 description: '即积分 ∫ [Bx+C]/[(x²+px+q)ⁿ] dx 的处理方法'
-pubDate: '2025-12-03'
+pubDate: "2025-12-03T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["数学","微积分"]
 ---

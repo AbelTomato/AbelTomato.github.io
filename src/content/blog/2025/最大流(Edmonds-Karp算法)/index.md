@@ -1,7 +1,7 @@
 ---
 title: '最大流(Edmonds-Karp算法)'
 description: '最大流(Edmonds-Karp算法)'
-pubDate: '2025-11-18'
+pubDate: "2025-11-18T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["算法竞赛","算法学习笔记"]
 ---

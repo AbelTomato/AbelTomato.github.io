@@ -1,7 +1,7 @@
 ---
 title: 'Fiber架构、state与渲染'
 description: '简单介绍了React中的Fiber架构，并阐述了其在Render与Commit中的作用方式'
-pubDate: '2026-05-08'
+pubDate: "2026-05-08T15:46:00+08:00"
 updatedDate: '2026-05-08'
 heroImage: "./hero.png"
 tags: ["前端", "React", "笔记"]

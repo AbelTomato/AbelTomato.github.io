@@ -1,7 +1,7 @@
 ---
 title: 'CSAPP-DataLab'
 description: '深入学习计算机系统第一步，关于DataLab的求解心路历程'
-pubDate: '2026-06-22'
+pubDate: "2026-06-22T17:10:00+08:00"
 updatedDate: '2026-06-22'
 heroImage: "./hero.jpg"
 tags: ["笔记", "计算机系统"]

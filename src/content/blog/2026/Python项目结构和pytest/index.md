@@ -1,7 +1,7 @@
 ---
 title: 'Python项目结构和pytest'
 description: '对开发中常见Python项目结构进行了澄清，以及对pytest测试工具作了简单的介绍'
-pubDate: '2026-06-18'
+pubDate: "2026-06-18T22:48:00+08:00"
 updatedDate: '2026-06-18'
 heroImage: "./hero.jpg"
 tags: ["笔记", "开发", "Python"]

@@ -1,7 +1,7 @@
 ---
 title: 'HTML-表单'
 heroImage: "./hero.jpg"
-pubDate: '2026-03-03'
+pubDate: "2026-03-03T19:34:00+08:00"
 description: '在HTML的学习中对于表单内容的一点整理'
 tags: ["前端","HTML","笔记"]
 ---

@@ -18,11 +18,7 @@ interface PostsData {
 export async function getPostsData(): Promise<PostsData> {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-  posts.sort(
-    (a, b) =>
-      (b.data.updatedDate || b.data.pubDate).valueOf() -
-      (a.data.updatedDate || a.data.pubDate).valueOf(),
-  );
+  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
 

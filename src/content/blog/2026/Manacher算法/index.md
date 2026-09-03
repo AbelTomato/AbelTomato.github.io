@@ -1,7 +1,7 @@
 ---
 title: 'Manacher算法'
 description: '剖析处理回文串的Manacher算法应用'
-pubDate: '2026-07-06'
+pubDate: "2026-07-06T15:44:00+08:00"
 updatedDate: '2026-07-06'
 heroImage: "./hero.jpg"
 tags: ["笔记", "算法"]

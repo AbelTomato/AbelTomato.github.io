@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript异步学习笔记'
 description: '详细剖析了异步在JavaScript中的必要性，历史，和应用'
-pubDate: '2026-04-16'
+pubDate: "2026-04-16T19:34:00+08:00"
 updatedDate: '2026-04-16'
 heroImage: "./hero.jpg"
 tags: ["JavaScript", "笔记", "前端"]

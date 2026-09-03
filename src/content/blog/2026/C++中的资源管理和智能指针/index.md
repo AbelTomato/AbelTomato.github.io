@@ -1,7 +1,7 @@
 ---
 title: 'C++中的资源管理和智能指针'
 description: '对C++中的资源管理方法和智能指针使用进行了大概的介绍，解释了RAII原则在资源管理中的实践'
-pubDate: '2026-04-08'
+pubDate: "2026-04-08T19:34:00+08:00"
 updatedDate: '2026-04-09'
 heroImage: "./hero.jpg"
 tags: ["C++"]

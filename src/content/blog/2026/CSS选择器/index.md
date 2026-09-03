@@ -2,7 +2,7 @@
 title: "CSS选择器"
 description: "介绍了在CSS中的各种选择器"
 draft: false
-pubDate: "2026-03-08"
+pubDate: "2026-03-08T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["前端","笔记","CSS"]
 ---

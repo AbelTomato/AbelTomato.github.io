@@ -1,7 +1,7 @@
 ---
 title: '环境配置一览'
 description: '记录了各种环境的配置方法'
-pubDate: '2026-06-12'
+pubDate: "2026-06-12T23:52:00+08:00"
 updatedDate: '2026-06-20'
 changelog:
   - date: '2026-06-13'

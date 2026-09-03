@@ -1,7 +1,7 @@
 ---
 title: '计网第一章学习笔记'
 description: '介绍了三种交换方式、计算机网络性能指标、计算机网络体系结构等内容'
-pubDate: '2026-05-14'
+pubDate: "2026-05-14T19:30:00+08:00"
 updatedDate: '2026-05-14'
 heroImage: "./hero.png"
 tags: ["计网", "笔记"]

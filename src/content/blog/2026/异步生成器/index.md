@@ -1,7 +1,7 @@
 ---
 title: "异步生成器"
 description: "大致介绍了异步生成器的应用与意义"
-pubDate: "2026-06-04"
+pubDate: "2026-06-04T15:45:00+08:00"
 updatedDate: "2026-06-04"
 heroImage: "./hero.jpg"
 tags: ["Agent", "JavaScript", "Python", "笔记"]

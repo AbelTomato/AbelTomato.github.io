@@ -1,7 +1,7 @@
 ---
 title: '雅可比矩阵和微元变换'
 description: '大概阐述了雅可比矩阵的原理及其在微元变换中的作用'
-pubDate: '2026-04-23'
+pubDate: "2026-04-23T14:06:00+08:00"
 updatedDate: '2026-04-23'
 heroImage: "./hero.jpg"
 tags: ["微积分", "笔记"]
