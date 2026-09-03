@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-03T10:42:58.540Z",
-  "total": "70 hrs 1 min",
-  "daily_average": "2 hrs 11 mins",
+  "lastUpdate": "2026-09-03T13:52:47.968Z",
+  "total": "70 hrs 45 mins",
+  "daily_average": "2 hrs 12 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 105071.45700000001,
-      "total_text": "29h 11m",
+      "total_seconds": 107758.65400000001,
+      "total_text": "29h 55m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 204297.89699999997,
-      "total_text": "56h 44m",
+      "total_seconds": 206985.09399999998,
+      "total_text": "57h 29m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2825047.6289999993,
-      "total_text": "784h 44m",
+      "total_seconds": 2827734.8259999994,
+      "total_text": "785h 28m",
       "days_active": 178
     },
     "all_time": {
-      "total_seconds": 2825047.6289999993,
-      "total_text": "784h 44m",
+      "total_seconds": 2827734.8259999994,
+      "total_text": "785h 28m",
       "days_active": 178
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-03",
-      "seconds": 14397.394,
-      "text": "3 hrs 59 mins"
+      "seconds": 17084.591,
+      "text": "4 hrs 44 mins"
     }
   ],
   "heatmap": [
@@ -812,13 +812,13 @@
     },
     {
       "date": "2026-09-03",
-      "seconds": 14397.394
+      "seconds": 17084.591
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 948793.1170000003
+      "total_seconds": 949075.4000000004
     },
     {
       "name": "C++",
@@ -830,7 +830,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 259260.35500000004
+      "total_seconds": 259410.12600000005
     },
     {
       "name": "JavaScript",
@@ -838,11 +838,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 118616.68100000001
+      "total_seconds": 118849.66500000002
     },
     {
       "name": "JSON",
-      "total_seconds": 52489.429999999986
+      "total_seconds": 54511.588999999985
     },
     {
       "name": "Java",
@@ -2354,13 +2354,15 @@
       "Astro": 105.919
     },
     "2026-09-03": {
-      "Markdown": 10686.963,
+      "Markdown": 10969.246,
+      "JSON": 2022.159,
       "Python": 1617.912,
       "Text": 813.796,
       "Bash": 665.245,
       "Mako": 583.367,
+      "Astro": 240.945,
+      "TypeScript": 149.771,
       "Git": 22.15,
-      "Astro": 7.961,
       "Other": 0
     }
   }
