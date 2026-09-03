@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-03T03:02:22.706Z",
-  "total": "66 hrs 32 mins",
-  "daily_average": "2 hrs 4 mins",
+  "lastUpdate": "2026-09-03T04:16:14.160Z",
+  "total": "67 hrs 41 mins",
+  "daily_average": "2 hrs 6 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 92538.09800000001,
-      "total_text": "25h 42m",
+      "total_seconds": 96700.43400000001,
+      "total_text": "26h 51m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 191764.53799999997,
-      "total_text": "53h 16m",
+      "total_seconds": 195926.87399999998,
+      "total_text": "54h 25m",
       "days_active": 24
     },
     "last_365_days": {
-      "total_seconds": 2812514.2699999996,
-      "total_text": "781h 15m",
+      "total_seconds": 2816676.605999999,
+      "total_text": "782h 24m",
       "days_active": 178
     },
     "all_time": {
-      "total_seconds": 2812514.2699999996,
-      "total_text": "781h 15m",
+      "total_seconds": 2816676.605999999,
+      "total_text": "782h 24m",
       "days_active": 178
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-03",
-      "seconds": 1864.035,
-      "text": "31 mins"
+      "seconds": 6026.371,
+      "text": "1 hr 40 mins"
     }
   ],
   "heatmap": [
@@ -812,13 +812,13 @@
     },
     {
       "date": "2026-09-03",
-      "seconds": 1864.035
+      "seconds": 6026.371
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 939949.0690000004
+      "total_seconds": 941471.5980000003
     },
     {
       "name": "C++",
@@ -826,7 +826,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 409620.5730000001
+      "total_seconds": 411011.7680000001
     },
     {
       "name": "TypeScript",
@@ -865,12 +865,12 @@
       "total_seconds": 13707.084
     },
     {
-      "name": "CMake",
-      "total_seconds": 10294.243999999999
+      "name": "Bash",
+      "total_seconds": 10420.739
     },
     {
-      "name": "Bash",
-      "total_seconds": 9755.493999999999
+      "name": "CMake",
+      "total_seconds": 10294.243999999999
     },
     {
       "name": "MDX",
@@ -927,6 +927,10 @@
     {
       "name": "Java Properties",
       "total_seconds": 661.519
+    },
+    {
+      "name": "Mako",
+      "total_seconds": 583.367
     },
     {
       "name": "Godot Resource",
@@ -2350,11 +2354,13 @@
       "Astro": 105.919
     },
     "2026-09-03": {
-      "Markdown": 1842.915,
+      "Markdown": 3365.444,
+      "Python": 1392.152,
+      "Bash": 665.245,
+      "Mako": 583.367,
       "Git": 12.202,
       "Astro": 7.961,
-      "Python": 0.957,
-      "Bash": 0
+      "Other": 0
     }
   }
 }
