@@ -8,6 +8,7 @@ import FloatingAllay from "@features/floating-allay/components/FloatingAllay";
 import AmbientBlogBackground from "@components/core/AmbientBlogBackground";
 import ToastViewport from "@components/ui/ToastViewport";
 import { ClientRouter } from "astro:transitions";
+import Analytics from "@vercel/analytics/astro";
 
 interface Props {
   title: string;
@@ -79,7 +80,9 @@ const { title, description } = Astro.props;
     <FloatingTools client:idle transition:persist />
     <ToastViewport client:load transition:persist />
     <script is:inline>
-      const renderTest = new URLSearchParams(window.location.search).get("render-test");
+      const renderTest = new URLSearchParams(window.location.search).get(
+        "render-test",
+      );
       if (renderTest) {
         document.documentElement.dataset.renderTest = renderTest;
       }
