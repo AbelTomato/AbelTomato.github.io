@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-07T21:08:31.399Z",
-  "total": "88 hrs 52 mins",
-  "daily_average": "2 hrs 41 mins",
+  "lastUpdate": "2026-09-08T01:28:39.663Z",
+  "total": "88 hrs 40 mins",
+  "daily_average": "2 hrs 40 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 127182.505,
-      "total_text": "35h 19m",
+      "total_seconds": 113254.90400000001,
+      "total_text": "31h 27m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 271106.3229999999,
-      "total_text": "75h 18m",
-      "days_active": 25
+      "total_seconds": 273191.21799999994,
+      "total_text": "75h 53m",
+      "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2903440.6229999987,
-      "total_text": "806h 30m",
-      "days_active": 182
+      "total_seconds": 2905525.5179999988,
+      "total_text": "807h 5m",
+      "days_active": 183
     },
     "all_time": {
-      "total_seconds": 2903440.6229999987,
-      "total_text": "806h 30m",
-      "days_active": 182
+      "total_seconds": 2905525.5179999988,
+      "total_text": "807h 5m",
+      "days_active": 183
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-01",
-      "seconds": 16012.496,
-      "text": "4 hrs 26 mins"
-    },
     {
       "date": "2026-09-02",
       "seconds": 18379.621,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-09-07",
-      "seconds": 28179.809,
-      "text": "7 hrs 49 mins"
+      "seconds": 28289.566,
+      "text": "7 hrs 51 mins"
+    },
+    {
+      "date": "2026-09-08",
+      "seconds": 1975.138,
+      "text": "32 mins"
     }
   ],
   "heatmap": [
@@ -828,13 +828,17 @@
     },
     {
       "date": "2026-09-07",
-      "seconds": 28179.809
+      "seconds": 28289.566
+    },
+    {
+      "date": "2026-09-08",
+      "seconds": 1975.138
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 976192.6370000003
+      "total_seconds": 978094.3710000004
     },
     {
       "name": "C++",
@@ -842,7 +846,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 448170.8050000001
+      "total_seconds": 448353.9660000001
     },
     {
       "name": "TypeScript",
@@ -2412,7 +2416,7 @@
       "TOML": 66.204
     },
     "2026-09-07": {
-      "Python": 17028.434,
+      "Python": 17138.191,
       "Markdown": 7851.433,
       "TypeScript": 753.773,
       "JSON": 679.28,
@@ -2423,6 +2427,11 @@
       "INI": 120.663,
       "Mako": 22.37,
       "HTML": 6.268
+    },
+    "2026-09-08": {
+      "Markdown": 1901.734,
+      "Python": 73.404,
+      "Other": 0
     }
   }
 }
