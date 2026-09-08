@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-08T03:11:13.833Z",
-  "total": "89 hrs 34 mins",
-  "daily_average": "2 hrs 42 mins",
+  "lastUpdate": "2026-09-08T10:37:56.132Z",
+  "total": "91 hrs 5 mins",
+  "daily_average": "2 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 116491.386,
-      "total_text": "32h 21m",
+      "total_seconds": 121942.93000000001,
+      "total_text": "33h 52m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 276427.69999999995,
-      "total_text": "76h 47m",
+      "total_seconds": 281879.24399999995,
+      "total_text": "78h 17m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2908761.999999999,
-      "total_text": "807h 59m",
+      "total_seconds": 2914213.543999999,
+      "total_text": "809h 30m",
       "days_active": 183
     },
     "all_time": {
-      "total_seconds": 2908761.999999999,
-      "total_text": "807h 59m",
+      "total_seconds": 2914213.543999999,
+      "total_text": "809h 30m",
       "days_active": 183
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-08",
-      "seconds": 5211.62,
-      "text": "1 hr 26 mins"
+      "seconds": 10663.164,
+      "text": "2 hrs 57 mins"
     }
   ],
   "heatmap": [
@@ -832,13 +832,13 @@
     },
     {
       "date": "2026-09-08",
-      "seconds": 5211.62
+      "seconds": 10663.164
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 978939.5740000004
+      "total_seconds": 982037.8840000003
     },
     {
       "name": "C++",
@@ -846,7 +846,7 @@
     },
     {
       "name": "Python",
-      "total_seconds": 448936.9970000001
+      "total_seconds": 450404.6040000001
     },
     {
       "name": "TypeScript",
@@ -894,7 +894,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 9198.682
+      "total_seconds": 9313.252
     },
     {
       "name": "MDX",
@@ -959,6 +959,10 @@
     {
       "name": "Vue",
       "total_seconds": 258.08
+    },
+    {
+      "name": "Docker",
+      "total_seconds": 187.476
     },
     {
       "name": "Objective-C",
@@ -2429,10 +2433,11 @@
       "HTML": 6.268
     },
     "2026-09-08": {
-      "Markdown": 2746.937,
-      "Git Config": 1745.78,
-      "Python": 656.435,
-      "Other": 38.511,
+      "Markdown": 5845.247,
+      "Python": 2124.042,
+      "Git Config": 1860.35,
+      "Other": 622.092,
+      "Docker": 187.476,
       "Git": 23.957
     }
   }
