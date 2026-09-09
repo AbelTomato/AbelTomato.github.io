@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-09T09:06:50.175Z",
-  "total": "93 hrs 39 mins",
+  "lastUpdate": "2026-09-09T10:48:08.778Z",
+  "total": "94 hrs 13 mins",
   "daily_average": "2 hrs 50 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 130765.87499999999,
-      "total_text": "36h 19m",
+      "total_seconds": 132797.275,
+      "total_text": "36h 53m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 308222.69299999997,
-      "total_text": "85h 37m",
+      "total_seconds": 310254.093,
+      "total_text": "86h 10m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2941416.1099999994,
-      "total_text": "817h 3m",
+      "total_seconds": 2943447.5099999993,
+      "total_text": "817h 37m",
       "days_active": 184
     },
     "all_time": {
-      "total_seconds": 2941416.1099999994,
-      "total_text": "817h 3m",
+      "total_seconds": 2943447.5099999993,
+      "total_text": "817h 37m",
       "days_active": 184
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 22905.507,
-      "text": "6 hrs 21 mins"
+      "seconds": 24936.907,
+      "text": "6 hrs 55 mins"
     }
   ],
   "heatmap": [
@@ -836,13 +836,13 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 22905.507
+      "seconds": 24936.907
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1006081.9210000003
+      "total_seconds": 1007738.3090000004
     },
     {
       "name": "C++",
@@ -854,7 +854,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 261306.09400000004
+      "total_seconds": 261344.06100000005
     },
     {
       "name": "JavaScript",
@@ -2446,14 +2446,14 @@
       "Git": 23.957
     },
     "2026-09-09": {
-      "Markdown": 20394.86,
-      "TypeScript": 1034.43,
+      "Markdown": 22051.248,
+      "TypeScript": 1072.397,
       "Text": 790.305,
+      "Other": 383.17,
       "Astro": 202.916,
       "Git": 149.261,
       "JSON": 117.129,
       "HTML": 74.571,
-      "Other": 46.125,
       "CSS": 38.561,
       "JavaScript": 27.456,
       "Python": 14.902,
