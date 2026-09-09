@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-08T20:44:59.453Z",
-  "total": "92 hrs 16 mins",
-  "daily_average": "2 hrs 47 mins",
+  "lastUpdate": "2026-09-09T01:27:51.848Z",
+  "total": "88 hrs 2 mins",
+  "daily_average": "2 hrs 39 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 126238.068,
-      "total_text": "35h 3m",
+      "total_seconds": 110562.726,
+      "total_text": "30h 42m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 286174.382,
-      "total_text": "79h 29m",
+      "total_seconds": 288019.544,
+      "total_text": "80h 0m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2918508.681999999,
-      "total_text": "810h 41m",
-      "days_active": 183
+      "total_seconds": 2921212.960999999,
+      "total_text": "811h 26m",
+      "days_active": 184
     },
     "all_time": {
-      "total_seconds": 2918508.681999999,
-      "total_text": "810h 41m",
-      "days_active": 183
+      "total_seconds": 2921212.960999999,
+      "total_text": "811h 26m",
+      "days_active": 184
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-02",
-      "seconds": 18379.621,
-      "text": "5 hrs 6 mins"
-    },
     {
       "date": "2026-09-03",
       "seconds": 21442.602,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-09-08",
-      "seconds": 14958.302,
+      "seconds": 14960.223,
       "text": "4 hrs 9 mins"
+    },
+    {
+      "date": "2026-09-09",
+      "seconds": 2702.358,
+      "text": "45 mins"
     }
   ],
   "heatmap": [
@@ -832,13 +832,17 @@
     },
     {
       "date": "2026-09-08",
-      "seconds": 14958.302
+      "seconds": 14960.223
+    },
+    {
+      "date": "2026-09-09",
+      "seconds": 2702.358
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 985685.1400000004
+      "total_seconds": 988156.2530000004
     },
     {
       "name": "C++",
@@ -902,7 +906,7 @@
     },
     {
       "name": "Git",
-      "total_seconds": 7650.293999999999
+      "total_seconds": 7735.001999999999
     },
     {
       "name": "YAML",
@@ -2433,13 +2437,18 @@
       "HTML": 6.268
     },
     "2026-09-08": {
-      "Markdown": 9492.503,
+      "Markdown": 9494.424,
       "Python": 2175.637,
       "Git Config": 1860.35,
       "Text": 693.987,
       "Other": 524.392,
       "Docker": 187.476,
       "Git": 23.957
+    },
+    "2026-09-09": {
+      "Markdown": 2469.192,
+      "Text": 148.458,
+      "Git": 84.708
     }
   }
 }
