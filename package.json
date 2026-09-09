@@ -9,6 +9,7 @@
     "check": "astro check",
     "check:strict": "astro check --minimumSeverity error",
     "ci": "pnpm run check && pnpm run build",
+    "git:publish": "tsx scripts/publish-git.ts",
     "preview": "astro preview",
     "astro": "astro",
     "changelog:dry-run": "tsx scripts/generate-blog-changelog.ts",
