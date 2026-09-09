@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-09T03:13:25.306Z",
-  "total": "89 hrs 45 mins",
+  "lastUpdate": "2026-09-09T03:22:13.276Z",
+  "total": "89 hrs 56 mins",
   "daily_average": "2 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 116755.32199999999,
-      "total_text": "32h 25m",
+      "total_seconds": 117419.74299999999,
+      "total_text": "32h 36m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 294212.14,
-      "total_text": "81h 43m",
+      "total_seconds": 294876.561,
+      "total_text": "81h 54m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2927405.556999999,
-      "total_text": "813h 10m",
+      "total_seconds": 2928069.977999999,
+      "total_text": "813h 21m",
       "days_active": 184
     },
     "all_time": {
-      "total_seconds": 2927405.556999999,
-      "total_text": "813h 10m",
+      "total_seconds": 2928069.977999999,
+      "total_text": "813h 21m",
       "days_active": 184
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 8894.954,
-      "text": "2 hrs 28 mins"
+      "seconds": 9559.375,
+      "text": "2 hrs 39 mins"
     }
   ],
   "heatmap": [
@@ -836,13 +836,13 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 8894.954
+      "seconds": 9559.375
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 993799.5110000003
+      "total_seconds": 993811.9000000004
     },
     {
       "name": "C++",
@@ -862,7 +862,7 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 119862.82600000003
+      "total_seconds": 120514.85800000002
     },
     {
       "name": "JSON",
@@ -2446,12 +2446,12 @@
       "Git": 23.957
     },
     "2026-09-09": {
-      "Markdown": 8112.45,
+      "Markdown": 8124.839,
+      "Astro": 722.51,
       "Other": 336.836,
       "Text": 149.894,
       "Git": 84.708,
       "HTML": 74.571,
-      "Astro": 70.478,
       "CSS": 38.561,
       "JavaScript": 27.456
     }
