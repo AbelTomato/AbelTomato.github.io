@@ -1,6 +1,6 @@
 ---
-title: '2026.09.02-缺口信息FDE面经与复盘'
-description: '2026.09.02-缺口信息FDE面经与复盘'
+title: '2026.09.02-小厂FDE面经与复盘'
+description: '2026.09.02-小厂FDE面经与复盘'
 pubDate: "2026-09-03T10:38:00+08:00"
 updatedDate: '2026-09-03'
 heroImage: "./hero.jpg"

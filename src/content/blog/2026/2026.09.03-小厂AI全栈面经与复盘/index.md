@@ -1,6 +1,6 @@
 ---
-title: '2026.09.03-河南星序元科技AI全栈面经与复盘'
-description: '2026.09.03-河南星序元科技AI全栈面经与复盘'
+title: '2026.09.03-小厂AI全栈面经与复盘'
+description: '2026.09.03-小厂AI全栈面经与复盘'
 pubDate: '2026-09-03T17:01:00+08:00'
 updatedDate: '2026-09-03'
 heroImage: "./hero.jpg"

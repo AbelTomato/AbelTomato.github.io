@@ -1,6 +1,6 @@
 ---
-title: '2026.09.03-深圳小财虾Agent面经与复盘'
-description: '2026.09.03-深圳小财虾Agent面经与复盘'
+title: '2026.09.03-小厂Agent面经与复盘'
+description: '2026.09.03-小厂Agent面经与复盘'
 pubDate: '2026-09-03T18:38:00+08:00'
 updatedDate: '2026-09-03'
 heroImage: "./hero.jpg"
