@@ -57,7 +57,7 @@ pnpm git:publish
 → git commit
 → 切回 main
 → git pull --rebase origin main
-→ git merge --no-ff 工作分支
+→ git merge --no-ff -m "Merge branch '工作分支'" 工作分支
 → git push origin main
 → 删除本地工作分支
 ```
@@ -91,7 +91,7 @@ chore: sync project metrics
 
 - `pnpm run check` 失败；
 - `git pull --rebase` 产生冲突；
-- `git merge --no-ff` 产生冲突；
+- `git merge --no-ff` 产生冲突；合并提交信息由脚本自动生成，不会打开 Git 编辑器；
 - `git push` 失败；
 - GitHub Actions 自动提交导致远程分支发生变化。
 

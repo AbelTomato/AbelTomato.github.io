@@ -132,7 +132,9 @@ async function main(): Promise<void> {
   git(["pull", "--rebase", "origin", mainBranch], { stdio: "inherit" });
 
   console.log(`正在合并 ${workingBranch}...`);
-  git(["merge", "--no-ff", workingBranch], { stdio: "inherit" });
+  git(["merge", "--no-ff", "-m", `Merge branch '${workingBranch}'`, workingBranch], {
+    stdio: "inherit",
+  });
   git(["push", "origin", mainBranch], { stdio: "inherit" });
   git(["branch", "-d", workingBranch], { stdio: "inherit" });
 
