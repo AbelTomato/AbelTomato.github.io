@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-09T01:27:51.848Z",
-  "total": "88 hrs 2 mins",
-  "daily_average": "2 hrs 39 mins",
+  "lastUpdate": "2026-09-09T03:13:25.306Z",
+  "total": "89 hrs 45 mins",
+  "daily_average": "2 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 110562.726,
-      "total_text": "30h 42m",
+      "total_seconds": 116755.32199999999,
+      "total_text": "32h 25m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 288019.544,
-      "total_text": "80h 0m",
+      "total_seconds": 294212.14,
+      "total_text": "81h 43m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2921212.960999999,
-      "total_text": "811h 26m",
+      "total_seconds": 2927405.556999999,
+      "total_text": "813h 10m",
       "days_active": 184
     },
     "all_time": {
-      "total_seconds": 2921212.960999999,
-      "total_text": "811h 26m",
+      "total_seconds": 2927405.556999999,
+      "total_text": "813h 10m",
       "days_active": 184
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 2702.358,
-      "text": "45 mins"
+      "seconds": 8894.954,
+      "text": "2 hrs 28 mins"
     }
   ],
   "heatmap": [
@@ -836,13 +836,13 @@
     },
     {
       "date": "2026-09-09",
-      "seconds": 2702.358
+      "seconds": 8894.954
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 988156.2530000004
+      "total_seconds": 993799.5110000003
     },
     {
       "name": "C++",
@@ -858,11 +858,11 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 132322.14800000004
+      "total_seconds": 132349.60400000005
     },
     {
       "name": "Astro",
-      "total_seconds": 119792.34800000003
+      "total_seconds": 119862.82600000003
     },
     {
       "name": "JSON",
@@ -882,11 +882,11 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 25937.372000000007
+      "total_seconds": 26011.943000000007
     },
     {
       "name": "CSS",
-      "total_seconds": 13707.084
+      "total_seconds": 13745.645
     },
     {
       "name": "Bash",
@@ -2446,9 +2446,14 @@
       "Git": 23.957
     },
     "2026-09-09": {
-      "Markdown": 2469.192,
-      "Text": 148.458,
-      "Git": 84.708
+      "Markdown": 8112.45,
+      "Other": 336.836,
+      "Text": 149.894,
+      "Git": 84.708,
+      "HTML": 74.571,
+      "Astro": 70.478,
+      "CSS": 38.561,
+      "JavaScript": 27.456
     }
   }
 }
