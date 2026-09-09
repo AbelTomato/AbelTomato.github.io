@@ -47,13 +47,17 @@
 
         const wrapper = document.createElement("div");
         wrapper.className =
-          "my-6 overflow-x-auto rounded-xl border bg-card p-4 text-center";
+          "my-6 flex justify-center overflow-x-auto rounded-xl border bg-card p-4";
 
         try {
           const id = `mermaid-${Date.now()}-${index}`;
           const { svg } = await mermaid.render(id, source);
 
           wrapper.innerHTML = svg;
+          const svgElement = wrapper.querySelector('svg');
+          if (svgElement) {
+            svgElement.classList.add('max-w-full');
+          }
           block.closest("pre")?.replaceWith(wrapper);
         } catch (error) {
           block.setAttribute(renderedAttribute, "true");
