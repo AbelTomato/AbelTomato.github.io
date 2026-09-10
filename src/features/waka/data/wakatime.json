@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-10T03:12:38.451Z",
-  "total": "94 hrs 54 mins",
-  "daily_average": "2 hrs 52 mins",
+  "lastUpdate": "2026-09-10T10:40:15.029Z",
+  "total": "97 hrs 47 mins",
+  "daily_average": "2 hrs 56 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 123839.09999999999,
-      "total_text": "34h 23m",
+      "total_seconds": 134247.837,
+      "total_text": "37h 17m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 320458.81399999995,
-      "total_text": "89h 0m",
+      "total_seconds": 330867.551,
+      "total_text": "91h 54m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2955931.9369999995,
-      "total_text": "821h 5m",
+      "total_seconds": 2966340.673999999,
+      "total_text": "823h 59m",
       "days_active": 185
     },
     "all_time": {
-      "total_seconds": 2955931.9369999995,
-      "total_text": "821h 5m",
+      "total_seconds": 2966340.673999999,
+      "total_text": "823h 59m",
       "days_active": 185
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-10",
-      "seconds": 7709.518,
-      "text": "2 hrs 8 mins"
+      "seconds": 18118.255,
+      "text": "5 hrs 1 min"
     }
   ],
   "heatmap": [
@@ -840,13 +840,13 @@
     },
     {
       "date": "2026-09-10",
-      "seconds": 7709.518
+      "seconds": 18118.255
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1019346.3420000003
+      "total_seconds": 1019440.9100000003
     },
     {
       "name": "C++",
@@ -854,11 +854,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 450471.1010000001
+      "total_seconds": 451542.6000000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 261344.06100000005
+      "total_seconds": 261788.82300000003
     },
     {
       "name": "JavaScript",
@@ -901,6 +901,10 @@
       "total_seconds": 10294.243999999999
     },
     {
+      "name": "YAML",
+      "total_seconds": 9664.988000000001
+    },
+    {
       "name": "Git Config",
       "total_seconds": 9313.252
     },
@@ -911,10 +915,6 @@
     {
       "name": "Git",
       "total_seconds": 7799.554999999999
-    },
-    {
-      "name": "YAML",
-      "total_seconds": 5246.4800000000005
     },
     {
       "name": "TOML",
@@ -933,6 +933,10 @@
       "total_seconds": 1935.943
     },
     {
+      "name": "Docker",
+      "total_seconds": 1892.1190000000001
+    },
+    {
       "name": "INI",
       "total_seconds": 1881.513
     },
@@ -947,10 +951,6 @@
     {
       "name": "Lua",
       "total_seconds": 1072.1109999999999
-    },
-    {
-      "name": "Docker",
-      "total_seconds": 955.896
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -2465,9 +2465,12 @@
       "YAML": 6.076
     },
     "2026-09-10": {
-      "Markdown": 6884.076,
-      "Docker": 768.42,
-      "YAML": 57.022
+      "Markdown": 6978.644,
+      "YAML": 4475.53,
+      "Other": 3443.177,
+      "Docker": 1704.643,
+      "Python": 1071.499,
+      "TypeScript": 444.762
     }
   }
 }
