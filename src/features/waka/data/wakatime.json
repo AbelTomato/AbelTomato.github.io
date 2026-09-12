@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-11T20:29:27.887Z",
-  "total": "105 hrs 40 mins",
-  "daily_average": "3 hrs 3 mins",
+  "lastUpdate": "2026-09-12T03:14:50.168Z",
+  "total": "105 hrs 44 mins",
+  "daily_average": "2 hrs 58 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 156819.15099999995,
-      "total_text": "43h 33m",
+      "total_seconds": 142842.60199999998,
+      "total_text": "39h 40m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 347323.056,
-      "total_text": "96h 28m",
+      "total_seconds": 343759.37200000003,
+      "total_text": "95h 29m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 2994710.9129999992,
-      "total_text": "831h 51m",
-      "days_active": 186
+      "total_seconds": 2994972.013999999,
+      "total_text": "831h 56m",
+      "days_active": 187
     },
     "all_time": {
-      "total_seconds": 2994710.9129999992,
-      "total_text": "831h 51m",
-      "days_active": 186
+      "total_seconds": 2994972.013999999,
+      "total_text": "831h 56m",
+      "days_active": 187
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-05",
-      "seconds": 14237.65,
-      "text": "3 hrs 57 mins"
-    },
     {
       "date": "2026-09-06",
       "seconds": 23131.402,
@@ -59,6 +54,11 @@
       "date": "2026-09-11",
       "seconds": 19669.678,
       "text": "5 hrs 27 mins"
+    },
+    {
+      "date": "2026-09-12",
+      "seconds": 261.101,
+      "text": "4 mins"
     }
   ],
   "heatmap": [
@@ -845,12 +845,16 @@
     {
       "date": "2026-09-11",
       "seconds": 19669.678
+    },
+    {
+      "date": "2026-09-12",
+      "seconds": 261.101
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1042363.1030000002
+      "total_seconds": 1042483.1280000003
     },
     {
       "name": "C++",
@@ -2486,6 +2490,11 @@
       "JSON": 144.655,
       "Git": 6.464,
       "TOML": 0
+    },
+    "2026-09-12": {
+      "Other": 141.076,
+      "Markdown": 120.025,
+      "Python": 0
     }
   }
 }
