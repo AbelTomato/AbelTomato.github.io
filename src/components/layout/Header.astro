@@ -116,18 +116,37 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
           <a href="/status" class="rounded-md px-3 py-2 text-sm hover:bg-accent"
             >Status</a
           >
-          <a
-            href="/about/profile"
-            class="rounded-md px-3 py-2 text-sm hover:bg-accent">个人简介</a
-          >
-          <a
-            href="/about/guestbook"
-            class="rounded-md px-3 py-2 text-sm hover:bg-accent">留言板</a
-          >
-          <a
-            href="/about/friends"
-            class="rounded-md px-3 py-2 text-sm hover:bg-accent">友链</a
-          >
+          <details class="mobile-about-menu rounded-md">
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between rounded-md px-3 py-2 text-sm hover:bg-accent [&::-webkit-details-marker]:hidden"
+            >
+              <span>About</span>
+              <svg
+                class="mobile-about-menu__arrow size-4"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="m5 7.5 5 5 5-5"></path>
+              </svg>
+            </summary>
+            <div class="mt-1 grid gap-1 border-l border-border pl-3">
+              <a
+                href="/about/profile"
+                class="rounded-md px-3 py-2 text-sm hover:bg-accent">个人简介</a
+              >
+              <a
+                href="/about/guestbook"
+                class="rounded-md px-3 py-2 text-sm hover:bg-accent">留言板</a
+              >
+              <a
+                href="/about/friends"
+                class="rounded-md px-3 py-2 text-sm hover:bg-accent">友链</a
+              >
+            </div>
+          </details>
         </div>
         <div
           class="mt-2 flex gap-3 border-t border-border px-3 pt-3 text-sm text-muted-foreground"
@@ -149,6 +168,22 @@ import AboutMenu from "@components/layout/AboutMenu.astro";
 </header>
 
 <style is:global>
+  header .mobile-about-menu__arrow {
+    transition: transform 0.2s ease;
+  }
+
+  header .mobile-about-menu[open] .mobile-about-menu__arrow {
+    transform: rotate(180deg);
+  }
+
+  header .social-links a:hover {
+    color: #2563eb !important;
+  }
+
+  :global(.dark) header .social-links a:hover {
+    color: #60a5fa !important;
+  }
+
   .internal-links > a,
   .internal-links .about-menu__trigger {
     position: relative;
