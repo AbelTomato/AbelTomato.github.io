@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-13T20:21:54.488Z",
-  "total": "120 hrs 29 mins",
-  "daily_average": "3 hrs 22 mins",
+  "lastUpdate": "2026-09-14T03:30:01.847Z",
+  "total": "122 hrs 23 mins",
+  "daily_average": "3 hrs 25 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 179263.13400000002,
-      "total_text": "49h 47m",
+      "total_seconds": 163755.983,
+      "total_text": "45h 29m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 391757.292,
-      "total_text": "108h 49m",
+      "total_seconds": 402729.413,
+      "total_text": "111h 52m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 3054523.9479999994,
-      "total_text": "848h 28m",
-      "days_active": 188
+      "total_seconds": 3067306.3629999994,
+      "total_text": "852h 1m",
+      "days_active": 189
     },
     "all_time": {
-      "total_seconds": 3054523.9479999994,
-      "total_text": "848h 28m",
-      "days_active": 188
+      "total_seconds": 3067306.3629999994,
+      "total_text": "852h 1m",
+      "days_active": 189
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-07",
-      "seconds": 28289.566,
-      "text": "7 hrs 51 mins"
-    },
     {
       "date": "2026-09-08",
       "seconds": 14960.223,
@@ -59,6 +54,11 @@
       "date": "2026-09-13",
       "seconds": 30896.825,
       "text": "8 hrs 34 mins"
+    },
+    {
+      "date": "2026-09-14",
+      "seconds": 12782.415,
+      "text": "3 hrs 33 mins"
     }
   ],
   "heatmap": [
@@ -853,12 +853,16 @@
     {
       "date": "2026-09-13",
       "seconds": 30896.825
+    },
+    {
+      "date": "2026-09-14",
+      "seconds": 12782.415
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1069817.7230000002
+      "total_seconds": 1078261.8130000003
     },
     {
       "name": "C++",
@@ -870,7 +874,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 261982.57100000003
+      "total_seconds": 263839.673
     },
     {
       "name": "JavaScript",
@@ -882,7 +886,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 56642.423999999985
+      "total_seconds": 56691.94799999998
     },
     {
       "name": "Java",
@@ -910,7 +914,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 11723.205
+      "total_seconds": 11849.713
     },
     {
       "name": "CMake",
@@ -2519,6 +2523,13 @@
       "Git Config": 250.807,
       "JSON": 226.309,
       "TypeScript": 33.38
+    },
+    "2026-09-14": {
+      "Markdown": 8444.09,
+      "Other": 2305.191,
+      "TypeScript": 1857.102,
+      "YAML": 126.508,
+      "JSON": 49.524
     }
   }
 }
