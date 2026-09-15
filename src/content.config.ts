@@ -42,6 +42,12 @@ const blog = defineCollection({
         .optional(),
       heroImage: image().optional(),
       tags: z.array(z.string()).optional(),
+      column: z
+        .object({
+          slug: z.string().min(1),
+          order: z.number().int().positive(),
+        })
+        .optional(),
       draft: z.boolean().optional().default(false),
       author: z.string().optional().default("AbelTomato"),
       comments: z.boolean().optional().default(true),

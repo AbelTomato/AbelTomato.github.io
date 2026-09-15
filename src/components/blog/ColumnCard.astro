@@ -1,0 +1,50 @@
+---
+import type { BlogPost, ColumnDefinition } from "@features/columns/types";
+
+interface Props {
+  definition: ColumnDefinition;
+  postCount: number;
+  latestPost?: BlogPost;
+}
+
+const { definition, postCount, latestPost } = Astro.props;
+---
+
+<article
+  class="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-200/70 bg-white/70 shadow-lg backdrop-blur-xl transition-shadow hover:shadow-xl dark:border-gray-700/70 dark:bg-gray-800/70"
+>
+  <a href={`/columns/${definition.slug}/`} class="flex h-full flex-col p-6">
+    <div class="mb-4 flex items-start justify-between gap-4">
+      <h2
+        class="text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600 dark:text-gray-100 dark:group-hover:text-blue-400"
+      >
+        {definition.title}
+      </h2>
+      <span
+        class="shrink-0 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-600 dark:bg-blue-950/50 dark:text-blue-300"
+      >
+        {postCount} 篇
+      </span>
+    </div>
+
+    <p class="mb-6 flex-1 text-sm leading-6 text-gray-600 dark:text-gray-400">
+      {definition.description}
+    </p>
+
+    <div
+      class="border-t border-gray-200/70 pt-4 text-sm text-gray-500 dark:border-gray-700/70 dark:text-gray-400"
+    >
+      {
+        latestPost ? (
+          <span class="line-clamp-1">
+            最近篇目：<span class="font-medium text-gray-700 dark:text-gray-200"
+              >{latestPost.data.title}</span
+            >
+          </span>
+        ) : (
+          <span>暂未收录文章</span>
+        )
+      }
+    </div>
+  </a>
+</article>

@@ -4,6 +4,9 @@ description: '一个关于初心的小故事'
 pubDate: "2025-08-17T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["随笔"]
+column:
+  slug: "essays"
+  order: 2
 ---
 
 $\quad\quad$叶安想做一个剑客。

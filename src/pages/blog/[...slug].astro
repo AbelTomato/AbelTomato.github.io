@@ -2,9 +2,16 @@
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "@layouts/BlogPost.astro";
 import { getReadingStats } from "@utils/readingTime";
+import { columnDefinitions } from "@features/columns/data/columns";
+import {
+  getColumnDefinition,
+  getColumnPosts,
+  validateColumnReferences,
+} from "@features/columns/columnUtils";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
+  validateColumnReferences(posts, columnDefinitions);
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,
@@ -15,6 +22,15 @@ type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const { Content, headings } = await render(post);
 const stats = getReadingStats(post.body || "");
+const columnDefinition = post.data.column
+  ? getColumnDefinition(columnDefinitions, post.data.column.slug)
+  : undefined;
+const columnPosts = post.data.column
+  ? getColumnPosts(
+      (await getCollection("blog", ({ data }) => !data.draft)),
+      post.data.column.slug,
+    )
+  : [];
 const allPosts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
@@ -34,6 +50,8 @@ const propsForlayout = {
   hasMermaid: /```mermaid\s/i.test(post.body || ""),
   previousPost,
   nextPost,
+  columnDefinition,
+  columnPosts,
 };
 ---
 
