@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-15T03:31:25.764Z",
-  "total": "133 hrs 55 mins",
-  "daily_average": "3 hrs 45 mins",
+  "lastUpdate": "2026-09-15T08:58:14.777Z",
+  "total": "137 hrs 58 mins",
+  "daily_average": "3 hrs 51 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 192194.729,
-      "total_text": "53h 23m",
+      "total_seconds": 206789.41,
+      "total_text": "57h 26m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 437645.82500000007,
-      "total_text": "121h 34m",
+      "total_seconds": 452240.50600000005,
+      "total_text": "125h 37m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 3110705.3319999995,
-      "total_text": "864h 5m",
+      "total_seconds": 3125300.0129999993,
+      "total_text": "868h 8m",
       "days_active": 190
     },
     "all_time": {
-      "total_seconds": 3110705.3319999995,
-      "total_text": "864h 5m",
+      "total_seconds": 3125300.0129999993,
+      "total_text": "868h 8m",
       "days_active": 190
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-15",
-      "seconds": 13077.557,
-      "text": "3 hrs 37 mins"
+      "seconds": 27672.238,
+      "text": "7 hrs 41 mins"
     }
   ],
   "heatmap": [
@@ -860,13 +860,13 @@
     },
     {
       "date": "2026-09-15",
-      "seconds": 13077.557
+      "seconds": 27672.238
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1095801.6760000004
+      "total_seconds": 1098935.3130000003
     },
     {
       "name": "C++",
@@ -878,19 +878,19 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 264940.37600000005
+      "total_seconds": 266885.329
     },
     {
       "name": "JavaScript",
-      "total_seconds": 138151.65500000006
+      "total_seconds": 141869.27000000005
     },
     {
       "name": "Astro",
-      "total_seconds": 121122.90500000003
+      "total_seconds": 123466.07800000002
     },
     {
       "name": "JSON",
-      "total_seconds": 56766.16199999998
+      "total_seconds": 56833.550999999985
     },
     {
       "name": "Java",
@@ -910,7 +910,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 16154.052
+      "total_seconds": 16214.038999999999
     },
     {
       "name": "CSS",
@@ -918,7 +918,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 12156.353
+      "total_seconds": 12408.873
     },
     {
       "name": "CMake",
@@ -926,11 +926,11 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 10829.828000000001
+      "total_seconds": 10926.775000000001
     },
     {
       "name": "MDX",
-      "total_seconds": 8302.741
+      "total_seconds": 8311.133
     },
     {
       "name": "Git",
@@ -969,16 +969,16 @@
       "total_seconds": 1376.114
     },
     {
+      "name": "Vue",
+      "total_seconds": 1132.8319999999999
+    },
+    {
       "name": "Lua",
       "total_seconds": 1072.1109999999999
     },
     {
       "name": "Microsoft Visual Studio Solution",
       "total_seconds": 731.019
-    },
-    {
-      "name": "Vue",
-      "total_seconds": 719.7180000000001
     },
     {
       "name": "Java Properties",
@@ -997,16 +997,16 @@
       "total_seconds": 131.633
     },
     {
+      "name": "Io",
+      "total_seconds": 77.00399999999999
+    },
+    {
       "name": "Objective-C",
       "total_seconds": 52.455999999999996
     },
     {
       "name": "XML",
       "total_seconds": 34.221000000000004
-    },
-    {
-      "name": "Io",
-      "total_seconds": 29.527
     },
     {
       "name": "C#",
@@ -2556,14 +2556,20 @@
       "HTML": 13.436
     },
     "2026-09-15": {
-      "JavaScript": 5781.225,
-      "Markdown": 3574.272,
+      "JavaScript": 9498.84,
+      "Markdown": 6707.909,
+      "Other": 3421.3,
+      "Astro": 2343.173,
+      "TypeScript": 1944.953,
       "Python": 1342.122,
-      "Other": 909.644,
-      "Text": 772.682,
-      "Vue": 380.196,
-      "Git Config": 265.651,
-      "JSON": 51.765
+      "Vue": 793.31,
+      "Text": 770.503,
+      "Git Config": 362.598,
+      "YAML": 252.52,
+      "JSON": 119.154,
+      "Bash": 59.987,
+      "Io": 47.477,
+      "MDX": 8.392
     }
   }
 }
