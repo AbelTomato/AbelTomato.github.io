@@ -5,6 +5,9 @@ pubDate: "2026-05-14T09:29:00+08:00"
 updatedDate: '2026-05-14'
 heroImage: "./hero.jpg"
 tags: ["随笔"]
+column:
+  slug: "essays"
+  order: 5
 ---
 
 今天照例是洗完澡之后，打开手机拿起笔开始背单词。

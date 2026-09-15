@@ -1,0 +1,65 @@
+---
+import type { BlogPost, ColumnDefinition } from "@features/columns/types";
+
+interface Props {
+  definition: ColumnDefinition;
+  posts: BlogPost[];
+  currentPostId: string;
+}
+
+const { definition, posts, currentPostId } = Astro.props;
+---
+
+<aside
+  class="sticky top-24 overflow-hidden rounded-xl border border-gray-200/70 bg-white/75 shadow-lg backdrop-blur-xl dark:border-gray-700/70 dark:bg-gray-800/75"
+  aria-label={`${definition.title}专栏目录`}
+>
+  <div class="p-4 pb-3">
+    <h2 class="text-sm font-bold text-gray-900 dark:text-gray-100">专栏</h2>
+  </div>
+
+  <div class="border-t border-b border-gray-200/70 p-4 dark:border-gray-700/70">
+    <a
+      href={`/columns/${definition.slug}/`}
+      class="text-base font-bold text-gray-900 transition-colors hover:text-blue-600 dark:text-gray-100 dark:hover:text-blue-400"
+    >
+      {definition.title}
+    </a>
+    <p class="mt-2 text-xs text-gray-500 dark:text-gray-400">
+      共 {posts.length} 篇文章
+    </p>
+    <p class="mt-3 text-xs leading-5 text-gray-600 dark:text-gray-400">
+      {definition.description}
+    </p>
+  </div>
+
+  <nav class="max-h-[calc(100vh-14rem)] overflow-y-auto p-2" aria-label="专栏文章列表">
+    <ol class="space-y-1">
+      {
+        posts.map((post, index) => {
+          const isCurrent = post.id === currentPostId;
+
+          return (
+            <li>
+              <a
+                href={`/blog/${post.id}/`}
+                aria-current={isCurrent ? "page" : undefined}
+                class:list={[
+                  "flex gap-2 rounded-lg px-3 py-2.5 text-sm transition-colors",
+                  isCurrent
+                    ? "bg-blue-50 font-semibold text-blue-700 dark:bg-blue-950/50 dark:text-blue-300"
+                    : "text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700/60 dark:hover:text-gray-100",
+                ]}
+              >
+                <span class="shrink-0 font-mono text-xs opacity-60">
+                  {String(post.data.column?.order ?? index + 1).padStart(2, "0")}
+                </span>
+                <span class="line-clamp-2">{post.data.title}</span>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </nav>
+</aside>

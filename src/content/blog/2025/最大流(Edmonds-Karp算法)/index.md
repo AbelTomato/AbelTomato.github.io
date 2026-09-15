@@ -4,6 +4,9 @@ description: '最大流(Edmonds-Karp算法)'
 pubDate: "2025-11-18T19:34:00+08:00"
 heroImage: "./hero.jpg"
 tags: ["算法竞赛","算法学习笔记"]
+column:
+  slug: "max-flow"
+  order: 1
 ---
 
 为什么会突然想起学最大流呢？是因为在补哈尔滨的ccpc的时候对于扫雪的那道题，发现看不懂队友给的 $dp$ 做法，痛苦折磨无助，看到AI说可以用网络流建模最大流来做。于是干脆开始学最大流，~~反正不想再看那个 $dp$ 了。~~
