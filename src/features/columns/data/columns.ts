@@ -12,5 +12,11 @@ export const columnDefinitions: ColumnDefinition[] = [
     title: "随笔",
     description: "拥抱幸福，正视痛苦",
     order: 2,
+  },
+  {
+    slug: "transformer",
+    title: "Transformer",
+    description: "从前置技能树开始，逐步掌握Transformer",
+    order: 3
   }
 ];
