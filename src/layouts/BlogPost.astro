@@ -4,13 +4,14 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "@components/ui/FormattedDate.astro";
 import ArticleChangelog from "@components/blog/ArticleChangelog.astro";
-import BaseLayout from "@layouts/BaseLayout.astro";
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import CommentSection from "@features/comments/components/CommentSection";
 import MermaidRenderer from "@components/MermaidRenderer.astro";
 import type { ColumnDefinition } from "@features/columns/types";
 import ArticleColumnSidebar from "@components/blog/ArticleColumnSidebar.astro";
+import ArticlePagination from "@components/blog/ArticlePagination.astro";
 
 type Props = CollectionEntry<"blog">["data"] & {
   slug: string;
@@ -45,158 +46,116 @@ const {
 } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description}>
+<ThreeColumnLayout title={title} description={description}>
+  {
+    columnDefinition && (
+      <ArticleColumnSidebar
+        slot="left-sidebar"
+        definition={columnDefinition}
+        posts={columnPosts}
+        currentPostId={slug}
+      />
+    )
+  }
+
   <div class="reading-progress" aria-hidden="true"><span></span></div>
-  <main class="max-w-350 mx-auto px-4 py-8">
-    <div
-      class="grid grid-cols-1 lg:grid-cols-[1fr_768px_1fr] gap-12 items-start"
-    >
-      {
-        columnDefinition ? (
-          <ArticleColumnSidebar
-            definition={columnDefinition}
-            posts={columnPosts}
-            currentPostId={slug}
+  <article class="min-h-[60vh] w-full" data-article>
+    {
+      heroImage && (
+        <div class="hero-image mb-8">
+          <Image
+            width={1020}
+            height={510}
+            src={heroImage}
+            alt={title}
+            class="w-full rounded-xl shadow-2xl object-cover"
           />
-        ) : (
-          <div class="hidden lg:block"></div>
+        </div>
+      )
+    }
+
+    <div
+      class="prose prose-slate prose-lg md:prose-xl dark:prose-invert mx-auto max-w-none prose-headings:scroll-mt-24"
+    >
+      <header class="text-center mb-12">
+        <h1
+          class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100"
+        >
+          {title}
+        </h1>
+        <div class="text-gray-600 dark:text-gray-400 space-y-2">
+          <time><FormattedDate date={pubDate} /></time>
+          {
+            updatedDate && (
+              <p class="italic">
+                最后更新：<FormattedDate date={updatedDate} />
+              </p>
+            )
+          }
+        </div>
+      </header>
+
+      <hr class="my-10 border-gray-300 dark:border-gray-700" />
+
+      {
+        count && minutes && (
+          <div class="flex items-center justify-center gap-6 text-sm text-gray-500 mt-4 mb-8">
+            <span class="flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-files"
+              >
+                <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
+                <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
+                <path d="M3 7v10a2 2 0 0 0 2 2h10" />
+              </svg>
+              {count} 字
+            </span>
+            <span class="flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clock"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              约 {minutes} 分钟
+            </span>
+          </div>
         )
       }
 
-      <article class="min-h-[60vh] w-full" data-article>
-        {
-          heroImage && (
-            <div class="hero-image mb-8">
-              <Image
-                width={1020}
-                height={510}
-                src={heroImage}
-                alt={title}
-                class="w-full rounded-xl shadow-2xl object-cover"
-              />
-            </div>
-          )
-        }
-
-        <div
-          class="prose prose-slate prose-lg md:prose-xl dark:prose-invert mx-auto max-w-none prose-headings:scroll-mt-24"
-        >
-          <header class="text-center mb-12">
-            <h1
-              class="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100"
-            >
-              {title}
-            </h1>
-            <div class="text-gray-600 dark:text-gray-400 space-y-2">
-              <time><FormattedDate date={pubDate} /></time>
-              {
-                updatedDate && (
-                  <p class="italic">
-                    最后更新：<FormattedDate date={updatedDate} />
-                  </p>
-                )
-              }
-            </div>
-          </header>
-
-          <hr class="my-10 border-gray-300 dark:border-gray-700" />
-
-          {
-            count && minutes && (
-              <div class="flex items-center justify-center gap-6 text-sm text-gray-500 mt-4 mb-8">
-                <span class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-files"
-                  >
-                    <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
-                    <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
-                    <path d="M3 7v10a2 2 0 0 0 2 2h10" />
-                  </svg>
-                  {count} 字
-                </span>
-                <span class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-clock"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  约 {minutes} 分钟
-                </span>
-              </div>
-            )
-          }
-
-          <div data-article-content><slot /></div>
-        </div>
-
-        <ArticleChangelog changelog={changelog} />
-
-        {
-          (previousPost || nextPost) && (
-            <nav class="article-pagination" aria-label="文章导航">
-              {previousPost ? (
-                <a href={`/blog/${previousPost.id}`} class="article-pagination__item">
-                  <span class="article-pagination__eyebrow">
-                    <span class="article-pagination__arrow" aria-hidden="true">←</span>
-                    上一篇
-                  </span>
-                  <span class="article-pagination__tag">
-                    {previousPost.data.tags?.[0] ?? "文章"}
-                  </span>
-                  <strong>{previousPost.data.title}</strong>
-                  <span class="article-pagination__description">{previousPost.data.description}</span>
-                  <time class="article-pagination__meta" datetime={previousPost.data.pubDate.toISOString()}>
-                    <FormattedDate date={previousPost.data.pubDate} />
-                  </time>
-                </a>
-              ) : <div />}
-              {nextPost ? (
-                <a href={`/blog/${nextPost.id}`} class="article-pagination__item article-pagination__item--next">
-                  <span class="article-pagination__eyebrow">
-                    下一篇
-                    <span class="article-pagination__arrow" aria-hidden="true">→</span>
-                  </span>
-                  <span class="article-pagination__tag">
-                    {nextPost.data.tags?.[0] ?? "文章"}
-                  </span>
-                  <strong>{nextPost.data.title}</strong>
-                  <span class="article-pagination__description">{nextPost.data.description}</span>
-                  <time class="article-pagination__meta" datetime={nextPost.data.pubDate.toISOString()}>
-                    <FormattedDate date={nextPost.data.pubDate} />
-                  </time>
-                </a>
-              ) : <div />}
-            </nav>
-          )
-        }
-
-        {comments && <CommentSection resourceId={slug} client:load />}
-      </article>
-
-      <div class="hidden lg:block sticky top-24">
-        <TableOfContents headings={headings} />
-      </div>
+      <div data-article-content><slot /></div>
     </div>
-  </main>
+
+    <ArticleChangelog changelog={changelog} />
+
+    <ArticlePagination
+      previousPost={previousPost}
+      nextPost={nextPost}
+    />
+
+    {comments && <CommentSection resourceId={slug} client:load />}
+  </article>
+
+
+  <TableOfContents slot="right-sidebar" headings={headings} />
   {hasMermaid && <MermaidRenderer />}
   <dialog class="image-lightbox" aria-label="图片预览">
     <button class="image-lightbox__close" type="button" aria-label="关闭图片预览">×</button>
@@ -205,7 +164,7 @@ const {
     <button class="image-lightbox__next" type="button" aria-label="查看下一张图片">›</button>
     <a class="image-lightbox__original" target="_blank" rel="noreferrer">查看原图</a>
   </dialog>
-</BaseLayout>
+</ThreeColumnLayout>
 
 <script>
   const initializeCodeBlockToggles = () => {

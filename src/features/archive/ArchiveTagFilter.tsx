@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
-import { Search, X } from "lucide-react";
+import { useId, useMemo, useState } from "react";
+import { ChevronDown, Search, X } from "lucide-react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
 import { Input } from "@components/ui/input";
@@ -14,6 +15,9 @@ interface ArchiveTagFilterProps {
   onSearchQueryChange: (query: string) => void;
 }
 
+const PRIMARY_TAG_COUNT = 10;
+const PREVIEW_TAG_COUNT = 5;
+
 export function ArchiveTagFilter({
   postCount,
   filteredPostCount,
@@ -24,6 +28,14 @@ export function ArchiveTagFilter({
   onSearchQueryChange,
 }: ArchiveTagFilterProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const tagListId = useId();
+  const prefersReducedMotion = useReducedMotion();
+  const layoutTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { type: "spring" as const, stiffness: 280, damping: 30, mass: 0.8 };
+  const revealTransition = prefersReducedMotion
+    ? { duration: 0 }
+    : { duration: 0.3, ease: [0.22, 1, 0.36, 1] as const };
   const sortedTags = useMemo(
     () =>
       Object.entries(tagCountsMap).sort(
@@ -32,26 +44,66 @@ export function ArchiveTagFilter({
       ),
     [tagCountsMap],
   );
-  const primaryTags = sortedTags.slice(0, 10);
-  const extraTags = sortedTags.slice(10);
+  const collapsedTags = useMemo(() => {
+    const previewEnd = PRIMARY_TAG_COUNT + PREVIEW_TAG_COUNT;
+    const tags = sortedTags.slice(0, previewEnd);
 
-  const renderTag = ([tag, count]: [string, number]) => {
+    if (
+      selectedTag &&
+      !tags.some(([tag]) => tag === selectedTag)
+    ) {
+      const selectedTagEntry = sortedTags.find(([tag]) => tag === selectedTag);
+
+      if (selectedTagEntry) {
+        tags.push(selectedTagEntry);
+      }
+    }
+
+    return tags;
+  }, [selectedTag, sortedTags]);
+  const displayedTags = isExpanded ? sortedTags : collapsedTags;
+
+  const renderTag = ([tag, count]: [string, number], index: number) => {
     const isSelected = tag === selectedTag;
+    const isBlurredPreview =
+      !isExpanded && index >= PRIMARY_TAG_COUNT && !isSelected;
 
     return (
-      <Button
+      <motion.div
         key={tag}
-        size="sm"
-        variant="ghost"
-        onClick={() => onSelectTag(isSelected ? null : tag)}
-        className={`relative h-7 rounded-none px-2 font-normal transition-colors after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:origin-bottom-right after:scale-x-0 after:bg-cyan-400 after:transition-transform after:duration-[250ms] after:ease-out ${
-          isSelected
-            ? "text-cyan-300 after:origin-bottom-left after:scale-x-100"
-            : "text-muted-foreground hover:bg-transparent hover:text-foreground"
-        } text-[11px]`}
+        layout="position"
+        initial={
+          prefersReducedMotion
+            ? false
+            : { opacity: 0, y: -6, scale: 0.96, filter: "blur(3px)" }
+        }
+        animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+        exit={
+          prefersReducedMotion
+            ? { opacity: 0 }
+            : { opacity: 0, y: -4, scale: 0.96, filter: "blur(3px)" }
+        }
+        transition={revealTransition}
       >
-        #{tag} ({count})
-      </Button>
+        <Button
+          type="button"
+          size="sm"
+          variant="ghost"
+          disabled={isBlurredPreview}
+          aria-hidden={isBlurredPreview}
+          tabIndex={isBlurredPreview ? -1 : undefined}
+          onClick={() => onSelectTag(isSelected ? null : tag)}
+          className={`relative h-7 rounded-none px-2 font-normal transition-[color,filter,opacity] duration-300 motion-reduce:transition-none after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:origin-bottom-right after:scale-x-0 after:bg-cyan-400 after:transition-transform after:duration-[250ms] after:ease-out ${
+            isBlurredPreview
+              ? "pointer-events-none select-none blur-[2px] opacity-35"
+              : isSelected
+              ? "text-cyan-300 after:origin-bottom-left after:scale-x-100"
+              : "text-muted-foreground hover:bg-transparent hover:text-foreground"
+          } text-[11px]`}
+        >
+          #{tag} ({count})
+        </Button>
+      </motion.div>
     );
   };
 
@@ -90,44 +142,54 @@ export function ArchiveTagFilter({
           )}
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          <Button
-            size="sm"
-            variant="ghost"
-            onClick={() => onSelectTag(null)}
-            className={`relative h-7 rounded-none px-2 text-[11px] font-normal transition-colors after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:origin-bottom-right after:scale-x-0 after:bg-cyan-400 after:transition-transform after:duration-[250ms] after:ease-out ${
-              selectedTag === null
-                ? "text-cyan-300 after:origin-bottom-left after:scale-x-100"
-                : "text-muted-foreground hover:bg-transparent hover:text-foreground"
-            }`}
+        <motion.div layout transition={layoutTransition} className="space-y-4">
+          <motion.div
+            layout
+            transition={layoutTransition}
+            id={tagListId}
+            className="flex flex-wrap gap-2"
           >
-            全部文章 ({postCount})
-          </Button>
-          {primaryTags.map(renderTag)}
-        </div>
-        {extraTags.length > 0 && (
-          <div
-            className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out ${
-              isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-            }`}
-            aria-hidden={!isExpanded}
-          >
-            <div className="overflow-hidden">
-              <div className="flex flex-wrap gap-2 pt-2">{extraTags.map(renderTag)}</div>
-            </div>
-          </div>
-        )}
-        {sortedTags.length > 10 && (
-          <Button
-            type="button"
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsExpanded((expanded) => !expanded)}
-            className="h-auto px-0 text-xs text-muted-foreground hover:bg-transparent hover:text-cyan-300"
-          >
-            {isExpanded ? "收起标签" : `展开更多标签（${sortedTags.length - 10}）`}
-          </Button>
-        )}
+            <motion.div layout="position" transition={layoutTransition}>
+              <Button
+                size="sm"
+                variant="ghost"
+                onClick={() => onSelectTag(null)}
+                className={`relative h-7 rounded-none px-2 text-[11px] font-normal transition-colors after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:origin-bottom-right after:scale-x-0 after:bg-cyan-400 after:transition-transform after:duration-[250ms] after:ease-out ${
+                  selectedTag === null
+                    ? "text-cyan-300 after:origin-bottom-left after:scale-x-100"
+                    : "text-muted-foreground hover:bg-transparent hover:text-foreground"
+                }`}
+              >
+                全部文章 ({postCount})
+              </Button>
+            </motion.div>
+            <AnimatePresence initial={false} mode="popLayout">
+              {displayedTags.map(renderTag)}
+            </AnimatePresence>
+          </motion.div>
+          {sortedTags.length > PRIMARY_TAG_COUNT && (
+            <motion.div layout="position" transition={layoutTransition}>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsExpanded((expanded) => !expanded)}
+                aria-expanded={isExpanded}
+                aria-controls={tagListId}
+                className="h-auto gap-1 px-0 text-xs text-muted-foreground hover:bg-transparent hover:text-cyan-300"
+              >
+                {isExpanded
+                  ? "收起标签"
+                  : `展开更多标签（${sortedTags.length - PRIMARY_TAG_COUNT}）`}
+                <ChevronDown
+                  className={`size-3.5 transition-transform duration-300 motion-reduce:transition-none ${
+                    isExpanded ? "rotate-180" : ""
+                  }`}
+                />
+              </Button>
+            </motion.div>
+          )}
+        </motion.div>
       </CardContent>
     </Card>
   );

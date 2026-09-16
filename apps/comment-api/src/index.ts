@@ -36,7 +36,8 @@ const app = createApp({
 
 serve({
   fetch: app.fetch,
+  hostname: "0.0.0.0",
   port: config.port,
 });
 
-console.info(`comment-api listening on http://localhost:${config.port}`);
+console.info(`comment-api listening on http://0.0.0.0:${config.port}`);
