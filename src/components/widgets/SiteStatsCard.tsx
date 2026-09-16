@@ -25,6 +25,15 @@ export const SiteStatsCard: React.FC<SiteStatsCardProps> = ({
   });
 
   const lastActiveTime = useFetchGithubStats().lastActiveTime;
+  const formattedLastActiveTime = formatDate(
+    lastActiveTime,
+    {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    },
+    "zh-CN",
+  ).replaceAll("/", ".");
 
   const displayedWordCount = useMemo(
     () => formatWordCount(wordCount),
@@ -32,54 +41,55 @@ export const SiteStatsCard: React.FC<SiteStatsCardProps> = ({
   );
 
   return (
-    <div className="w-full max-w-sm rounded-xl border border-zinc-200/60 bg-white/45 p-5 font-sans shadow-sm backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/45">
-      <h3 className="text-sm font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-4">
+    <div className="w-full min-w-0 max-w-sm overflow-hidden rounded-xl border border-zinc-200/60 bg-white/45 p-5 font-sans shadow-sm backdrop-blur-xl dark:border-zinc-700/60 dark:bg-zinc-900/45">
+      <h3 className="mb-4 min-w-0 break-words text-sm font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
         站点统计
       </h3>
 
-      <div className="grid grid-cols-3 gap-2 text-center mb-6">
-        <div className="flex flex-col">
-          <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-100">
+      <div className="mb-6 grid min-w-0 grid-cols-3 gap-2 text-center">
+        <div className="flex min-w-0 flex-col">
+          <span className="min-w-0 max-w-full break-all text-2xl font-bold text-zinc-800 dark:text-zinc-100">
             {articleCount}
           </span>
-          <span className="text-xs text-zinc-400 mt-1">文章数</span>
+          <span className="mt-1 min-w-0 max-w-full break-words text-xs text-zinc-400">
+            文章数
+          </span>
         </div>
-        <div className="flex flex-col border-x border-zinc-100 dark:border-zinc-800">
-          <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-100">
+        <div className="flex min-w-0 flex-col border-x border-zinc-100 dark:border-zinc-800">
+          <span className="min-w-0 max-w-full break-all text-2xl font-bold text-zinc-800 dark:text-zinc-100">
             {tagCount}
           </span>
-          <span className="text-xs text-zinc-400 mt-1">标签数</span>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-2xl font-bold text-zinc-800 dark:text-zinc-100">
-            {formatWordCount(wordCount)}
+          <span className="mt-1 min-w-0 max-w-full break-words text-xs text-zinc-400">
+            标签数
           </span>
-          <span className="text-xs text-zinc-400 mt-1">总字数</span>
+        </div>
+        <div className="flex min-w-0 flex-col">
+          <span className="min-w-0 max-w-full whitespace-nowrap text-2xl font-bold text-zinc-800 dark:text-zinc-100">
+            {displayedWordCount}
+          </span>
+          <span className="mt-1 min-w-0 max-w-full break-words text-xs text-zinc-400">
+            总字数
+          </span>
         </div>
       </div>
 
       <hr className="border-zinc-100 dark:border-zinc-800 my-4" />
 
-      <div className="space-y-2 mt-4 text-sm">
-        <div className="flex justify-between">
-          <span>运行天数：</span>
-          <span className="font-bold">{runtimeDays} 天</span>
+      <div className="mt-4 space-y-2 text-sm">
+        <div className="flex min-w-0 items-center justify-between gap-2">
+          <span className="shrink-0 whitespace-nowrap">运行天数：</span>
+          <span className="min-w-0 truncate text-right font-bold">
+            {runtimeDays} 天
+          </span>
         </div>
 
-        <div className="flex justify-between">
-          <span>上次活跃：</span>
-          <span className="font-mono text-xs">
-            {formatDate(
-              lastActiveTime,
-              {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-              },
-              "zh-CN",
-            )}
+        <div className="flex min-w-0 items-center justify-between gap-2">
+          <span className="shrink-0 whitespace-nowrap">上次活跃：</span>
+          <span
+            className="min-w-0 flex-1 truncate text-right font-mono text-xs whitespace-nowrap"
+            title={formattedLastActiveTime}
+          >
+            {formattedLastActiveTime}
           </span>
         </div>
       </div>

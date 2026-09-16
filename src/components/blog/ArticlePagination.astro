@@ -1,0 +1,67 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "@components/ui/FormattedDate.astro";
+
+interface Props {
+  previousPost?: CollectionEntry<"blog">;
+  nextPost?: CollectionEntry<"blog">;
+}
+
+const { previousPost, nextPost } = Astro.props;
+---
+
+{
+  (previousPost || nextPost) && (
+    <nav class="article-pagination" aria-label="文章导航">
+      {previousPost ? (
+        <a href={`/blog/${previousPost.id}`} class="article-pagination__item">
+          <span class="article-pagination__eyebrow">
+            <span class="article-pagination__arrow" aria-hidden="true">←</span>
+            上一篇
+          </span>
+          <span class="article-pagination__tag">
+            {previousPost.data.tags?.[0] ?? "文章"}
+          </span>
+          <strong>{previousPost.data.title}</strong>
+          <span class="article-pagination__description">
+            {previousPost.data.description}
+          </span>
+          <time
+            class="article-pagination__meta"
+            datetime={previousPost.data.pubDate.toISOString()}
+          >
+            <FormattedDate date={previousPost.data.pubDate} />
+          </time>
+        </a>
+      ) : (
+        <div />
+      )}
+      {nextPost ? (
+        <a
+          href={`/blog/${nextPost.id}`}
+          class="article-pagination__item article-pagination__item--next"
+        >
+          <span class="article-pagination__eyebrow">
+            下一篇
+            <span class="article-pagination__arrow" aria-hidden="true">→</span>
+          </span>
+          <span class="article-pagination__tag">
+            {nextPost.data.tags?.[0] ?? "文章"}
+          </span>
+          <strong>{nextPost.data.title}</strong>
+          <span class="article-pagination__description">
+            {nextPost.data.description}
+          </span>
+          <time
+            class="article-pagination__meta"
+            datetime={nextPost.data.pubDate.toISOString()}
+          >
+            <FormattedDate date={nextPost.data.pubDate} />
+          </time>
+        </a>
+      ) : (
+        <div />
+      )}
+    </nav>
+  )
+}
