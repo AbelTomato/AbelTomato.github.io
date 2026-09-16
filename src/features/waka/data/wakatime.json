@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-16T03:27:24.012Z",
-  "total": "144 hrs 1 min",
-  "daily_average": "3 hrs 53 mins",
+  "lastUpdate": "2026-09-16T05:35:20.832Z",
+  "total": "145 hrs 37 mins",
+  "daily_average": "3 hrs 56 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 198847.535,
-      "total_text": "55h 14m",
+      "total_seconds": 204567.80500000002,
+      "total_text": "56h 49m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 473323.362,
-      "total_text": "131h 28m",
+      "total_seconds": 479043.632,
+      "total_text": "133h 4m",
       "days_active": 26
     },
     "last_365_days": {
-      "total_seconds": 3147069.9539999994,
-      "total_text": "874h 11m",
+      "total_seconds": 3152790.2239999995,
+      "total_text": "875h 46m",
       "days_active": 191
     },
     "all_time": {
-      "total_seconds": 3147069.9539999994,
-      "total_text": "874h 11m",
+      "total_seconds": 3152790.2239999995,
+      "total_text": "875h 46m",
       "days_active": 191
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-16",
-      "seconds": 3583.786,
-      "text": "59 mins"
+      "seconds": 9304.056,
+      "text": "2 hrs 35 mins"
     }
   ],
   "heatmap": [
@@ -864,13 +864,13 @@
     },
     {
       "date": "2026-09-16",
-      "seconds": 3583.786
+      "seconds": 9304.056
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1110074.0800000003
+      "total_seconds": 1109776.0970000003
     },
     {
       "name": "C++",
@@ -882,19 +882,19 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 267793.54000000004
+      "total_seconds": 270071.12100000004
     },
     {
       "name": "JavaScript",
-      "total_seconds": 149107.03300000002
+      "total_seconds": 149274.03800000003
     },
     {
       "name": "Astro",
-      "total_seconds": 123487.80100000002
+      "total_seconds": 124686.74400000002
     },
     {
       "name": "JSON",
-      "total_seconds": 57293.84399999998
+      "total_seconds": 57921.62399999998
     },
     {
       "name": "Java",
@@ -918,11 +918,11 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 13824.014000000001
+      "total_seconds": 13824.203000000001
     },
     {
       "name": "YAML",
-      "total_seconds": 12528.847
+      "total_seconds": 12815.113
     },
     {
       "name": "CMake",
@@ -993,16 +993,16 @@
       "total_seconds": 602.985
     },
     {
+      "name": "Io",
+      "total_seconds": 406.813
+    },
+    {
       "name": "Godot Resource",
       "total_seconds": 365.113
     },
     {
       "name": "systemd",
       "total_seconds": 131.633
-    },
-    {
-      "name": "Io",
-      "total_seconds": 77.00399999999999
     },
     {
       "name": "Objective-C",
@@ -2576,12 +2576,15 @@
       "MDX": 10.404
     },
     "2026-09-16": {
-      "Markdown": 1736.987,
-      "Other": 735.289,
-      "TypeScript": 552.915,
-      "JavaScript": 517.716,
-      "JSON": 40.879,
-      "Astro": 0
+      "TypeScript": 2830.496,
+      "Other": 1865.969,
+      "Markdown": 1439.004,
+      "Astro": 1198.943,
+      "JavaScript": 684.721,
+      "JSON": 668.659,
+      "Io": 329.809,
+      "YAML": 286.266,
+      "CSS": 0.189
     }
   }
 }
