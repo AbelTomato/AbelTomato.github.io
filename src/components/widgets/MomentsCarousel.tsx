@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
-import { HamsterLoader } from "@components/ui/HamsterLoader";
+import { SpinnerLoader } from "@components/ui/SpinnerLoader";
 import { useMomentsData } from "@features/moments-section/hooks/useMomentsData";
 
 const momentsImages = import.meta.glob<{ default: string }>(
@@ -35,12 +35,19 @@ function getMomentImageSrc(image: string) {
   return momentsImages[imagePath]?.default || "";
 }
 
-function preloadImage(src: string) {
-  if (!src || typeof window === "undefined") return;
+/**
+ * 预加载单张图片
+ */
+function preloadImage(src: string): Promise<void> {
+  if (!src || typeof window === "undefined") return Promise.resolve();
 
-  const image = new Image();
-  image.src = src;
-  void image.decode?.().catch(() => undefined);
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve();
+    image.onerror = () => resolve(); // 加载失败也解决,避免阻塞
+    image.src = src;
+    void image.decode?.().catch(() => undefined);
+  });
 }
 
 function MomentsCarouselContent() {
@@ -195,7 +202,7 @@ function MomentsCarouselContent() {
     return (
       <Card className="w-full max-w-sm p-5 shadow-sm">
         <div className="flex h-40 items-center justify-center">
-          <HamsterLoader label="正在加载瞬间..." />
+          <SpinnerLoader label="正在加载瞬间..." size="sm" />
         </div>
       </Card>
     );
@@ -239,7 +246,7 @@ function MomentsCarouselContent() {
         # 语录
       </h3>
 
-      <CardContent className="relative aspect-4/3 overflow-hidden bg-muted p-0">
+      <CardContent className="relative aspect-4/3 bg-muted p-0" style={{ overflow: "hidden" }}>
         {previous && (
           <img
             src={previousImageSrc}

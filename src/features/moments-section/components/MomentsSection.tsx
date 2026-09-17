@@ -1,6 +1,6 @@
 import { Card } from "@components/ui/card";
 import { Tilt } from "@components/core/Tilt";
-import { HamsterLoader } from "@components/ui/HamsterLoader";
+import { SpinnerLoader } from "@components/ui/SpinnerLoader";
 import { useMomentsData } from "../hooks/useMomentsData";
 import { useMemo, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -63,7 +63,7 @@ function MomentsSectionContent() {
   if (isLoading) {
     return (
       <div className="flex h-100 items-center justify-center">
-        <HamsterLoader label="正在加载瞬间..." />
+        <SpinnerLoader label="正在加载瞬间..." />
       </div>
     );
   }

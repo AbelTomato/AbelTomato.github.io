@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 import { Button } from "@components/ui/button";
 import { Card, CardContent } from "@components/ui/card";
-import { HamsterLoader } from "@components/ui/HamsterLoader";
+import { SpinnerLoader } from "@components/ui/SpinnerLoader";
 import { fetchComments, submitComment } from "../api";
 import type { PublicComment } from "../types";
 import {
@@ -234,7 +234,7 @@ export default function CommentSection({
 
       <div className="space-y-4">
         {loadState === "loading" && !hasCompletedInitialLoad ? (
-          <HamsterLoader label="正在加载评论..." />
+          <SpinnerLoader label="正在加载评论..." />
         ) : null}
 
         {loadState === "loaded" && comments.length === 0 ? (

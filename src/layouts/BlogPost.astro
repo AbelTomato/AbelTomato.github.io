@@ -12,6 +12,8 @@ import MermaidRenderer from "@components/MermaidRenderer.astro";
 import type { ColumnDefinition } from "@features/columns/types";
 import ArticleColumnSidebar from "@components/blog/ArticleColumnSidebar.astro";
 import ArticlePagination from "@components/blog/ArticlePagination.astro";
+import ToastViewport from "@components/ui/ToastViewport";
+import "katex/dist/katex.min.css";
 
 type Props = CollectionEntry<"blog">["data"] & {
   slug: string;
@@ -68,6 +70,9 @@ const {
             height={510}
             src={heroImage}
             alt={title}
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
             class="w-full rounded-xl shadow-2xl object-cover"
           />
         </div>
@@ -152,6 +157,7 @@ const {
     />
 
     {comments && <CommentSection resourceId={slug} client:load />}
+    {comments && <ToastViewport client:load />}
   </article>
 
 
