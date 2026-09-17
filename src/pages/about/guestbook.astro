@@ -2,6 +2,7 @@
 import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
+import ToastViewport from "@components/ui/ToastViewport";
 import CommentSection from "@features/comments/components/CommentSection";
 import { GUESTBOOK_RESOURCE_ID } from "@features/comments/constants";
 import { CREATE_TIME } from "@src/consts";
@@ -37,6 +38,7 @@ const siteData = {
           submitLabel="提交留言"
           client:load
         />
+        <ToastViewport client:load />
       </CardContent>
     </Card>
   </main>

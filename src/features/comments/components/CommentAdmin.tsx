@@ -3,7 +3,7 @@ import { Check, LogIn, RefreshCw, Trash2, X } from "lucide-react";
 
 import { Button } from "@components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@components/ui/card";
-import { HamsterLoader } from "@components/ui/HamsterLoader";
+import { SpinnerLoader } from "@components/ui/SpinnerLoader";
 import {
   adminLogin,
   fetchAdminComments,
@@ -156,7 +156,7 @@ export default function CommentAdmin() {
 
       {message ? <p className="text-sm text-muted-foreground">{message}</p> : null}
       {error ? <div className="max-w-md rounded-xl border border-destructive/20 bg-destructive/5 p-4 text-sm text-destructive">{error}</div> : null}
-      {loading && comments.length === 0 ? <HamsterLoader label="正在加载评论..." /> : null}
+      {loading && comments.length === 0 ? <SpinnerLoader label="正在加载评论..." /> : null}
       {!loading && comments.length === 0 ? <p className="rounded-xl border border-dashed p-6 text-center text-sm text-muted-foreground">没有{statuses.find((item) => item.value === status)?.label}评论。</p> : null}
 
       <div className="space-y-4">

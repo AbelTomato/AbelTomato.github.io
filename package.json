@@ -14,7 +14,8 @@
     "astro": "astro",
     "changelog:dry-run": "tsx scripts/generate-blog-changelog.ts",
     "changelog:sort": "tsx scripts/sort-blog-changelog.ts",
-    "pubdate:backfill": "tsx scripts/backfill-pubdate-time.ts"
+    "pubdate:backfill": "tsx scripts/backfill-pubdate-time.ts",
+    "perf:check": "tsx scripts/performance-check.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -32,6 +33,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^17.4.2",
     "framer-motion": "^12.40.0",
+    "katex": "^0.16.47",
     "leetcode-query": "^2.0.1",
     "lucide-react": "^1.16.0",
     "mermaid": "^11.15.0",

@@ -6,7 +6,6 @@ import Footer from "@components/layout/Footer.astro";
 import FloatingTools from "@features/floating-tools/components/FloatingTools";
 import FloatingAllay from "@features/floating-allay/components/FloatingAllay";
 import AmbientBlogBackground from "@components/core/AmbientBlogBackground";
-import ToastViewport from "@components/ui/ToastViewport";
 import { ClientRouter } from "astro:transitions";
 import Analytics from "@vercel/analytics/astro";
 
@@ -23,11 +22,6 @@ const { title, description } = Astro.props;
     <meta
       name="google-site-verification"
       content="7h2tgp6VYXz8uDXnCz7bkvtVl3AxgSziCF_Uok8U47s"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
-      crossorigin="anonymous"
     />
     <BaseHead title={title} description={description} />
 
@@ -79,7 +73,6 @@ const { title, description } = Astro.props;
     </div>
     <FloatingAllay client:idle transition:persist />
     <FloatingTools client:idle transition:persist />
-    <ToastViewport client:load transition:persist />
     <script is:inline>
       const renderTest = new URLSearchParams(window.location.search).get(
         "render-test",

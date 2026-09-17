@@ -1,10 +1,70 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { carouselCovers } from "../data/covers";
 import { InfiniteSlider } from "./InfiniteSlider";
 
+/**
+ * 预加载图片
+ */
+function preloadImage(src: string): Promise<void> {
+  if (!src || typeof window === "undefined") return Promise.resolve();
+
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve();
+    image.onerror = () => resolve();
+    image.src = src;
+  });
+}
+
+/**
+ * 批量预加载封面图片
+ */
+function preloadCarouselImages(covers: Array<{ src: string }>) {
+  if (typeof window === "undefined" || covers.length === 0) return;
+
+  // 使用 requestIdleCallback 在浏览器空闲时预加载
+  const idleWindow = window as Window & {
+    requestIdleCallback?: (callback: () => void) => void;
+  };
+
+  const loadImages = () => {
+    const batchSize = 3;
+    let currentIndex = 0;
+
+    const loadBatch = () => {
+      const batch = covers.slice(currentIndex, currentIndex + batchSize);
+      if (batch.length === 0) return;
+
+      Promise.all(batch.map((cover) => preloadImage(cover.src))).then(() => {
+        currentIndex += batchSize;
+        if (currentIndex < covers.length) {
+          if (idleWindow.requestIdleCallback) {
+            idleWindow.requestIdleCallback(loadBatch);
+          } else {
+            setTimeout(loadBatch, 100);
+          }
+        }
+      });
+    };
+
+    loadBatch();
+  };
+
+  if (idleWindow.requestIdleCallback) {
+    idleWindow.requestIdleCallback(loadImages);
+  } else {
+    setTimeout(loadImages, 200);
+  }
+}
+
 export function EchoCarousel() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  // 预加载所有封面图片
+  useEffect(() => {
+    preloadCarouselImages(carouselCovers);
+  }, []);
 
   return (
     <section aria-label="封面轮播" className="py-4">
