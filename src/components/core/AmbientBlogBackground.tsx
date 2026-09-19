@@ -102,6 +102,7 @@ export default function AmbientBlogBackground() {
       canvas.style.height = `${height}px`;
       context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
       stars.splice(0, stars.length, ...Array.from({ length: 220 }, createStar));
+      if (paused) drawStars(0, false);
     };
 
     const resetStar = (star: Star) => {
@@ -137,26 +138,34 @@ export default function AmbientBlogBackground() {
     };
 
     const render = (timestamp: number) => {
+      if (paused) return;
       frameId = requestAnimationFrame(render);
-      if (paused || timestamp - previousTime < 42) return;
+      if (timestamp - previousTime < 42) return;
       previousTime = timestamp;
       drawStars(timestamp, true);
     };
 
     const visibilityChange = () => {
+      cancelAnimationFrame(frameId);
       paused = document.hidden || reducedMotion || renderTest === "static-background";
+      if (!paused) {
+        previousTime = 0;
+        frameId = requestAnimationFrame(render);
+      }
     };
 
     resize();
-    if (reducedMotion || renderTest === "static-background") {
-      drawStars(0, false);
-    }
+    const themeObserver = new MutationObserver(() => {
+      if (paused && !document.hidden) drawStars(0, false);
+    });
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
     window.addEventListener("resize", resize, { passive: true });
     document.addEventListener("visibilitychange", visibilityChange);
-    frameId = requestAnimationFrame(render);
+    if (!paused) frameId = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(frameId);
+      themeObserver.disconnect();
       window.removeEventListener("resize", resize);
       document.removeEventListener("visibilitychange", visibilityChange);
     };

@@ -1,6 +1,7 @@
 <script>
   const mermaidSelector = 'pre[data-language="mermaid"] > code';
   const renderedAttribute = "data-mermaid-rendered";
+  const rendering = new WeakSet<HTMLElement>();
   let mermaidPromise: ReturnType<typeof importMermaid> | undefined;
 
   const importMermaid = () =>
@@ -29,43 +30,47 @@
   const renderMermaidBlocks = async () => {
     const blocks = Array.from(
       document.querySelectorAll<HTMLElement>(mermaidSelector),
-    ).filter((block) => block.dataset.mermaidRendered !== "true");
+    ).filter((block) => block.dataset.mermaidRendered !== "true" && !rendering.has(block));
 
     if (blocks.length === 0) {
       return;
     }
 
-    const mermaid = await initializeMermaid();
+    blocks.forEach((block) => rendering.add(block));
 
-    await Promise.all(
-      blocks.map(async (block, index) => {
-        const source = block.textContent?.trim();
+    try {
+      const mermaid = await initializeMermaid();
+      await Promise.all(
+        blocks.map(async (block, index) => {
+          const source = block.textContent?.trim();
 
-        if (!source) {
-          return;
-        }
+          if (!source || !block.isConnected) return;
 
-        const wrapper = document.createElement("div");
-        wrapper.className =
-          "my-6 flex justify-center overflow-x-auto rounded-xl border bg-card p-4";
+          const wrapper = document.createElement("div");
+          wrapper.className =
+            "my-6 flex justify-center overflow-x-auto rounded-xl border bg-card p-4";
 
-        try {
-          const id = `mermaid-${Date.now()}-${index}`;
-          const { svg } = await mermaid.render(id, source);
+          try {
+            const id = `mermaid-${Date.now()}-${index}`;
+            const { svg } = await mermaid.render(id, source);
+            if (!block.isConnected) return;
 
-          wrapper.innerHTML = svg;
-          const svgElement = wrapper.querySelector('svg');
-          if (svgElement) {
-            svgElement.classList.add('max-w-full');
+            wrapper.innerHTML = svg;
+            wrapper.querySelector("svg")?.classList.add("max-w-full");
+            block.closest("pre")?.replaceWith(wrapper);
+          } catch (error) {
+            block.setAttribute(renderedAttribute, "true");
+            block.closest("pre")?.classList.add("border-destructive/20");
+            console.error("Mermaid 渲染失败：", error);
           }
-          block.closest("pre")?.replaceWith(wrapper);
-        } catch (error) {
-          block.setAttribute(renderedAttribute, "true");
-          block.closest("pre")?.classList.add("border-destructive/20");
-          console.error("Mermaid 渲染失败：", error);
-        }
-      }),
-    );
+        }),
+      );
+    } catch (error) {
+      mermaidPromise = undefined;
+      console.error("Mermaid 加载失败：", error);
+    } finally {
+      blocks.forEach((block) => rendering.delete(block));
+    }
   };
 
   document.addEventListener("astro:page-load", () => {

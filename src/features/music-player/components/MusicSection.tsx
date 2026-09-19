@@ -34,6 +34,7 @@ export default function MusicSection() {
       </div>
       <Card className="overflow-hidden rounded-xl border-border/60 bg-card/70 p-5 text-card-foreground shadow-lg shadow-primary/5 backdrop-blur-xl">
         <audio
+          preload="metadata"
           ref={player.audioRef}
           src={player.audioSrc}
           onTimeUpdate={(event) => player.setCurrentTime(event.currentTarget.currentTime)}
