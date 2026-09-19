@@ -89,9 +89,9 @@ function getPreLanguage(preNode: Element): string {
     return dataLanguage;
   }
 
-  const codeNode = preNode.children[0];
+  const codeNode = preNode.children.find((child) => isElement(child) && child.tagName === "code");
 
-  if (!isElement(codeNode) || codeNode.tagName !== "code") {
+  if (!codeNode || !isElement(codeNode)) {
     return "text";
   }
 
@@ -114,9 +114,9 @@ function isValidCodePre(node: Nodes): node is Element {
     return false;
   }
 
-  const codeNode = node.children[0];
+  const codeNode = node.children.find((child) => isElement(child) && child.tagName === "code");
 
-  if (!isElement(codeNode) || codeNode.tagName !== "code") {
+  if (!codeNode || !isElement(codeNode)) {
     return false;
   }
 
@@ -131,6 +131,11 @@ function createTextNode(value: string): Text {
   };
 }
 
+function textContent(node: Nodes): string {
+  if (node.type === "text") return node.value;
+  return "children" in node ? node.children.map(textContent).join("") : "";
+}
+
 function createCodeBlockWrapper(node: Element): Element {
   const preNode = { ...node, children: [...node.children] };
 
@@ -141,6 +146,15 @@ function createCodeBlockWrapper(node: Element): Element {
     ...preNode.properties,
     dataLanguage: language,
   };
+
+  const code = preNode.children.find((child) => isElement(child) && child.tagName === "code")!;
+  const lines = Math.max(1, textContent(code).replace(/\n$/, "").split("\n").length);
+  preNode.children.unshift({
+    type: "element",
+    tagName: "span",
+    properties: { className: ["code-block__line-numbers"], ariaHidden: "true" },
+    children: [createTextNode(Array.from({ length: lines }, (_, index) => String(index + 1)).join("\n"))],
+  });
 
   return {
     type: "element",
@@ -222,6 +236,8 @@ function walk(node: Nodes): void {
   if (!("children" in node)) {
     return;
   }
+
+  if (isElement(node) && (node.properties.className as string[] | undefined)?.includes("code-block")) return;
 
   for (let index = 0; index < node.children.length; index++) {
     const child = node.children[index];

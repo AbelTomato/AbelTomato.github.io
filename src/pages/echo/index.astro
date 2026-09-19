@@ -3,6 +3,7 @@ import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import MomentsSection from "@features/moments-section/components/MomentsSection.tsx";
 import MusicSection from "@features/music-player/components/MusicSection.tsx";
 import { EchoCarousel } from "@features/echo-carousel/components/EchoCarousel.tsx";
+import { carouselCovers } from "@features/echo-carousel/data/covers";
 import CookingNotesSection from "@features/cooking-notes/components/CookingNotesSection.astro";
 import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
@@ -36,7 +37,7 @@ const siteData = {
       <hr class="mt-4 w-16 border-t-2 border-blue-500 dark:border-blue-400" />
     </div>
 
-    <EchoCarousel client:idle />
+    <EchoCarousel covers={carouselCovers} client:idle />
 
     <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-8">
       <div class="flex min-w-0 flex-col gap-10">
