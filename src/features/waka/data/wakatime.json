@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-20T15:29:36.965Z",
-  "total": "188 hrs 41 mins",
-  "daily_average": "4 hrs 52 mins",
+  "lastUpdate": "2026-09-20T20:21:43.326Z",
+  "total": "189 hrs 15 mins",
+  "daily_average": "4 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 260221.38000000003,
-      "total_text": "72h 17m",
+      "total_seconds": 262295.10000000003,
+      "total_text": "72h 51m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 630152.561,
-      "total_text": "175h 2m",
+      "total_seconds": 632226.281,
+      "total_text": "175h 37m",
       "days_active": 27
     },
     "last_365_days": {
-      "total_seconds": 3314745.3279999997,
-      "total_text": "920h 45m",
+      "total_seconds": 3316819.0479999995,
+      "total_text": "921h 20m",
       "days_active": 195
     },
     "all_time": {
-      "total_seconds": 3314745.3279999997,
-      "total_text": "920h 45m",
+      "total_seconds": 3316819.0479999995,
+      "total_text": "921h 20m",
       "days_active": 195
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-20",
-      "seconds": 44136.586,
-      "text": "12 hrs 15 mins"
+      "seconds": 46210.306,
+      "text": "12 hrs 50 mins"
     }
   ],
   "heatmap": [
@@ -880,13 +880,13 @@
     },
     {
       "date": "2026-09-20",
-      "seconds": 44136.586
+      "seconds": 46210.306
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1175258.0910000002
+      "total_seconds": 1175495.2460000003
     },
     {
       "name": "C++",
@@ -894,11 +894,11 @@
     },
     {
       "name": "Python",
-      "total_seconds": 504565.6550000001
+      "total_seconds": 505398.8320000001
     },
     {
       "name": "TypeScript",
-      "total_seconds": 274839.2120000001
+      "total_seconds": 274974.0980000001
     },
     {
       "name": "JavaScript",
@@ -906,11 +906,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 129293.50400000002
+      "total_seconds": 129875.90000000001
     },
     {
       "name": "JSON",
-      "total_seconds": 58977.82499999998
+      "total_seconds": 58978.50299999998
     },
     {
       "name": "Java",
@@ -938,7 +938,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 15715.547999999999
+      "total_seconds": 15777.115
     },
     {
       "name": "CSS",
@@ -946,7 +946,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 12279.686000000002
+      "total_seconds": 12280.285
     },
     {
       "name": "CMake",
@@ -1002,7 +1002,7 @@
     },
     {
       "name": "Io",
-      "total_seconds": 749.267
+      "total_seconds": 786.825
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -2658,18 +2658,20 @@
       "Astro": 4.124
     },
     "2026-09-20": {
-      "Python": 18787.582,
-      "Markdown": 10978.027,
-      "Other": 9490.123,
+      "Python": 19620.759,
+      "Markdown": 11215.182,
+      "Other": 9675.827,
       "Go": 2382.268,
-      "JSON": 617.146,
-      "YAML": 543.174,
+      "JSON": 617.824,
+      "YAML": 604.741,
+      "Astro": 582.396,
       "C++": 494.285,
+      "TypeScript": 315.425,
       "TOML": 293.155,
-      "Git Config": 244.54,
-      "TypeScript": 180.539,
+      "Git Config": 245.139,
       "JavaScript": 50.634,
       "Text": 49.743,
+      "Io": 37.558,
       "Bash": 25.37
     }
   }
