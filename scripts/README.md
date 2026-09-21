@@ -9,6 +9,7 @@
 | `publish-git.ts` | 通用 Git 发布流程：创建或复用工作分支、检查、提交、同步 `main`、合并、推送和清理本地分支 | `pnpm git:publish [分支名]` |
 | `sync-wakatime.js` | 从 WakaTime API 同步编码统计数据到 `src/features/waka/data/wakatime.json` | 由 GitHub Actions 自动执行 |
 | `fetch-leetcode.ts` | 从 LeetCode 获取用户数据并写入 `src/features/leetcode-stats/data/leetcode.json` | `pnpm exec tsx scripts/fetch-leetcode.ts` |
+| `fetch-github-stats.ts` | 从 GitHub REST API 和 GraphQL `contributionCalendar` 同步账户、仓库、博客提交及每日贡献热力图数据到 `src/features/github/data/github-stats.json` | `pnpm exec tsx scripts/fetch-github-stats.ts` |
 | `generate-blog-changelog.ts` | 根据文章 Git 历史生成文章变更记录草稿，不修改文章 frontmatter | `pnpm changelog:dry-run` |
 | `sort-blog-changelog.ts` | 按日期排序文章 frontmatter 中的 `changelog` 条目 | `pnpm changelog:sort` |
 | `backfill-pubdate-time.ts` | 根据文章首次 Git 提交时间补全 `pubDate` 的时分 | `pnpm pubdate:backfill` |
@@ -97,24 +98,28 @@ chore: sync project metrics
 
 处理冲突后，先确认当前 Git 状态，再继续完成提交、合并或推送。不要在状态未确认的情况下强制删除工作分支。
 
-## WakaTime 和 LeetCode 自动同步
+## WakaTime、LeetCode 和 GitHub 自动同步
 
 `.github/workflows/deploy.yml` 在每次 `main` 推送，以及定时任务触发时执行：
 
 1. 运行 `scripts/sync-wakatime.js`；
 2. 运行 `scripts/fetch-leetcode.ts`；
-3. 将发生变化的数据文件提交并推送到 `main`；
-4. 执行 `pnpm run ci`；
-5. 部署 GitHub Pages。
+3. 运行 `scripts/fetch-github-stats.ts`；
+4. 将发生变化的数据文件提交并推送到 `main`；
+5. 执行 `pnpm run ci`；
+6. 部署 GitHub Pages。
 
 相关环境变量由 GitHub Actions Secrets 提供：
 
 ```text
 WAKATIME_API_KEY
 LEETCODE_SESSION
+GITHUB_TOKEN
 ```
 
-本地手动运行数据同步脚本前，需要在 `.env` 中配置相应变量。不要将 `.env` 或任何 API Key、Session 提交到 Git。
+`GITHUB_TOKEN` 为必需的同步令牌：GitHub Actions 使用 `${{ github.token }}` 请求 GitHub REST API 和 GraphQL `contributionCalendar`；本地手动运行时需要配置 `GITHUB_TOKEN`。贡献热力图数据由 GraphQL 返回的 `contributionDays` 转换为静态 JSON，前端自行绘制，不依赖 GitHub 外部图片。`fetch-github-stats.ts` 只写入公开数据，远程请求失败且已有 `src/features/github/data/github-stats.json` 时会保留旧缓存以避免阻断构建；首次同步没有缓存时会失败并输出原因。
+
+本地手动运行数据同步脚本前，需要在 `.env` 中配置相应变量。不要将 `.env` 或任何 API Key、Session、Token 提交到 Git。
 
 由于 Actions 可能在远程自动提交数据，`publish-git.ts` 在合并工作分支前会执行：
 
