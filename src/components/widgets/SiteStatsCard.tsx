@@ -25,15 +25,17 @@ export const SiteStatsCard: React.FC<SiteStatsCardProps> = ({
   });
 
   const lastActiveTime = useFetchGithubStats().lastActiveTime;
-  const formattedLastActiveTime = formatDate(
-    lastActiveTime,
-    {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    },
-    "zh-CN",
-  ).replaceAll("/", ".");
+  const formattedLastActiveTime = lastActiveTime
+    ? formatDate(
+        lastActiveTime,
+        {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        },
+        "zh-CN",
+      ).replaceAll("/", ".")
+    : "--";
 
   const displayedWordCount = useMemo(
     () => formatWordCount(wordCount),

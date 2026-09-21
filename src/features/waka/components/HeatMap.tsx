@@ -40,7 +40,7 @@ export const HeatMap = ({ heatmap }: HeatMapProps) => {
   };
 
   return (
-    <Card className="w-full">
+    <Card className="w-full overflow-visible">
       <CardHeader className="space-y-1 pb-6">
         <CardTitle className="text-sm font-semibold tracking-wide uppercase text-foreground">
           # Coding Heatmap

@@ -2,6 +2,7 @@
 import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
 import WakaDashboard from "@features/waka/components/WakaDashboard";
 import LeetcodeStats from "@features/leetcode-stats/components/LeetcodeStats";
+import GithubStatusPanel from "@features/github/components/GithubStatusPanel";
 import LeftSidebar from "@components/widgets/LeftSidebar.astro";
 import RightSidebar from "@components/widgets/RightSidebar.astro";
 import { getPostsData } from "@src/hooks/usePostsData";
@@ -30,6 +31,10 @@ const siteData = {
     </div>
 
     <WakaDashboard client:load />
+
+    <div class="my-12 border-t border-border" role="separator"></div>
+
+    <GithubStatusPanel client:load />
 
     <div class="my-12 border-t border-border" role="separator"></div>
 
