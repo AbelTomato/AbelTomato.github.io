@@ -51,7 +51,7 @@ export const friendsList: Friend[] = [
   {
     name: "Linjer",
     description: "软工学长，因对算法的热情而相聚",
-    url: "https://xmu-linjer.vercel.app/",
+    url: "https://lymerinblog.z7.web.core.windows.net/zh-cn/",
     avatar: getImg(avatarImages, "linjer"),
     cover: getImg(coverImages, "linjer"),
   },
