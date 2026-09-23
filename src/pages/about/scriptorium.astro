@@ -1,0 +1,66 @@
+---
+import LeftSidebar from "@components/widgets/LeftSidebar.astro";
+import RightSidebar from "@components/widgets/RightSidebar.astro";
+import { CREATE_TIME } from "@src/consts";
+import { getPostsData } from "@src/hooks/usePostsData";
+import ThreeColumnLayout from "@layouts/ThreeColumnLayout.astro";
+import ScriptoriumCollection from "@features/scriptorium/components/ScriptoriumCollection.astro";
+import { scriptoriumCollections } from "@features/scriptorium/data/collections";
+
+const { totalPostsCounts, totalTagsCounts, totalPostsWords } =
+  await getPostsData();
+const siteData = {
+  createTime: CREATE_TIME,
+  articleCount: totalPostsCounts,
+  tagCount: totalTagsCounts,
+  wordCount: totalPostsWords,
+};
+---
+
+<ThreeColumnLayout
+  title="藏经阁 · Scriptorium"
+  description="收集实用工具、学习资源与有趣网站的个人收藏夹"
+>
+  <LeftSidebar slot="left-sidebar" />
+
+  <main class="mx-auto flex w-full min-w-0 flex-col gap-8">
+    <header
+      class="relative overflow-hidden rounded-3xl border border-amber-200/70 bg-linear-to-br from-amber-50/90 via-white/80 to-orange-100/70 p-6 shadow-sm dark:border-amber-900/50 dark:from-amber-950/45 dark:via-gray-900/80 dark:to-orange-950/30 sm:p-9"
+    >
+      <div
+        class="pointer-events-none absolute -right-10 -top-16 size-48 rounded-full bg-amber-300/20 blur-3xl dark:bg-amber-500/10"
+        aria-hidden="true"
+      >
+      </div>
+      <div class="relative">
+        <p
+          class="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-amber-700 dark:text-amber-300"
+        >
+          A personal collection
+        </p>
+        <h1
+          class="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+        >
+          <span>藏经阁</span>
+          <span
+            class="font-serif text-xl font-medium text-amber-700 dark:text-amber-300 sm:text-2xl"
+            >Scriptorium</span
+          >
+        </h1>
+        <p
+          class="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base"
+        >
+          岧峣飞阁大湖傍，有客翻经日满床
+        </p>
+      </div>
+    </header>
+
+    {
+      scriptoriumCollections.map((collection, index) => (
+        <ScriptoriumCollection collection={collection} index={index} />
+      ))
+    }
+  </main>
+
+  <RightSidebar slot="right-sidebar" siteData={siteData} />
+</ThreeColumnLayout>

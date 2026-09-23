@@ -5,6 +5,7 @@ const isAboutSection = [
   "about/profile",
   "about/guestbook",
   "about/friends",
+  "about/scriptorium",
 ].includes(pathname);
 ---
 
@@ -56,6 +57,14 @@ const isAboutSection = [
         "about-menu__item": true,
         "about-menu__item--active": pathname === "/about/friends",
       }}>友链</a
+    >
+    <a
+      href="/about/scriptorium"
+      role="menuitem"
+      class:list={{
+        "about-menu__item": true,
+        "about-menu__item--active": pathname === "/about/scriptorium",
+      }}>藏经阁</a
     >
   </div>
 </div>
