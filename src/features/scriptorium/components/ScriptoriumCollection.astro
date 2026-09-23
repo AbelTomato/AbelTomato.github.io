@@ -1,0 +1,41 @@
+---
+import ScriptoriumSiteCard from "./ScriptoriumSiteCard.astro";
+import type { ScriptoriumCollection as ScriptoriumCollectionData } from "../types";
+
+interface Props {
+  collection: ScriptoriumCollectionData;
+  index: number;
+}
+
+const { collection, index } = Astro.props;
+const headingId = `scriptorium-collection-${index}`;
+---
+
+<section class="space-y-4" aria-labelledby={headingId}>
+  <div
+    class="flex flex-wrap items-end justify-between gap-2 border-b border-border pb-3"
+  >
+    <div>
+      <h2
+        id={headingId}
+        class="text-xl font-bold tracking-tight text-foreground"
+      >
+        {collection.category}
+      </h2>
+      <p class="mt-1 text-sm text-muted-foreground">
+        {collection.description}
+      </p>
+    </div>
+    <span class="text-xs tabular-nums text-muted-foreground">
+      {String(collection.items.length).padStart(2, "0")} SITES
+    </span>
+  </div>
+
+  <ul class="grid list-none gap-3 p-0 sm:grid-cols-2">
+    {collection.items.map((site) => (
+      <li>
+        <ScriptoriumSiteCard site={site} />
+      </li>
+    ))}
+  </ul>
+</section>

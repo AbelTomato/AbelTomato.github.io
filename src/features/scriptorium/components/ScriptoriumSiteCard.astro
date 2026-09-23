@@ -1,0 +1,149 @@
+---
+import type { ScriptoriumSite } from "../types";
+
+interface Props {
+  site: ScriptoriumSite;
+}
+
+const { site } = Astro.props;
+const siteUrl = new URL(site.url);
+const hostname = siteUrl.hostname;
+const faviconUrl = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(hostname)}&sz=64`;
+const siteFaviconUrl = `${siteUrl.origin}/favicon.ico`;
+---
+
+<article
+  class="group flex h-full min-h-32 items-start gap-4 rounded-2xl border border-border/80 bg-card/75 p-4 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-amber-300 hover:bg-card hover:shadow-md dark:hover:border-amber-800"
+>
+  <span
+    class="relative flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border/70 bg-background text-2xl"
+  >
+    <span aria-hidden="true">{site.icon}</span>
+    <img
+      src={faviconUrl}
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      data-scriptorium-favicon
+      data-favicon-fallback={siteFaviconUrl}
+      class="absolute inset-0 size-full bg-background object-contain p-2 opacity-0"
+    />
+  </span>
+
+  <div class="flex min-w-0 flex-1 flex-col">
+    <div class="flex items-start justify-between gap-2">
+      <a
+        href={site.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="min-w-0 font-semibold text-foreground no-underline transition-colors hover:text-amber-700 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 dark:hover:text-amber-300"
+      >
+        <span class="break-words">{site.name}</span>
+        <span class="sr-only">（在新窗口打开）</span>
+      </a>
+      <button
+        type="button"
+        data-copy-url={site.url}
+        data-copy-site-name={site.name}
+        data-copy-default-label="复制网址"
+        aria-label={`复制 ${site.name} 的网址`}
+        class="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-background/80 px-2.5 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-amber-300 hover:bg-amber-50 hover:text-amber-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 dark:hover:border-amber-800 dark:hover:bg-amber-950/40 dark:hover:text-amber-200"
+      >
+        <svg
+          class="size-3.5"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          aria-hidden="true"
+        >
+          <rect x="7" y="6" width="9" height="11" rx="2"></rect>
+          <path d="M13 6V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5v9A1.5 1.5 0 0 0 4.5 15H7"></path>
+        </svg>
+        <span data-copy-label aria-live="polite" aria-atomic="true">复制网址</span>
+      </button>
+    </div>
+
+    <p class="mt-1 text-sm leading-6 text-muted-foreground">
+      {site.description}
+    </p>
+    <a
+      href={site.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-2 block truncate font-mono text-xs text-amber-700/80 no-underline hover:text-amber-800 hover:underline dark:text-amber-300/80 dark:hover:text-amber-200"
+    >
+      {hostname}
+    </a>
+  </div>
+</article>
+
+<script>
+  const initializeScriptoriumCards = () => {
+    document
+      .querySelectorAll<HTMLImageElement>("[data-scriptorium-favicon]")
+      .forEach((image) => {
+        if (image.dataset.fallbackReady) return;
+        image.dataset.fallbackReady = "true";
+
+        const showFavicon = () => {
+          if (image.naturalWidth > 0) image.classList.remove("opacity-0");
+        };
+
+        const useSiteFavicon = () => {
+          const fallbackUrl = image.dataset.faviconFallback;
+          if (!fallbackUrl || image.dataset.fallbackAttempted) return;
+
+          image.dataset.fallbackAttempted = "true";
+          image.src = fallbackUrl;
+        };
+
+        image.addEventListener("load", showFavicon, { once: true });
+        image.addEventListener("error", useSiteFavicon);
+
+        if (image.complete) {
+          if (image.naturalWidth > 0) showFavicon();
+          else useSiteFavicon();
+        }
+      });
+  };
+
+  document.addEventListener("click", async (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const button = target.closest<HTMLButtonElement>("[data-copy-url]");
+    if (!button) return;
+
+    const label = button.querySelector<HTMLElement>("[data-copy-label]");
+    const defaultLabel = button.dataset.copyDefaultLabel ?? "复制网址";
+    const url = button.dataset.copyUrl;
+    if (!label || !url) return;
+
+    try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error("Clipboard API is unavailable");
+      }
+      await navigator.clipboard.writeText(url);
+      label.textContent = "已复制";
+      button.setAttribute("aria-label", "网址已复制");
+      button.dataset.copyState = "success";
+    } catch {
+      label.textContent = "复制失败";
+      button.setAttribute("aria-label", "复制网址失败");
+      button.dataset.copyState = "error";
+    }
+
+    window.setTimeout(() => {
+      if (!button.isConnected) return;
+      label.textContent = defaultLabel;
+      button.setAttribute(
+        "aria-label",
+        `复制 ${button.dataset.copySiteName ?? "网站"} 的网址`,
+      );
+      button.removeAttribute("data-copy-state");
+    }, 1600);
+  });
+
+  initializeScriptoriumCards();
+  document.addEventListener("astro:page-load", initializeScriptoriumCards);
+</script>
