@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-24T21:10:15.077Z",
-  "total": "225 hrs 11 mins",
-  "daily_average": "5 hrs 45 mins",
+  "lastUpdate": "2026-09-25T03:34:15.749Z",
+  "total": "223 hrs 48 mins",
+  "daily_average": "5 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 267547.181,
-      "total_text": "74h 19m",
+      "total_seconds": 237048.23799999998,
+      "total_text": "65h 50m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 778633.888,
-      "total_text": "216h 17m",
-      "days_active": 29
+      "total_seconds": 782184.618,
+      "total_text": "217h 16m",
+      "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3475246.3319999995,
-      "total_text": "965h 20m",
-      "days_active": 199
+      "total_seconds": 3478797.0619999995,
+      "total_text": "966h 19m",
+      "days_active": 200
     },
     "all_time": {
-      "total_seconds": 3475246.3319999995,
-      "total_text": "965h 20m",
-      "days_active": 199
+      "total_seconds": 3478797.0619999995,
+      "total_text": "966h 19m",
+      "days_active": 200
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-18",
-      "seconds": 34049.673,
-      "text": "9 hrs 27 mins"
-    },
     {
       "date": "2026-09-19",
       "seconds": 28859.918,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-09-24",
-      "seconds": 42560.481,
-      "text": "11 hrs 49 mins"
+      "seconds": 42606.393,
+      "text": "11 hrs 50 mins"
+    },
+    {
+      "date": "2026-09-25",
+      "seconds": 3504.818,
+      "text": "58 mins"
     }
   ],
   "heatmap": [
@@ -896,17 +896,21 @@
     },
     {
       "date": "2026-09-24",
-      "seconds": 42560.481
+      "seconds": 42606.393
+    },
+    {
+      "date": "2026-09-25",
+      "seconds": 3504.818
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1215156.3200000003
+      "total_seconds": 1215214.3910000003
     },
     {
       "name": "Python",
-      "total_seconds": 585404.861
+      "total_seconds": 585408.108
     },
     {
       "name": "C++",
@@ -914,11 +918,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 282318.6110000002
+      "total_seconds": 282916.4640000002
     },
     {
       "name": "JavaScript",
-      "total_seconds": 152126.10400000005
+      "total_seconds": 152330.47900000005
     },
     {
       "name": "Astro",
@@ -926,7 +930,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 65652.39699999998
+      "total_seconds": 66310.81999999998
     },
     {
       "name": "Java",
@@ -954,7 +958,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 16787.760000000002
+      "total_seconds": 17205.445000000003
     },
     {
       "name": "CSS",
@@ -2730,7 +2734,7 @@
     "2026-09-24": {
       "Python": 21783.113,
       "Other": 9125.913,
-      "Markdown": 6428.767,
+      "Markdown": 6474.679,
       "JSON": 2573.615,
       "TypeScript": 1822.402,
       "TOML": 472.388,
@@ -2740,6 +2744,15 @@
       "Bash": 39.519,
       "HTML": 11.129,
       "Text": 0.018
+    },
+    "2026-09-25": {
+      "Other": 1611.076,
+      "JSON": 658.423,
+      "TypeScript": 597.853,
+      "YAML": 417.685,
+      "JavaScript": 204.375,
+      "Markdown": 12.159,
+      "Python": 3.247
     }
   }
 }
