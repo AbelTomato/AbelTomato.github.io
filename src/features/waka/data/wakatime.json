@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-25T03:34:15.749Z",
-  "total": "223 hrs 48 mins",
-  "daily_average": "5 hrs 42 mins",
+  "lastUpdate": "2026-09-25T11:12:56.235Z",
+  "total": "224 hrs 57 mins",
+  "daily_average": "5 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 237048.23799999998,
-      "total_text": "65h 50m",
+      "total_seconds": 241148.628,
+      "total_text": "66h 59m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 782184.618,
-      "total_text": "217h 16m",
+      "total_seconds": 786285.008,
+      "total_text": "218h 24m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3478797.0619999995,
-      "total_text": "966h 19m",
+      "total_seconds": 3482897.4519999996,
+      "total_text": "967h 28m",
       "days_active": 200
     },
     "all_time": {
-      "total_seconds": 3478797.0619999995,
-      "total_text": "966h 19m",
+      "total_seconds": 3482897.4519999996,
+      "total_text": "967h 28m",
       "days_active": 200
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-25",
-      "seconds": 3504.818,
-      "text": "58 mins"
+      "seconds": 7605.208,
+      "text": "2 hrs 6 mins"
     }
   ],
   "heatmap": [
@@ -900,17 +900,17 @@
     },
     {
       "date": "2026-09-25",
-      "seconds": 3504.818
+      "seconds": 7605.208
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1215214.3910000003
+      "total_seconds": 1215280.4250000003
     },
     {
       "name": "Python",
-      "total_seconds": 585408.108
+      "total_seconds": 586187.8570000001
     },
     {
       "name": "C++",
@@ -918,7 +918,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 282916.4640000002
+      "total_seconds": 284142.82100000023
     },
     {
       "name": "JavaScript",
@@ -930,7 +930,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 66310.81999999998
+      "total_seconds": 67365.16499999998
     },
     {
       "name": "Java",
@@ -958,7 +958,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 17205.445000000003
+      "total_seconds": 17907.178000000004
     },
     {
       "name": "CSS",
@@ -982,7 +982,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 7301.967
+      "total_seconds": 7344.021
     },
     {
       "name": "Docker",
@@ -2746,13 +2746,15 @@
       "Text": 0.018
     },
     "2026-09-25": {
-      "Other": 1611.076,
-      "JSON": 658.423,
-      "TypeScript": 597.853,
-      "YAML": 417.685,
+      "Other": 1841.194,
+      "TypeScript": 1824.21,
+      "JSON": 1712.768,
+      "YAML": 1119.418,
+      "Python": 782.996,
       "JavaScript": 204.375,
-      "Markdown": 12.159,
-      "Python": 3.247
+      "Markdown": 78.193,
+      "TOML": 42.054,
+      "TSConfig": 0
     }
   }
 }
