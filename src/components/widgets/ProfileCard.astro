@@ -1,5 +1,7 @@
 ---
 import avatar from "@assets/images/common/喵喵.jpg";
+
+const githubAvatarUrl = "https://github.com/AbelTomato.png?size=160";
 ---
 
 <div
@@ -10,8 +12,9 @@ import avatar from "@assets/images/common/喵喵.jpg";
       class="relative mb-4 h-20 w-20 rounded-full bg-blue-100 p-0.5 dark:bg-blue-950/60"
     >
       <img
-        src={avatar.src}
-        alt="头像"
+        src={githubAvatarUrl}
+        alt="AbelTomato 的 GitHub 头像"
+        onerror={`this.onerror=null; this.src='${avatar.src}'`}
         class="h-full w-full rounded-full border-2 border-white object-cover dark:border-zinc-900"
       />
     </div>
