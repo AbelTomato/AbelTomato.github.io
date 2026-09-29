@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-29T12:10:52.974Z",
-  "total": "249 hrs 11 mins",
-  "daily_average": "6 hrs 10 mins",
+  "lastUpdate": "2026-09-29T21:54:15.012Z",
+  "total": "251 hrs 2 mins",
+  "daily_average": "6 hrs 13 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 176669.156,
-      "total_text": "49h 4m",
+      "total_seconds": 183319.289,
+      "total_text": "50h 55m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 814285.6680000001,
-      "total_text": "226h 11m",
+      "total_seconds": 820935.801,
+      "total_text": "228h 2m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3578092.2909999993,
-      "total_text": "993h 54m",
+      "total_seconds": 3584742.423999999,
+      "total_text": "995h 45m",
       "days_active": 204
     },
     "all_time": {
-      "total_seconds": 3578092.2909999993,
-      "total_text": "993h 54m",
+      "total_seconds": 3584742.423999999,
+      "total_text": "995h 45m",
       "days_active": 204
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 21626.954,
-      "text": "6 hrs"
+      "seconds": 28277.087,
+      "text": "7 hrs 51 mins"
     }
   ],
   "heatmap": [
@@ -916,17 +916,17 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 21626.954
+      "seconds": 28277.087
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1244576.3530000001
+      "total_seconds": 1245387.2470000002
     },
     {
       "name": "Python",
-      "total_seconds": 630794.5880000001
+      "total_seconds": 633024.9610000001
     },
     {
       "name": "C++",
@@ -974,7 +974,7 @@
     },
     {
       "name": "YAML",
-      "total_seconds": 18161.936000000005
+      "total_seconds": 18231.786000000004
     },
     {
       "name": "CSS",
@@ -2805,15 +2805,17 @@
       "TOML": 26.142
     },
     "2026-09-29": {
-      "Python": 10286.514,
-      "Markdown": 6148.052,
-      "Other": 3163.757,
+      "Python": 12516.887,
+      "Markdown": 6958.946,
+      "Text": 4373.273,
+      "Other": 2329.5,
       "Astro": 717.06,
       "Bash": 532.507,
       "Image (png)": 374.561,
       "Git Config": 143.04,
       "TypeScript": 141.674,
       "JSON": 91.64,
+      "YAML": 69.85,
       "Io": 28.149
     }
   }
