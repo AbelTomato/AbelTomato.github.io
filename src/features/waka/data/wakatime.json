@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-29T04:22:52.957Z",
-  "total": "244 hrs 19 mins",
-  "daily_average": "6 hrs 3 mins",
+  "lastUpdate": "2026-09-29T04:53:03.038Z",
+  "total": "244 hrs 29 mins",
+  "daily_average": "6 hrs 4 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 159129.68699999998,
-      "total_text": "44h 12m",
+      "total_seconds": 159727.724,
+      "total_text": "44h 22m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 796746.199,
-      "total_text": "221h 19m",
+      "total_seconds": 797344.236,
+      "total_text": "221h 29m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3560552.821999999,
-      "total_text": "989h 2m",
+      "total_seconds": 3561150.8589999992,
+      "total_text": "989h 12m",
       "days_active": 204
     },
     "all_time": {
-      "total_seconds": 3560552.821999999,
-      "total_text": "989h 2m",
+      "total_seconds": 3561150.8589999992,
+      "total_text": "989h 12m",
       "days_active": 204
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 4087.485,
-      "text": "1 hr 8 mins"
+      "seconds": 4685.522,
+      "text": "1 hr 18 mins"
     }
   ],
   "heatmap": [
@@ -916,13 +916,13 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 4087.485
+      "seconds": 4685.522
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1242515.7860000003
+      "total_seconds": 1242755.0960000001
     },
     {
       "name": "Python",
@@ -934,7 +934,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 289433.4550000002
+      "total_seconds": 289459.9580000002
     },
     {
       "name": "JavaScript",
@@ -942,11 +942,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 130239.92
+      "total_seconds": 130464.719
     },
     {
       "name": "JSON",
-      "total_seconds": 69210.82999999997
+      "total_seconds": 69241.18399999998
     },
     {
       "name": "Java",
@@ -1038,7 +1038,7 @@
     },
     {
       "name": "Io",
-      "total_seconds": 958.425
+      "total_seconds": 973.9929999999999
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -2805,7 +2805,12 @@
       "TOML": 26.142
     },
     "2026-09-29": {
-      "Markdown": 4087.485
+      "Markdown": 4326.795,
+      "Astro": 224.799,
+      "Other": 61.503,
+      "JSON": 30.354,
+      "TypeScript": 26.503,
+      "Io": 15.568
     }
   }
 }
