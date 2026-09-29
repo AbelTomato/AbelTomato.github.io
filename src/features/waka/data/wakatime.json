@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-09-29T04:53:03.038Z",
-  "total": "244 hrs 29 mins",
-  "daily_average": "6 hrs 4 mins",
+  "lastUpdate": "2026-09-29T12:10:52.974Z",
+  "total": "249 hrs 11 mins",
+  "daily_average": "6 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 159727.724,
-      "total_text": "44h 22m",
+      "total_seconds": 176669.156,
+      "total_text": "49h 4m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 797344.236,
-      "total_text": "221h 29m",
+      "total_seconds": 814285.6680000001,
+      "total_text": "226h 11m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3561150.8589999992,
-      "total_text": "989h 12m",
+      "total_seconds": 3578092.2909999993,
+      "total_text": "993h 54m",
       "days_active": 204
     },
     "all_time": {
-      "total_seconds": 3561150.8589999992,
-      "total_text": "989h 12m",
+      "total_seconds": 3578092.2909999993,
+      "total_text": "993h 54m",
       "days_active": 204
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 4685.522,
-      "text": "1 hr 18 mins"
+      "seconds": 21626.954,
+      "text": "6 hrs"
     }
   ],
   "heatmap": [
@@ -916,17 +916,17 @@
     },
     {
       "date": "2026-09-29",
-      "seconds": 4685.522
+      "seconds": 21626.954
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1242755.0960000001
+      "total_seconds": 1244576.3530000001
     },
     {
       "name": "Python",
-      "total_seconds": 620508.0740000001
+      "total_seconds": 630794.5880000001
     },
     {
       "name": "C++",
@@ -934,7 +934,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 289459.9580000002
+      "total_seconds": 289575.1290000002
     },
     {
       "name": "JavaScript",
@@ -942,11 +942,11 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 130464.719
+      "total_seconds": 130956.98
     },
     {
       "name": "JSON",
-      "total_seconds": 69241.18399999998
+      "total_seconds": 69302.46999999997
     },
     {
       "name": "Java",
@@ -970,7 +970,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 19493.531999999996
+      "total_seconds": 20026.038999999997
     },
     {
       "name": "YAML",
@@ -982,7 +982,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 12549.539
+      "total_seconds": 12692.579000000002
     },
     {
       "name": "CMake",
@@ -1038,7 +1038,7 @@
     },
     {
       "name": "Io",
-      "total_seconds": 973.9929999999999
+      "total_seconds": 986.574
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -1051,6 +1051,10 @@
     {
       "name": "Mako",
       "total_seconds": 602.985
+    },
+    {
+      "name": "Image (png)",
+      "total_seconds": 382.539
     },
     {
       "name": "Godot Resource",
@@ -1083,10 +1087,6 @@
     {
       "name": "SCSS",
       "total_seconds": 8.684
-    },
-    {
-      "name": "Image (png)",
-      "total_seconds": 7.978
     }
   ],
   "daily_languages": {
@@ -2805,12 +2805,16 @@
       "TOML": 26.142
     },
     "2026-09-29": {
-      "Markdown": 4326.795,
-      "Astro": 224.799,
-      "Other": 61.503,
-      "JSON": 30.354,
-      "TypeScript": 26.503,
-      "Io": 15.568
+      "Python": 10286.514,
+      "Markdown": 6148.052,
+      "Other": 3163.757,
+      "Astro": 717.06,
+      "Bash": 532.507,
+      "Image (png)": 374.561,
+      "Git Config": 143.04,
+      "TypeScript": 141.674,
+      "JSON": 91.64,
+      "Io": 28.149
     }
   }
 }
