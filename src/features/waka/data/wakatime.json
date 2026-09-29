@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-28T22:57:16.714Z",
-  "total": "245 hrs 6 mins",
-  "daily_average": "6 hrs 4 mins",
+  "lastUpdate": "2026-09-29T03:38:59.029Z",
+  "total": "244 hrs 19 mins",
+  "daily_average": "6 hrs 3 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 202304.957,
-      "total_text": "56h 11m",
+      "total_seconds": 159129.68699999998,
+      "total_text": "44h 12m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 813037.332,
-      "total_text": "225h 50m",
+      "total_seconds": 796746.199,
+      "total_text": "221h 19m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3556465.3369999994,
-      "total_text": "987h 54m",
-      "days_active": 203
+      "total_seconds": 3560552.821999999,
+      "total_text": "989h 2m",
+      "days_active": 204
     },
     "all_time": {
-      "total_seconds": 3556465.3369999994,
-      "total_text": "987h 54m",
-      "days_active": 203
+      "total_seconds": 3560552.821999999,
+      "total_text": "989h 2m",
+      "days_active": 204
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-22",
-      "seconds": 47262.755,
-      "text": "13 hrs 7 mins"
-    },
     {
       "date": "2026-09-23",
       "seconds": 31262.716,
@@ -59,6 +54,11 @@
       "date": "2026-09-28",
       "seconds": 29619.812,
       "text": "8 hrs 13 mins"
+    },
+    {
+      "date": "2026-09-29",
+      "seconds": 4087.485,
+      "text": "1 hr 8 mins"
     }
   ],
   "heatmap": [
@@ -913,12 +913,16 @@
     {
       "date": "2026-09-28",
       "seconds": 29619.812
+    },
+    {
+      "date": "2026-09-29",
+      "seconds": 4087.485
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1238428.3010000002
+      "total_seconds": 1242515.7860000003
     },
     {
       "name": "Python",
@@ -2799,6 +2803,9 @@
       "YAML": 173.232,
       "Text": 144.14,
       "TOML": 26.142
+    },
+    "2026-09-29": {
+      "Markdown": 4087.485
     }
   }
 }
