@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-09-30T21:53:52.291Z",
-  "total": "256 hrs 18 mins",
-  "daily_average": "6 hrs 19 mins",
+  "lastUpdate": "2026-10-01T04:18:22.657Z",
+  "total": "256 hrs 17 mins",
+  "daily_average": "6 hrs 18 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 174587.77300000002,
-      "total_text": "48h 29m",
+      "total_seconds": 141211.90600000002,
+      "total_text": "39h 13m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 831015.506,
-      "total_text": "230h 50m",
+      "total_seconds": 824233.536,
+      "total_text": "228h 57m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3607273.6239999994,
-      "total_text": "1002h 1m",
-      "days_active": 205
+      "total_seconds": 3616504.1499999994,
+      "total_text": "1004h 35m",
+      "days_active": 206
     },
     "all_time": {
-      "total_seconds": 3607273.6239999994,
-      "total_text": "1002h 1m",
-      "days_active": 205
+      "total_seconds": 3616504.1499999994,
+      "total_text": "1004h 35m",
+      "days_active": 206
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-24",
-      "seconds": 42606.393,
-      "text": "11 hrs 50 mins"
-    },
     {
       "date": "2026-09-25",
       "seconds": 9035.088,
@@ -59,6 +54,11 @@
       "date": "2026-09-30",
       "seconds": 22531.2,
       "text": "6 hrs 15 mins"
+    },
+    {
+      "date": "2026-10-01",
+      "seconds": 9230.526,
+      "text": "2 hrs 33 mins"
     }
   ],
   "heatmap": [
@@ -921,12 +921,16 @@
     {
       "date": "2026-09-30",
       "seconds": 22531.2
+    },
+    {
+      "date": "2026-10-01",
+      "seconds": 9230.526
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1251976.9770000002
+      "total_seconds": 1258384.3820000002
     },
     {
       "name": "Python",
@@ -950,7 +954,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 70981.09799999997
+      "total_seconds": 71527.55599999997
     },
     {
       "name": "Java",
@@ -2830,6 +2834,11 @@
       "Text": 1570.193,
       "Python": 1036.099,
       "YAML": 630.773
+    },
+    "2026-10-01": {
+      "Markdown": 6407.405,
+      "Other": 2276.663,
+      "JSON": 546.458
     }
   }
 }
