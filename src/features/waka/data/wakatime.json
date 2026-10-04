@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-03T20:37:19.677Z",
-  "total": "265 hrs 4 mins",
-  "daily_average": "6 hrs 20 mins",
+  "lastUpdate": "2026-10-04T04:25:42.566Z",
+  "total": "265 hrs 49 mins",
+  "daily_average": "6 hrs 11 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 146173.673,
-      "total_text": "40h 36m",
+      "total_seconds": 126761.622,
+      "total_text": "35h 12m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 818805.207,
-      "total_text": "227h 26m",
+      "total_seconds": 815715.385,
+      "total_text": "226h 35m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3650898.043999999,
-      "total_text": "1014h 8m",
-      "days_active": 208
+      "total_seconds": 3653607.146999999,
+      "total_text": "1014h 53m",
+      "days_active": 209
     },
     "all_time": {
-      "total_seconds": 3650898.043999999,
-      "total_text": "1014h 8m",
-      "days_active": 208
+      "total_seconds": 3653607.146999999,
+      "total_text": "1014h 53m",
+      "days_active": 209
     }
   },
   "weekly": [
-    {
-      "date": "2026-09-27",
-      "seconds": 22121.154,
-      "text": "6 hrs 8 mins"
-    },
     {
       "date": "2026-09-28",
       "seconds": 29619.812,
@@ -59,6 +54,11 @@
       "date": "2026-10-03",
       "seconds": 13771.189,
       "text": "3 hrs 49 mins"
+    },
+    {
+      "date": "2026-10-04",
+      "seconds": 2709.103,
+      "text": "45 mins"
     }
   ],
   "heatmap": [
@@ -933,16 +933,20 @@
     {
       "date": "2026-10-03",
       "seconds": 13771.189
+    },
+    {
+      "date": "2026-10-04",
+      "seconds": 2709.103
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1268579.3650000002
+      "total_seconds": 1269538.2690000003
     },
     {
       "name": "Python",
-      "total_seconds": 648619.4470000002
+      "total_seconds": 649865.8090000001
     },
     {
       "name": "C++",
@@ -2872,6 +2876,11 @@
       "Bash": 142.285,
       "TOML": 135.962,
       "JSON": 93.248
+    },
+    "2026-10-04": {
+      "Python": 1246.362,
+      "Markdown": 958.904,
+      "Other": 503.837
     }
   }
 }
