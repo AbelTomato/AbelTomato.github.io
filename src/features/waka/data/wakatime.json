@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-08T22:56:19.411Z",
-  "total": "274 hrs 52 mins",
-  "daily_average": "6 hrs 11 mins",
+  "lastUpdate": "2026-10-09T04:41:35.138Z",
+  "total": "270 hrs 44 mins",
+  "daily_average": "6 hrs 5 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 109167.643,
-      "total_text": "30h 19m",
+      "total_seconds": 101337.604,
+      "total_text": "28h 8m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 814447.72,
-      "total_text": "226h 14m",
+      "total_seconds": 790242.04,
+      "total_text": "219h 30m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3732958.3229999985,
-      "total_text": "1036h 55m",
-      "days_active": 213
+      "total_seconds": 3738464.4589999984,
+      "total_text": "1038h 27m",
+      "days_active": 214
     },
     "all_time": {
-      "total_seconds": 3732958.3229999985,
-      "total_text": "1036h 55m",
-      "days_active": 213
+      "total_seconds": 3738464.4589999984,
+      "total_text": "1038h 27m",
+      "days_active": 214
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-02",
-      "seconds": 13336.175,
-      "text": "3 hrs 42 mins"
-    },
     {
       "date": "2026-10-03",
       "seconds": 13771.189,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-10-08",
-      "seconds": 31902.518,
-      "text": "8 hrs 51 mins"
+      "seconds": 31938.259,
+      "text": "8 hrs 52 mins"
+    },
+    {
+      "date": "2026-10-09",
+      "seconds": 5470.395,
+      "text": "1 hr 31 mins"
     }
   ],
   "heatmap": [
@@ -952,17 +952,21 @@
     },
     {
       "date": "2026-10-08",
-      "seconds": 31902.518
+      "seconds": 31938.259
+    },
+    {
+      "date": "2026-10-09",
+      "seconds": 5470.395
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1298809.0510000002
+      "total_seconds": 1302323.9880000001
     },
     {
       "name": "Python",
-      "total_seconds": 684257.3000000002
+      "total_seconds": 685785.6870000002
     },
     {
       "name": "C++",
@@ -994,7 +998,7 @@
     },
     {
       "name": "Go",
-      "total_seconds": 31162.542000000005
+      "total_seconds": 31351.014000000006
     },
     {
       "name": "C",
@@ -2924,7 +2928,7 @@
     },
     "2026-10-08": {
       "Python": 15282.251,
-      "Markdown": 8429.97,
+      "Markdown": 8465.711,
       "Other": 5449.592,
       "Go": 1816.258,
       "C++": 668.399,
@@ -2932,6 +2936,12 @@
       "Bash": 61.189,
       "TOML": 37.357,
       "JSON": 0.096
+    },
+    "2026-10-09": {
+      "Markdown": 3479.196,
+      "Python": 1528.387,
+      "Other": 274.34,
+      "Go": 188.472
     }
   }
 }
