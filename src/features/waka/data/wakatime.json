@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-11T04:09:31.185Z",
-  "total": "277 hrs 40 mins",
-  "daily_average": "6 hrs 14 mins",
+  "lastUpdate": "2026-10-11T12:09:24.045Z",
+  "total": "282 hrs 11 mins",
+  "daily_average": "6 hrs 21 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 110875.253,
-      "total_text": "30h 47m",
+      "total_seconds": 127153.32,
+      "total_text": "35h 19m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 797186.0109999999,
-      "total_text": "221h 26m",
+      "total_seconds": 813464.0779999999,
+      "total_text": "225h 57m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3791896.9239999983,
-      "total_text": "1053h 18m",
+      "total_seconds": 3808174.990999998,
+      "total_text": "1057h 49m",
       "days_active": 216
     },
     "all_time": {
-      "total_seconds": 3791896.9239999983,
-      "total_text": "1053h 18m",
+      "total_seconds": 3808174.990999998,
+      "total_text": "1057h 49m",
       "days_active": 216
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-11",
-      "seconds": 8843.594,
-      "text": "2 hrs 27 mins"
+      "seconds": 25121.661,
+      "text": "6 hrs 58 mins"
     }
   ],
   "heatmap": [
@@ -964,17 +964,17 @@
     },
     {
       "date": "2026-10-11",
-      "seconds": 8843.594
+      "seconds": 25121.661
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1314450.977
+      "total_seconds": 1317420.0520000001
     },
     {
       "name": "Python",
-      "total_seconds": 717428.7250000001
+      "total_seconds": 729160.3370000002
     },
     {
       "name": "C++",
@@ -982,11 +982,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 291539.2040000002
+      "total_seconds": 292025.7270000002
     },
     {
       "name": "JavaScript",
-      "total_seconds": 152960.01200000005
+      "total_seconds": 153345.92700000005
     },
     {
       "name": "Astro",
@@ -1018,7 +1018,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 22059.510999999995
+      "total_seconds": 22217.144999999993
     },
     {
       "name": "YAML",
@@ -1077,12 +1077,12 @@
       "total_seconds": 1677.924
     },
     {
-      "name": "TeX",
-      "total_seconds": 1376.114
+      "name": "Vue",
+      "total_seconds": 1414.208
     },
     {
-      "name": "Vue",
-      "total_seconds": 1370.366
+      "name": "TeX",
+      "total_seconds": 1376.114
     },
     {
       "name": "Lua",
@@ -2973,12 +2973,14 @@
       "INI": 88.449
     },
     "2026-10-11": {
-      "Python": 6036.205,
-      "Markdown": 1270.819,
-      "TypeScript": 662.967,
-      "JavaScript": 399.175,
-      "Other": 270.28,
-      "JSON": 204.148
+      "Python": 17767.817,
+      "Markdown": 4239.894,
+      "TypeScript": 1149.49,
+      "JavaScript": 785.09,
+      "Other": 773.746,
+      "JSON": 204.148,
+      "Bash": 157.634,
+      "Vue": 43.842
     }
   }
 }
