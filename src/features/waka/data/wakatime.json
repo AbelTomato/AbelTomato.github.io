@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-12T14:29:44.040Z",
-  "total": "287 hrs 20 mins",
-  "daily_average": "6 hrs 28 mins",
+  "lastUpdate": "2026-10-13T00:10:46.727Z",
+  "total": "282 hrs 44 mins",
+  "daily_average": "6 hrs 20 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 161944.44,
-      "total_text": "44h 59m",
+      "total_seconds": 165649.02699999997,
+      "total_text": "46h 0m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 821449.5839999999,
-      "total_text": "228h 10m",
+      "total_seconds": 795422.368,
+      "total_text": "220h 57m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3845076.706999998,
-      "total_text": "1068h 4m",
-      "days_active": 217
+      "total_seconds": 3849946.3159999982,
+      "total_text": "1069h 25m",
+      "days_active": 218
     },
     "all_time": {
-      "total_seconds": 3845076.706999998,
-      "total_text": "1068h 4m",
-      "days_active": 217
+      "total_seconds": 3849946.3159999982,
+      "total_text": "1069h 25m",
+      "days_active": 218
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-06",
-      "seconds": 1165.022,
-      "text": "19 mins"
-    },
     {
       "date": "2026-10-07",
       "seconds": 16758.516,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-10-12",
-      "seconds": 28252.584,
-      "text": "7 hrs 50 mins"
+      "seconds": 32286.425,
+      "text": "8 hrs 58 mins"
+    },
+    {
+      "date": "2026-10-13",
+      "seconds": 835.768,
+      "text": "13 mins"
     }
   ],
   "heatmap": [
@@ -968,17 +968,21 @@
     },
     {
       "date": "2026-10-12",
-      "seconds": 28252.584
+      "seconds": 32286.425
+    },
+    {
+      "date": "2026-10-13",
+      "seconds": 835.768
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1332630.6840000001
+      "total_seconds": 1333279.3900000001
     },
     {
       "name": "Python",
-      "total_seconds": 744495.9380000002
+      "total_seconds": 744747.7450000002
     },
     {
       "name": "C++",
@@ -986,7 +990,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 293423.1180000002
+      "total_seconds": 293547.3790000002
     },
     {
       "name": "JavaScript",
@@ -1022,11 +1026,11 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 22217.144999999993
+      "total_seconds": 22644.773999999994
     },
     {
       "name": "YAML",
-      "total_seconds": 19777.13
+      "total_seconds": 20089.382
     },
     {
       "name": "CSS",
@@ -1041,12 +1045,12 @@
       "total_seconds": 11300.669999999998
     },
     {
-      "name": "MDX",
-      "total_seconds": 8344.865
+      "name": "TOML",
+      "total_seconds": 8807.280999999999
     },
     {
-      "name": "TOML",
-      "total_seconds": 8308.493999999999
+      "name": "MDX",
+      "total_seconds": 8344.865
     },
     {
       "name": "Git",
@@ -1079,6 +1083,10 @@
     {
       "name": "CSV",
       "total_seconds": 1677.924
+    },
+    {
+      "name": "Rust",
+      "total_seconds": 1490.5090000000002
     },
     {
       "name": "Vue",
@@ -1115,10 +1123,6 @@
     {
       "name": "Godot Resource",
       "total_seconds": 365.113
-    },
-    {
-      "name": "Rust",
-      "total_seconds": 313.93
     },
     {
       "name": "systemd",
@@ -2988,12 +2992,20 @@
       "Vue": 43.842
     },
     "2026-10-12": {
-      "Markdown": 12537.675,
-      "Python": 11641.995,
-      "Other": 2181.043,
-      "TypeScript": 1270.596,
+      "Markdown": 13186.381,
+      "Python": 11893.802,
+      "Other": 2826.676,
+      "TypeScript": 1394.857,
+      "Rust": 1124.766,
       "INI": 540.081,
+      "TOML": 498.787,
+      "Bash": 427.629,
+      "YAML": 312.252,
       "C++": 81.194
+    },
+    "2026-10-13": {
+      "Other": 783.955,
+      "Rust": 51.813
     }
   }
 }
