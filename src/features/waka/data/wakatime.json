@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-13T22:18:19.788Z",
-  "total": "293 hrs 59 mins",
-  "daily_average": "6 hrs 36 mins",
+  "lastUpdate": "2026-10-14T03:38:50.590Z",
+  "total": "295 hrs 53 mins",
+  "daily_average": "6 hrs 37 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 206195.29999999996,
-      "total_text": "57h 16m",
+      "total_seconds": 200878.221,
+      "total_text": "55h 47m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 835968.641,
-      "total_text": "232h 12m",
+      "total_seconds": 804369.8429999999,
+      "total_text": "223h 26m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3890492.5889999983,
-      "total_text": "1080h 41m",
-      "days_active": 218
+      "total_seconds": 3903095.3629999985,
+      "total_text": "1084h 11m",
+      "days_active": 219
     },
     "all_time": {
-      "total_seconds": 3890492.5889999983,
-      "total_text": "1080h 41m",
-      "days_active": 218
+      "total_seconds": 3903095.3629999985,
+      "total_text": "1084h 11m",
+      "days_active": 219
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-07",
-      "seconds": 16758.516,
-      "text": "4 hrs 39 mins"
-    },
     {
       "date": "2026-10-08",
       "seconds": 31938.259,
@@ -37,8 +32,8 @@
     },
     {
       "date": "2026-10-09",
-      "seconds": 20622.324,
-      "text": "5 hrs 43 mins"
+      "seconds": 20663.617,
+      "text": "5 hrs 44 mins"
     },
     {
       "date": "2026-10-10",
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-10-13",
-      "seconds": 41382.041,
-      "text": "11 hrs 29 mins"
+      "seconds": 41409.223,
+      "text": "11 hrs 30 mins"
+    },
+    {
+      "date": "2026-10-14",
+      "seconds": 11372.962,
+      "text": "3 hrs 9 mins"
     }
   ],
   "heatmap": [
@@ -856,11 +856,11 @@
     },
     {
       "date": "2026-09-14",
-      "seconds": 43103.827
+      "seconds": 44201.572
     },
     {
       "date": "2026-09-15",
-      "seconds": 45858.393
+      "seconds": 45919.137
     },
     {
       "date": "2026-09-16",
@@ -880,7 +880,7 @@
     },
     {
       "date": "2026-09-20",
-      "seconds": 46210.306
+      "seconds": 46213.154
     },
     {
       "date": "2026-09-21",
@@ -956,7 +956,7 @@
     },
     {
       "date": "2026-10-09",
-      "seconds": 20622.324
+      "seconds": 20663.617
     },
     {
       "date": "2026-10-10",
@@ -972,17 +972,21 @@
     },
     {
       "date": "2026-10-13",
-      "seconds": 41382.041
+      "seconds": 41409.223
+    },
+    {
+      "date": "2026-10-14",
+      "seconds": 11372.962
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1341670.6350000002
+      "total_seconds": 1349225.5464890006
     },
     {
       "name": "Python",
-      "total_seconds": 762111.0930000002
+      "total_seconds": 759854.7999149997
     },
     {
       "name": "C++",
@@ -990,19 +994,19 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 295475.2300000002
+      "total_seconds": 295424.2170000001
     },
     {
       "name": "JavaScript",
-      "total_seconds": 155864.36100000006
+      "total_seconds": 156718.25700000007
     },
     {
       "name": "Astro",
-      "total_seconds": 130956.98
+      "total_seconds": 130555.40900000001
     },
     {
       "name": "JSON",
-      "total_seconds": 76132.715
+      "total_seconds": 77970.01869500002
     },
     {
       "name": "Java",
@@ -1013,32 +1017,32 @@
       "total_seconds": 36219.816
     },
     {
-      "name": "Go",
-      "total_seconds": 32927.145000000004
-    },
-    {
       "name": "C",
       "total_seconds": 28019.225
     },
     {
       "name": "HTML",
-      "total_seconds": 26960.12100000001
+      "total_seconds": 27173.924000000006
+    },
+    {
+      "name": "Go",
+      "total_seconds": 26889.298000000003
     },
     {
       "name": "Bash",
-      "total_seconds": 22871.891999999993
+      "total_seconds": 26764.602886000004
     },
     {
       "name": "YAML",
-      "total_seconds": 20160.792
-    },
-    {
-      "name": "CSS",
-      "total_seconds": 13824.784000000001
+      "total_seconds": 19551.838
     },
     {
       "name": "Git Config",
-      "total_seconds": 13175.402000000002
+      "total_seconds": 13941.507999999998
+    },
+    {
+      "name": "CSS",
+      "total_seconds": 13889.564
     },
     {
       "name": "CMake",
@@ -1046,7 +1050,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 8994.847999999998
+      "total_seconds": 9172.059
     },
     {
       "name": "MDX",
@@ -1054,23 +1058,23 @@
     },
     {
       "name": "Git",
-      "total_seconds": 7935.764999999999
+      "total_seconds": 7842.134999999999
     },
     {
       "name": "Rust",
-      "total_seconds": 7199.351
+      "total_seconds": 7488.888
     },
     {
       "name": "Image (png)",
-      "total_seconds": 5675.652
+      "total_seconds": 6254.917
     },
     {
       "name": "Docker",
-      "total_seconds": 4635.906
+      "total_seconds": 3833.187
     },
     {
       "name": "INI",
-      "total_seconds": 3634.7050000000004
+      "total_seconds": 3548.7439999999997
     },
     {
       "name": "PowerShell",
@@ -1089,20 +1093,20 @@
       "total_seconds": 1677.924
     },
     {
-      "name": "Vue",
-      "total_seconds": 1414.208
-    },
-    {
       "name": "TeX",
       "total_seconds": 1376.114
     },
     {
-      "name": "Lua",
-      "total_seconds": 1072.1109999999999
+      "name": "Vue",
+      "total_seconds": 1256.7700000000002
     },
     {
       "name": "Io",
-      "total_seconds": 986.574
+      "total_seconds": 1116.354
+    },
+    {
+      "name": "Lua",
+      "total_seconds": 1072.1109999999999
     },
     {
       "name": "Microsoft Visual Studio Solution",
@@ -1126,11 +1130,11 @@
     },
     {
       "name": "systemd",
-      "total_seconds": 131.633
+      "total_seconds": 89.122
     },
     {
       "name": "Makefile",
-      "total_seconds": 57.517
+      "total_seconds": 69.605
     },
     {
       "name": "Objective-C",
@@ -2636,298 +2640,303 @@
       "TOML": 0
     },
     "2026-09-12": {
-      "Markdown": 11482.129,
-      "Python": 10772.141,
-      "Other": 2261.396,
-      "YAML": 1863.372,
-      "JSON": 606.008,
-      "Astro": 513.499,
-      "TOML": 512.075,
-      "Bash": 442.417,
+      "Markdown": 11234.161,
+      "Python": 9695.285,
+      "JSON": 2504.542,
+      "YAML": 1766.473,
+      "Bash": 1301.866,
+      "Other": 1005.513,
+      "TOML": 763.55,
       "TypeScript": 363.482,
+      "Astro": 181.647,
       "Git Config": 98.181,
       "HTML": 1.51
     },
     "2026-09-13": {
-      "Markdown": 15944.521,
-      "Python": 5802.991,
-      "Other": 2651.262,
-      "Text": 2322.302,
-      "Docker": 2102.771,
-      "Bash": 1007.337,
-      "YAML": 555.145,
-      "Git Config": 250.807,
-      "JSON": 226.309,
-      "TypeScript": 33.38
+      "Markdown": 15604.763,
+      "Python": 5039.975,
+      "Text": 3410.699,
+      "Other": 2329.163,
+      "Bash": 2012.198,
+      "Docker": 929.935,
+      "Git Config": 562.391,
+      "YAML": 505.342,
+      "JSON": 469.043,
+      "TypeScript": 33.316
     },
     "2026-09-14": {
-      "Markdown": 22437.651,
-      "Python": 7242.96,
-      "Bash": 3823.019,
-      "Other": 3627.66,
-      "TypeScript": 2957.805,
+      "Markdown": 23311.752,
+      "Python": 7018.527,
+      "Bash": 4288.472,
+      "Other": 3257.374,
+      "TypeScript": 2795.179,
+      "YAML": 821.047,
       "Text": 810.894,
-      "Astro": 614.142,
-      "Git Config": 556.609,
-      "YAML": 433.148,
-      "INI": 172.733,
-      "systemd": 131.633,
+      "Astro": 671.223,
+      "Git Config": 645.524,
+      "CSS": 143.264,
+      "INI": 131.99,
+      "systemd": 89.122,
       "Vue": 81.442,
-      "CSS": 78.369,
       "JSON": 71.973,
       "Io": 29.527,
       "JavaScript": 20.826,
       "HTML": 13.436
     },
     "2026-09-15": {
-      "JavaScript": 16218.887,
-      "Markdown": 16109.689,
-      "Other": 4519.057,
-      "Astro": 2364.896,
-      "TypeScript": 2300.249,
-      "Python": 1342.122,
-      "Vue": 793.31,
+      "JavaScript": 16206.519,
+      "Markdown": 16124.054,
+      "Other": 4670.861,
+      "Astro": 3326.7,
+      "TypeScript": 1558.438,
+      "Python": 1454.054,
       "Text": 770.503,
-      "JSON": 538.568,
-      "Git Config": 410.75,
+      "Vue": 650.95,
+      "JSON": 453.945,
       "YAML": 372.494,
+      "Git Config": 212.816,
       "Bash": 59.987,
-      "Io": 47.477,
+      "Io": 47.412,
       "MDX": 10.404
     },
     "2026-09-16": {
-      "Markdown": 14339.238,
-      "TypeScript": 4964.814,
-      "Astro": 4621.406,
-      "Other": 3250.045,
-      "YAML": 1849.839,
-      "Python": 1483.038,
-      "JavaScript": 1024.594,
-      "JSON": 849.019,
-      "Io": 598.729,
-      "TOML": 239.697,
-      "Text": 59.256,
-      "CSS": 0.77
+      "Markdown": 13976.026,
+      "Other": 5133.025,
+      "TypeScript": 4581.96,
+      "Astro": 3595.132,
+      "YAML": 1636.615,
+      "Python": 1426.001,
+      "JSON": 1100.919,
+      "JavaScript": 1028.188,
+      "Io": 538.282,
+      "TOML": 204.474,
+      "Text": 59.168,
+      "CSS": 0.655
     },
     "2026-09-17": {
-      "Markdown": 18250.274,
-      "Go": 6587.496,
-      "Python": 1751.514,
-      "Other": 1140.399,
-      "Astro": 1068.128,
-      "Git Config": 594.558,
-      "TypeScript": 372.802,
-      "Docker": 314.503,
-      "Text": 313,
-      "YAML": 245.893,
-      "JSON": 154.654,
+      "Markdown": 17626.785,
+      "Go": 5771.279,
+      "Python": 1991.349,
+      "Other": 1801.793,
+      "Astro": 1028.969,
+      "Git Config": 787.418,
+      "Docker": 679.875,
+      "YAML": 381.423,
+      "TypeScript": 308.979,
+      "Text": 225.372,
+      "JSON": 190.255,
       "Bash": 90.295,
-      "Io": 46.385,
-      "INI": 2.637
+      "Io": 46.109,
+      "INI": 2.637,
+      "JavaScript": 0
     },
     "2026-09-18": {
-      "Go": 12243.118,
-      "Markdown": 11715.577,
-      "Other": 3523.113,
-      "Python": 2841.877,
-      "TypeScript": 942.39,
-      "INI": 740.009,
-      "YAML": 547.795,
-      "Bash": 513.02,
-      "Docker": 309.762,
-      "JavaScript": 261.725,
-      "Vue": 177.45,
-      "Astro": 112.045,
-      "JSON": 78.774,
-      "Text": 42.943,
-      "TOML": 0.075
+      "Markdown": 13512.617,
+      "Go": 9465.937,
+      "Other": 4478.208,
+      "Python": 2408.682,
+      "TypeScript": 856.147,
+      "Bash": 676.292,
+      "INI": 596.591,
+      "YAML": 582.247,
+      "Text": 409.035,
+      "JavaScript": 340.583,
+      "Docker": 314.507,
+      "Astro": 195.005,
+      "Vue": 162.372,
+      "JSON": 51.45,
+      "TOML": 0
     },
     "2026-09-19": {
-      "Markdown": 11637.882,
-      "Go": 7360.444,
-      "Python": 2998.83,
-      "Other": 2700.133,
-      "JavaScript": 2199.834,
-      "TypeScript": 1138.042,
-      "Git Config": 465.661,
-      "INI": 169.186,
-      "Bash": 73.282,
+      "Markdown": 11112.345,
+      "Go": 5106.406,
+      "Other": 3781.071,
+      "JavaScript": 3071.852,
+      "Python": 3017.609,
+      "TypeScript": 1571.207,
+      "Git Config": 490.136,
+      "Bash": 411.267,
+      "INI": 178.491,
       "Vue": 60.084,
-      "Io": 27.149,
-      "JSON": 25.267,
+      "JSON": 28.005,
+      "Io": 27.321,
       "Astro": 4.124
     },
     "2026-09-20": {
-      "Python": 19720.385,
-      "Markdown": 11254.796,
-      "Other": 9765.809,
-      "Go": 2382.268,
-      "JSON": 763.078,
-      "YAML": 604.741,
+      "Python": 19149.36,
+      "Markdown": 11987.734,
+      "Other": 9511.475,
+      "Go": 2731.578,
+      "JSON": 594.278,
+      "YAML": 579.461,
       "C++": 494.285,
-      "TOML": 293.155,
-      "TypeScript": 272.668,
-      "Astro": 250.677,
-      "Git Config": 245.139,
-      "JavaScript": 50.634,
+      "TypeScript": 309.017,
+      "TOML": 287.317,
+      "Astro": 235.948,
+      "Git Config": 170.831,
       "Text": 49.743,
-      "Io": 37.558,
+      "Io": 45.583,
+      "JavaScript": 41.174,
       "Bash": 25.37
     },
     "2026-09-21": {
-      "Python": 17985.929,
-      "Markdown": 10263.315,
-      "Other": 4412.022,
-      "TypeScript": 2341.59,
-      "JSON": 955.972,
-      "Bash": 904.128,
-      "Io": 141.445,
-      "Git Config": 134.493,
+      "Python": 16928.606,
+      "Markdown": 10722.944,
+      "Other": 4892.862,
+      "TypeScript": 2468.722,
+      "Bash": 910.394,
+      "JSON": 809.769,
+      "Io": 230.792,
       "Astro": 122.828,
+      "Git Config": 115.159,
+      "Go": 81.599,
       "TOML": 53.97,
-      "Go": 21.953,
       "Text": 3.687
     },
     "2026-09-22": {
-      "Python": 23707.144,
-      "Markdown": 17032.581,
-      "Other": 2480.603,
-      "JSON": 2352.551,
-      "TOML": 823.276,
-      "Go": 751.005,
-      "Bash": 92.396,
-      "TypeScript": 23.199
+      "Python": 23110.64,
+      "Markdown": 17710.326,
+      "Other": 3096.55,
+      "JSON": 1699.765,
+      "TOML": 822.583,
+      "Git Config": 362.021,
+      "Go": 300.849,
+      "Bash": 96.879,
+      "TypeScript": 63.142
     },
     "2026-09-23": {
-      "Python": 16430.217,
-      "Markdown": 5896.797,
-      "Other": 3400.011,
-      "TypeScript": 3200.079,
-      "YAML": 836.339,
-      "JSON": 646.502,
-      "Astro": 572.911,
-      "HTML": 165.291,
-      "Git Config": 62.967,
-      "Io": 30.155,
-      "TOML": 21.447
+      "Python": 15552.191409,
+      "Markdown": 6337.984591,
+      "TypeScript": 3591.314,
+      "Other": 3557.642,
+      "YAML": 707.472,
+      "JSON": 515.084,
+      "Astro": 498.605,
+      "HTML": 274.961,
+      "Git Config": 144.585,
+      "Io": 56.908,
+      "TOML": 19.808,
+      "JavaScript": 6.161
     },
     "2026-09-24": {
-      "Python": 21783.113,
-      "Other": 9125.913,
-      "Markdown": 6474.679,
-      "JSON": 2573.615,
-      "TypeScript": 1822.402,
-      "TOML": 472.388,
-      "YAML": 174.306,
-      "Git Config": 71.794,
-      "Makefile": 57.517,
+      "Python": 21692.005,
+      "Other": 8534.14,
+      "Markdown": 6461.067,
+      "JSON": 2812.506,
+      "TypeScript": 2219.565,
+      "TOML": 506.381,
+      "YAML": 148.285,
+      "Git Config": 77.845,
+      "Makefile": 69.605,
       "Bash": 39.519,
-      "HTML": 11.129,
-      "Text": 0.018
+      "Text": 34.346,
+      "HTML": 11.129
     },
     "2026-09-25": {
-      "TypeScript": 3136.142,
-      "Other": 1841.194,
-      "JSON": 1712.768,
-      "YAML": 1119.418,
-      "Python": 782.996,
-      "JavaScript": 204.375,
+      "TypeScript": 3131.552,
+      "Other": 2607.194,
+      "JSON": 1533.129,
+      "Python": 963.42,
+      "YAML": 475.306,
       "TSConfig": 117.948,
-      "Markdown": 78.193,
-      "TOML": 42.054
+      "JavaScript": 85.916,
+      "Markdown": 78.333,
+      "TOML": 42.29
     },
     "2026-09-26": {
-      "Python": 11400.003,
-      "Markdown": 4079.188,
-      "Other": 1855.497,
-      "Bash": 947.906,
-      "HTML": 756.812,
-      "JSON": 676.526,
-      "TypeScript": 638.609,
+      "Python": 11168.237114,
+      "Markdown": 3539.556,
+      "Other": 2827.161,
+      "Bash": 799.978886,
+      "HTML": 691.839,
+      "TypeScript": 672.575,
+      "JSON": 655.194,
       "TOML": 42.498
     },
     "2026-09-27": {
-      "Python": 12724.338,
-      "Markdown": 5723.113,
-      "Other": 2868.121,
-      "TypeScript": 260.789,
-      "Bash": 255.334,
-      "JSON": 139.053,
+      "Python": 11704.36,
+      "Markdown": 5749.865,
+      "Other": 2819.55342,
+      "Bash": 1193.8,
+      "TypeScript": 280.733,
+      "INI": 138.173,
+      "JSON": 134.01558,
       "YAML": 81.526,
-      "INI": 50.502,
-      "TOML": 18.378
+      "TOML": 19.128,
+      "Rust": 0
     },
     "2026-09-28": {
-      "Markdown": 13345.575,
-      "Python": 10195.876,
-      "TypeScript": 3079.304,
-      "Other": 1287.214,
-      "JSON": 1030.086,
-      "Bash": 338.243,
+      "Markdown": 14179.19,
+      "Python": 9485.060323,
+      "TypeScript": 2716.984,
+      "Other": 1609.949677,
+      "JSON": 1172.735,
       "YAML": 173.232,
       "Text": 144.14,
-      "TOML": 26.142
+      "TOML": 71.169,
+      "Bash": 66.128,
+      "INI": 1.224
     },
     "2026-09-29": {
-      "Python": 12516.887,
-      "Markdown": 6958.946,
+      "Python": 11241.29,
+      "Markdown": 7222.778,
       "Text": 4373.273,
-      "Other": 2329.5,
-      "Astro": 717.06,
-      "Bash": 532.507,
-      "Image (png)": 374.561,
-      "Git Config": 143.04,
-      "TypeScript": 141.674,
-      "JSON": 91.64,
-      "YAML": 69.85,
+      "Other": 2046.484,
+      "Bash": 1219.937,
+      "Image (png)": 953.826,
+      "Astro": 699.964,
+      "YAML": 153.6,
+      "Git Config": 145.093,
+      "JSON": 119.75,
+      "TypeScript": 72.943,
       "Io": 28.149
     },
     "2026-09-30": {
-      "Markdown": 6589.73,
-      "Other": 5732.664,
+      "Markdown": 7924.743,
       "Image (png)": 5293.113,
+      "Other": 4586.571,
       "JSON": 1678.628,
       "Text": 1570.193,
-      "Python": 1036.099,
-      "YAML": 630.773
+      "Python": 913.558,
+      "YAML": 564.394
     },
     "2026-10-01": {
-      "Markdown": 10009.335,
-      "Other": 3308.542,
-      "Python": 2390.65,
-      "JSON": 617.111,
+      "Markdown": 9986.901,
+      "Other": 3151.69,
+      "Python": 2636.884,
+      "JSON": 579.672,
       "YAML": 106.672,
-      "Bash": 84.746
+      "Bash": 55.237
     },
     "2026-10-02": {
-      "Python": 5432.134,
-      "Markdown": 4032.35,
-      "Other": 2003.914,
-      "JSON": 1259.176,
-      "Bash": 478.855,
-      "Git": 129.746
+      "Python": 5095.139,
+      "Markdown": 3461.766898,
+      "Other": 2822.830918,
+      "JSON": 1655.404184,
+      "Bash": 264.918,
+      "Git": 36.116
     },
     "2026-10-03": {
-      "Python": 6735.603,
-      "Other": 2949.668,
-      "Markdown": 2560.703,
+      "Python": 6339.854,
+      "Other": 3306.984,
+      "Markdown": 2487.054,
       "SNBT": 669.579,
       "Text": 484.141,
+      "JSON": 204.742,
       "Bash": 142.285,
-      "TOML": 135.962,
-      "JSON": 93.248
+      "TOML": 136.55
     },
     "2026-10-04": {
-      "Markdown": 14430.558,
-      "Python": 9064.309,
-      "Other": 3423.226,
+      "Markdown": 14733.857,
+      "Python": 8772.919,
+      "Other": 3582.093,
       "Text": 1382.888,
-      "JSON": 798.97,
       "PowerShell": 768.082,
-      "TOML": 193.747,
+      "JSON": 733.032,
+      "TOML": 91.375,
       "YAML": 37.5,
-      "Bash": 21.324,
-      "Git Config": 3.023
+      "Bash": 21.447,
+      "Git Config": 0.434
     },
     "2026-10-05": {
       "Markdown": 1947.648,
@@ -2939,62 +2948,62 @@
       "Other": 138.995
     },
     "2026-10-07": {
-      "Python": 11228.728,
-      "Markdown": 4395.483,
-      "Other": 436.649,
+      "Python": 11016.097,
+      "Markdown": 4416.717,
+      "Other": 627.363,
       "TypeScript": 334.118,
-      "Git Config": 224.02,
-      "JSON": 139.518
+      "Git Config": 225.016,
+      "JSON": 139.205
     },
     "2026-10-08": {
-      "Python": 15282.251,
-      "Markdown": 8465.711,
-      "Other": 5449.592,
-      "Go": 1816.258,
+      "Python": 15208.114,
+      "Markdown": 8373.051,
+      "Other": 5714.81,
+      "Go": 1668.687,
       "C++": 668.399,
       "YAML": 157.406,
-      "Bash": 61.189,
+      "Bash": 110.286,
       "TOML": 37.357,
-      "JSON": 0.096
+      "JSON": 0.149
     },
     "2026-10-09": {
-      "Python": 11284.743,
-      "Markdown": 6753.812,
-      "Bash": 765.979,
+      "Python": 11827.191,
+      "Markdown": 6122.543,
+      "Bash": 817.505,
       "YAML": 612.993,
-      "Rust": 313.93,
-      "TOML": 282.307,
-      "JSON": 237.782,
+      "Rust": 390.127,
+      "TOML": 272.8,
+      "JSON": 207.729,
+      "Other": 192.537,
       "Go": 188.472,
-      "Other": 150.586,
       "MDX": 31.72
     },
     "2026-10-10": {
-      "Python": 15814.258,
-      "Markdown": 7581.554,
-      "Other": 3425.548,
-      "TypeScript": 966.99,
-      "JSON": 633.014,
-      "Bash": 479.094,
-      "JavaScript": 230.358,
-      "TOML": 228.082,
+      "Python": 16690.905,
+      "Markdown": 7332.588,
+      "Other": 2662.454,
+      "TypeScript": 1137.181,
+      "JSON": 610.125,
+      "Bash": 466.882,
+      "JavaScript": 231.429,
+      "TOML": 227.334,
       "INI": 78.044
     },
     "2026-10-11": {
-      "Python": 21497.642,
-      "Markdown": 6912.851,
+      "Python": 21176.743,
+      "Markdown": 6960.756,
+      "TypeScript": 1402.775,
+      "JSON": 1372.786,
       "Text": 1346.874,
-      "JSON": 1340.974,
-      "TypeScript": 1276.285,
-      "JavaScript": 785.09,
-      "Other": 409.601,
+      "JavaScript": 901.536,
+      "Other": 407.847,
       "Bash": 157.634,
       "Vue": 43.842
     },
     "2026-10-12": {
-      "Markdown": 13186.381,
-      "Python": 11893.802,
-      "Other": 2826.676,
+      "Markdown": 13219.535,
+      "Python": 11827.088,
+      "Other": 2860.236,
       "TypeScript": 1394.857,
       "Rust": 1124.766,
       "INI": 540.081,
@@ -3004,18 +3013,29 @@
       "C++": 81.194
     },
     "2026-10-13": {
-      "Python": 17363.348,
-      "Markdown": 8391.245,
-      "Rust": 5760.655,
-      "Other": 3070.774,
-      "JavaScript": 2518.434,
-      "TypeScript": 1927.851,
-      "Go": 1576.131,
-      "Git Config": 255.78,
+      "Python": 17373.875,
+      "Markdown": 8208.514,
+      "Rust": 5973.995,
+      "Other": 3047.395,
+      "JavaScript": 2434.469,
+      "TypeScript": 1974.322,
+      "Go": 1574.491,
+      "Git Config": 238.068,
       "Bash": 227.118,
       "TOML": 187.567,
       "YAML": 71.41,
+      "Io": 66.271,
       "JSON": 31.728
+    },
+    "2026-10-14": {
+      "Python": 6324.616069,
+      "Markdown": 4168.462,
+      "Other": 392.874,
+      "Text": 278.903,
+      "HTML": 169.106,
+      "JSON": 30.353931,
+      "Git Config": 7.41,
+      "TOML": 1.237
     }
   }
 }
