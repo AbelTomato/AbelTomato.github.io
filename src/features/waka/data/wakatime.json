@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-15T20:57:40.985Z",
-  "total": "308 hrs 23 mins",
-  "daily_average": "6 hrs 53 mins",
+  "lastUpdate": "2026-10-16T03:11:11.307Z",
+  "total": "304 hrs 5 mins",
+  "daily_average": "6 hrs 47 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 228185.811,
-      "total_text": "63h 23m",
+      "total_seconds": 215156.146,
+      "total_text": "59h 45m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 817696.5549999998,
-      "total_text": "227h 8m",
+      "total_seconds": 792050.0619999999,
+      "total_text": "220h 0m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 3962341.2119999984,
-      "total_text": "1100h 39m",
-      "days_active": 220
+      "total_seconds": 3969975.1639999985,
+      "total_text": "1102h 46m",
+      "days_active": 221
     },
     "all_time": {
-      "total_seconds": 3962341.2119999984,
-      "total_text": "1100h 39m",
-      "days_active": 220
+      "total_seconds": 3969975.1639999985,
+      "total_text": "1102h 46m",
+      "days_active": 221
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-09",
-      "seconds": 20663.617,
-      "text": "5 hrs 44 mins"
-    },
     {
       "date": "2026-10-10",
       "seconds": 29436.942,
@@ -59,6 +54,11 @@
       "date": "2026-10-15",
       "seconds": 29752.534,
       "text": "8 hrs 15 mins"
+    },
+    {
+      "date": "2026-10-16",
+      "seconds": 7633.952,
+      "text": "2 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -981,12 +981,16 @@
     {
       "date": "2026-10-15",
       "seconds": 29752.534
+    },
+    {
+      "date": "2026-10-16",
+      "seconds": 7633.952
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1356097.3214890005
+      "total_seconds": 1359931.6764890004
     },
     {
       "name": "Python",
@@ -1026,7 +1030,7 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 27173.924000000006
+      "total_seconds": 27359.588000000007
     },
     {
       "name": "Bash",
@@ -1041,12 +1045,12 @@
       "total_seconds": 19551.838
     },
     {
-      "name": "Git Config",
-      "total_seconds": 14191.463999999998
+      "name": "Kotlin",
+      "total_seconds": 16663.714
     },
     {
-      "name": "Kotlin",
-      "total_seconds": 13981.987
+      "name": "Git Config",
+      "total_seconds": 14191.463999999998
     },
     {
       "name": "CSS",
@@ -1133,12 +1137,12 @@
       "total_seconds": 602.985
     },
     {
-      "name": "Godot Resource",
-      "total_seconds": 365.113
+      "name": "XML",
+      "total_seconds": 491.648
     },
     {
-      "name": "XML",
-      "total_seconds": 303.017
+      "name": "Godot Resource",
+      "total_seconds": 365.113
     },
     {
       "name": "systemd",
@@ -3064,6 +3068,14 @@
       "Git Config": 23.599,
       "JavaScript": 14.036,
       "Image (png)": 11.154
+    },
+    "2026-10-16": {
+      "Markdown": 3834.355,
+      "Kotlin": 2681.727,
+      "Other": 634.513,
+      "XML": 188.631,
+      "HTML": 185.664,
+      "Text": 109.062
     }
   }
 }
