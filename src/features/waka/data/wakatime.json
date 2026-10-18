@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-10-17T20:09:44.995Z",
-  "total": "303 hrs 33 mins",
-  "daily_average": "6 hrs 56 mins",
+  "lastUpdate": "2026-10-18T03:08:13.739Z",
+  "total": "299 hrs 24 mins",
+  "daily_average": "7 hrs 1 min",
   "stats": {
     "last_7_days": {
-      "total_seconds": 212122.754,
-      "total_text": "58h 55m",
-      "days_active": 6
+      "total_seconds": 178351.961,
+      "total_text": "49h 32m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 787521.0739999999,
-      "total_text": "218h 45m",
-      "days_active": 29
+      "total_seconds": 753471.401,
+      "total_text": "209h 17m",
+      "days_active": 28
     },
     "last_365_days": {
       "total_seconds": 3996378.7139999983,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-11",
-      "seconds": 33770.793,
-      "text": "9 hrs 22 mins"
-    },
     {
       "date": "2026-10-12",
       "seconds": 32286.425,
@@ -57,6 +52,11 @@
     },
     {
       "date": "2026-10-17",
+      "seconds": 0,
+      "text": "0 secs"
+    },
+    {
+      "date": "2026-10-18",
       "seconds": 0,
       "text": "0 secs"
     }
@@ -988,6 +988,10 @@
     },
     {
       "date": "2026-10-17",
+      "seconds": 0
+    },
+    {
+      "date": "2026-10-18",
       "seconds": 0
     }
   ],
@@ -3089,6 +3093,7 @@
       "TOML": 0,
       "YAML": 0
     },
-    "2026-10-17": {}
+    "2026-10-17": {},
+    "2026-10-18": {}
   }
 }
