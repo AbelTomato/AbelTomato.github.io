@@ -30,15 +30,15 @@
     ],
     "numUntouchedQuestions": [
       {
-        "count": 920,
+        "count": 921,
         "difficulty": "EASY"
       },
       {
-        "count": 2144,
+        "count": 2146,
         "difficulty": "MEDIUM"
       },
       {
-        "count": 996,
+        "count": 997,
         "difficulty": "HARD"
       }
     ]
