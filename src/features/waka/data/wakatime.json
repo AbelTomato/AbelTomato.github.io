@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-20T10:57:33.719Z",
-  "total": "300 hrs 3 mins",
-  "daily_average": "6 hrs 38 mins",
+  "lastUpdate": "2026-10-20T16:23:19.715Z",
+  "total": "301 hrs 19 mins",
+  "daily_average": "6 hrs 40 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 163522.51799999998,
-      "total_text": "45h 25m",
+      "total_seconds": 168061.167,
+      "total_text": "46h 41m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 737264.5340000001,
-      "total_text": "204h 47m",
+      "total_seconds": 741803.1830000001,
+      "total_text": "206h 3m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4055244.918999998,
-      "total_text": "1126h 27m",
+      "total_seconds": 4059783.567999998,
+      "total_text": "1127h 43m",
       "days_active": 225
     },
     "all_time": {
-      "total_seconds": 4055244.918999998,
-      "total_text": "1126h 27m",
+      "total_seconds": 4059783.567999998,
+      "total_text": "1127h 43m",
       "days_active": 225
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-20",
-      "seconds": 21528.925,
-      "text": "5 hrs 58 mins"
+      "seconds": 26067.574,
+      "text": "7 hrs 14 mins"
     }
   ],
   "heatmap": [
@@ -1000,17 +1000,17 @@
     },
     {
       "date": "2026-10-20",
-      "seconds": 21528.925
+      "seconds": 26067.574
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1373384.0864890004
+      "total_seconds": 1375378.7384890004
     },
     {
       "name": "Python",
-      "total_seconds": 816546.0759219998
+      "total_seconds": 817590.1729219997
     },
     {
       "name": "C++",
@@ -1022,7 +1022,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 160245.72100000005
+      "total_seconds": 160246.18000000005
     },
     {
       "name": "Astro",
@@ -1030,7 +1030,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 86995.59906800001
+      "total_seconds": 87094.31606800001
     },
     {
       "name": "Java",
@@ -1082,7 +1082,7 @@
     },
     {
       "name": "Rust",
-      "total_seconds": 8442.323
+      "total_seconds": 9034.026
     },
     {
       "name": "MDX",
@@ -3132,16 +3132,16 @@
     },
     "2026-10-20": {
       "Kotlin": 8636.684,
-      "Markdown": 3976.878,
-      "Other": 2507.708,
+      "Markdown": 5971.53,
+      "Other": 3316.729,
+      "Python": 3065.852,
       "YAML": 2317.123,
-      "Python": 2021.755,
       "Java Properties": 1153.465,
-      "JavaScript": 325.269,
+      "Rust": 678.562,
+      "JavaScript": 325.728,
       "TypeScript": 300.941,
       "XML": 185.675,
-      "Rust": 86.859,
-      "JSON": 15.802,
+      "JSON": 114.519,
       "TOML": 0.766
     }
   }
