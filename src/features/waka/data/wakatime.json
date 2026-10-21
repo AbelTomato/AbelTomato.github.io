@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-20T21:16:39.194Z",
-  "total": "301 hrs 19 mins",
-  "daily_average": "6 hrs 40 mins",
+  "lastUpdate": "2026-10-21T03:25:09.812Z",
+  "total": "297 hrs 32 mins",
+  "daily_average": "6 hrs 35 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 168061.167,
-      "total_text": "46h 41m",
+      "total_seconds": 133268.822,
+      "total_text": "37h 1m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 741803.1830000001,
-      "total_text": "206h 3m",
+      "total_seconds": 710535.7829999999,
+      "total_text": "197h 22m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4059783.567999998,
-      "total_text": "1127h 43m",
-      "days_active": 225
+      "total_seconds": 4065857.499999998,
+      "total_text": "1129h 24m",
+      "days_active": 226
     },
     "all_time": {
-      "total_seconds": 4059783.567999998,
-      "total_text": "1127h 43m",
-      "days_active": 225
+      "total_seconds": 4065857.499999998,
+      "total_text": "1129h 24m",
+      "days_active": 226
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-14",
-      "seconds": 40866.277,
-      "text": "11 hrs 21 mins"
-    },
     {
       "date": "2026-10-15",
       "seconds": 29752.534,
@@ -59,6 +54,11 @@
       "date": "2026-10-20",
       "seconds": 26067.574,
       "text": "7 hrs 14 mins"
+    },
+    {
+      "date": "2026-10-21",
+      "seconds": 6073.932,
+      "text": "1 hr 41 mins"
     }
   ],
   "heatmap": [
@@ -1001,16 +1001,20 @@
     {
       "date": "2026-10-20",
       "seconds": 26067.574
+    },
+    {
+      "date": "2026-10-21",
+      "seconds": 6073.932
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1375378.7384890004
+      "total_seconds": 1378223.0424890004
     },
     {
       "name": "Python",
-      "total_seconds": 817590.1729219997
+      "total_seconds": 818092.1159219997
     },
     {
       "name": "C++",
@@ -1018,11 +1022,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 298175.69800000015
+      "total_seconds": 298253.78300000017
     },
     {
       "name": "JavaScript",
-      "total_seconds": 160246.18000000005
+      "total_seconds": 160286.56900000005
     },
     {
       "name": "Astro",
@@ -1030,7 +1034,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 87094.31606800001
+      "total_seconds": 87164.36806800001
     },
     {
       "name": "Java",
@@ -1070,7 +1074,7 @@
     },
     {
       "name": "CSS",
-      "total_seconds": 13889.564
+      "total_seconds": 13911.79
     },
     {
       "name": "CMake",
@@ -1082,7 +1086,7 @@
     },
     {
       "name": "Rust",
-      "total_seconds": 9034.026
+      "total_seconds": 9208.31
     },
     {
       "name": "MDX",
@@ -1097,12 +1101,12 @@
       "total_seconds": 6874.961000000001
     },
     {
-      "name": "Docker",
-      "total_seconds": 3833.524
+      "name": "PowerShell",
+      "total_seconds": 4196.565
     },
     {
-      "name": "PowerShell",
-      "total_seconds": 3663.8109999999997
+      "name": "Docker",
+      "total_seconds": 3833.524
     },
     {
       "name": "INI",
@@ -3132,17 +3136,28 @@
     },
     "2026-10-20": {
       "Kotlin": 8636.684,
-      "Markdown": 5971.53,
-      "Other": 3316.729,
-      "Python": 3065.852,
+      "Markdown": 6119.712,
+      "Other": 3388.04,
+      "Python": 2827.913,
       "YAML": 2317.123,
       "Java Properties": 1153.465,
       "Rust": 678.562,
       "JavaScript": 325.728,
       "TypeScript": 300.941,
       "XML": 185.675,
-      "JSON": 114.519,
+      "JSON": 132.965,
       "TOML": 0.766
+    },
+    "2026-10-21": {
+      "Markdown": 2696.122,
+      "Other": 1738.584,
+      "Python": 739.882,
+      "PowerShell": 532.754,
+      "Rust": 174.284,
+      "TypeScript": 78.085,
+      "JSON": 51.606,
+      "JavaScript": 40.389,
+      "CSS": 22.226
     }
   }
 }
