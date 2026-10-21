@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-21T03:25:09.812Z",
-  "total": "297 hrs 32 mins",
-  "daily_average": "6 hrs 35 mins",
+  "lastUpdate": "2026-10-21T11:12:31.279Z",
+  "total": "303 hrs 58 mins",
+  "daily_average": "6 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 133268.822,
-      "total_text": "37h 1m",
+      "total_seconds": 156446.97199999998,
+      "total_text": "43h 27m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 710535.7829999999,
-      "total_text": "197h 22m",
+      "total_seconds": 733713.933,
+      "total_text": "203h 48m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4065857.499999998,
-      "total_text": "1129h 24m",
+      "total_seconds": 4089035.649999998,
+      "total_text": "1135h 50m",
       "days_active": 226
     },
     "all_time": {
-      "total_seconds": 4065857.499999998,
-      "total_text": "1129h 24m",
+      "total_seconds": 4089035.649999998,
+      "total_text": "1135h 50m",
       "days_active": 226
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-21",
-      "seconds": 6073.932,
-      "text": "1 hr 41 mins"
+      "seconds": 29252.082,
+      "text": "8 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -1004,17 +1004,17 @@
     },
     {
       "date": "2026-10-21",
-      "seconds": 6073.932
+      "seconds": 29252.082
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1378223.0424890004
+      "total_seconds": 1396300.1574890004
     },
     {
       "name": "Python",
-      "total_seconds": 818092.1159219997
+      "total_seconds": 819391.2499219996
     },
     {
       "name": "C++",
@@ -1022,11 +1022,11 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 298253.78300000017
+      "total_seconds": 298284.63200000016
     },
     {
       "name": "JavaScript",
-      "total_seconds": 160286.56900000005
+      "total_seconds": 162070.08800000005
     },
     {
       "name": "Astro",
@@ -1034,11 +1034,11 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 87164.36806800001
+      "total_seconds": 87190.02706800001
     },
     {
       "name": "Java",
-      "total_seconds": 47336.692
+      "total_seconds": 47436.569
     },
     {
       "name": "SQL",
@@ -1057,12 +1057,12 @@
       "total_seconds": 27359.588000000007
     },
     {
-      "name": "Bash",
-      "total_seconds": 26912.138886000004
+      "name": "Go",
+      "total_seconds": 26927.613
     },
     {
-      "name": "Go",
-      "total_seconds": 26889.298000000003
+      "name": "Bash",
+      "total_seconds": 26912.138886000004
     },
     {
       "name": "YAML",
@@ -1082,11 +1082,11 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 9822.904
+      "total_seconds": 10286.888
     },
     {
       "name": "Rust",
-      "total_seconds": 9208.31
+      "total_seconds": 9731.7
     },
     {
       "name": "MDX",
@@ -1102,7 +1102,7 @@
     },
     {
       "name": "PowerShell",
-      "total_seconds": 4196.565
+      "total_seconds": 4498.4929999999995
     },
     {
       "name": "Docker",
@@ -1137,6 +1137,10 @@
       "total_seconds": 1256.7700000000002
     },
     {
+      "name": "SNBT",
+      "total_seconds": 1252.764
+    },
+    {
       "name": "Io",
       "total_seconds": 1116.354
     },
@@ -1151,10 +1155,6 @@
     {
       "name": "XML",
       "total_seconds": 677.3230000000001
-    },
-    {
-      "name": "SNBT",
-      "total_seconds": 669.579
     },
     {
       "name": "Mako",
@@ -3149,14 +3149,18 @@
       "TOML": 0.766
     },
     "2026-10-21": {
-      "Markdown": 2696.122,
-      "Other": 1738.584,
-      "Python": 739.882,
-      "PowerShell": 532.754,
-      "Rust": 174.284,
-      "TypeScript": 78.085,
-      "JSON": 51.606,
-      "JavaScript": 40.389,
+      "Markdown": 20773.237,
+      "Python": 2039.016,
+      "JavaScript": 1823.908,
+      "Other": 1689.779,
+      "PowerShell": 834.682,
+      "Rust": 697.674,
+      "SNBT": 583.185,
+      "TOML": 463.984,
+      "TypeScript": 108.934,
+      "Java": 99.877,
+      "JSON": 77.265,
+      "Go": 38.315,
       "CSS": 22.226
     }
   }
