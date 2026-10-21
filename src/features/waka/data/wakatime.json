@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-21T11:12:31.279Z",
-  "total": "303 hrs 58 mins",
-  "daily_average": "6 hrs 44 mins",
+  "lastUpdate": "2026-10-21T16:39:18.654Z",
+  "total": "304 hrs 47 mins",
+  "daily_average": "6 hrs 46 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 156446.97199999998,
-      "total_text": "43h 27m",
+      "total_seconds": 159364.53199999998,
+      "total_text": "44h 16m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 733713.933,
-      "total_text": "203h 48m",
+      "total_seconds": 736631.4929999999,
+      "total_text": "204h 37m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4089035.649999998,
-      "total_text": "1135h 50m",
+      "total_seconds": 4091953.209999998,
+      "total_text": "1136h 39m",
       "days_active": 226
     },
     "all_time": {
-      "total_seconds": 4089035.649999998,
-      "total_text": "1135h 50m",
+      "total_seconds": 4091953.209999998,
+      "total_text": "1136h 39m",
       "days_active": 226
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-21",
-      "seconds": 29252.082,
-      "text": "8 hrs 7 mins"
+      "seconds": 32169.642,
+      "text": "8 hrs 56 mins"
     }
   ],
   "heatmap": [
@@ -1004,13 +1004,13 @@
     },
     {
       "date": "2026-10-21",
-      "seconds": 29252.082
+      "seconds": 32169.642
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1396300.1574890004
+      "total_seconds": 1399024.1054890004
     },
     {
       "name": "Python",
@@ -1026,7 +1026,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 162070.08800000005
+      "total_seconds": 162192.30700000006
     },
     {
       "name": "Astro",
@@ -1034,7 +1034,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 87190.02706800001
+      "total_seconds": 87261.420068
     },
     {
       "name": "Java",
@@ -3149,17 +3149,17 @@
       "TOML": 0.766
     },
     "2026-10-21": {
-      "Markdown": 20773.237,
+      "Markdown": 23497.185,
       "Python": 2039.016,
-      "JavaScript": 1823.908,
+      "JavaScript": 1946.127,
       "Other": 1689.779,
       "PowerShell": 834.682,
       "Rust": 697.674,
       "SNBT": 583.185,
       "TOML": 463.984,
+      "JSON": 148.658,
       "TypeScript": 108.934,
       "Java": 99.877,
-      "JSON": 77.265,
       "Go": 38.315,
       "CSS": 22.226
     }
