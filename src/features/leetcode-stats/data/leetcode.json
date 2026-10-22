@@ -242,10 +242,10 @@
   "userContestRanking": {
     "attendedContestsCount": 10,
     "rating": 2068.047,
-    "globalRanking": 15634,
-    "localRanking": 4780,
-    "globalTotalParticipants": 899553,
-    "localTotalParticipants": 155452,
+    "globalRanking": 15664,
+    "localRanking": 4785,
+    "globalTotalParticipants": 900227,
+    "localTotalParticipants": 155477,
     "topPercentage": 3.05
   },
   "userContestRankingHistory": [
