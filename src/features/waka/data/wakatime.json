@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-24T10:19:31.603Z",
-  "total": "287 hrs",
-  "daily_average": "6 hrs 20 mins",
+  "lastUpdate": "2026-10-24T15:25:28.293Z",
+  "total": "288 hrs 23 mins",
+  "daily_average": "6 hrs 22 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 135406.288,
-      "total_text": "37h 36m",
+      "total_seconds": 140384.068,
+      "total_text": "38h 59m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 655507.54,
-      "total_text": "182h 5m",
+      "total_seconds": 660485.3200000001,
+      "total_text": "183h 28m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4131961.120999998,
-      "total_text": "1147h 46m",
+      "total_seconds": 4136938.9009999977,
+      "total_text": "1149h 8m",
       "days_active": 229
     },
     "all_time": {
-      "total_seconds": 4131961.120999998,
-      "total_text": "1147h 46m",
+      "total_seconds": 4136938.9009999977,
+      "total_text": "1149h 8m",
       "days_active": 229
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-24",
-      "seconds": 12778.291,
-      "text": "3 hrs 32 mins"
+      "seconds": 17756.071,
+      "text": "4 hrs 55 mins"
     }
   ],
   "heatmap": [
@@ -1016,13 +1016,13 @@
     },
     {
       "date": "2026-10-24",
-      "seconds": 12778.291
+      "seconds": 17756.071
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1409259.4804890004
+      "total_seconds": 1410051.0984890005
     },
     {
       "name": "Python",
@@ -1038,7 +1038,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 182491.69500000007
+      "total_seconds": 184376.93100000004
     },
     {
       "name": "Astro",
@@ -1082,7 +1082,7 @@
     },
     {
       "name": "Git Config",
-      "total_seconds": 14432.873
+      "total_seconds": 14995.533
     },
     {
       "name": "CSS",
@@ -1114,7 +1114,7 @@
     },
     {
       "name": "Vue",
-      "total_seconds": 4668.497
+      "total_seconds": 5606.323
     },
     {
       "name": "PowerShell",
@@ -3195,13 +3195,14 @@
       "JSON": 6.734
     },
     "2026-10-24": {
-      "JavaScript": 6810.803,
-      "Markdown": 2384.117,
-      "Vue": 2013.357,
+      "JavaScript": 8696.039,
+      "Markdown": 3175.735,
+      "Vue": 2951.183,
+      "Other": 1075.685,
       "JSON": 676.652,
+      "Git Config": 562.66,
       "TypeScript": 340.396,
-      "SCSS": 277.721,
-      "Other": 275.245
+      "SCSS": 277.721
     }
   }
 }
