@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-24T20:16:07.172Z",
-  "total": "288 hrs 23 mins",
-  "daily_average": "6 hrs 22 mins",
+  "lastUpdate": "2026-10-25T03:19:09.470Z",
+  "total": "276 hrs",
+  "daily_average": "6 hrs 5 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 140384.068,
-      "total_text": "38h 59m",
+      "total_seconds": 125738.80200000001,
+      "total_text": "34h 55m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 660485.3200000001,
-      "total_text": "183h 28m",
+      "total_seconds": 652804.548,
+      "total_text": "181h 20m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4136938.9009999977,
-      "total_text": "1149h 8m",
-      "days_active": 229
+      "total_seconds": 4138293.216999998,
+      "total_text": "1149h 31m",
+      "days_active": 230
     },
     "all_time": {
-      "total_seconds": 4136938.9009999977,
-      "total_text": "1149h 8m",
-      "days_active": 229
+      "total_seconds": 4138293.216999998,
+      "total_text": "1149h 31m",
+      "days_active": 230
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-18",
-      "seconds": 15999.582,
-      "text": "4 hrs 26 mins"
-    },
     {
       "date": "2026-10-19",
       "seconds": 21161.579,
@@ -59,6 +54,11 @@
       "date": "2026-10-24",
       "seconds": 17756.071,
       "text": "4 hrs 55 mins"
+    },
+    {
+      "date": "2026-10-25",
+      "seconds": 1354.316,
+      "text": "22 mins"
     }
   ],
   "heatmap": [
@@ -1017,12 +1017,16 @@
     {
       "date": "2026-10-24",
       "seconds": 17756.071
+    },
+    {
+      "date": "2026-10-25",
+      "seconds": 1354.316
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1410051.0984890005
+      "total_seconds": 1410875.5584890004
     },
     {
       "name": "Python",
@@ -1038,7 +1042,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 184376.93100000004
+      "total_seconds": 184676.92300000004
     },
     {
       "name": "Astro",
@@ -1114,7 +1118,7 @@
     },
     {
       "name": "Vue",
-      "total_seconds": 5606.323
+      "total_seconds": 5836.187
     },
     {
       "name": "PowerShell",
@@ -3203,6 +3207,11 @@
       "Git Config": 562.66,
       "TypeScript": 340.396,
       "SCSS": 277.721
+    },
+    "2026-10-25": {
+      "Markdown": 824.46,
+      "JavaScript": 299.992,
+      "Vue": 229.864
     }
   }
 }
