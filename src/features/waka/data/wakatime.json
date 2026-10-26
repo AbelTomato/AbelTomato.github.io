@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-10-25T20:24:19.046Z",
-  "total": "278 hrs 22 mins",
-  "daily_average": "6 hrs 9 mins",
+  "lastUpdate": "2026-10-26T03:20:36.429Z",
+  "total": "269 hrs 8 mins",
+  "daily_average": "6 hrs 6 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 134269.257,
-      "total_text": "37h 17m",
-      "days_active": 7
+      "total_seconds": 113107.67799999999,
+      "total_text": "31h 25m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 661335.0029999999,
-      "total_text": "183h 42m",
-      "days_active": 30
+      "total_seconds": 640937.9639999999,
+      "total_text": "178h 2m",
+      "days_active": 29
     },
     "last_365_days": {
       "total_seconds": 4146823.671999998,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-19",
-      "seconds": 21161.579,
-      "text": "5 hrs 52 mins"
-    },
     {
       "date": "2026-10-20",
       "seconds": 26067.574,
@@ -59,6 +54,11 @@
       "date": "2026-10-25",
       "seconds": 9884.771,
       "text": "2 hrs 44 mins"
+    },
+    {
+      "date": "2026-10-26",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -1021,12 +1021,16 @@
     {
       "date": "2026-10-25",
       "seconds": 9884.771
+    },
+    {
+      "date": "2026-10-26",
+      "seconds": 0
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1414458.2744890004
+      "total_seconds": 1414452.8854890005
     },
     {
       "name": "Python",
@@ -1042,7 +1046,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 186575.46400000004
+      "total_seconds": 186580.85300000003
     },
     {
       "name": "Astro",
@@ -3209,12 +3213,13 @@
       "SCSS": 277.721
     },
     "2026-10-25": {
-      "Markdown": 4407.176,
+      "Markdown": 4401.787,
       "Vue": 2748.764,
-      "JavaScript": 2198.533,
+      "JavaScript": 2203.922,
       "JSON": 180.039,
       "Image (png)": 179.939,
       "Other": 170.32
-    }
+    },
+    "2026-10-26": {}
   }
 }
