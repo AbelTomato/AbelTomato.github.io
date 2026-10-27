@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-27T11:38:34.139Z",
-  "total": "266 hrs 5 mins",
-  "daily_average": "5 hrs 53 mins",
+  "lastUpdate": "2026-10-27T17:30:14.294Z",
+  "total": "266 hrs 46 mins",
+  "daily_average": "5 hrs 54 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 107029.476,
-      "total_text": "29h 43m",
+      "total_seconds": 109482.939,
+      "total_text": "30h 24m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 638806.1819999999,
-      "total_text": "177h 26m",
+      "total_seconds": 641259.6449999999,
+      "total_text": "178h 7m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4166813.043999998,
-      "total_text": "1157h 26m",
+      "total_seconds": 4169266.506999998,
+      "total_text": "1158h 7m",
       "days_active": 232
     },
     "all_time": {
-      "total_seconds": 4166813.043999998,
-      "total_text": "1157h 26m",
+      "total_seconds": 4169266.506999998,
+      "total_text": "1158h 7m",
       "days_active": 232
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-27",
-      "seconds": 3873.397,
-      "text": "1 hr 4 mins"
+      "seconds": 6326.86,
+      "text": "1 hr 45 mins"
     }
   ],
   "heatmap": [
@@ -1028,13 +1028,13 @@
     },
     {
       "date": "2026-10-27",
-      "seconds": 3873.397
+      "seconds": 6326.86
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1423900.6784890005
+      "total_seconds": 1426075.7964890003
     },
     {
       "name": "Python",
@@ -1050,7 +1050,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 193576.06700000004
+      "total_seconds": 193611.63100000005
     },
     {
       "name": "Astro",
@@ -1182,7 +1182,7 @@
     },
     {
       "name": "XML",
-      "total_seconds": 677.3230000000001
+      "total_seconds": 693.5730000000001
     },
     {
       "name": "Mako",
@@ -3238,8 +3238,11 @@
       "Other": 6.009
     },
     "2026-10-27": {
-      "Markdown": 3873.397,
-      "Other": 0
+      "Markdown": 6048.515,
+      "Other": 172.397,
+      "Text": 54.134,
+      "JavaScript": 35.564,
+      "XML": 16.25
     }
   }
 }
