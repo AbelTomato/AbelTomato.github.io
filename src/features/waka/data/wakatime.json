@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-26T22:19:24.592Z",
-  "total": "273 hrs 36 mins",
-  "daily_average": "6 hrs 4 mins",
+  "lastUpdate": "2026-10-27T03:48:56.849Z",
+  "total": "265 hrs 23 mins",
+  "daily_average": "5 hrs 52 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 129223.65299999999,
-      "total_text": "35h 53m",
+      "total_seconds": 104498.205,
+      "total_text": "29h 1m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 657053.9389999999,
-      "total_text": "182h 30m",
+      "total_seconds": 636274.911,
+      "total_text": "176h 44m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4162939.646999998,
-      "total_text": "1156h 22m",
-      "days_active": 231
+      "total_seconds": 4164281.772999998,
+      "total_text": "1156h 44m",
+      "days_active": 232
     },
     "all_time": {
-      "total_seconds": 4162939.646999998,
-      "total_text": "1156h 22m",
-      "days_active": 231
+      "total_seconds": 4164281.772999998,
+      "total_text": "1156h 44m",
+      "days_active": 232
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-20",
-      "seconds": 26067.574,
-      "text": "7 hrs 14 mins"
-    },
     {
       "date": "2026-10-21",
       "seconds": 32169.642,
@@ -59,6 +54,11 @@
       "date": "2026-10-26",
       "seconds": 16115.975,
       "text": "4 hrs 28 mins"
+    },
+    {
+      "date": "2026-10-27",
+      "seconds": 1342.126,
+      "text": "22 mins"
     }
   ],
   "heatmap": [
@@ -1025,12 +1025,16 @@
     {
       "date": "2026-10-26",
       "seconds": 16115.975
+    },
+    {
+      "date": "2026-10-27",
+      "seconds": 1342.126
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1420027.2814890004
+      "total_seconds": 1421369.4074890004
     },
     {
       "name": "Python",
@@ -3232,6 +3236,10 @@
       "JSON": 458.499,
       "Bash": 264.355,
       "Other": 6.009
+    },
+    "2026-10-27": {
+      "Markdown": 1342.126,
+      "Other": 0
     }
   }
 }
