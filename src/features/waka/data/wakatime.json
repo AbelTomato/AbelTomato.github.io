@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-28T12:09:22.875Z",
-  "total": "266 hrs 20 mins",
-  "daily_average": "5 hrs 47 mins",
+  "lastUpdate": "2026-10-28T22:12:28.109Z",
+  "total": "266 hrs 37 mins",
+  "daily_average": "5 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 109784.605,
-      "total_text": "30h 29m",
+      "total_seconds": 110780.49799999999,
+      "total_text": "30h 46m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 644111.1410000001,
-      "total_text": "178h 55m",
+      "total_seconds": 645107.0340000001,
+      "total_text": "179h 11m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4201737.814999999,
-      "total_text": "1167h 8m",
+      "total_seconds": 4202733.707999998,
+      "total_text": "1167h 25m",
       "days_active": 233
     },
     "all_time": {
-      "total_seconds": 4201737.814999999,
-      "total_text": "1167h 8m",
+      "total_seconds": 4202733.707999998,
+      "total_text": "1167h 25m",
       "days_active": 233
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-28",
-      "seconds": 20563.826,
-      "text": "5 hrs 42 mins"
+      "seconds": 21559.719,
+      "text": "5 hrs 59 mins"
     }
   ],
   "heatmap": [
@@ -1032,13 +1032,13 @@
     },
     {
       "date": "2026-10-28",
-      "seconds": 20563.826
+      "seconds": 21559.719
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1429459.6794890002
+      "total_seconds": 1429504.1684890003
     },
     {
       "name": "Python",
@@ -1054,7 +1054,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 193290.41300000003
+      "total_seconds": 193775.51300000004
     },
     {
       "name": "Astro",
@@ -1070,7 +1070,7 @@
     },
     {
       "name": "SQL",
-      "total_seconds": 36281.981999999996
+      "total_seconds": 36497.439
     },
     {
       "name": "Kotlin",
@@ -3250,12 +3250,13 @@
     },
     "2026-10-28": {
       "Java": 6679.146,
-      "Other": 5889.793,
-      "Markdown": 4006.667,
+      "Other": 6140.64,
+      "Markdown": 4051.156,
       "Java Properties": 2201.242,
       "XML": 1266.208,
+      "JavaScript": 718.28,
       "Bash": 247.841,
-      "JavaScript": 233.18,
+      "SQL": 215.457,
       "JSON": 39.749
     }
   }
