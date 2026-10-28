@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-10-27T21:50:16.214Z",
-  "total": "266 hrs 46 mins",
-  "daily_average": "5 hrs 54 mins",
+  "lastUpdate": "2026-10-28T04:07:25.412Z",
+  "total": "258 hrs 4 mins",
+  "daily_average": "5 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 109482.939,
-      "total_text": "30h 24m",
+      "total_seconds": 80016.13900000001,
+      "total_text": "22h 13m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 641259.6449999999,
-      "total_text": "178h 7m",
+      "total_seconds": 614342.6749999999,
+      "total_text": "170h 39m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4169266.506999998,
-      "total_text": "1158h 7m",
-      "days_active": 232
+      "total_seconds": 4171969.348999998,
+      "total_text": "1158h 52m",
+      "days_active": 233
     },
     "all_time": {
-      "total_seconds": 4169266.506999998,
-      "total_text": "1158h 7m",
-      "days_active": 232
+      "total_seconds": 4171969.348999998,
+      "total_text": "1158h 52m",
+      "days_active": 233
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-21",
-      "seconds": 32169.642,
-      "text": "8 hrs 56 mins"
-    },
     {
       "date": "2026-10-22",
       "seconds": 18782.439,
@@ -59,6 +54,11 @@
       "date": "2026-10-27",
       "seconds": 6326.86,
       "text": "1 hr 45 mins"
+    },
+    {
+      "date": "2026-10-28",
+      "seconds": 2702.842,
+      "text": "45 mins"
     }
   ],
   "heatmap": [
@@ -1029,12 +1029,16 @@
     {
       "date": "2026-10-27",
       "seconds": 6326.86
+    },
+    {
+      "date": "2026-10-28",
+      "seconds": 2702.842
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1426075.7964890003
+      "total_seconds": 1427605.5354890004
     },
     {
       "name": "Python",
@@ -1050,7 +1054,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 193611.63100000005
+      "total_seconds": 193814.61400000006
     },
     {
       "name": "Astro",
@@ -1058,11 +1062,11 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 88702.419068
+      "total_seconds": 88742.168068
     },
     {
       "name": "Java",
-      "total_seconds": 47436.569
+      "total_seconds": 47437.225000000006
     },
     {
       "name": "SQL",
@@ -3243,6 +3247,13 @@
       "Text": 54.134,
       "JavaScript": 35.564,
       "XML": 16.25
+    },
+    "2026-10-28": {
+      "Markdown": 1529.739,
+      "Other": 929.715,
+      "JavaScript": 202.983,
+      "JSON": 39.749,
+      "Java": 0.656
     }
   }
 }
