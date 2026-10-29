@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-29T12:20:05.299Z",
-  "total": "267 hrs 55 mins",
-  "daily_average": "5 hrs 51 mins",
+  "lastUpdate": "2026-10-29T22:27:45.282Z",
+  "total": "269 hrs 45 mins",
+  "daily_average": "5 hrs 53 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 125541.397,
-      "total_text": "34h 52m",
+      "total_seconds": 132166.907,
+      "total_text": "36h 42m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 650373.2849999999,
-      "total_text": "180h 39m",
+      "total_seconds": 656998.7949999999,
+      "total_text": "182h 29m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4236277.045999998,
-      "total_text": "1176h 44m",
+      "total_seconds": 4242902.555999998,
+      "total_text": "1178h 35m",
       "days_active": 234
     },
     "all_time": {
-      "total_seconds": 4236277.045999998,
-      "total_text": "1176h 44m",
+      "total_seconds": 4242902.555999998,
+      "total_text": "1178h 35m",
       "days_active": 234
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-29",
-      "seconds": 33521.34,
-      "text": "9 hrs 18 mins"
+      "seconds": 40146.85,
+      "text": "11 hrs 9 mins"
     }
   ],
   "heatmap": [
@@ -1036,13 +1036,13 @@
     },
     {
       "date": "2026-10-29",
-      "seconds": 33521.34
+      "seconds": 40146.85
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1433440.7964890003
+      "total_seconds": 1435027.9354890003
     },
     {
       "name": "Python",
@@ -1058,7 +1058,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 205873.21100000004
+      "total_seconds": 214031.39300000004
     },
     {
       "name": "Astro",
@@ -1070,11 +1070,11 @@
     },
     {
       "name": "Java",
-      "total_seconds": 66498.278
+      "total_seconds": 64687.423
     },
     {
       "name": "SQL",
-      "total_seconds": 36814.229
+      "total_seconds": 37063.138
     },
     {
       "name": "Kotlin",
@@ -1129,16 +1129,16 @@
       "total_seconds": 8351.949
     },
     {
-      "name": "Java Properties",
-      "total_seconds": 7958.521000000001
-    },
-    {
       "name": "Git",
       "total_seconds": 7842.134999999999
     },
     {
       "name": "Image (png)",
       "total_seconds": 7054.9000000000015
+    },
+    {
+      "name": "Java Properties",
+      "total_seconds": 6011.992
     },
     {
       "name": "PowerShell",
@@ -3268,12 +3268,12 @@
       "JSON": 39.749
     },
     "2026-10-29": {
-      "Java": 12382.563,
-      "JavaScript": 12076.983,
-      "Java Properties": 3942.295,
-      "Markdown": 3936.628,
-      "Other": 637.157,
-      "SQL": 316.79,
+      "JavaScript": 20235.165,
+      "Java": 10571.708,
+      "Markdown": 5523.767,
+      "Java Properties": 1995.766,
+      "Other": 1025.821,
+      "SQL": 565.699,
       "XML": 110.723,
       "Nginx configuration file": 102.572,
       "TypeScript": 11.176,
