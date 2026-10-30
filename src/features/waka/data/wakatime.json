@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-10-30T04:29:55.398Z",
-  "total": "260 hrs 29 mins",
-  "daily_average": "5 hrs 43 mins",
+  "lastUpdate": "2026-10-30T12:10:56.956Z",
+  "total": "262 hrs 2 mins",
+  "daily_average": "5 hrs 46 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 136566.623,
-      "total_text": "37h 56m",
+      "total_seconds": 142175.72699999998,
+      "total_text": "39h 29m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 647314.492,
-      "total_text": "179h 48m",
+      "total_seconds": 652923.596,
+      "total_text": "181h 22m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4255749.452999998,
-      "total_text": "1182h 9m",
+      "total_seconds": 4261358.556999998,
+      "total_text": "1183h 42m",
       "days_active": 235
     },
     "all_time": {
-      "total_seconds": 4255749.452999998,
-      "total_text": "1182h 9m",
+      "total_seconds": 4261358.556999998,
+      "total_text": "1183h 42m",
       "days_active": 235
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-10-30",
-      "seconds": 12846.897,
-      "text": "3 hrs 34 mins"
+      "seconds": 18456.001,
+      "text": "5 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -1040,13 +1040,13 @@
     },
     {
       "date": "2026-10-30",
-      "seconds": 12846.897
+      "seconds": 18456.001
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1436961.5884890002
+      "total_seconds": 1437314.1794890002
     },
     {
       "name": "Python",
@@ -1062,7 +1062,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 221838.72300000003
+      "total_seconds": 225957.22700000004
     },
     {
       "name": "Astro",
@@ -1074,7 +1074,7 @@
     },
     {
       "name": "Java",
-      "total_seconds": 66395.02
+      "total_seconds": 67914.638
     },
     {
       "name": "SQL",
@@ -3284,11 +3284,11 @@
       "Docker": 4.453
     },
     "2026-10-30": {
-      "JavaScript": 7807.33,
-      "Markdown": 1933.653,
-      "Java": 1707.597,
-      "Other": 808.358,
+      "JavaScript": 11925.834,
+      "Java": 3227.215,
+      "Markdown": 2286.244,
       "SQL": 496.054,
+      "Other": 426.749,
       "JSON": 89.746,
       "TypeScript": 4.159
     }
