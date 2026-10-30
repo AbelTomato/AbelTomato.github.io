@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-30T12:10:56.956Z",
+  "lastUpdate": "2026-10-30T21:57:02.319Z",
   "total": "262 hrs 2 mins",
   "daily_average": "5 hrs 46 mins",
   "stats": {
@@ -1046,7 +1046,7 @@
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1437314.1794890002
+      "total_seconds": 1437348.9314890003
     },
     {
       "name": "Python",
@@ -1062,7 +1062,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 225957.22700000004
+      "total_seconds": 225922.47500000003
     },
     {
       "name": "Astro",
@@ -3284,9 +3284,9 @@
       "Docker": 4.453
     },
     "2026-10-30": {
-      "JavaScript": 11925.834,
+      "JavaScript": 11891.082,
       "Java": 3227.215,
-      "Markdown": 2286.244,
+      "Markdown": 2320.996,
       "SQL": 496.054,
       "Other": 426.749,
       "JSON": 89.746,
