@@ -8,12 +8,11 @@ const BLACKLIST = ["Other", "Text"];
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
 async function sync() {
-  const API_KEY = process.env.WAKATIME_API_KEY;
-  if (!API_KEY) {
-    console.error("❌ API_KEY错误");
+  const oauthToken = process.env.WAKATIME_OAUTH_TOKEN;
+  if (!oauthToken) {
+    console.error("❌ WAKATIME_OAUTH_TOKEN未配置");
     process.exit(1);
   }
-  const token = Buffer.from(API_KEY).toString("base64");
 
   const endDate = new Date();
   const startDate = new Date();
@@ -21,13 +20,16 @@ async function sync() {
   const startStr = startDate.toISOString().split("T")[0];
   const endStr = endDate.toISOString().split("T")[0];
 
-  const url = `https://wakatime.com/api/v1/users/current/summaries?start=${startStr}&end=${endStr}`;
+  const params = new URLSearchParams({
+    start: startStr,
+    end: endStr,
+    api_key: oauthToken,
+  });
+  const url = `https://wakatime.com/api/v1/users/current/summaries?${params}`;
 
   try {
     console.log(`正在同步 ${startStr} 至 ${endStr} 的增量数据...`);
-    const response = await axios.get(url, {
-      headers: { Authorization: `Basic ${token}` },
-    });
+    const response = await axios.get(url);
 
     const newDays = response.data.data;
 

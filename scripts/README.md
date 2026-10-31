@@ -112,10 +112,12 @@ chore: sync project metrics
 相关环境变量由 GitHub Actions Secrets 提供：
 
 ```text
-WAKATIME_API_KEY
+WAKATIME_OAUTH_TOKEN
 LEETCODE_SESSION
 GITHUB_TOKEN
 ```
+
+`WAKATIME_OAUTH_TOKEN` 应设置为 WakaTime 个人 OAuth token（不是旧 API key）；GitHub Actions 中请在仓库 Secrets 里新增或更新同名 Secret。本地手动运行时在 `.env` 中配置同名变量。脚本通过 `api_key` 查询参数将该令牌传给 WakaTime summaries API。
 
 `GITHUB_TOKEN` 为必需的同步令牌：GitHub Actions 使用 `${{ github.token }}` 请求 GitHub REST API 和 GraphQL `contributionCalendar`；本地手动运行时需要配置 `GITHUB_TOKEN`。贡献热力图数据由 GraphQL 返回的 `contributionDays` 转换为静态 JSON，前端自行绘制，不依赖 GitHub 外部图片。`fetch-github-stats.ts` 只写入公开数据，远程请求失败且已有 `src/features/github/data/github-stats.json` 时会保留旧缓存以避免阻断构建；首次同步没有缓存时会失败并输出原因。
 
