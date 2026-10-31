@@ -39,7 +39,7 @@ jobs:
       - name: Sync WakaTime Data
         run: node scripts/sync-wakatime.js
         env:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          WAKATIME_OAUTH_TOKEN: ${{ secrets.WAKATIME_OAUTH_TOKEN }}
 
       - name: Sync LeetCode Data
         run: pnpm exec tsx scripts/fetch-leetcode.ts

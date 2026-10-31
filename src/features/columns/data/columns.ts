@@ -18,5 +18,11 @@ export const columnDefinitions: ColumnDefinition[] = [
     title: "Transformer",
     description: "从前置技能树开始，逐步掌握Transformer",
     order: 3
+  },
+  {
+    slug: "shopee",
+    title: "Shopee实习记录",
+    description: "一些在Shopee的第一段实习的经历与思考",
+    order: 4
   }
 ];
