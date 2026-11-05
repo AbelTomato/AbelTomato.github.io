@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-11-04T23:14:27.647Z",
-  "total": "237 hrs 2 mins",
-  "daily_average": "5 hrs 16 mins",
+  "lastUpdate": "2026-11-05T05:14:37.936Z",
+  "total": "232 hrs 20 mins",
+  "daily_average": "5 hrs 10 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 136109.418,
-      "total_text": "37h 48m",
+      "total_seconds": 99406.003,
+      "total_text": "27h 36m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 654571.5199999998,
-      "total_text": "181h 49m",
+      "total_seconds": 656849.9329999998,
+      "total_text": "182h 27m",
       "days_active": 30
     },
     "last_365_days": {
-      "total_seconds": 4338865.123999999,
-      "total_text": "1205h 14m",
-      "days_active": 240
+      "total_seconds": 4342308.5589999985,
+      "total_text": "1206h 11m",
+      "days_active": 241
     },
     "all_time": {
-      "total_seconds": 4338865.123999999,
-      "total_text": "1205h 14m",
-      "days_active": 240
+      "total_seconds": 4342308.5589999985,
+      "total_text": "1206h 11m",
+      "days_active": 241
     }
   },
   "weekly": [
-    {
-      "date": "2026-10-29",
-      "seconds": 40146.85,
-      "text": "11 hrs 9 mins"
-    },
     {
       "date": "2026-10-30",
       "seconds": 18515.38,
@@ -59,6 +54,11 @@
       "date": "2026-11-04",
       "seconds": 3953.646,
       "text": "1 hr 5 mins"
+    },
+    {
+      "date": "2026-11-05",
+      "seconds": 3443.435,
+      "text": "57 mins"
     }
   ],
   "heatmap": [
@@ -1061,16 +1061,20 @@
     {
       "date": "2026-11-04",
       "seconds": 3953.646
+    },
+    {
+      "date": "2026-11-05",
+      "seconds": 3443.435
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1462714.7714890004
+      "total_seconds": 1464777.4614890004
     },
     {
       "name": "Python",
-      "total_seconds": 824892.5079219996
+      "total_seconds": 825726.5549219996
     },
     {
       "name": "C++",
@@ -1114,7 +1118,7 @@
     },
     {
       "name": "HTML",
-      "total_seconds": 27359.588000000007
+      "total_seconds": 27369.200000000008
     },
     {
       "name": "Go",
@@ -3364,6 +3368,13 @@
       "Markdown": 2423.099,
       "Other": 1498.305,
       "Python": 32.242
+    },
+    "2026-11-05": {
+      "Markdown": 2062.69,
+      "Python": 834.047,
+      "Text": 523.588,
+      "Other": 13.498,
+      "HTML": 9.612
     }
   }
 }
