@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-11-07T21:28:18.921Z",
-  "total": "219 hrs 54 mins",
-  "daily_average": "5 hrs",
+  "lastUpdate": "2026-11-08T04:35:22.279Z",
+  "total": "212 hrs 3 mins",
+  "daily_average": "4 hrs 57 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 76021.734,
-      "total_text": "21h 7m",
-      "days_active": 6
+      "total_seconds": 69704.379,
+      "total_text": "19h 21m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 615157.0379999998,
-      "total_text": "170h 52m",
-      "days_active": 29
+      "total_seconds": 594493.421,
+      "total_text": "165h 8m",
+      "days_active": 28
     },
     "last_365_days": {
       "total_seconds": 4349312.438999998,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-01",
-      "seconds": 6317.355,
-      "text": "1 hr 45 mins"
-    },
     {
       "date": "2026-11-02",
       "seconds": 30700.088,
@@ -57,6 +52,11 @@
     },
     {
       "date": "2026-11-07",
+      "seconds": 0,
+      "text": "0 secs"
+    },
+    {
+      "date": "2026-11-08",
       "seconds": 0,
       "text": "0 secs"
     }
@@ -1072,6 +1072,10 @@
     },
     {
       "date": "2026-11-07",
+      "seconds": 0
+    },
+    {
+      "date": "2026-11-08",
       "seconds": 0
     }
   ],
@@ -3398,6 +3402,7 @@
       "TypeScript": 71.035,
       "Git Config": 17.89
     },
-    "2026-11-07": {}
+    "2026-11-07": {},
+    "2026-11-08": {}
   }
 }
