@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-11-11T13:36:48.709Z",
-  "total": "214 hrs 39 mins",
-  "daily_average": "5 hrs",
+  "lastUpdate": "2026-11-12T00:04:09.425Z",
+  "total": "211 hrs 5 mins",
+  "daily_average": "4 hrs 48 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 65377.783,
-      "total_text": "18h 9m",
-      "days_active": 5
+      "total_seconds": 62888.867,
+      "total_text": "17h 28m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 560748.8369999999,
-      "total_text": "155h 45m",
-      "days_active": 28
+      "total_seconds": 520294.133,
+      "total_text": "144h 31m",
+      "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 4411062.015,
-      "total_text": "1225h 17m",
-      "days_active": 245
+      "total_seconds": 4412016.533999999,
+      "total_text": "1225h 33m",
+      "days_active": 247
     },
     "all_time": {
-      "total_seconds": 4411062.015,
-      "total_text": "1225h 17m",
-      "days_active": 245
+      "total_seconds": 4412016.533999999,
+      "total_text": "1225h 33m",
+      "days_active": 247
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-05",
-      "seconds": 3443.435,
-      "text": "57 mins"
-    },
     {
       "date": "2026-11-06",
       "seconds": 7220.228,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-11-11",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 439.35,
+      "text": "7 mins"
+    },
+    {
+      "date": "2026-11-12",
+      "seconds": 515.169,
+      "text": "8 mins"
     }
   ],
   "heatmap": [
@@ -1088,17 +1088,21 @@
     },
     {
       "date": "2026-11-11",
-      "seconds": 0
+      "seconds": 439.35
+    },
+    {
+      "date": "2026-11-12",
+      "seconds": 515.169
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1479003.9854890006
+      "total_seconds": 1479014.5194890006
     },
     {
       "name": "Python",
-      "total_seconds": 829196.8569219996
+      "total_seconds": 830074.4219219995
     },
     {
       "name": "C++",
@@ -1170,7 +1174,7 @@
     },
     {
       "name": "TOML",
-      "total_seconds": 11180.575000000003
+      "total_seconds": 11212.309000000003
     },
     {
       "name": "Rust",
@@ -3446,7 +3450,14 @@
       "Text": 38.354
     },
     "2026-11-11": {
-      "Python": 0
+      "Python": 439.35,
+      "TOML": 0
+    },
+    "2026-11-12": {
+      "Python": 438.215,
+      "Other": 34.686,
+      "TOML": 31.734,
+      "Markdown": 10.534
     }
   }
 }
