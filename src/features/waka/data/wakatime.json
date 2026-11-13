@@ -1,26 +1,26 @@
 {
-  "lastUpdate": "2026-11-13T13:57:46.478Z",
-  "total": "213 hrs 4 mins",
+  "lastUpdate": "2026-11-13T23:16:15.203Z",
+  "total": "213 hrs 58 mins",
   "daily_average": "4 hrs 44 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 92908.27999999998,
-      "total_text": "25h 48m",
+      "total_seconds": 96173.70799999998,
+      "total_text": "26h 42m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 516667.49699999986,
-      "total_text": "143h 31m",
+      "total_seconds": 519932.9249999999,
+      "total_text": "144h 25m",
       "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 4449256.175,
-      "total_text": "1235h 54m",
+      "total_seconds": 4452521.603,
+      "total_text": "1236h 48m",
       "days_active": 248
     },
     "all_time": {
-      "total_seconds": 4449256.175,
-      "total_text": "1235h 54m",
+      "total_seconds": 4452521.603,
+      "total_text": "1236h 48m",
       "days_active": 248
     }
   },
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-11-13",
-      "seconds": 15165.086,
-      "text": "4 hrs 12 mins"
+      "seconds": 18430.514,
+      "text": "5 hrs 7 mins"
     }
   ],
   "heatmap": [
@@ -1096,7 +1096,7 @@
     },
     {
       "date": "2026-11-13",
-      "seconds": 15165.086
+      "seconds": 18430.514
     }
   ],
   "languages": [
@@ -1169,16 +1169,16 @@
       "total_seconds": 15835.441999999997
     },
     {
+      "name": "Rust",
+      "total_seconds": 13988.825
+    },
+    {
       "name": "CSS",
       "total_seconds": 13911.79
     },
     {
       "name": "TOML",
       "total_seconds": 13608.781000000003
-    },
-    {
-      "name": "Rust",
-      "total_seconds": 12707.662
     },
     {
       "name": "CMake",
@@ -3469,9 +3469,9 @@
       "Git Config": 9.497
     },
     "2026-11-13": {
-      "Other": 6388.832,
+      "Other": 8373.097,
+      "Rust": 3585.929,
       "TOML": 2396.472,
-      "Rust": 2304.766,
       "Python": 1485.528,
       "JavaScript": 1209.14,
       "Markdown": 1078.391,
