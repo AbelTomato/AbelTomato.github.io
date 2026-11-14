@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-11-13T23:16:15.203Z",
-  "total": "213 hrs 58 mins",
-  "daily_average": "4 hrs 44 mins",
+  "lastUpdate": "2026-11-14T05:01:47.528Z",
+  "total": "214 hrs 32 mins",
+  "daily_average": "4 hrs 45 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 96173.70799999998,
-      "total_text": "26h 42m",
-      "days_active": 6
+      "total_seconds": 100302.17199999999,
+      "total_text": "27h 51m",
+      "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 519932.9249999999,
-      "total_text": "144h 25m",
+      "total_seconds": 494308.855,
+      "total_text": "137h 18m",
       "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 4452521.603,
-      "total_text": "1236h 48m",
-      "days_active": 248
+      "total_seconds": 4456650.067,
+      "total_text": "1237h 57m",
+      "days_active": 249
     },
     "all_time": {
-      "total_seconds": 4452521.603,
-      "total_text": "1236h 48m",
-      "days_active": 248
+      "total_seconds": 4456650.067,
+      "total_text": "1237h 57m",
+      "days_active": 249
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-07",
-      "seconds": 0,
-      "text": "0 secs"
-    },
     {
       "date": "2026-11-08",
       "seconds": 1168.359,
@@ -59,6 +54,11 @@
       "date": "2026-11-13",
       "seconds": 18430.514,
       "text": "5 hrs 7 mins"
+    },
+    {
+      "date": "2026-11-14",
+      "seconds": 4128.464,
+      "text": "1 hr 8 mins"
     }
   ],
   "heatmap": [
@@ -1097,12 +1097,16 @@
     {
       "date": "2026-11-13",
       "seconds": 18430.514
+    },
+    {
+      "date": "2026-11-14",
+      "seconds": 4128.464
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1487044.8714890005
+      "total_seconds": 1488743.0934890006
     },
     {
       "name": "Python",
@@ -1170,15 +1174,15 @@
     },
     {
       "name": "Rust",
-      "total_seconds": 13988.825
+      "total_seconds": 15728.539
+    },
+    {
+      "name": "TOML",
+      "total_seconds": 14024.096000000003
     },
     {
       "name": "CSS",
       "total_seconds": 13911.79
-    },
-    {
-      "name": "TOML",
-      "total_seconds": 13608.781000000003
     },
     {
       "name": "CMake",
@@ -3477,6 +3481,12 @@
       "Markdown": 1078.391,
       "Bash": 276.084,
       "Git Config": 25.873
+    },
+    "2026-11-14": {
+      "Rust": 1739.714,
+      "Markdown": 1698.222,
+      "TOML": 415.315,
+      "Other": 275.213
     }
   }
 }
