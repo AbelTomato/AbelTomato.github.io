@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-11-16T14:51:43.472Z",
-  "total": "220 hrs 45 mins",
-  "daily_average": "4 hrs 52 mins",
+  "lastUpdate": "2026-11-17T01:36:16.419Z",
+  "total": "212 hrs 17 mins",
+  "daily_average": "4 hrs 42 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 117677.13899999998,
-      "total_text": "32h 41m",
+      "total_seconds": 87362.153,
+      "total_text": "24h 16m",
       "days_active": 7
     },
     "last_30_days": {
-      "total_seconds": 500373.8229999999,
-      "total_text": "138h 59m",
+      "total_seconds": 485869.75299999997,
+      "total_text": "134h 57m",
       "days_active": 29
     },
     "last_365_days": {
-      "total_seconds": 4496928.6559999995,
-      "total_text": "1249h 8m",
-      "days_active": 251
+      "total_seconds": 4498424.168,
+      "total_text": "1249h 33m",
+      "days_active": 252
     },
     "all_time": {
-      "total_seconds": 4496928.6559999995,
-      "total_text": "1249h 8m",
-      "days_active": 251
+      "total_seconds": 4498424.168,
+      "total_text": "1249h 33m",
+      "days_active": 252
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-10",
-      "seconds": 31810.498,
-      "text": "8 hrs 50 mins"
-    },
     {
       "date": "2026-11-11",
       "seconds": 1783.801,
@@ -57,8 +52,13 @@
     },
     {
       "date": "2026-11-16",
-      "seconds": 28869.833,
-      "text": "8 hrs 1 min"
+      "seconds": 30312.562,
+      "text": "8 hrs 25 mins"
+    },
+    {
+      "date": "2026-11-17",
+      "seconds": 52.783,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -1108,13 +1108,17 @@
     },
     {
       "date": "2026-11-16",
-      "seconds": 28869.833
+      "seconds": 30312.562
+    },
+    {
+      "date": "2026-11-17",
+      "seconds": 52.783
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1514947.7404890007
+      "total_seconds": 1513936.9624890008
     },
     {
       "name": "Python",
@@ -1142,7 +1146,7 @@
     },
     {
       "name": "Java",
-      "total_seconds": 94410.614
+      "total_seconds": 96874.619
     },
     {
       "name": "SQL",
@@ -3504,14 +3508,18 @@
       "Git Config": 23.07
     },
     "2026-11-16": {
-      "Markdown": 18568.878,
-      "Other": 5232.357,
-      "Java": 2612.72,
+      "Markdown": 17558.1,
+      "Other": 5221.859,
+      "Java": 5076.725,
       "Rust": 1574.193,
       "JavaScript": 327.298,
       "Java Properties": 252.564,
       "TypeScript": 228.517,
       "JSON": 73.306
+    },
+    "2026-11-17": {
+      "Other": 52.783,
+      "Markdown": 0
     }
   }
 }
