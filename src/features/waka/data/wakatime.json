@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-11-21T22:47:19.873Z",
-  "total": "189 hrs 37 mins",
-  "daily_average": "4 hrs 23 mins",
+  "lastUpdate": "2026-11-22T05:13:13.220Z",
+  "total": "178 hrs 7 mins",
+  "daily_average": "4 hrs 12 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 76321.654,
-      "total_text": "21h 12m",
-      "days_active": 4
+      "total_seconds": 64912.898,
+      "total_text": "18h 1m",
+      "days_active": 3
     },
     "last_30_days": {
-      "total_seconds": 422236.072,
-      "total_text": "117h 17m",
-      "days_active": 26
+      "total_seconds": 413788.89099999995,
+      "total_text": "114h 56m",
+      "days_active": 25
     },
     "last_365_days": {
       "total_seconds": 4532971.720999999,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-15",
-      "seconds": 11408.756,
-      "text": "3 hrs 10 mins"
-    },
     {
       "date": "2026-11-16",
       "seconds": 30312.562,
@@ -57,6 +52,11 @@
     },
     {
       "date": "2026-11-21",
+      "seconds": 0,
+      "text": "0 secs"
+    },
+    {
+      "date": "2026-11-22",
       "seconds": 0,
       "text": "0 secs"
     }
@@ -1128,6 +1128,10 @@
     },
     {
       "date": "2026-11-21",
+      "seconds": 0
+    },
+    {
+      "date": "2026-11-22",
       "seconds": 0
     }
   ],
@@ -3554,6 +3558,7 @@
     },
     "2026-11-19": {},
     "2026-11-20": {},
-    "2026-11-21": {}
+    "2026-11-21": {},
+    "2026-11-22": {}
   }
 }
