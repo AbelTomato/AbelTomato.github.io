@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-22T05:13:13.220Z",
+  "lastUpdate": "2026-11-22T14:05:10.670Z",
   "total": "178 hrs 7 mins",
   "daily_average": "4 hrs 12 mins",
   "stats": {
@@ -1138,7 +1138,7 @@
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1522454.5464890008
+      "total_seconds": 1522404.1594890007
     },
     {
       "name": "Python",
@@ -1154,7 +1154,7 @@
     },
     {
       "name": "JavaScript",
-      "total_seconds": 258240.5890000001
+      "total_seconds": 258228.4660000001
     },
     {
       "name": "Astro",
@@ -1162,7 +1162,7 @@
     },
     {
       "name": "JSON",
-      "total_seconds": 99563.01106799999
+      "total_seconds": 99915.127068
     },
     {
       "name": "Java",
@@ -1178,7 +1178,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 28750.218886000002
+      "total_seconds": 28734.437886000003
     },
     {
       "name": "C",
@@ -1198,7 +1198,7 @@
     },
     {
       "name": "Rust",
-      "total_seconds": 20368.628999999997
+      "total_seconds": 20325.891
     },
     {
       "name": "Vue",
@@ -3505,13 +3505,13 @@
       "Git Config": 9.497
     },
     "2026-11-13": {
-      "Other": 8373.097,
+      "Other": 8388.878,
       "Rust": 3585.929,
       "TOML": 2396.472,
       "Python": 1485.528,
       "JavaScript": 1209.14,
       "Markdown": 1078.391,
-      "Bash": 276.084,
+      "Bash": 260.303,
       "Git Config": 25.873
     },
     "2026-11-14": {
@@ -3538,12 +3538,12 @@
       "JSON": 73.306
     },
     "2026-11-17": {
-      "Other": 13672.414,
-      "Markdown": 6749.725,
-      "JSON": 1648.594,
-      "JavaScript": 1571.509,
+      "Other": 13425.546,
+      "Markdown": 6699.338,
+      "JSON": 2000.71,
+      "JavaScript": 1559.386,
       "TOML": 1188.979,
-      "Rust": 506.764,
+      "Rust": 464.026,
       "Java Properties": 392.489,
       "TypeScript": 371.461
     },
