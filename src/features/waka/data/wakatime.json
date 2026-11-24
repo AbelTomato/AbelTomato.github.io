@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2026-11-23T17:27:32.838Z",
-  "total": "174 hrs 56 mins",
-  "daily_average": "3 hrs 49 mins",
+  "lastUpdate": "2026-11-24T03:49:40.266Z",
+  "total": "166 hrs 40 mins",
+  "daily_average": "3 hrs 43 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 63999.287000000004,
-      "total_text": "17h 46m",
-      "days_active": 6
+      "total_seconds": 34775.207,
+      "total_text": "9h 39m",
+      "days_active": 5
     },
     "last_30_days": {
-      "total_seconds": 425431.7709999999,
-      "total_text": "118h 10m",
-      "days_active": 28
+      "total_seconds": 415546.9999999999,
+      "total_text": "115h 25m",
+      "days_active": 27
     },
     "last_365_days": {
       "total_seconds": 4562370.671999999,
@@ -25,11 +25,6 @@
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-17",
-      "seconds": 29224.08,
-      "text": "8 hrs 7 mins"
-    },
     {
       "date": "2026-11-18",
       "seconds": 11863.501,
@@ -59,6 +54,11 @@
       "date": "2026-11-23",
       "seconds": 18806.578,
       "text": "5 hrs 13 mins"
+    },
+    {
+      "date": "2026-11-24",
+      "seconds": 0,
+      "text": "0 secs"
     }
   ],
   "heatmap": [
@@ -1137,12 +1137,16 @@
     {
       "date": "2026-11-23",
       "seconds": 18806.578
+    },
+    {
+      "date": "2026-11-24",
+      "seconds": 0
     }
   ],
   "languages": [
     {
       "name": "Markdown",
-      "total_seconds": 1541354.3114890007
+      "total_seconds": 1541275.5814890007
     },
     {
       "name": "Python",
@@ -1174,7 +1178,7 @@
     },
     {
       "name": "SQL",
-      "total_seconds": 37689.700999999994
+      "total_seconds": 37708.850999999995
     },
     {
       "name": "Bash",
@@ -3574,14 +3578,17 @@
       "PowerShell": 995.589
     },
     "2026-11-23": {
-      "Markdown": 14666.845,
-      "Other": 1789.148,
+      "Markdown": 14588.115,
+      "Other": 1848.728,
       "Python": 961.86,
       "TOML": 730.328,
       "Java": 237.815,
       "TypeScript": 232.846,
-      "SQL": 130.509,
+      "SQL": 149.659,
       "JSON": 57.227
+    },
+    "2026-11-24": {
+      "SQL": 0
     }
   }
 }
