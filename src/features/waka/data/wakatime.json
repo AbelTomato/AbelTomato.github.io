@@ -1,27 +1,27 @@
 {
-  "lastUpdate": "2026-11-24T03:49:40.266Z",
-  "total": "166 hrs 40 mins",
-  "daily_average": "3 hrs 43 mins",
+  "lastUpdate": "2026-11-24T16:59:23.772Z",
+  "total": "170 hrs 20 mins",
+  "daily_average": "3 hrs 37 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 34775.207,
-      "total_text": "9h 39m",
-      "days_active": 5
+      "total_seconds": 47991.256,
+      "total_text": "13h 19m",
+      "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 415546.9999999999,
-      "total_text": "115h 25m",
-      "days_active": 27
+      "total_seconds": 428763.0489999999,
+      "total_text": "119h 6m",
+      "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 4562370.671999999,
-      "total_text": "1267h 19m",
-      "days_active": 257
+      "total_seconds": 4575586.720999999,
+      "total_text": "1270h 59m",
+      "days_active": 258
     },
     "all_time": {
-      "total_seconds": 4562370.671999999,
-      "total_text": "1267h 19m",
-      "days_active": 257
+      "total_seconds": 4575586.720999999,
+      "total_text": "1270h 59m",
+      "days_active": 258
     }
   },
   "weekly": [
@@ -57,8 +57,8 @@
     },
     {
       "date": "2026-11-24",
-      "seconds": 0,
-      "text": "0 secs"
+      "seconds": 13216.049,
+      "text": "3 hrs 40 mins"
     }
   ],
   "heatmap": [
@@ -1140,7 +1140,7 @@
     },
     {
       "date": "2026-11-24",
-      "seconds": 0
+      "seconds": 13216.049
     }
   ],
   "languages": [
@@ -1174,7 +1174,7 @@
     },
     {
       "name": "Java",
-      "total_seconds": 97112.43400000001
+      "total_seconds": 97150.82
     },
     {
       "name": "SQL",
@@ -1182,7 +1182,7 @@
     },
     {
       "name": "Bash",
-      "total_seconds": 29725.345886000003
+      "total_seconds": 29731.649886000003
     },
     {
       "name": "Kotlin",
@@ -3588,6 +3588,9 @@
       "JSON": 57.227
     },
     "2026-11-24": {
+      "Other": 13171.359,
+      "Java": 38.386,
+      "Bash": 6.304,
       "SQL": 0
     }
   }
