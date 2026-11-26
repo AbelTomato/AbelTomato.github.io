@@ -1,35 +1,30 @@
 {
-  "lastUpdate": "2026-11-25T16:49:43.077Z",
-  "total": "167 hrs 14 mins",
+  "lastUpdate": "2026-11-26T01:35:35.294Z",
+  "total": "167 hrs 19 mins",
   "daily_average": "3 hrs 29 mins",
   "stats": {
     "last_7_days": {
-      "total_seconds": 58973.39600000001,
-      "total_text": "16h 22m",
+      "total_seconds": 58795.282,
+      "total_text": "16h 19m",
       "days_active": 6
     },
     "last_30_days": {
-      "total_seconds": 434054.8849999999,
-      "total_text": "120h 34m",
+      "total_seconds": 417756.6469999999,
+      "total_text": "116h 2m",
       "days_active": 28
     },
     "last_365_days": {
-      "total_seconds": 4598432.362,
-      "total_text": "1277h 20m",
-      "days_active": 259
+      "total_seconds": 4598930.636,
+      "total_text": "1277h 28m",
+      "days_active": 260
     },
     "all_time": {
-      "total_seconds": 4598432.362,
-      "total_text": "1277h 20m",
-      "days_active": 259
+      "total_seconds": 4598930.636,
+      "total_text": "1277h 28m",
+      "days_active": 260
     }
   },
   "weekly": [
-    {
-      "date": "2026-11-19",
-      "seconds": 676.388,
-      "text": "11 mins"
-    },
     {
       "date": "2026-11-20",
       "seconds": 2433.151,
@@ -59,6 +54,11 @@
       "date": "2026-11-25",
       "seconds": 22665.921,
       "text": "6 hrs 17 mins"
+    },
+    {
+      "date": "2026-11-26",
+      "seconds": 498.274,
+      "text": "8 mins"
     }
   ],
   "heatmap": [
@@ -1145,6 +1145,10 @@
     {
       "date": "2026-11-25",
       "seconds": 22665.921
+    },
+    {
+      "date": "2026-11-26",
+      "seconds": 498.274
     }
   ],
   "languages": [
@@ -1242,7 +1246,7 @@
     },
     {
       "name": "PowerShell",
-      "total_seconds": 7528.75
+      "total_seconds": 7815.395
     },
     {
       "name": "Image (png)",
@@ -3606,6 +3610,10 @@
       "TypeScript": 509.843,
       "PowerShell": 361.978,
       "Java": 23.135
+    },
+    "2026-11-26": {
+      "PowerShell": 286.645,
+      "Other": 211.629
     }
   }
 }
